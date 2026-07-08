@@ -1,5 +1,5 @@
 import { ChangeEvent, useEffect, useState } from "react";
-import { FileUp, Loader2, Plus, Save, Trash2, UserRound, Wand2 } from "lucide-react";
+import { AlertCircle, FileUp, Loader2, Plus, Save, Trash2, UserRound, Wand2 } from "lucide-react";
 import type {
   AcademicProfile,
   AppSettings,
@@ -9,10 +9,12 @@ import type {
   StoredDocument,
 } from "../domain/types";
 import { documentKindLabels } from "../domain/labels";
+import { getProfileCompleteness, type Completeness } from "../domain/profileStatus";
 import { extractProfileFromDocumentText } from "../ai/profileExtraction";
-import { extractPdfText } from "../rag/pdf";
+import { extractDocument } from "../rag/documentExtraction";
 import { deleteDocument, getProfile, listDocuments, saveDocument, saveProfile } from "../storage/repository";
 import { Button } from "../components/ui/button";
+import { Badge } from "../components/ui/badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/ui/card";
 import { Input } from "../components/ui/input";
 import { Select } from "../components/ui/select";
@@ -42,6 +44,7 @@ function applyExtracted(profile: AcademicProfile, extracted: ExtractedProfile): 
     university: extracted.university ?? profile.university,
     gpa: extracted.gpa ?? profile.gpa,
     ects: extracted.ects ?? profile.ects,
+    graduationDate: extracted.graduationDate ?? profile.graduationDate,
     courses: extracted.courses?.length ? extracted.courses : profile.courses,
     workExperience: extracted.workExperience?.length ? extracted.workExperience.join("\n") : profile.workExperience,
     languageCertificates: extracted.languageCertificates?.length
@@ -51,13 +54,36 @@ function applyExtracted(profile: AcademicProfile, extracted: ExtractedProfile): 
   };
 }
 
+const completenessStyles: Record<Completeness, { variant: "green" | "yellow" | "outline"; label: string }> = {
+  complete: { variant: "green", label: "complete" },
+  partial: { variant: "yellow", label: "partial" },
+  missing: { variant: "outline", label: "missing" },
+};
+
+function CompletenessPill({ title, status, optional }: { title: string; status: Completeness; optional?: boolean }) {
+  const style = completenessStyles[status];
+  return (
+    <div className="flex items-center justify-between gap-3 rounded-md border border-border bg-background px-3 py-2">
+      <span className="text-sm font-medium text-foreground">
+        {title}
+        {optional ? <span className="ml-1 text-xs font-normal text-muted-foreground">(optional)</span> : null}
+      </span>
+      <Badge variant={style.variant}>{style.label}</Badge>
+    </div>
+  );
+}
+
 export function ProfileBuilder({ settings, onSaved }: ProfileBuilderProps) {
   const [profile, setProfile] = useState<AcademicProfile>(emptyProfile);
   const [documents, setDocuments] = useState<StoredDocument[]>([]);
   const [busy, setBusy] = useState(false);
   const [kind, setKind] = useState<DocumentKind>("transcript");
+  const [status, setStatus] = useState("");
   const [message, setMessage] = useState("");
   const [saved, setSaved] = useState(false);
+  const [dirty, setDirty] = useState(false);
+
+  const completeness = getProfileCompleteness(profile);
 
   async function refresh() {
     setDocuments(await listDocuments());
@@ -70,10 +96,13 @@ export function ProfileBuilder({ settings, onSaved }: ProfileBuilderProps) {
 
   function update<K extends keyof AcademicProfile>(field: K, value: AcademicProfile[K]) {
     setSaved(false);
+    setDirty(true);
     setProfile((current) => ({ ...current, [field]: value }));
   }
 
   function updateCertificate(index: number, patch: Partial<LanguageCertificate>) {
+    setDirty(true);
+    setSaved(false);
     setProfile((current) => ({
       ...current,
       languageCertificates: current.languageCertificates.map((cert, i) => (i === index ? { ...cert, ...patch } : cert)),
@@ -81,6 +110,7 @@ export function ProfileBuilder({ settings, onSaved }: ProfileBuilderProps) {
   }
 
   function addCertificate() {
+    setDirty(true);
     setProfile((current) => ({
       ...current,
       languageCertificates: [...current.languageCertificates, { language: "", level: "" }],
@@ -88,6 +118,7 @@ export function ProfileBuilder({ settings, onSaved }: ProfileBuilderProps) {
   }
 
   function removeCertificate(index: number) {
+    setDirty(true);
     setProfile((current) => ({
       ...current,
       languageCertificates: current.languageCertificates.filter((_, i) => i !== index),
@@ -99,34 +130,38 @@ export function ProfileBuilder({ settings, onSaved }: ProfileBuilderProps) {
     if (!file) return;
     setBusy(true);
     setMessage("");
+    setStatus("");
     try {
-      if (!file.name.toLowerCase().endsWith(".pdf")) {
-        throw new Error("Only PDF upload is supported in this MVP.");
+      const extraction = await extractDocument(file, (extractionEvent) => setStatus(extractionEvent.message));
+      if (!extraction.text.trim()) {
+        throw new Error("Could not read any text from this file, even with OCR. Try a clearer scan.");
       }
-      const extracted = await extractPdfText(file);
-      if (!extracted.text.trim()) {
-        throw new Error("No selectable text found. This may be a scanned PDF; OCR is a future improvement.");
-      }
-      const result = await extractProfileFromDocumentText(extracted.text, settings);
+      const result = await extractProfileFromDocumentText(extraction.text, settings);
       const stored: StoredDocument = {
         id: crypto.randomUUID(),
         kind,
         fileName: file.name,
-        text: extracted.text,
-        pageCount: extracted.pageCount,
+        text: extraction.text,
+        pageCount: extraction.pageCount,
         extractedProfile: result.profile,
         createdAt: new Date().toISOString(),
         status: "parsed",
       };
       await saveDocument(stored);
       setProfile((current) => applyExtracted(current, result.profile));
+      setDirty(true);
       setSaved(false);
-      setMessage(`${file.name} parsed. ${result.warning ?? "Review the fields below, then save."}`);
+      setMessage(
+        `${file.name} processed${extraction.usedOcr ? " with OCR" : ""}. Review the fields below, then save. ${
+          result.warning ?? ""
+        }`.trim(),
+      );
       await refresh();
     } catch (error) {
       setMessage(error instanceof Error ? error.message : "Upload failed.");
     } finally {
       setBusy(false);
+      setStatus("");
       event.target.value = "";
     }
   }
@@ -135,6 +170,7 @@ export function ProfileBuilder({ settings, onSaved }: ProfileBuilderProps) {
     setBusy(true);
     const result = await extractProfileFromDocumentText(document.text, settings);
     setProfile((current) => applyExtracted(current, result.profile));
+    setDirty(true);
     setMessage(result.warning ?? `Re-applied extraction from ${document.fileName}.`);
     setBusy(false);
   }
@@ -147,6 +183,7 @@ export function ProfileBuilder({ settings, onSaved }: ProfileBuilderProps) {
   async function handleSave() {
     await saveProfile(profile);
     setSaved(true);
+    setDirty(false);
     onSaved();
   }
 
@@ -159,15 +196,15 @@ export function ProfileBuilder({ settings, onSaved }: ProfileBuilderProps) {
         </div>
         <h2 className="mt-2 text-2xl font-semibold text-foreground">Build your academic profile.</h2>
         <p className="mt-1 max-w-2xl text-sm leading-6 text-muted-foreground">
-          Upload a document to auto-fill fields, review everything, then save. Nothing leaves your browser except text you
-          send to your own AI provider during extraction.
+          Upload a document to auto-fill fields — scanned PDFs and images are read locally with OCR. Review everything,
+          then save. Nothing leaves your browser except text you send to your own AI provider during extraction.
         </p>
       </header>
 
       <Card>
         <CardHeader>
           <CardTitle>Upload a document</CardTitle>
-          <CardDescription>Transcript, diploma, CV, or language certificate (PDF).</CardDescription>
+          <CardDescription>Transcript, diploma, CV, or language certificate — PDF, PNG, or JPG.</CardDescription>
         </CardHeader>
         <CardContent className="grid gap-4 sm:grid-cols-[220px_1fr]">
           <label className="grid gap-2 text-sm font-medium">
@@ -182,10 +219,22 @@ export function ProfileBuilder({ settings, onSaved }: ProfileBuilderProps) {
           </label>
           <label className="flex min-h-28 cursor-pointer flex-col items-center justify-center rounded-lg border border-dashed border-border bg-slate-50 px-4 py-6 text-center hover:bg-muted">
             {busy ? <Loader2 className="h-7 w-7 animate-spin text-primary" /> : <FileUp className="h-7 w-7 text-primary" />}
-            <span className="mt-2 text-sm font-semibold text-foreground">Upload PDF</span>
-            <span className="mt-1 text-xs text-muted-foreground">Auto-fills the review form below.</span>
-            <input className="sr-only" type="file" accept="application/pdf,.pdf" onChange={handleUpload} disabled={busy} />
+            <span className="mt-2 text-sm font-semibold text-foreground">Upload PDF or image</span>
+            <span className="mt-1 text-xs text-muted-foreground">Scanned or photographed documents are read with OCR.</span>
+            <input
+              className="sr-only"
+              type="file"
+              accept="application/pdf,.pdf,image/png,image/jpeg,.png,.jpg,.jpeg"
+              onChange={handleUpload}
+              disabled={busy}
+            />
           </label>
+          {busy && status ? (
+            <p className="flex items-center gap-2 rounded-md border border-border bg-background p-3 text-sm text-muted-foreground sm:col-span-2">
+              <Loader2 className="h-4 w-4 animate-spin" />
+              {status}
+            </p>
+          ) : null}
           {message ? <p className="rounded-md bg-muted p-3 text-sm leading-6 text-muted-foreground sm:col-span-2">{message}</p> : null}
           {documents.length > 0 ? (
             <div className="grid gap-2 sm:col-span-2">
@@ -207,6 +256,19 @@ export function ProfileBuilder({ settings, onSaved }: ProfileBuilderProps) {
               ))}
             </div>
           ) : null}
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>Profile completeness</CardTitle>
+          <CardDescription>What the fit check can and can't evaluate from your current profile.</CardDescription>
+        </CardHeader>
+        <CardContent className="grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
+          <CompletenessPill title="Academic data" status={completeness.academic} />
+          <CompletenessPill title="ECTS" status={completeness.ects} />
+          <CompletenessPill title="Language" status={completeness.language} />
+          <CompletenessPill title="Work experience" status={completeness.workExperience} optional />
         </CardContent>
       </Card>
 
@@ -238,8 +300,12 @@ export function ProfileBuilder({ settings, onSaved }: ProfileBuilderProps) {
               <Input placeholder="e.g. 3.6/4.0 or 1.7 (DE)" value={profile.gpa ?? ""} onChange={(event) => update("gpa", event.target.value)} />
             </label>
             <label className="grid gap-2 text-sm font-medium">
-              ECTS credits
+              Total ECTS
               <Input placeholder="e.g. 180" value={profile.ects ?? ""} onChange={(event) => update("ects", event.target.value)} />
+            </label>
+            <label className="grid gap-2 text-sm font-medium">
+              Graduation date
+              <Input placeholder="e.g. 2024 or 06/2024" value={profile.graduationDate ?? ""} onChange={(event) => update("graduationDate", event.target.value)} />
             </label>
           </div>
 
@@ -257,10 +323,11 @@ export function ProfileBuilder({ settings, onSaved }: ProfileBuilderProps) {
               </p>
             ) : (
               profile.languageCertificates.map((cert, index) => (
-                <div key={index} className="grid gap-2 sm:grid-cols-[1fr_1fr_1fr_auto]">
+                <div key={index} className="grid gap-2 sm:grid-cols-[1fr_1fr_1fr_1fr_auto]">
                   <Input placeholder="Language" value={cert.language} onChange={(event) => updateCertificate(index, { language: event.target.value })} />
-                  <Input placeholder="Test (IELTS…)" value={cert.test ?? ""} onChange={(event) => updateCertificate(index, { test: event.target.value })} />
+                  <Input placeholder="Provider (telc, IELTS…)" value={cert.provider ?? cert.test ?? ""} onChange={(event) => updateCertificate(index, { provider: event.target.value })} />
                   <Input placeholder="Level (B2, C1…)" value={cert.level ?? ""} onChange={(event) => updateCertificate(index, { level: event.target.value })} />
+                  <Input placeholder="Date" value={cert.date ?? ""} onChange={(event) => updateCertificate(index, { date: event.target.value })} />
                   <Button variant="ghost" size="icon" onClick={() => removeCertificate(index)} aria-label="Remove certificate">
                     <Trash2 className="h-4 w-4" />
                   </Button>
@@ -294,10 +361,17 @@ export function ProfileBuilder({ settings, onSaved }: ProfileBuilderProps) {
             </label>
           </div>
 
+          {dirty ? (
+            <div className="flex items-start gap-2 rounded-md border border-amber-200 bg-amber-50 p-3 text-sm leading-6 text-amber-900">
+              <AlertCircle className="mt-0.5 h-4 w-4 shrink-0" />
+              Review and save your extracted profile before running fit analysis.
+            </div>
+          ) : null}
+
           <div className="flex items-center gap-3">
             <Button onClick={handleSave}>
               <Save className="h-4 w-4" />
-              Save profile
+              Save reviewed profile
             </Button>
             {saved ? <span className="text-sm font-medium text-emerald-700">Saved locally.</span> : null}
           </div>

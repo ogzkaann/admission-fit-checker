@@ -1,5 +1,5 @@
 import { ChangeEvent, useState } from "react";
-import { FileUp, GraduationCap, ImageOff, Loader2, Save } from "lucide-react";
+import { AlertCircle, FileUp, GraduationCap, Loader2, Save } from "lucide-react";
 import type {
   AcademicProfile,
   AppSettings,
@@ -11,7 +11,8 @@ import type {
 } from "../domain/types";
 import { degreeTypeLabels } from "../domain/labels";
 import { analyzeFit } from "../domain/fit/admissionFit";
-import { extractPdfText } from "../rag/pdf";
+import { documentsHaveExtraction, profileHasAcademicData } from "../domain/profileStatus";
+import { extractDocument } from "../rag/documentExtraction";
 import { saveProgram } from "../storage/repository";
 import { Button } from "../components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/ui/card";
@@ -90,25 +91,28 @@ export function NewProgramCheck({ profile, documents, settings, onDataChange }: 
     };
   }
 
-  async function handlePdf(event: ChangeEvent<HTMLInputElement>) {
+  async function handleImport(event: ChangeEvent<HTMLInputElement>) {
     const file = event.target.files?.[0];
     if (!file) return;
     setBusy(true);
     setMessage("");
     try {
-      const extracted = await extractPdfText(file);
-      if (!extracted.text.trim()) throw new Error("No selectable text found in this PDF.");
+      const extracted = await extractDocument(file, (extractionEvent) => setMessage(extractionEvent.message));
+      if (!extracted.text.trim()) throw new Error("No text could be read from this file, even with OCR.");
       setAdmissionText((current) => `${current}\n${extracted.text}`.trim());
-      setMessage(`Imported text from ${file.name}.`);
+      setMessage(`Imported text from ${file.name}${extracted.usedOcr ? " (OCR)" : ""}.`);
     } catch (error) {
-      setMessage(error instanceof Error ? error.message : "Could not read the PDF.");
+      setMessage(error instanceof Error ? error.message : "Could not read the file.");
     } finally {
       setBusy(false);
       event.target.value = "";
     }
   }
 
+  const needsProfileReview = !profileHasAcademicData(profile) && documentsHaveExtraction(documents);
+
   function analyze() {
+    if (needsProfileReview) return;
     const built = buildProgram();
     setProgram(built);
     setAnalysis(analyzeFit(profile, documents, built));
@@ -133,7 +137,7 @@ export function NewProgramCheck({ profile, documents, settings, onDataChange }: 
         </div>
         <h2 className="mt-2 text-2xl font-semibold text-foreground">Add a program and analyze your fit.</h2>
         <p className="mt-1 text-sm leading-6 text-muted-foreground">
-          Paste the admission requirements text (or import a PDF). The check compares it against your saved profile.
+          Paste the admission requirements text (or import a PDF or image). The check compares it against your saved profile.
         </p>
       </header>
 
@@ -186,17 +190,27 @@ export function NewProgramCheck({ profile, documents, settings, onDataChange }: 
           <div className="flex flex-wrap gap-2">
             <label className="inline-flex cursor-pointer items-center gap-2 rounded-md border border-border bg-background px-3 py-2 text-sm font-semibold hover:bg-muted">
               {busy ? <Loader2 className="h-4 w-4 animate-spin" /> : <FileUp className="h-4 w-4" />}
-              Import PDF
-              <input className="sr-only" type="file" accept="application/pdf,.pdf" onChange={handlePdf} disabled={busy} />
+              Import PDF, image, or screenshot
+              <input
+                className="sr-only"
+                type="file"
+                accept="application/pdf,.pdf,image/png,image/jpeg,.png,.jpg,.jpeg"
+                onChange={handleImport}
+                disabled={busy}
+              />
             </label>
-            <span className="inline-flex items-center gap-2 rounded-md border border-dashed border-border px-3 py-2 text-sm text-muted-foreground" title="Screenshot OCR is not available yet">
-              <ImageOff className="h-4 w-4" />
-              Screenshot (OCR coming soon)
-            </span>
+            <span className="inline-flex items-center gap-2 text-xs text-muted-foreground">Scanned files are read locally with OCR.</span>
           </div>
           {message ? <p className="rounded-md bg-muted p-3 text-sm text-muted-foreground">{message}</p> : null}
 
-          <Button className="w-fit" onClick={analyze} disabled={!canAnalyze}>
+          {needsProfileReview ? (
+            <div className="flex items-start gap-2 rounded-md border border-amber-200 bg-amber-50 p-3 text-sm leading-6 text-amber-900">
+              <AlertCircle className="mt-0.5 h-4 w-4 shrink-0" />
+              Review and save your extracted profile before running fit analysis.
+            </div>
+          ) : null}
+
+          <Button className="w-fit" onClick={analyze} disabled={!canAnalyze || needsProfileReview}>
             <GraduationCap className="h-4 w-4" />
             Analyze Fit
           </Button>

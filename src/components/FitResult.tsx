@@ -47,6 +47,19 @@ export function FitResult({ analysis }: { analysis: FitAnalysis }) {
         </div>
       ) : null}
 
+      {analysis.risks.length > 0 ? (
+        <section className="grid gap-2">
+          <h4 className="text-sm font-semibold text-foreground">Risks</h4>
+          <div className="grid gap-2">
+            {analysis.risks.map((risk) => (
+              <p key={risk} className="rounded-md border border-amber-200 bg-amber-50 p-3 text-sm leading-6 text-amber-900">
+                {risk}
+              </p>
+            ))}
+          </div>
+        </section>
+      ) : null}
+
       {analysis.checks.length > 0 ? (
         <section className="grid gap-2">
           <h4 className="text-sm font-semibold text-foreground">Requirement checks</h4>

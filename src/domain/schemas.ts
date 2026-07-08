@@ -3,7 +3,9 @@ import { z } from "zod";
 export const languageCertificateSchema = z.object({
   language: z.string(),
   test: z.string().optional(),
+  provider: z.string().optional(),
   level: z.string().optional(),
+  date: z.string().optional(),
 });
 
 export const extractedProfileSchema = z.object({
@@ -13,6 +15,7 @@ export const extractedProfileSchema = z.object({
   university: z.string().optional(),
   gpa: z.string().optional(),
   ects: z.string().optional(),
+  graduationDate: z.string().optional(),
   courses: z.array(z.string()).optional(),
   workExperience: z.array(z.string()).optional(),
   languageCertificates: z.array(languageCertificateSchema).optional(),
@@ -26,6 +29,7 @@ export const academicProfileSchema = z.object({
   university: z.string().optional(),
   gpa: z.string().optional(),
   ects: z.string().optional(),
+  graduationDate: z.string().optional(),
   courses: z.array(z.string()).default([]),
   languageCertificates: z.array(languageCertificateSchema).default([]),
   workExperience: z.string().default(""),

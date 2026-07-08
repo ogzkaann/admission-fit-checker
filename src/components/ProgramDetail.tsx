@@ -1,8 +1,9 @@
 import { useMemo, useState } from "react";
-import { CalendarDays, ExternalLink, GraduationCap, Languages, Wallet } from "lucide-react";
+import { AlertCircle, CalendarDays, ExternalLink, GraduationCap, Languages, Wallet } from "lucide-react";
 import type { AcademicProfile, FitAnalysis, Program, RequirementKind, StoredDocument } from "../domain/types";
 import { degreeTypeLabels, documentKindLabels, requirementKindLabels } from "../domain/labels";
 import { analyzeFit } from "../domain/fit/admissionFit";
+import { documentsHaveExtraction, profileHasAcademicData } from "../domain/profileStatus";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
 import { Dialog } from "./ui/dialog";
@@ -48,6 +49,7 @@ function RequirementGroup({ program }: { program: Program }) {
 
 export function ProgramDetail({ program, profile, documents, settings, open, onOpenChange }: ProgramDetailProps) {
   const [analysis, setAnalysis] = useState<FitAnalysis | null>(null);
+  const needsProfileReview = !profileHasAcademicData(profile) && documentsHaveExtraction(documents);
   const initials = useMemo(
     () =>
       program.university
@@ -131,8 +133,18 @@ export function ProgramDetail({ program, profile, documents, settings, open, onO
           {program.lastChecked ? <span>Last checked {program.lastChecked}</span> : null}
         </div>
 
+        {needsProfileReview ? (
+          <div className="flex items-start gap-2 rounded-md border border-amber-200 bg-amber-50 p-3 text-sm leading-6 text-amber-900">
+            <AlertCircle className="mt-0.5 h-4 w-4 shrink-0" />
+            Review and save your extracted profile before running fit analysis.
+          </div>
+        ) : null}
+
         <div className="flex flex-wrap gap-2 border-t border-border pt-4">
-          <Button onClick={() => setAnalysis(analyzeFit(profile, documents, program))}>
+          <Button
+            onClick={() => setAnalysis(analyzeFit(profile, documents, program))}
+            disabled={needsProfileReview}
+          >
             <GraduationCap className="h-4 w-4" />
             Check my fit
           </Button>

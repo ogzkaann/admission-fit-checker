@@ -9,6 +9,7 @@ import type {
   StoredDocument,
 } from "../types";
 import { verdictDescriptions } from "../labels";
+import { profileHasAcademicData } from "../profileStatus";
 
 const CEFR_RANK: Record<string, number> = {
   none: 0,
@@ -151,25 +152,61 @@ function buildCitations(program: Program): EvidenceCitation[] {
   ];
 }
 
-function decideVerdict(decisive: RequirementCheck[]): { verdict: FitVerdict; score: number } {
+interface VerdictOutcome {
+  verdict: FitVerdict;
+  score: number;
+  risks: string[];
+}
+
+// Language-aware aggregation over decisive checks. A profile that meets the
+// academic requirements but is only missing a language certificate should be
+// "possible but risky" (language unverified), never "not enough data".
+function decideVerdict(decisive: RequirementCheck[]): VerdictOutcome {
   const total = decisive.length;
-  if (total === 0) return { verdict: "not_enough_data", score: 0 };
+  if (total === 0) return { verdict: "not_enough_data", score: 0, risks: [] };
+
+  const nonLang = decisive.filter((c) => c.kind !== "language");
+  const lang = decisive.filter((c) => c.kind === "language");
 
   const met = decisive.filter((c) => c.status === "met").length;
   const notMet = decisive.filter((c) => c.status === "not_met").length;
-  const unknown = decisive.filter((c) => c.status === "unknown").length;
   const score = met / total;
 
-  if (unknown >= Math.ceil(total * 0.6)) return { verdict: "not_enough_data", score };
-  if (notMet >= 2) return { verdict: "not_recommended", score };
-  if (notMet === 0 && met >= Math.max(2, Math.ceil(total * 0.6))) return { verdict: "strong_fit", score };
-  return { verdict: "possible_risky", score };
+  const risks: string[] = [];
+  const languageMissing = lang.some((c) => c.status === "unknown");
+  const languageBelow = lang.some((c) => c.status === "not_met");
+  if (languageMissing) risks.push("Language requirement is not yet verified.");
+  if (languageBelow) risks.push("Your language level appears below the requirement.");
+
+  // If we know nothing about the academic (non-language) requirements, we can't
+  // judge fit yet.
+  const nonLangKnown = nonLang.filter((c) => c.status !== "unknown").length;
+  if (nonLang.length > 0 && nonLangKnown === 0) {
+    return { verdict: "not_enough_data", score, risks };
+  }
+
+  if (notMet >= 2) return { verdict: "not_recommended", score, risks };
+
+  if (notMet === 0) {
+    const nonLangUnknown = nonLang.filter((c) => c.status === "unknown").length;
+    if (languageMissing) return { verdict: "possible_risky", score, risks };
+    if (nonLangUnknown === 0 && met >= Math.max(2, Math.ceil(total * 0.6))) {
+      return { verdict: "strong_fit", score, risks };
+    }
+    return { verdict: "possible_risky", score, risks };
+  }
+
+  // Exactly one requirement not met.
+  return { verdict: "possible_risky", score, risks };
 }
 
-function summarize(verdict: FitVerdict, program: Program, missing: string[]): string {
+function summarize(verdict: FitVerdict, program: Program, missing: string[], risks: string[]): string {
   const base = verdictDescriptions[verdict];
   if (verdict === "not_enough_data" && missing.length > 0) {
     return `${base} Add the following to your profile for a better check: ${Array.from(new Set(missing)).join(", ")}.`;
+  }
+  if (risks.length > 0) {
+    return `${base} ${risks.join(" ")}`;
   }
   return `${base} Always verify against ${program.university}'s official page before applying.`;
 }
@@ -181,15 +218,16 @@ export function analyzeFit(
 ): FitAnalysis {
   const missing: string[] = [];
 
-  const emptyProfile =
-    !profile || (!profile.degree && !profile.field && !profile.ects && profile.languageCertificates.length === 0);
+  const emptyProfile = !profile || !profileHasAcademicData(profile);
 
   const checks: RequirementCheck[] = emptyProfile
     ? []
     : program.requirements.map((req) => evaluateRequirement(profile as AcademicProfile, documents, req, missing));
 
   const decisive = checks.filter((c) => c.decisive);
-  const { verdict, score } = emptyProfile ? { verdict: "not_enough_data" as FitVerdict, score: 0 } : decideVerdict(decisive);
+  const outcome: VerdictOutcome = emptyProfile
+    ? { verdict: "not_enough_data", score: 0, risks: [] }
+    : decideVerdict(decisive);
 
   if (emptyProfile) {
     missing.push("Academic profile (degree, field, ECTS, language)");
@@ -197,11 +235,12 @@ export function analyzeFit(
 
   return {
     programId: program.id,
-    verdict,
-    score,
-    summary: summarize(verdict, program, missing),
+    verdict: outcome.verdict,
+    score: outcome.score,
+    summary: summarize(outcome.verdict, program, missing, outcome.risks),
     checks,
     citations: buildCitations(program),
+    risks: outcome.risks,
     missingProfileData: Array.from(new Set(missing)),
     needsVerification: program.origin === "demo" || decisive.some((c) => c.status === "unknown") || emptyProfile,
     createdAt: new Date().toISOString(),

@@ -42,6 +42,33 @@ export async function extractPdfText(input: File | Blob | ArrayBuffer): Promise<
   };
 }
 
+// Renders the first `maxPages` pages of a PDF to canvases, for OCR fallback
+// when a PDF has no (or too little) selectable text.
+export async function renderPdfToImages(
+  input: File | Blob | ArrayBuffer,
+  maxPages = 5,
+  scale = 2,
+): Promise<HTMLCanvasElement[]> {
+  const data = await toArrayBuffer(input);
+  const pdf = await pdfjsLib.getDocument({ data }).promise;
+  const pageCount = Math.min(pdf.numPages, maxPages);
+  const canvases: HTMLCanvasElement[] = [];
+
+  for (let pageNumber = 1; pageNumber <= pageCount; pageNumber += 1) {
+    const page = await pdf.getPage(pageNumber);
+    const viewport = page.getViewport({ scale });
+    const canvas = document.createElement("canvas");
+    canvas.width = Math.ceil(viewport.width);
+    canvas.height = Math.ceil(viewport.height);
+    const context = canvas.getContext("2d");
+    if (!context) continue;
+    await page.render({ canvasContext: context, viewport }).promise;
+    canvases.push(canvas);
+  }
+
+  return canvases;
+}
+
 export async function fetchAndExtractPdf(filePath: string): Promise<ExtractedPdfText> {
   const response = await fetch(filePath);
   if (!response.ok) {

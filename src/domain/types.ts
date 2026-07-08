@@ -10,8 +10,10 @@ export type FitVerdict = "strong_fit" | "possible_risky" | "not_recommended" | "
 
 export interface LanguageCertificate {
   language: string; // e.g. "English", "German"
-  test?: string; // e.g. "IELTS", "TOEFL", "TestDaF"
+  test?: string; // e.g. "IELTS", "TOEFL", "TestDaF" (kept for backward compatibility)
+  provider?: string; // issuing body, e.g. "telc", "IELTS", "TOEFL", "Goethe"
   level?: string; // CEFR level where known, e.g. "B2", "C1"
+  date?: string; // certificate/test date where known
 }
 
 // Structured fields an AI/heuristic extractor can read out of a document.
@@ -22,6 +24,7 @@ export interface ExtractedProfile {
   university?: string;
   gpa?: string;
   ects?: string;
+  graduationDate?: string;
   courses?: string[];
   workExperience?: string[];
   languageCertificates?: LanguageCertificate[];
@@ -36,6 +39,7 @@ export interface AcademicProfile {
   university?: string;
   gpa?: string;
   ects?: string;
+  graduationDate?: string;
   courses: string[];
   languageCertificates: LanguageCertificate[];
   workExperience: string;
@@ -120,6 +124,7 @@ export interface FitAnalysis {
   summary: string;
   checks: RequirementCheck[];
   citations: EvidenceCitation[];
+  risks: string[];
   missingProfileData: string[];
   needsVerification: boolean;
   createdAt: string;
