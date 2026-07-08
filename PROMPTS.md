@@ -1,28 +1,18 @@
 # Prompts
 
-The app uses strict prompts when BYOK AI is enabled.
+The app uses strict prompts only when BYOK AI is enabled. Without an API key, it falls back to local heuristics.
 
 ## Profile Extraction Prompt
 
-The model may extract structured JSON from user-provided document text. It must not infer unsupported values. Unknown fields should be omitted or left empty.
+The model extracts structured academic JSON from user-provided document text: `name`, `degree`, `field`, `university`, `gpa`, `ects`, `courses`, `workExperience`, and `languageCertificates`. It must not infer unsupported values; unknown fields are omitted. Extracted fields are shown for user review and are only saved when the user confirms.
 
-## RAG Answer Prompt
+## Ask-About-Program Prompt
 
-The model receives:
+The model answers questions about a single program using only that program's own information (description, requirements, deadline, fee). It must:
 
-- user question,
-- retrieved source chunks,
-- editable user profile context,
-- citation metadata.
+- answer only from the provided program text,
+- cite the matched snippets by number,
+- say `Not found in this program's information.` when evidence is missing,
+- never invent admission requirements, deadlines, or fees.
 
-It must:
-
-- answer only from retrieved chunks and profile context,
-- cite source title, authority, file name, page, and chunk where available,
-- say `Not found in provided sources.` when evidence is missing,
-- avoid final legal advice,
-- mark uncertainty and official verification needs.
-
-## Checklist Prompt
-
-The model may suggest a checklist only from sourced findings and transparent rule outputs. It must not invent required documents.
+If AI is unavailable, the app shows the matching program text as a fallback instead of a generated answer.

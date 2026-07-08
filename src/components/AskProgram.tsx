@@ -28,7 +28,7 @@ export function AskProgram({ program, settings }: AskProgramProps) {
         Ask about this program
       </div>
       <p className="text-xs leading-5 text-muted-foreground">
-        Answers come only from this program's own information — not general legal advice.
+        Answers come only from this program's own information — not official admission advice.
       </p>
       <Textarea
         className="min-h-16 text-sm"
