@@ -1,4 +1,4 @@
-import { CheckCircle2, CircleSlash, FileText, HelpCircle, ShieldAlert } from "lucide-react";
+import { CheckCircle2, CircleSlash, FileText, HelpCircle, ShieldAlert, Sparkles } from "lucide-react";
 import type { FitAnalysis, RequirementCheck } from "../domain/types";
 import { VerdictBadge } from "./VerdictBadge";
 import { Badge } from "./ui/badge";
@@ -10,19 +10,21 @@ const statusIcon = {
 };
 
 const statusColor = {
-  met: "text-emerald-600",
-  not_met: "text-red-600",
-  unknown: "text-muted-foreground",
+  met: "text-emerald-600 bg-emerald-50 border-emerald-100",
+  not_met: "text-red-600 bg-red-50 border-red-100",
+  unknown: "text-slate-500 bg-slate-50 border-slate-100",
 };
 
 function CheckRow({ check }: { check: RequirementCheck }) {
   const Icon = statusIcon[check.status];
   return (
-    <div className="flex items-start gap-3 rounded-md border border-border bg-background p-3">
-      <Icon className={`mt-0.5 h-4 w-4 shrink-0 ${statusColor[check.status]}`} />
-      <div className="min-w-0">
-        <p className="text-sm font-medium text-foreground">{check.label}</p>
-        <p className="mt-0.5 text-xs leading-5 text-muted-foreground">{check.detail}</p>
+    <div className="flex min-w-0 items-start gap-3 rounded-2xl border border-indigo-100 bg-white/75 p-4 shadow-sm">
+      <span className={`mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border ${statusColor[check.status]}`}>
+        <Icon className="h-4 w-4" />
+      </span>
+      <div className="min-w-0 flex-1">
+        <p className="text-sm font-semibold text-foreground">{check.label}</p>
+        <p className="mt-1 text-sm leading-6 text-muted-foreground">{check.detail}</p>
       </div>
       {!check.decisive ? <Badge variant="outline">info</Badge> : null}
     </div>
@@ -31,28 +33,33 @@ function CheckRow({ check }: { check: RequirementCheck }) {
 
 export function FitResult({ analysis }: { analysis: FitAnalysis }) {
   return (
-    <div className="grid gap-4">
-      <div className="flex flex-wrap items-center justify-between gap-3 rounded-lg border border-border bg-muted/40 p-4">
-        <div className="min-w-0">
-          <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">Fit verdict</p>
-          <p className="mt-1 text-sm leading-6 text-foreground">{analysis.summary}</p>
+    <div className="grid min-w-0 gap-5">
+      <div className="overflow-hidden rounded-[1.75rem] border border-white/70 bg-gradient-to-br from-indigo-50 via-white to-cyan-50 p-5 shadow-crisp">
+        <div className="flex flex-wrap items-start justify-between gap-4">
+          <div className="min-w-0 max-w-2xl">
+            <p className="flex items-center gap-2 text-xs font-semibold uppercase text-primary">
+              <Sparkles className="h-3.5 w-3.5" />
+              Fit verdict
+            </p>
+            <p className="mt-3 text-lg font-semibold leading-7 text-foreground">{analysis.summary}</p>
+          </div>
+          <VerdictBadge verdict={analysis.verdict} className="text-sm" />
         </div>
-        <VerdictBadge verdict={analysis.verdict} />
       </div>
 
       {analysis.needsVerification ? (
-        <div className="flex items-start gap-3 rounded-lg border border-amber-200 bg-amber-50 p-3 text-xs leading-5 text-amber-900">
-          <ShieldAlert className="mt-0.5 h-4 w-4 shrink-0" />
+        <div className="flex items-start gap-3 rounded-2xl border border-amber-200 bg-amber-50 p-4 text-sm leading-6 text-amber-900">
+          <ShieldAlert className="mt-0.5 h-5 w-5 shrink-0" />
           <p>This is a source-aware estimate, not an admission decision. Verify every requirement on the official program page.</p>
         </div>
       ) : null}
 
       {analysis.risks.length > 0 ? (
-        <section className="grid gap-2">
-          <h4 className="text-sm font-semibold text-foreground">Risks</h4>
+        <section className="grid gap-3">
+          <h4 className="text-base font-semibold text-foreground">Risks to review</h4>
           <div className="grid gap-2">
             {analysis.risks.map((risk) => (
-              <p key={risk} className="rounded-md border border-amber-200 bg-amber-50 p-3 text-sm leading-6 text-amber-900">
+              <p key={risk} className="rounded-2xl border border-amber-200 bg-amber-50 p-4 text-sm leading-6 text-amber-900">
                 {risk}
               </p>
             ))}
@@ -61,8 +68,8 @@ export function FitResult({ analysis }: { analysis: FitAnalysis }) {
       ) : null}
 
       {analysis.checks.length > 0 ? (
-        <section className="grid gap-2">
-          <h4 className="text-sm font-semibold text-foreground">Requirement checks</h4>
+        <section className="grid gap-3">
+          <h4 className="text-base font-semibold text-foreground">Requirement checklist</h4>
           <div className="grid gap-2">
             {analysis.checks.map((check) => (
               <CheckRow key={check.requirementId} check={check} />
@@ -72,7 +79,7 @@ export function FitResult({ analysis }: { analysis: FitAnalysis }) {
       ) : null}
 
       {analysis.missingProfileData.length > 0 ? (
-        <section className="grid gap-2 rounded-lg border border-border bg-slate-50 p-3">
+        <section className="grid gap-3 rounded-2xl border border-indigo-100 bg-indigo-50/70 p-4">
           <p className="text-sm font-semibold text-foreground">Add to your profile for a sharper check</p>
           <div className="flex flex-wrap gap-1.5">
             {analysis.missingProfileData.map((item) => (
@@ -84,19 +91,19 @@ export function FitResult({ analysis }: { analysis: FitAnalysis }) {
         </section>
       ) : null}
 
-      <section className="grid gap-2">
-        <h4 className="flex items-center gap-2 text-sm font-semibold text-foreground">
-          <FileText className="h-4 w-4" />
+      <section className="grid gap-3">
+        <h4 className="flex items-center gap-2 text-base font-semibold text-foreground">
+          <FileText className="h-4 w-4 text-primary" />
           Evidence
         </h4>
         <div className="grid gap-2">
           {analysis.citations.map((citation) => (
-            <div key={citation.id} className="rounded-md border border-border bg-slate-50 p-3">
-              <p className="text-xs font-semibold text-foreground">{citation.label}</p>
-              <p className="mt-1 text-xs leading-5 text-muted-foreground">{citation.snippet}</p>
+            <div key={citation.id} className="min-w-0 rounded-2xl border border-indigo-100 bg-white/75 p-4 shadow-sm">
+              <p className="text-sm font-semibold text-foreground">{citation.label}</p>
+              <p className="mt-1 text-sm leading-6 text-muted-foreground">{citation.snippet}</p>
               {citation.sourceUrl ? (
                 <a
-                  className="mt-1 inline-block break-all text-xs text-accent hover:underline"
+                  className="mt-2 inline-block break-all text-sm font-medium text-accent hover:underline"
                   href={citation.sourceUrl}
                   target="_blank"
                   rel="noreferrer"
@@ -105,7 +112,7 @@ export function FitResult({ analysis }: { analysis: FitAnalysis }) {
                 </a>
               ) : null}
               {citation.lastChecked ? (
-                <span className="ml-2 text-xs text-muted-foreground">· checked {citation.lastChecked}</span>
+                <span className="mt-2 block text-xs font-medium text-muted-foreground">Checked {citation.lastChecked}</span>
               ) : null}
             </div>
           ))}

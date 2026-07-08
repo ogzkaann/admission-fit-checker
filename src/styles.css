@@ -3,28 +3,28 @@
 @tailwind utilities;
 
 :root {
-  --background: 210 20% 97%;
-  --foreground: 222 29% 12%;
+  --background: 222 100% 98%;
+  --foreground: 229 47% 13%;
   --card: 0 0% 100%;
-  --card-foreground: 222 29% 12%;
-  --primary: 222 28% 13%;
+  --card-foreground: 229 47% 13%;
+  --primary: 248 84% 58%;
   --primary-foreground: 0 0% 100%;
-  --secondary: 210 16% 92%;
-  --secondary-foreground: 222 25% 15%;
-  --muted: 210 18% 93%;
-  --muted-foreground: 216 12% 42%;
-  --accent: 205 80% 44%;
-  --accent-foreground: 0 0% 100%;
+  --secondary: 226 100% 96%;
+  --secondary-foreground: 244 60% 32%;
+  --muted: 220 60% 96%;
+  --muted-foreground: 225 15% 45%;
+  --accent: 190 95% 43%;
+  --accent-foreground: 210 40% 98%;
   --destructive: 0 73% 48%;
   --destructive-foreground: 0 0% 100%;
-  --success: 151 55% 34%;
+  --success: 158 64% 38%;
   --success-foreground: 0 0% 100%;
   --warning: 38 88% 47%;
   --warning-foreground: 30 40% 12%;
-  --border: 214 18% 86%;
-  --input: 214 18% 82%;
-  --ring: 215 75% 40%;
-  --radius: 0.5rem;
+  --border: 226 55% 88%;
+  --input: 226 55% 86%;
+  --ring: 248 84% 64%;
+  --radius: 1.25rem;
 }
 
 * {
@@ -42,7 +42,10 @@ html {
 body {
   min-width: 320px;
   margin: 0;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(246, 248, 250, 0.98)), hsl(var(--background));
+  background:
+    radial-gradient(circle at 15% 0%, rgba(34, 211, 238, 0.18), transparent 30rem),
+    radial-gradient(circle at 88% 8%, rgba(124, 58, 237, 0.16), transparent 26rem),
+    linear-gradient(180deg, #f8fbff 0%, #f5f7ff 48%, #ffffff 100%);
   color: hsl(var(--foreground));
   font-family:
     Inter,
@@ -63,8 +66,12 @@ textarea {
 }
 
 ::selection {
-  background: hsl(var(--primary));
+  background: hsl(var(--primary) / 0.88);
   color: hsl(var(--primary-foreground));
+}
+
+a {
+  text-underline-offset: 3px;
 }
 
 .no-scrollbar {

@@ -1,5 +1,5 @@
 import { ChangeEvent, useState } from "react";
-import { AlertCircle, FileUp, GraduationCap, Loader2, Save } from "lucide-react";
+import { AlertCircle, FileText, FileUp, GraduationCap, Loader2, Save, Sparkles } from "lucide-react";
 import type {
   AcademicProfile,
   AppSettings,
@@ -129,108 +129,132 @@ export function NewProgramCheck({ profile, documents, settings, onDataChange }: 
   const canAnalyze = admissionText.trim().length > 0 || programName.trim().length > 0;
 
   return (
-    <div className="mx-auto grid max-w-3xl gap-6 px-4 py-8">
-      <header>
-        <div className="flex items-center gap-2 text-sm font-semibold text-muted-foreground">
-          <GraduationCap className="h-4 w-4" />
+    <div className="mx-auto grid max-w-7xl gap-6 px-4 py-8 sm:px-6 lg:py-10">
+      <header className="rounded-[2rem] border border-white/70 bg-white/80 p-6 shadow-crisp backdrop-blur sm:p-8">
+        <div className="flex items-center gap-3 text-sm font-semibold text-primary">
+          <span className="flex h-10 w-10 items-center justify-center rounded-2xl bg-indigo-50 text-primary">
+            <GraduationCap className="h-5 w-5" />
+          </span>
           Check a Program
         </div>
-        <h2 className="mt-2 text-2xl font-semibold text-foreground">Add a program and analyze your fit.</h2>
-        <p className="mt-1 text-sm leading-6 text-muted-foreground">
-          Paste the admission requirements text (or import a PDF or image). The check compares it against your saved profile.
+        <h2 className="mt-5 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">Add admission text and analyze your fit.</h2>
+        <p className="mt-3 max-w-3xl text-base leading-7 text-muted-foreground">
+          Paste requirements from the program page or import a PDF, screenshot, or image. The check compares the source text with your saved profile.
         </p>
       </header>
 
-      <Card>
-        <CardHeader>
-          <CardTitle>Program details</CardTitle>
-          <CardDescription>Only the admission text is required for a basic check.</CardDescription>
-        </CardHeader>
-        <CardContent className="grid gap-4">
-          <div className="grid gap-4 sm:grid-cols-2">
-            <label className="grid gap-2 text-sm font-medium">
-              University name
-              <Input value={university} onChange={(event) => setUniversity(event.target.value)} placeholder="e.g. University of Amsterdam" />
-            </label>
-            <label className="grid gap-2 text-sm font-medium">
-              Program name
-              <Input value={programName} onChange={(event) => setProgramName(event.target.value)} placeholder="e.g. M.Sc. Data Science" />
-            </label>
-            <label className="grid gap-2 text-sm font-medium">
-              Degree type
-              <Select value={degreeType} onChange={(event) => setDegreeType(event.target.value as DegreeType)}>
-                {(Object.keys(degreeTypeLabels) as DegreeType[]).map((item) => (
-                  <option key={item} value={item}>
-                    {degreeTypeLabels[item]}
-                  </option>
-                ))}
-              </Select>
-            </label>
-            <label className="grid gap-2 text-sm font-medium">
-              Language of instruction
-              <Input value={language} onChange={(event) => setLanguage(event.target.value)} />
-            </label>
-          </div>
+      <div className="grid gap-6 lg:grid-cols-[0.95fr_1.05fr]">
+        <Card>
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <FileText className="h-5 w-5 text-primary" />
+              Program details
+            </CardTitle>
+            <CardDescription>Only admission text is required for a basic check.</CardDescription>
+          </CardHeader>
+          <CardContent className="grid gap-4">
+            <div className="grid gap-4 sm:grid-cols-2">
+              <label className="grid gap-2 text-sm font-medium">
+                University name
+                <Input value={university} onChange={(event) => setUniversity(event.target.value)} placeholder="e.g. University of Amsterdam" />
+              </label>
+              <label className="grid gap-2 text-sm font-medium">
+                Program name
+                <Input value={programName} onChange={(event) => setProgramName(event.target.value)} placeholder="e.g. M.Sc. Data Science" />
+              </label>
+              <label className="grid gap-2 text-sm font-medium">
+                Degree type
+                <Select value={degreeType} onChange={(event) => setDegreeType(event.target.value as DegreeType)}>
+                  {(Object.keys(degreeTypeLabels) as DegreeType[]).map((item) => (
+                    <option key={item} value={item}>
+                      {degreeTypeLabels[item]}
+                    </option>
+                  ))}
+                </Select>
+              </label>
+              <label className="grid gap-2 text-sm font-medium">
+                Language of instruction
+                <Input value={language} onChange={(event) => setLanguage(event.target.value)} />
+              </label>
+            </div>
 
-          <label className="grid gap-2 text-sm font-medium">
-            Program link (optional)
-            <Input value={link} onChange={(event) => setLink(event.target.value)} placeholder="https://…" />
-          </label>
+            <label className="grid gap-2 text-sm font-medium">
+              Program link (optional)
+              <Input value={link} onChange={(event) => setLink(event.target.value)} placeholder="https://..." />
+            </label>
 
-          <label className="grid gap-2 text-sm font-medium">
-            Admission requirements text
-            <Textarea
-              className="min-h-40"
-              value={admissionText}
-              onChange={(event) => setAdmissionText(event.target.value)}
-              placeholder="Paste the program's admission requirements here…"
-            />
-          </label>
-
-          <div className="flex flex-wrap gap-2">
-            <label className="inline-flex cursor-pointer items-center gap-2 rounded-md border border-border bg-background px-3 py-2 text-sm font-semibold hover:bg-muted">
-              {busy ? <Loader2 className="h-4 w-4 animate-spin" /> : <FileUp className="h-4 w-4" />}
-              Import PDF, image, or screenshot
-              <input
-                className="sr-only"
-                type="file"
-                accept="application/pdf,.pdf,image/png,image/jpeg,.png,.jpg,.jpeg"
-                onChange={handleImport}
-                disabled={busy}
+            <label className="grid gap-2 text-sm font-medium">
+              Admission requirements text
+              <Textarea
+                className="min-h-48"
+                value={admissionText}
+                onChange={(event) => setAdmissionText(event.target.value)}
+                placeholder="Paste the program's admission requirements here..."
               />
             </label>
-            <span className="inline-flex items-center gap-2 text-xs text-muted-foreground">Scanned files are read locally with OCR.</span>
-          </div>
-          {message ? <p className="rounded-md bg-muted p-3 text-sm text-muted-foreground">{message}</p> : null}
 
-          {needsProfileReview ? (
-            <div className="flex items-start gap-2 rounded-md border border-amber-200 bg-amber-50 p-3 text-sm leading-6 text-amber-900">
-              <AlertCircle className="mt-0.5 h-4 w-4 shrink-0" />
-              Review and save your extracted profile before running fit analysis.
+            <div className="flex flex-wrap items-center gap-2">
+              <label className="inline-flex h-11 cursor-pointer items-center gap-2 rounded-full border border-indigo-100 bg-white px-4 text-sm font-semibold shadow-sm transition hover:border-primary/30">
+                {busy ? <Loader2 className="h-4 w-4 animate-spin" /> : <FileUp className="h-4 w-4" />}
+                Import PDF, image, or screenshot
+                <input
+                  className="sr-only"
+                  type="file"
+                  accept="application/pdf,.pdf,image/png,image/jpeg,.png,.jpg,.jpeg"
+                  onChange={handleImport}
+                  disabled={busy}
+                />
+              </label>
+              <span className="text-xs font-medium text-muted-foreground">Scanned files are read locally with OCR.</span>
             </div>
-          ) : null}
+            {message ? <p className="rounded-2xl bg-indigo-50 p-3 text-sm text-muted-foreground">{message}</p> : null}
 
-          <Button className="w-fit" onClick={analyze} disabled={!canAnalyze || needsProfileReview}>
-            <GraduationCap className="h-4 w-4" />
-            Analyze Fit
-          </Button>
-        </CardContent>
-      </Card>
+            {needsProfileReview ? (
+              <div className="flex items-start gap-2 rounded-2xl border border-amber-200 bg-amber-50 p-4 text-sm leading-6 text-amber-900">
+                <AlertCircle className="mt-0.5 h-4 w-4 shrink-0" />
+                Review and save your extracted profile before running fit analysis.
+              </div>
+            ) : null}
 
-      {analysis ? (
-        <Card>
-          <CardHeader className="flex-row items-center justify-between space-y-0">
-            <CardTitle>Result</CardTitle>
-            <Button variant="outline" size="sm" onClick={saveToLibrary} disabled={saved}>
-              <Save className="h-4 w-4" />
-              {saved ? "Saved to library" : "Save to library"}
+            <Button className="w-fit" onClick={analyze} disabled={!canAnalyze || needsProfileReview}>
+              <Sparkles className="h-4 w-4" />
+              Analyze fit
             </Button>
-          </CardHeader>
-          <CardContent>
-            <FitResult analysis={analysis} />
           </CardContent>
         </Card>
-      ) : null}
+
+        <div className="min-w-0">
+          {analysis ? (
+            <Card className="overflow-hidden">
+              <CardHeader className="flex-row items-center justify-between gap-3 space-y-0 bg-gradient-to-r from-indigo-50 via-white to-cyan-50">
+                <div>
+                  <CardTitle>Fit result</CardTitle>
+                  <CardDescription>Source-aware estimate from your profile and this program text.</CardDescription>
+                </div>
+                <Button variant="outline" size="sm" onClick={saveToLibrary} disabled={saved}>
+                  <Save className="h-4 w-4" />
+                  {saved ? "Saved" : "Save"}
+                </Button>
+              </CardHeader>
+              <CardContent className="pt-6">
+                <FitResult analysis={analysis} />
+              </CardContent>
+            </Card>
+          ) : (
+            <div className="grid min-h-full place-items-center rounded-[2rem] border border-dashed border-cyan-200 bg-cyan-50/60 p-8 text-center shadow-crisp">
+              <div className="grid max-w-sm justify-items-center gap-3">
+                <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-white text-primary shadow-sm">
+                  <GraduationCap className="h-7 w-7" />
+                </span>
+                <p className="text-xl font-semibold text-foreground">Your fit result will appear here.</p>
+                <p className="text-sm leading-6 text-muted-foreground">
+                  Add program information, then run the check to see verdict, risks, requirement checks, and evidence.
+                </p>
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
     </div>
   );
 }

@@ -50,8 +50,9 @@ const config: Config = {
         sm: "calc(var(--radius) - 4px)",
       },
       boxShadow: {
-        soft: "0 18px 60px rgba(18, 25, 38, 0.08)",
-        crisp: "0 1px 2px rgba(16, 24, 40, 0.06), 0 1px 3px rgba(16, 24, 40, 0.1)",
+        soft: "0 24px 70px rgba(45, 55, 120, 0.12)",
+        crisp: "0 10px 30px rgba(45, 55, 120, 0.08), 0 1px 2px rgba(45, 55, 120, 0.05)",
+        glow: "0 18px 46px rgba(34, 211, 238, 0.18)",
       },
       fontFamily: {
         sans: [

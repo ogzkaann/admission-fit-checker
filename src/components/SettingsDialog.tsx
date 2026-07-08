@@ -74,7 +74,7 @@ export function SettingsDialog({ open, settings, onOpenChange, onSave }: Setting
       }
     >
       <div className="grid gap-4">
-        <div className="rounded-lg border border-amber-200 bg-amber-50 p-3 text-sm leading-6 text-amber-900">
+        <div className="rounded-2xl border border-amber-200 bg-amber-50 p-4 text-sm leading-6 text-amber-900">
           <div className="flex items-start gap-2">
             <ShieldAlert className="mt-0.5 h-4 w-4 shrink-0" />
             <p>
@@ -119,7 +119,7 @@ export function SettingsDialog({ open, settings, onOpenChange, onSave }: Setting
           <Input value={draft.model} onChange={(event) => updateField("model", event.target.value)} />
         </label>
 
-        <div className="flex items-center gap-3">
+        <div className="flex flex-wrap items-center gap-3 rounded-2xl bg-indigo-50/70 p-4">
           <Button variant="outline" onClick={handleTest} disabled={testState === "testing"}>
             Test connection
           </Button>

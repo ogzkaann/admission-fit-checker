@@ -1,5 +1,5 @@
 import { ChangeEvent, useEffect, useState } from "react";
-import { AlertCircle, FileUp, Loader2, Plus, Save, Trash2, UserRound, Wand2 } from "lucide-react";
+import { AlertCircle, BookOpenCheck, FileUp, Languages, Loader2, Plus, Save, Trash2, UserRound, Wand2 } from "lucide-react";
 import type {
   AcademicProfile,
   AppSettings,
@@ -63,7 +63,7 @@ const completenessStyles: Record<Completeness, { variant: "green" | "yellow" | "
 function CompletenessPill({ title, status, optional }: { title: string; status: Completeness; optional?: boolean }) {
   const style = completenessStyles[status];
   return (
-    <div className="flex items-center justify-between gap-3 rounded-md border border-border bg-background px-3 py-2">
+    <div className="flex items-center justify-between gap-3 rounded-2xl border border-indigo-100 bg-white/75 px-4 py-3 shadow-sm">
       <span className="text-sm font-medium text-foreground">
         {title}
         {optional ? <span className="ml-1 text-xs font-normal text-muted-foreground">(optional)</span> : null}
@@ -188,23 +188,28 @@ export function ProfileBuilder({ settings, onSaved }: ProfileBuilderProps) {
   }
 
   return (
-    <div className="mx-auto grid max-w-5xl gap-6 px-4 py-8">
-      <header>
-        <div className="flex items-center gap-2 text-sm font-semibold text-muted-foreground">
-          <UserRound className="h-4 w-4" />
+    <div className="mx-auto grid max-w-7xl gap-6 px-4 py-8 sm:px-6 lg:py-10">
+      <header className="rounded-[2rem] border border-white/70 bg-white/80 p-6 shadow-crisp backdrop-blur sm:p-8">
+        <div className="flex items-center gap-3 text-sm font-semibold text-primary">
+          <span className="flex h-10 w-10 items-center justify-center rounded-2xl bg-indigo-50 text-primary">
+            <UserRound className="h-5 w-5" />
+          </span>
           Academic Profile
         </div>
-        <h2 className="mt-2 text-2xl font-semibold text-foreground">Build your academic profile.</h2>
-        <p className="mt-1 max-w-2xl text-sm leading-6 text-muted-foreground">
-          Upload a document to auto-fill fields — scanned PDFs and images are read locally with OCR. Review everything,
+        <h2 className="mt-5 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">Build your academic profile.</h2>
+        <p className="mt-3 max-w-3xl text-base leading-7 text-muted-foreground">
+          Upload a document to auto-fill fields. Scanned PDFs and images are read locally with OCR. Review everything,
           then save. Nothing leaves your browser except text you send to your own AI provider during extraction.
         </p>
       </header>
 
       <Card>
         <CardHeader>
-          <CardTitle>Upload a document</CardTitle>
-          <CardDescription>Transcript, diploma, CV, or language certificate — PDF, PNG, or JPG.</CardDescription>
+          <CardTitle className="flex items-center gap-2">
+            <FileUp className="h-5 w-5 text-primary" />
+            Upload a document
+          </CardTitle>
+          <CardDescription>Transcript, diploma, CV, or language certificate. PDF, PNG, or JPG.</CardDescription>
         </CardHeader>
         <CardContent className="grid gap-4 sm:grid-cols-[220px_1fr]">
           <label className="grid gap-2 text-sm font-medium">
@@ -217,7 +222,7 @@ export function ProfileBuilder({ settings, onSaved }: ProfileBuilderProps) {
               ))}
             </Select>
           </label>
-          <label className="flex min-h-28 cursor-pointer flex-col items-center justify-center rounded-lg border border-dashed border-border bg-slate-50 px-4 py-6 text-center hover:bg-muted">
+          <label className="flex min-h-32 cursor-pointer flex-col items-center justify-center rounded-2xl border border-dashed border-cyan-200 bg-gradient-to-br from-cyan-50 via-white to-indigo-50 px-4 py-6 text-center transition hover:border-primary/40 hover:shadow-crisp">
             {busy ? <Loader2 className="h-7 w-7 animate-spin text-primary" /> : <FileUp className="h-7 w-7 text-primary" />}
             <span className="mt-2 text-sm font-semibold text-foreground">Upload PDF or image</span>
             <span className="mt-1 text-xs text-muted-foreground">Scanned or photographed documents are read with OCR.</span>
@@ -230,18 +235,18 @@ export function ProfileBuilder({ settings, onSaved }: ProfileBuilderProps) {
             />
           </label>
           {busy && status ? (
-            <p className="flex items-center gap-2 rounded-md border border-border bg-background p-3 text-sm text-muted-foreground sm:col-span-2">
+            <p className="flex items-center gap-2 rounded-2xl border border-indigo-100 bg-white/75 p-3 text-sm text-muted-foreground sm:col-span-2">
               <Loader2 className="h-4 w-4 animate-spin" />
               {status}
             </p>
           ) : null}
-          {message ? <p className="rounded-md bg-muted p-3 text-sm leading-6 text-muted-foreground sm:col-span-2">{message}</p> : null}
+          {message ? <p className="rounded-2xl bg-indigo-50 p-3 text-sm leading-6 text-muted-foreground sm:col-span-2">{message}</p> : null}
           {documents.length > 0 ? (
             <div className="grid gap-2 sm:col-span-2">
               {documents.map((document) => (
-                <div key={document.id} className="flex flex-wrap items-center justify-between gap-2 rounded-md border border-border bg-background p-2.5">
+                <div key={document.id} className="flex flex-wrap items-center justify-between gap-2 rounded-2xl border border-indigo-100 bg-white/75 p-3">
                   <span className="text-sm text-foreground">
-                    {documentKindLabels[document.kind]} · {document.fileName}
+                    {documentKindLabels[document.kind]} - {document.fileName}
                   </span>
                   <span className="flex gap-1">
                     <Button variant="ghost" size="sm" onClick={() => reExtract(document)} disabled={busy}>
@@ -261,7 +266,10 @@ export function ProfileBuilder({ settings, onSaved }: ProfileBuilderProps) {
 
       <Card>
         <CardHeader>
-          <CardTitle>Profile completeness</CardTitle>
+          <CardTitle className="flex items-center gap-2">
+            <BookOpenCheck className="h-5 w-5 text-primary" />
+            Profile completeness
+          </CardTitle>
           <CardDescription>What the fit check can and can't evaluate from your current profile.</CardDescription>
         </CardHeader>
         <CardContent className="grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
@@ -274,8 +282,11 @@ export function ProfileBuilder({ settings, onSaved }: ProfileBuilderProps) {
 
       <Card>
         <CardHeader>
-          <CardTitle>Review &amp; edit</CardTitle>
-          <CardDescription>Leave a field empty rather than guessing — the fit check treats unknowns conservatively.</CardDescription>
+          <CardTitle className="flex items-center gap-2">
+            <Languages className="h-5 w-5 text-primary" />
+            Review &amp; edit
+          </CardTitle>
+          <CardDescription>Leave a field empty rather than guessing. The fit check treats unknowns conservatively.</CardDescription>
         </CardHeader>
         <CardContent className="grid gap-5">
           <div className="grid gap-4 md:grid-cols-2">
@@ -318,15 +329,15 @@ export function ProfileBuilder({ settings, onSaved }: ProfileBuilderProps) {
               </Button>
             </div>
             {profile.languageCertificates.length === 0 ? (
-              <p className="rounded-md border border-dashed border-border p-3 text-xs text-muted-foreground">
-                No language certificates yet.
+              <p className="rounded-2xl border border-dashed border-cyan-200 bg-cyan-50/60 p-4 text-sm leading-6 text-muted-foreground">
+                No language certificates yet. Add IELTS, TOEFL, telc, or another certificate when you have it.
               </p>
             ) : (
               profile.languageCertificates.map((cert, index) => (
                 <div key={index} className="grid gap-2 sm:grid-cols-[1fr_1fr_1fr_1fr_auto]">
                   <Input placeholder="Language" value={cert.language} onChange={(event) => updateCertificate(index, { language: event.target.value })} />
-                  <Input placeholder="Provider (telc, IELTS…)" value={cert.provider ?? cert.test ?? ""} onChange={(event) => updateCertificate(index, { provider: event.target.value })} />
-                  <Input placeholder="Level (B2, C1…)" value={cert.level ?? ""} onChange={(event) => updateCertificate(index, { level: event.target.value })} />
+                  <Input placeholder="Provider (telc, IELTS...)" value={cert.provider ?? cert.test ?? ""} onChange={(event) => updateCertificate(index, { provider: event.target.value })} />
+                  <Input placeholder="Level (B2, C1...)" value={cert.level ?? ""} onChange={(event) => updateCertificate(index, { level: event.target.value })} />
                   <Input placeholder="Date" value={cert.date ?? ""} onChange={(event) => updateCertificate(index, { date: event.target.value })} />
                   <Button variant="ghost" size="icon" onClick={() => removeCertificate(index)} aria-label="Remove certificate">
                     <Trash2 className="h-4 w-4" />
@@ -362,13 +373,13 @@ export function ProfileBuilder({ settings, onSaved }: ProfileBuilderProps) {
           </div>
 
           {dirty ? (
-            <div className="flex items-start gap-2 rounded-md border border-amber-200 bg-amber-50 p-3 text-sm leading-6 text-amber-900">
+            <div className="flex items-start gap-2 rounded-2xl border border-amber-200 bg-amber-50 p-4 text-sm leading-6 text-amber-900">
               <AlertCircle className="mt-0.5 h-4 w-4 shrink-0" />
               Review and save your extracted profile before running fit analysis.
             </div>
           ) : null}
 
-          <div className="flex items-center gap-3">
+          <div className="flex flex-wrap items-center gap-3 rounded-2xl bg-gradient-to-r from-indigo-50 to-cyan-50 p-4">
             <Button onClick={handleSave}>
               <Save className="h-4 w-4" />
               Save reviewed profile

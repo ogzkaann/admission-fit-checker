@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-import { GraduationCap, KeyRound, Library, PlusCircle, UserRound } from "lucide-react";
+import { GraduationCap, KeyRound, LayoutDashboard, Library, PlusCircle, Sparkles, UserRound } from "lucide-react";
 import type { AcademicProfile, AppSettings, Program, StoredDocument } from "./domain/types";
 import { loadSettings } from "./ai/settings";
 import { getProfile, listDocuments, listPrograms } from "./storage/repository";
@@ -14,6 +14,7 @@ import { NewProgramCheck } from "./pages/NewProgramCheck";
 type View = "dashboard" | "profile" | "library" | "new-check";
 
 const navItems: Array<{ id: View; label: string; icon: typeof UserRound }> = [
+  { id: "dashboard", label: "Dashboard", icon: LayoutDashboard },
   { id: "profile", label: "Profile", icon: UserRound },
   { id: "library", label: "Program Library", icon: Library },
   { id: "new-check", label: "Check a Program", icon: PlusCircle },
@@ -60,39 +61,44 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      <header className="sticky top-0 z-40 border-b border-border bg-background/90 backdrop-blur">
-        <div className="mx-auto flex min-h-14 max-w-6xl items-center gap-3 px-4">
-          <button className="flex items-center gap-2" onClick={() => setView("dashboard")} aria-label="Go to dashboard">
-            <span className="flex h-8 w-8 items-center justify-center rounded-md bg-primary text-primary-foreground">
+    <div className="min-h-screen overflow-x-hidden text-foreground">
+      <header className="sticky top-0 z-40 border-b border-white/60 bg-white/75 backdrop-blur-xl">
+        <div className="mx-auto flex min-h-16 max-w-7xl items-center gap-3 px-4 sm:px-6">
+          <button className="group flex min-w-0 items-center gap-3" onClick={() => setView("dashboard")} aria-label="Go to dashboard">
+            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-indigo-500 via-violet-500 to-cyan-400 text-primary-foreground shadow-glow transition-transform group-hover:-translate-y-0.5">
               <GraduationCap className="h-5 w-5" />
             </span>
-            <span className="hidden text-sm font-semibold sm:block">Admission Fit Checker</span>
+            <span className="hidden min-w-0 text-left sm:block">
+              <span className="block text-sm font-bold leading-5 text-foreground">Admission Fit Checker</span>
+              <span className="block text-xs font-medium text-muted-foreground">Source-aware fit checks</span>
+            </span>
           </button>
 
-          <nav className="no-scrollbar ml-auto flex min-w-0 items-center gap-1 overflow-x-auto">
+          <nav className="no-scrollbar ml-auto flex min-w-0 items-center gap-1 overflow-x-auto rounded-full border border-white/70 bg-white/65 p-1 shadow-sm">
             {navItems.map((item) => {
               const Icon = item.icon;
               return (
                 <Button
                   key={item.id}
-                  variant={view === item.id ? "secondary" : "ghost"}
+                  variant={view === item.id ? "default" : "ghost"}
                   size="sm"
                   onClick={() => setView(item.id)}
+                  className={view === item.id ? "shadow-sm" : ""}
                 >
                   <Icon className="h-4 w-4" />
-                  <span className="hidden sm:inline">{item.label}</span>
+                  <span className="hidden md:inline">{item.label}</span>
                 </Button>
               );
             })}
           </nav>
 
-          <Badge variant={settings.apiKey ? "green" : "outline"} className="hidden md:inline-flex">
+          <Badge variant={settings.apiKey ? "green" : "outline"} className="hidden lg:inline-flex gap-1.5">
+            <Sparkles className="h-3.5 w-3.5" />
             {settings.apiKey ? settings.providerName : "No API key"}
           </Badge>
           <Button variant="outline" size="sm" onClick={() => setSettingsOpen(true)}>
             <KeyRound className="h-4 w-4" />
-            <span className="hidden sm:inline">Settings</span>
+            <span className="hidden lg:inline">Settings</span>
           </Button>
         </div>
       </header>
