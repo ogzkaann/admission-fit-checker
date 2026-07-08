@@ -1,0 +1,147 @@
+import { useMemo, useState } from "react";
+import { CalendarDays, ExternalLink, GraduationCap, Languages, Wallet } from "lucide-react";
+import type { AcademicProfile, FitAnalysis, Program, RequirementKind, StoredDocument } from "../domain/types";
+import { degreeTypeLabels, documentKindLabels, requirementKindLabels } from "../domain/labels";
+import { analyzeFit } from "../domain/fit/admissionFit";
+import { Badge } from "./ui/badge";
+import { Button } from "./ui/button";
+import { Dialog } from "./ui/dialog";
+import { FitResult } from "./FitResult";
+import { AskProgram } from "./AskProgram";
+import type { AppSettings } from "../domain/types";
+
+interface ProgramDetailProps {
+  program: Program;
+  profile?: AcademicProfile;
+  documents: StoredDocument[];
+  settings: AppSettings;
+  open: boolean;
+  onOpenChange: (open: boolean) => void;
+}
+
+const requirementOrder: RequirementKind[] = ["academic", "language", "ects", "gpa", "document", "other"];
+
+function RequirementGroup({ program }: { program: Program }) {
+  return (
+    <div className="grid gap-3">
+      {requirementOrder.map((kind) => {
+        const items = program.requirements.filter((req) => req.kind === kind);
+        if (items.length === 0) return null;
+        return (
+          <div key={kind} className="rounded-md border border-border bg-slate-50 p-3">
+            <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+              {requirementKindLabels[kind]}
+            </p>
+            <ul className="mt-1 grid gap-1">
+              {items.map((req) => (
+                <li key={req.id} className="text-sm leading-6 text-foreground">
+                  • {req.label}
+                </li>
+              ))}
+            </ul>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+export function ProgramDetail({ program, profile, documents, settings, open, onOpenChange }: ProgramDetailProps) {
+  const [analysis, setAnalysis] = useState<FitAnalysis | null>(null);
+  const initials = useMemo(
+    () =>
+      program.university
+        .split(/\s+/)
+        .map((word) => word[0])
+        .filter(Boolean)
+        .slice(0, 2)
+        .join("")
+        .toUpperCase(),
+    [program.university],
+  );
+
+  return (
+    <Dialog open={open} onOpenChange={onOpenChange} title={program.programName} description={program.university}>
+      <div className="grid max-h-[70vh] gap-5 overflow-y-auto pr-1">
+        <div className="flex items-center gap-4">
+          <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-lg bg-primary text-lg font-semibold text-primary-foreground">
+            {initials}
+          </div>
+          <div className="flex flex-wrap gap-2">
+            <Badge variant="secondary">{degreeTypeLabels[program.degreeType]}</Badge>
+            <Badge variant="outline">{program.language}</Badge>
+            <Badge variant="outline">
+              {program.city}, {program.country}
+            </Badge>
+            {program.isDemo ? <Badge variant="yellow">Demo data</Badge> : <Badge variant="outline">Added by you</Badge>}
+          </div>
+        </div>
+
+        <p className="text-sm leading-6 text-muted-foreground">{program.description}</p>
+
+        <div className="grid gap-2 sm:grid-cols-3">
+          <div className="flex items-start gap-2 rounded-md border border-border p-3">
+            <CalendarDays className="mt-0.5 h-4 w-4 text-muted-foreground" />
+            <div>
+              <p className="text-xs text-muted-foreground">Deadline</p>
+              <p className="text-sm font-medium text-foreground">{program.deadline ?? "—"}</p>
+            </div>
+          </div>
+          <div className="flex items-start gap-2 rounded-md border border-border p-3">
+            <Wallet className="mt-0.5 h-4 w-4 text-muted-foreground" />
+            <div>
+              <p className="text-xs text-muted-foreground">Fee</p>
+              <p className="text-sm font-medium text-foreground">{program.fee ?? "—"}</p>
+            </div>
+          </div>
+          <div className="flex items-start gap-2 rounded-md border border-border p-3">
+            <Languages className="mt-0.5 h-4 w-4 text-muted-foreground" />
+            <div>
+              <p className="text-xs text-muted-foreground">Language</p>
+              <p className="text-sm font-medium text-foreground">{program.language}</p>
+            </div>
+          </div>
+        </div>
+
+        {program.requiredDocuments.length > 0 ? (
+          <section className="grid gap-2">
+            <h4 className="text-sm font-semibold text-foreground">Required documents</h4>
+            <div className="flex flex-wrap gap-1.5">
+              {program.requiredDocuments.map((doc) => (
+                <Badge key={doc} variant="outline">
+                  {documentKindLabels[doc]}
+                </Badge>
+              ))}
+            </div>
+          </section>
+        ) : null}
+
+        <section className="grid gap-2">
+          <h4 className="text-sm font-semibold text-foreground">Requirements</h4>
+          <RequirementGroup program={program} />
+        </section>
+
+        <div className="flex flex-wrap items-center gap-3 text-xs text-muted-foreground">
+          {program.sourceUrl ? (
+            <a className="inline-flex items-center gap-1 text-accent hover:underline" href={program.sourceUrl} target="_blank" rel="noreferrer">
+              <ExternalLink className="h-3.5 w-3.5" />
+              Official source
+            </a>
+          ) : null}
+          {program.lastChecked ? <span>Last checked {program.lastChecked}</span> : null}
+        </div>
+
+        <div className="flex flex-wrap gap-2 border-t border-border pt-4">
+          <Button onClick={() => setAnalysis(analyzeFit(profile, documents, program))}>
+            <GraduationCap className="h-4 w-4" />
+            Check my fit
+          </Button>
+        </div>
+
+        {analysis ? <FitResult analysis={analysis} /> : null}
+
+        <AskProgram program={program} settings={settings} />
+      </div>
+    </Dialog>
+  );
+}

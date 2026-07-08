@@ -1,0 +1,222 @@
+import { ChangeEvent, useState } from "react";
+import { FileUp, GraduationCap, ImageOff, Loader2, Save } from "lucide-react";
+import type {
+  AcademicProfile,
+  AppSettings,
+  DegreeType,
+  FitAnalysis,
+  Program,
+  ProgramRequirement,
+  StoredDocument,
+} from "../domain/types";
+import { degreeTypeLabels } from "../domain/labels";
+import { analyzeFit } from "../domain/fit/admissionFit";
+import { extractPdfText } from "../rag/pdf";
+import { saveProgram } from "../storage/repository";
+import { Button } from "../components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/ui/card";
+import { Input } from "../components/ui/input";
+import { Select } from "../components/ui/select";
+import { Textarea } from "../components/ui/textarea";
+import { FitResult } from "../components/FitResult";
+
+interface NewProgramCheckProps {
+  profile?: AcademicProfile;
+  documents: StoredDocument[];
+  settings: AppSettings;
+  onDataChange: () => void;
+}
+
+// Best-effort structured requirements from free-text admission info so the fit
+// check has something to compare against. Conservative by design.
+function parseRequirements(text: string): ProgramRequirement[] {
+  const requirements: ProgramRequirement[] = [];
+  const ects = text.match(/\b(1[0-9]{2}|2[0-9]{2})\s*ECTS\b/i);
+  if (ects) {
+    requirements.push({ id: "p-ects", kind: "ects", label: `At least ${ects[1]} ECTS`, minEcts: Number(ects[1]), sourceText: ects[0] });
+  }
+  for (const lang of ["English", "German"]) {
+    const re = new RegExp(`${lang}[^.\\n]{0,40}?(A1|A2|B1|B2|C1|C2)`, "i");
+    const match = text.match(re);
+    if (match) {
+      requirements.push({
+        id: `p-lang-${lang}`,
+        kind: "language",
+        label: `${lang} at ${match[1].toUpperCase()}`,
+        language: lang,
+        minLevel: match[1].toUpperCase(),
+        sourceText: match[0],
+      });
+    }
+  }
+  if (/bachelor/i.test(text)) {
+    requirements.push({ id: "p-degree", kind: "academic", label: "Bachelor's degree required", degreeType: "bachelor", sourceText: "bachelor" });
+  }
+  return requirements;
+}
+
+export function NewProgramCheck({ profile, documents, settings, onDataChange }: NewProgramCheckProps) {
+  const [university, setUniversity] = useState("");
+  const [programName, setProgramName] = useState("");
+  const [degreeType, setDegreeType] = useState<DegreeType>("master");
+  const [language, setLanguage] = useState("English");
+  const [link, setLink] = useState("");
+  const [admissionText, setAdmissionText] = useState("");
+  const [busy, setBusy] = useState(false);
+  const [message, setMessage] = useState("");
+  const [program, setProgram] = useState<Program | null>(null);
+  const [analysis, setAnalysis] = useState<FitAnalysis | null>(null);
+  const [saved, setSaved] = useState(false);
+
+  function buildProgram(): Program {
+    const requirements = parseRequirements(admissionText);
+    return {
+      id: `user-${crypto.randomUUID()}`,
+      university: university.trim() || "Unnamed university",
+      programName: programName.trim() || "Untitled program",
+      degreeType,
+      language,
+      country: "",
+      city: "",
+      description: admissionText.slice(0, 280),
+      sourceUrl: link.trim() || undefined,
+      lastChecked: new Date().toISOString().slice(0, 10),
+      requiredDocuments: [],
+      requirements,
+      admissionText,
+      origin: "user",
+      isDemo: false,
+      createdAt: new Date().toISOString(),
+    };
+  }
+
+  async function handlePdf(event: ChangeEvent<HTMLInputElement>) {
+    const file = event.target.files?.[0];
+    if (!file) return;
+    setBusy(true);
+    setMessage("");
+    try {
+      const extracted = await extractPdfText(file);
+      if (!extracted.text.trim()) throw new Error("No selectable text found in this PDF.");
+      setAdmissionText((current) => `${current}\n${extracted.text}`.trim());
+      setMessage(`Imported text from ${file.name}.`);
+    } catch (error) {
+      setMessage(error instanceof Error ? error.message : "Could not read the PDF.");
+    } finally {
+      setBusy(false);
+      event.target.value = "";
+    }
+  }
+
+  function analyze() {
+    const built = buildProgram();
+    setProgram(built);
+    setAnalysis(analyzeFit(profile, documents, built));
+    setSaved(false);
+  }
+
+  async function saveToLibrary() {
+    if (!program) return;
+    await saveProgram(program);
+    setSaved(true);
+    onDataChange();
+  }
+
+  const canAnalyze = admissionText.trim().length > 0 || programName.trim().length > 0;
+
+  return (
+    <div className="mx-auto grid max-w-3xl gap-6 px-4 py-8">
+      <header>
+        <div className="flex items-center gap-2 text-sm font-semibold text-muted-foreground">
+          <GraduationCap className="h-4 w-4" />
+          Check a Program
+        </div>
+        <h2 className="mt-2 text-2xl font-semibold text-foreground">Add a program and analyze your fit.</h2>
+        <p className="mt-1 text-sm leading-6 text-muted-foreground">
+          Paste the admission requirements text (or import a PDF). The check compares it against your saved profile.
+        </p>
+      </header>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>Program details</CardTitle>
+          <CardDescription>Only the admission text is required for a basic check.</CardDescription>
+        </CardHeader>
+        <CardContent className="grid gap-4">
+          <div className="grid gap-4 sm:grid-cols-2">
+            <label className="grid gap-2 text-sm font-medium">
+              University name
+              <Input value={university} onChange={(event) => setUniversity(event.target.value)} placeholder="e.g. University of Amsterdam" />
+            </label>
+            <label className="grid gap-2 text-sm font-medium">
+              Program name
+              <Input value={programName} onChange={(event) => setProgramName(event.target.value)} placeholder="e.g. M.Sc. Data Science" />
+            </label>
+            <label className="grid gap-2 text-sm font-medium">
+              Degree type
+              <Select value={degreeType} onChange={(event) => setDegreeType(event.target.value as DegreeType)}>
+                {(Object.keys(degreeTypeLabels) as DegreeType[]).map((item) => (
+                  <option key={item} value={item}>
+                    {degreeTypeLabels[item]}
+                  </option>
+                ))}
+              </Select>
+            </label>
+            <label className="grid gap-2 text-sm font-medium">
+              Language of instruction
+              <Input value={language} onChange={(event) => setLanguage(event.target.value)} />
+            </label>
+          </div>
+
+          <label className="grid gap-2 text-sm font-medium">
+            Program link (optional)
+            <Input value={link} onChange={(event) => setLink(event.target.value)} placeholder="https://…" />
+          </label>
+
+          <label className="grid gap-2 text-sm font-medium">
+            Admission requirements text
+            <Textarea
+              className="min-h-40"
+              value={admissionText}
+              onChange={(event) => setAdmissionText(event.target.value)}
+              placeholder="Paste the program's admission requirements here…"
+            />
+          </label>
+
+          <div className="flex flex-wrap gap-2">
+            <label className="inline-flex cursor-pointer items-center gap-2 rounded-md border border-border bg-background px-3 py-2 text-sm font-semibold hover:bg-muted">
+              {busy ? <Loader2 className="h-4 w-4 animate-spin" /> : <FileUp className="h-4 w-4" />}
+              Import PDF
+              <input className="sr-only" type="file" accept="application/pdf,.pdf" onChange={handlePdf} disabled={busy} />
+            </label>
+            <span className="inline-flex items-center gap-2 rounded-md border border-dashed border-border px-3 py-2 text-sm text-muted-foreground" title="Screenshot OCR is not available yet">
+              <ImageOff className="h-4 w-4" />
+              Screenshot (OCR coming soon)
+            </span>
+          </div>
+          {message ? <p className="rounded-md bg-muted p-3 text-sm text-muted-foreground">{message}</p> : null}
+
+          <Button className="w-fit" onClick={analyze} disabled={!canAnalyze}>
+            <GraduationCap className="h-4 w-4" />
+            Analyze Fit
+          </Button>
+        </CardContent>
+      </Card>
+
+      {analysis ? (
+        <Card>
+          <CardHeader className="flex-row items-center justify-between space-y-0">
+            <CardTitle>Result</CardTitle>
+            <Button variant="outline" size="sm" onClick={saveToLibrary} disabled={saved}>
+              <Save className="h-4 w-4" />
+              {saved ? "Saved to library" : "Save to library"}
+            </Button>
+          </CardHeader>
+          <CardContent>
+            <FitResult analysis={analysis} />
+          </CardContent>
+        </Card>
+      ) : null}
+    </div>
+  );
+}
