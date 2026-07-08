@@ -2,7 +2,7 @@
   "name": "admission-fit-checker",
   "version": "0.1.0",
   "description": "Local-first portfolio MVP that compares an academic profile against university program requirements and returns a source-aware admission fit verdict.",
-  "homepage": "https://github.com/ogzkaann/admission-fit-checker#readme",
+  "homepage": "https://admission-fit-checker.vercel.app/",
   "keywords": [
     "local-first",
     "react",
