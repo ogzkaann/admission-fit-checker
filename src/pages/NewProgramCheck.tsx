@@ -26,6 +26,7 @@ interface NewProgramCheckProps {
   documents: StoredDocument[];
   settings: AppSettings;
   onDataChange: () => void;
+  prefill?: { university?: string; programName?: string; link?: string };
 }
 
 // Best-effort structured requirements from free-text admission info so the fit
@@ -56,12 +57,12 @@ function parseRequirements(text: string): ProgramRequirement[] {
   return requirements;
 }
 
-export function NewProgramCheck({ profile, documents, settings, onDataChange }: NewProgramCheckProps) {
-  const [university, setUniversity] = useState("");
-  const [programName, setProgramName] = useState("");
+export function NewProgramCheck({ profile, documents, settings, onDataChange, prefill }: NewProgramCheckProps) {
+  const [university, setUniversity] = useState(prefill?.university ?? "");
+  const [programName, setProgramName] = useState(prefill?.programName ?? "");
   const [degreeType, setDegreeType] = useState<DegreeType>("master");
   const [language, setLanguage] = useState("English");
-  const [link, setLink] = useState("");
+  const [link, setLink] = useState(prefill?.link ?? "");
   const [admissionText, setAdmissionText] = useState("");
   const [busy, setBusy] = useState(false);
   const [message, setMessage] = useState("");
@@ -132,12 +133,12 @@ export function NewProgramCheck({ profile, documents, settings, onDataChange }: 
     <div className="mx-auto grid max-w-7xl gap-6 px-4 py-8 sm:px-6 lg:py-10">
       <header className="rounded-[2rem] border border-white/70 bg-white/80 p-6 shadow-crisp backdrop-blur sm:p-8">
         <div className="flex items-center gap-3 text-sm font-semibold text-primary">
-          <span className="flex h-10 w-10 items-center justify-center rounded-2xl bg-indigo-50 text-primary">
+          <span className="flex h-10 w-10 items-center justify-center rounded-2xl bg-navy text-white">
             <GraduationCap className="h-5 w-5" />
           </span>
           Check a Program
         </div>
-        <h2 className="mt-5 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">Add admission text and analyze your fit.</h2>
+        <h2 className="mt-5 font-display text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">Add admission text and analyze your fit.</h2>
         <p className="mt-3 max-w-3xl text-base leading-7 text-muted-foreground">
           Paste requirements from the program page or import a PDF, screenshot, or image. The check compares the source text with your saved profile.
         </p>
@@ -194,7 +195,7 @@ export function NewProgramCheck({ profile, documents, settings, onDataChange }: 
             </label>
 
             <div className="flex flex-wrap items-center gap-2">
-              <label className="inline-flex h-11 cursor-pointer items-center gap-2 rounded-full border border-indigo-100 bg-white px-4 text-sm font-semibold shadow-sm transition hover:border-primary/30">
+              <label className="inline-flex h-11 cursor-pointer items-center gap-2 rounded-full border border-black/5 bg-white px-4 text-sm font-semibold shadow-sm transition hover:border-primary/30">
                 {busy ? <Loader2 className="h-4 w-4 animate-spin" /> : <FileUp className="h-4 w-4" />}
                 Import PDF, image, or screenshot
                 <input
@@ -207,7 +208,7 @@ export function NewProgramCheck({ profile, documents, settings, onDataChange }: 
               </label>
               <span className="text-xs font-medium text-muted-foreground">Scanned files are read locally with OCR.</span>
             </div>
-            {message ? <p className="rounded-2xl bg-indigo-50 p-3 text-sm text-muted-foreground">{message}</p> : null}
+            {message ? <p className="rounded-2xl border border-black/5 bg-cream-soft p-3 text-sm text-muted-foreground">{message}</p> : null}
 
             {needsProfileReview ? (
               <div className="flex items-start gap-2 rounded-2xl border border-amber-200 bg-amber-50 p-4 text-sm leading-6 text-amber-900">
@@ -226,7 +227,7 @@ export function NewProgramCheck({ profile, documents, settings, onDataChange }: 
         <div className="min-w-0">
           {analysis ? (
             <Card className="overflow-hidden">
-              <CardHeader className="flex-row items-center justify-between gap-3 space-y-0 bg-gradient-to-r from-indigo-50 via-white to-cyan-50">
+              <CardHeader className="flex-row items-center justify-between gap-3 space-y-0 bg-cream-soft">
                 <div>
                   <CardTitle>Fit result</CardTitle>
                   <CardDescription>Source-aware estimate from your profile and this program text.</CardDescription>
@@ -241,7 +242,7 @@ export function NewProgramCheck({ profile, documents, settings, onDataChange }: 
               </CardContent>
             </Card>
           ) : (
-            <div className="grid min-h-full place-items-center rounded-[2rem] border border-dashed border-cyan-200 bg-cyan-50/60 p-8 text-center shadow-crisp">
+            <div className="grid min-h-full place-items-center rounded-3xl border border-dashed border-gold/40 bg-cream-soft p-8 text-center shadow-crisp">
               <div className="grid max-w-sm justify-items-center gap-3">
                 <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-white text-primary shadow-sm">
                   <GraduationCap className="h-7 w-7" />

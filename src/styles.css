@@ -3,27 +3,28 @@
 @tailwind utilities;
 
 :root {
-  --background: 222 100% 98%;
-  --foreground: 229 47% 13%;
+  /* Campus palette: navy ink, cream paper, campus blue, gold accent */
+  --background: 40 40% 94%;
+  --foreground: 221 45% 16%;
   --card: 0 0% 100%;
-  --card-foreground: 229 47% 13%;
-  --primary: 248 84% 58%;
+  --card-foreground: 221 45% 16%;
+  --primary: 222 68% 50%;
   --primary-foreground: 0 0% 100%;
-  --secondary: 226 100% 96%;
-  --secondary-foreground: 244 60% 32%;
-  --muted: 220 60% 96%;
-  --muted-foreground: 225 15% 45%;
-  --accent: 190 95% 43%;
-  --accent-foreground: 210 40% 98%;
-  --destructive: 0 73% 48%;
+  --secondary: 40 38% 90%;
+  --secondary-foreground: 221 40% 22%;
+  --muted: 40 24% 92%;
+  --muted-foreground: 220 16% 40%;
+  --accent: 38 52% 55%;
+  --accent-foreground: 221 45% 16%;
+  --destructive: 0 72% 48%;
   --destructive-foreground: 0 0% 100%;
-  --success: 158 64% 38%;
+  --success: 152 52% 38%;
   --success-foreground: 0 0% 100%;
-  --warning: 38 88% 47%;
-  --warning-foreground: 30 40% 12%;
-  --border: 226 55% 88%;
-  --input: 226 55% 86%;
-  --ring: 248 84% 64%;
+  --warning: 36 90% 46%;
+  --warning-foreground: 30 45% 14%;
+  --border: 40 22% 84%;
+  --input: 40 22% 82%;
+  --ring: 222 68% 55%;
   --radius: 1.25rem;
 }
 
@@ -43,9 +44,9 @@ body {
   min-width: 320px;
   margin: 0;
   background:
-    radial-gradient(circle at 15% 0%, rgba(34, 211, 238, 0.18), transparent 30rem),
-    radial-gradient(circle at 88% 8%, rgba(124, 58, 237, 0.16), transparent 26rem),
-    linear-gradient(180deg, #f8fbff 0%, #f5f7ff 48%, #ffffff 100%);
+    radial-gradient(circle at 12% -6%, rgba(201, 163, 92, 0.12), transparent 34rem),
+    radial-gradient(circle at 92% 4%, rgba(37, 87, 214, 0.08), transparent 30rem),
+    linear-gradient(180deg, #f7f2e9 0%, #f6f1e7 55%, #fbf8f2 100%);
   color: hsl(var(--foreground));
   font-family:
     Inter,
@@ -66,7 +67,7 @@ textarea {
 }
 
 ::selection {
-  background: hsl(var(--primary) / 0.88);
+  background: hsl(var(--primary) / 0.85);
   color: hsl(var(--primary-foreground));
 }
 

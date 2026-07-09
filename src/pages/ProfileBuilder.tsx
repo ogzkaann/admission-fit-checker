@@ -63,7 +63,7 @@ const completenessStyles: Record<Completeness, { variant: "green" | "yellow" | "
 function CompletenessPill({ title, status, optional }: { title: string; status: Completeness; optional?: boolean }) {
   const style = completenessStyles[status];
   return (
-    <div className="flex items-center justify-between gap-3 rounded-2xl border border-indigo-100 bg-white/75 px-4 py-3 shadow-sm">
+    <div className="flex items-center justify-between gap-3 rounded-2xl border border-black/5 bg-cream-soft px-4 py-3 shadow-sm">
       <span className="text-sm font-medium text-foreground">
         {title}
         {optional ? <span className="ml-1 text-xs font-normal text-muted-foreground">(optional)</span> : null}
@@ -191,12 +191,12 @@ export function ProfileBuilder({ settings, onSaved }: ProfileBuilderProps) {
     <div className="mx-auto grid max-w-7xl gap-6 px-4 py-8 sm:px-6 lg:py-10">
       <header className="rounded-[2rem] border border-white/70 bg-white/80 p-6 shadow-crisp backdrop-blur sm:p-8">
         <div className="flex items-center gap-3 text-sm font-semibold text-primary">
-          <span className="flex h-10 w-10 items-center justify-center rounded-2xl bg-indigo-50 text-primary">
+          <span className="flex h-10 w-10 items-center justify-center rounded-2xl bg-navy text-white">
             <UserRound className="h-5 w-5" />
           </span>
           Academic Profile
         </div>
-        <h2 className="mt-5 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">Build your academic profile.</h2>
+        <h2 className="mt-5 font-display text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">Build your academic profile.</h2>
         <p className="mt-3 max-w-3xl text-base leading-7 text-muted-foreground">
           Upload a document to auto-fill fields. Scanned PDFs and images are read locally with OCR. Review everything,
           then save. Nothing leaves your browser except text you send to your own AI provider during extraction.
@@ -222,7 +222,7 @@ export function ProfileBuilder({ settings, onSaved }: ProfileBuilderProps) {
               ))}
             </Select>
           </label>
-          <label className="flex min-h-32 cursor-pointer flex-col items-center justify-center rounded-2xl border border-dashed border-cyan-200 bg-gradient-to-br from-cyan-50 via-white to-indigo-50 px-4 py-6 text-center transition hover:border-primary/40 hover:shadow-crisp">
+          <label className="flex min-h-32 cursor-pointer flex-col items-center justify-center rounded-2xl border border-dashed border-gold/40 bg-cream-soft px-4 py-6 text-center transition hover:border-primary/40 hover:shadow-crisp">
             {busy ? <Loader2 className="h-7 w-7 animate-spin text-primary" /> : <FileUp className="h-7 w-7 text-primary" />}
             <span className="mt-2 text-sm font-semibold text-foreground">Upload PDF or image</span>
             <span className="mt-1 text-xs text-muted-foreground">Scanned or photographed documents are read with OCR.</span>
@@ -235,16 +235,16 @@ export function ProfileBuilder({ settings, onSaved }: ProfileBuilderProps) {
             />
           </label>
           {busy && status ? (
-            <p className="flex items-center gap-2 rounded-2xl border border-indigo-100 bg-white/75 p-3 text-sm text-muted-foreground sm:col-span-2">
+            <p className="flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-2 text-sm font-medium text-primary sm:col-span-2">
               <Loader2 className="h-4 w-4 animate-spin" />
               {status}
             </p>
           ) : null}
-          {message ? <p className="rounded-2xl bg-indigo-50 p-3 text-sm leading-6 text-muted-foreground sm:col-span-2">{message}</p> : null}
+          {message ? <p className="rounded-2xl border border-black/5 bg-cream-soft p-3 text-sm leading-6 text-muted-foreground sm:col-span-2">{message}</p> : null}
           {documents.length > 0 ? (
             <div className="grid gap-2 sm:col-span-2">
               {documents.map((document) => (
-                <div key={document.id} className="flex flex-wrap items-center justify-between gap-2 rounded-2xl border border-indigo-100 bg-white/75 p-3">
+                <div key={document.id} className="flex flex-wrap items-center justify-between gap-2 rounded-2xl border border-black/5 bg-white p-3">
                   <span className="text-sm text-foreground">
                     {documentKindLabels[document.kind]} - {document.fileName}
                   </span>
@@ -329,7 +329,7 @@ export function ProfileBuilder({ settings, onSaved }: ProfileBuilderProps) {
               </Button>
             </div>
             {profile.languageCertificates.length === 0 ? (
-              <p className="rounded-2xl border border-dashed border-cyan-200 bg-cyan-50/60 p-4 text-sm leading-6 text-muted-foreground">
+              <p className="rounded-2xl border border-dashed border-gold/40 bg-cream-soft p-4 text-sm leading-6 text-muted-foreground">
                 No language certificates yet. Add IELTS, TOEFL, telc, or another certificate when you have it.
               </p>
             ) : (
@@ -379,7 +379,7 @@ export function ProfileBuilder({ settings, onSaved }: ProfileBuilderProps) {
             </div>
           ) : null}
 
-          <div className="flex flex-wrap items-center gap-3 rounded-2xl bg-gradient-to-r from-indigo-50 to-cyan-50 p-4">
+          <div className="flex flex-wrap items-center gap-3 rounded-2xl border border-black/5 bg-cream-soft p-4">
             <Button onClick={handleSave}>
               <Save className="h-4 w-4" />
               Save reviewed profile

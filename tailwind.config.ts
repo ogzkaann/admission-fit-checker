@@ -43,16 +43,36 @@ const config: Config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // Campus palette
+        navy: {
+          DEFAULT: "#14233f",
+          900: "#0c1730",
+          800: "#14233f",
+          700: "#1e3157",
+          600: "#2a4270",
+        },
+        cream: {
+          DEFAULT: "#f6f1e7",
+          soft: "#faf7f0",
+          100: "#f0e8d9",
+        },
+        gold: {
+          DEFAULT: "#c9a35c",
+          soft: "#e2c98f",
+          700: "#a9843f",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+        "2xl": "1.25rem",
+        "3xl": "1.75rem",
       },
       boxShadow: {
-        soft: "0 24px 70px rgba(45, 55, 120, 0.12)",
-        crisp: "0 10px 30px rgba(45, 55, 120, 0.08), 0 1px 2px rgba(45, 55, 120, 0.05)",
-        glow: "0 18px 46px rgba(34, 211, 238, 0.18)",
+        soft: "0 26px 70px rgba(20, 35, 63, 0.14)",
+        crisp: "0 10px 30px rgba(20, 35, 63, 0.08), 0 1px 2px rgba(20, 35, 63, 0.05)",
+        glow: "0 20px 50px rgba(20, 35, 63, 0.20)",
       },
       fontFamily: {
         sans: [
@@ -64,6 +84,16 @@ const config: Config = {
           "Segoe UI",
           "sans-serif",
         ],
+        display: ["Fraunces", "Playfair Display", "Georgia", "ui-serif", "serif"],
+      },
+      keyframes: {
+        float: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-6px)" },
+        },
+      },
+      animation: {
+        float: "float 6s ease-in-out infinite",
       },
     },
   },

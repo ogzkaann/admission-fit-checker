@@ -28,12 +28,12 @@ function RequirementGroup({ program }: { program: Program }) {
         const items = program.requirements.filter((req) => req.kind === kind);
         if (items.length === 0) return null;
         return (
-          <div key={kind} className="rounded-2xl border border-indigo-100 bg-white/75 p-4 shadow-sm">
+          <div key={kind} className="rounded-2xl border border-black/5 bg-white p-4 shadow-sm">
             <p className="text-xs font-semibold uppercase text-primary">{requirementKindLabels[kind]}</p>
             <ul className="mt-2 grid gap-2">
               {items.map((req) => (
                 <li key={req.id} className="flex gap-2 text-sm leading-6 text-foreground">
-                  <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-cyan-500" />
+                  <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-gold" />
                   <span>{req.label}</span>
                 </li>
               ))}
@@ -63,8 +63,8 @@ export function ProgramDetail({ program, profile, documents, settings, open, onO
   return (
     <Dialog open={open} onOpenChange={onOpenChange} title={program.programName} description={program.university}>
       <div className="grid max-h-[72vh] gap-5 overflow-y-auto pr-1">
-        <div className="grid gap-4 rounded-[1.75rem] border border-white/70 bg-gradient-to-br from-indigo-50 via-white to-cyan-50 p-5 shadow-crisp sm:grid-cols-[auto_1fr]">
-          <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-indigo-500 via-violet-500 to-cyan-400 text-xl font-bold text-primary-foreground shadow-glow">
+        <div className="grid gap-4 rounded-3xl border border-black/5 bg-cream-soft p-5 shadow-crisp sm:grid-cols-[auto_1fr]">
+          <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-navy font-display text-xl font-bold text-white shadow-sm">
             {initials}
           </div>
           <div className="min-w-0">
@@ -81,21 +81,21 @@ export function ProgramDetail({ program, profile, documents, settings, open, onO
         </div>
 
         <div className="grid gap-3 sm:grid-cols-3">
-          <div className="flex items-start gap-3 rounded-2xl border border-indigo-100 bg-white/75 p-4 shadow-sm">
+          <div className="flex items-start gap-3 rounded-2xl border border-black/5 bg-white p-4 shadow-sm">
             <CalendarDays className="mt-0.5 h-4 w-4 text-primary" />
             <div>
               <p className="text-xs font-semibold uppercase text-muted-foreground">Deadline</p>
               <p className="text-sm font-semibold text-foreground">{program.deadline ?? "-"}</p>
             </div>
           </div>
-          <div className="flex items-start gap-3 rounded-2xl border border-indigo-100 bg-white/75 p-4 shadow-sm">
+          <div className="flex items-start gap-3 rounded-2xl border border-black/5 bg-white p-4 shadow-sm">
             <Wallet className="mt-0.5 h-4 w-4 text-primary" />
             <div>
               <p className="text-xs font-semibold uppercase text-muted-foreground">Fee</p>
               <p className="text-sm font-semibold text-foreground">{program.fee ?? "-"}</p>
             </div>
           </div>
-          <div className="flex items-start gap-3 rounded-2xl border border-indigo-100 bg-white/75 p-4 shadow-sm">
+          <div className="flex items-start gap-3 rounded-2xl border border-black/5 bg-white p-4 shadow-sm">
             <Languages className="mt-0.5 h-4 w-4 text-primary" />
             <div>
               <p className="text-xs font-semibold uppercase text-muted-foreground">Language</p>
@@ -146,7 +146,7 @@ export function ProgramDetail({ program, profile, documents, settings, open, onO
           </div>
         ) : null}
 
-        <div className="flex flex-wrap gap-2 border-t border-indigo-100 pt-4">
+        <div className="flex flex-wrap gap-2 border-t border-black/5 pt-4">
           <Button onClick={() => setAnalysis(analyzeFit(profile, documents, program))} disabled={needsProfileReview}>
             <GraduationCap className="h-4 w-4" />
             Check my fit
