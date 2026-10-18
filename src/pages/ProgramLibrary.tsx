@@ -46,6 +46,7 @@ export function ProgramLibrary({ programs, profile, documents, settings, onAddPr
   const [language, setLanguage] = useState(ALL);
   const [degree, setDegree] = useState(ALL);
   const [country, setCountry] = useState(ALL);
+  const [source, setSource] = useState("real");
   const [activeId, setActiveId] = useState<string | null>(null);
 
   const languages = useMemo(() => Array.from(new Set(programs.map((p) => p.language))).sort(), [programs]);
@@ -54,6 +55,7 @@ export function ProgramLibrary({ programs, profile, documents, settings, onAddPr
 
   const filtered = programs.filter(
     (program) =>
+      (source === ALL || (source === "real" ? program.origin !== "demo" && !program.isDemo : program.origin === source)) &&
       (language === ALL || program.language === language) &&
       (degree === ALL || program.degreeType === degree) &&
       (country === ALL || program.country === country),
@@ -75,7 +77,7 @@ export function ProgramLibrary({ programs, profile, documents, settings, onAddPr
             Browse university programs.
           </h2>
           <p className="mt-3 max-w-2xl text-base leading-7 text-muted-foreground">
-            Explore illustrative demo programs or add your own admission text. Demo requirements, deadlines, and fees are not verified university information.
+            Explore German master's programs with captured official sources. Pilot records await human review; missing or outdated information cannot establish eligibility. Illustrative demos remain available separately.
           </p>
         </div>
         <Button variant="outline" onClick={onAddProgram}>
@@ -85,6 +87,13 @@ export function ProgramLibrary({ programs, profile, documents, settings, onAddPr
       </header>
 
       <div className="flex flex-wrap gap-3">
+        <FilterPill label="Source" value={source} onChange={setSource}>
+          <option value="real">Catalog + my programs</option>
+          <option value="catalog">Official-source catalog</option>
+          <option value="user">My programs</option>
+          <option value="demo">Illustrative demos</option>
+          <option value={ALL}>All</option>
+        </FilterPill>
         <FilterPill label="Language" value={language} onChange={setLanguage}>
           <option value={ALL}>All</option>
           {languages.map((item) => (

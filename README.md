@@ -24,7 +24,20 @@ See [decision rules](DECISION_RULES.md) and the [architecture audit and verified
 
 Applicants comparing international programs face scattered requirements and vague "am I qualified?" answers. Admission Fit Checker turns an uploaded transcript or CV into a structured academic profile, models each program's requirements as data, and runs a transparent fit check that returns one of four honest verdicts — with the evidence behind each decision.
 
-Everything runs in the browser. No backend, no login, no server database.
+The applicant experience runs in the browser. No backend, no login, no server database. A separate local Node command ingests official university sources into a versioned, human-reviewable catalog.
+
+## Official Catalog Pilot
+
+Five real German master's programs (Passau, Saarland, FAU, Stuttgart and TUHH) now appear in the existing library alongside local programs and separately filtered illustrative demos. **All pilot admission data remains unverified**; TUHH additionally needs a source check because a linked PDF is robots-denied. Retrieval is not editorial approval, and no current-semester eligibility is inferred.
+
+See the [ingestion and review guide, pilot source report and PostgreSQL next steps](docs/CATALOG_INGESTION.md).
+
+```sh
+npm run catalog -- status
+npm run catalog -- validate
+# Explicit network refresh; respects robots and rate limits:
+npm run catalog -- fetch
+```
 
 ## Screenshots
 
@@ -90,7 +103,7 @@ Build:
 npm run build
 ```
 
-Validation (Node 20+ recommended):
+Validation (Node 22.12+ for catalog tooling; tested with Node 24):
 
 ```bash
 npm test

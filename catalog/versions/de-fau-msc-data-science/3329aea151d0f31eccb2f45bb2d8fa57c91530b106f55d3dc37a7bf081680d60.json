@@ -1,0 +1,765 @@
+{
+  "schemaVersion": 1,
+  "programId": "de-fau-msc-data-science",
+  "revision": "3329aea151d0f31eccb2f45bb2d8fa57c91530b106f55d3dc37a7bf081680d60",
+  "parentRevision": "d32db596e0097b6bcd9e03c6a61bb735001c4ac5a68335dd01b5f9186e4e4ad1",
+  "extractedAt": "2026-10-18T17:05:22.546Z",
+  "recipeHash": "bd3223152d5d147537288fc11e5df62b3d757135f21eaec62fe0c6132596176a",
+  "program": {
+    "id": "de-fau-msc-data-science",
+    "university": "FAU Erlangen-Nuremberg",
+    "programName": "Data Science",
+    "degreeType": "master",
+    "language": "English",
+    "country": "Germany",
+    "city": "Erlangen",
+    "description": "Master of Science in Data Science. Official-source pilot; applicant-category restrictions require review.",
+    "sourceUrl": "https://www.fau.eu/degree-program/data-science-m-sc/",
+    "requiredDocuments": [],
+    "requirements": [
+      {
+        "id": "academic",
+        "kind": "academic",
+        "label": "Accepted first degrees and equivalent competence profiles",
+        "sourceText": "A completed Bachelor’s degree in Mathematics, Industrial Mathematics, Mathematical Economy, Computer Science, Data Science, or Physics from FAU or another equivalent German or international degree that is not significantly different with regard to the competence profile taught in the respective degree program. Please note that your competence profile cannot be evaluated in advance, but only by the admission committee after completing the application process (described below).",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Accepted first degrees and equivalent competence profiles. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
+            "quote": "A completed Bachelor’s degree in Mathematics, Industrial Mathematics, Mathematical Economy, Computer Science, Data Science, or Physics from FAU or another equivalent German or international degree that is not significantly different with regard to the competence profile taught in the respective degree program. Please note that your competence profile cannot be evaluated in advance, but only by the admission committee after completing the application process (described below).",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:15.034Z",
+            "validFor": [],
+            "locator": "HTML li block 94",
+            "retrievedAt": "2026-10-18T17:03:15.034Z",
+            "snapshotId": "ae23e848e552f12185b2b19675c937f1121985bba83f4442299e54cfe2dc1a52",
+            "contentHash": "9c23296483a8b444b5be8c06e9820816e8c6c243ce12e82a87a81fd69d597246"
+          }
+        ]
+      },
+      {
+        "id": "grades",
+        "kind": "gpa",
+        "label": "Grade thresholds and interview route",
+        "sourceText": "A Grade Point Average (GPA) of 2.5 or better with respect to the German grading system. Candidates with an admissible degree (described above) and a GPA between 2.6 and 2.8 are invited for a short online interview in which their knowledge in calculus, linear algebra, algorithms and data structures is evaluated.",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Grade thresholds and interview route. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
+            "quote": "A Grade Point Average (GPA) of 2.5 or better with respect to the German grading system. Candidates with an admissible degree (described above) and a GPA between 2.6 and 2.8 are invited for a short online interview in which their knowledge in calculus, linear algebra, algorithms and data structures is evaluated.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:15.034Z",
+            "validFor": [],
+            "locator": "HTML li block 95",
+            "retrievedAt": "2026-10-18T17:03:15.034Z",
+            "snapshotId": "ae23e848e552f12185b2b19675c937f1121985bba83f4442299e54cfe2dc1a52",
+            "contentHash": "9c23296483a8b444b5be8c06e9820816e8c6c243ce12e82a87a81fd69d597246"
+          }
+        ]
+      },
+      {
+        "id": "language",
+        "kind": "language",
+        "label": "English proficiency and exemptions (wording requires reconciliation)",
+        "sourceText": "As the Master programme is in English we are asking for a certificate of upper intermediate English (level B2) are mandatory. Even if your undergraduate degree was taught in English we recommend to submit a language certificate. For everyday life and for internships and working student jobs, we recommend solid knowledge (B1) of German, but a certificate is not necessary for the application.\n\nEnglish proficiency at level B2 CEFR (vantage or upper intermediate) or six years of English classes at a German secondary school (Gymnasium). Applicants who have completed their university entrance qualifications or their first degree in English are not required to provide proof of proficiency in English.",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "English proficiency and exemptions (wording requires reconciliation). Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
+            "quote": "As the Master programme is in English we are asking for a certificate of upper intermediate English (level B2) are mandatory. Even if your undergraduate degree was taught in English we recommend to submit a language certificate. For everyday life and for internships and working student jobs, we recommend solid knowledge (B1) of German, but a certificate is not necessary for the application.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:15.034Z",
+            "validFor": [],
+            "locator": "HTML li block 92",
+            "retrievedAt": "2026-10-18T17:03:15.034Z",
+            "snapshotId": "ae23e848e552f12185b2b19675c937f1121985bba83f4442299e54cfe2dc1a52",
+            "contentHash": "9c23296483a8b444b5be8c06e9820816e8c6c243ce12e82a87a81fd69d597246"
+          },
+          {
+            "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
+            "quote": "English proficiency at level B2 CEFR (vantage or upper intermediate) or six years of English classes at a German secondary school (Gymnasium). Applicants who have completed their university entrance qualifications or their first degree in English are not required to provide proof of proficiency in English.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:15.034Z",
+            "validFor": [],
+            "locator": "HTML li block 96",
+            "retrievedAt": "2026-10-18T17:03:15.034Z",
+            "snapshotId": "ae23e848e552f12185b2b19675c937f1121985bba83f4442299e54cfe2dc1a52",
+            "contentHash": "9c23296483a8b444b5be8c06e9820816e8c6c243ce12e82a87a81fd69d597246"
+          }
+        ]
+      },
+      {
+        "id": "inventory-review",
+        "kind": "other",
+        "label": "Full admission regulations and applicability review",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "The extracted inventory is not complete. Verify regulations, applicant categories, exemptions, selection and semester validity."
+        },
+        "evidence": []
+      }
+    ],
+    "admissionText": "academic: A completed Bachelor’s degree in Mathematics, Industrial Mathematics, Mathematical Economy, Computer Science, Data Science, or Physics from FAU or another equivalent German or international degree that is not significantly different with regard to the competence profile taught in the respective degree program. Please note that your competence profile cannot be evaluated in advance, but only by the admission committee after completing the application process (described below).\n\nacademic: A Grade Point Average (GPA) of 2.5 or better with respect to the German grading system. Candidates with an admissible degree (described above) and a GPA between 2.6 and 2.8 are invited for a short online interview in which their knowledge in calculus, linear algebra, algorithms and data structures is evaluated.\n\nlanguage: As the Master programme is in English we are asking for a certificate of upper intermediate English (level B2) are mandatory. Even if your undergraduate degree was taught in English we recommend to submit a language certificate. For everyday life and for internships and working student jobs, we recommend solid knowledge (B1) of German, but a certificate is not necessary for the application.\n\nEnglish proficiency at level B2 CEFR (vantage or upper intermediate) or six years of English classes at a German secondary school (Gymnasium). Applicants who have completed their university entrance qualifications or their first degree in English are not required to provide proof of proficiency in English.\n\ndeadline: The following information is intended for German applicants as well as domestic applicants with foreign educational qualifications. Different regulations and deadlines may apply to international prospective students.\n\nWinter semester: 31.05.\n\nSummer semester: 30.11.\n\napplication: Applications have to be submitted via the campus management portal campo.fau.de.",
+    "origin": "catalog",
+    "isDemo": false,
+    "createdAt": "2026-10-18T17:03:21.293Z",
+    "schemaVersion": 2,
+    "verificationStatus": "unverified",
+    "sources": [
+      {
+        "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
+        "quote": "Data Science (M.Sc.)",
+        "status": "unverified",
+        "sourceType": "official",
+        "lastChecked": "2026-10-18T17:03:15.034Z",
+        "validFor": [],
+        "locator": "Source document identity",
+        "retrievedAt": "2026-10-18T17:03:15.034Z",
+        "snapshotId": "ae23e848e552f12185b2b19675c937f1121985bba83f4442299e54cfe2dc1a52",
+        "contentHash": "9c23296483a8b444b5be8c06e9820816e8c6c243ce12e82a87a81fd69d597246"
+      }
+    ],
+    "validFor": [],
+    "requirementsComplete": false,
+    "facts": [
+      {
+        "id": "academic",
+        "category": "academic",
+        "value": "A completed Bachelor’s degree in Mathematics, Industrial Mathematics, Mathematical Economy, Computer Science, Data Science, or Physics from FAU or another equivalent German or international degree that is not significantly different with regard to the competence profile taught in the respective degree program. Please note that your competence profile cannot be evaluated in advance, but only by the admission committee after completing the application process (described below).",
+        "evidence": [
+          {
+            "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
+            "quote": "A completed Bachelor’s degree in Mathematics, Industrial Mathematics, Mathematical Economy, Computer Science, Data Science, or Physics from FAU or another equivalent German or international degree that is not significantly different with regard to the competence profile taught in the respective degree program. Please note that your competence profile cannot be evaluated in advance, but only by the admission committee after completing the application process (described below).",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:15.034Z",
+            "validFor": [],
+            "locator": "HTML li block 94",
+            "retrievedAt": "2026-10-18T17:03:15.034Z",
+            "snapshotId": "ae23e848e552f12185b2b19675c937f1121985bba83f4442299e54cfe2dc1a52",
+            "contentHash": "9c23296483a8b444b5be8c06e9820816e8c6c243ce12e82a87a81fd69d597246"
+          }
+        ]
+      },
+      {
+        "id": "grades",
+        "category": "academic",
+        "value": "A Grade Point Average (GPA) of 2.5 or better with respect to the German grading system. Candidates with an admissible degree (described above) and a GPA between 2.6 and 2.8 are invited for a short online interview in which their knowledge in calculus, linear algebra, algorithms and data structures is evaluated.",
+        "evidence": [
+          {
+            "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
+            "quote": "A Grade Point Average (GPA) of 2.5 or better with respect to the German grading system. Candidates with an admissible degree (described above) and a GPA between 2.6 and 2.8 are invited for a short online interview in which their knowledge in calculus, linear algebra, algorithms and data structures is evaluated.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:15.034Z",
+            "validFor": [],
+            "locator": "HTML li block 95",
+            "retrievedAt": "2026-10-18T17:03:15.034Z",
+            "snapshotId": "ae23e848e552f12185b2b19675c937f1121985bba83f4442299e54cfe2dc1a52",
+            "contentHash": "9c23296483a8b444b5be8c06e9820816e8c6c243ce12e82a87a81fd69d597246"
+          }
+        ]
+      },
+      {
+        "id": "language",
+        "category": "language",
+        "value": "As the Master programme is in English we are asking for a certificate of upper intermediate English (level B2) are mandatory. Even if your undergraduate degree was taught in English we recommend to submit a language certificate. For everyday life and for internships and working student jobs, we recommend solid knowledge (B1) of German, but a certificate is not necessary for the application.\n\nEnglish proficiency at level B2 CEFR (vantage or upper intermediate) or six years of English classes at a German secondary school (Gymnasium). Applicants who have completed their university entrance qualifications or their first degree in English are not required to provide proof of proficiency in English.",
+        "evidence": [
+          {
+            "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
+            "quote": "As the Master programme is in English we are asking for a certificate of upper intermediate English (level B2) are mandatory. Even if your undergraduate degree was taught in English we recommend to submit a language certificate. For everyday life and for internships and working student jobs, we recommend solid knowledge (B1) of German, but a certificate is not necessary for the application.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:15.034Z",
+            "validFor": [],
+            "locator": "HTML li block 92",
+            "retrievedAt": "2026-10-18T17:03:15.034Z",
+            "snapshotId": "ae23e848e552f12185b2b19675c937f1121985bba83f4442299e54cfe2dc1a52",
+            "contentHash": "9c23296483a8b444b5be8c06e9820816e8c6c243ce12e82a87a81fd69d597246"
+          },
+          {
+            "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
+            "quote": "English proficiency at level B2 CEFR (vantage or upper intermediate) or six years of English classes at a German secondary school (Gymnasium). Applicants who have completed their university entrance qualifications or their first degree in English are not required to provide proof of proficiency in English.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:15.034Z",
+            "validFor": [],
+            "locator": "HTML li block 96",
+            "retrievedAt": "2026-10-18T17:03:15.034Z",
+            "snapshotId": "ae23e848e552f12185b2b19675c937f1121985bba83f4442299e54cfe2dc1a52",
+            "contentHash": "9c23296483a8b444b5be8c06e9820816e8c6c243ce12e82a87a81fd69d597246"
+          }
+        ]
+      },
+      {
+        "id": "credits",
+        "category": "credits",
+        "value": null,
+        "note": "Curriculum credits are not prior-degree admission prerequisites.",
+        "evidence": []
+      },
+      {
+        "id": "deadline",
+        "category": "deadline",
+        "value": "The following information is intended for German applicants as well as domestic applicants with foreign educational qualifications. Different regulations and deadlines may apply to international prospective students.\n\nWinter semester: 31.05.\n\nSummer semester: 30.11.",
+        "note": "The admissions section is scoped to domestic applicants; international dates may differ.",
+        "evidence": [
+          {
+            "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
+            "quote": "The following information is intended for German applicants as well as domestic applicants with foreign educational qualifications. Different regulations and deadlines may apply to international prospective students.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:15.034Z",
+            "validFor": [],
+            "locator": "HTML p block 85",
+            "retrievedAt": "2026-10-18T17:03:15.034Z",
+            "snapshotId": "ae23e848e552f12185b2b19675c937f1121985bba83f4442299e54cfe2dc1a52",
+            "contentHash": "9c23296483a8b444b5be8c06e9820816e8c6c243ce12e82a87a81fd69d597246"
+          },
+          {
+            "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
+            "quote": "Winter semester: 31.05.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:15.034Z",
+            "validFor": [],
+            "locator": "HTML li block 89",
+            "retrievedAt": "2026-10-18T17:03:15.034Z",
+            "snapshotId": "ae23e848e552f12185b2b19675c937f1121985bba83f4442299e54cfe2dc1a52",
+            "contentHash": "9c23296483a8b444b5be8c06e9820816e8c6c243ce12e82a87a81fd69d597246"
+          },
+          {
+            "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
+            "quote": "Summer semester: 30.11.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:15.034Z",
+            "validFor": [],
+            "locator": "HTML li block 90",
+            "retrievedAt": "2026-10-18T17:03:15.034Z",
+            "snapshotId": "ae23e848e552f12185b2b19675c937f1121985bba83f4442299e54cfe2dc1a52",
+            "contentHash": "9c23296483a8b444b5be8c06e9820816e8c6c243ce12e82a87a81fd69d597246"
+          }
+        ]
+      },
+      {
+        "id": "application",
+        "category": "application",
+        "value": "Applications have to be submitted via the campus management portal campo.fau.de.",
+        "evidence": [
+          {
+            "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
+            "quote": "Applications have to be submitted via the campus management portal campo.fau.de.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:15.034Z",
+            "validFor": [],
+            "locator": "HTML p block 98",
+            "retrievedAt": "2026-10-18T17:03:15.034Z",
+            "snapshotId": "ae23e848e552f12185b2b19675c937f1121985bba83f4442299e54cfe2dc1a52",
+            "contentHash": "9c23296483a8b444b5be8c06e9820816e8c6c243ce12e82a87a81fd69d597246"
+          }
+        ]
+      },
+      {
+        "id": "tuition",
+        "category": "tuition",
+        "value": null,
+        "note": "Not established from the fetched sources.",
+        "evidence": []
+      },
+      {
+        "id": "semester",
+        "category": "semester",
+        "value": null,
+        "note": "No specific admission-year validity verified.",
+        "evidence": []
+      }
+    ],
+    "catalogIssues": [
+      "Automatically extracted draft. Human review and semester applicability are outstanding.",
+      "The page scopes admission dates to German/domestic applicants; international rules may differ.",
+      "Two language sections differ on English-medium prior study. Resolve the wording against current regulations before approval."
+    ],
+    "retrievedAt": "2026-10-18T17:03:15.034Z",
+    "catalogVersion": "3329aea151d0f31eccb2f45bb2d8fa57c91530b106f55d3dc37a7bf081680d60"
+  },
+  "changes": [
+    {
+      "collection": "requirements",
+      "id": "academic",
+      "change": "changed",
+      "before": {
+        "id": "academic",
+        "kind": "academic",
+        "label": "Accepted first degrees and equivalent competence profiles",
+        "sourceText": "A completed Bachelor’s degree in Mathematics, Industrial Mathematics, Mathematical Economy, Computer Science, Data Science, or Physics from FAU or another equivalent German or international degree that is not significantly different with regard to the competence profile taught in the respective degree program. Please note that your competence profile cannot be evaluated in advance, but only by the admission committee after completing the application process (described below).",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Accepted first degrees and equivalent competence profiles. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
+            "quote": "A completed Bachelor’s degree in Mathematics, Industrial Mathematics, Mathematical Economy, Computer Science, Data Science, or Physics from FAU or another equivalent German or international degree that is not significantly different with regard to the competence profile taught in the respective degree program. Please note that your competence profile cannot be evaluated in advance, but only by the admission committee after completing the application process (described below).",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:15.034Z",
+            "validFor": [],
+            "locator": "HTML li block 94",
+            "retrievedAt": "2026-10-18T17:03:15.034Z",
+            "snapshotId": "d0f1e660be43c215ea6459e27f241f9354ed2d3dce5182bba23f1cf6af055b69",
+            "contentHash": "9c23296483a8b444b5be8c06e9820816e8c6c243ce12e82a87a81fd69d597246"
+          }
+        ]
+      },
+      "after": {
+        "id": "academic",
+        "kind": "academic",
+        "label": "Accepted first degrees and equivalent competence profiles",
+        "sourceText": "A completed Bachelor’s degree in Mathematics, Industrial Mathematics, Mathematical Economy, Computer Science, Data Science, or Physics from FAU or another equivalent German or international degree that is not significantly different with regard to the competence profile taught in the respective degree program. Please note that your competence profile cannot be evaluated in advance, but only by the admission committee after completing the application process (described below).",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Accepted first degrees and equivalent competence profiles. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
+            "quote": "A completed Bachelor’s degree in Mathematics, Industrial Mathematics, Mathematical Economy, Computer Science, Data Science, or Physics from FAU or another equivalent German or international degree that is not significantly different with regard to the competence profile taught in the respective degree program. Please note that your competence profile cannot be evaluated in advance, but only by the admission committee after completing the application process (described below).",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:15.034Z",
+            "validFor": [],
+            "locator": "HTML li block 94",
+            "retrievedAt": "2026-10-18T17:03:15.034Z",
+            "snapshotId": "ae23e848e552f12185b2b19675c937f1121985bba83f4442299e54cfe2dc1a52",
+            "contentHash": "9c23296483a8b444b5be8c06e9820816e8c6c243ce12e82a87a81fd69d597246"
+          }
+        ]
+      }
+    },
+    {
+      "collection": "requirements",
+      "id": "grades",
+      "change": "changed",
+      "before": {
+        "id": "grades",
+        "kind": "gpa",
+        "label": "Grade thresholds and interview route",
+        "sourceText": "A Grade Point Average (GPA) of 2.5 or better with respect to the German grading system. Candidates with an admissible degree (described above) and a GPA between 2.6 and 2.8 are invited for a short online interview in which their knowledge in calculus, linear algebra, algorithms and data structures is evaluated.",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Grade thresholds and interview route. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
+            "quote": "A Grade Point Average (GPA) of 2.5 or better with respect to the German grading system. Candidates with an admissible degree (described above) and a GPA between 2.6 and 2.8 are invited for a short online interview in which their knowledge in calculus, linear algebra, algorithms and data structures is evaluated.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:15.034Z",
+            "validFor": [],
+            "locator": "HTML li block 95",
+            "retrievedAt": "2026-10-18T17:03:15.034Z",
+            "snapshotId": "d0f1e660be43c215ea6459e27f241f9354ed2d3dce5182bba23f1cf6af055b69",
+            "contentHash": "9c23296483a8b444b5be8c06e9820816e8c6c243ce12e82a87a81fd69d597246"
+          }
+        ]
+      },
+      "after": {
+        "id": "grades",
+        "kind": "gpa",
+        "label": "Grade thresholds and interview route",
+        "sourceText": "A Grade Point Average (GPA) of 2.5 or better with respect to the German grading system. Candidates with an admissible degree (described above) and a GPA between 2.6 and 2.8 are invited for a short online interview in which their knowledge in calculus, linear algebra, algorithms and data structures is evaluated.",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Grade thresholds and interview route. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
+            "quote": "A Grade Point Average (GPA) of 2.5 or better with respect to the German grading system. Candidates with an admissible degree (described above) and a GPA between 2.6 and 2.8 are invited for a short online interview in which their knowledge in calculus, linear algebra, algorithms and data structures is evaluated.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:15.034Z",
+            "validFor": [],
+            "locator": "HTML li block 95",
+            "retrievedAt": "2026-10-18T17:03:15.034Z",
+            "snapshotId": "ae23e848e552f12185b2b19675c937f1121985bba83f4442299e54cfe2dc1a52",
+            "contentHash": "9c23296483a8b444b5be8c06e9820816e8c6c243ce12e82a87a81fd69d597246"
+          }
+        ]
+      }
+    },
+    {
+      "collection": "requirements",
+      "id": "language",
+      "change": "changed",
+      "before": {
+        "id": "language",
+        "kind": "language",
+        "label": "English proficiency and exemptions",
+        "sourceText": "As the Master programme is in English we are asking for a certificate of upper intermediate English (level B2) are mandatory. Even if your undergraduate degree was taught in English we recommend to submit a language certificate. For everyday life and for internships and working student jobs, we recommend solid knowledge (B1) of German, but a certificate is not necessary for the application.",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "English proficiency and exemptions. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
+            "quote": "As the Master programme is in English we are asking for a certificate of upper intermediate English (level B2) are mandatory. Even if your undergraduate degree was taught in English we recommend to submit a language certificate. For everyday life and for internships and working student jobs, we recommend solid knowledge (B1) of German, but a certificate is not necessary for the application.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:15.034Z",
+            "validFor": [],
+            "locator": "HTML li block 92",
+            "retrievedAt": "2026-10-18T17:03:15.034Z",
+            "snapshotId": "d0f1e660be43c215ea6459e27f241f9354ed2d3dce5182bba23f1cf6af055b69",
+            "contentHash": "9c23296483a8b444b5be8c06e9820816e8c6c243ce12e82a87a81fd69d597246"
+          }
+        ]
+      },
+      "after": {
+        "id": "language",
+        "kind": "language",
+        "label": "English proficiency and exemptions (wording requires reconciliation)",
+        "sourceText": "As the Master programme is in English we are asking for a certificate of upper intermediate English (level B2) are mandatory. Even if your undergraduate degree was taught in English we recommend to submit a language certificate. For everyday life and for internships and working student jobs, we recommend solid knowledge (B1) of German, but a certificate is not necessary for the application.\n\nEnglish proficiency at level B2 CEFR (vantage or upper intermediate) or six years of English classes at a German secondary school (Gymnasium). Applicants who have completed their university entrance qualifications or their first degree in English are not required to provide proof of proficiency in English.",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "English proficiency and exemptions (wording requires reconciliation). Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
+            "quote": "As the Master programme is in English we are asking for a certificate of upper intermediate English (level B2) are mandatory. Even if your undergraduate degree was taught in English we recommend to submit a language certificate. For everyday life and for internships and working student jobs, we recommend solid knowledge (B1) of German, but a certificate is not necessary for the application.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:15.034Z",
+            "validFor": [],
+            "locator": "HTML li block 92",
+            "retrievedAt": "2026-10-18T17:03:15.034Z",
+            "snapshotId": "ae23e848e552f12185b2b19675c937f1121985bba83f4442299e54cfe2dc1a52",
+            "contentHash": "9c23296483a8b444b5be8c06e9820816e8c6c243ce12e82a87a81fd69d597246"
+          },
+          {
+            "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
+            "quote": "English proficiency at level B2 CEFR (vantage or upper intermediate) or six years of English classes at a German secondary school (Gymnasium). Applicants who have completed their university entrance qualifications or their first degree in English are not required to provide proof of proficiency in English.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:15.034Z",
+            "validFor": [],
+            "locator": "HTML li block 96",
+            "retrievedAt": "2026-10-18T17:03:15.034Z",
+            "snapshotId": "ae23e848e552f12185b2b19675c937f1121985bba83f4442299e54cfe2dc1a52",
+            "contentHash": "9c23296483a8b444b5be8c06e9820816e8c6c243ce12e82a87a81fd69d597246"
+          }
+        ]
+      }
+    },
+    {
+      "collection": "facts",
+      "id": "academic",
+      "change": "changed",
+      "before": {
+        "id": "academic",
+        "category": "academic",
+        "value": "A completed Bachelor’s degree in Mathematics, Industrial Mathematics, Mathematical Economy, Computer Science, Data Science, or Physics from FAU or another equivalent German or international degree that is not significantly different with regard to the competence profile taught in the respective degree program. Please note that your competence profile cannot be evaluated in advance, but only by the admission committee after completing the application process (described below).",
+        "evidence": [
+          {
+            "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
+            "quote": "A completed Bachelor’s degree in Mathematics, Industrial Mathematics, Mathematical Economy, Computer Science, Data Science, or Physics from FAU or another equivalent German or international degree that is not significantly different with regard to the competence profile taught in the respective degree program. Please note that your competence profile cannot be evaluated in advance, but only by the admission committee after completing the application process (described below).",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:15.034Z",
+            "validFor": [],
+            "locator": "HTML li block 94",
+            "retrievedAt": "2026-10-18T17:03:15.034Z",
+            "snapshotId": "d0f1e660be43c215ea6459e27f241f9354ed2d3dce5182bba23f1cf6af055b69",
+            "contentHash": "9c23296483a8b444b5be8c06e9820816e8c6c243ce12e82a87a81fd69d597246"
+          }
+        ]
+      },
+      "after": {
+        "id": "academic",
+        "category": "academic",
+        "value": "A completed Bachelor’s degree in Mathematics, Industrial Mathematics, Mathematical Economy, Computer Science, Data Science, or Physics from FAU or another equivalent German or international degree that is not significantly different with regard to the competence profile taught in the respective degree program. Please note that your competence profile cannot be evaluated in advance, but only by the admission committee after completing the application process (described below).",
+        "evidence": [
+          {
+            "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
+            "quote": "A completed Bachelor’s degree in Mathematics, Industrial Mathematics, Mathematical Economy, Computer Science, Data Science, or Physics from FAU or another equivalent German or international degree that is not significantly different with regard to the competence profile taught in the respective degree program. Please note that your competence profile cannot be evaluated in advance, but only by the admission committee after completing the application process (described below).",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:15.034Z",
+            "validFor": [],
+            "locator": "HTML li block 94",
+            "retrievedAt": "2026-10-18T17:03:15.034Z",
+            "snapshotId": "ae23e848e552f12185b2b19675c937f1121985bba83f4442299e54cfe2dc1a52",
+            "contentHash": "9c23296483a8b444b5be8c06e9820816e8c6c243ce12e82a87a81fd69d597246"
+          }
+        ]
+      }
+    },
+    {
+      "collection": "facts",
+      "id": "grades",
+      "change": "changed",
+      "before": {
+        "id": "grades",
+        "category": "academic",
+        "value": "A Grade Point Average (GPA) of 2.5 or better with respect to the German grading system. Candidates with an admissible degree (described above) and a GPA between 2.6 and 2.8 are invited for a short online interview in which their knowledge in calculus, linear algebra, algorithms and data structures is evaluated.",
+        "evidence": [
+          {
+            "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
+            "quote": "A Grade Point Average (GPA) of 2.5 or better with respect to the German grading system. Candidates with an admissible degree (described above) and a GPA between 2.6 and 2.8 are invited for a short online interview in which their knowledge in calculus, linear algebra, algorithms and data structures is evaluated.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:15.034Z",
+            "validFor": [],
+            "locator": "HTML li block 95",
+            "retrievedAt": "2026-10-18T17:03:15.034Z",
+            "snapshotId": "d0f1e660be43c215ea6459e27f241f9354ed2d3dce5182bba23f1cf6af055b69",
+            "contentHash": "9c23296483a8b444b5be8c06e9820816e8c6c243ce12e82a87a81fd69d597246"
+          }
+        ]
+      },
+      "after": {
+        "id": "grades",
+        "category": "academic",
+        "value": "A Grade Point Average (GPA) of 2.5 or better with respect to the German grading system. Candidates with an admissible degree (described above) and a GPA between 2.6 and 2.8 are invited for a short online interview in which their knowledge in calculus, linear algebra, algorithms and data structures is evaluated.",
+        "evidence": [
+          {
+            "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
+            "quote": "A Grade Point Average (GPA) of 2.5 or better with respect to the German grading system. Candidates with an admissible degree (described above) and a GPA between 2.6 and 2.8 are invited for a short online interview in which their knowledge in calculus, linear algebra, algorithms and data structures is evaluated.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:15.034Z",
+            "validFor": [],
+            "locator": "HTML li block 95",
+            "retrievedAt": "2026-10-18T17:03:15.034Z",
+            "snapshotId": "ae23e848e552f12185b2b19675c937f1121985bba83f4442299e54cfe2dc1a52",
+            "contentHash": "9c23296483a8b444b5be8c06e9820816e8c6c243ce12e82a87a81fd69d597246"
+          }
+        ]
+      }
+    },
+    {
+      "collection": "facts",
+      "id": "language",
+      "change": "changed",
+      "before": {
+        "id": "language",
+        "category": "language",
+        "value": "As the Master programme is in English we are asking for a certificate of upper intermediate English (level B2) are mandatory. Even if your undergraduate degree was taught in English we recommend to submit a language certificate. For everyday life and for internships and working student jobs, we recommend solid knowledge (B1) of German, but a certificate is not necessary for the application.",
+        "evidence": [
+          {
+            "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
+            "quote": "As the Master programme is in English we are asking for a certificate of upper intermediate English (level B2) are mandatory. Even if your undergraduate degree was taught in English we recommend to submit a language certificate. For everyday life and for internships and working student jobs, we recommend solid knowledge (B1) of German, but a certificate is not necessary for the application.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:15.034Z",
+            "validFor": [],
+            "locator": "HTML li block 92",
+            "retrievedAt": "2026-10-18T17:03:15.034Z",
+            "snapshotId": "d0f1e660be43c215ea6459e27f241f9354ed2d3dce5182bba23f1cf6af055b69",
+            "contentHash": "9c23296483a8b444b5be8c06e9820816e8c6c243ce12e82a87a81fd69d597246"
+          }
+        ]
+      },
+      "after": {
+        "id": "language",
+        "category": "language",
+        "value": "As the Master programme is in English we are asking for a certificate of upper intermediate English (level B2) are mandatory. Even if your undergraduate degree was taught in English we recommend to submit a language certificate. For everyday life and for internships and working student jobs, we recommend solid knowledge (B1) of German, but a certificate is not necessary for the application.\n\nEnglish proficiency at level B2 CEFR (vantage or upper intermediate) or six years of English classes at a German secondary school (Gymnasium). Applicants who have completed their university entrance qualifications or their first degree in English are not required to provide proof of proficiency in English.",
+        "evidence": [
+          {
+            "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
+            "quote": "As the Master programme is in English we are asking for a certificate of upper intermediate English (level B2) are mandatory. Even if your undergraduate degree was taught in English we recommend to submit a language certificate. For everyday life and for internships and working student jobs, we recommend solid knowledge (B1) of German, but a certificate is not necessary for the application.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:15.034Z",
+            "validFor": [],
+            "locator": "HTML li block 92",
+            "retrievedAt": "2026-10-18T17:03:15.034Z",
+            "snapshotId": "ae23e848e552f12185b2b19675c937f1121985bba83f4442299e54cfe2dc1a52",
+            "contentHash": "9c23296483a8b444b5be8c06e9820816e8c6c243ce12e82a87a81fd69d597246"
+          },
+          {
+            "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
+            "quote": "English proficiency at level B2 CEFR (vantage or upper intermediate) or six years of English classes at a German secondary school (Gymnasium). Applicants who have completed their university entrance qualifications or their first degree in English are not required to provide proof of proficiency in English.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:15.034Z",
+            "validFor": [],
+            "locator": "HTML li block 96",
+            "retrievedAt": "2026-10-18T17:03:15.034Z",
+            "snapshotId": "ae23e848e552f12185b2b19675c937f1121985bba83f4442299e54cfe2dc1a52",
+            "contentHash": "9c23296483a8b444b5be8c06e9820816e8c6c243ce12e82a87a81fd69d597246"
+          }
+        ]
+      }
+    },
+    {
+      "collection": "facts",
+      "id": "deadline",
+      "change": "changed",
+      "before": {
+        "id": "deadline",
+        "category": "deadline",
+        "value": "Winter semester: 31.05.",
+        "note": "The admissions section is scoped to domestic applicants; international dates may differ.",
+        "evidence": [
+          {
+            "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
+            "quote": "Winter semester: 31.05.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:15.034Z",
+            "validFor": [],
+            "locator": "HTML li block 89",
+            "retrievedAt": "2026-10-18T17:03:15.034Z",
+            "snapshotId": "d0f1e660be43c215ea6459e27f241f9354ed2d3dce5182bba23f1cf6af055b69",
+            "contentHash": "9c23296483a8b444b5be8c06e9820816e8c6c243ce12e82a87a81fd69d597246"
+          }
+        ]
+      },
+      "after": {
+        "id": "deadline",
+        "category": "deadline",
+        "value": "The following information is intended for German applicants as well as domestic applicants with foreign educational qualifications. Different regulations and deadlines may apply to international prospective students.\n\nWinter semester: 31.05.\n\nSummer semester: 30.11.",
+        "note": "The admissions section is scoped to domestic applicants; international dates may differ.",
+        "evidence": [
+          {
+            "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
+            "quote": "The following information is intended for German applicants as well as domestic applicants with foreign educational qualifications. Different regulations and deadlines may apply to international prospective students.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:15.034Z",
+            "validFor": [],
+            "locator": "HTML p block 85",
+            "retrievedAt": "2026-10-18T17:03:15.034Z",
+            "snapshotId": "ae23e848e552f12185b2b19675c937f1121985bba83f4442299e54cfe2dc1a52",
+            "contentHash": "9c23296483a8b444b5be8c06e9820816e8c6c243ce12e82a87a81fd69d597246"
+          },
+          {
+            "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
+            "quote": "Winter semester: 31.05.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:15.034Z",
+            "validFor": [],
+            "locator": "HTML li block 89",
+            "retrievedAt": "2026-10-18T17:03:15.034Z",
+            "snapshotId": "ae23e848e552f12185b2b19675c937f1121985bba83f4442299e54cfe2dc1a52",
+            "contentHash": "9c23296483a8b444b5be8c06e9820816e8c6c243ce12e82a87a81fd69d597246"
+          },
+          {
+            "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
+            "quote": "Summer semester: 30.11.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:15.034Z",
+            "validFor": [],
+            "locator": "HTML li block 90",
+            "retrievedAt": "2026-10-18T17:03:15.034Z",
+            "snapshotId": "ae23e848e552f12185b2b19675c937f1121985bba83f4442299e54cfe2dc1a52",
+            "contentHash": "9c23296483a8b444b5be8c06e9820816e8c6c243ce12e82a87a81fd69d597246"
+          }
+        ]
+      }
+    },
+    {
+      "collection": "facts",
+      "id": "application",
+      "change": "changed",
+      "before": {
+        "id": "application",
+        "category": "application",
+        "value": "Applications have to be submitted via the campus management portal campo.fau.de.",
+        "evidence": [
+          {
+            "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
+            "quote": "Applications have to be submitted via the campus management portal campo.fau.de.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:15.034Z",
+            "validFor": [],
+            "locator": "HTML p block 98",
+            "retrievedAt": "2026-10-18T17:03:15.034Z",
+            "snapshotId": "d0f1e660be43c215ea6459e27f241f9354ed2d3dce5182bba23f1cf6af055b69",
+            "contentHash": "9c23296483a8b444b5be8c06e9820816e8c6c243ce12e82a87a81fd69d597246"
+          }
+        ]
+      },
+      "after": {
+        "id": "application",
+        "category": "application",
+        "value": "Applications have to be submitted via the campus management portal campo.fau.de.",
+        "evidence": [
+          {
+            "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
+            "quote": "Applications have to be submitted via the campus management portal campo.fau.de.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:15.034Z",
+            "validFor": [],
+            "locator": "HTML p block 98",
+            "retrievedAt": "2026-10-18T17:03:15.034Z",
+            "snapshotId": "ae23e848e552f12185b2b19675c937f1121985bba83f4442299e54cfe2dc1a52",
+            "contentHash": "9c23296483a8b444b5be8c06e9820816e8c6c243ce12e82a87a81fd69d597246"
+          }
+        ]
+      }
+    },
+    {
+      "collection": "sources",
+      "id": "https://www.fau.eu/degree-program/data-science-m-sc/",
+      "change": "changed",
+      "before": {
+        "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
+        "quote": "Data Science (M.Sc.)",
+        "status": "unverified",
+        "sourceType": "official",
+        "lastChecked": "2026-10-18T17:03:15.034Z",
+        "validFor": [],
+        "locator": "Source document identity",
+        "retrievedAt": "2026-10-18T17:03:15.034Z",
+        "snapshotId": "d0f1e660be43c215ea6459e27f241f9354ed2d3dce5182bba23f1cf6af055b69",
+        "contentHash": "9c23296483a8b444b5be8c06e9820816e8c6c243ce12e82a87a81fd69d597246"
+      },
+      "after": {
+        "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
+        "quote": "Data Science (M.Sc.)",
+        "status": "unverified",
+        "sourceType": "official",
+        "lastChecked": "2026-10-18T17:03:15.034Z",
+        "validFor": [],
+        "locator": "Source document identity",
+        "retrievedAt": "2026-10-18T17:03:15.034Z",
+        "snapshotId": "ae23e848e552f12185b2b19675c937f1121985bba83f4442299e54cfe2dc1a52",
+        "contentHash": "9c23296483a8b444b5be8c06e9820816e8c6c243ce12e82a87a81fd69d597246"
+      }
+    }
+  ]
+}

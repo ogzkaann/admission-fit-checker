@@ -275,7 +275,7 @@ export function Dashboard({
             <div>
               <h2 className="font-display text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">Curated programs</h2>
               <p className="mt-3 max-w-md text-base leading-7 text-muted-foreground">
-                Handpicked master&apos;s programs around the world.
+                  German master&apos;s programs from official sources. Pilot records await editorial review.
               </p>
             </div>
             <button

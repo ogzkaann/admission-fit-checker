@@ -10,6 +10,8 @@ import { Button } from "./ui/button";
 import { Dialog } from "./ui/dialog";
 import { FitResult } from "./FitResult";
 import { AskProgram } from "./AskProgram";
+import { CatalogEvidence } from "./CatalogEvidence";
+import { catalogStatusLabel } from "../domain/catalog";
 
 interface ProgramDetailProps {
   program: Program;
@@ -76,7 +78,7 @@ export function ProgramDetail({ program, profile, documents, settings, open, onO
               <Badge variant="outline">
                 {program.city}, {program.country}
               </Badge>
-              <Badge variant="yellow">{program.isDemo || program.origin === "demo" ? "Illustrative demo" : `Source: ${program.verificationStatus ?? "unverified"}`}</Badge>
+              <Badge variant="yellow">{catalogStatusLabel(program)}</Badge>
             </div>
             <p className="mt-3 text-sm leading-6 text-muted-foreground">{program.description}</p>
           </div>
@@ -89,14 +91,14 @@ export function ProgramDetail({ program, profile, documents, settings, open, onO
             <CalendarDays className="mt-0.5 h-4 w-4 text-primary" />
             <div>
               <p className="text-xs font-semibold uppercase text-muted-foreground">Deadline</p>
-              <p className="text-sm font-semibold text-foreground">{program.deadline ?? "-"}</p>
+              <p className="text-sm font-semibold text-foreground">{program.deadline ?? "Not verified for this intake"}</p>
             </div>
           </div>
           <div className="flex items-start gap-3 rounded-2xl border border-black/5 bg-white p-4 shadow-sm">
             <Wallet className="mt-0.5 h-4 w-4 text-primary" />
             <div>
               <p className="text-xs font-semibold uppercase text-muted-foreground">Fee</p>
-              <p className="text-sm font-semibold text-foreground">{program.fee ?? "-"}</p>
+              <p className="text-sm font-semibold text-foreground">{program.fee ?? "Not verified for this intake"}</p>
             </div>
           </div>
           <div className="flex items-start gap-3 rounded-2xl border border-black/5 bg-white p-4 shadow-sm">
@@ -107,6 +109,8 @@ export function ProgramDetail({ program, profile, documents, settings, open, onO
             </div>
           </div>
         </div>
+
+        <CatalogEvidence program={program} />
 
         {program.requiredDocuments.length > 0 ? (
           <section className="grid gap-2">

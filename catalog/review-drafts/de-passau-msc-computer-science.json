@@ -1,0 +1,302 @@
+{
+  "schemaVersion": 1,
+  "programId": "de-passau-msc-computer-science",
+  "revision": "92098abca56b6a993cfb4ac09804dfe6deb4a8e17f4509eb41b7f6d4e13e2a25",
+  "reviewer": "",
+  "reviewedAt": "",
+  "note": "",
+  "requirementsComplete": false,
+  "applicability": {
+    "semesters": [],
+    "evidence": [],
+    "explanation": ""
+  },
+  "sources": [
+    {
+      "snapshotId": "fb7ca3be80581d2bf74c8b150ddf3d80a88c7912386d755f1ba6e384d87fb5d2",
+      "decision": "pending"
+    },
+    {
+      "snapshotId": "54a5150e9a34c4a0ae6b74a901dd82164312a909d66abd371d3d65482e6b903d",
+      "decision": "pending"
+    }
+  ],
+  "requirements": [
+    {
+      "decision": "pending",
+      "requirement": {
+        "id": "academic",
+        "kind": "academic",
+        "label": "Prior degree, computer science credits and grade alternatives",
+        "sourceText": "To apply, you need to have an undergraduate university degree in computer science or a related discipline with a computer science component of at least 110 ECTS credits. You must be ranked among the best 70% of graduates within your cohort or the final grade for your first degree was 2.7 or better (according to the German grading scale; foreign grades will be converted once we receive your application).",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Prior degree, computer science credits and grade alternatives. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "To apply, you need to have an undergraduate university degree in computer science or a related discipline with a computer science component of at least 110 ECTS credits. You must be ranked among the best 70% of graduates within your cohort or the final grade for your first degree was 2.7 or better (according to the German grading scale; foreign grades will be converted once we receive your application).",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:08.680Z",
+            "validFor": [],
+            "locator": "HTML p block 96",
+            "retrievedAt": "2026-10-18T17:03:08.680Z",
+            "snapshotId": "fb7ca3be80581d2bf74c8b150ddf3d80a88c7912386d755f1ba6e384d87fb5d2",
+            "contentHash": "b292474db6b95295f09b0f4b13ba2334cf58f776fcf30dc6ede11c2ffdad4c6b"
+          }
+        ]
+      }
+    },
+    {
+      "decision": "pending",
+      "requirement": {
+        "id": "credit-route",
+        "kind": "ects",
+        "label": "Computer science credit route and non-ECTS alternative",
+        "sourceText": "To apply, you need to have an undergraduate university degree in computer science or a related discipline with a computer science component of at least 110 ECTS credits. You must be ranked among the best 70% of graduates within your cohort or the final grade for your first degree was 2.7 or better (according to the German grading scale; foreign grades will be converted once we receive your application).\n\nYour degree must have been earned over a course of study of a standard length of three years or more. If you completed a four-year non-ECTS degree, the 110 ECTS credit requirement is deemed to be met if approximately two-thirds of your credit points were earned in computer science related modules/courses.",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Computer science credit route and non-ECTS alternative. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "To apply, you need to have an undergraduate university degree in computer science or a related discipline with a computer science component of at least 110 ECTS credits. You must be ranked among the best 70% of graduates within your cohort or the final grade for your first degree was 2.7 or better (according to the German grading scale; foreign grades will be converted once we receive your application).",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:08.680Z",
+            "validFor": [],
+            "locator": "HTML p block 96",
+            "retrievedAt": "2026-10-18T17:03:08.680Z",
+            "snapshotId": "fb7ca3be80581d2bf74c8b150ddf3d80a88c7912386d755f1ba6e384d87fb5d2",
+            "contentHash": "b292474db6b95295f09b0f4b13ba2334cf58f776fcf30dc6ede11c2ffdad4c6b"
+          },
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "Your degree must have been earned over a course of study of a standard length of three years or more. If you completed a four-year non-ECTS degree, the 110 ECTS credit requirement is deemed to be met if approximately two-thirds of your credit points were earned in computer science related modules/courses.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:08.680Z",
+            "validFor": [],
+            "locator": "HTML p block 97",
+            "retrievedAt": "2026-10-18T17:03:08.680Z",
+            "snapshotId": "fb7ca3be80581d2bf74c8b150ddf3d80a88c7912386d755f1ba6e384d87fb5d2",
+            "contentHash": "b292474db6b95295f09b0f4b13ba2334cf58f776fcf30dc6ede11c2ffdad4c6b"
+          }
+        ]
+      }
+    },
+    {
+      "decision": "pending",
+      "requirement": {
+        "id": "degree-duration",
+        "kind": "academic",
+        "label": "Degree duration",
+        "sourceText": "Your degree must have been earned over a course of study of a standard length of three years or more. If you completed a four-year non-ECTS degree, the 110 ECTS credit requirement is deemed to be met if approximately two-thirds of your credit points were earned in computer science related modules/courses.",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Degree duration. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "Your degree must have been earned over a course of study of a standard length of three years or more. If you completed a four-year non-ECTS degree, the 110 ECTS credit requirement is deemed to be met if approximately two-thirds of your credit points were earned in computer science related modules/courses.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:08.680Z",
+            "validFor": [],
+            "locator": "HTML p block 97",
+            "retrievedAt": "2026-10-18T17:03:08.680Z",
+            "snapshotId": "fb7ca3be80581d2bf74c8b150ddf3d80a88c7912386d755f1ba6e384d87fb5d2",
+            "contentHash": "b292474db6b95295f09b0f4b13ba2334cf58f776fcf30dc6ede11c2ffdad4c6b"
+          }
+        ]
+      }
+    },
+    {
+      "decision": "pending",
+      "requirement": {
+        "id": "preliminary-degree",
+        "kind": "academic",
+        "label": "Preliminary transcript and final degree submission",
+        "sourceText": "If you have not yet received your final results and certificates at the time of application, you may apply using your Transcript of Records or other preliminary transcript. If your application is successful, you must submit your final Transcript of Records, including all completed coursework, by the start of the lecture period. The final Bachelor’s degree certificate must be submitted no later than the 10th week of lectures.",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Preliminary transcript and final degree submission. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "If you have not yet received your final results and certificates at the time of application, you may apply using your Transcript of Records or other preliminary transcript. If your application is successful, you must submit your final Transcript of Records, including all completed coursework, by the start of the lecture period. The final Bachelor’s degree certificate must be submitted no later than the 10th week of lectures.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:08.680Z",
+            "validFor": [],
+            "locator": "HTML p block 98",
+            "retrievedAt": "2026-10-18T17:03:08.680Z",
+            "snapshotId": "fb7ca3be80581d2bf74c8b150ddf3d80a88c7912386d755f1ba6e384d87fb5d2",
+            "contentHash": "b292474db6b95295f09b0f4b13ba2334cf58f776fcf30dc6ede11c2ffdad4c6b"
+          }
+        ]
+      }
+    },
+    {
+      "decision": "pending",
+      "requirement": {
+        "id": "recognition",
+        "kind": "academic",
+        "label": "Recognition of awarding institution",
+        "sourceText": "Please note that we only recognise degrees awarded by universities with 'H+' status in the Anabin database of the German Central Office for Foreign Education. You can check the Anabin database online or contact the International Coordinator of the faculty by e-mail if you do not understand German.",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Recognition of awarding institution. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "Please note that we only recognise degrees awarded by universities with 'H+' status in the Anabin database of the German Central Office for Foreign Education. You can check the Anabin database online or contact the International Coordinator of the faculty by e-mail if you do not understand German.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:08.680Z",
+            "validFor": [],
+            "locator": "HTML p block 100",
+            "retrievedAt": "2026-10-18T17:03:08.680Z",
+            "snapshotId": "fb7ca3be80581d2bf74c8b150ddf3d80a88c7912386d755f1ba6e384d87fb5d2",
+            "contentHash": "b292474db6b95295f09b0f4b13ba2334cf58f776fcf30dc6ede11c2ffdad4c6b"
+          }
+        ]
+      }
+    },
+    {
+      "decision": "pending",
+      "requirement": {
+        "id": "language",
+        "kind": "language",
+        "label": "Language routes, exemptions and German A1 condition",
+        "sourceText": "If neither your native language nor your language of instruction during your prior university education was English or German, then you will have to provide recognised language certificates for one or both of these languages. Depending on which language you want to primarily be taught in, you need certificates for:\n\nGerman: You should provide proof of German language skills equivalent to level B2 CEFR.\n\nEnglish: You should provide proof of English language skills equivalent to level B2 CEFR, such as:\n\nEven if you plan to choose only modules taught in English, you also need German language skills at level A1 CEFR (beginner's level) or higher. If you do not meet this requirement at the time of application, you will have to complete a beginner's German course and provide a certificate by the end of your first year of study.",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Language routes, exemptions and German A1 condition. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "If neither your native language nor your language of instruction during your prior university education was English or German, then you will have to provide recognised language certificates for one or both of these languages. Depending on which language you want to primarily be taught in, you need certificates for:",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:08.680Z",
+            "validFor": [],
+            "locator": "HTML p block 101",
+            "retrievedAt": "2026-10-18T17:03:08.680Z",
+            "snapshotId": "fb7ca3be80581d2bf74c8b150ddf3d80a88c7912386d755f1ba6e384d87fb5d2",
+            "contentHash": "b292474db6b95295f09b0f4b13ba2334cf58f776fcf30dc6ede11c2ffdad4c6b"
+          },
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "German: You should provide proof of German language skills equivalent to level B2 CEFR.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:08.680Z",
+            "validFor": [],
+            "locator": "HTML li block 102",
+            "retrievedAt": "2026-10-18T17:03:08.680Z",
+            "snapshotId": "fb7ca3be80581d2bf74c8b150ddf3d80a88c7912386d755f1ba6e384d87fb5d2",
+            "contentHash": "b292474db6b95295f09b0f4b13ba2334cf58f776fcf30dc6ede11c2ffdad4c6b"
+          },
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "English: You should provide proof of English language skills equivalent to level B2 CEFR, such as:",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:08.680Z",
+            "validFor": [],
+            "locator": "HTML li block 104",
+            "retrievedAt": "2026-10-18T17:03:08.680Z",
+            "snapshotId": "fb7ca3be80581d2bf74c8b150ddf3d80a88c7912386d755f1ba6e384d87fb5d2",
+            "contentHash": "b292474db6b95295f09b0f4b13ba2334cf58f776fcf30dc6ede11c2ffdad4c6b"
+          },
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "Even if you plan to choose only modules taught in English, you also need German language skills at level A1 CEFR (beginner's level) or higher. If you do not meet this requirement at the time of application, you will have to complete a beginner's German course and provide a certificate by the end of your first year of study.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:08.680Z",
+            "validFor": [],
+            "locator": "HTML p block 109",
+            "retrievedAt": "2026-10-18T17:03:08.680Z",
+            "snapshotId": "fb7ca3be80581d2bf74c8b150ddf3d80a88c7912386d755f1ba6e384d87fb5d2",
+            "contentHash": "b292474db6b95295f09b0f4b13ba2334cf58f776fcf30dc6ede11c2ffdad4c6b"
+          }
+        ]
+      }
+    },
+    {
+      "decision": "pending",
+      "requirement": {
+        "id": "inventory-review",
+        "kind": "other",
+        "label": "Full admission regulations and applicability review",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "The extracted inventory is not complete. Verify regulations, applicant categories, exemptions, selection and semester validity."
+        },
+        "evidence": []
+      }
+    }
+  ],
+  "facts": [
+    {
+      "id": "academic",
+      "decision": "pending"
+    },
+    {
+      "id": "credit-route",
+      "decision": "pending"
+    },
+    {
+      "id": "degree-duration",
+      "decision": "pending"
+    },
+    {
+      "id": "preliminary-degree",
+      "decision": "pending"
+    },
+    {
+      "id": "recognition",
+      "decision": "pending"
+    },
+    {
+      "id": "language",
+      "decision": "pending"
+    },
+    {
+      "id": "certificates",
+      "decision": "pending"
+    },
+    {
+      "id": "deadline",
+      "decision": "pending"
+    },
+    {
+      "id": "application",
+      "decision": "pending"
+    },
+    {
+      "id": "tuition",
+      "decision": "pending"
+    },
+    {
+      "id": "semester",
+      "decision": "pending"
+    }
+  ]
+}

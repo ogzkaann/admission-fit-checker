@@ -1,0 +1,2037 @@
+[
+  {
+    "id": "de-passau-msc-computer-science",
+    "university": "University of Passau",
+    "programName": "Computer Science",
+    "degreeType": "master",
+    "language": "English / German",
+    "country": "Germany",
+    "city": "Passau",
+    "description": "Master of Science in Computer Science. Official-source pilot; admission clauses await editorial review.",
+    "sourceUrl": "https://www.uni-passau.de/en/msc-computer-science/",
+    "lastChecked": "2026-10-18T17:03:08.680Z",
+    "requiredDocuments": [],
+    "requirements": [
+      {
+        "id": "academic",
+        "kind": "academic",
+        "label": "Prior degree, computer science credits and grade alternatives",
+        "sourceText": "To apply, you need to have an undergraduate university degree in computer science or a related discipline with a computer science component of at least 110 ECTS credits. You must be ranked among the best 70% of graduates within your cohort or the final grade for your first degree was 2.7 or better (according to the German grading scale; foreign grades will be converted once we receive your application).",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Prior degree, computer science credits and grade alternatives. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "To apply, you need to have an undergraduate university degree in computer science or a related discipline with a computer science component of at least 110 ECTS credits. You must be ranked among the best 70% of graduates within your cohort or the final grade for your first degree was 2.7 or better (according to the German grading scale; foreign grades will be converted once we receive your application).",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:08.680Z",
+            "validFor": [],
+            "locator": "HTML p block 96",
+            "retrievedAt": "2026-10-18T17:03:08.680Z",
+            "snapshotId": "fb7ca3be80581d2bf74c8b150ddf3d80a88c7912386d755f1ba6e384d87fb5d2",
+            "contentHash": "b292474db6b95295f09b0f4b13ba2334cf58f776fcf30dc6ede11c2ffdad4c6b"
+          }
+        ]
+      },
+      {
+        "id": "credit-route",
+        "kind": "ects",
+        "label": "Computer science credit route and non-ECTS alternative",
+        "sourceText": "To apply, you need to have an undergraduate university degree in computer science or a related discipline with a computer science component of at least 110 ECTS credits. You must be ranked among the best 70% of graduates within your cohort or the final grade for your first degree was 2.7 or better (according to the German grading scale; foreign grades will be converted once we receive your application).\n\nYour degree must have been earned over a course of study of a standard length of three years or more. If you completed a four-year non-ECTS degree, the 110 ECTS credit requirement is deemed to be met if approximately two-thirds of your credit points were earned in computer science related modules/courses.",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Computer science credit route and non-ECTS alternative. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "To apply, you need to have an undergraduate university degree in computer science or a related discipline with a computer science component of at least 110 ECTS credits. You must be ranked among the best 70% of graduates within your cohort or the final grade for your first degree was 2.7 or better (according to the German grading scale; foreign grades will be converted once we receive your application).",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:08.680Z",
+            "validFor": [],
+            "locator": "HTML p block 96",
+            "retrievedAt": "2026-10-18T17:03:08.680Z",
+            "snapshotId": "fb7ca3be80581d2bf74c8b150ddf3d80a88c7912386d755f1ba6e384d87fb5d2",
+            "contentHash": "b292474db6b95295f09b0f4b13ba2334cf58f776fcf30dc6ede11c2ffdad4c6b"
+          },
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "Your degree must have been earned over a course of study of a standard length of three years or more. If you completed a four-year non-ECTS degree, the 110 ECTS credit requirement is deemed to be met if approximately two-thirds of your credit points were earned in computer science related modules/courses.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:08.680Z",
+            "validFor": [],
+            "locator": "HTML p block 97",
+            "retrievedAt": "2026-10-18T17:03:08.680Z",
+            "snapshotId": "fb7ca3be80581d2bf74c8b150ddf3d80a88c7912386d755f1ba6e384d87fb5d2",
+            "contentHash": "b292474db6b95295f09b0f4b13ba2334cf58f776fcf30dc6ede11c2ffdad4c6b"
+          }
+        ]
+      },
+      {
+        "id": "degree-duration",
+        "kind": "academic",
+        "label": "Degree duration",
+        "sourceText": "Your degree must have been earned over a course of study of a standard length of three years or more. If you completed a four-year non-ECTS degree, the 110 ECTS credit requirement is deemed to be met if approximately two-thirds of your credit points were earned in computer science related modules/courses.",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Degree duration. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "Your degree must have been earned over a course of study of a standard length of three years or more. If you completed a four-year non-ECTS degree, the 110 ECTS credit requirement is deemed to be met if approximately two-thirds of your credit points were earned in computer science related modules/courses.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:08.680Z",
+            "validFor": [],
+            "locator": "HTML p block 97",
+            "retrievedAt": "2026-10-18T17:03:08.680Z",
+            "snapshotId": "fb7ca3be80581d2bf74c8b150ddf3d80a88c7912386d755f1ba6e384d87fb5d2",
+            "contentHash": "b292474db6b95295f09b0f4b13ba2334cf58f776fcf30dc6ede11c2ffdad4c6b"
+          }
+        ]
+      },
+      {
+        "id": "preliminary-degree",
+        "kind": "academic",
+        "label": "Preliminary transcript and final degree submission",
+        "sourceText": "If you have not yet received your final results and certificates at the time of application, you may apply using your Transcript of Records or other preliminary transcript. If your application is successful, you must submit your final Transcript of Records, including all completed coursework, by the start of the lecture period. The final Bachelor’s degree certificate must be submitted no later than the 10th week of lectures.",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Preliminary transcript and final degree submission. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "If you have not yet received your final results and certificates at the time of application, you may apply using your Transcript of Records or other preliminary transcript. If your application is successful, you must submit your final Transcript of Records, including all completed coursework, by the start of the lecture period. The final Bachelor’s degree certificate must be submitted no later than the 10th week of lectures.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:08.680Z",
+            "validFor": [],
+            "locator": "HTML p block 98",
+            "retrievedAt": "2026-10-18T17:03:08.680Z",
+            "snapshotId": "fb7ca3be80581d2bf74c8b150ddf3d80a88c7912386d755f1ba6e384d87fb5d2",
+            "contentHash": "b292474db6b95295f09b0f4b13ba2334cf58f776fcf30dc6ede11c2ffdad4c6b"
+          }
+        ]
+      },
+      {
+        "id": "recognition",
+        "kind": "academic",
+        "label": "Recognition of awarding institution",
+        "sourceText": "Please note that we only recognise degrees awarded by universities with 'H+' status in the Anabin database of the German Central Office for Foreign Education. You can check the Anabin database online or contact the International Coordinator of the faculty by e-mail if you do not understand German.",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Recognition of awarding institution. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "Please note that we only recognise degrees awarded by universities with 'H+' status in the Anabin database of the German Central Office for Foreign Education. You can check the Anabin database online or contact the International Coordinator of the faculty by e-mail if you do not understand German.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:08.680Z",
+            "validFor": [],
+            "locator": "HTML p block 100",
+            "retrievedAt": "2026-10-18T17:03:08.680Z",
+            "snapshotId": "fb7ca3be80581d2bf74c8b150ddf3d80a88c7912386d755f1ba6e384d87fb5d2",
+            "contentHash": "b292474db6b95295f09b0f4b13ba2334cf58f776fcf30dc6ede11c2ffdad4c6b"
+          }
+        ]
+      },
+      {
+        "id": "language",
+        "kind": "language",
+        "label": "Language routes, exemptions and German A1 condition",
+        "sourceText": "If neither your native language nor your language of instruction during your prior university education was English or German, then you will have to provide recognised language certificates for one or both of these languages. Depending on which language you want to primarily be taught in, you need certificates for:\n\nGerman: You should provide proof of German language skills equivalent to level B2 CEFR.\n\nEnglish: You should provide proof of English language skills equivalent to level B2 CEFR, such as:\n\nEven if you plan to choose only modules taught in English, you also need German language skills at level A1 CEFR (beginner's level) or higher. If you do not meet this requirement at the time of application, you will have to complete a beginner's German course and provide a certificate by the end of your first year of study.",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Language routes, exemptions and German A1 condition. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "If neither your native language nor your language of instruction during your prior university education was English or German, then you will have to provide recognised language certificates for one or both of these languages. Depending on which language you want to primarily be taught in, you need certificates for:",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:08.680Z",
+            "validFor": [],
+            "locator": "HTML p block 101",
+            "retrievedAt": "2026-10-18T17:03:08.680Z",
+            "snapshotId": "fb7ca3be80581d2bf74c8b150ddf3d80a88c7912386d755f1ba6e384d87fb5d2",
+            "contentHash": "b292474db6b95295f09b0f4b13ba2334cf58f776fcf30dc6ede11c2ffdad4c6b"
+          },
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "German: You should provide proof of German language skills equivalent to level B2 CEFR.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:08.680Z",
+            "validFor": [],
+            "locator": "HTML li block 102",
+            "retrievedAt": "2026-10-18T17:03:08.680Z",
+            "snapshotId": "fb7ca3be80581d2bf74c8b150ddf3d80a88c7912386d755f1ba6e384d87fb5d2",
+            "contentHash": "b292474db6b95295f09b0f4b13ba2334cf58f776fcf30dc6ede11c2ffdad4c6b"
+          },
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "English: You should provide proof of English language skills equivalent to level B2 CEFR, such as:",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:08.680Z",
+            "validFor": [],
+            "locator": "HTML li block 104",
+            "retrievedAt": "2026-10-18T17:03:08.680Z",
+            "snapshotId": "fb7ca3be80581d2bf74c8b150ddf3d80a88c7912386d755f1ba6e384d87fb5d2",
+            "contentHash": "b292474db6b95295f09b0f4b13ba2334cf58f776fcf30dc6ede11c2ffdad4c6b"
+          },
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "Even if you plan to choose only modules taught in English, you also need German language skills at level A1 CEFR (beginner's level) or higher. If you do not meet this requirement at the time of application, you will have to complete a beginner's German course and provide a certificate by the end of your first year of study.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:08.680Z",
+            "validFor": [],
+            "locator": "HTML p block 109",
+            "retrievedAt": "2026-10-18T17:03:08.680Z",
+            "snapshotId": "fb7ca3be80581d2bf74c8b150ddf3d80a88c7912386d755f1ba6e384d87fb5d2",
+            "contentHash": "b292474db6b95295f09b0f4b13ba2334cf58f776fcf30dc6ede11c2ffdad4c6b"
+          }
+        ]
+      },
+      {
+        "id": "inventory-review",
+        "kind": "other",
+        "label": "Full admission regulations and applicability review",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "The extracted inventory is not complete. Verify regulations, applicant categories, exemptions, selection and semester validity."
+        },
+        "evidence": []
+      }
+    ],
+    "admissionText": "academic: To apply, you need to have an undergraduate university degree in computer science or a related discipline with a computer science component of at least 110 ECTS credits. You must be ranked among the best 70% of graduates within your cohort or the final grade for your first degree was 2.7 or better (according to the German grading scale; foreign grades will be converted once we receive your application).\n\ncredits: To apply, you need to have an undergraduate university degree in computer science or a related discipline with a computer science component of at least 110 ECTS credits. You must be ranked among the best 70% of graduates within your cohort or the final grade for your first degree was 2.7 or better (according to the German grading scale; foreign grades will be converted once we receive your application).\n\nYour degree must have been earned over a course of study of a standard length of three years or more. If you completed a four-year non-ECTS degree, the 110 ECTS credit requirement is deemed to be met if approximately two-thirds of your credit points were earned in computer science related modules/courses.\n\nacademic: Your degree must have been earned over a course of study of a standard length of three years or more. If you completed a four-year non-ECTS degree, the 110 ECTS credit requirement is deemed to be met if approximately two-thirds of your credit points were earned in computer science related modules/courses.\n\nacademic: If you have not yet received your final results and certificates at the time of application, you may apply using your Transcript of Records or other preliminary transcript. If your application is successful, you must submit your final Transcript of Records, including all completed coursework, by the start of the lecture period. The final Bachelor’s degree certificate must be submitted no later than the 10th week of lectures.\n\nacademic: Please note that we only recognise degrees awarded by universities with 'H+' status in the Anabin database of the German Central Office for Foreign Education. You can check the Anabin database online or contact the International Coordinator of the faculty by e-mail if you do not understand German.\n\nlanguage: If neither your native language nor your language of instruction during your prior university education was English or German, then you will have to provide recognised language certificates for one or both of these languages. Depending on which language you want to primarily be taught in, you need certificates for:\n\nGerman: You should provide proof of German language skills equivalent to level B2 CEFR.\n\nEnglish: You should provide proof of English language skills equivalent to level B2 CEFR, such as:\n\nEven if you plan to choose only modules taught in English, you also need German language skills at level A1 CEFR (beginner's level) or higher. If you do not meet this requirement at the time of application, you will have to complete a beginner's German course and provide a certificate by the end of your first year of study.\n\nlanguage: TOEFL (score 567 paper-based, 220 computer-based, 87 internet-based, ITP 543 'silver' or better)\n\nIELTS (score 5.5)\n\nCambridge English Language Assessment at level 'Advanced' (CAE) or 'Proficiency' (CPE)\n\nA first degree or secondary education completed exclusively in English also counts as proof of English-language proficiency.\n\ndeadline: Application period for the winter semester:\n\n15 April - 31 May (direct applications)\n\n1 April - 31 May (applications via uni-assist e.V.)\n\nApplication period for the summer semester:\n\n1 November - 15 December\n\napplication: 1 April - 31 May (applications via uni-assist e.V.)\n\ntuition: At the University of Passau, there a no tuition fees. However, students do pay a semester fee.",
+    "origin": "catalog",
+    "isDemo": false,
+    "createdAt": "2026-10-18T17:03:21.293Z",
+    "schemaVersion": 2,
+    "catalogVersion": "92098abca56b6a993cfb4ac09804dfe6deb4a8e17f4509eb41b7f6d4e13e2a25",
+    "verificationStatus": "unverified",
+    "sources": [
+      {
+        "url": "https://www.uni-passau.de/en/msc-computer-science/",
+        "quote": "M.Sc. Computer Science",
+        "status": "unverified",
+        "sourceType": "official",
+        "lastChecked": "2026-10-18T17:03:08.680Z",
+        "validFor": [],
+        "locator": "Source document identity",
+        "retrievedAt": "2026-10-18T17:03:08.680Z",
+        "snapshotId": "fb7ca3be80581d2bf74c8b150ddf3d80a88c7912386d755f1ba6e384d87fb5d2",
+        "contentHash": "b292474db6b95295f09b0f4b13ba2334cf58f776fcf30dc6ede11c2ffdad4c6b"
+      },
+      {
+        "url": "https://www.uni-passau.de/fileadmin/dokumente/studium/infoschriften/Informatik_MSc_EN.pdf",
+        "quote": "M.Sc. Computer Science - University of Passau",
+        "status": "unverified",
+        "sourceType": "official",
+        "lastChecked": "2026-10-18T17:03:09.793Z",
+        "validFor": [],
+        "locator": "Source document identity",
+        "retrievedAt": "2026-10-18T17:03:09.793Z",
+        "snapshotId": "54a5150e9a34c4a0ae6b74a901dd82164312a909d66abd371d3d65482e6b903d",
+        "contentHash": "dc6e8087039110286d75db6c2740ffac6d91f3566b565bd8250a50ea2f33d418"
+      }
+    ],
+    "validFor": [],
+    "requirementsComplete": false,
+    "facts": [
+      {
+        "id": "academic",
+        "category": "academic",
+        "value": "To apply, you need to have an undergraduate university degree in computer science or a related discipline with a computer science component of at least 110 ECTS credits. You must be ranked among the best 70% of graduates within your cohort or the final grade for your first degree was 2.7 or better (according to the German grading scale; foreign grades will be converted once we receive your application).",
+        "note": "Includes alternatives and qualification conditions; not a simple total-credit rule.",
+        "evidence": [
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "To apply, you need to have an undergraduate university degree in computer science or a related discipline with a computer science component of at least 110 ECTS credits. You must be ranked among the best 70% of graduates within your cohort or the final grade for your first degree was 2.7 or better (according to the German grading scale; foreign grades will be converted once we receive your application).",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:08.680Z",
+            "validFor": [],
+            "locator": "HTML p block 96",
+            "retrievedAt": "2026-10-18T17:03:08.680Z",
+            "snapshotId": "fb7ca3be80581d2bf74c8b150ddf3d80a88c7912386d755f1ba6e384d87fb5d2",
+            "contentHash": "b292474db6b95295f09b0f4b13ba2334cf58f776fcf30dc6ede11c2ffdad4c6b"
+          }
+        ]
+      },
+      {
+        "id": "credit-route",
+        "category": "credits",
+        "value": "To apply, you need to have an undergraduate university degree in computer science or a related discipline with a computer science component of at least 110 ECTS credits. You must be ranked among the best 70% of graduates within your cohort or the final grade for your first degree was 2.7 or better (according to the German grading scale; foreign grades will be converted once we receive your application).\n\nYour degree must have been earned over a course of study of a standard length of three years or more. If you completed a four-year non-ECTS degree, the 110 ECTS credit requirement is deemed to be met if approximately two-thirds of your credit points were earned in computer science related modules/courses.",
+        "note": "Alternative route requires manual assessment; no unconditional credit blocker is inferred.",
+        "evidence": [
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "To apply, you need to have an undergraduate university degree in computer science or a related discipline with a computer science component of at least 110 ECTS credits. You must be ranked among the best 70% of graduates within your cohort or the final grade for your first degree was 2.7 or better (according to the German grading scale; foreign grades will be converted once we receive your application).",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:08.680Z",
+            "validFor": [],
+            "locator": "HTML p block 96",
+            "retrievedAt": "2026-10-18T17:03:08.680Z",
+            "snapshotId": "fb7ca3be80581d2bf74c8b150ddf3d80a88c7912386d755f1ba6e384d87fb5d2",
+            "contentHash": "b292474db6b95295f09b0f4b13ba2334cf58f776fcf30dc6ede11c2ffdad4c6b"
+          },
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "Your degree must have been earned over a course of study of a standard length of three years or more. If you completed a four-year non-ECTS degree, the 110 ECTS credit requirement is deemed to be met if approximately two-thirds of your credit points were earned in computer science related modules/courses.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:08.680Z",
+            "validFor": [],
+            "locator": "HTML p block 97",
+            "retrievedAt": "2026-10-18T17:03:08.680Z",
+            "snapshotId": "fb7ca3be80581d2bf74c8b150ddf3d80a88c7912386d755f1ba6e384d87fb5d2",
+            "contentHash": "b292474db6b95295f09b0f4b13ba2334cf58f776fcf30dc6ede11c2ffdad4c6b"
+          }
+        ]
+      },
+      {
+        "id": "degree-duration",
+        "category": "academic",
+        "value": "Your degree must have been earned over a course of study of a standard length of three years or more. If you completed a four-year non-ECTS degree, the 110 ECTS credit requirement is deemed to be met if approximately two-thirds of your credit points were earned in computer science related modules/courses.",
+        "evidence": [
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "Your degree must have been earned over a course of study of a standard length of three years or more. If you completed a four-year non-ECTS degree, the 110 ECTS credit requirement is deemed to be met if approximately two-thirds of your credit points were earned in computer science related modules/courses.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:08.680Z",
+            "validFor": [],
+            "locator": "HTML p block 97",
+            "retrievedAt": "2026-10-18T17:03:08.680Z",
+            "snapshotId": "fb7ca3be80581d2bf74c8b150ddf3d80a88c7912386d755f1ba6e384d87fb5d2",
+            "contentHash": "b292474db6b95295f09b0f4b13ba2334cf58f776fcf30dc6ede11c2ffdad4c6b"
+          }
+        ]
+      },
+      {
+        "id": "preliminary-degree",
+        "category": "academic",
+        "value": "If you have not yet received your final results and certificates at the time of application, you may apply using your Transcript of Records or other preliminary transcript. If your application is successful, you must submit your final Transcript of Records, including all completed coursework, by the start of the lecture period. The final Bachelor’s degree certificate must be submitted no later than the 10th week of lectures.",
+        "evidence": [
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "If you have not yet received your final results and certificates at the time of application, you may apply using your Transcript of Records or other preliminary transcript. If your application is successful, you must submit your final Transcript of Records, including all completed coursework, by the start of the lecture period. The final Bachelor’s degree certificate must be submitted no later than the 10th week of lectures.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:08.680Z",
+            "validFor": [],
+            "locator": "HTML p block 98",
+            "retrievedAt": "2026-10-18T17:03:08.680Z",
+            "snapshotId": "fb7ca3be80581d2bf74c8b150ddf3d80a88c7912386d755f1ba6e384d87fb5d2",
+            "contentHash": "b292474db6b95295f09b0f4b13ba2334cf58f776fcf30dc6ede11c2ffdad4c6b"
+          }
+        ]
+      },
+      {
+        "id": "recognition",
+        "category": "academic",
+        "value": "Please note that we only recognise degrees awarded by universities with 'H+' status in the Anabin database of the German Central Office for Foreign Education. You can check the Anabin database online or contact the International Coordinator of the faculty by e-mail if you do not understand German.",
+        "evidence": [
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "Please note that we only recognise degrees awarded by universities with 'H+' status in the Anabin database of the German Central Office for Foreign Education. You can check the Anabin database online or contact the International Coordinator of the faculty by e-mail if you do not understand German.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:08.680Z",
+            "validFor": [],
+            "locator": "HTML p block 100",
+            "retrievedAt": "2026-10-18T17:03:08.680Z",
+            "snapshotId": "fb7ca3be80581d2bf74c8b150ddf3d80a88c7912386d755f1ba6e384d87fb5d2",
+            "contentHash": "b292474db6b95295f09b0f4b13ba2334cf58f776fcf30dc6ede11c2ffdad4c6b"
+          }
+        ]
+      },
+      {
+        "id": "language",
+        "category": "language",
+        "value": "If neither your native language nor your language of instruction during your prior university education was English or German, then you will have to provide recognised language certificates for one or both of these languages. Depending on which language you want to primarily be taught in, you need certificates for:\n\nGerman: You should provide proof of German language skills equivalent to level B2 CEFR.\n\nEnglish: You should provide proof of English language skills equivalent to level B2 CEFR, such as:\n\nEven if you plan to choose only modules taught in English, you also need German language skills at level A1 CEFR (beginner's level) or higher. If you do not meet this requirement at the time of application, you will have to complete a beginner's German course and provide a certificate by the end of your first year of study.",
+        "evidence": [
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "If neither your native language nor your language of instruction during your prior university education was English or German, then you will have to provide recognised language certificates for one or both of these languages. Depending on which language you want to primarily be taught in, you need certificates for:",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:08.680Z",
+            "validFor": [],
+            "locator": "HTML p block 101",
+            "retrievedAt": "2026-10-18T17:03:08.680Z",
+            "snapshotId": "fb7ca3be80581d2bf74c8b150ddf3d80a88c7912386d755f1ba6e384d87fb5d2",
+            "contentHash": "b292474db6b95295f09b0f4b13ba2334cf58f776fcf30dc6ede11c2ffdad4c6b"
+          },
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "German: You should provide proof of German language skills equivalent to level B2 CEFR.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:08.680Z",
+            "validFor": [],
+            "locator": "HTML li block 102",
+            "retrievedAt": "2026-10-18T17:03:08.680Z",
+            "snapshotId": "fb7ca3be80581d2bf74c8b150ddf3d80a88c7912386d755f1ba6e384d87fb5d2",
+            "contentHash": "b292474db6b95295f09b0f4b13ba2334cf58f776fcf30dc6ede11c2ffdad4c6b"
+          },
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "English: You should provide proof of English language skills equivalent to level B2 CEFR, such as:",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:08.680Z",
+            "validFor": [],
+            "locator": "HTML li block 104",
+            "retrievedAt": "2026-10-18T17:03:08.680Z",
+            "snapshotId": "fb7ca3be80581d2bf74c8b150ddf3d80a88c7912386d755f1ba6e384d87fb5d2",
+            "contentHash": "b292474db6b95295f09b0f4b13ba2334cf58f776fcf30dc6ede11c2ffdad4c6b"
+          },
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "Even if you plan to choose only modules taught in English, you also need German language skills at level A1 CEFR (beginner's level) or higher. If you do not meet this requirement at the time of application, you will have to complete a beginner's German course and provide a certificate by the end of your first year of study.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:08.680Z",
+            "validFor": [],
+            "locator": "HTML p block 109",
+            "retrievedAt": "2026-10-18T17:03:08.680Z",
+            "snapshotId": "fb7ca3be80581d2bf74c8b150ddf3d80a88c7912386d755f1ba6e384d87fb5d2",
+            "contentHash": "b292474db6b95295f09b0f4b13ba2334cf58f776fcf30dc6ede11c2ffdad4c6b"
+          }
+        ]
+      },
+      {
+        "id": "certificates",
+        "category": "language",
+        "value": "TOEFL (score 567 paper-based, 220 computer-based, 87 internet-based, ITP 543 'silver' or better)\n\nIELTS (score 5.5)\n\nCambridge English Language Assessment at level 'Advanced' (CAE) or 'Proficiency' (CPE)\n\nA first degree or secondary education completed exclusively in English also counts as proof of English-language proficiency.",
+        "evidence": [
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "TOEFL (score 567 paper-based, 220 computer-based, 87 internet-based, ITP 543 'silver' or better)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:08.680Z",
+            "validFor": [],
+            "locator": "HTML li block 105",
+            "retrievedAt": "2026-10-18T17:03:08.680Z",
+            "snapshotId": "fb7ca3be80581d2bf74c8b150ddf3d80a88c7912386d755f1ba6e384d87fb5d2",
+            "contentHash": "b292474db6b95295f09b0f4b13ba2334cf58f776fcf30dc6ede11c2ffdad4c6b"
+          },
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "IELTS (score 5.5)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:08.680Z",
+            "validFor": [],
+            "locator": "HTML li block 106",
+            "retrievedAt": "2026-10-18T17:03:08.680Z",
+            "snapshotId": "fb7ca3be80581d2bf74c8b150ddf3d80a88c7912386d755f1ba6e384d87fb5d2",
+            "contentHash": "b292474db6b95295f09b0f4b13ba2334cf58f776fcf30dc6ede11c2ffdad4c6b"
+          },
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "Cambridge English Language Assessment at level 'Advanced' (CAE) or 'Proficiency' (CPE)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:08.680Z",
+            "validFor": [],
+            "locator": "HTML li block 107",
+            "retrievedAt": "2026-10-18T17:03:08.680Z",
+            "snapshotId": "fb7ca3be80581d2bf74c8b150ddf3d80a88c7912386d755f1ba6e384d87fb5d2",
+            "contentHash": "b292474db6b95295f09b0f4b13ba2334cf58f776fcf30dc6ede11c2ffdad4c6b"
+          },
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "A first degree or secondary education completed exclusively in English also counts as proof of English-language proficiency.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:08.680Z",
+            "validFor": [],
+            "locator": "HTML li block 108",
+            "retrievedAt": "2026-10-18T17:03:08.680Z",
+            "snapshotId": "fb7ca3be80581d2bf74c8b150ddf3d80a88c7912386d755f1ba6e384d87fb5d2",
+            "contentHash": "b292474db6b95295f09b0f4b13ba2334cf58f776fcf30dc6ede11c2ffdad4c6b"
+          }
+        ]
+      },
+      {
+        "id": "deadline",
+        "category": "deadline",
+        "value": "Application period for the winter semester:\n\n15 April - 31 May (direct applications)\n\n1 April - 31 May (applications via uni-assist e.V.)\n\nApplication period for the summer semester:\n\n1 November - 15 December",
+        "note": "Recurring dates only. No specific admission-year applicability verified.",
+        "evidence": [
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "Application period for the winter semester:",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:08.680Z",
+            "validFor": [],
+            "locator": "HTML h3 block 111",
+            "retrievedAt": "2026-10-18T17:03:08.680Z",
+            "snapshotId": "fb7ca3be80581d2bf74c8b150ddf3d80a88c7912386d755f1ba6e384d87fb5d2",
+            "contentHash": "b292474db6b95295f09b0f4b13ba2334cf58f776fcf30dc6ede11c2ffdad4c6b"
+          },
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "15 April - 31 May (direct applications)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:08.680Z",
+            "validFor": [],
+            "locator": "HTML li block 112",
+            "retrievedAt": "2026-10-18T17:03:08.680Z",
+            "snapshotId": "fb7ca3be80581d2bf74c8b150ddf3d80a88c7912386d755f1ba6e384d87fb5d2",
+            "contentHash": "b292474db6b95295f09b0f4b13ba2334cf58f776fcf30dc6ede11c2ffdad4c6b"
+          },
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "1 April - 31 May (applications via uni-assist e.V.)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:08.680Z",
+            "validFor": [],
+            "locator": "HTML li block 113",
+            "retrievedAt": "2026-10-18T17:03:08.680Z",
+            "snapshotId": "fb7ca3be80581d2bf74c8b150ddf3d80a88c7912386d755f1ba6e384d87fb5d2",
+            "contentHash": "b292474db6b95295f09b0f4b13ba2334cf58f776fcf30dc6ede11c2ffdad4c6b"
+          },
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "Application period for the summer semester:",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:08.680Z",
+            "validFor": [],
+            "locator": "HTML h3 block 115",
+            "retrievedAt": "2026-10-18T17:03:08.680Z",
+            "snapshotId": "fb7ca3be80581d2bf74c8b150ddf3d80a88c7912386d755f1ba6e384d87fb5d2",
+            "contentHash": "b292474db6b95295f09b0f4b13ba2334cf58f776fcf30dc6ede11c2ffdad4c6b"
+          },
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "1 November - 15 December",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:08.680Z",
+            "validFor": [],
+            "locator": "HTML li block 116",
+            "retrievedAt": "2026-10-18T17:03:08.680Z",
+            "snapshotId": "fb7ca3be80581d2bf74c8b150ddf3d80a88c7912386d755f1ba6e384d87fb5d2",
+            "contentHash": "b292474db6b95295f09b0f4b13ba2334cf58f776fcf30dc6ede11c2ffdad4c6b"
+          }
+        ]
+      },
+      {
+        "id": "application",
+        "category": "application",
+        "value": "1 April - 31 May (applications via uni-assist e.V.)",
+        "evidence": [
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "1 April - 31 May (applications via uni-assist e.V.)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:08.680Z",
+            "validFor": [],
+            "locator": "HTML li block 113",
+            "retrievedAt": "2026-10-18T17:03:08.680Z",
+            "snapshotId": "fb7ca3be80581d2bf74c8b150ddf3d80a88c7912386d755f1ba6e384d87fb5d2",
+            "contentHash": "b292474db6b95295f09b0f4b13ba2334cf58f776fcf30dc6ede11c2ffdad4c6b"
+          }
+        ]
+      },
+      {
+        "id": "tuition",
+        "category": "tuition",
+        "value": "At the University of Passau, there a no tuition fees. However, students do pay a semester fee.",
+        "note": "Semester fee still applies; no amount established here.",
+        "evidence": [
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "At the University of Passau, there a no tuition fees. However, students do pay a semester fee.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:08.680Z",
+            "validFor": [],
+            "locator": "HTML p block 159",
+            "retrievedAt": "2026-10-18T17:03:08.680Z",
+            "snapshotId": "fb7ca3be80581d2bf74c8b150ddf3d80a88c7912386d755f1ba6e384d87fb5d2",
+            "contentHash": "b292474db6b95295f09b0f4b13ba2334cf58f776fcf30dc6ede11c2ffdad4c6b"
+          }
+        ]
+      },
+      {
+        "id": "semester",
+        "category": "semester",
+        "value": null,
+        "note": "Admission semester applicability has not been verified.",
+        "evidence": []
+      }
+    ],
+    "catalogIssues": [
+      "Automatically extracted draft. Human review and semester applicability are outstanding.",
+      "The PDF infosheet names winter semester 2025-26. Do not apply it to later intakes without review.",
+      "The 110 ECTS route has a non-ECTS degree alternative; the credit rule is not independently decisive."
+    ],
+    "retrievedAt": "2026-10-18T17:03:09.793Z"
+  },
+  {
+    "id": "de-saarland-msc-computer-science",
+    "university": "Saarland University",
+    "programName": "Computer Science",
+    "degreeType": "master",
+    "language": "English",
+    "country": "Germany",
+    "city": "Saarbruecken",
+    "description": "Master of Science in Computer Science. Official-source pilot; admission clauses await editorial review.",
+    "sourceUrl": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+    "lastChecked": "2026-10-18T17:03:13.445Z",
+    "requiredDocuments": [],
+    "requirements": [
+      {
+        "id": "academic",
+        "kind": "academic",
+        "label": "Relevant first degree and aptitude assessment",
+        "sourceText": "In order to be admitted to the programme, students must have received a Bachelor's degree or equivalent qualification from a German or foreign university in informatics, computer science or a related field, or must provide proof of equivalent academic achievement, and must demonstrate advanced proficiency in English to complete the programme (C1, a MOI (Medium of Instruction) cannnot be accepted, see the FAQ for a list of accepted certificates). Specifically, they must also provide the following information and/or documents:",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Relevant first degree and aptitude assessment. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "In order to be admitted to the programme, students must have received a Bachelor's degree or equivalent qualification from a German or foreign university in informatics, computer science or a related field, or must provide proof of equivalent academic achievement, and must demonstrate advanced proficiency in English to complete the programme (C1, a MOI (Medium of Instruction) cannnot be accepted, see the FAQ for a list of accepted certificates). Specifically, they must also provide the following information and/or documents:",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:13.445Z",
+            "validFor": [],
+            "locator": "HTML p block 14",
+            "retrievedAt": "2026-10-18T17:03:13.445Z",
+            "snapshotId": "11ff914dc2defc104d3b3020d39785bd9969490865d2ccbf37040f9bdd05fc79",
+            "contentHash": "bd27fad2a7cd32c0608121f14efc5c059917c1b22ec7eca492b355244f1a3d40"
+          }
+        ]
+      },
+      {
+        "id": "language",
+        "kind": "language",
+        "label": "English C1; certificate acceptance requires separate review",
+        "sourceText": "Level C1 (a MOI (Medium of Instruction) is not accepted, see FAQ)",
+        "mandatory": true,
+        "rule": {
+          "type": "language",
+          "language": "English",
+          "accepted": [
+            {
+              "minLevel": "C1"
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Level C1 (a MOI (Medium of Instruction) is not accepted, see FAQ)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:13.445Z",
+            "validFor": [],
+            "locator": "HTML td block 34",
+            "retrievedAt": "2026-10-18T17:03:13.445Z",
+            "snapshotId": "11ff914dc2defc104d3b3020d39785bd9969490865d2ccbf37040f9bdd05fc79",
+            "contentHash": "bd27fad2a7cd32c0608121f14efc5c059917c1b22ec7eca492b355244f1a3d40"
+          }
+        ]
+      },
+      {
+        "id": "additional-evidence",
+        "kind": "other",
+        "label": "Academic merit, references and supporting evidence",
+        "sourceText": "Proof of sufficient merit in their academic achievements in school and higher education\n\nA letter of motivation or personal statement documenting the student's particular interest in the M.Sc. programme\n\nTwo relevant academic references\n\nDetails about relevant work/study periods abroad and relevant work experience or internships",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Academic merit, references and supporting evidence. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Proof of sufficient merit in their academic achievements in school and higher education",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:13.445Z",
+            "validFor": [],
+            "locator": "HTML li block 15",
+            "retrievedAt": "2026-10-18T17:03:13.445Z",
+            "snapshotId": "11ff914dc2defc104d3b3020d39785bd9969490865d2ccbf37040f9bdd05fc79",
+            "contentHash": "bd27fad2a7cd32c0608121f14efc5c059917c1b22ec7eca492b355244f1a3d40"
+          },
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "A letter of motivation or personal statement documenting the student's particular interest in the M.Sc. programme",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:13.445Z",
+            "validFor": [],
+            "locator": "HTML li block 16",
+            "retrievedAt": "2026-10-18T17:03:13.445Z",
+            "snapshotId": "11ff914dc2defc104d3b3020d39785bd9969490865d2ccbf37040f9bdd05fc79",
+            "contentHash": "bd27fad2a7cd32c0608121f14efc5c059917c1b22ec7eca492b355244f1a3d40"
+          },
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Two relevant academic references",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:13.445Z",
+            "validFor": [],
+            "locator": "HTML li block 17",
+            "retrievedAt": "2026-10-18T17:03:13.445Z",
+            "snapshotId": "11ff914dc2defc104d3b3020d39785bd9969490865d2ccbf37040f9bdd05fc79",
+            "contentHash": "bd27fad2a7cd32c0608121f14efc5c059917c1b22ec7eca492b355244f1a3d40"
+          },
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Details about relevant work/study periods abroad and relevant work experience or internships",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:13.445Z",
+            "validFor": [],
+            "locator": "HTML li block 18",
+            "retrievedAt": "2026-10-18T17:03:13.445Z",
+            "snapshotId": "11ff914dc2defc104d3b3020d39785bd9969490865d2ccbf37040f9bdd05fc79",
+            "contentHash": "bd27fad2a7cd32c0608121f14efc5c059917c1b22ec7eca492b355244f1a3d40"
+          }
+        ]
+      },
+      {
+        "id": "inventory-review",
+        "kind": "other",
+        "label": "Full admission regulations and applicability review",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "The extracted inventory is not complete. Verify regulations, applicant categories, exemptions, selection and semester validity."
+        },
+        "evidence": []
+      }
+    ],
+    "admissionText": "academic: In order to be admitted to the programme, students must have received a Bachelor's degree or equivalent qualification from a German or foreign university in informatics, computer science or a related field, or must provide proof of equivalent academic achievement, and must demonstrate advanced proficiency in English to complete the programme (C1, a MOI (Medium of Instruction) cannnot be accepted, see the FAQ for a list of accepted certificates). Specifically, they must also provide the following information and/or documents:\n\nlanguage: Level C1 (a MOI (Medium of Instruction) is not accepted, see FAQ)\n\ndeadline: Students can begin the M.Sc. programme at the beginning of the summer or winter semester. Applications should normally be received by 15 May for students seeking to begin studying in the winter semester and by 15 November for students looking to start their studies in summer. Applicants who apply by May 15th for the following summer semester are expected to receive a letter of admission by mid-July if the respective Master's commission makes a positive decision. Applicants who apply by November 15th for the following winter semester are expected to receive a letter of admission by mid-February if the respective Master's commission makes a positive decision.\n\napplication: Applications should be submitted via the online application portal managed by the Department of Computer Science where you'll find further information about application and admission procedures.\n\ntuition: Not applicable\n\nsemester: Students can begin the M.Sc. programme at the beginning of the summer or winter semester. Applications should normally be received by 15 May for students seeking to begin studying in the winter semester and by 15 November for students looking to start their studies in summer. Applicants who apply by May 15th for the following summer semester are expected to receive a letter of admission by mid-July if the respective Master's commission makes a positive decision. Applicants who apply by November 15th for the following winter semester are expected to receive a letter of admission by mid-February if the respective Master's commission makes a positive decision.\n\nacademic: Proof of sufficient merit in their academic achievements in school and higher education\n\nA letter of motivation or personal statement documenting the student's particular interest in the M.Sc. programme\n\nTwo relevant academic references\n\nDetails about relevant work/study periods abroad and relevant work experience or internships",
+    "origin": "catalog",
+    "isDemo": false,
+    "createdAt": "2026-10-18T17:03:21.293Z",
+    "schemaVersion": 2,
+    "catalogVersion": "db69c3a69150555aaea24a4cbdae47379c3d69b6876ec2406ff5d2922fa8be77",
+    "verificationStatus": "unverified",
+    "sources": [
+      {
+        "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+        "quote": "Computer Science (M.Sc.)",
+        "status": "unverified",
+        "sourceType": "official",
+        "lastChecked": "2026-10-18T17:03:13.445Z",
+        "validFor": [],
+        "locator": "Source document identity",
+        "retrievedAt": "2026-10-18T17:03:13.445Z",
+        "snapshotId": "11ff914dc2defc104d3b3020d39785bd9969490865d2ccbf37040f9bdd05fc79",
+        "contentHash": "bd27fad2a7cd32c0608121f14efc5c059917c1b22ec7eca492b355244f1a3d40"
+      }
+    ],
+    "validFor": [],
+    "requirementsComplete": false,
+    "facts": [
+      {
+        "id": "academic",
+        "category": "academic",
+        "value": "In order to be admitted to the programme, students must have received a Bachelor's degree or equivalent qualification from a German or foreign university in informatics, computer science or a related field, or must provide proof of equivalent academic achievement, and must demonstrate advanced proficiency in English to complete the programme (C1, a MOI (Medium of Instruction) cannnot be accepted, see the FAQ for a list of accepted certificates). Specifically, they must also provide the following information and/or documents:",
+        "evidence": [
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "In order to be admitted to the programme, students must have received a Bachelor's degree or equivalent qualification from a German or foreign university in informatics, computer science or a related field, or must provide proof of equivalent academic achievement, and must demonstrate advanced proficiency in English to complete the programme (C1, a MOI (Medium of Instruction) cannnot be accepted, see the FAQ for a list of accepted certificates). Specifically, they must also provide the following information and/or documents:",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:13.445Z",
+            "validFor": [],
+            "locator": "HTML p block 14",
+            "retrievedAt": "2026-10-18T17:03:13.445Z",
+            "snapshotId": "11ff914dc2defc104d3b3020d39785bd9969490865d2ccbf37040f9bdd05fc79",
+            "contentHash": "bd27fad2a7cd32c0608121f14efc5c059917c1b22ec7eca492b355244f1a3d40"
+          }
+        ]
+      },
+      {
+        "id": "language",
+        "category": "language",
+        "value": "Level C1 (a MOI (Medium of Instruction) is not accepted, see FAQ)",
+        "evidence": [
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Level C1 (a MOI (Medium of Instruction) is not accepted, see FAQ)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:13.445Z",
+            "validFor": [],
+            "locator": "HTML td block 34",
+            "retrievedAt": "2026-10-18T17:03:13.445Z",
+            "snapshotId": "11ff914dc2defc104d3b3020d39785bd9969490865d2ccbf37040f9bdd05fc79",
+            "contentHash": "bd27fad2a7cd32c0608121f14efc5c059917c1b22ec7eca492b355244f1a3d40"
+          }
+        ]
+      },
+      {
+        "id": "credits",
+        "category": "credits",
+        "value": null,
+        "note": "No numeric subject-credit threshold established from this page.",
+        "evidence": []
+      },
+      {
+        "id": "deadline",
+        "category": "deadline",
+        "value": "Students can begin the M.Sc. programme at the beginning of the summer or winter semester. Applications should normally be received by 15 May for students seeking to begin studying in the winter semester and by 15 November for students looking to start their studies in summer. Applicants who apply by May 15th for the following summer semester are expected to receive a letter of admission by mid-July if the respective Master's commission makes a positive decision. Applicants who apply by November 15th for the following winter semester are expected to receive a letter of admission by mid-February if the respective Master's commission makes a positive decision.",
+        "note": "Recurring dates; specific admission year and applicant scope require review.",
+        "evidence": [
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Students can begin the M.Sc. programme at the beginning of the summer or winter semester. Applications should normally be received by 15 May for students seeking to begin studying in the winter semester and by 15 November for students looking to start their studies in summer. Applicants who apply by May 15th for the following summer semester are expected to receive a letter of admission by mid-July if the respective Master's commission makes a positive decision. Applicants who apply by November 15th for the following winter semester are expected to receive a letter of admission by mid-February if the respective Master's commission makes a positive decision.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:13.445Z",
+            "validFor": [],
+            "locator": "HTML p block 20",
+            "retrievedAt": "2026-10-18T17:03:13.445Z",
+            "snapshotId": "11ff914dc2defc104d3b3020d39785bd9969490865d2ccbf37040f9bdd05fc79",
+            "contentHash": "bd27fad2a7cd32c0608121f14efc5c059917c1b22ec7eca492b355244f1a3d40"
+          }
+        ]
+      },
+      {
+        "id": "application",
+        "category": "application",
+        "value": "Applications should be submitted via the online application portal managed by the Department of Computer Science where you'll find further information about application and admission procedures.",
+        "evidence": [
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Applications should be submitted via the online application portal managed by the Department of Computer Science where you'll find further information about application and admission procedures.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:13.445Z",
+            "validFor": [],
+            "locator": "HTML p block 21",
+            "retrievedAt": "2026-10-18T17:03:13.445Z",
+            "snapshotId": "11ff914dc2defc104d3b3020d39785bd9969490865d2ccbf37040f9bdd05fc79",
+            "contentHash": "bd27fad2a7cd32c0608121f14efc5c059917c1b22ec7eca492b355244f1a3d40"
+          }
+        ]
+      },
+      {
+        "id": "tuition",
+        "category": "tuition",
+        "value": "Not applicable",
+        "evidence": [
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Not applicable",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:13.445Z",
+            "validFor": [],
+            "locator": "HTML td block 42",
+            "retrievedAt": "2026-10-18T17:03:13.445Z",
+            "snapshotId": "11ff914dc2defc104d3b3020d39785bd9969490865d2ccbf37040f9bdd05fc79",
+            "contentHash": "bd27fad2a7cd32c0608121f14efc5c059917c1b22ec7eca492b355244f1a3d40"
+          }
+        ]
+      },
+      {
+        "id": "semester",
+        "category": "semester",
+        "value": "Students can begin the M.Sc. programme at the beginning of the summer or winter semester. Applications should normally be received by 15 May for students seeking to begin studying in the winter semester and by 15 November for students looking to start their studies in summer. Applicants who apply by May 15th for the following summer semester are expected to receive a letter of admission by mid-July if the respective Master's commission makes a positive decision. Applicants who apply by November 15th for the following winter semester are expected to receive a letter of admission by mid-February if the respective Master's commission makes a positive decision.",
+        "note": "Intake seasons are listed; calendar-year applicability remains unverified.",
+        "evidence": [
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Students can begin the M.Sc. programme at the beginning of the summer or winter semester. Applications should normally be received by 15 May for students seeking to begin studying in the winter semester and by 15 November for students looking to start their studies in summer. Applicants who apply by May 15th for the following summer semester are expected to receive a letter of admission by mid-July if the respective Master's commission makes a positive decision. Applicants who apply by November 15th for the following winter semester are expected to receive a letter of admission by mid-February if the respective Master's commission makes a positive decision.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:13.445Z",
+            "validFor": [],
+            "locator": "HTML p block 20",
+            "retrievedAt": "2026-10-18T17:03:13.445Z",
+            "snapshotId": "11ff914dc2defc104d3b3020d39785bd9969490865d2ccbf37040f9bdd05fc79",
+            "contentHash": "bd27fad2a7cd32c0608121f14efc5c059917c1b22ec7eca492b355244f1a3d40"
+          }
+        ]
+      },
+      {
+        "id": "additional-evidence",
+        "category": "academic",
+        "value": "Proof of sufficient merit in their academic achievements in school and higher education\n\nA letter of motivation or personal statement documenting the student's particular interest in the M.Sc. programme\n\nTwo relevant academic references\n\nDetails about relevant work/study periods abroad and relevant work experience or internships",
+        "evidence": [
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Proof of sufficient merit in their academic achievements in school and higher education",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:13.445Z",
+            "validFor": [],
+            "locator": "HTML li block 15",
+            "retrievedAt": "2026-10-18T17:03:13.445Z",
+            "snapshotId": "11ff914dc2defc104d3b3020d39785bd9969490865d2ccbf37040f9bdd05fc79",
+            "contentHash": "bd27fad2a7cd32c0608121f14efc5c059917c1b22ec7eca492b355244f1a3d40"
+          },
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "A letter of motivation or personal statement documenting the student's particular interest in the M.Sc. programme",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:13.445Z",
+            "validFor": [],
+            "locator": "HTML li block 16",
+            "retrievedAt": "2026-10-18T17:03:13.445Z",
+            "snapshotId": "11ff914dc2defc104d3b3020d39785bd9969490865d2ccbf37040f9bdd05fc79",
+            "contentHash": "bd27fad2a7cd32c0608121f14efc5c059917c1b22ec7eca492b355244f1a3d40"
+          },
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Two relevant academic references",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:13.445Z",
+            "validFor": [],
+            "locator": "HTML li block 17",
+            "retrievedAt": "2026-10-18T17:03:13.445Z",
+            "snapshotId": "11ff914dc2defc104d3b3020d39785bd9969490865d2ccbf37040f9bdd05fc79",
+            "contentHash": "bd27fad2a7cd32c0608121f14efc5c059917c1b22ec7eca492b355244f1a3d40"
+          },
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Details about relevant work/study periods abroad and relevant work experience or internships",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:13.445Z",
+            "validFor": [],
+            "locator": "HTML li block 18",
+            "retrievedAt": "2026-10-18T17:03:13.445Z",
+            "snapshotId": "11ff914dc2defc104d3b3020d39785bd9969490865d2ccbf37040f9bdd05fc79",
+            "contentHash": "bd27fad2a7cd32c0608121f14efc5c059917c1b22ec7eca492b355244f1a3d40"
+          }
+        ]
+      }
+    ],
+    "catalogIssues": [
+      "Automatically extracted draft. Human review and semester applicability are outstanding."
+    ],
+    "retrievedAt": "2026-10-18T17:03:13.445Z"
+  },
+  {
+    "id": "de-fau-msc-data-science",
+    "university": "FAU Erlangen-Nuremberg",
+    "programName": "Data Science",
+    "degreeType": "master",
+    "language": "English",
+    "country": "Germany",
+    "city": "Erlangen",
+    "description": "Master of Science in Data Science. Official-source pilot; applicant-category restrictions require review.",
+    "sourceUrl": "https://www.fau.eu/degree-program/data-science-m-sc/",
+    "lastChecked": "2026-10-18T17:03:15.034Z",
+    "requiredDocuments": [],
+    "requirements": [
+      {
+        "id": "academic",
+        "kind": "academic",
+        "label": "Accepted first degrees and equivalent competence profiles",
+        "sourceText": "A completed Bachelor’s degree in Mathematics, Industrial Mathematics, Mathematical Economy, Computer Science, Data Science, or Physics from FAU or another equivalent German or international degree that is not significantly different with regard to the competence profile taught in the respective degree program. Please note that your competence profile cannot be evaluated in advance, but only by the admission committee after completing the application process (described below).",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Accepted first degrees and equivalent competence profiles. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
+            "quote": "A completed Bachelor’s degree in Mathematics, Industrial Mathematics, Mathematical Economy, Computer Science, Data Science, or Physics from FAU or another equivalent German or international degree that is not significantly different with regard to the competence profile taught in the respective degree program. Please note that your competence profile cannot be evaluated in advance, but only by the admission committee after completing the application process (described below).",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:15.034Z",
+            "validFor": [],
+            "locator": "HTML li block 94",
+            "retrievedAt": "2026-10-18T17:03:15.034Z",
+            "snapshotId": "ae23e848e552f12185b2b19675c937f1121985bba83f4442299e54cfe2dc1a52",
+            "contentHash": "9c23296483a8b444b5be8c06e9820816e8c6c243ce12e82a87a81fd69d597246"
+          }
+        ]
+      },
+      {
+        "id": "grades",
+        "kind": "gpa",
+        "label": "Grade thresholds and interview route",
+        "sourceText": "A Grade Point Average (GPA) of 2.5 or better with respect to the German grading system. Candidates with an admissible degree (described above) and a GPA between 2.6 and 2.8 are invited for a short online interview in which their knowledge in calculus, linear algebra, algorithms and data structures is evaluated.",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Grade thresholds and interview route. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
+            "quote": "A Grade Point Average (GPA) of 2.5 or better with respect to the German grading system. Candidates with an admissible degree (described above) and a GPA between 2.6 and 2.8 are invited for a short online interview in which their knowledge in calculus, linear algebra, algorithms and data structures is evaluated.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:15.034Z",
+            "validFor": [],
+            "locator": "HTML li block 95",
+            "retrievedAt": "2026-10-18T17:03:15.034Z",
+            "snapshotId": "ae23e848e552f12185b2b19675c937f1121985bba83f4442299e54cfe2dc1a52",
+            "contentHash": "9c23296483a8b444b5be8c06e9820816e8c6c243ce12e82a87a81fd69d597246"
+          }
+        ]
+      },
+      {
+        "id": "language",
+        "kind": "language",
+        "label": "English proficiency and exemptions (wording requires reconciliation)",
+        "sourceText": "As the Master programme is in English we are asking for a certificate of upper intermediate English (level B2) are mandatory. Even if your undergraduate degree was taught in English we recommend to submit a language certificate. For everyday life and for internships and working student jobs, we recommend solid knowledge (B1) of German, but a certificate is not necessary for the application.\n\nEnglish proficiency at level B2 CEFR (vantage or upper intermediate) or six years of English classes at a German secondary school (Gymnasium). Applicants who have completed their university entrance qualifications or their first degree in English are not required to provide proof of proficiency in English.",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "English proficiency and exemptions (wording requires reconciliation). Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
+            "quote": "As the Master programme is in English we are asking for a certificate of upper intermediate English (level B2) are mandatory. Even if your undergraduate degree was taught in English we recommend to submit a language certificate. For everyday life and for internships and working student jobs, we recommend solid knowledge (B1) of German, but a certificate is not necessary for the application.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:15.034Z",
+            "validFor": [],
+            "locator": "HTML li block 92",
+            "retrievedAt": "2026-10-18T17:03:15.034Z",
+            "snapshotId": "ae23e848e552f12185b2b19675c937f1121985bba83f4442299e54cfe2dc1a52",
+            "contentHash": "9c23296483a8b444b5be8c06e9820816e8c6c243ce12e82a87a81fd69d597246"
+          },
+          {
+            "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
+            "quote": "English proficiency at level B2 CEFR (vantage or upper intermediate) or six years of English classes at a German secondary school (Gymnasium). Applicants who have completed their university entrance qualifications or their first degree in English are not required to provide proof of proficiency in English.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:15.034Z",
+            "validFor": [],
+            "locator": "HTML li block 96",
+            "retrievedAt": "2026-10-18T17:03:15.034Z",
+            "snapshotId": "ae23e848e552f12185b2b19675c937f1121985bba83f4442299e54cfe2dc1a52",
+            "contentHash": "9c23296483a8b444b5be8c06e9820816e8c6c243ce12e82a87a81fd69d597246"
+          }
+        ]
+      },
+      {
+        "id": "inventory-review",
+        "kind": "other",
+        "label": "Full admission regulations and applicability review",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "The extracted inventory is not complete. Verify regulations, applicant categories, exemptions, selection and semester validity."
+        },
+        "evidence": []
+      }
+    ],
+    "admissionText": "academic: A completed Bachelor’s degree in Mathematics, Industrial Mathematics, Mathematical Economy, Computer Science, Data Science, or Physics from FAU or another equivalent German or international degree that is not significantly different with regard to the competence profile taught in the respective degree program. Please note that your competence profile cannot be evaluated in advance, but only by the admission committee after completing the application process (described below).\n\nacademic: A Grade Point Average (GPA) of 2.5 or better with respect to the German grading system. Candidates with an admissible degree (described above) and a GPA between 2.6 and 2.8 are invited for a short online interview in which their knowledge in calculus, linear algebra, algorithms and data structures is evaluated.\n\nlanguage: As the Master programme is in English we are asking for a certificate of upper intermediate English (level B2) are mandatory. Even if your undergraduate degree was taught in English we recommend to submit a language certificate. For everyday life and for internships and working student jobs, we recommend solid knowledge (B1) of German, but a certificate is not necessary for the application.\n\nEnglish proficiency at level B2 CEFR (vantage or upper intermediate) or six years of English classes at a German secondary school (Gymnasium). Applicants who have completed their university entrance qualifications or their first degree in English are not required to provide proof of proficiency in English.\n\ndeadline: The following information is intended for German applicants as well as domestic applicants with foreign educational qualifications. Different regulations and deadlines may apply to international prospective students.\n\nWinter semester: 31.05.\n\nSummer semester: 30.11.\n\napplication: Applications have to be submitted via the campus management portal campo.fau.de.",
+    "origin": "catalog",
+    "isDemo": false,
+    "createdAt": "2026-10-18T17:03:21.293Z",
+    "schemaVersion": 2,
+    "catalogVersion": "3329aea151d0f31eccb2f45bb2d8fa57c91530b106f55d3dc37a7bf081680d60",
+    "verificationStatus": "unverified",
+    "sources": [
+      {
+        "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
+        "quote": "Data Science (M.Sc.)",
+        "status": "unverified",
+        "sourceType": "official",
+        "lastChecked": "2026-10-18T17:03:15.034Z",
+        "validFor": [],
+        "locator": "Source document identity",
+        "retrievedAt": "2026-10-18T17:03:15.034Z",
+        "snapshotId": "ae23e848e552f12185b2b19675c937f1121985bba83f4442299e54cfe2dc1a52",
+        "contentHash": "9c23296483a8b444b5be8c06e9820816e8c6c243ce12e82a87a81fd69d597246"
+      }
+    ],
+    "validFor": [],
+    "requirementsComplete": false,
+    "facts": [
+      {
+        "id": "academic",
+        "category": "academic",
+        "value": "A completed Bachelor’s degree in Mathematics, Industrial Mathematics, Mathematical Economy, Computer Science, Data Science, or Physics from FAU or another equivalent German or international degree that is not significantly different with regard to the competence profile taught in the respective degree program. Please note that your competence profile cannot be evaluated in advance, but only by the admission committee after completing the application process (described below).",
+        "evidence": [
+          {
+            "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
+            "quote": "A completed Bachelor’s degree in Mathematics, Industrial Mathematics, Mathematical Economy, Computer Science, Data Science, or Physics from FAU or another equivalent German or international degree that is not significantly different with regard to the competence profile taught in the respective degree program. Please note that your competence profile cannot be evaluated in advance, but only by the admission committee after completing the application process (described below).",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:15.034Z",
+            "validFor": [],
+            "locator": "HTML li block 94",
+            "retrievedAt": "2026-10-18T17:03:15.034Z",
+            "snapshotId": "ae23e848e552f12185b2b19675c937f1121985bba83f4442299e54cfe2dc1a52",
+            "contentHash": "9c23296483a8b444b5be8c06e9820816e8c6c243ce12e82a87a81fd69d597246"
+          }
+        ]
+      },
+      {
+        "id": "grades",
+        "category": "academic",
+        "value": "A Grade Point Average (GPA) of 2.5 or better with respect to the German grading system. Candidates with an admissible degree (described above) and a GPA between 2.6 and 2.8 are invited for a short online interview in which their knowledge in calculus, linear algebra, algorithms and data structures is evaluated.",
+        "evidence": [
+          {
+            "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
+            "quote": "A Grade Point Average (GPA) of 2.5 or better with respect to the German grading system. Candidates with an admissible degree (described above) and a GPA between 2.6 and 2.8 are invited for a short online interview in which their knowledge in calculus, linear algebra, algorithms and data structures is evaluated.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:15.034Z",
+            "validFor": [],
+            "locator": "HTML li block 95",
+            "retrievedAt": "2026-10-18T17:03:15.034Z",
+            "snapshotId": "ae23e848e552f12185b2b19675c937f1121985bba83f4442299e54cfe2dc1a52",
+            "contentHash": "9c23296483a8b444b5be8c06e9820816e8c6c243ce12e82a87a81fd69d597246"
+          }
+        ]
+      },
+      {
+        "id": "language",
+        "category": "language",
+        "value": "As the Master programme is in English we are asking for a certificate of upper intermediate English (level B2) are mandatory. Even if your undergraduate degree was taught in English we recommend to submit a language certificate. For everyday life and for internships and working student jobs, we recommend solid knowledge (B1) of German, but a certificate is not necessary for the application.\n\nEnglish proficiency at level B2 CEFR (vantage or upper intermediate) or six years of English classes at a German secondary school (Gymnasium). Applicants who have completed their university entrance qualifications or their first degree in English are not required to provide proof of proficiency in English.",
+        "evidence": [
+          {
+            "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
+            "quote": "As the Master programme is in English we are asking for a certificate of upper intermediate English (level B2) are mandatory. Even if your undergraduate degree was taught in English we recommend to submit a language certificate. For everyday life and for internships and working student jobs, we recommend solid knowledge (B1) of German, but a certificate is not necessary for the application.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:15.034Z",
+            "validFor": [],
+            "locator": "HTML li block 92",
+            "retrievedAt": "2026-10-18T17:03:15.034Z",
+            "snapshotId": "ae23e848e552f12185b2b19675c937f1121985bba83f4442299e54cfe2dc1a52",
+            "contentHash": "9c23296483a8b444b5be8c06e9820816e8c6c243ce12e82a87a81fd69d597246"
+          },
+          {
+            "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
+            "quote": "English proficiency at level B2 CEFR (vantage or upper intermediate) or six years of English classes at a German secondary school (Gymnasium). Applicants who have completed their university entrance qualifications or their first degree in English are not required to provide proof of proficiency in English.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:15.034Z",
+            "validFor": [],
+            "locator": "HTML li block 96",
+            "retrievedAt": "2026-10-18T17:03:15.034Z",
+            "snapshotId": "ae23e848e552f12185b2b19675c937f1121985bba83f4442299e54cfe2dc1a52",
+            "contentHash": "9c23296483a8b444b5be8c06e9820816e8c6c243ce12e82a87a81fd69d597246"
+          }
+        ]
+      },
+      {
+        "id": "credits",
+        "category": "credits",
+        "value": null,
+        "note": "Curriculum credits are not prior-degree admission prerequisites.",
+        "evidence": []
+      },
+      {
+        "id": "deadline",
+        "category": "deadline",
+        "value": "The following information is intended for German applicants as well as domestic applicants with foreign educational qualifications. Different regulations and deadlines may apply to international prospective students.\n\nWinter semester: 31.05.\n\nSummer semester: 30.11.",
+        "note": "The admissions section is scoped to domestic applicants; international dates may differ.",
+        "evidence": [
+          {
+            "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
+            "quote": "The following information is intended for German applicants as well as domestic applicants with foreign educational qualifications. Different regulations and deadlines may apply to international prospective students.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:15.034Z",
+            "validFor": [],
+            "locator": "HTML p block 85",
+            "retrievedAt": "2026-10-18T17:03:15.034Z",
+            "snapshotId": "ae23e848e552f12185b2b19675c937f1121985bba83f4442299e54cfe2dc1a52",
+            "contentHash": "9c23296483a8b444b5be8c06e9820816e8c6c243ce12e82a87a81fd69d597246"
+          },
+          {
+            "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
+            "quote": "Winter semester: 31.05.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:15.034Z",
+            "validFor": [],
+            "locator": "HTML li block 89",
+            "retrievedAt": "2026-10-18T17:03:15.034Z",
+            "snapshotId": "ae23e848e552f12185b2b19675c937f1121985bba83f4442299e54cfe2dc1a52",
+            "contentHash": "9c23296483a8b444b5be8c06e9820816e8c6c243ce12e82a87a81fd69d597246"
+          },
+          {
+            "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
+            "quote": "Summer semester: 30.11.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:15.034Z",
+            "validFor": [],
+            "locator": "HTML li block 90",
+            "retrievedAt": "2026-10-18T17:03:15.034Z",
+            "snapshotId": "ae23e848e552f12185b2b19675c937f1121985bba83f4442299e54cfe2dc1a52",
+            "contentHash": "9c23296483a8b444b5be8c06e9820816e8c6c243ce12e82a87a81fd69d597246"
+          }
+        ]
+      },
+      {
+        "id": "application",
+        "category": "application",
+        "value": "Applications have to be submitted via the campus management portal campo.fau.de.",
+        "evidence": [
+          {
+            "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
+            "quote": "Applications have to be submitted via the campus management portal campo.fau.de.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:15.034Z",
+            "validFor": [],
+            "locator": "HTML p block 98",
+            "retrievedAt": "2026-10-18T17:03:15.034Z",
+            "snapshotId": "ae23e848e552f12185b2b19675c937f1121985bba83f4442299e54cfe2dc1a52",
+            "contentHash": "9c23296483a8b444b5be8c06e9820816e8c6c243ce12e82a87a81fd69d597246"
+          }
+        ]
+      },
+      {
+        "id": "tuition",
+        "category": "tuition",
+        "value": null,
+        "note": "Not established from the fetched sources.",
+        "evidence": []
+      },
+      {
+        "id": "semester",
+        "category": "semester",
+        "value": null,
+        "note": "No specific admission-year validity verified.",
+        "evidence": []
+      }
+    ],
+    "catalogIssues": [
+      "Automatically extracted draft. Human review and semester applicability are outstanding.",
+      "The page scopes admission dates to German/domestic applicants; international rules may differ.",
+      "Two language sections differ on English-medium prior study. Resolve the wording against current regulations before approval."
+    ],
+    "retrievedAt": "2026-10-18T17:03:15.034Z"
+  },
+  {
+    "id": "de-stuttgart-msc-infotech",
+    "university": "University of Stuttgart",
+    "programName": "Information Technology (INFOTECH)",
+    "degreeType": "master",
+    "language": "English",
+    "country": "Germany",
+    "city": "Stuttgart",
+    "description": "Master of Science in Information Technology. Official-source pilot; region-specific qualifications and certificate scales need review.",
+    "sourceUrl": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+    "lastChecked": "2026-10-18T17:03:16.488Z",
+    "requiredDocuments": [],
+    "requirements": [
+      {
+        "id": "academic",
+        "kind": "academic",
+        "label": "Region-specific prior degrees and recognition",
+        "sourceText": "(1) Bachelor of Science (B.Sc.) degree or similar, e.g. BTech, BE, BCS, BCA but not B.A. Master degrees do not qualify and are not considered.",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Region-specific prior degrees and recognition. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "(1) Bachelor of Science (B.Sc.) degree or similar, e.g. BTech, BE, BCS, BCA but not B.A. Master degrees do not qualify and are not considered.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML li block 11",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          }
+        ]
+      },
+      {
+        "id": "fields",
+        "kind": "academic",
+        "label": "Subject preparation and specialisation",
+        "sourceText": "An applicants bachelor degree should be in a similar field to ensure they have the foundation needed to suceed in the INFOTECH program. Eg. computer science, computer engineering, electrical engineering (communications), electronics engineering or automation.",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Subject preparation and specialisation. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "An applicants bachelor degree should be in a similar field to ensure they have the foundation needed to suceed in the INFOTECH program. Eg. computer science, computer engineering, electrical engineering (communications), electronics engineering or automation.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML td block 23",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          }
+        ]
+      },
+      {
+        "id": "language",
+        "kind": "language",
+        "label": "English certificates, score scales, validity and exemptions",
+        "sourceText": "TOEFL IBT 95 or better / from 2026: 5 or better TOEFL\n\nIELTS band 7,0 or better (academic)\n\nCambridge C1/C2\n\nOxford Test of English Advanced (C1)\n\nPTE Academic Score 76 or better\n\ntelc: telc University B2/C1 (result „very good“); telc C1 / C2 (general examination)\n\nMedium of Instruction (MoI), e.g. certificate confirming your bachelor's program was taught in english is not accepted. Exceptions cannot be made.\n\nPlease note some certificates are only valid for 2 years (eg. IELTS). The uploaded certificate has to be valid at least until the application deadline (15th of January/July)\n\nIf you are a national with citizenship and education from one of the countries listed below - you can submit proof of citizenship instead of one of the language proficiency proofs (eg. passport). Applicants from countries not included in this list must submit one of the proofs listed above.",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "English certificates, score scales, validity and exemptions. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "TOEFL IBT 95 or better / from 2026: 5 or better TOEFL",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML li block 35",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          },
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "IELTS band 7,0 or better (academic)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML li block 36",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          },
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "Cambridge C1/C2",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML li block 37",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          },
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "Oxford Test of English Advanced (C1)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML li block 38",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          },
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "PTE Academic Score 76 or better",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML li block 39",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          },
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "telc: telc University B2/C1 (result „very good“); telc C1 / C2 (general examination)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML li block 40",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          },
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "Medium of Instruction (MoI), e.g. certificate confirming your bachelor's program was taught in english is not accepted. Exceptions cannot be made.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML p block 41",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          },
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "Please note some certificates are only valid for 2 years (eg. IELTS). The uploaded certificate has to be valid at least until the application deadline (15th of January/July)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML p block 42",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          },
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "If you are a national with citizenship and education from one of the countries listed below - you can submit proof of citizenship instead of one of the language proficiency proofs (eg. passport). Applicants from countries not included in this list must submit one of the proofs listed above.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML p block 43",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          }
+        ]
+      },
+      {
+        "id": "regulations",
+        "kind": "other",
+        "label": "Admission regulation scope and complete inventory",
+        "sourceText": "Bilingual Version of INFOTECH A dmission Regulation 2024 INFOTECH OFFICE University of Stuttgart, Pfaffenwaldring 47, 70569 Stuttgart, Germany www. infotech. uni - stuttgart.de/ Page 1 of 7 DISCLAIMER: This paper is an unofficial English translation of the „ Z ulassung sordnung der Universität Stuttgart für den Masterstudiengang Information Technology (INFOTECH)“ . The translation is provided for the convenience of the students, but in all legal matters, the German original alone is valid. Zulassungsordnung der Universität Stuttgart für den Masterstudiengang Information Technology (INFOTECH) Vom 19. August 2024 Aufgrund von § 59 Abs. 1 Satz 1 und 2 des Landeshochschulgesetzes vom 01.01.2005 (GBl. 2005, S. 1), zuletzt geändert durch Gesetz vom 07.02.2023 (GBl. S. 26) in Verbindung mit § 33 Abs. 1 und 2 der Hochschulzulassungsverordnung vom 02.12.2019 (GBl. S. 489), zuletzt geändert durch Verordnung vom 26.06.2023 (GBl. S. 253) sowie § 5 in Verbindung mit § 3 des Hochschulzulassungs gesetzes vom 15. September 2005 (GBl. S. 629), zuletzt geändert durch Gesetz vom 17.12.2020 (GBl. S. 1204) hat der Senat der Universität Stuttgart am 24. Juli 2024 die nachstehende Satzung beschlossen. § 1 Zulassungsvoraussetzungen (1) Die Zulas sung zum Masterstudiengang INFOTECH setzt eine fachliche Eignung für den Studiengang voraus. Fachlich geeignet ist, wer: 1.a ) einen Abschluss in einem mindestens s echssemestrigen Bachelorstudiengang (oder gleichwertiger Abschluss) in Informatik, Softwar etechnik, Elektrotechnik und Informationstechnik oder in einem inhaltlich nahe verwandten Studiengang mit qualifizierenden Prüfungsergebnissen an einer deutschen Universität oder gleichgestellten Hochschule, Hochschule für angewandte Wissenschaften, Fachho chschule, Dualen Hochschule oder Berufsakademie, deren Abschluss einem Fachhochschulabschluss gleichgestellt ist, oder 1.b) in einem dieser Fächer oder einem inhaltlich nahe verwandten Studiengang einen gleichwertigen Abschluss mit Admission Regulations of the University of Stuttgart for the Informati on Technology (INFOTECH) master’s degree program dated August 19, 2024 On the basis of § 59, para. 1, Sentence 1 and 2 of the Landeshochschulgesetz (law on higher education in Baden - Württemberg) dated January 1, 2005 (GBI. 2005 p. 1), last amended by the law dated February 7, 2023 (GBl. p. 26) in conjunction with § 33, para. 1 and 2 of the Hochschul - vergabeverordnung (regulation on the award of university places) dated December 2, 2019 (GBl. p. 489), last amended by the regulation dated June 26, 2023 (GBl. p. 253) and § 5 in conjunction with Section 3 of the Hochschulzulassungsgesetz (Law on University Admission) dated September 15, 2005 (GBl. p. 629), last amended by the law dated Decem ber 17, 2020 (GBl. p. 1204), the Senate of the University of Stuttgart approved the following statute on July 24, 2024. § 1 Admission requirements (1) Admission to the master’s degree program in INFOTECH requires subject - specific eligibility for the study program. A person is deemed to have subject - specific eligibility if they have acquired: 1. a) a degree in a bachelor’s degree program comprised of a minimum of six semesters (or equivalent degree) in Computer Science, Software Engineering, Electrical Engineering, and Information Technology or a study program with related content and eligible examination results at a German university or equivalent higher education institution, university of applied sciences, university of cooperative educati on or a vocational academy, the degree of which is equivalent to a university of applied sciences degree or 1.b) has obtained an equivalent degree with qualifying examination results in one of",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Admission regulation scope and complete inventory. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/pdf/INFOTECH_ZulO_2024_BiLingual.pdf",
+            "quote": "Bilingual Version of INFOTECH A dmission Regulation 2024 INFOTECH OFFICE University of Stuttgart, Pfaffenwaldring 47, 70569 Stuttgart, Germany www. infotech. uni - stuttgart.de/ Page 1 of 7 DISCLAIMER: This paper is an unofficial English translation of the „ Z ulassung sordnung der Universität Stuttgart für den Masterstudiengang Information Technology (INFOTECH)“ . The translation is provided for the convenience of the students, but in all legal matters, the German original alone is valid. Zulassungsordnung der Universität Stuttgart für den Masterstudiengang Information Technology (INFOTECH) Vom 19. August 2024 Aufgrund von § 59 Abs. 1 Satz 1 und 2 des Landeshochschulgesetzes vom 01.01.2005 (GBl. 2005, S. 1), zuletzt geändert durch Gesetz vom 07.02.2023 (GBl. S. 26) in Verbindung mit § 33 Abs. 1 und 2 der Hochschulzulassungsverordnung vom 02.12.2019 (GBl. S. 489), zuletzt geändert durch Verordnung vom 26.06.2023 (GBl. S. 253) sowie § 5 in Verbindung mit § 3 des Hochschulzulassungs gesetzes vom 15. September 2005 (GBl. S. 629), zuletzt geändert durch Gesetz vom 17.12.2020 (GBl. S. 1204) hat der Senat der Universität Stuttgart am 24. Juli 2024 die nachstehende Satzung beschlossen. § 1 Zulassungsvoraussetzungen (1) Die Zulas sung zum Masterstudiengang INFOTECH setzt eine fachliche Eignung für den Studiengang voraus. Fachlich geeignet ist, wer: 1.a ) einen Abschluss in einem mindestens s echssemestrigen Bachelorstudiengang (oder gleichwertiger Abschluss) in Informatik, Softwar etechnik, Elektrotechnik und Informationstechnik oder in einem inhaltlich nahe verwandten Studiengang mit qualifizierenden Prüfungsergebnissen an einer deutschen Universität oder gleichgestellten Hochschule, Hochschule für angewandte Wissenschaften, Fachho chschule, Dualen Hochschule oder Berufsakademie, deren Abschluss einem Fachhochschulabschluss gleichgestellt ist, oder 1.b) in einem dieser Fächer oder einem inhaltlich nahe verwandten Studiengang einen gleichwertigen Abschluss mit Admission Regulations of the University of Stuttgart for the Informati on Technology (INFOTECH) master’s degree program dated August 19, 2024 On the basis of § 59, para. 1, Sentence 1 and 2 of the Landeshochschulgesetz (law on higher education in Baden - Württemberg) dated January 1, 2005 (GBI. 2005 p. 1), last amended by the law dated February 7, 2023 (GBl. p. 26) in conjunction with § 33, para. 1 and 2 of the Hochschul - vergabeverordnung (regulation on the award of university places) dated December 2, 2019 (GBl. p. 489), last amended by the regulation dated June 26, 2023 (GBl. p. 253) and § 5 in conjunction with Section 3 of the Hochschulzulassungsgesetz (Law on University Admission) dated September 15, 2005 (GBl. p. 629), last amended by the law dated Decem ber 17, 2020 (GBl. p. 1204), the Senate of the University of Stuttgart approved the following statute on July 24, 2024. § 1 Admission requirements (1) Admission to the master’s degree program in INFOTECH requires subject - specific eligibility for the study program. A person is deemed to have subject - specific eligibility if they have acquired: 1. a) a degree in a bachelor’s degree program comprised of a minimum of six semesters (or equivalent degree) in Computer Science, Software Engineering, Electrical Engineering, and Information Technology or a study program with related content and eligible examination results at a German university or equivalent higher education institution, university of applied sciences, university of cooperative educati on or a vocational academy, the degree of which is equivalent to a university of applied sciences degree or 1.b) has obtained an equivalent degree with qualifying examination results in one of",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:19.004Z",
+            "validFor": [],
+            "locator": "PDF page 1",
+            "retrievedAt": "2026-10-18T17:03:19.004Z",
+            "snapshotId": "2dd300386d0116e2b06ea127807585ccdbedc7fc95c79470d673d1ba32a2e0c1",
+            "contentHash": "1a492d13a440f1896060bc2e25433f10320ebbdb37cb08cd75278cb6617c3678"
+          }
+        ]
+      },
+      {
+        "id": "inventory-review",
+        "kind": "other",
+        "label": "Full admission regulations and applicability review",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "The extracted inventory is not complete. Verify regulations, applicant categories, exemptions, selection and semester validity."
+        },
+        "evidence": []
+      }
+    ],
+    "admissionText": "academic: (1) Bachelor of Science (B.Sc.) degree or similar, e.g. BTech, BE, BCS, BCA but not B.A. Master degrees do not qualify and are not considered.\n\nacademic: An applicants bachelor degree should be in a similar field to ensure they have the foundation needed to suceed in the INFOTECH program. Eg. computer science, computer engineering, electrical engineering (communications), electronics engineering or automation.\n\nlanguage: TOEFL IBT 95 or better / from 2026: 5 or better TOEFL\n\nIELTS band 7,0 or better (academic)\n\nCambridge C1/C2\n\nOxford Test of English Advanced (C1)\n\nPTE Academic Score 76 or better\n\ntelc: telc University B2/C1 (result „very good“); telc C1 / C2 (general examination)\n\nMedium of Instruction (MoI), e.g. certificate confirming your bachelor's program was taught in english is not accepted. Exceptions cannot be made.\n\nPlease note some certificates are only valid for 2 years (eg. IELTS). The uploaded certificate has to be valid at least until the application deadline (15th of January/July)\n\nIf you are a national with citizenship and education from one of the countries listed below - you can submit proof of citizenship instead of one of the language proficiency proofs (eg. passport). Applicants from countries not included in this list must submit one of the proofs listed above.\n\ndeadline: Application periods (for all applicants) for the following:Winter semester: November 15th - January 15thSummer semester: May 15th - July 15th\n\napplication: The adjunct form/supplementary form is required with your application in C@mpus. Failure to include it can result in your application being rejected. The form can be found here.\n\nacademic: Bilingual Version of INFOTECH A dmission Regulation 2024 INFOTECH OFFICE University of Stuttgart, Pfaffenwaldring 47, 70569 Stuttgart, Germany www. infotech. uni - stuttgart.de/ Page 1 of 7 DISCLAIMER: This paper is an unofficial English translation of the „ Z ulassung sordnung der Universität Stuttgart für den Masterstudiengang Information Technology (INFOTECH)“ . The translation is provided for the convenience of the students, but in all legal matters, the German original alone is valid. Zulassungsordnung der Universität Stuttgart für den Masterstudiengang Information Technology (INFOTECH) Vom 19. August 2024 Aufgrund von § 59 Abs. 1 Satz 1 und 2 des Landeshochschulgesetzes vom 01.01.2005 (GBl. 2005, S. 1), zuletzt geändert durch Gesetz vom 07.02.2023 (GBl. S. 26) in Verbindung mit § 33 Abs. 1 und 2 der Hochschulzulassungsverordnung vom 02.12.2019 (GBl. S. 489), zuletzt geändert durch Verordnung vom 26.06.2023 (GBl. S. 253) sowie § 5 in Verbindung mit § 3 des Hochschulzulassungs gesetzes vom 15. September 2005 (GBl. S. 629), zuletzt geändert durch Gesetz vom 17.12.2020 (GBl. S. 1204) hat der Senat der Universität Stuttgart am 24. Juli 2024 die nachstehende Satzung beschlossen. § 1 Zulassungsvoraussetzungen (1) Die Zulas sung zum Masterstudiengang INFOTECH setzt eine fachliche Eignung für den Studiengang voraus. Fachlich geeignet ist, wer: 1.a ) einen Abschluss in einem mindestens s echssemestrigen Bachelorstudiengang (oder gleichwertiger Abschluss) in Informatik, Softwar etechnik, Elektrotechnik und Informationstechnik oder in einem inhaltlich nahe verwandten Studiengang mit qualifizierenden Prüfungsergebnissen an einer deutschen Universität oder gleichgestellten Hochschule, Hochschule für angewandte Wissenschaften, Fachho chschule, Dualen Hochschule oder Berufsakademie, deren Abschluss einem Fachhochschulabschluss gleichgestellt ist, oder 1.b) in einem dieser Fächer oder einem inhaltlich nahe verwandten Studiengang einen gleichwertigen Abschluss mit Admission Regulations of the University of Stuttgart for the Informati on Technology (INFOTECH) master’s degree program dated August 19, 2024 On the basis of § 59, para. 1, Sentence 1 and 2 of the Landeshochschulgesetz (law on higher education in Baden - Württemberg) dated January 1, 2005 (GBI. 2005 p. 1), last amended by the law dated February 7, 2023 (GBl. p. 26) in conjunction with § 33, para. 1 and 2 of the Hochschul - vergabeverordnung (regulation on the award of university places) dated December 2, 2019 (GBl. p. 489), last amended by the regulation dated June 26, 2023 (GBl. p. 253) and § 5 in conjunction with Section 3 of the Hochschulzulassungsgesetz (Law on University Admission) dated September 15, 2005 (GBl. p. 629), last amended by the law dated Decem ber 17, 2020 (GBl. p. 1204), the Senate of the University of Stuttgart approved the following statute on July 24, 2024. § 1 Admission requirements (1) Admission to the master’s degree program in INFOTECH requires subject - specific eligibility for the study program. A person is deemed to have subject - specific eligibility if they have acquired: 1. a) a degree in a bachelor’s degree program comprised of a minimum of six semesters (or equivalent degree) in Computer Science, Software Engineering, Electrical Engineering, and Information Technology or a study program with related content and eligible examination results at a German university or equivalent higher education institution, university of applied sciences, university of cooperative educati on or a vocational academy, the degree of which is equivalent to a university of applied sciences degree or 1.b) has obtained an equivalent degree with qualifying examination results in one of",
+    "origin": "catalog",
+    "isDemo": false,
+    "createdAt": "2026-10-18T17:03:21.293Z",
+    "schemaVersion": 2,
+    "catalogVersion": "23144c38feb40ac75ce267210c89ee3edd5f686a1d2ecfc19a629ec6f9f18d2b",
+    "verificationStatus": "unverified",
+    "sources": [
+      {
+        "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+        "quote": "Requirements",
+        "status": "unverified",
+        "sourceType": "official",
+        "lastChecked": "2026-10-18T17:03:16.488Z",
+        "validFor": [],
+        "locator": "Source document identity",
+        "retrievedAt": "2026-10-18T17:03:16.488Z",
+        "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+        "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+      },
+      {
+        "url": "https://www.infotech.uni-stuttgart.de/application/",
+        "quote": "Application",
+        "status": "unverified",
+        "sourceType": "official",
+        "lastChecked": "2026-10-18T17:03:17.699Z",
+        "validFor": [],
+        "locator": "Source document identity",
+        "retrievedAt": "2026-10-18T17:03:17.699Z",
+        "snapshotId": "57c2367ba77213a1626d101e4e96dec418842976e212002210697800f742ceb7",
+        "contentHash": "49ae60eb519bc4ab5eba7ed534e294db6e4f890c54a8ae491a748570a15f5134"
+      },
+      {
+        "url": "https://www.infotech.uni-stuttgart.de/pdf/INFOTECH_ZulO_2024_BiLingual.pdf",
+        "quote": "INFOTECH_ZulO_2024_BiLingual.pdf",
+        "status": "unverified",
+        "sourceType": "official",
+        "lastChecked": "2026-10-18T17:03:19.004Z",
+        "validFor": [],
+        "locator": "Source document identity",
+        "retrievedAt": "2026-10-18T17:03:19.004Z",
+        "snapshotId": "2dd300386d0116e2b06ea127807585ccdbedc7fc95c79470d673d1ba32a2e0c1",
+        "contentHash": "1a492d13a440f1896060bc2e25433f10320ebbdb37cb08cd75278cb6617c3678"
+      }
+    ],
+    "validFor": [],
+    "requirementsComplete": false,
+    "facts": [
+      {
+        "id": "academic",
+        "category": "academic",
+        "value": "(1) Bachelor of Science (B.Sc.) degree or similar, e.g. BTech, BE, BCS, BCA but not B.A. Master degrees do not qualify and are not considered.",
+        "evidence": [
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "(1) Bachelor of Science (B.Sc.) degree or similar, e.g. BTech, BE, BCS, BCA but not B.A. Master degrees do not qualify and are not considered.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML li block 11",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          }
+        ]
+      },
+      {
+        "id": "fields",
+        "category": "academic",
+        "value": "An applicants bachelor degree should be in a similar field to ensure they have the foundation needed to suceed in the INFOTECH program. Eg. computer science, computer engineering, electrical engineering (communications), electronics engineering or automation.",
+        "evidence": [
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "An applicants bachelor degree should be in a similar field to ensure they have the foundation needed to suceed in the INFOTECH program. Eg. computer science, computer engineering, electrical engineering (communications), electronics engineering or automation.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML td block 23",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          }
+        ]
+      },
+      {
+        "id": "language",
+        "category": "language",
+        "value": "TOEFL IBT 95 or better / from 2026: 5 or better TOEFL\n\nIELTS band 7,0 or better (academic)\n\nCambridge C1/C2\n\nOxford Test of English Advanced (C1)\n\nPTE Academic Score 76 or better\n\ntelc: telc University B2/C1 (result „very good“); telc C1 / C2 (general examination)\n\nMedium of Instruction (MoI), e.g. certificate confirming your bachelor's program was taught in english is not accepted. Exceptions cannot be made.\n\nPlease note some certificates are only valid for 2 years (eg. IELTS). The uploaded certificate has to be valid at least until the application deadline (15th of January/July)\n\nIf you are a national with citizenship and education from one of the countries listed below - you can submit proof of citizenship instead of one of the language proficiency proofs (eg. passport). Applicants from countries not included in this list must submit one of the proofs listed above.",
+        "note": "Do not compare old TOEFL scores with the 2026 scale. Citizenship/education exemptions require the full country list and manual review.",
+        "evidence": [
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "TOEFL IBT 95 or better / from 2026: 5 or better TOEFL",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML li block 35",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          },
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "IELTS band 7,0 or better (academic)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML li block 36",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          },
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "Cambridge C1/C2",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML li block 37",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          },
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "Oxford Test of English Advanced (C1)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML li block 38",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          },
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "PTE Academic Score 76 or better",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML li block 39",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          },
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "telc: telc University B2/C1 (result „very good“); telc C1 / C2 (general examination)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML li block 40",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          },
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "Medium of Instruction (MoI), e.g. certificate confirming your bachelor's program was taught in english is not accepted. Exceptions cannot be made.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML p block 41",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          },
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "Please note some certificates are only valid for 2 years (eg. IELTS). The uploaded certificate has to be valid at least until the application deadline (15th of January/July)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML p block 42",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          },
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "If you are a national with citizenship and education from one of the countries listed below - you can submit proof of citizenship instead of one of the language proficiency proofs (eg. passport). Applicants from countries not included in this list must submit one of the proofs listed above.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML p block 43",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          }
+        ]
+      },
+      {
+        "id": "credits",
+        "category": "credits",
+        "value": null,
+        "note": "Not established from the fetched sources.",
+        "evidence": []
+      },
+      {
+        "id": "deadline",
+        "category": "deadline",
+        "value": "Application periods (for all applicants) for the following:Winter semester: November 15th - January 15thSummer semester: May 15th - July 15th",
+        "note": "Check application cycle and applicant category. Recurring dates do not establish a specific semester.",
+        "evidence": [
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/",
+            "quote": "Application periods (for all applicants) for the following:Winter semester: November 15th - January 15thSummer semester: May 15th - July 15th",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:17.699Z",
+            "validFor": [],
+            "locator": "HTML p block 13",
+            "retrievedAt": "2026-10-18T17:03:17.699Z",
+            "snapshotId": "57c2367ba77213a1626d101e4e96dec418842976e212002210697800f742ceb7",
+            "contentHash": "49ae60eb519bc4ab5eba7ed534e294db6e4f890c54a8ae491a748570a15f5134"
+          }
+        ]
+      },
+      {
+        "id": "application",
+        "category": "application",
+        "value": "The adjunct form/supplementary form is required with your application in C@mpus. Failure to include it can result in your application being rejected. The form can be found here.",
+        "evidence": [
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "The adjunct form/supplementary form is required with your application in C@mpus. Failure to include it can result in your application being rejected. The form can be found here.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML p block 9",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          }
+        ]
+      },
+      {
+        "id": "regulations",
+        "category": "academic",
+        "value": "Bilingual Version of INFOTECH A dmission Regulation 2024 INFOTECH OFFICE University of Stuttgart, Pfaffenwaldring 47, 70569 Stuttgart, Germany www. infotech. uni - stuttgart.de/ Page 1 of 7 DISCLAIMER: This paper is an unofficial English translation of the „ Z ulassung sordnung der Universität Stuttgart für den Masterstudiengang Information Technology (INFOTECH)“ . The translation is provided for the convenience of the students, but in all legal matters, the German original alone is valid. Zulassungsordnung der Universität Stuttgart für den Masterstudiengang Information Technology (INFOTECH) Vom 19. August 2024 Aufgrund von § 59 Abs. 1 Satz 1 und 2 des Landeshochschulgesetzes vom 01.01.2005 (GBl. 2005, S. 1), zuletzt geändert durch Gesetz vom 07.02.2023 (GBl. S. 26) in Verbindung mit § 33 Abs. 1 und 2 der Hochschulzulassungsverordnung vom 02.12.2019 (GBl. S. 489), zuletzt geändert durch Verordnung vom 26.06.2023 (GBl. S. 253) sowie § 5 in Verbindung mit § 3 des Hochschulzulassungs gesetzes vom 15. September 2005 (GBl. S. 629), zuletzt geändert durch Gesetz vom 17.12.2020 (GBl. S. 1204) hat der Senat der Universität Stuttgart am 24. Juli 2024 die nachstehende Satzung beschlossen. § 1 Zulassungsvoraussetzungen (1) Die Zulas sung zum Masterstudiengang INFOTECH setzt eine fachliche Eignung für den Studiengang voraus. Fachlich geeignet ist, wer: 1.a ) einen Abschluss in einem mindestens s echssemestrigen Bachelorstudiengang (oder gleichwertiger Abschluss) in Informatik, Softwar etechnik, Elektrotechnik und Informationstechnik oder in einem inhaltlich nahe verwandten Studiengang mit qualifizierenden Prüfungsergebnissen an einer deutschen Universität oder gleichgestellten Hochschule, Hochschule für angewandte Wissenschaften, Fachho chschule, Dualen Hochschule oder Berufsakademie, deren Abschluss einem Fachhochschulabschluss gleichgestellt ist, oder 1.b) in einem dieser Fächer oder einem inhaltlich nahe verwandten Studiengang einen gleichwertigen Abschluss mit Admission Regulations of the University of Stuttgart for the Informati on Technology (INFOTECH) master’s degree program dated August 19, 2024 On the basis of § 59, para. 1, Sentence 1 and 2 of the Landeshochschulgesetz (law on higher education in Baden - Württemberg) dated January 1, 2005 (GBI. 2005 p. 1), last amended by the law dated February 7, 2023 (GBl. p. 26) in conjunction with § 33, para. 1 and 2 of the Hochschul - vergabeverordnung (regulation on the award of university places) dated December 2, 2019 (GBl. p. 489), last amended by the regulation dated June 26, 2023 (GBl. p. 253) and § 5 in conjunction with Section 3 of the Hochschulzulassungsgesetz (Law on University Admission) dated September 15, 2005 (GBl. p. 629), last amended by the law dated Decem ber 17, 2020 (GBl. p. 1204), the Senate of the University of Stuttgart approved the following statute on July 24, 2024. § 1 Admission requirements (1) Admission to the master’s degree program in INFOTECH requires subject - specific eligibility for the study program. A person is deemed to have subject - specific eligibility if they have acquired: 1. a) a degree in a bachelor’s degree program comprised of a minimum of six semesters (or equivalent degree) in Computer Science, Software Engineering, Electrical Engineering, and Information Technology or a study program with related content and eligible examination results at a German university or equivalent higher education institution, university of applied sciences, university of cooperative educati on or a vocational academy, the degree of which is equivalent to a university of applied sciences degree or 1.b) has obtained an equivalent degree with qualifying examination results in one of",
+        "note": "Bilingual 2024 regulation with unofficial English translation. German text, amendment history and later web changes need review.",
+        "evidence": [
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/pdf/INFOTECH_ZulO_2024_BiLingual.pdf",
+            "quote": "Bilingual Version of INFOTECH A dmission Regulation 2024 INFOTECH OFFICE University of Stuttgart, Pfaffenwaldring 47, 70569 Stuttgart, Germany www. infotech. uni - stuttgart.de/ Page 1 of 7 DISCLAIMER: This paper is an unofficial English translation of the „ Z ulassung sordnung der Universität Stuttgart für den Masterstudiengang Information Technology (INFOTECH)“ . The translation is provided for the convenience of the students, but in all legal matters, the German original alone is valid. Zulassungsordnung der Universität Stuttgart für den Masterstudiengang Information Technology (INFOTECH) Vom 19. August 2024 Aufgrund von § 59 Abs. 1 Satz 1 und 2 des Landeshochschulgesetzes vom 01.01.2005 (GBl. 2005, S. 1), zuletzt geändert durch Gesetz vom 07.02.2023 (GBl. S. 26) in Verbindung mit § 33 Abs. 1 und 2 der Hochschulzulassungsverordnung vom 02.12.2019 (GBl. S. 489), zuletzt geändert durch Verordnung vom 26.06.2023 (GBl. S. 253) sowie § 5 in Verbindung mit § 3 des Hochschulzulassungs gesetzes vom 15. September 2005 (GBl. S. 629), zuletzt geändert durch Gesetz vom 17.12.2020 (GBl. S. 1204) hat der Senat der Universität Stuttgart am 24. Juli 2024 die nachstehende Satzung beschlossen. § 1 Zulassungsvoraussetzungen (1) Die Zulas sung zum Masterstudiengang INFOTECH setzt eine fachliche Eignung für den Studiengang voraus. Fachlich geeignet ist, wer: 1.a ) einen Abschluss in einem mindestens s echssemestrigen Bachelorstudiengang (oder gleichwertiger Abschluss) in Informatik, Softwar etechnik, Elektrotechnik und Informationstechnik oder in einem inhaltlich nahe verwandten Studiengang mit qualifizierenden Prüfungsergebnissen an einer deutschen Universität oder gleichgestellten Hochschule, Hochschule für angewandte Wissenschaften, Fachho chschule, Dualen Hochschule oder Berufsakademie, deren Abschluss einem Fachhochschulabschluss gleichgestellt ist, oder 1.b) in einem dieser Fächer oder einem inhaltlich nahe verwandten Studiengang einen gleichwertigen Abschluss mit Admission Regulations of the University of Stuttgart for the Informati on Technology (INFOTECH) master’s degree program dated August 19, 2024 On the basis of § 59, para. 1, Sentence 1 and 2 of the Landeshochschulgesetz (law on higher education in Baden - Württemberg) dated January 1, 2005 (GBI. 2005 p. 1), last amended by the law dated February 7, 2023 (GBl. p. 26) in conjunction with § 33, para. 1 and 2 of the Hochschul - vergabeverordnung (regulation on the award of university places) dated December 2, 2019 (GBl. p. 489), last amended by the regulation dated June 26, 2023 (GBl. p. 253) and § 5 in conjunction with Section 3 of the Hochschulzulassungsgesetz (Law on University Admission) dated September 15, 2005 (GBl. p. 629), last amended by the law dated Decem ber 17, 2020 (GBl. p. 1204), the Senate of the University of Stuttgart approved the following statute on July 24, 2024. § 1 Admission requirements (1) Admission to the master’s degree program in INFOTECH requires subject - specific eligibility for the study program. A person is deemed to have subject - specific eligibility if they have acquired: 1. a) a degree in a bachelor’s degree program comprised of a minimum of six semesters (or equivalent degree) in Computer Science, Software Engineering, Electrical Engineering, and Information Technology or a study program with related content and eligible examination results at a German university or equivalent higher education institution, university of applied sciences, university of cooperative educati on or a vocational academy, the degree of which is equivalent to a university of applied sciences degree or 1.b) has obtained an equivalent degree with qualifying examination results in one of",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:19.004Z",
+            "validFor": [],
+            "locator": "PDF page 1",
+            "retrievedAt": "2026-10-18T17:03:19.004Z",
+            "snapshotId": "2dd300386d0116e2b06ea127807585ccdbedc7fc95c79470d673d1ba32a2e0c1",
+            "contentHash": "1a492d13a440f1896060bc2e25433f10320ebbdb37cb08cd75278cb6617c3678"
+          }
+        ]
+      },
+      {
+        "id": "tuition",
+        "category": "tuition",
+        "value": null,
+        "note": "Not established from the fetched sources.",
+        "evidence": []
+      },
+      {
+        "id": "semester",
+        "category": "semester",
+        "value": null,
+        "note": "Not established from the fetched sources.",
+        "evidence": []
+      }
+    ],
+    "catalogIssues": [
+      "Automatically extracted draft. Human review and semester applicability are outstanding."
+    ],
+    "retrievedAt": "2026-10-18T17:03:19.004Z"
+  },
+  {
+    "id": "de-tuhh-msc-mechatronics",
+    "university": "Hamburg University of Technology",
+    "programName": "Mechatronics",
+    "degreeType": "master",
+    "language": "English",
+    "country": "Germany",
+    "city": "Hamburg",
+    "description": "Master of Science in Mechatronics. Official-source pilot; full subject-specific admission rules await review.",
+    "sourceUrl": "https://www.tuhh.de/tuhh/studium/vor-dem-studium/studienangebot/international-study-programs/mechatronics",
+    "lastChecked": "2026-10-18T17:03:21.215Z",
+    "requiredDocuments": [],
+    "requirements": [
+      {
+        "id": "academic",
+        "kind": "academic",
+        "label": "Prior mechatronics or mechanical engineering degree",
+        "sourceText": "Bachelor's degree in Mechatronics or Mechanical Engineering, see subject-specific requirements",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Prior mechatronics or mechanical engineering degree. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.tuhh.de/tuhh/studium/vor-dem-studium/studienangebot/international-study-programs/mechatronics",
+            "quote": "Bachelor's degree in Mechatronics or Mechanical Engineering, see subject-specific requirements",
+            "status": "stale",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:21.215Z",
+            "validFor": [],
+            "locator": "HTML td block 13",
+            "retrievedAt": "2026-10-18T17:03:21.215Z",
+            "snapshotId": "27f4c274cda3b232f5e61a394ed5ce814c29dc349e75c026374cae3b653217a7",
+            "contentHash": "5b3c28be16c28ebefebc559814aaef85ae91ccdbb07d87d594f7f5cb24248cb8"
+          }
+        ]
+      },
+      {
+        "id": "language",
+        "kind": "language",
+        "label": "English certificate types and scores",
+        "sourceText": "Applicants should hold a Bachelor's or equivalent degree in mechatronics engineering or mechanical engineering and must show a very good previous academic performance as well as sufficient proficiency in English by passing TOEFL with a minimum score of 577 (paper-based) / 90 (internet-based) or IELTS with a minimum score of 6.5.\n\nPlease note: The TOEFL ITP is not accepted by TUHH.",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "English certificate types and scores. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.tuhh.de/tuhh/studium/vor-dem-studium/studienangebot/international-study-programs/mechatronics",
+            "quote": "Applicants should hold a Bachelor's or equivalent degree in mechatronics engineering or mechanical engineering and must show a very good previous academic performance as well as sufficient proficiency in English by passing TOEFL with a minimum score of 577 (paper-based) / 90 (internet-based) or IELTS with a minimum score of 6.5.",
+            "status": "stale",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:21.215Z",
+            "validFor": [],
+            "locator": "HTML p block 38",
+            "retrievedAt": "2026-10-18T17:03:21.215Z",
+            "snapshotId": "27f4c274cda3b232f5e61a394ed5ce814c29dc349e75c026374cae3b653217a7",
+            "contentHash": "5b3c28be16c28ebefebc559814aaef85ae91ccdbb07d87d594f7f5cb24248cb8"
+          },
+          {
+            "url": "https://www.tuhh.de/tuhh/studium/vor-dem-studium/studienangebot/international-study-programs/mechatronics",
+            "quote": "Please note: The TOEFL ITP is not accepted by TUHH.",
+            "status": "stale",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:21.215Z",
+            "validFor": [],
+            "locator": "HTML p block 39",
+            "retrievedAt": "2026-10-18T17:03:21.215Z",
+            "snapshotId": "27f4c274cda3b232f5e61a394ed5ce814c29dc349e75c026374cae3b653217a7",
+            "contentHash": "5b3c28be16c28ebefebc559814aaef85ae91ccdbb07d87d594f7f5cb24248cb8"
+          }
+        ]
+      },
+      {
+        "id": "credits",
+        "kind": "ects",
+        "label": "Subject-specific mathematics and engineering preparation",
+        "sourceText": "As can be seen from those requirements, we expect applicants to have e.g. 30 CP worth of courses covering fundamental mathematics - the equivalent of one semester. Additionally, we request profound knowledge in engineering mechanics as well as control theory and fundamentals of mechatronics.",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Subject-specific mathematics and engineering preparation. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.tuhh.de/tuhh/studium/vor-dem-studium/studienangebot/international-study-programs/mechatronics",
+            "quote": "As can be seen from those requirements, we expect applicants to have e.g. 30 CP worth of courses covering fundamental mathematics - the equivalent of one semester. Additionally, we request profound knowledge in engineering mechanics as well as control theory and fundamentals of mechatronics.",
+            "status": "stale",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:21.215Z",
+            "validFor": [],
+            "locator": "HTML p block 41",
+            "retrievedAt": "2026-10-18T17:03:21.215Z",
+            "snapshotId": "27f4c274cda3b232f5e61a394ed5ce814c29dc349e75c026374cae3b653217a7",
+            "contentHash": "5b3c28be16c28ebefebc559814aaef85ae91ccdbb07d87d594f7f5cb24248cb8"
+          }
+        ]
+      },
+      {
+        "id": "inventory-review",
+        "kind": "other",
+        "label": "Full admission regulations and applicability review",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "The extracted inventory is not complete. Verify regulations, applicant categories, exemptions, selection and semester validity."
+        },
+        "evidence": []
+      }
+    ],
+    "admissionText": "academic: Bachelor's degree in Mechatronics or Mechanical Engineering, see subject-specific requirements\n\nlanguage: Applicants should hold a Bachelor's or equivalent degree in mechatronics engineering or mechanical engineering and must show a very good previous academic performance as well as sufficient proficiency in English by passing TOEFL with a minimum score of 577 (paper-based) / 90 (internet-based) or IELTS with a minimum score of 6.5.\n\nPlease note: The TOEFL ITP is not accepted by TUHH.\n\ncredits: As can be seen from those requirements, we expect applicants to have e.g. 30 CP worth of courses covering fundamental mathematics - the equivalent of one semester. Additionally, we request profound knowledge in engineering mechanics as well as control theory and fundamentals of mechatronics.\n\ndeadline: You can apply annually for the winter semester in the period from the December 1st to February 1st. For this you need a Bachelor’s or equivalent degree in Mechatronics, Mechanical Engineering or related fields (see the subject-specific requirements here). In addition, you need sufficiently good English language skills. You can find more infomation about the English language requirements and other documents needed for the application here. We conduct an online application procedure.\n\napplication: You can apply annually for the winter semester in the period from the December 1st to February 1st. For this you need a Bachelor’s or equivalent degree in Mechatronics, Mechanical Engineering or related fields (see the subject-specific requirements here). In addition, you need sufficiently good English language skills. You can find more infomation about the English language requirements and other documents needed for the application here. We conduct an online application procedure.\n\ntuition: Apart from a semester contribution of approx. 300€ there no fees for the master in mechatronics at TUHH. Further information regarding the semester contribution as well as expenses, please check the following link: Fees and expenses",
+    "origin": "catalog",
+    "isDemo": false,
+    "createdAt": "2026-10-18T17:03:21.293Z",
+    "schemaVersion": 2,
+    "catalogVersion": "d540cb8cae0c8dcec407296ede32d2f43905b2d87041636350cad50aac24cbc8",
+    "verificationStatus": "stale",
+    "sources": [
+      {
+        "url": "https://www.tuhh.de/tuhh/studium/vor-dem-studium/studienangebot/international-study-programs/mechatronics",
+        "quote": "Mechatronics, Master of Science",
+        "status": "stale",
+        "sourceType": "official",
+        "lastChecked": "2026-10-18T17:03:21.215Z",
+        "validFor": [],
+        "locator": "Source document identity",
+        "retrievedAt": "2026-10-18T17:03:21.215Z",
+        "snapshotId": "27f4c274cda3b232f5e61a394ed5ce814c29dc349e75c026374cae3b653217a7",
+        "contentHash": "5b3c28be16c28ebefebc559814aaef85ae91ccdbb07d87d594f7f5cb24248cb8"
+      }
+    ],
+    "validFor": [],
+    "requirementsComplete": false,
+    "facts": [
+      {
+        "id": "academic",
+        "category": "academic",
+        "value": "Bachelor's degree in Mechatronics or Mechanical Engineering, see subject-specific requirements",
+        "evidence": [
+          {
+            "url": "https://www.tuhh.de/tuhh/studium/vor-dem-studium/studienangebot/international-study-programs/mechatronics",
+            "quote": "Bachelor's degree in Mechatronics or Mechanical Engineering, see subject-specific requirements",
+            "status": "stale",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:21.215Z",
+            "validFor": [],
+            "locator": "HTML td block 13",
+            "retrievedAt": "2026-10-18T17:03:21.215Z",
+            "snapshotId": "27f4c274cda3b232f5e61a394ed5ce814c29dc349e75c026374cae3b653217a7",
+            "contentHash": "5b3c28be16c28ebefebc559814aaef85ae91ccdbb07d87d594f7f5cb24248cb8"
+          }
+        ]
+      },
+      {
+        "id": "language",
+        "category": "language",
+        "value": "Applicants should hold a Bachelor's or equivalent degree in mechatronics engineering or mechanical engineering and must show a very good previous academic performance as well as sufficient proficiency in English by passing TOEFL with a minimum score of 577 (paper-based) / 90 (internet-based) or IELTS with a minimum score of 6.5.\n\nPlease note: The TOEFL ITP is not accepted by TUHH.",
+        "evidence": [
+          {
+            "url": "https://www.tuhh.de/tuhh/studium/vor-dem-studium/studienangebot/international-study-programs/mechatronics",
+            "quote": "Applicants should hold a Bachelor's or equivalent degree in mechatronics engineering or mechanical engineering and must show a very good previous academic performance as well as sufficient proficiency in English by passing TOEFL with a minimum score of 577 (paper-based) / 90 (internet-based) or IELTS with a minimum score of 6.5.",
+            "status": "stale",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:21.215Z",
+            "validFor": [],
+            "locator": "HTML p block 38",
+            "retrievedAt": "2026-10-18T17:03:21.215Z",
+            "snapshotId": "27f4c274cda3b232f5e61a394ed5ce814c29dc349e75c026374cae3b653217a7",
+            "contentHash": "5b3c28be16c28ebefebc559814aaef85ae91ccdbb07d87d594f7f5cb24248cb8"
+          },
+          {
+            "url": "https://www.tuhh.de/tuhh/studium/vor-dem-studium/studienangebot/international-study-programs/mechatronics",
+            "quote": "Please note: The TOEFL ITP is not accepted by TUHH.",
+            "status": "stale",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:21.215Z",
+            "validFor": [],
+            "locator": "HTML p block 39",
+            "retrievedAt": "2026-10-18T17:03:21.215Z",
+            "snapshotId": "27f4c274cda3b232f5e61a394ed5ce814c29dc349e75c026374cae3b653217a7",
+            "contentHash": "5b3c28be16c28ebefebc559814aaef85ae91ccdbb07d87d594f7f5cb24248cb8"
+          }
+        ]
+      },
+      {
+        "id": "credits",
+        "category": "credits",
+        "value": "As can be seen from those requirements, we expect applicants to have e.g. 30 CP worth of courses covering fundamental mathematics - the equivalent of one semester. Additionally, we request profound knowledge in engineering mechanics as well as control theory and fundamentals of mechatronics.",
+        "note": "The page uses CP, not an explicit ECTS conversion. Review the linked subject requirements.",
+        "evidence": [
+          {
+            "url": "https://www.tuhh.de/tuhh/studium/vor-dem-studium/studienangebot/international-study-programs/mechatronics",
+            "quote": "As can be seen from those requirements, we expect applicants to have e.g. 30 CP worth of courses covering fundamental mathematics - the equivalent of one semester. Additionally, we request profound knowledge in engineering mechanics as well as control theory and fundamentals of mechatronics.",
+            "status": "stale",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:21.215Z",
+            "validFor": [],
+            "locator": "HTML p block 41",
+            "retrievedAt": "2026-10-18T17:03:21.215Z",
+            "snapshotId": "27f4c274cda3b232f5e61a394ed5ce814c29dc349e75c026374cae3b653217a7",
+            "contentHash": "5b3c28be16c28ebefebc559814aaef85ae91ccdbb07d87d594f7f5cb24248cb8"
+          }
+        ]
+      },
+      {
+        "id": "deadline",
+        "category": "deadline",
+        "value": "You can apply annually for the winter semester in the period from the December 1st to February 1st. For this you need a Bachelor’s or equivalent degree in Mechatronics, Mechanical Engineering or related fields (see the subject-specific requirements here). In addition, you need sufficiently good English language skills. You can find more infomation about the English language requirements and other documents needed for the application here. We conduct an online application procedure.",
+        "note": "Annual winter intake; specific calendar-year validity unverified.",
+        "evidence": [
+          {
+            "url": "https://www.tuhh.de/tuhh/studium/vor-dem-studium/studienangebot/international-study-programs/mechatronics",
+            "quote": "You can apply annually for the winter semester in the period from the December 1st to February 1st. For this you need a Bachelor’s or equivalent degree in Mechatronics, Mechanical Engineering or related fields (see the subject-specific requirements here). In addition, you need sufficiently good English language skills. You can find more infomation about the English language requirements and other documents needed for the application here. We conduct an online application procedure.",
+            "status": "stale",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:21.215Z",
+            "validFor": [],
+            "locator": "HTML p block 43",
+            "retrievedAt": "2026-10-18T17:03:21.215Z",
+            "snapshotId": "27f4c274cda3b232f5e61a394ed5ce814c29dc349e75c026374cae3b653217a7",
+            "contentHash": "5b3c28be16c28ebefebc559814aaef85ae91ccdbb07d87d594f7f5cb24248cb8"
+          }
+        ]
+      },
+      {
+        "id": "application",
+        "category": "application",
+        "value": "You can apply annually for the winter semester in the period from the December 1st to February 1st. For this you need a Bachelor’s or equivalent degree in Mechatronics, Mechanical Engineering or related fields (see the subject-specific requirements here). In addition, you need sufficiently good English language skills. You can find more infomation about the English language requirements and other documents needed for the application here. We conduct an online application procedure.",
+        "evidence": [
+          {
+            "url": "https://www.tuhh.de/tuhh/studium/vor-dem-studium/studienangebot/international-study-programs/mechatronics",
+            "quote": "You can apply annually for the winter semester in the period from the December 1st to February 1st. For this you need a Bachelor’s or equivalent degree in Mechatronics, Mechanical Engineering or related fields (see the subject-specific requirements here). In addition, you need sufficiently good English language skills. You can find more infomation about the English language requirements and other documents needed for the application here. We conduct an online application procedure.",
+            "status": "stale",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:21.215Z",
+            "validFor": [],
+            "locator": "HTML p block 43",
+            "retrievedAt": "2026-10-18T17:03:21.215Z",
+            "snapshotId": "27f4c274cda3b232f5e61a394ed5ce814c29dc349e75c026374cae3b653217a7",
+            "contentHash": "5b3c28be16c28ebefebc559814aaef85ae91ccdbb07d87d594f7f5cb24248cb8"
+          }
+        ]
+      },
+      {
+        "id": "tuition",
+        "category": "tuition",
+        "value": "Apart from a semester contribution of approx. 300€ there no fees for the master in mechatronics at TUHH. Further information regarding the semester contribution as well as expenses, please check the following link: Fees and expenses",
+        "note": "Program overview amounts are not verified for an admission year.",
+        "evidence": [
+          {
+            "url": "https://www.tuhh.de/tuhh/studium/vor-dem-studium/studienangebot/international-study-programs/mechatronics",
+            "quote": "Apart from a semester contribution of approx. 300€ there no fees for the master in mechatronics at TUHH. Further information regarding the semester contribution as well as expenses, please check the following link: Fees and expenses",
+            "status": "stale",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:21.215Z",
+            "validFor": [],
+            "locator": "HTML p block 61",
+            "retrievedAt": "2026-10-18T17:03:21.215Z",
+            "snapshotId": "27f4c274cda3b232f5e61a394ed5ce814c29dc349e75c026374cae3b653217a7",
+            "contentHash": "5b3c28be16c28ebefebc559814aaef85ae91ccdbb07d87d594f7f5cb24248cb8"
+          }
+        ]
+      },
+      {
+        "id": "semester",
+        "category": "semester",
+        "value": null,
+        "note": "Not established from the fetched sources.",
+        "evidence": []
+      }
+    ],
+    "catalogIssues": [
+      "Automatically extracted draft. Human review and semester applicability are outstanding.",
+      "tuhh-subjects: robots.txt disallows https://www.tuhh.de/t3resources/tuhh/img/studium/dekanate/mb/fachspez._anforderungen_IMPMEC.pdf",
+      "One or more required sources could not be checked. Previous evidence is not current verification."
+    ],
+    "retrievedAt": "2026-10-18T17:03:21.215Z"
+  }
+]

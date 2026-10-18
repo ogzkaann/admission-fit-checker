@@ -1,0 +1,144 @@
+{
+  "id": "57c2367ba77213a1626d101e4e96dec418842976e212002210697800f742ceb7",
+  "url": "https://www.infotech.uni-stuttgart.de/application/",
+  "requestedUrl": "https://www.infotech.uni-stuttgart.de/application/",
+  "title": "Application",
+  "retrievedAt": "2026-10-18T17:03:17.699Z",
+  "mediaType": "text/html",
+  "contentHash": "49ae60eb519bc4ab5eba7ed534e294db6e4f890c54a8ae491a748570a15f5134",
+  "textHash": "b400c540efc94e776149b2ac162b4a3100057e1dac0c86d647a729e1b5637efc",
+  "text": "Application\nFind out more about the application process for INFOTECH.\nRequirements\nRoadmap for applying\nSelection Process\nPost-Acceptance Information\nFAQ\nAdjunct FormNeeded for your application in C@mpus can be found here.Note: Only this form should be used when applying to INFOTECH - other programs have their own forms and they are not universal.\nInterested in applying? Read the 'Requirements' and 'Roadmap for applying' pages.\nThe INFOTECH program offers admission twice a year: in winter and summer semester.\nApplication periods (for all applicants) for the following:Winter semester: November 15th - January 15thSummer semester: May 15th - July 15th\nThe application periods are ca. 9 months before the semester begins. Winter semester begins October 1stSummer semester begins April 1stThe entire application process is conducted via the Campus Management System (C@MPUS). For issues with the application in C@MPUS please contact their support.A manual for applying via C@MPUS is available here.\nThe adjunct form that must be submitted with your application can be found here. (Please only use this form - not one from another program)Please note: although it is not needed to apply, you should plan to start the Visa process as soon as possible, as the process can take up to 6 months or more.\nCompetition for the admission to the INFOTECH program is tough, and we can only offer admission to a small percentage of the applicants we receive.Academic background and performance during the Bachelor degree are the main selection criteria. Note, the application requirements listed are the minimum needed to be considered. Nationality, gender, race, scholarships and work experiences have no influence on the selection process.\nThe University of Stuttgart is not in a position to award any scholarships or provide financial support.To learn more about scholarship programs in Germany, see for example the German Academic Exchange Service (DAAD) webpage or other organisations at the German Embassy in your home country. We have also collected some useful links in the Links Section of the INFOTECH Homepage.\nContact us\nINFOTECH OFFICE\nPfaffenwaldring 47 , 70569 Stuttgart, Germany\n+49 711 685 67820\nWrite e-mail\nContact for Infotech specific questions on the application process\nInternational Service Point (ISP) – Faculty 5\n+49 711 685 67926\nContact for general questions on the application process",
+  "blocks": [
+    {
+      "text": "Application",
+      "locator": "HTML h1 block 1"
+    },
+    {
+      "text": "Find out more about the application process for INFOTECH.",
+      "locator": "HTML p block 2"
+    },
+    {
+      "text": "Requirements",
+      "locator": "HTML li block 3"
+    },
+    {
+      "text": "Roadmap for applying",
+      "locator": "HTML li block 4"
+    },
+    {
+      "text": "Selection Process",
+      "locator": "HTML li block 5"
+    },
+    {
+      "text": "Post-Acceptance Information",
+      "locator": "HTML li block 6"
+    },
+    {
+      "text": "FAQ",
+      "locator": "HTML li block 7"
+    },
+    {
+      "text": "Adjunct FormNeeded for your application in C@mpus can be found here.Note: Only this form should be used when applying to INFOTECH - other programs have their own forms and they are not universal.",
+      "locator": "HTML p block 8"
+    },
+    {
+      "text": "Interested in applying? Read the 'Requirements' and 'Roadmap for applying' pages.",
+      "locator": "HTML p block 11"
+    },
+    {
+      "text": "The INFOTECH program offers admission twice a year: in winter and summer semester.",
+      "locator": "HTML p block 12"
+    },
+    {
+      "text": "Application periods (for all applicants) for the following:Winter semester: November 15th - January 15thSummer semester: May 15th - July 15th",
+      "locator": "HTML p block 13"
+    },
+    {
+      "text": "The application periods are ca. 9 months before the semester begins. Winter semester begins October 1stSummer semester begins April 1stThe entire application process is conducted via the Campus Management System (C@MPUS). For issues with the application in C@MPUS please contact their support.A manual for applying via C@MPUS is available here.",
+      "locator": "HTML p block 14"
+    },
+    {
+      "text": "The adjunct form that must be submitted with your application can be found here. (Please only use this form - not one from another program)Please note: although it is not needed to apply, you should plan to start the Visa process as soon as possible, as the process can take up to 6 months or more.",
+      "locator": "HTML p block 15"
+    },
+    {
+      "text": "Competition for the admission to the INFOTECH program is tough, and we can only offer admission to a small percentage of the applicants we receive.Academic background and performance during the Bachelor degree are the main selection criteria. Note, the application requirements listed are the minimum needed to be considered. Nationality, gender, race, scholarships and work experiences have no influence on the selection process.",
+      "locator": "HTML p block 16"
+    },
+    {
+      "text": "The University of Stuttgart is not in a position to award any scholarships or provide financial support.To learn more about scholarship programs in Germany, see for example the German Academic Exchange Service (DAAD) webpage or other organisations at the German Embassy in your home country. We have also collected some useful links in the Links Section of the INFOTECH Homepage.",
+      "locator": "HTML p block 17"
+    },
+    {
+      "text": "Contact us",
+      "locator": "HTML h3 block 18"
+    },
+    {
+      "text": "INFOTECH OFFICE",
+      "locator": "HTML h3 block 19"
+    },
+    {
+      "text": "Pfaffenwaldring 47 , 70569 Stuttgart, Germany",
+      "locator": "HTML h4 block 20"
+    },
+    {
+      "text": "+49 711 685 67820",
+      "locator": "HTML li block 21"
+    },
+    {
+      "text": "Write e-mail",
+      "locator": "HTML li block 22"
+    },
+    {
+      "text": "Contact for Infotech specific questions on the application process",
+      "locator": "HTML li block 23"
+    },
+    {
+      "text": "International Service Point (ISP) – Faculty 5",
+      "locator": "HTML h3 block 24"
+    },
+    {
+      "text": "+49 711 685 67926",
+      "locator": "HTML li block 26"
+    },
+    {
+      "text": "Contact for general questions on the application process",
+      "locator": "HTML li block 28"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://www.infotech.uni-stuttgart.de/application/",
+      "label": "jump to content"
+    },
+    {
+      "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+      "label": "Requirements"
+    },
+    {
+      "url": "https://www.infotech.uni-stuttgart.de/application/roadmap/",
+      "label": "Roadmap"
+    },
+    {
+      "url": "https://www.infotech.uni-stuttgart.de/application/selection-process/",
+      "label": "Selection Process"
+    },
+    {
+      "url": "https://www.infotech.uni-stuttgart.de/application/postapplication/",
+      "label": "Post-Acceptance Information"
+    },
+    {
+      "url": "https://www.infotech.uni-stuttgart.de/program/reg19/",
+      "label": "Study Regulation"
+    },
+    {
+      "url": "https://www.infotech.uni-stuttgart.de/pdf/Manuals/ApplicationManual_INFOTECH_WS2021.pdf",
+      "label": "here"
+    }
+  ],
+  "robotsStatus": 404,
+  "redirects": [],
+  "etag": null,
+  "lastModified": "Sun, 18 Oct 2026 07:01:26 GMT",
+  "extractorVersion": 2
+}

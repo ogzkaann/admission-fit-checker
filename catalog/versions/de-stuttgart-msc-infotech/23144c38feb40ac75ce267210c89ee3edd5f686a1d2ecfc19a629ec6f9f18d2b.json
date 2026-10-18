@@ -1,0 +1,1281 @@
+{
+  "schemaVersion": 1,
+  "programId": "de-stuttgart-msc-infotech",
+  "revision": "23144c38feb40ac75ce267210c89ee3edd5f686a1d2ecfc19a629ec6f9f18d2b",
+  "parentRevision": "047402a8cbacaecf3c1ef5945ed9300efcb03911727ba1e6d10421a37f5461fd",
+  "extractedAt": "2026-10-18T17:05:22.546Z",
+  "recipeHash": "19830be7b0b8c416550f2bb63b07ccae6e856fbcb62dc2d4a86a8c02bf2c0d20",
+  "program": {
+    "id": "de-stuttgart-msc-infotech",
+    "university": "University of Stuttgart",
+    "programName": "Information Technology (INFOTECH)",
+    "degreeType": "master",
+    "language": "English",
+    "country": "Germany",
+    "city": "Stuttgart",
+    "description": "Master of Science in Information Technology. Official-source pilot; region-specific qualifications and certificate scales need review.",
+    "sourceUrl": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+    "requiredDocuments": [],
+    "requirements": [
+      {
+        "id": "academic",
+        "kind": "academic",
+        "label": "Region-specific prior degrees and recognition",
+        "sourceText": "(1) Bachelor of Science (B.Sc.) degree or similar, e.g. BTech, BE, BCS, BCA but not B.A. Master degrees do not qualify and are not considered.",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Region-specific prior degrees and recognition. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "(1) Bachelor of Science (B.Sc.) degree or similar, e.g. BTech, BE, BCS, BCA but not B.A. Master degrees do not qualify and are not considered.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML li block 11",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          }
+        ]
+      },
+      {
+        "id": "fields",
+        "kind": "academic",
+        "label": "Subject preparation and specialisation",
+        "sourceText": "An applicants bachelor degree should be in a similar field to ensure they have the foundation needed to suceed in the INFOTECH program. Eg. computer science, computer engineering, electrical engineering (communications), electronics engineering or automation.",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Subject preparation and specialisation. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "An applicants bachelor degree should be in a similar field to ensure they have the foundation needed to suceed in the INFOTECH program. Eg. computer science, computer engineering, electrical engineering (communications), electronics engineering or automation.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML td block 23",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          }
+        ]
+      },
+      {
+        "id": "language",
+        "kind": "language",
+        "label": "English certificates, score scales, validity and exemptions",
+        "sourceText": "TOEFL IBT 95 or better / from 2026: 5 or better TOEFL\n\nIELTS band 7,0 or better (academic)\n\nCambridge C1/C2\n\nOxford Test of English Advanced (C1)\n\nPTE Academic Score 76 or better\n\ntelc: telc University B2/C1 (result „very good“); telc C1 / C2 (general examination)\n\nMedium of Instruction (MoI), e.g. certificate confirming your bachelor's program was taught in english is not accepted. Exceptions cannot be made.\n\nPlease note some certificates are only valid for 2 years (eg. IELTS). The uploaded certificate has to be valid at least until the application deadline (15th of January/July)\n\nIf you are a national with citizenship and education from one of the countries listed below - you can submit proof of citizenship instead of one of the language proficiency proofs (eg. passport). Applicants from countries not included in this list must submit one of the proofs listed above.",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "English certificates, score scales, validity and exemptions. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "TOEFL IBT 95 or better / from 2026: 5 or better TOEFL",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML li block 35",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          },
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "IELTS band 7,0 or better (academic)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML li block 36",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          },
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "Cambridge C1/C2",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML li block 37",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          },
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "Oxford Test of English Advanced (C1)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML li block 38",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          },
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "PTE Academic Score 76 or better",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML li block 39",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          },
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "telc: telc University B2/C1 (result „very good“); telc C1 / C2 (general examination)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML li block 40",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          },
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "Medium of Instruction (MoI), e.g. certificate confirming your bachelor's program was taught in english is not accepted. Exceptions cannot be made.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML p block 41",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          },
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "Please note some certificates are only valid for 2 years (eg. IELTS). The uploaded certificate has to be valid at least until the application deadline (15th of January/July)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML p block 42",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          },
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "If you are a national with citizenship and education from one of the countries listed below - you can submit proof of citizenship instead of one of the language proficiency proofs (eg. passport). Applicants from countries not included in this list must submit one of the proofs listed above.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML p block 43",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          }
+        ]
+      },
+      {
+        "id": "regulations",
+        "kind": "other",
+        "label": "Admission regulation scope and complete inventory",
+        "sourceText": "Bilingual Version of INFOTECH A dmission Regulation 2024 INFOTECH OFFICE University of Stuttgart, Pfaffenwaldring 47, 70569 Stuttgart, Germany www. infotech. uni - stuttgart.de/ Page 1 of 7 DISCLAIMER: This paper is an unofficial English translation of the „ Z ulassung sordnung der Universität Stuttgart für den Masterstudiengang Information Technology (INFOTECH)“ . The translation is provided for the convenience of the students, but in all legal matters, the German original alone is valid. Zulassungsordnung der Universität Stuttgart für den Masterstudiengang Information Technology (INFOTECH) Vom 19. August 2024 Aufgrund von § 59 Abs. 1 Satz 1 und 2 des Landeshochschulgesetzes vom 01.01.2005 (GBl. 2005, S. 1), zuletzt geändert durch Gesetz vom 07.02.2023 (GBl. S. 26) in Verbindung mit § 33 Abs. 1 und 2 der Hochschulzulassungsverordnung vom 02.12.2019 (GBl. S. 489), zuletzt geändert durch Verordnung vom 26.06.2023 (GBl. S. 253) sowie § 5 in Verbindung mit § 3 des Hochschulzulassungs gesetzes vom 15. September 2005 (GBl. S. 629), zuletzt geändert durch Gesetz vom 17.12.2020 (GBl. S. 1204) hat der Senat der Universität Stuttgart am 24. Juli 2024 die nachstehende Satzung beschlossen. § 1 Zulassungsvoraussetzungen (1) Die Zulas sung zum Masterstudiengang INFOTECH setzt eine fachliche Eignung für den Studiengang voraus. Fachlich geeignet ist, wer: 1.a ) einen Abschluss in einem mindestens s echssemestrigen Bachelorstudiengang (oder gleichwertiger Abschluss) in Informatik, Softwar etechnik, Elektrotechnik und Informationstechnik oder in einem inhaltlich nahe verwandten Studiengang mit qualifizierenden Prüfungsergebnissen an einer deutschen Universität oder gleichgestellten Hochschule, Hochschule für angewandte Wissenschaften, Fachho chschule, Dualen Hochschule oder Berufsakademie, deren Abschluss einem Fachhochschulabschluss gleichgestellt ist, oder 1.b) in einem dieser Fächer oder einem inhaltlich nahe verwandten Studiengang einen gleichwertigen Abschluss mit Admission Regulations of the University of Stuttgart for the Informati on Technology (INFOTECH) master’s degree program dated August 19, 2024 On the basis of § 59, para. 1, Sentence 1 and 2 of the Landeshochschulgesetz (law on higher education in Baden - Württemberg) dated January 1, 2005 (GBI. 2005 p. 1), last amended by the law dated February 7, 2023 (GBl. p. 26) in conjunction with § 33, para. 1 and 2 of the Hochschul - vergabeverordnung (regulation on the award of university places) dated December 2, 2019 (GBl. p. 489), last amended by the regulation dated June 26, 2023 (GBl. p. 253) and § 5 in conjunction with Section 3 of the Hochschulzulassungsgesetz (Law on University Admission) dated September 15, 2005 (GBl. p. 629), last amended by the law dated Decem ber 17, 2020 (GBl. p. 1204), the Senate of the University of Stuttgart approved the following statute on July 24, 2024. § 1 Admission requirements (1) Admission to the master’s degree program in INFOTECH requires subject - specific eligibility for the study program. A person is deemed to have subject - specific eligibility if they have acquired: 1. a) a degree in a bachelor’s degree program comprised of a minimum of six semesters (or equivalent degree) in Computer Science, Software Engineering, Electrical Engineering, and Information Technology or a study program with related content and eligible examination results at a German university or equivalent higher education institution, university of applied sciences, university of cooperative educati on or a vocational academy, the degree of which is equivalent to a university of applied sciences degree or 1.b) has obtained an equivalent degree with qualifying examination results in one of",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Admission regulation scope and complete inventory. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/pdf/INFOTECH_ZulO_2024_BiLingual.pdf",
+            "quote": "Bilingual Version of INFOTECH A dmission Regulation 2024 INFOTECH OFFICE University of Stuttgart, Pfaffenwaldring 47, 70569 Stuttgart, Germany www. infotech. uni - stuttgart.de/ Page 1 of 7 DISCLAIMER: This paper is an unofficial English translation of the „ Z ulassung sordnung der Universität Stuttgart für den Masterstudiengang Information Technology (INFOTECH)“ . The translation is provided for the convenience of the students, but in all legal matters, the German original alone is valid. Zulassungsordnung der Universität Stuttgart für den Masterstudiengang Information Technology (INFOTECH) Vom 19. August 2024 Aufgrund von § 59 Abs. 1 Satz 1 und 2 des Landeshochschulgesetzes vom 01.01.2005 (GBl. 2005, S. 1), zuletzt geändert durch Gesetz vom 07.02.2023 (GBl. S. 26) in Verbindung mit § 33 Abs. 1 und 2 der Hochschulzulassungsverordnung vom 02.12.2019 (GBl. S. 489), zuletzt geändert durch Verordnung vom 26.06.2023 (GBl. S. 253) sowie § 5 in Verbindung mit § 3 des Hochschulzulassungs gesetzes vom 15. September 2005 (GBl. S. 629), zuletzt geändert durch Gesetz vom 17.12.2020 (GBl. S. 1204) hat der Senat der Universität Stuttgart am 24. Juli 2024 die nachstehende Satzung beschlossen. § 1 Zulassungsvoraussetzungen (1) Die Zulas sung zum Masterstudiengang INFOTECH setzt eine fachliche Eignung für den Studiengang voraus. Fachlich geeignet ist, wer: 1.a ) einen Abschluss in einem mindestens s echssemestrigen Bachelorstudiengang (oder gleichwertiger Abschluss) in Informatik, Softwar etechnik, Elektrotechnik und Informationstechnik oder in einem inhaltlich nahe verwandten Studiengang mit qualifizierenden Prüfungsergebnissen an einer deutschen Universität oder gleichgestellten Hochschule, Hochschule für angewandte Wissenschaften, Fachho chschule, Dualen Hochschule oder Berufsakademie, deren Abschluss einem Fachhochschulabschluss gleichgestellt ist, oder 1.b) in einem dieser Fächer oder einem inhaltlich nahe verwandten Studiengang einen gleichwertigen Abschluss mit Admission Regulations of the University of Stuttgart for the Informati on Technology (INFOTECH) master’s degree program dated August 19, 2024 On the basis of § 59, para. 1, Sentence 1 and 2 of the Landeshochschulgesetz (law on higher education in Baden - Württemberg) dated January 1, 2005 (GBI. 2005 p. 1), last amended by the law dated February 7, 2023 (GBl. p. 26) in conjunction with § 33, para. 1 and 2 of the Hochschul - vergabeverordnung (regulation on the award of university places) dated December 2, 2019 (GBl. p. 489), last amended by the regulation dated June 26, 2023 (GBl. p. 253) and § 5 in conjunction with Section 3 of the Hochschulzulassungsgesetz (Law on University Admission) dated September 15, 2005 (GBl. p. 629), last amended by the law dated Decem ber 17, 2020 (GBl. p. 1204), the Senate of the University of Stuttgart approved the following statute on July 24, 2024. § 1 Admission requirements (1) Admission to the master’s degree program in INFOTECH requires subject - specific eligibility for the study program. A person is deemed to have subject - specific eligibility if they have acquired: 1. a) a degree in a bachelor’s degree program comprised of a minimum of six semesters (or equivalent degree) in Computer Science, Software Engineering, Electrical Engineering, and Information Technology or a study program with related content and eligible examination results at a German university or equivalent higher education institution, university of applied sciences, university of cooperative educati on or a vocational academy, the degree of which is equivalent to a university of applied sciences degree or 1.b) has obtained an equivalent degree with qualifying examination results in one of",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:19.004Z",
+            "validFor": [],
+            "locator": "PDF page 1",
+            "retrievedAt": "2026-10-18T17:03:19.004Z",
+            "snapshotId": "2dd300386d0116e2b06ea127807585ccdbedc7fc95c79470d673d1ba32a2e0c1",
+            "contentHash": "1a492d13a440f1896060bc2e25433f10320ebbdb37cb08cd75278cb6617c3678"
+          }
+        ]
+      },
+      {
+        "id": "inventory-review",
+        "kind": "other",
+        "label": "Full admission regulations and applicability review",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "The extracted inventory is not complete. Verify regulations, applicant categories, exemptions, selection and semester validity."
+        },
+        "evidence": []
+      }
+    ],
+    "admissionText": "academic: (1) Bachelor of Science (B.Sc.) degree or similar, e.g. BTech, BE, BCS, BCA but not B.A. Master degrees do not qualify and are not considered.\n\nacademic: An applicants bachelor degree should be in a similar field to ensure they have the foundation needed to suceed in the INFOTECH program. Eg. computer science, computer engineering, electrical engineering (communications), electronics engineering or automation.\n\nlanguage: TOEFL IBT 95 or better / from 2026: 5 or better TOEFL\n\nIELTS band 7,0 or better (academic)\n\nCambridge C1/C2\n\nOxford Test of English Advanced (C1)\n\nPTE Academic Score 76 or better\n\ntelc: telc University B2/C1 (result „very good“); telc C1 / C2 (general examination)\n\nMedium of Instruction (MoI), e.g. certificate confirming your bachelor's program was taught in english is not accepted. Exceptions cannot be made.\n\nPlease note some certificates are only valid for 2 years (eg. IELTS). The uploaded certificate has to be valid at least until the application deadline (15th of January/July)\n\nIf you are a national with citizenship and education from one of the countries listed below - you can submit proof of citizenship instead of one of the language proficiency proofs (eg. passport). Applicants from countries not included in this list must submit one of the proofs listed above.\n\ndeadline: Application periods (for all applicants) for the following:Winter semester: November 15th - January 15thSummer semester: May 15th - July 15th\n\napplication: The adjunct form/supplementary form is required with your application in C@mpus. Failure to include it can result in your application being rejected. The form can be found here.\n\nacademic: Bilingual Version of INFOTECH A dmission Regulation 2024 INFOTECH OFFICE University of Stuttgart, Pfaffenwaldring 47, 70569 Stuttgart, Germany www. infotech. uni - stuttgart.de/ Page 1 of 7 DISCLAIMER: This paper is an unofficial English translation of the „ Z ulassung sordnung der Universität Stuttgart für den Masterstudiengang Information Technology (INFOTECH)“ . The translation is provided for the convenience of the students, but in all legal matters, the German original alone is valid. Zulassungsordnung der Universität Stuttgart für den Masterstudiengang Information Technology (INFOTECH) Vom 19. August 2024 Aufgrund von § 59 Abs. 1 Satz 1 und 2 des Landeshochschulgesetzes vom 01.01.2005 (GBl. 2005, S. 1), zuletzt geändert durch Gesetz vom 07.02.2023 (GBl. S. 26) in Verbindung mit § 33 Abs. 1 und 2 der Hochschulzulassungsverordnung vom 02.12.2019 (GBl. S. 489), zuletzt geändert durch Verordnung vom 26.06.2023 (GBl. S. 253) sowie § 5 in Verbindung mit § 3 des Hochschulzulassungs gesetzes vom 15. September 2005 (GBl. S. 629), zuletzt geändert durch Gesetz vom 17.12.2020 (GBl. S. 1204) hat der Senat der Universität Stuttgart am 24. Juli 2024 die nachstehende Satzung beschlossen. § 1 Zulassungsvoraussetzungen (1) Die Zulas sung zum Masterstudiengang INFOTECH setzt eine fachliche Eignung für den Studiengang voraus. Fachlich geeignet ist, wer: 1.a ) einen Abschluss in einem mindestens s echssemestrigen Bachelorstudiengang (oder gleichwertiger Abschluss) in Informatik, Softwar etechnik, Elektrotechnik und Informationstechnik oder in einem inhaltlich nahe verwandten Studiengang mit qualifizierenden Prüfungsergebnissen an einer deutschen Universität oder gleichgestellten Hochschule, Hochschule für angewandte Wissenschaften, Fachho chschule, Dualen Hochschule oder Berufsakademie, deren Abschluss einem Fachhochschulabschluss gleichgestellt ist, oder 1.b) in einem dieser Fächer oder einem inhaltlich nahe verwandten Studiengang einen gleichwertigen Abschluss mit Admission Regulations of the University of Stuttgart for the Informati on Technology (INFOTECH) master’s degree program dated August 19, 2024 On the basis of § 59, para. 1, Sentence 1 and 2 of the Landeshochschulgesetz (law on higher education in Baden - Württemberg) dated January 1, 2005 (GBI. 2005 p. 1), last amended by the law dated February 7, 2023 (GBl. p. 26) in conjunction with § 33, para. 1 and 2 of the Hochschul - vergabeverordnung (regulation on the award of university places) dated December 2, 2019 (GBl. p. 489), last amended by the regulation dated June 26, 2023 (GBl. p. 253) and § 5 in conjunction with Section 3 of the Hochschulzulassungsgesetz (Law on University Admission) dated September 15, 2005 (GBl. p. 629), last amended by the law dated Decem ber 17, 2020 (GBl. p. 1204), the Senate of the University of Stuttgart approved the following statute on July 24, 2024. § 1 Admission requirements (1) Admission to the master’s degree program in INFOTECH requires subject - specific eligibility for the study program. A person is deemed to have subject - specific eligibility if they have acquired: 1. a) a degree in a bachelor’s degree program comprised of a minimum of six semesters (or equivalent degree) in Computer Science, Software Engineering, Electrical Engineering, and Information Technology or a study program with related content and eligible examination results at a German university or equivalent higher education institution, university of applied sciences, university of cooperative educati on or a vocational academy, the degree of which is equivalent to a university of applied sciences degree or 1.b) has obtained an equivalent degree with qualifying examination results in one of",
+    "origin": "catalog",
+    "isDemo": false,
+    "createdAt": "2026-10-18T17:03:21.293Z",
+    "schemaVersion": 2,
+    "verificationStatus": "unverified",
+    "sources": [
+      {
+        "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+        "quote": "Requirements",
+        "status": "unverified",
+        "sourceType": "official",
+        "lastChecked": "2026-10-18T17:03:16.488Z",
+        "validFor": [],
+        "locator": "Source document identity",
+        "retrievedAt": "2026-10-18T17:03:16.488Z",
+        "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+        "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+      },
+      {
+        "url": "https://www.infotech.uni-stuttgart.de/application/",
+        "quote": "Application",
+        "status": "unverified",
+        "sourceType": "official",
+        "lastChecked": "2026-10-18T17:03:17.699Z",
+        "validFor": [],
+        "locator": "Source document identity",
+        "retrievedAt": "2026-10-18T17:03:17.699Z",
+        "snapshotId": "57c2367ba77213a1626d101e4e96dec418842976e212002210697800f742ceb7",
+        "contentHash": "49ae60eb519bc4ab5eba7ed534e294db6e4f890c54a8ae491a748570a15f5134"
+      },
+      {
+        "url": "https://www.infotech.uni-stuttgart.de/pdf/INFOTECH_ZulO_2024_BiLingual.pdf",
+        "quote": "INFOTECH_ZulO_2024_BiLingual.pdf",
+        "status": "unverified",
+        "sourceType": "official",
+        "lastChecked": "2026-10-18T17:03:19.004Z",
+        "validFor": [],
+        "locator": "Source document identity",
+        "retrievedAt": "2026-10-18T17:03:19.004Z",
+        "snapshotId": "2dd300386d0116e2b06ea127807585ccdbedc7fc95c79470d673d1ba32a2e0c1",
+        "contentHash": "1a492d13a440f1896060bc2e25433f10320ebbdb37cb08cd75278cb6617c3678"
+      }
+    ],
+    "validFor": [],
+    "requirementsComplete": false,
+    "facts": [
+      {
+        "id": "academic",
+        "category": "academic",
+        "value": "(1) Bachelor of Science (B.Sc.) degree or similar, e.g. BTech, BE, BCS, BCA but not B.A. Master degrees do not qualify and are not considered.",
+        "evidence": [
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "(1) Bachelor of Science (B.Sc.) degree or similar, e.g. BTech, BE, BCS, BCA but not B.A. Master degrees do not qualify and are not considered.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML li block 11",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          }
+        ]
+      },
+      {
+        "id": "fields",
+        "category": "academic",
+        "value": "An applicants bachelor degree should be in a similar field to ensure they have the foundation needed to suceed in the INFOTECH program. Eg. computer science, computer engineering, electrical engineering (communications), electronics engineering or automation.",
+        "evidence": [
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "An applicants bachelor degree should be in a similar field to ensure they have the foundation needed to suceed in the INFOTECH program. Eg. computer science, computer engineering, electrical engineering (communications), electronics engineering or automation.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML td block 23",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          }
+        ]
+      },
+      {
+        "id": "language",
+        "category": "language",
+        "value": "TOEFL IBT 95 or better / from 2026: 5 or better TOEFL\n\nIELTS band 7,0 or better (academic)\n\nCambridge C1/C2\n\nOxford Test of English Advanced (C1)\n\nPTE Academic Score 76 or better\n\ntelc: telc University B2/C1 (result „very good“); telc C1 / C2 (general examination)\n\nMedium of Instruction (MoI), e.g. certificate confirming your bachelor's program was taught in english is not accepted. Exceptions cannot be made.\n\nPlease note some certificates are only valid for 2 years (eg. IELTS). The uploaded certificate has to be valid at least until the application deadline (15th of January/July)\n\nIf you are a national with citizenship and education from one of the countries listed below - you can submit proof of citizenship instead of one of the language proficiency proofs (eg. passport). Applicants from countries not included in this list must submit one of the proofs listed above.",
+        "note": "Do not compare old TOEFL scores with the 2026 scale. Citizenship/education exemptions require the full country list and manual review.",
+        "evidence": [
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "TOEFL IBT 95 or better / from 2026: 5 or better TOEFL",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML li block 35",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          },
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "IELTS band 7,0 or better (academic)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML li block 36",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          },
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "Cambridge C1/C2",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML li block 37",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          },
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "Oxford Test of English Advanced (C1)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML li block 38",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          },
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "PTE Academic Score 76 or better",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML li block 39",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          },
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "telc: telc University B2/C1 (result „very good“); telc C1 / C2 (general examination)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML li block 40",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          },
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "Medium of Instruction (MoI), e.g. certificate confirming your bachelor's program was taught in english is not accepted. Exceptions cannot be made.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML p block 41",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          },
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "Please note some certificates are only valid for 2 years (eg. IELTS). The uploaded certificate has to be valid at least until the application deadline (15th of January/July)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML p block 42",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          },
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "If you are a national with citizenship and education from one of the countries listed below - you can submit proof of citizenship instead of one of the language proficiency proofs (eg. passport). Applicants from countries not included in this list must submit one of the proofs listed above.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML p block 43",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          }
+        ]
+      },
+      {
+        "id": "credits",
+        "category": "credits",
+        "value": null,
+        "note": "Not established from the fetched sources.",
+        "evidence": []
+      },
+      {
+        "id": "deadline",
+        "category": "deadline",
+        "value": "Application periods (for all applicants) for the following:Winter semester: November 15th - January 15thSummer semester: May 15th - July 15th",
+        "note": "Check application cycle and applicant category. Recurring dates do not establish a specific semester.",
+        "evidence": [
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/",
+            "quote": "Application periods (for all applicants) for the following:Winter semester: November 15th - January 15thSummer semester: May 15th - July 15th",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:17.699Z",
+            "validFor": [],
+            "locator": "HTML p block 13",
+            "retrievedAt": "2026-10-18T17:03:17.699Z",
+            "snapshotId": "57c2367ba77213a1626d101e4e96dec418842976e212002210697800f742ceb7",
+            "contentHash": "49ae60eb519bc4ab5eba7ed534e294db6e4f890c54a8ae491a748570a15f5134"
+          }
+        ]
+      },
+      {
+        "id": "application",
+        "category": "application",
+        "value": "The adjunct form/supplementary form is required with your application in C@mpus. Failure to include it can result in your application being rejected. The form can be found here.",
+        "evidence": [
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "The adjunct form/supplementary form is required with your application in C@mpus. Failure to include it can result in your application being rejected. The form can be found here.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML p block 9",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          }
+        ]
+      },
+      {
+        "id": "regulations",
+        "category": "academic",
+        "value": "Bilingual Version of INFOTECH A dmission Regulation 2024 INFOTECH OFFICE University of Stuttgart, Pfaffenwaldring 47, 70569 Stuttgart, Germany www. infotech. uni - stuttgart.de/ Page 1 of 7 DISCLAIMER: This paper is an unofficial English translation of the „ Z ulassung sordnung der Universität Stuttgart für den Masterstudiengang Information Technology (INFOTECH)“ . The translation is provided for the convenience of the students, but in all legal matters, the German original alone is valid. Zulassungsordnung der Universität Stuttgart für den Masterstudiengang Information Technology (INFOTECH) Vom 19. August 2024 Aufgrund von § 59 Abs. 1 Satz 1 und 2 des Landeshochschulgesetzes vom 01.01.2005 (GBl. 2005, S. 1), zuletzt geändert durch Gesetz vom 07.02.2023 (GBl. S. 26) in Verbindung mit § 33 Abs. 1 und 2 der Hochschulzulassungsverordnung vom 02.12.2019 (GBl. S. 489), zuletzt geändert durch Verordnung vom 26.06.2023 (GBl. S. 253) sowie § 5 in Verbindung mit § 3 des Hochschulzulassungs gesetzes vom 15. September 2005 (GBl. S. 629), zuletzt geändert durch Gesetz vom 17.12.2020 (GBl. S. 1204) hat der Senat der Universität Stuttgart am 24. Juli 2024 die nachstehende Satzung beschlossen. § 1 Zulassungsvoraussetzungen (1) Die Zulas sung zum Masterstudiengang INFOTECH setzt eine fachliche Eignung für den Studiengang voraus. Fachlich geeignet ist, wer: 1.a ) einen Abschluss in einem mindestens s echssemestrigen Bachelorstudiengang (oder gleichwertiger Abschluss) in Informatik, Softwar etechnik, Elektrotechnik und Informationstechnik oder in einem inhaltlich nahe verwandten Studiengang mit qualifizierenden Prüfungsergebnissen an einer deutschen Universität oder gleichgestellten Hochschule, Hochschule für angewandte Wissenschaften, Fachho chschule, Dualen Hochschule oder Berufsakademie, deren Abschluss einem Fachhochschulabschluss gleichgestellt ist, oder 1.b) in einem dieser Fächer oder einem inhaltlich nahe verwandten Studiengang einen gleichwertigen Abschluss mit Admission Regulations of the University of Stuttgart for the Informati on Technology (INFOTECH) master’s degree program dated August 19, 2024 On the basis of § 59, para. 1, Sentence 1 and 2 of the Landeshochschulgesetz (law on higher education in Baden - Württemberg) dated January 1, 2005 (GBI. 2005 p. 1), last amended by the law dated February 7, 2023 (GBl. p. 26) in conjunction with § 33, para. 1 and 2 of the Hochschul - vergabeverordnung (regulation on the award of university places) dated December 2, 2019 (GBl. p. 489), last amended by the regulation dated June 26, 2023 (GBl. p. 253) and § 5 in conjunction with Section 3 of the Hochschulzulassungsgesetz (Law on University Admission) dated September 15, 2005 (GBl. p. 629), last amended by the law dated Decem ber 17, 2020 (GBl. p. 1204), the Senate of the University of Stuttgart approved the following statute on July 24, 2024. § 1 Admission requirements (1) Admission to the master’s degree program in INFOTECH requires subject - specific eligibility for the study program. A person is deemed to have subject - specific eligibility if they have acquired: 1. a) a degree in a bachelor’s degree program comprised of a minimum of six semesters (or equivalent degree) in Computer Science, Software Engineering, Electrical Engineering, and Information Technology or a study program with related content and eligible examination results at a German university or equivalent higher education institution, university of applied sciences, university of cooperative educati on or a vocational academy, the degree of which is equivalent to a university of applied sciences degree or 1.b) has obtained an equivalent degree with qualifying examination results in one of",
+        "note": "Bilingual 2024 regulation with unofficial English translation. German text, amendment history and later web changes need review.",
+        "evidence": [
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/pdf/INFOTECH_ZulO_2024_BiLingual.pdf",
+            "quote": "Bilingual Version of INFOTECH A dmission Regulation 2024 INFOTECH OFFICE University of Stuttgart, Pfaffenwaldring 47, 70569 Stuttgart, Germany www. infotech. uni - stuttgart.de/ Page 1 of 7 DISCLAIMER: This paper is an unofficial English translation of the „ Z ulassung sordnung der Universität Stuttgart für den Masterstudiengang Information Technology (INFOTECH)“ . The translation is provided for the convenience of the students, but in all legal matters, the German original alone is valid. Zulassungsordnung der Universität Stuttgart für den Masterstudiengang Information Technology (INFOTECH) Vom 19. August 2024 Aufgrund von § 59 Abs. 1 Satz 1 und 2 des Landeshochschulgesetzes vom 01.01.2005 (GBl. 2005, S. 1), zuletzt geändert durch Gesetz vom 07.02.2023 (GBl. S. 26) in Verbindung mit § 33 Abs. 1 und 2 der Hochschulzulassungsverordnung vom 02.12.2019 (GBl. S. 489), zuletzt geändert durch Verordnung vom 26.06.2023 (GBl. S. 253) sowie § 5 in Verbindung mit § 3 des Hochschulzulassungs gesetzes vom 15. September 2005 (GBl. S. 629), zuletzt geändert durch Gesetz vom 17.12.2020 (GBl. S. 1204) hat der Senat der Universität Stuttgart am 24. Juli 2024 die nachstehende Satzung beschlossen. § 1 Zulassungsvoraussetzungen (1) Die Zulas sung zum Masterstudiengang INFOTECH setzt eine fachliche Eignung für den Studiengang voraus. Fachlich geeignet ist, wer: 1.a ) einen Abschluss in einem mindestens s echssemestrigen Bachelorstudiengang (oder gleichwertiger Abschluss) in Informatik, Softwar etechnik, Elektrotechnik und Informationstechnik oder in einem inhaltlich nahe verwandten Studiengang mit qualifizierenden Prüfungsergebnissen an einer deutschen Universität oder gleichgestellten Hochschule, Hochschule für angewandte Wissenschaften, Fachho chschule, Dualen Hochschule oder Berufsakademie, deren Abschluss einem Fachhochschulabschluss gleichgestellt ist, oder 1.b) in einem dieser Fächer oder einem inhaltlich nahe verwandten Studiengang einen gleichwertigen Abschluss mit Admission Regulations of the University of Stuttgart for the Informati on Technology (INFOTECH) master’s degree program dated August 19, 2024 On the basis of § 59, para. 1, Sentence 1 and 2 of the Landeshochschulgesetz (law on higher education in Baden - Württemberg) dated January 1, 2005 (GBI. 2005 p. 1), last amended by the law dated February 7, 2023 (GBl. p. 26) in conjunction with § 33, para. 1 and 2 of the Hochschul - vergabeverordnung (regulation on the award of university places) dated December 2, 2019 (GBl. p. 489), last amended by the regulation dated June 26, 2023 (GBl. p. 253) and § 5 in conjunction with Section 3 of the Hochschulzulassungsgesetz (Law on University Admission) dated September 15, 2005 (GBl. p. 629), last amended by the law dated Decem ber 17, 2020 (GBl. p. 1204), the Senate of the University of Stuttgart approved the following statute on July 24, 2024. § 1 Admission requirements (1) Admission to the master’s degree program in INFOTECH requires subject - specific eligibility for the study program. A person is deemed to have subject - specific eligibility if they have acquired: 1. a) a degree in a bachelor’s degree program comprised of a minimum of six semesters (or equivalent degree) in Computer Science, Software Engineering, Electrical Engineering, and Information Technology or a study program with related content and eligible examination results at a German university or equivalent higher education institution, university of applied sciences, university of cooperative educati on or a vocational academy, the degree of which is equivalent to a university of applied sciences degree or 1.b) has obtained an equivalent degree with qualifying examination results in one of",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:19.004Z",
+            "validFor": [],
+            "locator": "PDF page 1",
+            "retrievedAt": "2026-10-18T17:03:19.004Z",
+            "snapshotId": "2dd300386d0116e2b06ea127807585ccdbedc7fc95c79470d673d1ba32a2e0c1",
+            "contentHash": "1a492d13a440f1896060bc2e25433f10320ebbdb37cb08cd75278cb6617c3678"
+          }
+        ]
+      },
+      {
+        "id": "tuition",
+        "category": "tuition",
+        "value": null,
+        "note": "Not established from the fetched sources.",
+        "evidence": []
+      },
+      {
+        "id": "semester",
+        "category": "semester",
+        "value": null,
+        "note": "Not established from the fetched sources.",
+        "evidence": []
+      }
+    ],
+    "catalogIssues": [
+      "Automatically extracted draft. Human review and semester applicability are outstanding."
+    ],
+    "retrievedAt": "2026-10-18T17:03:19.004Z",
+    "catalogVersion": "23144c38feb40ac75ce267210c89ee3edd5f686a1d2ecfc19a629ec6f9f18d2b"
+  },
+  "changes": [
+    {
+      "collection": "requirements",
+      "id": "academic",
+      "change": "changed",
+      "before": {
+        "id": "academic",
+        "kind": "academic",
+        "label": "Region-specific prior degrees and recognition",
+        "sourceText": "(1) Bachelor of Science (B.Sc.) degree or similar, e.g. BTech, BE, BCS, BCA but not B.A. Master degrees do not qualify and are not considered.",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Region-specific prior degrees and recognition. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "(1) Bachelor of Science (B.Sc.) degree or similar, e.g. BTech, BE, BCS, BCA but not B.A. Master degrees do not qualify and are not considered.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML li block 11",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "35c02d1a6df560f18cd8e6ef29793b3b63479c6932ed64f81c95d03c01dfa903",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          }
+        ]
+      },
+      "after": {
+        "id": "academic",
+        "kind": "academic",
+        "label": "Region-specific prior degrees and recognition",
+        "sourceText": "(1) Bachelor of Science (B.Sc.) degree or similar, e.g. BTech, BE, BCS, BCA but not B.A. Master degrees do not qualify and are not considered.",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Region-specific prior degrees and recognition. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "(1) Bachelor of Science (B.Sc.) degree or similar, e.g. BTech, BE, BCS, BCA but not B.A. Master degrees do not qualify and are not considered.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML li block 11",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          }
+        ]
+      }
+    },
+    {
+      "collection": "requirements",
+      "id": "fields",
+      "change": "changed",
+      "before": {
+        "id": "fields",
+        "kind": "academic",
+        "label": "Subject preparation and specialisation",
+        "sourceText": "An applicants bachelor degree should be in a similar field to ensure they have the foundation needed to suceed in the INFOTECH program. Eg. computer science, computer engineering, electrical engineering (communications), electronics engineering or automation.",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Subject preparation and specialisation. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "An applicants bachelor degree should be in a similar field to ensure they have the foundation needed to suceed in the INFOTECH program. Eg. computer science, computer engineering, electrical engineering (communications), electronics engineering or automation.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML td block 23",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "35c02d1a6df560f18cd8e6ef29793b3b63479c6932ed64f81c95d03c01dfa903",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          }
+        ]
+      },
+      "after": {
+        "id": "fields",
+        "kind": "academic",
+        "label": "Subject preparation and specialisation",
+        "sourceText": "An applicants bachelor degree should be in a similar field to ensure they have the foundation needed to suceed in the INFOTECH program. Eg. computer science, computer engineering, electrical engineering (communications), electronics engineering or automation.",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Subject preparation and specialisation. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "An applicants bachelor degree should be in a similar field to ensure they have the foundation needed to suceed in the INFOTECH program. Eg. computer science, computer engineering, electrical engineering (communications), electronics engineering or automation.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML td block 23",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          }
+        ]
+      }
+    },
+    {
+      "collection": "requirements",
+      "id": "language",
+      "change": "changed",
+      "before": {
+        "id": "language",
+        "kind": "language",
+        "label": "English certificates, score scales, validity and exemptions",
+        "sourceText": "TOEFL IBT 95 or better / from 2026: 5 or better TOEFL",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "English certificates, score scales, validity and exemptions. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "TOEFL IBT 95 or better / from 2026: 5 or better TOEFL",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML li block 35",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "35c02d1a6df560f18cd8e6ef29793b3b63479c6932ed64f81c95d03c01dfa903",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          }
+        ]
+      },
+      "after": {
+        "id": "language",
+        "kind": "language",
+        "label": "English certificates, score scales, validity and exemptions",
+        "sourceText": "TOEFL IBT 95 or better / from 2026: 5 or better TOEFL\n\nIELTS band 7,0 or better (academic)\n\nCambridge C1/C2\n\nOxford Test of English Advanced (C1)\n\nPTE Academic Score 76 or better\n\ntelc: telc University B2/C1 (result „very good“); telc C1 / C2 (general examination)\n\nMedium of Instruction (MoI), e.g. certificate confirming your bachelor's program was taught in english is not accepted. Exceptions cannot be made.\n\nPlease note some certificates are only valid for 2 years (eg. IELTS). The uploaded certificate has to be valid at least until the application deadline (15th of January/July)\n\nIf you are a national with citizenship and education from one of the countries listed below - you can submit proof of citizenship instead of one of the language proficiency proofs (eg. passport). Applicants from countries not included in this list must submit one of the proofs listed above.",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "English certificates, score scales, validity and exemptions. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "TOEFL IBT 95 or better / from 2026: 5 or better TOEFL",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML li block 35",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          },
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "IELTS band 7,0 or better (academic)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML li block 36",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          },
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "Cambridge C1/C2",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML li block 37",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          },
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "Oxford Test of English Advanced (C1)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML li block 38",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          },
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "PTE Academic Score 76 or better",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML li block 39",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          },
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "telc: telc University B2/C1 (result „very good“); telc C1 / C2 (general examination)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML li block 40",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          },
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "Medium of Instruction (MoI), e.g. certificate confirming your bachelor's program was taught in english is not accepted. Exceptions cannot be made.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML p block 41",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          },
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "Please note some certificates are only valid for 2 years (eg. IELTS). The uploaded certificate has to be valid at least until the application deadline (15th of January/July)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML p block 42",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          },
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "If you are a national with citizenship and education from one of the countries listed below - you can submit proof of citizenship instead of one of the language proficiency proofs (eg. passport). Applicants from countries not included in this list must submit one of the proofs listed above.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML p block 43",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          }
+        ]
+      }
+    },
+    {
+      "collection": "requirements",
+      "id": "regulations",
+      "change": "changed",
+      "before": {
+        "id": "regulations",
+        "kind": "other",
+        "label": "Admission regulation scope and complete inventory",
+        "sourceText": "Bilingual Version of INFOTECH A dmission Regulation 2024 INFOTECH OFFICE University of Stuttgart, Pfaffenwaldring 47, 70569 Stuttgart, Germany www. infotech. uni - stuttgart.de/ Page 1 of 7 DISCLAIMER: This paper is an unofficial English translation of the „ Z ulassung sordnung der Universität Stuttgart für den Masterstudiengang Information Technology (INFOTECH)“ . The translation is provided for the convenience of the students, but in all legal matters, the German original alone is valid. Zulassungsordnung der Universität Stuttgart für den Masterstudiengang Information Technology (INFOTECH) Vom 19. August 2024 Aufgrund von § 59 Abs. 1 Satz 1 und 2 des Landeshochschulgesetzes vom 01.01.2005 (GBl. 2005, S. 1), zuletzt geändert durch Gesetz vom 07.02.2023 (GBl. S. 26) in Verbindung mit § 33 Abs. 1 und 2 der Hochschulzulassungsverordnung vom 02.12.2019 (GBl. S. 489), zuletzt geändert durch Verordnung vom 26.06.2023 (GBl. S. 253) sowie § 5 in Verbindung mit § 3 des Hochschulzulassungs gesetzes vom 15. September 2005 (GBl. S. 629), zuletzt geändert durch Gesetz vom 17.12.2020 (GBl. S. 1204) hat der Senat der Universität Stuttgart am 24. Juli 2024 die nachstehende Satzung beschlossen. § 1 Zulassungsvoraussetzungen (1) Die Zulas sung zum Masterstudiengang INFOTECH setzt eine fachliche Eignung für den Studiengang voraus. Fachlich geeignet ist, wer: 1.a ) einen Abschluss in einem mindestens s echssemestrigen Bachelorstudiengang (oder gleichwertiger Abschluss) in Informatik, Softwar etechnik, Elektrotechnik und Informationstechnik oder in einem inhaltlich nahe verwandten Studiengang mit qualifizierenden Prüfungsergebnissen an einer deutschen Universität oder gleichgestellten Hochschule, Hochschule für angewandte Wissenschaften, Fachho chschule, Dualen Hochschule oder Berufsakademie, deren Abschluss einem Fachhochschulabschluss gleichgestellt ist, oder 1.b) in einem dieser Fächer oder einem inhaltlich nahe verwandten Studiengang einen gleichwertigen Abschluss mit Admission Regulations of the University of Stuttgart for the Informati on Technology (INFOTECH) master’s degree program dated August 19, 2024 On the basis of § 59, para. 1, Sentence 1 and 2 of the Landeshochschulgesetz (law on higher education in Baden - Württemberg) dated January 1, 2005 (GBI. 2005 p. 1), last amended by the law dated February 7, 2023 (GBl. p. 26) in conjunction with § 33, para. 1 and 2 of the Hochschul - vergabeverordnung (regulation on the award of university places) dated December 2, 2019 (GBl. p. 489), last amended by the regulation dated June 26, 2023 (GBl. p. 253) and § 5 in conjunction with Section 3 of the Hochschulzulassungsgesetz (Law on University Admission) dated September 15, 2005 (GBl. p. 629), last amended by the law dated Decem ber 17, 2020 (GBl. p. 1204), the Senate of the University of Stuttgart approved the following statute on July 24, 2024. § 1 Admission requirements (1) Admission to the master’s degree program in INFOTECH requires subject - specific eligibility for the study program. A person is deemed to have subject - specific eligibility if they have acquired: 1. a) a degree in a bachelor’s degree program comprised of a minimum of six semesters (or equivalent degree) in Computer Science, Software Engineering, Electrical Engineering, and Information Technology or a study program with related content and eligible examination results at a German university or equivalent higher education institution, university of applied sciences, university of cooperative educati on or a vocational academy, the degree of which is equivalent to a university of applied sciences degree or 1.b) has obtained an equivalent degree with qualifying examination results in one of",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Admission regulation scope and complete inventory. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/pdf/INFOTECH_ZulO_2024_BiLingual.pdf",
+            "quote": "Bilingual Version of INFOTECH A dmission Regulation 2024 INFOTECH OFFICE University of Stuttgart, Pfaffenwaldring 47, 70569 Stuttgart, Germany www. infotech. uni - stuttgart.de/ Page 1 of 7 DISCLAIMER: This paper is an unofficial English translation of the „ Z ulassung sordnung der Universität Stuttgart für den Masterstudiengang Information Technology (INFOTECH)“ . The translation is provided for the convenience of the students, but in all legal matters, the German original alone is valid. Zulassungsordnung der Universität Stuttgart für den Masterstudiengang Information Technology (INFOTECH) Vom 19. August 2024 Aufgrund von § 59 Abs. 1 Satz 1 und 2 des Landeshochschulgesetzes vom 01.01.2005 (GBl. 2005, S. 1), zuletzt geändert durch Gesetz vom 07.02.2023 (GBl. S. 26) in Verbindung mit § 33 Abs. 1 und 2 der Hochschulzulassungsverordnung vom 02.12.2019 (GBl. S. 489), zuletzt geändert durch Verordnung vom 26.06.2023 (GBl. S. 253) sowie § 5 in Verbindung mit § 3 des Hochschulzulassungs gesetzes vom 15. September 2005 (GBl. S. 629), zuletzt geändert durch Gesetz vom 17.12.2020 (GBl. S. 1204) hat der Senat der Universität Stuttgart am 24. Juli 2024 die nachstehende Satzung beschlossen. § 1 Zulassungsvoraussetzungen (1) Die Zulas sung zum Masterstudiengang INFOTECH setzt eine fachliche Eignung für den Studiengang voraus. Fachlich geeignet ist, wer: 1.a ) einen Abschluss in einem mindestens s echssemestrigen Bachelorstudiengang (oder gleichwertiger Abschluss) in Informatik, Softwar etechnik, Elektrotechnik und Informationstechnik oder in einem inhaltlich nahe verwandten Studiengang mit qualifizierenden Prüfungsergebnissen an einer deutschen Universität oder gleichgestellten Hochschule, Hochschule für angewandte Wissenschaften, Fachho chschule, Dualen Hochschule oder Berufsakademie, deren Abschluss einem Fachhochschulabschluss gleichgestellt ist, oder 1.b) in einem dieser Fächer oder einem inhaltlich nahe verwandten Studiengang einen gleichwertigen Abschluss mit Admission Regulations of the University of Stuttgart for the Informati on Technology (INFOTECH) master’s degree program dated August 19, 2024 On the basis of § 59, para. 1, Sentence 1 and 2 of the Landeshochschulgesetz (law on higher education in Baden - Württemberg) dated January 1, 2005 (GBI. 2005 p. 1), last amended by the law dated February 7, 2023 (GBl. p. 26) in conjunction with § 33, para. 1 and 2 of the Hochschul - vergabeverordnung (regulation on the award of university places) dated December 2, 2019 (GBl. p. 489), last amended by the regulation dated June 26, 2023 (GBl. p. 253) and § 5 in conjunction with Section 3 of the Hochschulzulassungsgesetz (Law on University Admission) dated September 15, 2005 (GBl. p. 629), last amended by the law dated Decem ber 17, 2020 (GBl. p. 1204), the Senate of the University of Stuttgart approved the following statute on July 24, 2024. § 1 Admission requirements (1) Admission to the master’s degree program in INFOTECH requires subject - specific eligibility for the study program. A person is deemed to have subject - specific eligibility if they have acquired: 1. a) a degree in a bachelor’s degree program comprised of a minimum of six semesters (or equivalent degree) in Computer Science, Software Engineering, Electrical Engineering, and Information Technology or a study program with related content and eligible examination results at a German university or equivalent higher education institution, university of applied sciences, university of cooperative educati on or a vocational academy, the degree of which is equivalent to a university of applied sciences degree or 1.b) has obtained an equivalent degree with qualifying examination results in one of",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:19.004Z",
+            "validFor": [],
+            "locator": "PDF page 1",
+            "retrievedAt": "2026-10-18T17:03:19.004Z",
+            "snapshotId": "7b9bb8c13038423338ea8521ebd517567fe30a00a633cad6c0544f7209bfaecd",
+            "contentHash": "1a492d13a440f1896060bc2e25433f10320ebbdb37cb08cd75278cb6617c3678"
+          }
+        ]
+      },
+      "after": {
+        "id": "regulations",
+        "kind": "other",
+        "label": "Admission regulation scope and complete inventory",
+        "sourceText": "Bilingual Version of INFOTECH A dmission Regulation 2024 INFOTECH OFFICE University of Stuttgart, Pfaffenwaldring 47, 70569 Stuttgart, Germany www. infotech. uni - stuttgart.de/ Page 1 of 7 DISCLAIMER: This paper is an unofficial English translation of the „ Z ulassung sordnung der Universität Stuttgart für den Masterstudiengang Information Technology (INFOTECH)“ . The translation is provided for the convenience of the students, but in all legal matters, the German original alone is valid. Zulassungsordnung der Universität Stuttgart für den Masterstudiengang Information Technology (INFOTECH) Vom 19. August 2024 Aufgrund von § 59 Abs. 1 Satz 1 und 2 des Landeshochschulgesetzes vom 01.01.2005 (GBl. 2005, S. 1), zuletzt geändert durch Gesetz vom 07.02.2023 (GBl. S. 26) in Verbindung mit § 33 Abs. 1 und 2 der Hochschulzulassungsverordnung vom 02.12.2019 (GBl. S. 489), zuletzt geändert durch Verordnung vom 26.06.2023 (GBl. S. 253) sowie § 5 in Verbindung mit § 3 des Hochschulzulassungs gesetzes vom 15. September 2005 (GBl. S. 629), zuletzt geändert durch Gesetz vom 17.12.2020 (GBl. S. 1204) hat der Senat der Universität Stuttgart am 24. Juli 2024 die nachstehende Satzung beschlossen. § 1 Zulassungsvoraussetzungen (1) Die Zulas sung zum Masterstudiengang INFOTECH setzt eine fachliche Eignung für den Studiengang voraus. Fachlich geeignet ist, wer: 1.a ) einen Abschluss in einem mindestens s echssemestrigen Bachelorstudiengang (oder gleichwertiger Abschluss) in Informatik, Softwar etechnik, Elektrotechnik und Informationstechnik oder in einem inhaltlich nahe verwandten Studiengang mit qualifizierenden Prüfungsergebnissen an einer deutschen Universität oder gleichgestellten Hochschule, Hochschule für angewandte Wissenschaften, Fachho chschule, Dualen Hochschule oder Berufsakademie, deren Abschluss einem Fachhochschulabschluss gleichgestellt ist, oder 1.b) in einem dieser Fächer oder einem inhaltlich nahe verwandten Studiengang einen gleichwertigen Abschluss mit Admission Regulations of the University of Stuttgart for the Informati on Technology (INFOTECH) master’s degree program dated August 19, 2024 On the basis of § 59, para. 1, Sentence 1 and 2 of the Landeshochschulgesetz (law on higher education in Baden - Württemberg) dated January 1, 2005 (GBI. 2005 p. 1), last amended by the law dated February 7, 2023 (GBl. p. 26) in conjunction with § 33, para. 1 and 2 of the Hochschul - vergabeverordnung (regulation on the award of university places) dated December 2, 2019 (GBl. p. 489), last amended by the regulation dated June 26, 2023 (GBl. p. 253) and § 5 in conjunction with Section 3 of the Hochschulzulassungsgesetz (Law on University Admission) dated September 15, 2005 (GBl. p. 629), last amended by the law dated Decem ber 17, 2020 (GBl. p. 1204), the Senate of the University of Stuttgart approved the following statute on July 24, 2024. § 1 Admission requirements (1) Admission to the master’s degree program in INFOTECH requires subject - specific eligibility for the study program. A person is deemed to have subject - specific eligibility if they have acquired: 1. a) a degree in a bachelor’s degree program comprised of a minimum of six semesters (or equivalent degree) in Computer Science, Software Engineering, Electrical Engineering, and Information Technology or a study program with related content and eligible examination results at a German university or equivalent higher education institution, university of applied sciences, university of cooperative educati on or a vocational academy, the degree of which is equivalent to a university of applied sciences degree or 1.b) has obtained an equivalent degree with qualifying examination results in one of",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Admission regulation scope and complete inventory. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/pdf/INFOTECH_ZulO_2024_BiLingual.pdf",
+            "quote": "Bilingual Version of INFOTECH A dmission Regulation 2024 INFOTECH OFFICE University of Stuttgart, Pfaffenwaldring 47, 70569 Stuttgart, Germany www. infotech. uni - stuttgart.de/ Page 1 of 7 DISCLAIMER: This paper is an unofficial English translation of the „ Z ulassung sordnung der Universität Stuttgart für den Masterstudiengang Information Technology (INFOTECH)“ . The translation is provided for the convenience of the students, but in all legal matters, the German original alone is valid. Zulassungsordnung der Universität Stuttgart für den Masterstudiengang Information Technology (INFOTECH) Vom 19. August 2024 Aufgrund von § 59 Abs. 1 Satz 1 und 2 des Landeshochschulgesetzes vom 01.01.2005 (GBl. 2005, S. 1), zuletzt geändert durch Gesetz vom 07.02.2023 (GBl. S. 26) in Verbindung mit § 33 Abs. 1 und 2 der Hochschulzulassungsverordnung vom 02.12.2019 (GBl. S. 489), zuletzt geändert durch Verordnung vom 26.06.2023 (GBl. S. 253) sowie § 5 in Verbindung mit § 3 des Hochschulzulassungs gesetzes vom 15. September 2005 (GBl. S. 629), zuletzt geändert durch Gesetz vom 17.12.2020 (GBl. S. 1204) hat der Senat der Universität Stuttgart am 24. Juli 2024 die nachstehende Satzung beschlossen. § 1 Zulassungsvoraussetzungen (1) Die Zulas sung zum Masterstudiengang INFOTECH setzt eine fachliche Eignung für den Studiengang voraus. Fachlich geeignet ist, wer: 1.a ) einen Abschluss in einem mindestens s echssemestrigen Bachelorstudiengang (oder gleichwertiger Abschluss) in Informatik, Softwar etechnik, Elektrotechnik und Informationstechnik oder in einem inhaltlich nahe verwandten Studiengang mit qualifizierenden Prüfungsergebnissen an einer deutschen Universität oder gleichgestellten Hochschule, Hochschule für angewandte Wissenschaften, Fachho chschule, Dualen Hochschule oder Berufsakademie, deren Abschluss einem Fachhochschulabschluss gleichgestellt ist, oder 1.b) in einem dieser Fächer oder einem inhaltlich nahe verwandten Studiengang einen gleichwertigen Abschluss mit Admission Regulations of the University of Stuttgart for the Informati on Technology (INFOTECH) master’s degree program dated August 19, 2024 On the basis of § 59, para. 1, Sentence 1 and 2 of the Landeshochschulgesetz (law on higher education in Baden - Württemberg) dated January 1, 2005 (GBI. 2005 p. 1), last amended by the law dated February 7, 2023 (GBl. p. 26) in conjunction with § 33, para. 1 and 2 of the Hochschul - vergabeverordnung (regulation on the award of university places) dated December 2, 2019 (GBl. p. 489), last amended by the regulation dated June 26, 2023 (GBl. p. 253) and § 5 in conjunction with Section 3 of the Hochschulzulassungsgesetz (Law on University Admission) dated September 15, 2005 (GBl. p. 629), last amended by the law dated Decem ber 17, 2020 (GBl. p. 1204), the Senate of the University of Stuttgart approved the following statute on July 24, 2024. § 1 Admission requirements (1) Admission to the master’s degree program in INFOTECH requires subject - specific eligibility for the study program. A person is deemed to have subject - specific eligibility if they have acquired: 1. a) a degree in a bachelor’s degree program comprised of a minimum of six semesters (or equivalent degree) in Computer Science, Software Engineering, Electrical Engineering, and Information Technology or a study program with related content and eligible examination results at a German university or equivalent higher education institution, university of applied sciences, university of cooperative educati on or a vocational academy, the degree of which is equivalent to a university of applied sciences degree or 1.b) has obtained an equivalent degree with qualifying examination results in one of",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:19.004Z",
+            "validFor": [],
+            "locator": "PDF page 1",
+            "retrievedAt": "2026-10-18T17:03:19.004Z",
+            "snapshotId": "2dd300386d0116e2b06ea127807585ccdbedc7fc95c79470d673d1ba32a2e0c1",
+            "contentHash": "1a492d13a440f1896060bc2e25433f10320ebbdb37cb08cd75278cb6617c3678"
+          }
+        ]
+      }
+    },
+    {
+      "collection": "facts",
+      "id": "academic",
+      "change": "changed",
+      "before": {
+        "id": "academic",
+        "category": "academic",
+        "value": "(1) Bachelor of Science (B.Sc.) degree or similar, e.g. BTech, BE, BCS, BCA but not B.A. Master degrees do not qualify and are not considered.",
+        "evidence": [
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "(1) Bachelor of Science (B.Sc.) degree or similar, e.g. BTech, BE, BCS, BCA but not B.A. Master degrees do not qualify and are not considered.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML li block 11",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "35c02d1a6df560f18cd8e6ef29793b3b63479c6932ed64f81c95d03c01dfa903",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          }
+        ]
+      },
+      "after": {
+        "id": "academic",
+        "category": "academic",
+        "value": "(1) Bachelor of Science (B.Sc.) degree or similar, e.g. BTech, BE, BCS, BCA but not B.A. Master degrees do not qualify and are not considered.",
+        "evidence": [
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "(1) Bachelor of Science (B.Sc.) degree or similar, e.g. BTech, BE, BCS, BCA but not B.A. Master degrees do not qualify and are not considered.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML li block 11",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          }
+        ]
+      }
+    },
+    {
+      "collection": "facts",
+      "id": "fields",
+      "change": "changed",
+      "before": {
+        "id": "fields",
+        "category": "academic",
+        "value": "An applicants bachelor degree should be in a similar field to ensure they have the foundation needed to suceed in the INFOTECH program. Eg. computer science, computer engineering, electrical engineering (communications), electronics engineering or automation.",
+        "evidence": [
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "An applicants bachelor degree should be in a similar field to ensure they have the foundation needed to suceed in the INFOTECH program. Eg. computer science, computer engineering, electrical engineering (communications), electronics engineering or automation.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML td block 23",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "35c02d1a6df560f18cd8e6ef29793b3b63479c6932ed64f81c95d03c01dfa903",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          }
+        ]
+      },
+      "after": {
+        "id": "fields",
+        "category": "academic",
+        "value": "An applicants bachelor degree should be in a similar field to ensure they have the foundation needed to suceed in the INFOTECH program. Eg. computer science, computer engineering, electrical engineering (communications), electronics engineering or automation.",
+        "evidence": [
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "An applicants bachelor degree should be in a similar field to ensure they have the foundation needed to suceed in the INFOTECH program. Eg. computer science, computer engineering, electrical engineering (communications), electronics engineering or automation.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML td block 23",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          }
+        ]
+      }
+    },
+    {
+      "collection": "facts",
+      "id": "language",
+      "change": "changed",
+      "before": {
+        "id": "language",
+        "category": "language",
+        "value": "TOEFL IBT 95 or better / from 2026: 5 or better TOEFL",
+        "note": "Do not compare old TOEFL scores with the 2026 scale.",
+        "evidence": [
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "TOEFL IBT 95 or better / from 2026: 5 or better TOEFL",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML li block 35",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "35c02d1a6df560f18cd8e6ef29793b3b63479c6932ed64f81c95d03c01dfa903",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          }
+        ]
+      },
+      "after": {
+        "id": "language",
+        "category": "language",
+        "value": "TOEFL IBT 95 or better / from 2026: 5 or better TOEFL\n\nIELTS band 7,0 or better (academic)\n\nCambridge C1/C2\n\nOxford Test of English Advanced (C1)\n\nPTE Academic Score 76 or better\n\ntelc: telc University B2/C1 (result „very good“); telc C1 / C2 (general examination)\n\nMedium of Instruction (MoI), e.g. certificate confirming your bachelor's program was taught in english is not accepted. Exceptions cannot be made.\n\nPlease note some certificates are only valid for 2 years (eg. IELTS). The uploaded certificate has to be valid at least until the application deadline (15th of January/July)\n\nIf you are a national with citizenship and education from one of the countries listed below - you can submit proof of citizenship instead of one of the language proficiency proofs (eg. passport). Applicants from countries not included in this list must submit one of the proofs listed above.",
+        "note": "Do not compare old TOEFL scores with the 2026 scale. Citizenship/education exemptions require the full country list and manual review.",
+        "evidence": [
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "TOEFL IBT 95 or better / from 2026: 5 or better TOEFL",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML li block 35",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          },
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "IELTS band 7,0 or better (academic)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML li block 36",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          },
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "Cambridge C1/C2",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML li block 37",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          },
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "Oxford Test of English Advanced (C1)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML li block 38",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          },
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "PTE Academic Score 76 or better",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML li block 39",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          },
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "telc: telc University B2/C1 (result „very good“); telc C1 / C2 (general examination)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML li block 40",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          },
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "Medium of Instruction (MoI), e.g. certificate confirming your bachelor's program was taught in english is not accepted. Exceptions cannot be made.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML p block 41",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          },
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "Please note some certificates are only valid for 2 years (eg. IELTS). The uploaded certificate has to be valid at least until the application deadline (15th of January/July)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML p block 42",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          },
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "If you are a national with citizenship and education from one of the countries listed below - you can submit proof of citizenship instead of one of the language proficiency proofs (eg. passport). Applicants from countries not included in this list must submit one of the proofs listed above.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML p block 43",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          }
+        ]
+      }
+    },
+    {
+      "collection": "facts",
+      "id": "deadline",
+      "change": "changed",
+      "before": {
+        "id": "deadline",
+        "category": "deadline",
+        "value": "Application periods (for all applicants) for the following:Winter semester: November 15th - January 15thSummer semester: May 15th - July 15th",
+        "note": "Check application cycle and applicant category. Recurring dates do not establish a specific semester.",
+        "evidence": [
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/",
+            "quote": "Application periods (for all applicants) for the following:Winter semester: November 15th - January 15thSummer semester: May 15th - July 15th",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:17.699Z",
+            "validFor": [],
+            "locator": "HTML p block 13",
+            "retrievedAt": "2026-10-18T17:03:17.699Z",
+            "snapshotId": "cdaae7f17de6faa1074589172fd6924336d139f9db2a1e315b8afbe690daf9fc",
+            "contentHash": "49ae60eb519bc4ab5eba7ed534e294db6e4f890c54a8ae491a748570a15f5134"
+          }
+        ]
+      },
+      "after": {
+        "id": "deadline",
+        "category": "deadline",
+        "value": "Application periods (for all applicants) for the following:Winter semester: November 15th - January 15thSummer semester: May 15th - July 15th",
+        "note": "Check application cycle and applicant category. Recurring dates do not establish a specific semester.",
+        "evidence": [
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/",
+            "quote": "Application periods (for all applicants) for the following:Winter semester: November 15th - January 15thSummer semester: May 15th - July 15th",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:17.699Z",
+            "validFor": [],
+            "locator": "HTML p block 13",
+            "retrievedAt": "2026-10-18T17:03:17.699Z",
+            "snapshotId": "57c2367ba77213a1626d101e4e96dec418842976e212002210697800f742ceb7",
+            "contentHash": "49ae60eb519bc4ab5eba7ed534e294db6e4f890c54a8ae491a748570a15f5134"
+          }
+        ]
+      }
+    },
+    {
+      "collection": "facts",
+      "id": "application",
+      "change": "changed",
+      "before": {
+        "id": "application",
+        "category": "application",
+        "value": "The adjunct form/supplementary form is required with your application in C@mpus. Failure to include it can result in your application being rejected. The form can be found here.",
+        "evidence": [
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "The adjunct form/supplementary form is required with your application in C@mpus. Failure to include it can result in your application being rejected. The form can be found here.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML p block 9",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "35c02d1a6df560f18cd8e6ef29793b3b63479c6932ed64f81c95d03c01dfa903",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          }
+        ]
+      },
+      "after": {
+        "id": "application",
+        "category": "application",
+        "value": "The adjunct form/supplementary form is required with your application in C@mpus. Failure to include it can result in your application being rejected. The form can be found here.",
+        "evidence": [
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+            "quote": "The adjunct form/supplementary form is required with your application in C@mpus. Failure to include it can result in your application being rejected. The form can be found here.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:16.488Z",
+            "validFor": [],
+            "locator": "HTML p block 9",
+            "retrievedAt": "2026-10-18T17:03:16.488Z",
+            "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+            "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+          }
+        ]
+      }
+    },
+    {
+      "collection": "facts",
+      "id": "regulations",
+      "change": "changed",
+      "before": {
+        "id": "regulations",
+        "category": "academic",
+        "value": "Bilingual Version of INFOTECH A dmission Regulation 2024 INFOTECH OFFICE University of Stuttgart, Pfaffenwaldring 47, 70569 Stuttgart, Germany www. infotech. uni - stuttgart.de/ Page 1 of 7 DISCLAIMER: This paper is an unofficial English translation of the „ Z ulassung sordnung der Universität Stuttgart für den Masterstudiengang Information Technology (INFOTECH)“ . The translation is provided for the convenience of the students, but in all legal matters, the German original alone is valid. Zulassungsordnung der Universität Stuttgart für den Masterstudiengang Information Technology (INFOTECH) Vom 19. August 2024 Aufgrund von § 59 Abs. 1 Satz 1 und 2 des Landeshochschulgesetzes vom 01.01.2005 (GBl. 2005, S. 1), zuletzt geändert durch Gesetz vom 07.02.2023 (GBl. S. 26) in Verbindung mit § 33 Abs. 1 und 2 der Hochschulzulassungsverordnung vom 02.12.2019 (GBl. S. 489), zuletzt geändert durch Verordnung vom 26.06.2023 (GBl. S. 253) sowie § 5 in Verbindung mit § 3 des Hochschulzulassungs gesetzes vom 15. September 2005 (GBl. S. 629), zuletzt geändert durch Gesetz vom 17.12.2020 (GBl. S. 1204) hat der Senat der Universität Stuttgart am 24. Juli 2024 die nachstehende Satzung beschlossen. § 1 Zulassungsvoraussetzungen (1) Die Zulas sung zum Masterstudiengang INFOTECH setzt eine fachliche Eignung für den Studiengang voraus. Fachlich geeignet ist, wer: 1.a ) einen Abschluss in einem mindestens s echssemestrigen Bachelorstudiengang (oder gleichwertiger Abschluss) in Informatik, Softwar etechnik, Elektrotechnik und Informationstechnik oder in einem inhaltlich nahe verwandten Studiengang mit qualifizierenden Prüfungsergebnissen an einer deutschen Universität oder gleichgestellten Hochschule, Hochschule für angewandte Wissenschaften, Fachho chschule, Dualen Hochschule oder Berufsakademie, deren Abschluss einem Fachhochschulabschluss gleichgestellt ist, oder 1.b) in einem dieser Fächer oder einem inhaltlich nahe verwandten Studiengang einen gleichwertigen Abschluss mit Admission Regulations of the University of Stuttgart for the Informati on Technology (INFOTECH) master’s degree program dated August 19, 2024 On the basis of § 59, para. 1, Sentence 1 and 2 of the Landeshochschulgesetz (law on higher education in Baden - Württemberg) dated January 1, 2005 (GBI. 2005 p. 1), last amended by the law dated February 7, 2023 (GBl. p. 26) in conjunction with § 33, para. 1 and 2 of the Hochschul - vergabeverordnung (regulation on the award of university places) dated December 2, 2019 (GBl. p. 489), last amended by the regulation dated June 26, 2023 (GBl. p. 253) and § 5 in conjunction with Section 3 of the Hochschulzulassungsgesetz (Law on University Admission) dated September 15, 2005 (GBl. p. 629), last amended by the law dated Decem ber 17, 2020 (GBl. p. 1204), the Senate of the University of Stuttgart approved the following statute on July 24, 2024. § 1 Admission requirements (1) Admission to the master’s degree program in INFOTECH requires subject - specific eligibility for the study program. A person is deemed to have subject - specific eligibility if they have acquired: 1. a) a degree in a bachelor’s degree program comprised of a minimum of six semesters (or equivalent degree) in Computer Science, Software Engineering, Electrical Engineering, and Information Technology or a study program with related content and eligible examination results at a German university or equivalent higher education institution, university of applied sciences, university of cooperative educati on or a vocational academy, the degree of which is equivalent to a university of applied sciences degree or 1.b) has obtained an equivalent degree with qualifying examination results in one of",
+        "note": "Bilingual 2024 regulation; applicability and amendment history await review.",
+        "evidence": [
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/pdf/INFOTECH_ZulO_2024_BiLingual.pdf",
+            "quote": "Bilingual Version of INFOTECH A dmission Regulation 2024 INFOTECH OFFICE University of Stuttgart, Pfaffenwaldring 47, 70569 Stuttgart, Germany www. infotech. uni - stuttgart.de/ Page 1 of 7 DISCLAIMER: This paper is an unofficial English translation of the „ Z ulassung sordnung der Universität Stuttgart für den Masterstudiengang Information Technology (INFOTECH)“ . The translation is provided for the convenience of the students, but in all legal matters, the German original alone is valid. Zulassungsordnung der Universität Stuttgart für den Masterstudiengang Information Technology (INFOTECH) Vom 19. August 2024 Aufgrund von § 59 Abs. 1 Satz 1 und 2 des Landeshochschulgesetzes vom 01.01.2005 (GBl. 2005, S. 1), zuletzt geändert durch Gesetz vom 07.02.2023 (GBl. S. 26) in Verbindung mit § 33 Abs. 1 und 2 der Hochschulzulassungsverordnung vom 02.12.2019 (GBl. S. 489), zuletzt geändert durch Verordnung vom 26.06.2023 (GBl. S. 253) sowie § 5 in Verbindung mit § 3 des Hochschulzulassungs gesetzes vom 15. September 2005 (GBl. S. 629), zuletzt geändert durch Gesetz vom 17.12.2020 (GBl. S. 1204) hat der Senat der Universität Stuttgart am 24. Juli 2024 die nachstehende Satzung beschlossen. § 1 Zulassungsvoraussetzungen (1) Die Zulas sung zum Masterstudiengang INFOTECH setzt eine fachliche Eignung für den Studiengang voraus. Fachlich geeignet ist, wer: 1.a ) einen Abschluss in einem mindestens s echssemestrigen Bachelorstudiengang (oder gleichwertiger Abschluss) in Informatik, Softwar etechnik, Elektrotechnik und Informationstechnik oder in einem inhaltlich nahe verwandten Studiengang mit qualifizierenden Prüfungsergebnissen an einer deutschen Universität oder gleichgestellten Hochschule, Hochschule für angewandte Wissenschaften, Fachho chschule, Dualen Hochschule oder Berufsakademie, deren Abschluss einem Fachhochschulabschluss gleichgestellt ist, oder 1.b) in einem dieser Fächer oder einem inhaltlich nahe verwandten Studiengang einen gleichwertigen Abschluss mit Admission Regulations of the University of Stuttgart for the Informati on Technology (INFOTECH) master’s degree program dated August 19, 2024 On the basis of § 59, para. 1, Sentence 1 and 2 of the Landeshochschulgesetz (law on higher education in Baden - Württemberg) dated January 1, 2005 (GBI. 2005 p. 1), last amended by the law dated February 7, 2023 (GBl. p. 26) in conjunction with § 33, para. 1 and 2 of the Hochschul - vergabeverordnung (regulation on the award of university places) dated December 2, 2019 (GBl. p. 489), last amended by the regulation dated June 26, 2023 (GBl. p. 253) and § 5 in conjunction with Section 3 of the Hochschulzulassungsgesetz (Law on University Admission) dated September 15, 2005 (GBl. p. 629), last amended by the law dated Decem ber 17, 2020 (GBl. p. 1204), the Senate of the University of Stuttgart approved the following statute on July 24, 2024. § 1 Admission requirements (1) Admission to the master’s degree program in INFOTECH requires subject - specific eligibility for the study program. A person is deemed to have subject - specific eligibility if they have acquired: 1. a) a degree in a bachelor’s degree program comprised of a minimum of six semesters (or equivalent degree) in Computer Science, Software Engineering, Electrical Engineering, and Information Technology or a study program with related content and eligible examination results at a German university or equivalent higher education institution, university of applied sciences, university of cooperative educati on or a vocational academy, the degree of which is equivalent to a university of applied sciences degree or 1.b) has obtained an equivalent degree with qualifying examination results in one of",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:19.004Z",
+            "validFor": [],
+            "locator": "PDF page 1",
+            "retrievedAt": "2026-10-18T17:03:19.004Z",
+            "snapshotId": "7b9bb8c13038423338ea8521ebd517567fe30a00a633cad6c0544f7209bfaecd",
+            "contentHash": "1a492d13a440f1896060bc2e25433f10320ebbdb37cb08cd75278cb6617c3678"
+          }
+        ]
+      },
+      "after": {
+        "id": "regulations",
+        "category": "academic",
+        "value": "Bilingual Version of INFOTECH A dmission Regulation 2024 INFOTECH OFFICE University of Stuttgart, Pfaffenwaldring 47, 70569 Stuttgart, Germany www. infotech. uni - stuttgart.de/ Page 1 of 7 DISCLAIMER: This paper is an unofficial English translation of the „ Z ulassung sordnung der Universität Stuttgart für den Masterstudiengang Information Technology (INFOTECH)“ . The translation is provided for the convenience of the students, but in all legal matters, the German original alone is valid. Zulassungsordnung der Universität Stuttgart für den Masterstudiengang Information Technology (INFOTECH) Vom 19. August 2024 Aufgrund von § 59 Abs. 1 Satz 1 und 2 des Landeshochschulgesetzes vom 01.01.2005 (GBl. 2005, S. 1), zuletzt geändert durch Gesetz vom 07.02.2023 (GBl. S. 26) in Verbindung mit § 33 Abs. 1 und 2 der Hochschulzulassungsverordnung vom 02.12.2019 (GBl. S. 489), zuletzt geändert durch Verordnung vom 26.06.2023 (GBl. S. 253) sowie § 5 in Verbindung mit § 3 des Hochschulzulassungs gesetzes vom 15. September 2005 (GBl. S. 629), zuletzt geändert durch Gesetz vom 17.12.2020 (GBl. S. 1204) hat der Senat der Universität Stuttgart am 24. Juli 2024 die nachstehende Satzung beschlossen. § 1 Zulassungsvoraussetzungen (1) Die Zulas sung zum Masterstudiengang INFOTECH setzt eine fachliche Eignung für den Studiengang voraus. Fachlich geeignet ist, wer: 1.a ) einen Abschluss in einem mindestens s echssemestrigen Bachelorstudiengang (oder gleichwertiger Abschluss) in Informatik, Softwar etechnik, Elektrotechnik und Informationstechnik oder in einem inhaltlich nahe verwandten Studiengang mit qualifizierenden Prüfungsergebnissen an einer deutschen Universität oder gleichgestellten Hochschule, Hochschule für angewandte Wissenschaften, Fachho chschule, Dualen Hochschule oder Berufsakademie, deren Abschluss einem Fachhochschulabschluss gleichgestellt ist, oder 1.b) in einem dieser Fächer oder einem inhaltlich nahe verwandten Studiengang einen gleichwertigen Abschluss mit Admission Regulations of the University of Stuttgart for the Informati on Technology (INFOTECH) master’s degree program dated August 19, 2024 On the basis of § 59, para. 1, Sentence 1 and 2 of the Landeshochschulgesetz (law on higher education in Baden - Württemberg) dated January 1, 2005 (GBI. 2005 p. 1), last amended by the law dated February 7, 2023 (GBl. p. 26) in conjunction with § 33, para. 1 and 2 of the Hochschul - vergabeverordnung (regulation on the award of university places) dated December 2, 2019 (GBl. p. 489), last amended by the regulation dated June 26, 2023 (GBl. p. 253) and § 5 in conjunction with Section 3 of the Hochschulzulassungsgesetz (Law on University Admission) dated September 15, 2005 (GBl. p. 629), last amended by the law dated Decem ber 17, 2020 (GBl. p. 1204), the Senate of the University of Stuttgart approved the following statute on July 24, 2024. § 1 Admission requirements (1) Admission to the master’s degree program in INFOTECH requires subject - specific eligibility for the study program. A person is deemed to have subject - specific eligibility if they have acquired: 1. a) a degree in a bachelor’s degree program comprised of a minimum of six semesters (or equivalent degree) in Computer Science, Software Engineering, Electrical Engineering, and Information Technology or a study program with related content and eligible examination results at a German university or equivalent higher education institution, university of applied sciences, university of cooperative educati on or a vocational academy, the degree of which is equivalent to a university of applied sciences degree or 1.b) has obtained an equivalent degree with qualifying examination results in one of",
+        "note": "Bilingual 2024 regulation with unofficial English translation. German text, amendment history and later web changes need review.",
+        "evidence": [
+          {
+            "url": "https://www.infotech.uni-stuttgart.de/pdf/INFOTECH_ZulO_2024_BiLingual.pdf",
+            "quote": "Bilingual Version of INFOTECH A dmission Regulation 2024 INFOTECH OFFICE University of Stuttgart, Pfaffenwaldring 47, 70569 Stuttgart, Germany www. infotech. uni - stuttgart.de/ Page 1 of 7 DISCLAIMER: This paper is an unofficial English translation of the „ Z ulassung sordnung der Universität Stuttgart für den Masterstudiengang Information Technology (INFOTECH)“ . The translation is provided for the convenience of the students, but in all legal matters, the German original alone is valid. Zulassungsordnung der Universität Stuttgart für den Masterstudiengang Information Technology (INFOTECH) Vom 19. August 2024 Aufgrund von § 59 Abs. 1 Satz 1 und 2 des Landeshochschulgesetzes vom 01.01.2005 (GBl. 2005, S. 1), zuletzt geändert durch Gesetz vom 07.02.2023 (GBl. S. 26) in Verbindung mit § 33 Abs. 1 und 2 der Hochschulzulassungsverordnung vom 02.12.2019 (GBl. S. 489), zuletzt geändert durch Verordnung vom 26.06.2023 (GBl. S. 253) sowie § 5 in Verbindung mit § 3 des Hochschulzulassungs gesetzes vom 15. September 2005 (GBl. S. 629), zuletzt geändert durch Gesetz vom 17.12.2020 (GBl. S. 1204) hat der Senat der Universität Stuttgart am 24. Juli 2024 die nachstehende Satzung beschlossen. § 1 Zulassungsvoraussetzungen (1) Die Zulas sung zum Masterstudiengang INFOTECH setzt eine fachliche Eignung für den Studiengang voraus. Fachlich geeignet ist, wer: 1.a ) einen Abschluss in einem mindestens s echssemestrigen Bachelorstudiengang (oder gleichwertiger Abschluss) in Informatik, Softwar etechnik, Elektrotechnik und Informationstechnik oder in einem inhaltlich nahe verwandten Studiengang mit qualifizierenden Prüfungsergebnissen an einer deutschen Universität oder gleichgestellten Hochschule, Hochschule für angewandte Wissenschaften, Fachho chschule, Dualen Hochschule oder Berufsakademie, deren Abschluss einem Fachhochschulabschluss gleichgestellt ist, oder 1.b) in einem dieser Fächer oder einem inhaltlich nahe verwandten Studiengang einen gleichwertigen Abschluss mit Admission Regulations of the University of Stuttgart for the Informati on Technology (INFOTECH) master’s degree program dated August 19, 2024 On the basis of § 59, para. 1, Sentence 1 and 2 of the Landeshochschulgesetz (law on higher education in Baden - Württemberg) dated January 1, 2005 (GBI. 2005 p. 1), last amended by the law dated February 7, 2023 (GBl. p. 26) in conjunction with § 33, para. 1 and 2 of the Hochschul - vergabeverordnung (regulation on the award of university places) dated December 2, 2019 (GBl. p. 489), last amended by the regulation dated June 26, 2023 (GBl. p. 253) and § 5 in conjunction with Section 3 of the Hochschulzulassungsgesetz (Law on University Admission) dated September 15, 2005 (GBl. p. 629), last amended by the law dated Decem ber 17, 2020 (GBl. p. 1204), the Senate of the University of Stuttgart approved the following statute on July 24, 2024. § 1 Admission requirements (1) Admission to the master’s degree program in INFOTECH requires subject - specific eligibility for the study program. A person is deemed to have subject - specific eligibility if they have acquired: 1. a) a degree in a bachelor’s degree program comprised of a minimum of six semesters (or equivalent degree) in Computer Science, Software Engineering, Electrical Engineering, and Information Technology or a study program with related content and eligible examination results at a German university or equivalent higher education institution, university of applied sciences, university of cooperative educati on or a vocational academy, the degree of which is equivalent to a university of applied sciences degree or 1.b) has obtained an equivalent degree with qualifying examination results in one of",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-18T17:03:19.004Z",
+            "validFor": [],
+            "locator": "PDF page 1",
+            "retrievedAt": "2026-10-18T17:03:19.004Z",
+            "snapshotId": "2dd300386d0116e2b06ea127807585ccdbedc7fc95c79470d673d1ba32a2e0c1",
+            "contentHash": "1a492d13a440f1896060bc2e25433f10320ebbdb37cb08cd75278cb6617c3678"
+          }
+        ]
+      }
+    },
+    {
+      "collection": "sources",
+      "id": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+      "change": "changed",
+      "before": {
+        "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+        "quote": "Requirements",
+        "status": "unverified",
+        "sourceType": "official",
+        "lastChecked": "2026-10-18T17:03:16.488Z",
+        "validFor": [],
+        "locator": "Source document identity",
+        "retrievedAt": "2026-10-18T17:03:16.488Z",
+        "snapshotId": "35c02d1a6df560f18cd8e6ef29793b3b63479c6932ed64f81c95d03c01dfa903",
+        "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+      },
+      "after": {
+        "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+        "quote": "Requirements",
+        "status": "unverified",
+        "sourceType": "official",
+        "lastChecked": "2026-10-18T17:03:16.488Z",
+        "validFor": [],
+        "locator": "Source document identity",
+        "retrievedAt": "2026-10-18T17:03:16.488Z",
+        "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+        "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215"
+      }
+    },
+    {
+      "collection": "sources",
+      "id": "https://www.infotech.uni-stuttgart.de/application/",
+      "change": "changed",
+      "before": {
+        "url": "https://www.infotech.uni-stuttgart.de/application/",
+        "quote": "Application",
+        "status": "unverified",
+        "sourceType": "official",
+        "lastChecked": "2026-10-18T17:03:17.699Z",
+        "validFor": [],
+        "locator": "Source document identity",
+        "retrievedAt": "2026-10-18T17:03:17.699Z",
+        "snapshotId": "cdaae7f17de6faa1074589172fd6924336d139f9db2a1e315b8afbe690daf9fc",
+        "contentHash": "49ae60eb519bc4ab5eba7ed534e294db6e4f890c54a8ae491a748570a15f5134"
+      },
+      "after": {
+        "url": "https://www.infotech.uni-stuttgart.de/application/",
+        "quote": "Application",
+        "status": "unverified",
+        "sourceType": "official",
+        "lastChecked": "2026-10-18T17:03:17.699Z",
+        "validFor": [],
+        "locator": "Source document identity",
+        "retrievedAt": "2026-10-18T17:03:17.699Z",
+        "snapshotId": "57c2367ba77213a1626d101e4e96dec418842976e212002210697800f742ceb7",
+        "contentHash": "49ae60eb519bc4ab5eba7ed534e294db6e4f890c54a8ae491a748570a15f5134"
+      }
+    },
+    {
+      "collection": "sources",
+      "id": "https://www.infotech.uni-stuttgart.de/pdf/INFOTECH_ZulO_2024_BiLingual.pdf",
+      "change": "changed",
+      "before": {
+        "url": "https://www.infotech.uni-stuttgart.de/pdf/INFOTECH_ZulO_2024_BiLingual.pdf",
+        "quote": "INFOTECH_ZulO_2024_BiLingual.pdf",
+        "status": "unverified",
+        "sourceType": "official",
+        "lastChecked": "2026-10-18T17:03:19.004Z",
+        "validFor": [],
+        "locator": "Source document identity",
+        "retrievedAt": "2026-10-18T17:03:19.004Z",
+        "snapshotId": "7b9bb8c13038423338ea8521ebd517567fe30a00a633cad6c0544f7209bfaecd",
+        "contentHash": "1a492d13a440f1896060bc2e25433f10320ebbdb37cb08cd75278cb6617c3678"
+      },
+      "after": {
+        "url": "https://www.infotech.uni-stuttgart.de/pdf/INFOTECH_ZulO_2024_BiLingual.pdf",
+        "quote": "INFOTECH_ZulO_2024_BiLingual.pdf",
+        "status": "unverified",
+        "sourceType": "official",
+        "lastChecked": "2026-10-18T17:03:19.004Z",
+        "validFor": [],
+        "locator": "Source document identity",
+        "retrievedAt": "2026-10-18T17:03:19.004Z",
+        "snapshotId": "2dd300386d0116e2b06ea127807585ccdbedc7fc95c79470d673d1ba32a2e0c1",
+        "contentHash": "1a492d13a440f1896060bc2e25433f10320ebbdb37cb08cd75278cb6617c3678"
+      }
+    }
+  ]
+}

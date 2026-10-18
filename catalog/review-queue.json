@@ -1,0 +1,335 @@
+[
+  {
+    "programId": "de-passau-msc-computer-science",
+    "revision": "92098abca56b6a993cfb4ac09804dfe6deb4a8e17f4509eb41b7f6d4e13e2a25",
+    "verificationStatus": "unverified",
+    "lastChecked": "2026-10-18T17:03:08.680Z",
+    "latestAttempt": "2026-10-18T22:03:24.661Z",
+    "requirementsComplete": false,
+    "pendingRequirements": [
+      "academic",
+      "credit-route",
+      "degree-duration",
+      "preliminary-degree",
+      "recognition",
+      "language",
+      "inventory-review"
+    ],
+    "unknownFacts": [
+      "semester"
+    ],
+    "issues": [
+      "Automatically extracted draft. Human review and semester applicability are outstanding.",
+      "The PDF infosheet names winter semester 2025-26. Do not apply it to later intakes without review.",
+      "The 110 ECTS route has a non-ECTS degree alternative; the credit rule is not independently decisive."
+    ],
+    "changes": [
+      {
+        "collection": "requirements",
+        "id": "academic",
+        "change": "changed"
+      },
+      {
+        "collection": "requirements",
+        "id": "language",
+        "change": "changed"
+      },
+      {
+        "collection": "requirements",
+        "id": "credit-route",
+        "change": "added"
+      },
+      {
+        "collection": "requirements",
+        "id": "degree-duration",
+        "change": "added"
+      },
+      {
+        "collection": "requirements",
+        "id": "preliminary-degree",
+        "change": "added"
+      },
+      {
+        "collection": "requirements",
+        "id": "recognition",
+        "change": "added"
+      },
+      {
+        "collection": "facts",
+        "id": "academic",
+        "change": "changed"
+      },
+      {
+        "collection": "facts",
+        "id": "language",
+        "change": "changed"
+      },
+      {
+        "collection": "facts",
+        "id": "certificates",
+        "change": "changed"
+      },
+      {
+        "collection": "facts",
+        "id": "deadline",
+        "change": "changed"
+      },
+      {
+        "collection": "facts",
+        "id": "application",
+        "change": "changed"
+      },
+      {
+        "collection": "facts",
+        "id": "tuition",
+        "change": "changed"
+      },
+      {
+        "collection": "facts",
+        "id": "credit-route",
+        "change": "added"
+      },
+      {
+        "collection": "facts",
+        "id": "degree-duration",
+        "change": "added"
+      },
+      {
+        "collection": "facts",
+        "id": "preliminary-degree",
+        "change": "added"
+      },
+      {
+        "collection": "facts",
+        "id": "recognition",
+        "change": "added"
+      },
+      {
+        "collection": "sources",
+        "id": "https://www.uni-passau.de/en/msc-computer-science/",
+        "change": "changed"
+      },
+      {
+        "collection": "sources",
+        "id": "https://www.uni-passau.de/fileadmin/dokumente/studium/infoschriften/Informatik_MSc_EN.pdf",
+        "change": "changed"
+      }
+    ]
+  },
+  {
+    "programId": "de-saarland-msc-computer-science",
+    "revision": "db69c3a69150555aaea24a4cbdae47379c3d69b6876ec2406ff5d2922fa8be77",
+    "verificationStatus": "unverified",
+    "lastChecked": "2026-10-18T17:03:13.445Z",
+    "latestAttempt": "2026-10-18T22:03:24.661Z",
+    "requirementsComplete": false,
+    "pendingRequirements": [
+      "academic",
+      "language",
+      "additional-evidence",
+      "inventory-review"
+    ],
+    "unknownFacts": [
+      "credits"
+    ],
+    "issues": [
+      "Automatically extracted draft. Human review and semester applicability are outstanding."
+    ],
+    "changes": [
+      {
+        "collection": "requirements",
+        "id": "language",
+        "change": "changed"
+      },
+      {
+        "collection": "facts",
+        "id": "language",
+        "change": "changed"
+      }
+    ]
+  },
+  {
+    "programId": "de-fau-msc-data-science",
+    "revision": "3329aea151d0f31eccb2f45bb2d8fa57c91530b106f55d3dc37a7bf081680d60",
+    "verificationStatus": "unverified",
+    "lastChecked": "2026-10-18T17:03:15.034Z",
+    "latestAttempt": "2026-10-18T22:03:24.661Z",
+    "requirementsComplete": false,
+    "pendingRequirements": [
+      "academic",
+      "grades",
+      "language",
+      "inventory-review"
+    ],
+    "unknownFacts": [
+      "credits",
+      "tuition",
+      "semester"
+    ],
+    "issues": [
+      "Automatically extracted draft. Human review and semester applicability are outstanding.",
+      "The page scopes admission dates to German/domestic applicants; international rules may differ.",
+      "Two language sections differ on English-medium prior study. Resolve the wording against current regulations before approval."
+    ],
+    "changes": [
+      {
+        "collection": "requirements",
+        "id": "academic",
+        "change": "changed"
+      },
+      {
+        "collection": "requirements",
+        "id": "grades",
+        "change": "changed"
+      },
+      {
+        "collection": "requirements",
+        "id": "language",
+        "change": "changed"
+      },
+      {
+        "collection": "facts",
+        "id": "academic",
+        "change": "changed"
+      },
+      {
+        "collection": "facts",
+        "id": "grades",
+        "change": "changed"
+      },
+      {
+        "collection": "facts",
+        "id": "language",
+        "change": "changed"
+      },
+      {
+        "collection": "facts",
+        "id": "deadline",
+        "change": "changed"
+      },
+      {
+        "collection": "facts",
+        "id": "application",
+        "change": "changed"
+      },
+      {
+        "collection": "sources",
+        "id": "https://www.fau.eu/degree-program/data-science-m-sc/",
+        "change": "changed"
+      }
+    ]
+  },
+  {
+    "programId": "de-stuttgart-msc-infotech",
+    "revision": "23144c38feb40ac75ce267210c89ee3edd5f686a1d2ecfc19a629ec6f9f18d2b",
+    "verificationStatus": "unverified",
+    "lastChecked": "2026-10-18T17:03:16.488Z",
+    "latestAttempt": "2026-10-18T22:03:24.661Z",
+    "requirementsComplete": false,
+    "pendingRequirements": [
+      "academic",
+      "fields",
+      "language",
+      "regulations",
+      "inventory-review"
+    ],
+    "unknownFacts": [
+      "credits",
+      "tuition",
+      "semester"
+    ],
+    "issues": [
+      "Automatically extracted draft. Human review and semester applicability are outstanding."
+    ],
+    "changes": [
+      {
+        "collection": "requirements",
+        "id": "academic",
+        "change": "changed"
+      },
+      {
+        "collection": "requirements",
+        "id": "fields",
+        "change": "changed"
+      },
+      {
+        "collection": "requirements",
+        "id": "language",
+        "change": "changed"
+      },
+      {
+        "collection": "requirements",
+        "id": "regulations",
+        "change": "changed"
+      },
+      {
+        "collection": "facts",
+        "id": "academic",
+        "change": "changed"
+      },
+      {
+        "collection": "facts",
+        "id": "fields",
+        "change": "changed"
+      },
+      {
+        "collection": "facts",
+        "id": "language",
+        "change": "changed"
+      },
+      {
+        "collection": "facts",
+        "id": "deadline",
+        "change": "changed"
+      },
+      {
+        "collection": "facts",
+        "id": "application",
+        "change": "changed"
+      },
+      {
+        "collection": "facts",
+        "id": "regulations",
+        "change": "changed"
+      },
+      {
+        "collection": "sources",
+        "id": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+        "change": "changed"
+      },
+      {
+        "collection": "sources",
+        "id": "https://www.infotech.uni-stuttgart.de/application/",
+        "change": "changed"
+      },
+      {
+        "collection": "sources",
+        "id": "https://www.infotech.uni-stuttgart.de/pdf/INFOTECH_ZulO_2024_BiLingual.pdf",
+        "change": "changed"
+      }
+    ]
+  },
+  {
+    "programId": "de-tuhh-msc-mechatronics",
+    "revision": "d540cb8cae0c8dcec407296ede32d2f43905b2d87041636350cad50aac24cbc8",
+    "verificationStatus": "stale",
+    "lastChecked": "2026-10-18T17:03:21.215Z",
+    "latestAttempt": "2026-10-18T22:03:24.661Z",
+    "requirementsComplete": false,
+    "pendingRequirements": [
+      "academic",
+      "language",
+      "credits",
+      "inventory-review"
+    ],
+    "unknownFacts": [
+      "semester"
+    ],
+    "issues": [
+      "Automatically extracted draft. Human review and semester applicability are outstanding.",
+      "tuhh-subjects: robots.txt disallows https://www.tuhh.de/t3resources/tuhh/img/studium/dekanate/mb/fachspez._anforderungen_IMPMEC.pdf",
+      "One or more required sources could not be checked. Previous evidence is not current verification."
+    ],
+    "changes": []
+  }
+]

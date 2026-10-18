@@ -1,0 +1,398 @@
+{
+  "schemaVersion": 1,
+  "sources": {
+    "passau-program": {
+      "url": "https://www.uni-passau.de/en/msc-computer-science/",
+      "snapshotId": "fb7ca3be80581d2bf74c8b150ddf3d80a88c7912386d755f1ba6e384d87fb5d2",
+      "contentHash": "b292474db6b95295f09b0f4b13ba2334cf58f776fcf30dc6ede11c2ffdad4c6b",
+      "textHash": "8c5033b607aa1d1c59198cd0f651ffbe7b2e752046370927eb44ebba1721ce39",
+      "lastAttempt": "2026-10-18T17:03:07.191Z",
+      "lastSuccessfulCheck": "2026-10-18T17:03:08.680Z",
+      "changed": false,
+      "textChanged": false,
+      "discovered": [
+        {
+          "url": "https://www.uni-passau.de/en/msc-computer-science/",
+          "label": "Entry requirements/Application"
+        },
+        {
+          "url": "https://www.uni-passau.de/fileadmin/dokumente/studium/infoschriften/Doppelabschluesse_mit_Tunis_EN.pdf",
+          "label": "SUP'COM Tunis and ENSI Tunis"
+        },
+        {
+          "url": "https://www.uni-passau.de/en/german-language-requirements",
+          "label": "proof of German language skills"
+        },
+        {
+          "url": "https://www.uni-passau.de/en/apply",
+          "label": "application guide"
+        },
+        {
+          "url": "https://www.uni-passau.de/en/apply/application-methods",
+          "label": "application method"
+        },
+        {
+          "url": "https://www.uni-passau.de/en/msc-computer-science/faq-application-msc-computer-science",
+          "label": "Frequently Asked Questions"
+        },
+        {
+          "url": "https://www.uni-passau.de/fileadmin/dokumente/studium/infoschriften/Informatik_MSc_EN.pdf",
+          "label": "Infosheet Infosheet Find out more about this programme from the detailed Infosheet, prepared by the Academic Advice Service More"
+        },
+        {
+          "url": "https://www.uni-passau.de/fileadmin/dokumente/studium/Studienprofile/Master/MSc_Informatik/Bauplan-Master-Informatik_ENG.pdf",
+          "label": "Structure of the master's programme"
+        },
+        {
+          "url": "https://www.uni-passau.de/fileadmin/dokumente/fakultaeten/fim/dekanat/Anrechenbarkeitstabelle/Modulkatalog-Master-Informatik.pdf",
+          "label": "Module descriptions"
+        },
+        {
+          "url": "https://www.uni-passau.de/fileadmin/dokumente/beschaeftigte/Rechtsvorschriften/StO_und_PO/FMI/AStuPO_MSc_FIM.pdf",
+          "label": "General study and examination regulation for the master's programmes"
+        },
+        {
+          "url": "https://www.uni-passau.de/fileadmin/dokumente/beschaeftigte/Rechtsvorschriften/StO_und_PO/FMI/Master_Informatik.pdf",
+          "label": "Subject-specific study and examination regulations for the programme"
+        }
+      ]
+    },
+    "passau-leaflet": {
+      "url": "https://www.uni-passau.de/fileadmin/dokumente/studium/infoschriften/Informatik_MSc_EN.pdf",
+      "snapshotId": "54a5150e9a34c4a0ae6b74a901dd82164312a909d66abd371d3d65482e6b903d",
+      "contentHash": "dc6e8087039110286d75db6c2740ffac6d91f3566b565bd8250a50ea2f33d418",
+      "textHash": "cae63e9d150c0556a8e8abda7a7dac65fe082cb78da29061be3e1c7df93a1870",
+      "lastAttempt": "2026-10-18T17:03:08.867Z",
+      "lastSuccessfulCheck": "2026-10-18T17:03:09.793Z",
+      "changed": false,
+      "textChanged": false,
+      "discovered": []
+    },
+    "saarland-program": {
+      "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+      "snapshotId": "11ff914dc2defc104d3b3020d39785bd9969490865d2ccbf37040f9bdd05fc79",
+      "contentHash": "bd27fad2a7cd32c0608121f14efc5c059917c1b22ec7eca492b355244f1a3d40",
+      "textHash": "10ea99da76adb18363ce2dcadba8858c565d9d547303bae5b0f640c344274245",
+      "lastAttempt": "2026-10-18T17:03:10.750Z",
+      "lastSuccessfulCheck": "2026-10-18T17:03:13.445Z",
+      "changed": false,
+      "textChanged": false,
+      "discovered": [
+        {
+          "url": "https://www.uni-saarland.de/en/study/application.html",
+          "label": "Applying & enrolling"
+        },
+        {
+          "url": "https://www.uni-saarland.de/en/study/application/first-degree.html",
+          "label": "First-degree programmes"
+        },
+        {
+          "url": "https://www.uni-saarland.de/en/study/application/master.html",
+          "label": "Master's programmes"
+        },
+        {
+          "url": "https://www.uni-saarland.de/en/study/application/international.html",
+          "label": "International applicants"
+        },
+        {
+          "url": "https://www.uni-saarland.de/en/study/application/others.html",
+          "label": "Other applicants"
+        },
+        {
+          "url": "https://www.uni-saarland.de/en/study/application/enrolment.html",
+          "label": "Enrolment"
+        },
+        {
+          "url": "https://www.uni-saarland.de/en/study/application/entry-grades.html",
+          "label": "Grade thresholds"
+        },
+        {
+          "url": "https://www.uni-saarland.de/en/study/application/more.html",
+          "label": "More..."
+        },
+        {
+          "url": "https://www.uni-saarland.de/en/study/advice/admissions.html",
+          "label": "Admissions Office"
+        },
+        {
+          "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+          "label": "Requirements & application"
+        },
+        {
+          "url": "https://www.uni-saarland.de/fileadmin/upload/verwaltung/uebersetzungen/english/master/informatik-so.pdf",
+          "label": "Study regulations"
+        },
+        {
+          "url": "https://www.uni-saarland.de/fileadmin/upload/verwaltung/uebersetzungen/english/bachelor/po-ba-ma-fak-mi.pdf",
+          "label": "Examination regulations"
+        },
+        {
+          "url": "https://www.uni-saarland.de/fileadmin/upload/verwaltung/uebersetzungen/english/master/informatik-fb.pdf",
+          "label": "Subject-specific regulations"
+        },
+        {
+          "url": "https://www.uni-saarland.de/en/verwaltung/fundstellenverzeichnis/pruefstud-ordnungen/studo-und-po-der-fakultaet-mi-mathematik-und-informatik/auslaufende/masterstudiengaenge-auslaufend.html",
+          "label": "Discontinued regulations"
+        },
+        {
+          "url": "https://www.uni-saarland.de/fileadmin/upload/studium/angebot/master/MHB_2026/MHB_MA_CompSc26.pdf",
+          "label": "Module handbook"
+        },
+        {
+          "url": "https://www.uni-saarland.de/fileadmin/upload/footer/lageplan/saarbruecken_klickbar.pdf",
+          "label": "Saarbrücken campus"
+        }
+      ]
+    },
+    "fau-program": {
+      "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
+      "snapshotId": "ae23e848e552f12185b2b19675c937f1121985bba83f4442299e54cfe2dc1a52",
+      "contentHash": "9c23296483a8b444b5be8c06e9820816e8c6c243ce12e82a87a81fd69d597246",
+      "textHash": "64b56e804eda051fdb01237c1857ba8ba9005deb40cc7b545efe6630115da0b6",
+      "lastAttempt": "2026-10-18T17:03:13.607Z",
+      "lastSuccessfulCheck": "2026-10-18T17:03:15.034Z",
+      "changed": false,
+      "textChanged": false,
+      "discovered": [
+        {
+          "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
+          "label": "Application for a Degree Program"
+        },
+        {
+          "url": "https://www.fau.eu/education/application-and-enrolment/",
+          "label": "Application process"
+        },
+        {
+          "url": "https://www.fau.eu/studying/international-students/application-and-enrollment-for-international-applicants/",
+          "label": "Application process for internationals"
+        },
+        {
+          "url": "https://www.fau.eu/studying/applications-and-admissions/everything-you-need-to-know-about-dates-and-deadlines/",
+          "label": "Everything you need to know about: dates and deadlines"
+        },
+        {
+          "url": "https://www.fau.eu/studying/applications-and-admissions/enrollment/",
+          "label": "Enrollment"
+        },
+        {
+          "url": "https://www.fau.eu/studying/applications-and-admissions/changing-degree-program-and-study-location/changing-degree-program-at-fau/",
+          "label": "Changing degree program at FAU"
+        },
+        {
+          "url": "https://www.fau.eu/studying/applications-and-admissions/changing-degree-program-and-study-location/changing-to-fau/lateral-entry/",
+          "label": "Lateral entry"
+        },
+        {
+          "url": "https://www.fau.eu/studying/applications-and-admissions/changing-degree-program-and-study-location/changing-to-fau/swapping-university-places/",
+          "label": "Swapping university places"
+        },
+        {
+          "url": "https://www.fau.eu/studying/applications-and-admissions/changing-degree-program-and-study-location/studying-two-degree-programs/",
+          "label": "Studying two degree programs"
+        },
+        {
+          "url": "https://www.fau.eu/studying/international-students/students-on-exchange-programs/application-process/",
+          "label": "Application process"
+        },
+        {
+          "url": "https://www.fau.eu/studying/international-students/application-and-enrollment-for-international-applicants/tuition-fees-for-students-from-non-eu-states/",
+          "label": "Tuition fees for Students from non-EU states"
+        },
+        {
+          "url": "https://www.fau.eu/studying/international-students/application-and-enrollment-for-international-applicants/prospective-international-students-applying-for-undergraduate-programs/",
+          "label": "Applications from prospective international students: Bachelor’s / State Examination degree programs"
+        },
+        {
+          "url": "https://www.fau.eu/studying/international-students/application-and-enrollment-for-international-applicants/applying-for-a-masters-degree-program-as-an-international-student/application-dates-for-masters/",
+          "label": "Application dates and deadlines for Master’s and PhD degree programs"
+        },
+        {
+          "url": "https://www.fau.eu/studying/international-students/application-and-enrollment-for-international-applicants/fees-for-applications-from-non-eu-states/",
+          "label": "Fees for applications from non-EU states"
+        },
+        {
+          "url": "https://www.fau.eu/studying/international-students/application-and-enrollment-for-international-applicants/evaluation-of-international-qualifications/",
+          "label": "Evaluation of international qualifications"
+        },
+        {
+          "url": "https://www.fau.eu/studying/international-students/application-and-enrollment-for-international-applicants/german-language-courses-german-language-proficiency-and-language-certificates/",
+          "label": "German language courses, German language proficiency and language certificates"
+        },
+        {
+          "url": "https://www.fau.eu/studying/international-students/application-and-enrollment-for-international-applicants/information-on-document-certification-and-translation/",
+          "label": "Information on document certification and translation"
+        },
+        {
+          "url": "https://www.fau.eu/studying/organizing-your-studies-and-where-to-go-for-advice/student-affairs/admissions-office-and-masters-office/",
+          "label": "Admission’s Office and Master’s Office"
+        },
+        {
+          "url": "https://www.fau.eu/studying/organizing-your-studies-and-where-to-go-for-advice/going-abroad/studying-abroad/direct-exchange-fauexchange/fauexchange-application/",
+          "label": "FAUexchange – Application"
+        },
+        {
+          "url": "https://www.fau.eu/studying/organizing-your-studies-and-where-to-go-for-advice/studying-with-special-requirements/first-generation-students/",
+          "label": "First-generation students"
+        },
+        {
+          "url": "https://www.fau.eu/studying/organizing-your-studies-and-where-to-go-for-advice/studying-with-special-requirements/pregnancy-and-maternity-protection-while-at-university/",
+          "label": "Pregnancy and maternity protection while at university"
+        },
+        {
+          "url": "https://www.fau.eu/studying/organizing-your-studies-and-where-to-go-for-advice/studying-with-special-requirements/studying-with-a-disability-or-chronic-illness/",
+          "label": "Studying with a disability or chronic illness"
+        },
+        {
+          "url": "https://www.fau.eu/university/university-organization/legal-regulations/university-elections/",
+          "label": "University elections"
+        }
+      ]
+    },
+    "stuttgart-requirements": {
+      "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+      "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
+      "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215",
+      "textHash": "98a0ee20ab01d312bcec2700f7f6ecbe4afdcb57dfd45e6582821b0ef4c556fb",
+      "lastAttempt": "2026-10-18T17:03:15.214Z",
+      "lastSuccessfulCheck": "2026-10-18T17:03:16.488Z",
+      "changed": false,
+      "textChanged": false,
+      "discovered": [
+        {
+          "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+          "label": "jump to content"
+        },
+        {
+          "url": "https://www.infotech.uni-stuttgart.de/application/",
+          "label": "Application"
+        },
+        {
+          "url": "https://www.infotech.uni-stuttgart.de/application/roadmap/",
+          "label": "Roadmap"
+        },
+        {
+          "url": "https://www.infotech.uni-stuttgart.de/application/selection-process/",
+          "label": "Selection Process"
+        },
+        {
+          "url": "https://www.infotech.uni-stuttgart.de/application/postapplication/",
+          "label": "Post-Acceptance Information"
+        },
+        {
+          "url": "https://www.infotech.uni-stuttgart.de/program/reg19/",
+          "label": "Study Regulation"
+        },
+        {
+          "url": "https://www.infotech.uni-stuttgart.de/pdf/Manuals/ApplicationManual_INFOTECH_WS2021.pdf",
+          "label": "here"
+        }
+      ]
+    },
+    "stuttgart-application": {
+      "url": "https://www.infotech.uni-stuttgart.de/application/",
+      "snapshotId": "57c2367ba77213a1626d101e4e96dec418842976e212002210697800f742ceb7",
+      "contentHash": "49ae60eb519bc4ab5eba7ed534e294db6e4f890c54a8ae491a748570a15f5134",
+      "textHash": "b400c540efc94e776149b2ac162b4a3100057e1dac0c86d647a729e1b5637efc",
+      "lastAttempt": "2026-10-18T17:03:16.558Z",
+      "lastSuccessfulCheck": "2026-10-18T17:03:17.699Z",
+      "changed": false,
+      "textChanged": false,
+      "discovered": [
+        {
+          "url": "https://www.infotech.uni-stuttgart.de/application/",
+          "label": "jump to content"
+        },
+        {
+          "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+          "label": "Requirements"
+        },
+        {
+          "url": "https://www.infotech.uni-stuttgart.de/application/roadmap/",
+          "label": "Roadmap"
+        },
+        {
+          "url": "https://www.infotech.uni-stuttgart.de/application/selection-process/",
+          "label": "Selection Process"
+        },
+        {
+          "url": "https://www.infotech.uni-stuttgart.de/application/postapplication/",
+          "label": "Post-Acceptance Information"
+        },
+        {
+          "url": "https://www.infotech.uni-stuttgart.de/program/reg19/",
+          "label": "Study Regulation"
+        },
+        {
+          "url": "https://www.infotech.uni-stuttgart.de/pdf/Manuals/ApplicationManual_INFOTECH_WS2021.pdf",
+          "label": "here"
+        }
+      ]
+    },
+    "stuttgart-regulations": {
+      "url": "https://www.infotech.uni-stuttgart.de/pdf/INFOTECH_ZulO_2024_BiLingual.pdf",
+      "snapshotId": "2dd300386d0116e2b06ea127807585ccdbedc7fc95c79470d673d1ba32a2e0c1",
+      "contentHash": "1a492d13a440f1896060bc2e25433f10320ebbdb37cb08cd75278cb6617c3678",
+      "textHash": "756e627d19a55febdd9e23602d537b7e2abeae56a39a9c930694707a7e497f5e",
+      "lastAttempt": "2026-10-18T17:03:17.750Z",
+      "lastSuccessfulCheck": "2026-10-18T17:03:19.004Z",
+      "changed": false,
+      "textChanged": false,
+      "discovered": []
+    },
+    "tuhh-program": {
+      "url": "https://www.tuhh.de/tuhh/studium/vor-dem-studium/studienangebot/international-study-programs/mechatronics",
+      "snapshotId": "27f4c274cda3b232f5e61a394ed5ce814c29dc349e75c026374cae3b653217a7",
+      "contentHash": "5b3c28be16c28ebefebc559814aaef85ae91ccdbb07d87d594f7f5cb24248cb8",
+      "textHash": "5a4222ddd4173ac9dc2bc41fb4d5c95aebb41f125d52aea632433154263f5d33",
+      "lastAttempt": "2026-10-18T17:03:19.306Z",
+      "lastSuccessfulCheck": "2026-10-18T17:03:21.215Z",
+      "changed": false,
+      "textChanged": false,
+      "discovered": [
+        {
+          "url": "https://www.tuhh.de/tuhh/studium/vor-dem-studium/bewerbung",
+          "label": "Bewerbung"
+        },
+        {
+          "url": "https://www.tuhh.de/t3resources/tuhh/img/studium/dekanate/mb/fachspez._anforderungen_IMPMEC.pdf",
+          "label": "here"
+        },
+        {
+          "url": "https://www.tuhh.de/tuhh/en/studying/before-studying/application.html",
+          "label": "Apply now!"
+        },
+        {
+          "url": "https://www.tuhh.de/tuhh/studium/im-studium/datenschutzerklaerung",
+          "label": "Datenschutz für Studienbewerber*innen und Studierende"
+        }
+      ]
+    },
+    "tuhh-subjects": {
+      "url": "https://www.tuhh.de/t3resources/tuhh/img/studium/dekanate/mb/fachspez._anforderungen_IMPMEC.pdf",
+      "lastAttempt": "2026-10-18T17:05:44.448Z",
+      "error": "robots.txt disallows https://www.tuhh.de/t3resources/tuhh/img/studium/dekanate/mb/fachspez._anforderungen_IMPMEC.pdf"
+    }
+  },
+  "programs": {
+    "de-passau-msc-computer-science": {
+      "revision": "92098abca56b6a993cfb4ac09804dfe6deb4a8e17f4509eb41b7f6d4e13e2a25",
+      "lastAttempt": "2026-10-18T22:03:24.661Z"
+    },
+    "de-saarland-msc-computer-science": {
+      "revision": "db69c3a69150555aaea24a4cbdae47379c3d69b6876ec2406ff5d2922fa8be77",
+      "lastAttempt": "2026-10-18T22:03:24.661Z"
+    },
+    "de-fau-msc-data-science": {
+      "revision": "3329aea151d0f31eccb2f45bb2d8fa57c91530b106f55d3dc37a7bf081680d60",
+      "lastAttempt": "2026-10-18T22:03:24.661Z"
+    },
+    "de-stuttgart-msc-infotech": {
+      "revision": "23144c38feb40ac75ce267210c89ee3edd5f686a1d2ecfc19a629ec6f9f18d2b",
+      "lastAttempt": "2026-10-18T22:03:24.661Z"
+    },
+    "de-tuhh-msc-mechatronics": {
+      "revision": "d540cb8cae0c8dcec407296ede32d2f43905b2d87041636350cad50aac24cbc8",
+      "lastAttempt": "2026-10-18T22:03:24.661Z"
+    }
+  }
+}

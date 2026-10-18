@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "officialHosts": ["www.uni-passau.de", "www.uni-saarland.de", "www.fau.eu", "www.infotech.uni-stuttgart.de", "www.uni-stuttgart.de", "www.tuhh.de"],
+  "programs": [
+    {
+      "id": "de-passau-msc-computer-science", "university": "University of Passau", "programName": "Computer Science", "city": "Passau", "language": "English / German",
+      "description": "Master of Science in Computer Science. Official-source pilot; admission clauses await editorial review.",
+      "sources": [{"id":"passau-program","url":"https://www.uni-passau.de/en/msc-computer-science/"},{"id":"passau-leaflet","url":"https://www.uni-passau.de/fileadmin/dokumente/studium/infoschriften/Informatik_MSc_EN.pdf"}],
+      "notes": ["The PDF infosheet names winter semester 2025-26. Do not apply it to later intakes without review.", "The 110 ECTS route has a non-ECTS degree alternative; the credit rule is not independently decisive."],
+      "extract": [
+        {"id":"academic","category":"academic","source":"passau-program","anchor":"110 ECTS","requirement":true,"kind":"academic","label":"Prior degree, computer science credits and grade alternatives","note":"Includes alternatives and qualification conditions; not a simple total-credit rule."},
+        {"id":"credit-route","category":"credits","source":"passau-program","anchors":["at least 110 ECTS","four-year non-ECTS"],"requirement":true,"kind":"ects","label":"Computer science credit route and non-ECTS alternative","note":"Alternative route requires manual assessment; no unconditional credit blocker is inferred."},
+        {"id":"degree-duration","category":"academic","source":"passau-program","anchor":"standard length of three years","requirement":true,"kind":"academic","label":"Degree duration"},
+        {"id":"preliminary-degree","category":"academic","source":"passau-program","anchor":"not yet received your final","requirement":true,"kind":"academic","label":"Preliminary transcript and final degree submission"},
+        {"id":"recognition","category":"academic","source":"passau-program","anchor":"H+","requirement":true,"kind":"academic","label":"Recognition of awarding institution"},
+        {"id":"language","category":"language","source":"passau-program","anchors":["If neither your native language","German: You should","English: You should","Even if you plan to choose"],"requirement":true,"kind":"language","label":"Language routes, exemptions and German A1 condition"},
+        {"id":"certificates","category":"language","source":"passau-program","anchors":["TOEFL (score","IELTS (score","Cambridge English Language","A first degree or secondary"]},
+        {"id":"deadline","category":"deadline","source":"passau-program","anchors":["Application period for the winter","15 April - 31 May","1 April - 31 May","Application period for the summer","1 November - 15 December"],"note":"Recurring dates only. No specific admission-year applicability verified."},
+        {"id":"application","category":"application","source":"passau-program","anchor":"uni-assist"},
+        {"id":"tuition","category":"tuition","source":"passau-program","anchor":"no tuition fees","note":"Semester fee still applies; no amount established here."},
+        {"id":"semester","category":"semester","source":"passau-program","note":"Admission semester applicability has not been verified."}
+      ]
+    },
+    {
+      "id":"de-saarland-msc-computer-science", "university":"Saarland University", "programName":"Computer Science", "city":"Saarbruecken", "language":"English",
+      "description":"Master of Science in Computer Science. Official-source pilot; admission clauses await editorial review.",
+      "sources":[{"id":"saarland-program","url":"https://www.uni-saarland.de/en/study/programmes/master/informatics.html"}],
+      "extract":[
+        {"id":"academic","category":"academic","source":"saarland-program","anchor":"Bachelor","requirement":true,"kind":"academic","label":"Relevant first degree and aptitude assessment"},
+        {"id":"language","category":"language","source":"saarland-program","anchor":"Level C1","requirement":true,"kind":"language","label":"English C1; certificate acceptance requires separate review","extractor":"cefr","language":"English"},
+        {"id":"credits","category":"credits","source":"saarland-program","note":"No numeric subject-credit threshold established from this page."},
+        {"id":"deadline","category":"deadline","source":"saarland-program","anchor":"15 May","note":"Recurring dates; specific admission year and applicant scope require review."},
+        {"id":"application","category":"application","source":"saarland-program","anchor":"application portal"},
+        {"id":"tuition","category":"tuition","source":"saarland-program","anchor":"Not applicable"},
+        {"id":"semester","category":"semester","source":"saarland-program","anchor":"beginning of the summer or winter","note":"Intake seasons are listed; calendar-year applicability remains unverified."},
+        {"id":"additional-evidence","category":"academic","source":"saarland-program","anchors":["Proof of sufficient merit","letter of motivation","Two relevant academic references","Details about relevant work"],"requirement":true,"kind":"other","label":"Academic merit, references and supporting evidence"}
+      ]
+    },
+    {
+      "id":"de-fau-msc-data-science", "university":"FAU Erlangen-Nuremberg", "programName":"Data Science", "city":"Erlangen", "language":"English",
+      "description":"Master of Science in Data Science. Official-source pilot; applicant-category restrictions require review.",
+      "sources":[{"id":"fau-program","url":"https://www.fau.eu/degree-program/data-science-m-sc/"}],
+      "notes":["The page scopes admission dates to German/domestic applicants; international rules may differ.","Two language sections differ on English-medium prior study. Resolve the wording against current regulations before approval."],
+      "extract":[
+        {"id":"academic","category":"academic","source":"fau-program","anchor":"Mathematics, Industrial","requirement":true,"kind":"academic","label":"Accepted first degrees and equivalent competence profiles"},
+        {"id":"grades","category":"academic","source":"fau-program","anchor":"2.5","requirement":true,"kind":"gpa","label":"Grade thresholds and interview route"},
+        {"id":"language","category":"language","source":"fau-program","anchors":["As the Master programme is in English","English proficiency at level B2"],"requirement":true,"kind":"language","label":"English proficiency and exemptions (wording requires reconciliation)"},
+        {"id":"credits","category":"credits","source":"fau-program","note":"Curriculum credits are not prior-degree admission prerequisites."},
+        {"id":"deadline","category":"deadline","source":"fau-program","anchors":["intended for German applicants","Winter semester: 31.05","Summer semester: 30.11"],"note":"The admissions section is scoped to domestic applicants; international dates may differ."},
+        {"id":"application","category":"application","source":"fau-program","anchor":"campo"},
+        {"id":"tuition","category":"tuition","source":"fau-program"},
+        {"id":"semester","category":"semester","source":"fau-program","note":"No specific admission-year validity verified."}
+      ]
+    },
+    {
+      "id":"de-stuttgart-msc-infotech", "university":"University of Stuttgart", "programName":"Information Technology (INFOTECH)", "city":"Stuttgart", "language":"English",
+      "description":"Master of Science in Information Technology. Official-source pilot; region-specific qualifications and certificate scales need review.",
+      "sources":[{"id":"stuttgart-requirements","url":"https://www.infotech.uni-stuttgart.de/application/requirements/"},{"id":"stuttgart-application","url":"https://www.infotech.uni-stuttgart.de/application/"},{"id":"stuttgart-regulations","url":"https://www.infotech.uni-stuttgart.de/pdf/INFOTECH_ZulO_2024_BiLingual.pdf"}],
+      "extract":[
+        {"id":"academic","category":"academic","source":"stuttgart-requirements","anchor":"B.Sc.","requirement":true,"kind":"academic","label":"Region-specific prior degrees and recognition"},
+        {"id":"fields","category":"academic","source":"stuttgart-requirements","anchor":"Computer Science","requirement":true,"kind":"academic","label":"Subject preparation and specialisation"},
+        {"id":"language","category":"language","source":"stuttgart-requirements","anchors":["TOEFL IBT","IELTS band","Cambridge C1","Oxford Test","PTE Academic","telc:","Medium of Instruction","some certificates are only valid","If you are a national"],"requirement":true,"kind":"language","label":"English certificates, score scales, validity and exemptions","note":"Do not compare old TOEFL scores with the 2026 scale. Citizenship/education exemptions require the full country list and manual review."},
+        {"id":"credits","category":"credits","source":"stuttgart-requirements"},
+        {"id":"deadline","category":"deadline","source":"stuttgart-application","anchor":"January","note":"Check application cycle and applicant category. Recurring dates do not establish a specific semester."},
+        {"id":"application","category":"application","source":"stuttgart-requirements","anchor":"C@MPUS"},
+        {"id":"regulations","category":"academic","source":"stuttgart-regulations","anchor":"Bachelor","requirement":true,"kind":"other","label":"Admission regulation scope and complete inventory","note":"Bilingual 2024 regulation with unofficial English translation. German text, amendment history and later web changes need review."},
+        {"id":"tuition","category":"tuition","source":"stuttgart-requirements"},
+        {"id":"semester","category":"semester","source":"stuttgart-application"}
+      ]
+    },
+    {
+      "id":"de-tuhh-msc-mechatronics", "university":"Hamburg University of Technology", "programName":"Mechatronics", "city":"Hamburg", "language":"English",
+      "description":"Master of Science in Mechatronics. Official-source pilot; full subject-specific admission rules await review.",
+      "sources":[{"id":"tuhh-program","url":"https://www.tuhh.de/tuhh/studium/vor-dem-studium/studienangebot/international-study-programs/mechatronics"},{"id":"tuhh-subjects","url":"https://www.tuhh.de/t3resources/tuhh/img/studium/dekanate/mb/fachspez._anforderungen_IMPMEC.pdf"}],
+      "extract":[
+        {"id":"academic","category":"academic","source":"tuhh-program","anchor":"Bachelor","requirement":true,"kind":"academic","label":"Prior mechatronics or mechanical engineering degree"},
+        {"id":"language","category":"language","source":"tuhh-program","anchors":["Applicants should hold","TOEFL ITP is not accepted"],"requirement":true,"kind":"language","label":"English certificate types and scores"},
+        {"id":"credits","category":"credits","source":"tuhh-program","anchor":"30 CP worth","requirement":true,"kind":"ects","label":"Subject-specific mathematics and engineering preparation","note":"The page uses CP, not an explicit ECTS conversion. Review the linked subject requirements."},
+        {"id":"deadline","category":"deadline","source":"tuhh-program","anchor":"December 1st to February 1st","note":"Annual winter intake; specific calendar-year validity unverified."},
+        {"id":"application","category":"application","source":"tuhh-program","anchor":"We conduct an online application"},
+        {"id":"tuition","category":"tuition","source":"tuhh-program","anchor":"fees","note":"Program overview amounts are not verified for an admission year."},
+        {"id":"semester","category":"semester","source":"tuhh-program"}
+      ]
+    }
+  ]
+}

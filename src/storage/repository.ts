@@ -1,5 +1,7 @@
 import type { AcademicProfile, Program, StoredDocument } from "../domain/types";
 import { demoPrograms } from "../data/demoPrograms";
+import catalogData from "../data/catalogPrograms.json";
+import { readCatalog } from "../domain/catalog";
 import { db } from "./db";
 import { normalizeProgram } from "../domain/programCompatibility";
 import { academicProfileSchema, programSchema } from "../domain/schemas";
@@ -29,13 +31,15 @@ export async function deleteDocument(id: string) {
   await db.documents.delete(id);
 }
 
-// Programs shown in the library = built-in demo programs + any the user added.
+// Read-only catalog DTOs stay separate from the user's IndexedDB records.
 export async function listPrograms(): Promise<Program[]> {
   const userPrograms = await db.programs.toArray();
-  return [...demoPrograms, ...userPrograms.sort((a, b) => b.createdAt.localeCompare(a.createdAt))].map(normalizeProgram);
+  return [...readCatalog(catalogData), ...userPrograms.sort((a, b) => b.createdAt.localeCompare(a.createdAt)), ...demoPrograms].map(normalizeProgram);
 }
 
 export async function getProgram(id: string): Promise<Program | undefined> {
+  const catalog = readCatalog(catalogData).find((program) => program.id === id);
+  if (catalog) return catalog;
   const demo = demoPrograms.find((program) => program.id === id);
   if (demo) return normalizeProgram(demo);
   const program = await db.programs.get(id);

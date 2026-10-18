@@ -38,6 +38,17 @@ export interface SourceEvidence {
   validFor?: AdmissionSemester[];
   locator?: string; // regulation section or PDF page
   reviewedBy?: string;
+  retrievedAt?: string;
+  snapshotId?: string;
+  contentHash?: string;
+}
+
+export interface CatalogFact {
+  id: string;
+  category: "academic" | "credits" | "language" | "deadline" | "tuition" | "application" | "semester";
+  value: string | null;
+  note?: string;
+  evidence: SourceEvidence[];
 }
 
 export interface AcademicCourse {
@@ -172,10 +183,14 @@ export interface Program {
   createdAt: string;
   schemaVersion?: 2;
   catalogVersion?: string;
+  catalogDraftVersion?: string;
   verificationStatus?: SourceVerificationStatus;
   sources?: SourceEvidence[];
   validFor?: AdmissionSemester[];
   requirementsComplete?: boolean;
+  facts?: CatalogFact[];
+  catalogIssues?: string[];
+  retrievedAt?: string;
 }
 
 export interface RequirementCheck {

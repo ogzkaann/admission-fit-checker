@@ -14,6 +14,9 @@ export const sourceEvidenceSchema = z.object({
   validFor: z.array(semesterSchema).optional(),
   locator: z.string().optional(),
   reviewedBy: z.string().optional(),
+  retrievedAt: timestampSchema.optional(),
+  snapshotId: z.string().optional(),
+  contentHash: z.string().optional(),
 });
 export const profileEvidenceSchema = z.object({
   documentId: z.string().min(1),
@@ -50,6 +53,8 @@ export const programSchema = z.object({
   deadline: z.string().optional(), fee: z.string().optional(), sourceUrl: z.string().optional(), lastChecked: z.string().optional(),
   requiredDocuments: z.array(documentKindSchema), requirements: z.array(programRequirementSchema),
   admissionText: z.string().optional(), origin: z.enum(["demo", "user", "catalog"]), isDemo: z.boolean(), createdAt: z.string(),
-  schemaVersion: z.literal(2).optional(), catalogVersion: z.string().optional(), verificationStatus: verificationStatusSchema.optional(),
+  schemaVersion: z.literal(2).optional(), catalogVersion: z.string().optional(), catalogDraftVersion: z.string().optional(), verificationStatus: verificationStatusSchema.optional(),
   sources: z.array(sourceEvidenceSchema).optional(), validFor: z.array(semesterSchema).optional(), requirementsComplete: z.boolean().optional(),
+  facts: z.array(z.object({ id: z.string(), category: z.enum(["academic", "credits", "language", "deadline", "tuition", "application", "semester"]), value: z.string().nullable(), note: z.string().optional(), evidence: z.array(sourceEvidenceSchema) })).optional(),
+  catalogIssues: z.array(z.string()).optional(), retrievedAt: timestampSchema.optional(),
 }).refine((program) => new Set(program.requirements.map((req) => req.id)).size === program.requirements.length, "Duplicate requirement IDs");
