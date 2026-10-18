@@ -1,9 +1,9 @@
 import type { DegreeType, DocumentKind, FitVerdict, RequirementKind } from "./types";
 
 export const verdictLabels: Record<FitVerdict, string> = {
-  strong_fit: "Strong fit",
-  possible_risky: "Possible but risky",
-  not_recommended: "Not recommended",
+  strong_fit: "Modeled requirements met",
+  possible_risky: "Conditional route",
+  not_recommended: "Mandatory blocker",
   not_enough_data: "Not enough data",
 };
 

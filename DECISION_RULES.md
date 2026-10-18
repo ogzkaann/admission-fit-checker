@@ -1,37 +1,41 @@
-# Admission Fit Scoring
+# Eligibility Decision Rules V2
 
-Fit logic lives in `src/domain/fit/admissionFit.ts`.
+The transparent, deterministic evaluator lives in `src/domain/fit/admissionFit.ts`. It evaluates modeled eligibility, not likelihood of selection or admission. The initial target is German master's admissions.
 
-The scoring is intentionally conservative. It is designed to show product architecture and honest uncertainty handling, not to guarantee admission outcomes.
+## Inputs and evidence
 
-## Program Requirement Model
+- Use structured degree level/completion, exact accepted fields, total ECTS, subject credits with explicit equivalence decisions, and language certificate variants/levels/scores.
+- Profile facts need reviewed excerpts linked to available documents. User review is not document authentication. Missing documents or unsupported excerpts cannot confirm eligibility or failure.
+- Requirement and program sources must be official, verified with a reviewer, checked within one year, not future-dated and valid for the explicitly selected semester. Missing, stale, conflicting or demo sources make the check uncertain.
+- Legacy requirements remain readable and all populated constraints are evaluated together. Missing `mandatory` defaults to true, including unsupported GPA/manual conditions. Legacy records never gain verification through migration.
 
-Each program (`src/domain/types.ts`, seeded in `src/data/demoPrograms.ts`) carries structured requirements. A `ProgramRequirement` may include:
+## Per-requirement outcomes
 
-- `kind` — `academic`, `language`, `ects`, `gpa`, `document`, or `other`
-- `label` — human-readable requirement text
-- `degreeType` — required prior degree (e.g. bachelor)
-- `field` — expected field of study
-- `minEcts` — minimum ECTS credits
-- `language` + `minLevel` — required language and CEFR level
-- `minGpa` — reference only (not auto-compared)
-- `sourceText` — the evidence snippet backing the requirement
+| Outcome | Meaning |
+| --- | --- |
+| `met` | The rule is supported by reviewed document evidence and verified source metadata. |
+| `not_met` | Reviewed evidence confirms a shortfall against the verified rule. A mandatory shortfall is a hard blocker. |
+| `unknown` | Profile evidence, rule semantics, equivalence or source information is insufficient. Provisional comparison is retained separately. |
+| `conditional` | A sourced conditional admission route explicitly permits a supported alternative, with an outstanding obligation displayed. |
 
-## Decisive vs. Informational Checks
+Conditional routes are never inferred from a small shortfall. If an explicit exception exists but cannot be resolved, exclusion cannot be confirmed. Unknown advisory requirements do not block; their source issues remain visible.
 
-- **Decisive checks** (drive the verdict): degree, field, ECTS, and language.
-- **Informational checks** (shown, but never lower the verdict): GPA and required documents.
+## Verdict precedence
 
-Each check resolves to `met`, `not_met`, or `unknown`. A check is `unknown` when the profile lacks the data needed to judge it.
+1. Any confirmed mandatory blocker: `not_recommended` (UI: Mandatory blocker), regardless of other matches.
+2. Any unresolved mandatory rule, unknown semester, incomplete inventory or source uncertainty: `not_enough_data`.
+3. All mandatory rules resolved with an explicit conditional route: `possible_risky` (UI: Conditional route).
+4. All mandatory rules met and the complete source inventory verified: `strong_fit` (UI: Modeled requirements met).
 
-## Verdict Aggregation
+An empty or advisory-only rule set cannot establish eligibility. The deprecated numeric `score` is only confirmed mandatory-rule coverage for compatibility; no threshold is used and it is never displayed as an acceptance probability.
 
-Over decisive checks only:
+## Conservative comparison policy
 
-- No decisive checks → **Not enough data**
-- Most decisive checks unknown (profile too sparse) → **Not enough data**
-- Two or more `not_met` → **Not recommended**
-- No `not_met` and a strong majority `met` → **Strong fit**
-- Otherwise → **Possible but risky**
+- Exact normalized study-field equality only. A non-listed field is unknown unless the verified accepted list is explicitly exhaustive. Course titles and weak keywords never establish equivalence.
+- ECTS accepts an exact nonnegative number, optionally followed by ECTS. Do not parse ranges, approximations or foreign credit units.
+- Subject credits count only reviewed courses with sourced, program/version/semester-specific equivalence decisions. Duplicate course evidence and cross-subject reuse stay unresolved. Confirm a shortfall only with a complete reviewed course list and resolved equivalences.
+- Test variants and score scales must match explicitly. Evaluate every certificate and accepted alternative. Missing certificates are unknown, not failures. Never infer CEFR from a test score or a test variant from its provider.
+- Uploading a document alone does not prove certification, completeness or application suitability. Document and unsupported grade/recognition rules require manual review.
+- Pasted admission text produces unverified drafts and a manual full-text review requirement. Automatic matching cannot establish a complete requirement set.
 
-Every result is a source-aware estimate and must be verified against the university's official page. GPA scales are not compared across countries, so GPA never changes the verdict on its own.
+See `docs/ARCHITECTURE_V2.md` for the architecture audit, trust boundaries and verified-data ingestion plan.

@@ -14,7 +14,65 @@ export interface LanguageCertificate {
   provider?: string; // issuing body, e.g. "telc", "IELTS", "TOEFL", "Goethe"
   level?: string; // CEFR level where known, e.g. "B2", "C1"
   date?: string; // certificate/test date where known
+  score?: number;
+  componentScores?: Record<string, number>;
+  evidence?: ProfileEvidence;
 }
+
+// User review confirms transcription, never document authenticity.
+export interface ProfileEvidence {
+  documentId: string;
+  quote: string;
+  reviewedAt: string;
+}
+
+export type AdmissionSemester = `${number}-${"winter" | "summer"}`;
+export type SourceVerificationStatus = "unverified" | "verified" | "stale" | "conflicting" | "demo";
+
+export interface SourceEvidence {
+  url: string;
+  quote: string;
+  status: SourceVerificationStatus;
+  sourceType: "official" | "user" | "demo";
+  lastChecked?: string;
+  validFor?: AdmissionSemester[];
+  locator?: string; // regulation section or PDF page
+  reviewedBy?: string;
+}
+
+export interface AcademicCourse {
+  id: string;
+  title: string;
+  ects?: number;
+  evidence?: ProfileEvidence;
+}
+
+// Equivalence is program/version/semester specific, never inferred from names.
+export interface CourseEquivalence {
+  courseId: string;
+  programId: string;
+  catalogVersion: string;
+  requirementId: string;
+  semester: AdmissionSemester;
+  decision: "accepted" | "rejected" | "pending";
+  evidence?: SourceEvidence;
+}
+
+export interface LanguageOption {
+  test?: string; // exact certificate variant, e.g. IELTS Academic, not provider
+  minLevel?: string;
+  minScore?: number;
+  componentMinimums?: Record<string, number>;
+}
+
+export type EligibilityRule =
+  | { type: "degree"; accepted: DegreeType[]; completionRequired: boolean }
+  | { type: "field"; accepted: string[]; exhaustive: boolean }
+  | { type: "total_ects"; minimum: number }
+  | { type: "subject_ects"; subject: string; minimum: number }
+  | { type: "language"; language: string; accepted: LanguageOption[] }
+  | { type: "document"; documentKind: DocumentKind }
+  | { type: "manual"; explanation: string };
 
 // Structured fields an AI/heuristic extractor can read out of a document.
 export interface ExtractedProfile {
@@ -47,6 +105,13 @@ export interface AcademicProfile {
   targetCity?: string;
   extracted?: ExtractedProfile;
   updatedAt: string;
+  degreeType?: DegreeType;
+  degreeCompleted?: boolean;
+  evidence?: Partial<Record<"degree" | "field" | "ects", ProfileEvidence>>;
+  academicCourses?: AcademicCourse[];
+  courseEquivalences?: CourseEquivalence[];
+  transcriptComplete?: boolean;
+  reviewedAt?: string;
 }
 
 export interface StoredDocument {
@@ -76,6 +141,14 @@ export interface ProgramRequirement {
   language?: string; // language of a language requirement
   minLevel?: string; // CEFR level of a language requirement
   sourceText?: string; // evidence snippet backing the requirement
+  mandatory?: boolean; // legacy omissions default to mandatory
+  rule?: EligibilityRule;
+  evidence?: SourceEvidence[];
+  conditionalAdmission?: {
+    description: string;
+    alternative: EligibilityRule;
+    evidence: SourceEvidence[];
+  };
 }
 
 export interface Program {
@@ -94,18 +167,30 @@ export interface Program {
   requiredDocuments: DocumentKind[];
   requirements: ProgramRequirement[];
   admissionText?: string; // raw pasted/extracted text used for "Ask about this program"
-  origin: "demo" | "user";
+  origin: "demo" | "user" | "catalog";
   isDemo: boolean;
   createdAt: string;
+  schemaVersion?: 2;
+  catalogVersion?: string;
+  verificationStatus?: SourceVerificationStatus;
+  sources?: SourceEvidence[];
+  validFor?: AdmissionSemester[];
+  requirementsComplete?: boolean;
 }
 
 export interface RequirementCheck {
   requirementId: string;
   label: string;
   kind: RequirementKind;
-  status: "met" | "not_met" | "unknown";
+  status: "met" | "not_met" | "unknown" | "conditional";
   decisive: boolean;
   detail: string;
+  mandatory: boolean;
+  hardBlocker: boolean;
+  comparison: "met" | "not_met" | "unknown";
+  reason: "confirmed" | "missing_evidence" | "potential_mismatch" | "unsupported_equivalence" | "source_uncertainty" | "unsupported_rule" | "conditional";
+  sourceIssues: string[];
+  profileEvidence: ProfileEvidence[];
 }
 
 export interface EvidenceCitation {
@@ -115,12 +200,14 @@ export interface EvidenceCitation {
   snippet: string;
   sourceUrl?: string;
   lastChecked?: string;
+  verificationStatus?: SourceVerificationStatus;
+  locator?: string;
 }
 
 export interface FitAnalysis {
   programId: string;
   verdict: FitVerdict;
-  score: number; // rough 0..1 signal, decisive checks only
+  score: number; // deprecated: confirmed rule coverage only, NOT admission probability
   summary: string;
   checks: RequirementCheck[];
   citations: EvidenceCitation[];
@@ -128,6 +215,10 @@ export interface FitAnalysis {
   missingProfileData: string[];
   needsVerification: boolean;
   createdAt: string;
+  engineVersion: 2;
+  semester?: AdmissionSemester;
+  sourceIssues: string[];
+  illustrative: boolean;
 }
 
 export interface AppSettings {

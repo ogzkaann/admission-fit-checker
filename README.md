@@ -18,6 +18,10 @@ Instead of guessing, it tells you *why* you fit — and when there isn't enough 
 
 ## Overview
 
+Eligibility V2 prioritizes German master's admissions while retaining the existing local-first UI. Mandatory blockers take precedence over other matches; missing evidence and uncertain sources remain unresolved. Program data now supports requirement-level provenance, verification status, catalog versions and admission-semester validity. Existing demos remain illustrative, never verified university requirements.
+
+See [decision rules](DECISION_RULES.md) and the [architecture audit and verified-data ingestion plan](docs/ARCHITECTURE_V2.md). User-reviewed document excerpts establish recorded facts, not credential authenticity or an admission guarantee.
+
 Applicants comparing international programs face scattered requirements and vague "am I qualified?" answers. Admission Fit Checker turns an uploaded transcript or CV into a structured academic profile, models each program's requirements as data, and runs a transparent fit check that returns one of four honest verdicts — with the evidence behind each decision.
 
 Everything runs in the browser. No backend, no login, no server database.
@@ -34,16 +38,16 @@ Everything runs in the browser. No backend, no login, no server database.
 
 | Verdict | Meaning |
 | --- | --- |
-| 🟢 **Strong fit** | Profile matches the stated requirements well. |
-| 🟡 **Possible but risky** | May qualify, but some requirements are weak or unclear. |
-| 🔴 **Not recommended** | One or more core requirements do not appear to be met. |
+| **Modeled requirements met** | All mandatory rules have supporting reviewed evidence and verified source metadata. No admission guarantee. |
+| **Conditional route** | An explicitly sourced conditional route applies; obligations remain. |
+| **Mandatory blocker** | At least one mandatory rule is confirmed unmet. Other matches cannot offset it. |
 | ⚪ **Not enough data** | Not enough profile or program data to judge fit yet. |
 
 ## What I Designed
 
 - **Academic profile extraction workflow** — upload a transcript, diploma, CV, or language certificate (PDF), parse it client-side, and auto-fill structured fields.
 - **Program requirement modeling** — each program's admission rules are stored as typed, structured requirements (degree, field, ECTS, language level, documents), each backed by source text.
-- **Conservative fit scoring** — decisive checks (degree, field, ECTS, language) drive the verdict; informational checks (GPA, documents) never inflate it.
+- **Explainable eligibility rules** — degree, exact accepted fields, total/subject ECTS, certificate types and scores are evaluated with explicit evidence. Unsupported mandatory GPA, recognition and document requirements remain unresolved.
 - **Human review before profile save** — extracted fields are always editable and are only persisted when the user confirms.
 - **Separation between user documents and program requirements** — personal document text and program data are modeled and stored independently.
 - **BYOK AI flow** — users bring their own OpenAI-compatible key; the app degrades gracefully to local heuristics when none is set.
@@ -71,7 +75,7 @@ The AI layer is deliberately constrained so the product stays trustworthy:
 - **AI extracts and summarizes only.** It reads document text into structured fields and answers questions strictly from a single program's own information. It does not invent requirements, deadlines, or fees.
 - **The fit verdict is conservative.** Scoring favors caution: unclear or unmet decisive requirements pull the verdict down rather than up.
 - **Uncertain requirements become risks or `not_enough_data`.** Missing evidence is surfaced explicitly instead of being filled with assumptions.
-- **The user reviews the profile before analysis.** Extracted data is human-verified before it feeds any fit check.
+- **The user reviews the profile before analysis.** User review confirms transcription; it does not authenticate documents or establish university recognition.
 
 ## Run Locally
 
@@ -86,13 +90,22 @@ Build:
 npm run build
 ```
 
+Validation (Node 20+ recommended):
+
+```bash
+npm test
+npm run typecheck
+```
+
+Tests use synthetic fixtures and Node's built-in test runner; no test framework dependency is required.
+
 ## Privacy
 
 Your profile, document text, and BYOK settings stay in the browser. If AI is enabled, document/profile text and program text may be sent to your selected provider **only** when you run extraction or ask a question. Avoid sensitive documents on shared devices.
 
 ## Future Improvements
 
-- OCR for scanned PDFs and screenshots
+- German OCR and page-level extraction coverage
 - Smarter requirement parsing from pasted admission text
 - Country-aware grade/GPA normalization
 - Exportable fit reports

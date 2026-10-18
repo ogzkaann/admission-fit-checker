@@ -6,8 +6,8 @@ Admission Fit Checker helps prospective students compare their academic profile 
 
 ## Audience
 
-- Prospective bachelor's, master's, and PhD applicants.
-- Students comparing multiple international programs.
+- German master's applicants are the initial priority.
+- Bachelor's and Ausbildung pathways are planned for later, with separate rule inventories.
 - Anyone who wants a quick, evidence-based read on how their profile lines up with a program's stated requirements.
 
 ## MVP Screens
@@ -22,13 +22,13 @@ Admission Fit Checker helps prospective students compare their academic profile 
 
 - **Academic profile extraction**: upload a transcript, diploma, CV, or language certificate (PDF), auto-extract fields, review, and save locally.
 - **Program requirement modeling**: each program carries structured requirements (degree, field, ECTS, language level, documents) backed by source text.
-- **Conservative admission fit scoring**: the profile is compared against a program's requirements to produce one of four verdicts.
+- **Explainable eligibility rules**: reviewed profile evidence is compared against semester-specific, source-backed requirements. Mandatory blockers cannot be offset by other matches.
 
 ## Fit Verdicts
 
-- Strong fit
-- Possible but risky
-- Not recommended
+- Modeled requirements met (not guaranteed admission)
+- Conditional route explicitly supported by the source
+- Mandatory blocker
 - Not enough data
 
 ## Non-Goals

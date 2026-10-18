@@ -2,6 +2,8 @@ import { ChangeEvent, useEffect, useState } from "react";
 import { AlertCircle, BookOpenCheck, FileUp, Languages, Loader2, Plus, Save, Trash2, UserRound, Wand2 } from "lucide-react";
 import type {
   AcademicProfile,
+  AcademicCourse,
+  DegreeType,
   AppSettings,
   DocumentKind,
   ExtractedProfile,
@@ -19,6 +21,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../co
 import { Input } from "../components/ui/input";
 import { Select } from "../components/ui/select";
 import { Textarea } from "../components/ui/textarea";
+import { ProfileEvidenceEditor } from "../components/ProfileEvidenceEditor";
 
 const emptyProfile: AcademicProfile = {
   id: "local-profile",
@@ -51,6 +54,11 @@ function applyExtracted(profile: AcademicProfile, extracted: ExtractedProfile): 
       ? extracted.languageCertificates
       : profile.languageCertificates,
     extracted,
+    // Re-extraction changes the values. Previously reviewed evidence must be relinked.
+    evidence: undefined,
+    degreeType: undefined,
+    degreeCompleted: undefined,
+    reviewedAt: undefined,
   };
 }
 
@@ -97,7 +105,13 @@ export function ProfileBuilder({ settings, onSaved }: ProfileBuilderProps) {
   function update<K extends keyof AcademicProfile>(field: K, value: AcademicProfile[K]) {
     setSaved(false);
     setDirty(true);
-    setProfile((current) => ({ ...current, [field]: value }));
+    setProfile((current) => {
+      const evidence = { ...current.evidence };
+      if (field === "degree" || field === "degreeType" || field === "degreeCompleted") delete evidence.degree;
+      if (field === "field") delete evidence.field;
+      if (field === "ects") delete evidence.ects;
+      return { ...current, [field]: value, ...(field === "evidence" ? {} : { evidence }), reviewedAt: undefined };
+    });
   }
 
   function updateCertificate(index: number, patch: Partial<LanguageCertificate>) {
@@ -105,7 +119,7 @@ export function ProfileBuilder({ settings, onSaved }: ProfileBuilderProps) {
     setSaved(false);
     setProfile((current) => ({
       ...current,
-      languageCertificates: current.languageCertificates.map((cert, i) => (i === index ? { ...cert, ...patch } : cert)),
+      languageCertificates: current.languageCertificates.map((cert, i) => (i === index ? { ...cert, evidence: undefined, ...patch } : cert)),
     }));
   }
 
@@ -181,10 +195,21 @@ export function ProfileBuilder({ settings, onSaved }: ProfileBuilderProps) {
   }
 
   async function handleSave() {
-    await saveProfile(profile);
-    setSaved(true);
-    setDirty(false);
-    onSaved();
+    try {
+      await saveProfile({ ...profile, reviewedAt: new Date().toISOString() });
+      setSaved(true);
+      setDirty(false);
+      setMessage("");
+      onSaved();
+    } catch {
+      setMessage("Check the profile fields. Linked evidence needs a document and a nonempty excerpt; credits and scores must be nonnegative numbers.");
+    }
+  }
+
+  function updateCourse(id: string, patch: Partial<AcademicCourse>) {
+    update("academicCourses", (profile.academicCourses ?? []).map((course) => course.id === id ? { ...course, evidence: undefined, ...patch } : course));
+    update("courseEquivalences", []);
+    update("transcriptComplete", false);
   }
 
   return (
@@ -318,6 +343,23 @@ export function ProfileBuilder({ settings, onSaved }: ProfileBuilderProps) {
               Graduation date
               <Input placeholder="e.g. 2024 or 06/2024" value={profile.graduationDate ?? ""} onChange={(event) => update("graduationDate", event.target.value)} />
             </label>
+            <label className="grid gap-2 text-sm font-medium">
+              Prior degree level
+              <Select aria-label="Prior degree level" value={profile.degreeType ?? ""} onChange={(event) => update("degreeType", event.target.value ? event.target.value as DegreeType : undefined)}>
+                <option value="">Unknown / not reviewed</option><option value="bachelor">Bachelor</option><option value="master">Master</option><option value="phd">PhD</option><option value="other">Other</option>
+              </Select>
+            </label>
+            <label className="grid gap-2 text-sm font-medium">
+              Degree completion
+              <Select aria-label="Degree completion" value={profile.degreeCompleted === undefined ? "" : String(profile.degreeCompleted)} onChange={(event) => update("degreeCompleted", event.target.value === "" ? undefined : event.target.value === "true")}>
+                <option value="">Unknown / not reviewed</option><option value="true">Completed</option><option value="false">Not yet completed</option>
+              </Select>
+            </label>
+          </div>
+
+          <p className="text-sm leading-6 text-muted-foreground">Link supporting excerpts for degree level and completion, field, and total ECTS. Saving confirms your review of the recorded information, not document authenticity or recognition by a university.</p>
+          <div className="grid gap-4 md:grid-cols-3">
+            {(["degree", "field", "ects"] as const).map((field) => <ProfileEvidenceEditor key={field} label={field === "ects" ? "Total ECTS" : field === "degree" ? "Degree and completion" : "Field of study"} documents={documents} value={profile.evidence?.[field]} onChange={(value) => update("evidence", { ...profile.evidence, [field]: value })} />)}
           </div>
 
           <div className="grid gap-2">
@@ -334,11 +376,19 @@ export function ProfileBuilder({ settings, onSaved }: ProfileBuilderProps) {
               </p>
             ) : (
               profile.languageCertificates.map((cert, index) => (
-                <div key={index} className="grid gap-2 sm:grid-cols-[1fr_1fr_1fr_1fr_auto]">
+                <div key={index} className="grid min-w-0 gap-2 sm:grid-cols-2">
                   <Input placeholder="Language" value={cert.language} onChange={(event) => updateCertificate(index, { language: event.target.value })} />
                   <Input placeholder="Provider (telc, IELTS...)" value={cert.provider ?? cert.test ?? ""} onChange={(event) => updateCertificate(index, { provider: event.target.value })} />
                   <Input placeholder="Level (B2, C1...)" value={cert.level ?? ""} onChange={(event) => updateCertificate(index, { level: event.target.value })} />
                   <Input placeholder="Date" value={cert.date ?? ""} onChange={(event) => updateCertificate(index, { date: event.target.value })} />
+                  <Input aria-label={`Certificate ${index + 1} test type`} placeholder="Exact test type (e.g. IELTS Academic)" value={cert.test ?? ""} onChange={(event) => updateCertificate(index, { test: event.target.value })} />
+                  <Input aria-label={`Certificate ${index + 1} overall score`} type="number" min="0" step="any" placeholder="Overall score" value={cert.score ?? ""} onChange={(event) => updateCertificate(index, { score: event.target.value === "" ? undefined : Number(event.target.value) })} />
+                  {(["reading", "writing", "listening", "speaking"] as const).map((component) => <Input key={component} aria-label={`Certificate ${index + 1} ${component} score`} type="number" min="0" step="any" placeholder={`${component} score`} value={cert.componentScores?.[component] ?? ""} onChange={(event) => {
+                    const scores = { ...cert.componentScores };
+                    if (event.target.value === "") delete scores[component]; else scores[component] = Number(event.target.value);
+                    updateCertificate(index, { componentScores: scores });
+                  }} />)}
+                  <div className="sm:col-span-2"><ProfileEvidenceEditor label={`Certificate ${index + 1}`} documents={documents} value={cert.evidence} onChange={(evidence) => updateCertificate(index, { evidence })} /></div>
                   <Button variant="ghost" size="icon" onClick={() => removeCertificate(index)} aria-label="Remove certificate">
                     <Trash2 className="h-4 w-4" />
                   </Button>
@@ -355,6 +405,21 @@ export function ProfileBuilder({ settings, onSaved }: ProfileBuilderProps) {
               onChange={(event) => update("courses", event.target.value.split("\n").map((line) => line.trim()).filter(Boolean))}
             />
           </label>
+
+          <div className="grid gap-3">
+            <div className="flex flex-wrap items-center justify-between gap-2">
+              <span className="text-sm font-medium">Course credits from transcript</span>
+              <Button variant="outline" size="sm" onClick={() => { update("academicCourses", [...(profile.academicCourses ?? []), { id: crypto.randomUUID(), title: "" }]); update("transcriptComplete", false); }}><Plus className="h-4 w-4" />Add course</Button>
+            </div>
+            <p className="text-xs leading-5 text-muted-foreground">Subject credits need a documented equivalence decision for the specific program and semester. A similar course title does not prove equivalence.</p>
+            {(profile.academicCourses ?? []).map((course, index) => <div key={course.id} className="grid min-w-0 gap-3 border-b border-black/5 pb-4 sm:grid-cols-2">
+              <Input aria-label={`Course ${index + 1} title`} placeholder="Course title" value={course.title} onChange={(event) => updateCourse(course.id, { title: event.target.value })} />
+              <Input aria-label={`Course ${index + 1} ECTS`} type="number" min="0" step="any" placeholder="ECTS" value={course.ects ?? ""} onChange={(event) => updateCourse(course.id, { ects: event.target.value === "" ? undefined : Number(event.target.value) })} />
+              <div className="sm:col-span-2"><ProfileEvidenceEditor label={`Course ${index + 1}`} documents={documents} value={course.evidence} onChange={(evidence) => updateCourse(course.id, { evidence })} /></div>
+              <Button variant="ghost" size="sm" className="w-fit" onClick={() => { update("academicCourses", profile.academicCourses?.filter((item) => item.id !== course.id)); update("courseEquivalences", []); update("transcriptComplete", false); }}><Trash2 className="h-4 w-4" />Remove course</Button>
+            </div>)}
+            <label className="flex items-start gap-2 text-sm"><input type="checkbox" className="mt-1" checked={profile.transcriptComplete ?? false} onChange={(event) => update("transcriptComplete", event.target.checked)} />I have reviewed and listed every course in the transcript.</label>
+          </div>
 
           <label className="grid gap-2 text-sm font-medium">
             Work experience

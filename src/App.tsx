@@ -116,6 +116,8 @@ export default function App() {
                 return (
                   <Button
                     key={item.id}
+                    aria-label={item.label}
+                    title={item.label}
                     variant={view === item.id ? "default" : "ghost"}
                     size="sm"
                     onClick={() => goToView(item.id)}
@@ -132,7 +134,7 @@ export default function App() {
               <Sparkles className="h-3.5 w-3.5" />
               {settings.apiKey ? settings.providerName : "No API key"}
             </Badge>
-            <Button variant="outline" size="sm" onClick={() => setSettingsOpen(true)}>
+            <Button variant="outline" size="sm" aria-label="Settings" onClick={() => setSettingsOpen(true)}>
               <KeyRound className="h-4 w-4" />
               <span className="hidden lg:inline">Settings</span>
             </Button>

@@ -70,9 +70,9 @@ export function ProgramCard({ program, onOpen }: ProgramCardProps) {
         <span className="absolute bottom-3 left-3 inline-flex items-center rounded-md bg-primary px-2.5 py-1 text-xs font-bold uppercase tracking-wide text-primary-foreground shadow">
           {degreeShort[program.degreeType]}
         </span>
-        {program.isDemo ? (
+        {program.isDemo || program.origin === "demo" ? (
           <span className="absolute bottom-3 right-3 rounded-full bg-white/85 px-2.5 py-0.5 text-[11px] font-semibold text-navy">
-            Demo
+            Illustrative demo
           </span>
         ) : null}
       </div>
@@ -98,7 +98,7 @@ export function ProgramCard({ program, onOpen }: ProgramCardProps) {
         <div className="mt-auto flex items-center justify-between border-t border-black/5 pt-3 text-sm">
           <span className="inline-flex items-center gap-1.5 text-muted-foreground">
             <CalendarDays className="h-4 w-4" />
-            {program.deadline ?? "Rolling"}
+            {program.deadline ?? "Deadline unknown"}
           </span>
           <span className="font-semibold text-foreground">{program.fee ?? "—"}</span>
         </div>

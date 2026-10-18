@@ -1,4 +1,7 @@
 import { z } from "zod";
+import { degreeTypeSchema, profileEvidenceSchema, semesterSchema, sourceEvidenceSchema, timestampSchema } from "./eligibilitySchemas";
+
+export { programSchema } from "./eligibilitySchemas";
 
 export const languageCertificateSchema = z.object({
   language: z.string(),
@@ -6,6 +9,8 @@ export const languageCertificateSchema = z.object({
   provider: z.string().optional(),
   level: z.string().optional(),
   date: z.string().optional(),
+  score: z.number().finite().nonnegative().optional(),
+  componentScores: z.record(z.number().finite().nonnegative()).optional(),
 });
 
 export const extractedProfileSchema = z.object({
@@ -31,12 +36,22 @@ export const academicProfileSchema = z.object({
   ects: z.string().optional(),
   graduationDate: z.string().optional(),
   courses: z.array(z.string()).default([]),
-  languageCertificates: z.array(languageCertificateSchema).default([]),
+  languageCertificates: z.array(languageCertificateSchema.extend({ evidence: profileEvidenceSchema.optional() })).default([]),
   workExperience: z.string().default(""),
   targetCountry: z.string().optional(),
   targetCity: z.string().optional(),
   extracted: extractedProfileSchema.optional(),
   updatedAt: z.string(),
+  degreeType: degreeTypeSchema.optional(),
+  degreeCompleted: z.boolean().optional(),
+  evidence: z.object({ degree: profileEvidenceSchema.optional(), field: profileEvidenceSchema.optional(), ects: profileEvidenceSchema.optional() }).optional(),
+  academicCourses: z.array(z.object({ id: z.string().min(1), title: z.string().min(1), ects: z.number().finite().nonnegative().optional(), evidence: profileEvidenceSchema.optional() })).optional(),
+  courseEquivalences: z.array(z.object({
+    courseId: z.string(), programId: z.string(), catalogVersion: z.string(), requirementId: z.string(),
+    semester: semesterSchema, decision: z.enum(["accepted", "rejected", "pending"]), evidence: sourceEvidenceSchema.optional(),
+  })).optional(),
+  transcriptComplete: z.boolean().optional(),
+  reviewedAt: timestampSchema.optional(),
 });
 
 export const appSettingsSchema = z.object({

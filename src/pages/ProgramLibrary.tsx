@@ -75,7 +75,7 @@ export function ProgramLibrary({ programs, profile, documents, settings, onAddPr
             Browse university programs.
           </h2>
           <p className="mt-3 max-w-2xl text-base leading-7 text-muted-foreground">
-            Start with curated demo programs, filter by language and country, or add your own admission text for a fit check.
+            Explore illustrative demo programs or add your own admission text. Demo requirements, deadlines, and fees are not verified university information.
           </p>
         </div>
         <Button variant="outline" onClick={onAddProgram}>

@@ -1,248 +1,265 @@
 import type {
-  AcademicProfile,
-  EvidenceCitation,
-  FitAnalysis,
-  FitVerdict,
-  Program,
-  ProgramRequirement,
-  RequirementCheck,
-  StoredDocument,
+  AcademicProfile, AdmissionSemester, EligibilityRule, EvidenceCitation, FitAnalysis,
+  FitVerdict, Program, ProfileEvidence, ProgramRequirement, RequirementCheck, SourceEvidence, StoredDocument,
 } from "../types";
-import { verdictDescriptions } from "../labels";
-import { profileHasAcademicData } from "../profileStatus";
+import { academicProfileSchema } from "../schemas";
+import { eligibilityRuleSchema, programSchema, semesterSchema, sourceEvidenceSchema } from "../eligibilitySchemas";
+import { normalizeProgram, rulesForRequirement } from "../programCompatibility";
 
-const CEFR_RANK: Record<string, number> = {
-  none: 0,
-  a1: 1,
-  a2: 2,
-  b1: 3,
-  b2: 4,
-  c1: 5,
-  c2: 6,
-};
+export interface AnalysisOptions {
+  semester?: AdmissionSemester;
+  asOf?: string; // injectable clock for reproducible reports/tests
+}
 
-function cefrRank(level?: string): number | undefined {
-  if (!level) return undefined;
-  const match = level.toLowerCase().match(/[abc][12]/);
+type State = "met" | "not_met" | "unknown";
+interface Evaluation {
+  status: State;
+  comparison: State;
+  reason: RequirementCheck["reason"];
+  detail: string;
+  evidence: ProfileEvidence[];
+}
+interface Context {
+  profile?: AcademicProfile;
+  documents: StoredDocument[];
+  program: Program;
+  requirement: ProgramRequirement;
+  semester?: AdmissionSemester;
+  now: number;
+}
+
+const normalize = (value?: string) => (value ?? "").normalize("NFKC").trim().toLocaleLowerCase("en").replace(/\s+/g, " ");
+const unique = (items: string[]) => [...new Set(items)];
+const rank = (value?: string) => ["a1", "a2", "b1", "b2", "c1", "c2"].indexOf(normalize(value));
+const finite = (value: unknown): value is number => typeof value === "number" && Number.isFinite(value) && value >= 0;
+
+function containsValue(quote: string, value: string): boolean {
+  if (/^\d+(?:\.\d+)?$/.test(value)) {
+    return (quote.match(/\d+(?:[.,]\d+)?/g) ?? []).some((token) => Number(token.replace(",", ".")) === Number(value));
+  }
+  return quote.includes(normalize(value));
+}
+
+// Do not convert foreign credits, ranges, or approximate numbers to ECTS.
+export function parseEcts(value?: string): number | undefined {
+  const match = value?.trim().match(/^(\d+(?:[.,]\d+)?)\s*(?:ECTS)?$/i);
   if (!match) return undefined;
-  return CEFR_RANK[match[0]];
+  const number = Number(match[1].replace(",", "."));
+  return finite(number) ? number : undefined;
 }
 
-function parseNumber(value?: string): number | undefined {
-  if (!value) return undefined;
-  const match = value.replace(",", ".").match(/\d+(\.\d+)?/);
-  return match ? Number(match[0]) : undefined;
+function unknown(detail: string, reason: Evaluation["reason"] = "missing_evidence", comparison: State = "unknown"): Evaluation {
+  return { status: "unknown", comparison, reason, detail, evidence: [] };
 }
 
-function normalize(value?: string): string {
-  return (value ?? "").toLowerCase();
+function validProfileEvidence(evidence: ProfileEvidence | undefined, context: Context, values: string[] = []): evidence is ProfileEvidence {
+  if (!evidence || !Number.isFinite(Date.parse(evidence.reviewedAt)) || Date.parse(evidence.reviewedAt) > context.now) return false;
+  const doc = context.documents.find((item) => item.id === evidence.documentId && item.status !== "failed");
+  const quote = normalize(evidence.quote);
+  return Boolean(doc && quote && normalize(doc.text).includes(quote) && values.every((value) => containsValue(quote, value)));
 }
 
-function checkEcts(profile: AcademicProfile, req: ProgramRequirement, missing: string[]): RequirementCheck {
-  const have = parseNumber(profile.ects);
-  if (have === undefined) {
-    missing.push("ECTS credits");
-    return check(req, "unknown", true, `Program expects at least ${req.minEcts} ECTS. Your ECTS total is not on file.`);
-  }
-  return have >= (req.minEcts as number)
-    ? check(req, "met", true, `You have ~${have} ECTS, meeting the ${req.minEcts}+ ECTS expectation.`)
-    : check(req, "not_met", true, `You have ~${have} ECTS, below the ${req.minEcts} ECTS expectation.`);
+function documented(status: Exclude<State, "unknown">, detail: string, evidence: ProfileEvidence | undefined, context: Context, values: string[] = []): Evaluation {
+  if (!validProfileEvidence(evidence, context, values)) return unknown(`${detail} Supporting document text must be linked and reviewed.`, status === "not_met" ? "potential_mismatch" : "missing_evidence", status);
+  return { status, comparison: status, reason: "confirmed", detail, evidence: [evidence] };
 }
 
-function checkDegree(profile: AcademicProfile, req: ProgramRequirement, missing: string[]): RequirementCheck {
-  const degreeText = normalize(profile.degree);
-  if (!degreeText) {
-    missing.push("Prior degree");
-    return check(req, "unknown", true, `Program expects a ${req.degreeType} degree. No prior degree is on file.`);
-  }
-  return degreeText.includes(req.degreeType as string)
-    ? check(req, "met", true, `Your degree matches the required ${req.degreeType} level.`)
-    : check(req, "unknown", true, `Program expects a ${req.degreeType} degree. Verify your degree "${profile.degree}" qualifies.`);
-}
-
-function checkField(profile: AcademicProfile, req: ProgramRequirement, missing: string[]): RequirementCheck {
-  const field = normalize(req.field);
-  const haystack = [profile.field, ...(profile.courses ?? [])].map(normalize).join(" ");
-  if (!haystack.trim()) {
-    missing.push("Field of study");
-    return check(req, "unknown", true, `Program expects a background in ${req.field}. Your field of study is not on file.`);
-  }
-  const terms = field.split(/[^a-z0-9]+/).filter((term) => term.length > 2);
-  const matched = terms.some((term) => haystack.includes(term));
-  return matched
-    ? check(req, "met", true, `Your background appears related to ${req.field}.`)
-    : check(req, "not_met", true, `Program expects a background in ${req.field}, which was not detected in your profile.`);
-}
-
-function checkLanguage(profile: AcademicProfile, req: ProgramRequirement, missing: string[]): RequirementCheck {
-  const required = cefrRank(req.minLevel);
-  const cert = profile.languageCertificates.find((item) => normalize(item.language) === normalize(req.language));
-  if (!cert) {
-    missing.push(`${req.language} certificate`);
-    return check(req, "unknown", true, `Program requires ${req.language} at ${req.minLevel ?? "a stated level"}. No matching certificate is on file.`);
-  }
-  const have = cefrRank(cert.level);
-  if (required === undefined || have === undefined) {
-    return check(req, "unknown", true, `You listed ${req.language} (${cert.level ?? cert.test ?? "unspecified"}). Verify it meets ${req.minLevel ?? "the requirement"}.`);
-  }
-  return have >= required
-    ? check(req, "met", true, `Your ${req.language} level (${cert.level}) meets the ${req.minLevel} requirement.`)
-    : check(req, "not_met", true, `Your ${req.language} level (${cert.level}) is below the ${req.minLevel} requirement.`);
-}
-
-function checkDocument(documents: StoredDocument[], req: ProgramRequirement): RequirementCheck {
-  const hasAny = documents.length > 0;
-  return check(
-    req,
-    hasAny ? "unknown" : "unknown",
-    false,
-    hasAny
-      ? `Application document: ${req.label}. Confirm you can provide it.`
-      : `Application document: ${req.label}.`,
-  );
-}
-
-function check(
-  req: ProgramRequirement,
-  status: RequirementCheck["status"],
-  decisive: boolean,
-  detail: string,
-): RequirementCheck {
-  return { requirementId: req.id, label: req.label, kind: req.kind, status, decisive, detail };
-}
-
-function evaluateRequirement(
-  profile: AcademicProfile,
-  documents: StoredDocument[],
-  req: ProgramRequirement,
-  missing: string[],
-): RequirementCheck {
-  if (req.minEcts !== undefined) return checkEcts(profile, req, missing);
-  if (req.language && req.minLevel) return checkLanguage(profile, req, missing);
-  if (req.degreeType) return checkDegree(profile, req, missing);
-  if (req.field) return checkField(profile, req, missing);
-  if (req.kind === "document") return checkDocument(documents, req);
-  // Informational (e.g. GPA where cross-scale comparison isn't claimed).
-  return check(req, "unknown", false, req.minGpa ? `${req.label} (GPA scales vary — verify manually).` : req.label);
-}
-
-function buildCitations(program: Program): EvidenceCitation[] {
-  const fromRequirements = program.requirements
-    .filter((req) => req.sourceText)
-    .map((req) => ({
-      id: `${program.id}-${req.id}`,
-      programId: program.id,
-      label: req.label,
-      snippet: req.sourceText as string,
-      sourceUrl: program.sourceUrl,
-      lastChecked: program.lastChecked,
-    }));
-
-  if (fromRequirements.length > 0) return fromRequirements;
-
-  return [
-    {
-      id: `${program.id}-overview`,
-      programId: program.id,
-      label: `${program.programName} — ${program.university}`,
-      snippet: program.description || program.admissionText || "No source text on file for this program.",
-      sourceUrl: program.sourceUrl,
-      lastChecked: program.lastChecked,
-    },
-  ];
-}
-
-interface VerdictOutcome {
-  verdict: FitVerdict;
-  score: number;
-  risks: string[];
-}
-
-// Language-aware aggregation over decisive checks. A profile that meets the
-// academic requirements but is only missing a language certificate should be
-// "possible but risky" (language unverified), never "not enough data".
-function decideVerdict(decisive: RequirementCheck[]): VerdictOutcome {
-  const total = decisive.length;
-  if (total === 0) return { verdict: "not_enough_data", score: 0, risks: [] };
-
-  const nonLang = decisive.filter((c) => c.kind !== "language");
-  const lang = decisive.filter((c) => c.kind === "language");
-
-  const met = decisive.filter((c) => c.status === "met").length;
-  const notMet = decisive.filter((c) => c.status === "not_met").length;
-  const score = met / total;
-
-  const risks: string[] = [];
-  const languageMissing = lang.some((c) => c.status === "unknown");
-  const languageBelow = lang.some((c) => c.status === "not_met");
-  if (languageMissing) risks.push("Language requirement is not yet verified.");
-  if (languageBelow) risks.push("Your language level appears below the requirement.");
-
-  // If we know nothing about the academic (non-language) requirements, we can't
-  // judge fit yet.
-  const nonLangKnown = nonLang.filter((c) => c.status !== "unknown").length;
-  if (nonLang.length > 0 && nonLangKnown === 0) {
-    return { verdict: "not_enough_data", score, risks };
-  }
-
-  if (notMet >= 2) return { verdict: "not_recommended", score, risks };
-
-  if (notMet === 0) {
-    const nonLangUnknown = nonLang.filter((c) => c.status === "unknown").length;
-    if (languageMissing) return { verdict: "possible_risky", score, risks };
-    if (nonLangUnknown === 0 && met >= Math.max(2, Math.ceil(total * 0.6))) {
-      return { verdict: "strong_fit", score, risks };
-    }
-    return { verdict: "possible_risky", score, risks };
-  }
-
-  // Exactly one requirement not met.
-  return { verdict: "possible_risky", score, risks };
-}
-
-function summarize(verdict: FitVerdict, program: Program, missing: string[], risks: string[]): string {
-  const base = verdictDescriptions[verdict];
-  if (verdict === "not_enough_data" && missing.length > 0) {
-    return `${base} Add the following to your profile for a better check: ${Array.from(new Set(missing)).join(", ")}.`;
-  }
-  if (risks.length > 0) {
-    return `${base} ${risks.join(" ")}`;
-  }
-  return `${base} Always verify against ${program.university}'s official page before applying.`;
-}
-
-export function analyzeFit(
-  profile: AcademicProfile | undefined,
-  documents: StoredDocument[],
-  program: Program,
-): FitAnalysis {
-  const missing: string[] = [];
-
-  const emptyProfile = !profile || !profileHasAcademicData(profile);
-
-  const checks: RequirementCheck[] = emptyProfile
-    ? []
-    : program.requirements.map((req) => evaluateRequirement(profile as AcademicProfile, documents, req, missing));
-
-  const decisive = checks.filter((c) => c.decisive);
-  const outcome: VerdictOutcome = emptyProfile
-    ? { verdict: "not_enough_data", score: 0, risks: [] }
-    : decideVerdict(decisive);
-
-  if (emptyProfile) {
-    missing.push("Academic profile (degree, field, ECTS, language)");
-  }
-
+function all(evaluations: Evaluation[]): Evaluation {
+  const failure = evaluations.find((item) => item.status === "not_met");
+  const unresolved = evaluations.find((item) => item.status === "unknown");
   return {
-    programId: program.id,
-    verdict: outcome.verdict,
-    score: outcome.score,
-    summary: summarize(outcome.verdict, program, missing, outcome.risks),
-    checks,
-    citations: buildCitations(program),
-    risks: outcome.risks,
-    missingProfileData: Array.from(new Set(missing)),
-    needsVerification: program.origin === "demo" || decisive.some((c) => c.status === "unknown") || emptyProfile,
-    createdAt: new Date().toISOString(),
+    status: failure ? "not_met" : unresolved ? "unknown" : "met",
+    comparison: evaluations.some((item) => item.comparison === "not_met") ? "not_met" : evaluations.some((item) => item.comparison === "unknown") ? "unknown" : "met",
+    reason: failure?.reason ?? unresolved?.reason ?? "confirmed",
+    detail: unique(evaluations.map((item) => item.detail)).join(" "), evidence: evaluations.flatMap((item) => item.evidence),
+  };
+}
+
+function any(evaluations: Evaluation[]): Evaluation {
+  return evaluations.find((item) => item.status === "met") ?? evaluations.find((item) => item.status === "unknown") ?? evaluations[0] ?? unknown("No supported alternatives are specified.", "unsupported_rule");
+}
+
+// Verification is editorial metadata, not an automatic claim that a URL is official.
+// The one-year freshness ceiling is product policy, additional to semester validity.
+function sourceIssues(sources: SourceEvidence[] | undefined, semester: AdmissionSemester | undefined, now: number): string[] {
+  if (!sources?.length) return ["No source evidence is available."];
+  const issues: string[] = [];
+  for (const source of sources) {
+    if (!sourceEvidenceSchema.safeParse(source).success) { issues.push("Source evidence is malformed."); continue; }
+    if (source.status !== "verified" || source.sourceType !== "official" || !source.reviewedBy?.trim()) issues.push("Source has not been verified by a named reviewer against official information.");
+    const checked = Date.parse(source.lastChecked ?? "");
+    if (!Number.isFinite(checked) || checked > now || now - checked > 366 * 86400000) issues.push("Source check date is missing, invalid, in the future, or older than one year.");
+    if (!semester || !source.validFor?.includes(semester)) issues.push("Source validity is not established for the selected admission semester.");
+  }
+  return unique(issues);
+}
+
+function evaluate(rule: EligibilityRule, context: Context): Evaluation {
+  if (!eligibilityRuleSchema.safeParse(rule).success) return unknown("This rule is malformed or unsupported and requires review.", "unsupported_rule");
+  const { profile, requirement, program } = context;
+  if (rule.type === "manual") return unknown(rule.explanation, "unsupported_rule");
+  if (rule.type === "document") {
+    const doc = context.documents.find((item) => item.kind === rule.documentKind && item.status !== "failed");
+    return unknown(doc ? `A ${rule.documentKind} is uploaded; completeness and certification still require review.` : `Required ${rule.documentKind} is not on file.`);
+  }
+  if (!profile) return unknown("Save a reviewed academic profile with supporting evidence.");
+  if (rule.type === "degree") {
+    if (!profile.degreeType || !profile.degree?.trim()) return unknown("Record the degree title and select the prior degree level; free-text titles are not classified automatically.");
+    if (!rule.accepted.includes(profile.degreeType)) return documented("not_met", `Prior degree level ${profile.degreeType} is outside the accepted levels: ${rule.accepted.join(", ")}.`, profile.evidence?.degree, context, [profile.degree]);
+    if (rule.completionRequired && profile.degreeCompleted === undefined) return unknown("Degree completion has not been confirmed.");
+    return documented(rule.completionRequired && !profile.degreeCompleted ? "not_met" : "met", rule.completionRequired && !profile.degreeCompleted ? "The required degree is not yet completed." : "The recorded degree level and completion meet this rule.", profile.evidence?.degree, context, [profile.degree]);
+  }
+  if (rule.type === "field") {
+    if (!profile.field?.trim()) return unknown("Field of study is missing.");
+    if (rule.accepted.some((field) => normalize(field) === normalize(profile.field))) return documented("met", `Recorded field matches an explicitly accepted field: ${profile.field}.`, profile.evidence?.field, context, [profile.field]);
+    if (!rule.exhaustive) return unknown(`Field "${profile.field}" is not an exact listed match. Related-field equivalence needs university review.`, "unsupported_equivalence", "not_met");
+    return documented("not_met", `Field "${profile.field}" is outside the explicitly exhaustive accepted list.`, profile.evidence?.field, context, [profile.field]);
+  }
+  if (rule.type === "total_ects") {
+    const credits = parseEcts(profile.ects);
+    if (credits === undefined) return unknown("An unambiguous total in ECTS is missing; other credit systems are not converted.");
+    return documented(credits >= rule.minimum ? "met" : "not_met", `Recorded total: ${credits} ECTS; required: ${rule.minimum} ECTS.`, profile.evidence?.ects, context, [String(credits)]);
+  }
+  if (rule.type === "subject_ects") {
+    const courses = profile.academicCourses ?? [];
+    if (!courses.length) return unknown(`Course-level credits and explicit equivalence decisions for ${rule.subject} are missing. Course names alone are not evidence of equivalence.`, "unsupported_equivalence");
+    if (new Set(courses.map((course) => course.id)).size !== courses.length) return unknown("Duplicate course IDs prevent reliable credit counting.", "unsupported_equivalence");
+    const excerpts = courses.filter((course) => course.evidence).map((course) => `${course.evidence!.documentId}:${normalize(course.evidence!.quote)}`);
+    if (new Set(excerpts).size !== excerpts.length) return unknown("Repeated course evidence may double count credits; provide distinct course excerpts.", "unsupported_equivalence");
+    let credits = 0;
+    let unresolved = !profile.transcriptComplete;
+    const evidence: ProfileEvidence[] = [];
+    for (const course of courses) {
+      const decisions = (profile.courseEquivalences ?? []).filter((item) => item.courseId === course.id && item.programId === program.id && item.requirementId === requirement.id && item.catalogVersion === program.catalogVersion && item.semester === context.semester);
+      if (!program.catalogVersion || decisions.length !== 1 || decisions[0].decision === "pending" || sourceIssues(decisions[0].evidence ? [decisions[0].evidence] : [], context.semester, context.now).length) { unresolved = true; continue; }
+      if (!finite(course.ects) || !validProfileEvidence(course.evidence, context, [course.title, String(course.ects)])) { unresolved = true; continue; }
+      if (decisions[0].decision === "rejected") { evidence.push(course.evidence); continue; }
+      const overlaps = (profile.courseEquivalences ?? []).some((item) => item.courseId === course.id && item.programId === program.id && item.catalogVersion === program.catalogVersion && item.semester === context.semester && item.requirementId !== requirement.id && item.decision === "accepted");
+      if (overlaps) { unresolved = true; continue; }
+      credits += course.ects;
+      evidence.push(course.evidence);
+    }
+    const detail = `Confirmed equivalent credits in ${rule.subject}: ${credits}; required: ${rule.minimum} ECTS.`;
+    if (credits >= rule.minimum) return { status: "met", comparison: "met", reason: "confirmed", detail, evidence };
+    if (unresolved) return unknown(`${detail} The transcript or equivalence decisions are incomplete; a shortfall cannot be confirmed.`, "unsupported_equivalence");
+    return { status: "not_met", comparison: "not_met", reason: "confirmed", detail: `${detail} The complete reviewed course list falls short.`, evidence };
+  }
+  if (rule.type === "language") {
+    const certificates = profile.languageCertificates.filter((cert) => normalize(cert.language) === normalize(rule.language));
+    if (!certificates.length) return unknown(`No ${rule.language} certificate is on file. This is missing evidence, not a confirmed language failure.`);
+    return any(certificates.map((certificate) => any(rule.accepted.map((option) => {
+      const details: string[] = [];
+      const values: string[] = [];
+      let failed = false;
+      let missing = false;
+      if (option.test) {
+        if (!certificate.test?.trim()) return unknown(`Required certificate type: ${option.test}. The exact test is missing; scores cannot be compared across unspecified tests.`);
+        if (normalize(certificate.test) !== normalize(option.test)) return documented("not_met", `Certificate type ${certificate.test} is not the explicitly accepted ${option.test}.`, certificate.evidence, context, [certificate.test]);
+        values.push(certificate.test);
+        details.push(`Required certificate type: ${option.test}; recorded: ${certificate.test || "unspecified"}.`);
+      }
+      if (option.minLevel) {
+        const have = rank(certificate.level);
+        if (have < 0) missing = true;
+        else { failed ||= have < rank(option.minLevel); values.push(certificate.level!); }
+        details.push(`CEFR minimum ${option.minLevel}; recorded ${certificate.level || "unknown"}.`);
+      }
+      if (option.minScore !== undefined) {
+        if (!finite(certificate.score)) missing = true;
+        else { failed ||= certificate.score < option.minScore; values.push(String(certificate.score)); }
+        details.push(`Score minimum ${option.minScore}; recorded ${certificate.score ?? "unknown"}.`);
+      }
+      for (const [component, minimum] of Object.entries(option.componentMinimums ?? {})) {
+        const score = certificate.componentScores?.[component];
+        if (!finite(score)) missing = true;
+        else { failed ||= score < minimum; values.push(String(score)); }
+        details.push(`${component} minimum ${minimum}; recorded ${score ?? "unknown"}.`);
+      }
+      if (!failed && missing) return unknown(`${details.join(" ")} No test-to-CEFR or provider-to-test conversion is assumed.`);
+      return documented(failed ? "not_met" : "met", details.join(" "), certificate.evidence, context, values);
+    }))));
+  }
+  return unknown("Unsupported rule requires manual review.", "unsupported_rule");
+}
+
+function evaluateRequirement(context: Context, programIssues: string[]): RequirementCheck {
+  const req = context.requirement;
+  const mandatory = req.mandatory !== false;
+  const result = all(rulesForRequirement(req).map((rule) => evaluate(rule, context)));
+  const issues = unique([...programIssues, ...sourceIssues(req.evidence, context.semester, context.now)]);
+  let status: RequirementCheck["status"] = issues.length ? "unknown" : result.status;
+  let reason: RequirementCheck["reason"] = issues.length ? "source_uncertainty" : result.reason;
+  let detail = result.detail;
+  let evidence = result.evidence;
+  if (status !== "met" && req.conditionalAdmission) {
+    const condition = req.conditionalAdmission;
+    const conditionIssues = sourceIssues(condition.evidence, context.semester, context.now);
+    const alternative = evaluate(condition.alternative, context);
+    if (!issues.length && !conditionIssues.length && alternative.status === "met") {
+      status = "conditional"; reason = "conditional";
+      detail += ` Explicit conditional route: ${condition.description} ${alternative.detail}`;
+      evidence = [...evidence, ...alternative.evidence];
+    } else if (status === "not_met" && (conditionIssues.length || alternative.status === "unknown")) {
+      status = "unknown"; reason = "missing_evidence";
+      detail += ` A conditional route exists but cannot yet be established: ${condition.description} ${alternative.detail}`;
+      issues.push(...conditionIssues);
+    }
+  }
+  return {
+    requirementId: req.id, label: req.label, kind: req.kind, status, decisive: mandatory,
+    mandatory, hardBlocker: mandatory && status === "not_met", comparison: result.comparison, reason,
+    detail, sourceIssues: unique(issues), profileEvidence: evidence,
+  };
+}
+
+function citations(program: Program): EvidenceCitation[] {
+  return program.requirements.flatMap((req): EvidenceCitation[] => {
+    const evidence = [...(req.evidence ?? []), ...(req.conditionalAdmission?.evidence ?? [])];
+    if (evidence.length) return evidence.map((source, i) => ({ id: `${program.id}-${req.id}-${i}`, programId: program.id, label: req.label, snippet: source.quote, sourceUrl: /^https?:\/\//i.test(source.url) ? source.url : undefined, lastChecked: source.lastChecked, verificationStatus: source.status, locator: source.locator }));
+    return req.sourceText ? [{ id: `${program.id}-${req.id}`, programId: program.id, label: req.label, snippet: req.sourceText, sourceUrl: /^https?:\/\//i.test(program.sourceUrl ?? "") ? program.sourceUrl : undefined, verificationStatus: program.isDemo ? "demo" : "unverified" }] : [];
+  });
+}
+
+export function analyzeFit(profile: AcademicProfile | undefined, documents: StoredDocument[], input: Program, options: AnalysisOptions = {}): FitAnalysis {
+  const now = Date.parse(options.asOf ?? new Date().toISOString());
+  const program = normalizeProgram(input);
+  const issues: string[] = [];
+  if (!Number.isFinite(now)) issues.push("Analysis date is invalid.");
+  if (!programSchema.safeParse(program).success) issues.push("Program data is malformed or uses unsupported rules.");
+  if (!options.semester || !semesterSchema.safeParse(options.semester).success) issues.push("Select an admission semester to establish source validity.");
+  if (program.isDemo) issues.push("Illustrative demo data only. These are not verified university requirements.");
+  if (program.verificationStatus !== "verified") issues.push(`Program source status: ${program.verificationStatus}.`);
+  if (!program.validFor?.includes(options.semester!)) issues.push("Program validity is not established for this admission semester.");
+  issues.push(...sourceIssues(program.sources, options.semester, now));
+  const parsedProfile = academicProfileSchema.safeParse(profile);
+  const validProfile = parsedProfile.success ? parsedProfile.data as AcademicProfile : undefined;
+  const checks = program.requirements.map((requirement) => evaluateRequirement({ profile: validProfile, documents, program, requirement, semester: options.semester, now }, issues));
+  if (!program.requirementsComplete) issues.push("The requirement set has not been verified as complete; additional conditions may apply.");
+  if (!checks.length) issues.push("No admission requirements are modeled.");
+  for (const kind of new Set(program.requiredDocuments)) {
+    if (!program.requirements.some((req) => req.rule?.type === "document" && req.rule.documentKind === kind)) checks.push(evaluateRequirement({ profile: validProfile, documents, program, requirement: { id: `required-document-${kind}`, kind: "document", label: `Required document: ${kind}`, mandatory: true, rule: { type: "document", documentKind: kind } }, semester: options.semester, now }, issues));
+  }
+  const mandatory = checks.filter((check) => check.mandatory);
+  const blockers = mandatory.filter((check) => check.hardBlocker);
+  const sourceUncertainty = unique([...issues, ...checks.flatMap((check) => check.sourceIssues)]);
+  let verdict: FitVerdict;
+  if (blockers.length) verdict = "not_recommended";
+  else if (!mandatory.length || mandatory.some((check) => check.status === "unknown") || sourceUncertainty.length) verdict = "not_enough_data";
+  else if (mandatory.some((check) => check.status === "conditional")) verdict = "possible_risky";
+  else verdict = "strong_fit";
+  const summary = {
+    not_recommended: "At least one mandatory requirement is confirmed unmet against the reviewed evidence. Other matches cannot offset this blocker.",
+    not_enough_data: "Eligibility cannot be established. Resolve the missing evidence, uncertain equivalences, or source verification issues below.",
+    possible_risky: "An explicitly sourced conditional route applies. Outstanding conditions still need to be fulfilled and confirmed by the university.",
+    strong_fit: "All modeled mandatory requirements are supported by reviewed document evidence for this semester. This is not a guarantee of admission.",
+  }[verdict];
+  return {
+    engineVersion: 2, programId: program.id, verdict,
+    score: mandatory.length ? mandatory.filter((check) => check.status === "met").length / mandatory.length : 0,
+    summary, checks, citations: citations(program),
+    risks: checks.filter((check) => check.status === "not_met" || check.status === "conditional" || check.comparison === "not_met").map((check) => check.detail),
+    missingProfileData: unique(checks.filter((check) => check.status === "unknown" && check.reason !== "source_uncertainty" && check.reason !== "unsupported_rule").map((check) => check.label)),
+    needsVerification: verdict !== "strong_fit", createdAt: Number.isFinite(now) ? new Date(now).toISOString() : new Date().toISOString(),
+    semester: options.semester, sourceIssues: sourceUncertainty, illustrative: program.isDemo,
   };
 }

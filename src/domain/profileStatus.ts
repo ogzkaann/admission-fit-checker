@@ -21,6 +21,8 @@ export function profileHasAcademicData(profile?: AcademicProfile): boolean {
     hasText(profile.field) ||
     hasText(profile.ects) ||
     hasText(profile.gpa) ||
+    Boolean(profile.degreeType) ||
+    Boolean(profile.academicCourses?.length) ||
     profile.courses.length > 0 ||
     profile.languageCertificates.length > 0
   );
@@ -58,7 +60,7 @@ export function getProfileCompleteness(profile?: AcademicProfile): ProfileComple
         ? "partial"
         : "missing";
 
-  const language: Completeness = profile.languageCertificates.some((cert) => cert.language && cert.level)
+  const language: Completeness = profile.languageCertificates.some((cert) => hasText(cert.language) && (hasText(cert.level) || (hasText(cert.test) && typeof cert.score === "number" && Number.isFinite(cert.score) && cert.score >= 0)))
     ? "complete"
     : profile.languageCertificates.length > 0
       ? "partial"

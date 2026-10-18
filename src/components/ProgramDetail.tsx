@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 import { AlertCircle, CalendarDays, ExternalLink, GraduationCap, Languages, ListChecks, MapPin, Wallet } from "lucide-react";
-import type { AcademicProfile, AppSettings, FitAnalysis, Program, RequirementKind, StoredDocument } from "../domain/types";
+import type { AcademicProfile, AdmissionSemester, AppSettings, FitAnalysis, Program, RequirementKind, StoredDocument } from "../domain/types";
+import { AdmissionSemesterInput } from "./AdmissionSemesterInput";
 import { degreeTypeLabels, documentKindLabels, requirementKindLabels } from "../domain/labels";
 import { analyzeFit } from "../domain/fit/admissionFit";
 import { documentsHaveExtraction, profileHasAcademicData } from "../domain/profileStatus";
@@ -47,6 +48,7 @@ function RequirementGroup({ program }: { program: Program }) {
 
 export function ProgramDetail({ program, profile, documents, settings, open, onOpenChange }: ProgramDetailProps) {
   const [analysis, setAnalysis] = useState<FitAnalysis | null>(null);
+  const [semester, setSemester] = useState<AdmissionSemester>();
   const needsProfileReview = !profileHasAcademicData(profile) && documentsHaveExtraction(documents);
   const initials = useMemo(
     () =>
@@ -74,11 +76,13 @@ export function ProgramDetail({ program, profile, documents, settings, open, onO
               <Badge variant="outline">
                 {program.city}, {program.country}
               </Badge>
-              {program.isDemo ? <Badge variant="yellow">Demo data</Badge> : <Badge variant="outline">Added by you</Badge>}
+              <Badge variant="yellow">{program.isDemo || program.origin === "demo" ? "Illustrative demo" : `Source: ${program.verificationStatus ?? "unverified"}`}</Badge>
             </div>
             <p className="mt-3 text-sm leading-6 text-muted-foreground">{program.description}</p>
           </div>
         </div>
+
+        {program.isDemo || program.origin === "demo" ? <p className="rounded-2xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">All requirements, fees, and deadlines in this example are illustrative placeholders, not verified university admission information.</p> : null}
 
         <div className="grid gap-3 sm:grid-cols-3">
           <div className="flex items-start gap-3 rounded-2xl border border-black/5 bg-white p-4 shadow-sm">
@@ -130,13 +134,13 @@ export function ProgramDetail({ program, profile, documents, settings, open, onO
             <MapPin className="h-3.5 w-3.5" />
             {program.city}, {program.country}
           </span>
-          {program.sourceUrl ? (
+          {program.sourceUrl && /^https?:\/\//i.test(program.sourceUrl) ? (
             <a className="inline-flex items-center gap-1 text-accent hover:underline" href={program.sourceUrl} target="_blank" rel="noreferrer">
               <ExternalLink className="h-3.5 w-3.5" />
-              Official source
+              Source link (check verification)
             </a>
           ) : null}
-          {program.lastChecked ? <span>Last checked {program.lastChecked}</span> : null}
+          {program.verificationStatus === "verified" && program.lastChecked ? <span>Last checked {program.lastChecked}</span> : null}
         </div>
 
         {needsProfileReview ? (
@@ -146,8 +150,9 @@ export function ProgramDetail({ program, profile, documents, settings, open, onO
           </div>
         ) : null}
 
+        <AdmissionSemesterInput value={semester} onChange={(value) => { setSemester(value); setAnalysis(null); }} />
         <div className="flex flex-wrap gap-2 border-t border-black/5 pt-4">
-          <Button onClick={() => setAnalysis(analyzeFit(profile, documents, program))} disabled={needsProfileReview}>
+          <Button onClick={() => setAnalysis(analyzeFit(profile, documents, program, { semester }))} disabled={needsProfileReview}>
             <GraduationCap className="h-4 w-4" />
             Check my fit
           </Button>

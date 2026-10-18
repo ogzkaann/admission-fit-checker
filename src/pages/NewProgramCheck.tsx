@@ -1,7 +1,8 @@
-import { ChangeEvent, useState } from "react";
+import { ChangeEvent, useEffect, useState } from "react";
 import { AlertCircle, FileText, FileUp, GraduationCap, Loader2, Save, Sparkles } from "lucide-react";
 import type {
   AcademicProfile,
+  AdmissionSemester,
   AppSettings,
   DegreeType,
   FitAnalysis,
@@ -20,6 +21,7 @@ import { Input } from "../components/ui/input";
 import { Select } from "../components/ui/select";
 import { Textarea } from "../components/ui/textarea";
 import { FitResult } from "../components/FitResult";
+import { AdmissionSemesterInput } from "../components/AdmissionSemesterInput";
 
 interface NewProgramCheckProps {
   profile?: AcademicProfile;
@@ -54,6 +56,7 @@ function parseRequirements(text: string): ProgramRequirement[] {
   if (/bachelor/i.test(text)) {
     requirements.push({ id: "p-degree", kind: "academic", label: "Bachelor's degree required", degreeType: "bachelor", sourceText: "bachelor" });
   }
+  requirements.push({ id: "unreviewed-text", kind: "other", label: "Full admission text needs review", mandatory: true, rule: { type: "manual", explanation: "Automatic extraction is incomplete. Review the official text, including exceptions and additional conditions, before establishing eligibility." }, sourceText: text });
   return requirements;
 }
 
@@ -69,6 +72,13 @@ export function NewProgramCheck({ profile, documents, settings, onDataChange, pr
   const [program, setProgram] = useState<Program | null>(null);
   const [analysis, setAnalysis] = useState<FitAnalysis | null>(null);
   const [saved, setSaved] = useState(false);
+  const [semester, setSemester] = useState<AdmissionSemester>();
+
+  useEffect(() => {
+    setAnalysis(null);
+    setProgram(null);
+    setSaved(false);
+  }, [university, programName, degreeType, language, link, admissionText, semester]);
 
   function buildProgram(): Program {
     const requirements = parseRequirements(admissionText);
@@ -82,7 +92,9 @@ export function NewProgramCheck({ profile, documents, settings, onDataChange, pr
       city: "",
       description: admissionText.slice(0, 280),
       sourceUrl: link.trim() || undefined,
-      lastChecked: new Date().toISOString().slice(0, 10),
+      schemaVersion: 2,
+      verificationStatus: "unverified",
+      requirementsComplete: false,
       requiredDocuments: [],
       requirements,
       admissionText,
@@ -116,7 +128,7 @@ export function NewProgramCheck({ profile, documents, settings, onDataChange, pr
     if (needsProfileReview) return;
     const built = buildProgram();
     setProgram(built);
-    setAnalysis(analyzeFit(profile, documents, built));
+    setAnalysis(analyzeFit(profile, documents, built, { semester }));
     setSaved(false);
   }
 
@@ -140,7 +152,7 @@ export function NewProgramCheck({ profile, documents, settings, onDataChange, pr
         </div>
         <h2 className="mt-5 font-display text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">Add admission text and analyze your fit.</h2>
         <p className="mt-3 max-w-3xl text-base leading-7 text-muted-foreground">
-          Paste requirements from the program page or import a PDF, screenshot, or image. The check compares the source text with your saved profile.
+          Paste requirements from the program page or import a PDF, screenshot, or image. Extracted rules are unverified drafts; a link or upload alone cannot establish eligibility.
         </p>
       </header>
 
@@ -217,6 +229,7 @@ export function NewProgramCheck({ profile, documents, settings, onDataChange, pr
               </div>
             ) : null}
 
+            <AdmissionSemesterInput value={semester} onChange={(value) => { setSemester(value); setAnalysis(null); }} />
             <Button className="w-fit" onClick={analyze} disabled={!canAnalyze || needsProfileReview}>
               <Sparkles className="h-4 w-4" />
               Analyze fit

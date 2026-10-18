@@ -1,12 +1,15 @@
 import type { AcademicProfile, Program, StoredDocument } from "../domain/types";
 import { demoPrograms } from "../data/demoPrograms";
 import { db } from "./db";
+import { normalizeProgram } from "../domain/programCompatibility";
+import { academicProfileSchema, programSchema } from "../domain/schemas";
 
 export async function getProfile() {
   return db.profiles.get("local-profile");
 }
 
 export async function saveProfile(profile: AcademicProfile) {
+  academicProfileSchema.parse(profile);
   await db.profiles.put({ ...profile, updatedAt: new Date().toISOString() });
 }
 
@@ -29,17 +32,19 @@ export async function deleteDocument(id: string) {
 // Programs shown in the library = built-in demo programs + any the user added.
 export async function listPrograms(): Promise<Program[]> {
   const userPrograms = await db.programs.toArray();
-  return [...demoPrograms, ...userPrograms.sort((a, b) => b.createdAt.localeCompare(a.createdAt))];
+  return [...demoPrograms, ...userPrograms.sort((a, b) => b.createdAt.localeCompare(a.createdAt))].map(normalizeProgram);
 }
 
 export async function getProgram(id: string): Promise<Program | undefined> {
   const demo = demoPrograms.find((program) => program.id === id);
-  if (demo) return demo;
-  return db.programs.get(id);
+  if (demo) return normalizeProgram(demo);
+  const program = await db.programs.get(id);
+  return program ? normalizeProgram(program) : undefined;
 }
 
 export async function saveProgram(program: Program) {
-  await db.programs.put(program);
+  programSchema.parse(program);
+  await db.programs.put(normalizeProgram(program));
 }
 
 export async function deleteUserProgram(id: string) {
