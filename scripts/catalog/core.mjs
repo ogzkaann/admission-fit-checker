@@ -8,6 +8,10 @@ export function stable(value) {
 }
 export const revisionFor = (program) => hash(stable(program));
 
+export function hasUnsupportedRule(rule) {
+  return !rule || rule.type === "manual" || ((rule.type === "all" || rule.type === "any") && rule.rules.some(hasUnsupportedRule));
+}
+
 export function differences(before, after) {
   const changes = [];
   for (const collection of ["requirements", "facts", "sources"]) {
@@ -85,6 +89,7 @@ export function applyReview(program, review, snapshots, schema, now = new Date()
     const parsed = schema.requirement.parse(requirement);
     [...(parsed.evidence ?? []), ...(parsed.conditionalAdmission?.evidence ?? [])].forEach(validateCitation);
     if (decision === "approve" && !parsed.evidence?.length) throw new Error("Approved requirement needs evidence");
+    if (decision === "approve" && (hasUnsupportedRule(parsed.rule) || (parsed.conditionalAdmission && hasUnsupportedRule(parsed.conditionalAdmission.alternative)))) throw new Error("Incomplete or unsupported rules cannot be approved; keep the decision pending");
     return { ...parsed, evidence: (parsed.evidence ?? []).map((source) => decision === "approve" ? approve(source) : { ...source, status: decision === "reject" ? "conflicting" : "unverified", reviewedBy: undefined, validFor: [] }), conditionalAdmission: parsed.conditionalAdmission ? { ...parsed.conditionalAdmission, evidence: parsed.conditionalAdmission.evidence.map((source) => decision === "approve" ? approve(source) : { ...source, status: "unverified", reviewedBy: undefined, validFor: [] }) } : undefined };
   });
   const sources = program.sources.map((source) => review.sources.find((item) => item.snapshotId === source.snapshotId).decision === "approve" ? approve(source) : { ...source, status: "unverified" });
@@ -94,9 +99,9 @@ export function applyReview(program, review, snapshots, schema, now = new Date()
     return { ...fact, evidence: fact.evidence.map((source) => decision === "approve" ? approve(source) : { ...source, status: decision === "reject" ? "conflicting" : "unverified" }) };
   });
   const allApproved = sources.length > 0 && sources.every((source) => source.status === "verified") && requirements.length > 0 && review.requirements.every((item) => item.decision === "approve") && facts.every((fact) => fact.value === null || fact.evidence.every((source) => source.status === "verified"));
-  if (review.requirementsComplete && (!allApproved || requirements.some((req) => !req.rule || req.rule.type === "manual"))) throw new Error("Incomplete or unsupported rules cannot form a complete verified inventory");
+  if (review.requirementsComplete && (!allApproved || requirements.some((req) => hasUnsupportedRule(req.rule) || (req.conditionalAdmission && hasUnsupportedRule(req.conditionalAdmission.alternative))))) throw new Error("Incomplete or unsupported rules cannot form a complete verified inventory");
   const rejected = [...review.sources, ...review.requirements, ...review.facts].some((item) => item.decision === "reject");
-  return schema.program.parse({ ...program, catalogDraftVersion: program.catalogVersion, catalogVersion: hash({ draft: program.catalogVersion, review }), sources, facts, requirements, validFor: semesters, requirementsComplete: review.requirementsComplete === true, verificationStatus: program.verificationStatus === "stale" ? "stale" : rejected ? "conflicting" : allApproved ? "verified" : "unverified", catalogIssues: allApproved ? ["Editorial review is not an admission decision. Check applicant-specific rules with the university."] : program.catalogIssues });
+  return schema.program.parse({ ...program, catalogDraftVersion: program.catalogVersion, catalogVersion: hash({ draft: program.catalogVersion, review }), sources, facts, requirements, validFor: semesters, requirementsComplete: review.requirementsComplete === true, verificationStatus: program.verificationStatus === "stale" ? "stale" : rejected ? "conflicting" : allApproved && review.requirementsComplete ? "verified" : "unverified", catalogIssues: allApproved && review.requirementsComplete ? ["Editorial review is not an admission decision. Check applicant-specific rules with the university."] : program.catalogIssues });
 }
 
 export function markStale(program, reason) {

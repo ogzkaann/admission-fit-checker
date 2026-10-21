@@ -77,6 +77,10 @@ export interface LanguageOption {
 }
 
 export type EligibilityRule =
+  | { type: "all" | "any"; rules: EligibilityRule[] }
+  | { type: "metric"; metric: "degree_years" | "german_grade" | "cohort_top_percent"; minimum?: number; maximum?: number }
+  | { type: "education_language"; accepted: string[] }
+  | { type: "assessment"; key: string; explanation: string }
   | { type: "degree"; accepted: DegreeType[]; completionRequired: boolean }
   | { type: "field"; accepted: string[]; exhaustive: boolean }
   | { type: "total_ects"; minimum: number }
@@ -87,6 +91,7 @@ export type EligibilityRule =
 
 // Structured fields an AI/heuristic extractor can read out of a document.
 export interface ExtractedProfile {
+  academicCourses?: { title: string; ects: number }[];
   name?: string;
   degree?: string;
   field?: string;
@@ -123,6 +128,13 @@ export interface AcademicProfile {
   courseEquivalences?: CourseEquivalence[];
   transcriptComplete?: boolean;
   reviewedAt?: string;
+  metrics?: Partial<Record<"degree_years" | "german_grade" | "cohort_top_percent", { value: number; evidence?: ProfileEvidence }>>;
+  educationLanguage?: { language: string; evidence?: ProfileEvidence };
+  // University judgments cannot be replaced by applicant self-assessment.
+  admissionAssessments?: {
+    programId: string; catalogVersion: string; requirementId: string; assessmentKey: string; semester: AdmissionSemester;
+    decision: "accepted" | "rejected" | "pending"; validUntil?: string; evidence: SourceEvidence; profileEvidence: ProfileEvidence;
+  }[];
 }
 
 export interface StoredDocument {

@@ -234,6 +234,18 @@ test("review cannot forge source last-checked timestamps", async () => {
   const review = approvedReview(program); review.requirements[0].requirement.evidence[0].lastChecked = "2099-01-01";
   assert.equal(applyReview(program, review, snapshots, schema, now).requirements[0].evidence[0].lastChecked, program.sources[0].lastChecked);
 });
+
+test("partial review cannot approve nested unsupported rules or label a program verified", async () => {
+  const { program, snapshots } = await fixture(); const review = approvedReview(program); review.requirementsComplete = false;
+  assert.equal(applyReview(program, review, snapshots, schema, now).verificationStatus, "unverified");
+  review.requirements[0].requirement.rule = { type: "any", rules: [{ type: "total_ects", minimum: 30 }, { type: "manual", explanation: "Unresolved alternative" }] };
+  assert.throws(() => applyReview(program, review, snapshots, schema, now), /unsupported rules cannot be approved/);
+});
+
+test("curated conditional candidates fail closed if their exact source clause is unavailable", async () => {
+  const {snapshot}=await fixture();const config=seed();config.extract[0].candidateRule={type:'total_ects',minimum:30};config.extract[0].candidateConditional={source:'source',anchor:'missing condition',quoteFrom:'START',quoteUntil:'END',description:'Fictional condition',alternative:{type:'assessment',key:'fictional-condition',explanation:'Fixture'}};
+  const result=extractProgram(config,{source:snapshot},{},now.toISOString());assert.equal(result.requirements[0].rule.type,'manual');assert.ok(result.catalogIssues.some(i=>i.includes('conditional route missing')));
+});
 test("source failures preserve evidence but make the catalog stale", async () => {
   const { program } = await fixture();
   const stale = markStale(program, "Synthetic robots denial");
@@ -376,7 +388,8 @@ test("audited pilot retains material exceptions, exact fee rows and source-state
     assert.notEqual(program.verificationStatus, "verified");
     assert.deepEqual(program.validFor, []);
     assert.equal(program.requirementsComplete, false);
-    assert.ok(program.requirements.every((req) => req.rule.type === "manual"));
+    assert.ok(program.requirements.some((req) => req.rule.type === "manual"), "unresolved clauses must remain visible");
+    assert.ok(program.requirements.every((req) => (req.evidence ?? []).every((source) => source.status !== "verified")), "candidate semantics never imply human approval");
   }
 });
 

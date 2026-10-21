@@ -1,0 +1,973 @@
+{
+  "schemaVersion": 1,
+  "programId": "de-passau-msc-computer-science",
+  "revision": "35817a121f90ec5949c74203f48fbdbdd00292ba4e7857c6981a32617217cc89",
+  "parentRevision": "5395c643693008aa8b30d41e2707db06294f65ed791c7a497002ec14a2590fdb",
+  "extractedAt": "2026-10-21T12:56:57.027Z",
+  "recipeHash": "84665da5fdb3881116ccd9e6171b4c92c3a052508d68644fd9b96dae686bd36b",
+  "program": {
+    "id": "de-passau-msc-computer-science",
+    "university": "University of Passau",
+    "programName": "Computer Science",
+    "degreeType": "master",
+    "language": "English / German",
+    "country": "Germany",
+    "city": "Passau",
+    "description": "Master of Science in Computer Science. Official-source pilot; admission clauses await editorial review.",
+    "sourceUrl": "https://www.uni-passau.de/en/msc-computer-science/",
+    "requiredDocuments": [],
+    "requirements": [
+      {
+        "id": "academic",
+        "kind": "academic",
+        "label": "Prior degree, computer science credits and grade alternatives",
+        "sourceText": "To apply, you need to have an undergraduate university degree in computer science or a related discipline with a computer science component of at least 110 ECTS credits. You must be ranked among the best 70% of graduates within your cohort or the final grade for your first degree was 2.7 or better (according to the German grading scale; foreign grades will be converted once we receive your application).",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Prior degree, computer science credits and grade alternatives. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "To apply, you need to have an undergraduate university degree in computer science or a related discipline with a computer science component of at least 110 ECTS credits. You must be ranked among the best 70% of graduates within your cohort or the final grade for your first degree was 2.7 or better (according to the German grading scale; foreign grades will be converted once we receive your application).",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:27.146Z",
+            "validFor": [],
+            "locator": "HTML p block 96",
+            "retrievedAt": "2026-10-21T12:05:27.146Z",
+            "snapshotId": "0d60ee24a955bcdd56dea67669ce465a252ccbca6b45da0cd24b560c7db42f68",
+            "contentHash": "293c6d487acb3cec00410acfd4a39a9f9c809a6bd69c1a5658f8033f3d72344d"
+          }
+        ]
+      },
+      {
+        "id": "credit-route",
+        "kind": "ects",
+        "label": "Computer science credit route and non-ECTS alternative",
+        "sourceText": "To apply, you need to have an undergraduate university degree in computer science or a related discipline with a computer science component of at least 110 ECTS credits. You must be ranked among the best 70% of graduates within your cohort or the final grade for your first degree was 2.7 or better (according to the German grading scale; foreign grades will be converted once we receive your application).\n\nYour degree must have been earned over a course of study of a standard length of three years or more. If you completed a four-year non-ECTS degree, the 110 ECTS credit requirement is deemed to be met if approximately two-thirds of your credit points were earned in computer science related modules/courses.",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Computer science credit route and non-ECTS alternative. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "To apply, you need to have an undergraduate university degree in computer science or a related discipline with a computer science component of at least 110 ECTS credits. You must be ranked among the best 70% of graduates within your cohort or the final grade for your first degree was 2.7 or better (according to the German grading scale; foreign grades will be converted once we receive your application).",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:27.146Z",
+            "validFor": [],
+            "locator": "HTML p block 96",
+            "retrievedAt": "2026-10-21T12:05:27.146Z",
+            "snapshotId": "0d60ee24a955bcdd56dea67669ce465a252ccbca6b45da0cd24b560c7db42f68",
+            "contentHash": "293c6d487acb3cec00410acfd4a39a9f9c809a6bd69c1a5658f8033f3d72344d"
+          },
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "Your degree must have been earned over a course of study of a standard length of three years or more. If you completed a four-year non-ECTS degree, the 110 ECTS credit requirement is deemed to be met if approximately two-thirds of your credit points were earned in computer science related modules/courses.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:27.146Z",
+            "validFor": [],
+            "locator": "HTML p block 97",
+            "retrievedAt": "2026-10-21T12:05:27.146Z",
+            "snapshotId": "0d60ee24a955bcdd56dea67669ce465a252ccbca6b45da0cd24b560c7db42f68",
+            "contentHash": "293c6d487acb3cec00410acfd4a39a9f9c809a6bd69c1a5658f8033f3d72344d"
+          }
+        ]
+      },
+      {
+        "id": "degree-duration",
+        "kind": "academic",
+        "label": "Degree duration",
+        "sourceText": "Your degree must have been earned over a course of study of a standard length of three years or more. If you completed a four-year non-ECTS degree, the 110 ECTS credit requirement is deemed to be met if approximately two-thirds of your credit points were earned in computer science related modules/courses.",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Degree duration. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "Your degree must have been earned over a course of study of a standard length of three years or more. If you completed a four-year non-ECTS degree, the 110 ECTS credit requirement is deemed to be met if approximately two-thirds of your credit points were earned in computer science related modules/courses.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:27.146Z",
+            "validFor": [],
+            "locator": "HTML p block 97",
+            "retrievedAt": "2026-10-21T12:05:27.146Z",
+            "snapshotId": "0d60ee24a955bcdd56dea67669ce465a252ccbca6b45da0cd24b560c7db42f68",
+            "contentHash": "293c6d487acb3cec00410acfd4a39a9f9c809a6bd69c1a5658f8033f3d72344d"
+          }
+        ]
+      },
+      {
+        "id": "preliminary-degree",
+        "kind": "academic",
+        "label": "Preliminary transcript and final degree submission",
+        "sourceText": "If you have not yet received your final results and certificates at the time of application, you may apply using your Transcript of Records or other preliminary transcript. If your application is successful, you must submit your final Transcript of Records, including all completed coursework, by the start of the lecture period. The final Bachelor’s degree certificate must be submitted no later than the 10th week of lectures.",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Preliminary transcript and final degree submission. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "If you have not yet received your final results and certificates at the time of application, you may apply using your Transcript of Records or other preliminary transcript. If your application is successful, you must submit your final Transcript of Records, including all completed coursework, by the start of the lecture period. The final Bachelor’s degree certificate must be submitted no later than the 10th week of lectures.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:27.146Z",
+            "validFor": [],
+            "locator": "HTML p block 98",
+            "retrievedAt": "2026-10-21T12:05:27.146Z",
+            "snapshotId": "0d60ee24a955bcdd56dea67669ce465a252ccbca6b45da0cd24b560c7db42f68",
+            "contentHash": "293c6d487acb3cec00410acfd4a39a9f9c809a6bd69c1a5658f8033f3d72344d"
+          }
+        ]
+      },
+      {
+        "id": "recognition",
+        "kind": "academic",
+        "label": "Recognition of awarding institution",
+        "sourceText": "Please note that we only recognise degrees awarded by universities with 'H+' status in the Anabin database of the German Central Office for Foreign Education. You can check the Anabin database online or contact the International Coordinator of the faculty by e-mail if you do not understand German.",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Recognition of awarding institution. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "Please note that we only recognise degrees awarded by universities with 'H+' status in the Anabin database of the German Central Office for Foreign Education. You can check the Anabin database online or contact the International Coordinator of the faculty by e-mail if you do not understand German.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:27.146Z",
+            "validFor": [],
+            "locator": "HTML p block 100",
+            "retrievedAt": "2026-10-21T12:05:27.146Z",
+            "snapshotId": "0d60ee24a955bcdd56dea67669ce465a252ccbca6b45da0cd24b560c7db42f68",
+            "contentHash": "293c6d487acb3cec00410acfd4a39a9f9c809a6bd69c1a5658f8033f3d72344d"
+          }
+        ]
+      },
+      {
+        "id": "research-evidence",
+        "kind": "document",
+        "label": "Thesis abstract or alternative independent research evidence",
+        "sourceText": "As part of the application you must submit an English or German-language abstract/summary (should include a link to the full paper) of your undergraduate dissertation/bachelor's thesis/final year project. If you did not write a dissertation/thesis as a formal part of your prior degree programme, you may instead submit an academic research paper or publication that demonstrates your ability to solve a scientific research problem independently.",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Thesis abstract or alternative independent research evidence. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "As part of the application you must submit an English or German-language abstract/summary (should include a link to the full paper) of your undergraduate dissertation/bachelor's thesis/final year project. If you did not write a dissertation/thesis as a formal part of your prior degree programme, you may instead submit an academic research paper or publication that demonstrates your ability to solve a scientific research problem independently.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:27.146Z",
+            "validFor": [],
+            "locator": "HTML p block 99",
+            "retrievedAt": "2026-10-21T12:05:27.146Z",
+            "snapshotId": "0d60ee24a955bcdd56dea67669ce465a252ccbca6b45da0cd24b560c7db42f68",
+            "contentHash": "293c6d487acb3cec00410acfd4a39a9f9c809a6bd69c1a5658f8033f3d72344d"
+          }
+        ]
+      },
+      {
+        "id": "research-credits",
+        "kind": "ects",
+        "label": "At least 10 ECTS of independent scientific work",
+        "sourceText": "4. 1 In den Masterstudiengängen „Informatik“ und „Artificial Intelligence Engineering“ darüber hinaus durch einen Nachweis von mindestens 10 ECTS-Leistungspunkten über die Kompetenz, ein Problem aus dem Themenschwerpunkt des qualifizierenden Hochschulabschlusses innerhalb einer vorgegebenen Frist selbstständig mit wissenschaftlichen Methoden bearbeiten und die Ergebnisse schriftlich darstellen zu können. 2 In der Regel erfolgt dieser Nachweis durch eine Bachelorarbeit, kann aber auch durch eine andere vom Bewerber oder der Bewerberin verfasste wissenschaftliche Arbeit erfolgen.",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "At least 10 ECTS of independent scientific work. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.uni-passau.de/fileadmin/dokumente/beschaeftigte/Rechtsvorschriften/StO_und_PO/FMI/AStuPO_MSc_FIM.pdf",
+            "quote": "4. 1 In den Masterstudiengängen „Informatik“ und „Artificial Intelligence Engineering“ darüber hinaus durch einen Nachweis von mindestens 10 ECTS-Leistungspunkten über die Kompetenz, ein Problem aus dem Themenschwerpunkt des qualifizierenden Hochschulabschlusses innerhalb einer vorgegebenen Frist selbstständig mit wissenschaftlichen Methoden bearbeiten und die Ergebnisse schriftlich darstellen zu können. 2 In der Regel erfolgt dieser Nachweis durch eine Bachelorarbeit, kann aber auch durch eine andere vom Bewerber oder der Bewerberin verfasste wissenschaftliche Arbeit erfolgen.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:12:14.139Z",
+            "validFor": [],
+            "locator": "PDF page 4",
+            "retrievedAt": "2026-10-21T12:12:14.139Z",
+            "snapshotId": "e2f1b66ec83df20cf4e58a9f54852e1270caa77a378e6faa5d83287c3be55b55",
+            "contentHash": "a0d2e8569da45193d5d9a9bb9239e44a368731ceb604d766f85166615de9bcc5"
+          }
+        ]
+      },
+      {
+        "id": "language",
+        "kind": "language",
+        "label": "Language routes, exemptions and German A1 condition",
+        "sourceText": "If neither your native language nor your language of instruction during your prior university education was English or German, then you will have to provide recognised language certificates for one or both of these languages. Depending on which language you want to primarily be taught in, you need certificates for:\n\nGerman: You should provide proof of German language skills equivalent to level B2 CEFR.\n\nEnglish: You should provide proof of English language skills equivalent to level B2 CEFR, such as:\n\nEven if you plan to choose only modules taught in English, you also need German language skills at level A1 CEFR (beginner's level) or higher. If you do not meet this requirement at the time of application, you will have to complete a beginner's German course and provide a certificate by the end of your first year of study.",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Language routes, exemptions and German A1 condition. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "If neither your native language nor your language of instruction during your prior university education was English or German, then you will have to provide recognised language certificates for one or both of these languages. Depending on which language you want to primarily be taught in, you need certificates for:",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:27.146Z",
+            "validFor": [],
+            "locator": "HTML p block 101",
+            "retrievedAt": "2026-10-21T12:05:27.146Z",
+            "snapshotId": "0d60ee24a955bcdd56dea67669ce465a252ccbca6b45da0cd24b560c7db42f68",
+            "contentHash": "293c6d487acb3cec00410acfd4a39a9f9c809a6bd69c1a5658f8033f3d72344d"
+          },
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "German: You should provide proof of German language skills equivalent to level B2 CEFR.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:27.146Z",
+            "validFor": [],
+            "locator": "HTML li block 102",
+            "retrievedAt": "2026-10-21T12:05:27.146Z",
+            "snapshotId": "0d60ee24a955bcdd56dea67669ce465a252ccbca6b45da0cd24b560c7db42f68",
+            "contentHash": "293c6d487acb3cec00410acfd4a39a9f9c809a6bd69c1a5658f8033f3d72344d"
+          },
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "English: You should provide proof of English language skills equivalent to level B2 CEFR, such as:",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:27.146Z",
+            "validFor": [],
+            "locator": "HTML li block 104",
+            "retrievedAt": "2026-10-21T12:05:27.146Z",
+            "snapshotId": "0d60ee24a955bcdd56dea67669ce465a252ccbca6b45da0cd24b560c7db42f68",
+            "contentHash": "293c6d487acb3cec00410acfd4a39a9f9c809a6bd69c1a5658f8033f3d72344d"
+          },
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "Even if you plan to choose only modules taught in English, you also need German language skills at level A1 CEFR (beginner's level) or higher. If you do not meet this requirement at the time of application, you will have to complete a beginner's German course and provide a certificate by the end of your first year of study.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:27.146Z",
+            "validFor": [],
+            "locator": "HTML p block 109",
+            "retrievedAt": "2026-10-21T12:05:27.146Z",
+            "snapshotId": "0d60ee24a955bcdd56dea67669ce465a252ccbca6b45da0cd24b560c7db42f68",
+            "contentHash": "293c6d487acb3cec00410acfd4a39a9f9c809a6bd69c1a5658f8033f3d72344d"
+          }
+        ]
+      },
+      {
+        "id": "inventory-review",
+        "kind": "other",
+        "label": "Full admission regulations and applicability review",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "The extracted inventory is not complete. Verify regulations, applicant categories, exemptions, selection and semester validity."
+        },
+        "evidence": []
+      }
+    ],
+    "admissionText": "academic: To apply, you need to have an undergraduate university degree in computer science or a related discipline with a computer science component of at least 110 ECTS credits. You must be ranked among the best 70% of graduates within your cohort or the final grade for your first degree was 2.7 or better (according to the German grading scale; foreign grades will be converted once we receive your application).\n\ncredits: To apply, you need to have an undergraduate university degree in computer science or a related discipline with a computer science component of at least 110 ECTS credits. You must be ranked among the best 70% of graduates within your cohort or the final grade for your first degree was 2.7 or better (according to the German grading scale; foreign grades will be converted once we receive your application).\n\nYour degree must have been earned over a course of study of a standard length of three years or more. If you completed a four-year non-ECTS degree, the 110 ECTS credit requirement is deemed to be met if approximately two-thirds of your credit points were earned in computer science related modules/courses.\n\nacademic: Your degree must have been earned over a course of study of a standard length of three years or more. If you completed a four-year non-ECTS degree, the 110 ECTS credit requirement is deemed to be met if approximately two-thirds of your credit points were earned in computer science related modules/courses.\n\nacademic: If you have not yet received your final results and certificates at the time of application, you may apply using your Transcript of Records or other preliminary transcript. If your application is successful, you must submit your final Transcript of Records, including all completed coursework, by the start of the lecture period. The final Bachelor’s degree certificate must be submitted no later than the 10th week of lectures.\n\nacademic: Please note that we only recognise degrees awarded by universities with 'H+' status in the Anabin database of the German Central Office for Foreign Education. You can check the Anabin database online or contact the International Coordinator of the faculty by e-mail if you do not understand German.\n\nacademic: As part of the application you must submit an English or German-language abstract/summary (should include a link to the full paper) of your undergraduate dissertation/bachelor's thesis/final year project. If you did not write a dissertation/thesis as a formal part of your prior degree programme, you may instead submit an academic research paper or publication that demonstrates your ability to solve a scientific research problem independently.\n\ncredits: 4. 1 In den Masterstudiengängen „Informatik“ und „Artificial Intelligence Engineering“ darüber hinaus durch einen Nachweis von mindestens 10 ECTS-Leistungspunkten über die Kompetenz, ein Problem aus dem Themenschwerpunkt des qualifizierenden Hochschulabschlusses innerhalb einer vorgegebenen Frist selbstständig mit wissenschaftlichen Methoden bearbeiten und die Ergebnisse schriftlich darstellen zu können. 2 In der Regel erfolgt dieser Nachweis durch eine Bachelorarbeit, kann aber auch durch eine andere vom Bewerber oder der Bewerberin verfasste wissenschaftliche Arbeit erfolgen.\n\nacademic: § 3 Qualifikation (Fachanteil Informatik) Der gemäß § 4 Abs. 1 Satz 1 Nr. 1 AStuPO nachzuweisende Abschluss muss einen Fachanteil Informatik von mindestens 110 ECTS-Leistungspunkten enthalten.\n\nlanguage: If neither your native language nor your language of instruction during your prior university education was English or German, then you will have to provide recognised language certificates for one or both of these languages. Depending on which language you want to primarily be taught in, you need certificates for:\n\nGerman: You should provide proof of German language skills equivalent to level B2 CEFR.\n\nEnglish: You should provide proof of English language skills equivalent to level B2 CEFR, such as:\n\nEven if you plan to choose only modules taught in English, you also need German language skills at level A1 CEFR (beginner's level) or higher. If you do not meet this requirement at the time of application, you will have to complete a beginner's German course and provide a certificate by the end of your first year of study.\n\nlanguage: TOEFL (score 567 paper-based, 220 computer-based, 87 internet-based, ITP 543 'silver' or better)\n\nIELTS (score 5.5)\n\nCambridge English Language Assessment at level 'Advanced' (CAE) or 'Proficiency' (CPE)\n\nA first degree or secondary education completed exclusively in English also counts as proof of English-language proficiency.\n\ndeadline: Application period for the winter semester:\n\n15 April - 31 May (direct applications)\n\n1 April - 31 May (applications via uni-assist e.V.)\n\nApplication period for the summer semester:\n\n1 November - 15 December\n\napplication: To become a Master's student at the University of Passau, you will have to apply through uni-assist if all of the following statements apply to you:\n\nYou obtained your undergraduate degree outside the EU/EEA\n\nNone of the exceptions listed under \"Who can submit their application directly to the University of Passau?\" apply to you\n\nyou don't have confirmation of a DAAD scholarship for your studies\n\ntuition: At the University of Passau, there a no tuition fees. However, students do pay a semester fee.",
+    "origin": "catalog",
+    "isDemo": false,
+    "createdAt": "2026-10-18T17:03:21.293Z",
+    "schemaVersion": 2,
+    "verificationStatus": "stale",
+    "sources": [
+      {
+        "url": "https://www.uni-passau.de/en/msc-computer-science/",
+        "quote": "M.Sc. Computer Science",
+        "status": "unverified",
+        "sourceType": "official",
+        "lastChecked": "2026-10-21T12:05:27.146Z",
+        "validFor": [],
+        "locator": "Source document identity",
+        "retrievedAt": "2026-10-21T12:05:27.146Z",
+        "snapshotId": "0d60ee24a955bcdd56dea67669ce465a252ccbca6b45da0cd24b560c7db42f68",
+        "contentHash": "293c6d487acb3cec00410acfd4a39a9f9c809a6bd69c1a5658f8033f3d72344d"
+      },
+      {
+        "url": "https://www.uni-passau.de/fileadmin/dokumente/studium/infoschriften/Informatik_MSc_EN.pdf",
+        "quote": "M.Sc. Computer Science - University of Passau",
+        "status": "unverified",
+        "sourceType": "official",
+        "lastChecked": "2026-10-18T17:03:09.793Z",
+        "validFor": [],
+        "locator": "Source document identity",
+        "retrievedAt": "2026-10-18T17:03:09.793Z",
+        "snapshotId": "65a06f5870578af7fda0930f32159219b741f135648e0b57efb5900ff234a6d5",
+        "contentHash": "dc6e8087039110286d75db6c2740ffac6d91f3566b565bd8250a50ea2f33d418"
+      },
+      {
+        "url": "https://www.uni-passau.de/fileadmin/dokumente/beschaeftigte/Rechtsvorschriften/StO_und_PO/FMI/Master_Informatik.pdf",
+        "quote": "AStuPO M.Sc. FIM",
+        "status": "unverified",
+        "sourceType": "official",
+        "lastChecked": "2026-10-21T12:08:36.970Z",
+        "validFor": [],
+        "locator": "Source document identity",
+        "retrievedAt": "2026-10-21T12:08:36.970Z",
+        "snapshotId": "48d0e5427a7af1da651c61af42413f46d5dc03f81b88493c9c16a5b9d3ff5f73",
+        "contentHash": "a0336b78540f1c07ab2a7ea97ad346b217c1344eda2f93c262ec8fbf3c022574"
+      },
+      {
+        "url": "https://www.uni-passau.de/fileadmin/dokumente/beschaeftigte/Rechtsvorschriften/StO_und_PO/FMI/AStuPO_MSc_FIM.pdf",
+        "quote": "AStuPO M.Sc. FIM",
+        "status": "unverified",
+        "sourceType": "official",
+        "lastChecked": "2026-10-21T12:12:14.139Z",
+        "validFor": [],
+        "locator": "Source document identity",
+        "retrievedAt": "2026-10-21T12:12:14.139Z",
+        "snapshotId": "e2f1b66ec83df20cf4e58a9f54852e1270caa77a378e6faa5d83287c3be55b55",
+        "contentHash": "a0d2e8569da45193d5d9a9bb9239e44a368731ceb604d766f85166615de9bcc5"
+      },
+      {
+        "url": "https://www.uni-passau.de/en/apply/application-methods",
+        "quote": "Application methods overview",
+        "status": "unverified",
+        "sourceType": "official",
+        "lastChecked": "2026-10-21T12:09:27.155Z",
+        "validFor": [],
+        "locator": "Source document identity",
+        "retrievedAt": "2026-10-21T12:09:27.155Z",
+        "snapshotId": "78567d39a3a4a8fb0e2a18ecc082f8496c5894cb154c45a93ee4f75b61a19dcd",
+        "contentHash": "bfc18ccd413a4552ec8146c2826d8454cc21c0b127d4a06851d27e80c02af74d"
+      },
+      {
+        "url": "https://www.uni-passau.de/fileadmin/dokumente/beschaeftigte/Rechtsvorschriften/Virtuelles_Amtsblatt/2016/2016_024_AStuPO_MSc_FIM_2016.pdf",
+        "quote": "Microsoft Word - 2016_024_AStuPO M.Sc. FIM 2016",
+        "status": "unverified",
+        "sourceType": "official",
+        "lastChecked": "2026-10-21T12:56:51.065Z",
+        "validFor": [],
+        "locator": "Source document identity",
+        "retrievedAt": "2026-10-21T12:56:51.065Z",
+        "snapshotId": "ebc1ab3b7aa2439ba9507c5222b7d01c3ad54729685053db4d7f3a212bdb0cad",
+        "contentHash": "19aa670aa9c3c1a4ade1f5723a092938dae868b25d14f68f2a50e9f7e4bb5f6a"
+      },
+      {
+        "url": "https://www.uni-passau.de/fileadmin/dokumente/beschaeftigte/Rechtsvorschriften/Virtuelles_Amtsblatt/2025/2025_072_AStuPO_MA_FIM_2.%C3%84S.pdf",
+        "quote": "2025_072_AStuPO_MA_FIM_2.%C3%84S.pdf",
+        "status": "unverified",
+        "sourceType": "official",
+        "lastChecked": "2026-10-21T12:56:52.255Z",
+        "validFor": [],
+        "locator": "Source document identity",
+        "retrievedAt": "2026-10-21T12:56:52.255Z",
+        "snapshotId": "445fa7a31699c77eda34db04fb6598abc48b668bbdde22422b6dd08f8034fe4e",
+        "contentHash": "7502d0d20d4e32d4a61b9ad25f928dd6f862d82cf58e0194ef8c9b5eb8bb26dd"
+      },
+      {
+        "url": "https://www.uni-passau.de/fileadmin/dokumente/beschaeftigte/Rechtsvorschriften/Virtuelles_Amtsblatt/2026/2026_097_AStuPO_MSc._FIM_3.%C3%84S.pdf",
+        "quote": "2026_097_AStuPO_MSc._FIM_3.%C3%84S.pdf",
+        "status": "unverified",
+        "sourceType": "official",
+        "lastChecked": "2026-10-21T12:56:53.357Z",
+        "validFor": [],
+        "locator": "Source document identity",
+        "retrievedAt": "2026-10-21T12:56:53.357Z",
+        "snapshotId": "4b5cbe95d365d716bc2b9d4a5fdd2ab5007192bcc52735abb270efcc54fd467a",
+        "contentHash": "cac3efbf042fda796e84459c93093c36b88030e1cfea08e5fdf5faf4db3c34ce"
+      },
+      {
+        "url": "https://www.uni-passau.de/fileadmin/dokumente/beschaeftigte/Rechtsvorschriften/Virtuelles_Amtsblatt/2025/2025_086_FStuPO_Master_Informatik_1.%C3%84S.pdf",
+        "quote": "2025_086_FStuPO_Master_Informatik_1.%C3%84S.pdf",
+        "status": "unverified",
+        "sourceType": "official",
+        "lastChecked": "2026-10-21T12:56:54.645Z",
+        "validFor": [],
+        "locator": "Source document identity",
+        "retrievedAt": "2026-10-21T12:56:54.645Z",
+        "snapshotId": "b6fca4902659e2f5df34f0d4d77b6d36f0ddee254c6e870b21a6f9a1d46d4537",
+        "contentHash": "026e8b810ff1f5b3067e4856148192174caecc0bd5ebb4a0196e2195ccbffdfb"
+      },
+      {
+        "url": "https://www.uni-passau.de/en/msc-computer-science/faq-application-msc-computer-science",
+        "quote": "FAQ Application M.Sc. Computer Science",
+        "status": "unverified",
+        "sourceType": "official",
+        "lastChecked": "2026-10-21T12:56:55.713Z",
+        "validFor": [],
+        "locator": "Source document identity",
+        "retrievedAt": "2026-10-21T12:56:55.713Z",
+        "snapshotId": "664c9fd9765d43571df6f683354edc72d06f27a335a610f3fae4fdfc4ee091b4",
+        "contentHash": "bfd0e462d372bc219e69ce9655930f6effd897638607345487bb71ebe91eb6ca"
+      },
+      {
+        "url": "https://www.uni-passau.de/en/german-language-requirements",
+        "quote": "German language requirements",
+        "status": "unverified",
+        "sourceType": "official",
+        "lastChecked": "2026-10-21T12:56:56.914Z",
+        "validFor": [],
+        "locator": "Source document identity",
+        "retrievedAt": "2026-10-21T12:56:56.914Z",
+        "snapshotId": "7ed089ed32c84071c46b3ad801f26d9d25324a697e3d4f457e7c1ff698c31c13",
+        "contentHash": "567c996b8a4b6fb56ce05020ca0a60f2f1b17401989ce5062c227658f27ccd79"
+      }
+    ],
+    "validFor": [],
+    "requirementsComplete": false,
+    "facts": [
+      {
+        "id": "academic",
+        "category": "academic",
+        "value": "To apply, you need to have an undergraduate university degree in computer science or a related discipline with a computer science component of at least 110 ECTS credits. You must be ranked among the best 70% of graduates within your cohort or the final grade for your first degree was 2.7 or better (according to the German grading scale; foreign grades will be converted once we receive your application).",
+        "note": "Includes alternatives and qualification conditions; not a simple total-credit rule.",
+        "evidence": [
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "To apply, you need to have an undergraduate university degree in computer science or a related discipline with a computer science component of at least 110 ECTS credits. You must be ranked among the best 70% of graduates within your cohort or the final grade for your first degree was 2.7 or better (according to the German grading scale; foreign grades will be converted once we receive your application).",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:27.146Z",
+            "validFor": [],
+            "locator": "HTML p block 96",
+            "retrievedAt": "2026-10-21T12:05:27.146Z",
+            "snapshotId": "0d60ee24a955bcdd56dea67669ce465a252ccbca6b45da0cd24b560c7db42f68",
+            "contentHash": "293c6d487acb3cec00410acfd4a39a9f9c809a6bd69c1a5658f8033f3d72344d"
+          }
+        ]
+      },
+      {
+        "id": "credit-route",
+        "category": "credits",
+        "value": "To apply, you need to have an undergraduate university degree in computer science or a related discipline with a computer science component of at least 110 ECTS credits. You must be ranked among the best 70% of graduates within your cohort or the final grade for your first degree was 2.7 or better (according to the German grading scale; foreign grades will be converted once we receive your application).\n\nYour degree must have been earned over a course of study of a standard length of three years or more. If you completed a four-year non-ECTS degree, the 110 ECTS credit requirement is deemed to be met if approximately two-thirds of your credit points were earned in computer science related modules/courses.",
+        "note": "Alternative route requires manual assessment; no unconditional credit blocker is inferred.",
+        "evidence": [
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "To apply, you need to have an undergraduate university degree in computer science or a related discipline with a computer science component of at least 110 ECTS credits. You must be ranked among the best 70% of graduates within your cohort or the final grade for your first degree was 2.7 or better (according to the German grading scale; foreign grades will be converted once we receive your application).",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:27.146Z",
+            "validFor": [],
+            "locator": "HTML p block 96",
+            "retrievedAt": "2026-10-21T12:05:27.146Z",
+            "snapshotId": "0d60ee24a955bcdd56dea67669ce465a252ccbca6b45da0cd24b560c7db42f68",
+            "contentHash": "293c6d487acb3cec00410acfd4a39a9f9c809a6bd69c1a5658f8033f3d72344d"
+          },
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "Your degree must have been earned over a course of study of a standard length of three years or more. If you completed a four-year non-ECTS degree, the 110 ECTS credit requirement is deemed to be met if approximately two-thirds of your credit points were earned in computer science related modules/courses.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:27.146Z",
+            "validFor": [],
+            "locator": "HTML p block 97",
+            "retrievedAt": "2026-10-21T12:05:27.146Z",
+            "snapshotId": "0d60ee24a955bcdd56dea67669ce465a252ccbca6b45da0cd24b560c7db42f68",
+            "contentHash": "293c6d487acb3cec00410acfd4a39a9f9c809a6bd69c1a5658f8033f3d72344d"
+          }
+        ]
+      },
+      {
+        "id": "degree-duration",
+        "category": "academic",
+        "value": "Your degree must have been earned over a course of study of a standard length of three years or more. If you completed a four-year non-ECTS degree, the 110 ECTS credit requirement is deemed to be met if approximately two-thirds of your credit points were earned in computer science related modules/courses.",
+        "evidence": [
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "Your degree must have been earned over a course of study of a standard length of three years or more. If you completed a four-year non-ECTS degree, the 110 ECTS credit requirement is deemed to be met if approximately two-thirds of your credit points were earned in computer science related modules/courses.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:27.146Z",
+            "validFor": [],
+            "locator": "HTML p block 97",
+            "retrievedAt": "2026-10-21T12:05:27.146Z",
+            "snapshotId": "0d60ee24a955bcdd56dea67669ce465a252ccbca6b45da0cd24b560c7db42f68",
+            "contentHash": "293c6d487acb3cec00410acfd4a39a9f9c809a6bd69c1a5658f8033f3d72344d"
+          }
+        ]
+      },
+      {
+        "id": "preliminary-degree",
+        "category": "academic",
+        "value": "If you have not yet received your final results and certificates at the time of application, you may apply using your Transcript of Records or other preliminary transcript. If your application is successful, you must submit your final Transcript of Records, including all completed coursework, by the start of the lecture period. The final Bachelor’s degree certificate must be submitted no later than the 10th week of lectures.",
+        "evidence": [
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "If you have not yet received your final results and certificates at the time of application, you may apply using your Transcript of Records or other preliminary transcript. If your application is successful, you must submit your final Transcript of Records, including all completed coursework, by the start of the lecture period. The final Bachelor’s degree certificate must be submitted no later than the 10th week of lectures.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:27.146Z",
+            "validFor": [],
+            "locator": "HTML p block 98",
+            "retrievedAt": "2026-10-21T12:05:27.146Z",
+            "snapshotId": "0d60ee24a955bcdd56dea67669ce465a252ccbca6b45da0cd24b560c7db42f68",
+            "contentHash": "293c6d487acb3cec00410acfd4a39a9f9c809a6bd69c1a5658f8033f3d72344d"
+          }
+        ]
+      },
+      {
+        "id": "recognition",
+        "category": "academic",
+        "value": "Please note that we only recognise degrees awarded by universities with 'H+' status in the Anabin database of the German Central Office for Foreign Education. You can check the Anabin database online or contact the International Coordinator of the faculty by e-mail if you do not understand German.",
+        "evidence": [
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "Please note that we only recognise degrees awarded by universities with 'H+' status in the Anabin database of the German Central Office for Foreign Education. You can check the Anabin database online or contact the International Coordinator of the faculty by e-mail if you do not understand German.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:27.146Z",
+            "validFor": [],
+            "locator": "HTML p block 100",
+            "retrievedAt": "2026-10-21T12:05:27.146Z",
+            "snapshotId": "0d60ee24a955bcdd56dea67669ce465a252ccbca6b45da0cd24b560c7db42f68",
+            "contentHash": "293c6d487acb3cec00410acfd4a39a9f9c809a6bd69c1a5658f8033f3d72344d"
+          }
+        ]
+      },
+      {
+        "id": "research-evidence",
+        "category": "academic",
+        "value": "As part of the application you must submit an English or German-language abstract/summary (should include a link to the full paper) of your undergraduate dissertation/bachelor's thesis/final year project. If you did not write a dissertation/thesis as a formal part of your prior degree programme, you may instead submit an academic research paper or publication that demonstrates your ability to solve a scientific research problem independently.",
+        "evidence": [
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "As part of the application you must submit an English or German-language abstract/summary (should include a link to the full paper) of your undergraduate dissertation/bachelor's thesis/final year project. If you did not write a dissertation/thesis as a formal part of your prior degree programme, you may instead submit an academic research paper or publication that demonstrates your ability to solve a scientific research problem independently.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:27.146Z",
+            "validFor": [],
+            "locator": "HTML p block 99",
+            "retrievedAt": "2026-10-21T12:05:27.146Z",
+            "snapshotId": "0d60ee24a955bcdd56dea67669ce465a252ccbca6b45da0cd24b560c7db42f68",
+            "contentHash": "293c6d487acb3cec00410acfd4a39a9f9c809a6bd69c1a5658f8033f3d72344d"
+          }
+        ]
+      },
+      {
+        "id": "research-credits",
+        "category": "credits",
+        "value": "4. 1 In den Masterstudiengängen „Informatik“ und „Artificial Intelligence Engineering“ darüber hinaus durch einen Nachweis von mindestens 10 ECTS-Leistungspunkten über die Kompetenz, ein Problem aus dem Themenschwerpunkt des qualifizierenden Hochschulabschlusses innerhalb einer vorgegebenen Frist selbstständig mit wissenschaftlichen Methoden bearbeiten und die Ergebnisse schriftlich darstellen zu können. 2 In der Regel erfolgt dieser Nachweis durch eine Bachelorarbeit, kann aber auch durch eine andere vom Bewerber oder der Bewerberin verfasste wissenschaftliche Arbeit erfolgen.",
+        "note": "General regulation section 4(1), page 4: usually a thesis, or another scientific work. Equivalence and applicability require human review.",
+        "evidence": [
+          {
+            "url": "https://www.uni-passau.de/fileadmin/dokumente/beschaeftigte/Rechtsvorschriften/StO_und_PO/FMI/AStuPO_MSc_FIM.pdf",
+            "quote": "4. 1 In den Masterstudiengängen „Informatik“ und „Artificial Intelligence Engineering“ darüber hinaus durch einen Nachweis von mindestens 10 ECTS-Leistungspunkten über die Kompetenz, ein Problem aus dem Themenschwerpunkt des qualifizierenden Hochschulabschlusses innerhalb einer vorgegebenen Frist selbstständig mit wissenschaftlichen Methoden bearbeiten und die Ergebnisse schriftlich darstellen zu können. 2 In der Regel erfolgt dieser Nachweis durch eine Bachelorarbeit, kann aber auch durch eine andere vom Bewerber oder der Bewerberin verfasste wissenschaftliche Arbeit erfolgen.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:12:14.139Z",
+            "validFor": [],
+            "locator": "PDF page 4",
+            "retrievedAt": "2026-10-21T12:12:14.139Z",
+            "snapshotId": "e2f1b66ec83df20cf4e58a9f54852e1270caa77a378e6faa5d83287c3be55b55",
+            "contentHash": "a0d2e8569da45193d5d9a9bb9239e44a368731ceb604d766f85166615de9bcc5"
+          }
+        ]
+      },
+      {
+        "id": "regulation-credit-clause",
+        "category": "academic",
+        "value": "§ 3 Qualifikation (Fachanteil Informatik) Der gemäß § 4 Abs. 1 Satz 1 Nr. 1 AStuPO nachzuweisende Abschluss muss einen Fachanteil Informatik von mindestens 110 ECTS-Leistungspunkten enthalten.",
+        "note": "Subject regulation section 3. Do not confuse the subsequent degree curriculum with admission prerequisites.",
+        "evidence": [
+          {
+            "url": "https://www.uni-passau.de/fileadmin/dokumente/beschaeftigte/Rechtsvorschriften/StO_und_PO/FMI/Master_Informatik.pdf",
+            "quote": "§ 3 Qualifikation (Fachanteil Informatik) Der gemäß § 4 Abs. 1 Satz 1 Nr. 1 AStuPO nachzuweisende Abschluss muss einen Fachanteil Informatik von mindestens 110 ECTS-Leistungspunkten enthalten.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:08:36.970Z",
+            "validFor": [],
+            "locator": "PDF page 3",
+            "retrievedAt": "2026-10-21T12:08:36.970Z",
+            "snapshotId": "48d0e5427a7af1da651c61af42413f46d5dc03f81b88493c9c16a5b9d3ff5f73",
+            "contentHash": "a0336b78540f1c07ab2a7ea97ad346b217c1344eda2f93c262ec8fbf3c022574"
+          }
+        ]
+      },
+      {
+        "id": "language",
+        "category": "language",
+        "value": "If neither your native language nor your language of instruction during your prior university education was English or German, then you will have to provide recognised language certificates for one or both of these languages. Depending on which language you want to primarily be taught in, you need certificates for:\n\nGerman: You should provide proof of German language skills equivalent to level B2 CEFR.\n\nEnglish: You should provide proof of English language skills equivalent to level B2 CEFR, such as:\n\nEven if you plan to choose only modules taught in English, you also need German language skills at level A1 CEFR (beginner's level) or higher. If you do not meet this requirement at the time of application, you will have to complete a beginner's German course and provide a certificate by the end of your first year of study.",
+        "evidence": [
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "If neither your native language nor your language of instruction during your prior university education was English or German, then you will have to provide recognised language certificates for one or both of these languages. Depending on which language you want to primarily be taught in, you need certificates for:",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:27.146Z",
+            "validFor": [],
+            "locator": "HTML p block 101",
+            "retrievedAt": "2026-10-21T12:05:27.146Z",
+            "snapshotId": "0d60ee24a955bcdd56dea67669ce465a252ccbca6b45da0cd24b560c7db42f68",
+            "contentHash": "293c6d487acb3cec00410acfd4a39a9f9c809a6bd69c1a5658f8033f3d72344d"
+          },
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "German: You should provide proof of German language skills equivalent to level B2 CEFR.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:27.146Z",
+            "validFor": [],
+            "locator": "HTML li block 102",
+            "retrievedAt": "2026-10-21T12:05:27.146Z",
+            "snapshotId": "0d60ee24a955bcdd56dea67669ce465a252ccbca6b45da0cd24b560c7db42f68",
+            "contentHash": "293c6d487acb3cec00410acfd4a39a9f9c809a6bd69c1a5658f8033f3d72344d"
+          },
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "English: You should provide proof of English language skills equivalent to level B2 CEFR, such as:",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:27.146Z",
+            "validFor": [],
+            "locator": "HTML li block 104",
+            "retrievedAt": "2026-10-21T12:05:27.146Z",
+            "snapshotId": "0d60ee24a955bcdd56dea67669ce465a252ccbca6b45da0cd24b560c7db42f68",
+            "contentHash": "293c6d487acb3cec00410acfd4a39a9f9c809a6bd69c1a5658f8033f3d72344d"
+          },
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "Even if you plan to choose only modules taught in English, you also need German language skills at level A1 CEFR (beginner's level) or higher. If you do not meet this requirement at the time of application, you will have to complete a beginner's German course and provide a certificate by the end of your first year of study.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:27.146Z",
+            "validFor": [],
+            "locator": "HTML p block 109",
+            "retrievedAt": "2026-10-21T12:05:27.146Z",
+            "snapshotId": "0d60ee24a955bcdd56dea67669ce465a252ccbca6b45da0cd24b560c7db42f68",
+            "contentHash": "293c6d487acb3cec00410acfd4a39a9f9c809a6bd69c1a5658f8033f3d72344d"
+          }
+        ]
+      },
+      {
+        "id": "certificates",
+        "category": "language",
+        "value": "TOEFL (score 567 paper-based, 220 computer-based, 87 internet-based, ITP 543 'silver' or better)\n\nIELTS (score 5.5)\n\nCambridge English Language Assessment at level 'Advanced' (CAE) or 'Proficiency' (CPE)\n\nA first degree or secondary education completed exclusively in English also counts as proof of English-language proficiency.",
+        "evidence": [
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "TOEFL (score 567 paper-based, 220 computer-based, 87 internet-based, ITP 543 'silver' or better)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:27.146Z",
+            "validFor": [],
+            "locator": "HTML li block 105",
+            "retrievedAt": "2026-10-21T12:05:27.146Z",
+            "snapshotId": "0d60ee24a955bcdd56dea67669ce465a252ccbca6b45da0cd24b560c7db42f68",
+            "contentHash": "293c6d487acb3cec00410acfd4a39a9f9c809a6bd69c1a5658f8033f3d72344d"
+          },
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "IELTS (score 5.5)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:27.146Z",
+            "validFor": [],
+            "locator": "HTML li block 106",
+            "retrievedAt": "2026-10-21T12:05:27.146Z",
+            "snapshotId": "0d60ee24a955bcdd56dea67669ce465a252ccbca6b45da0cd24b560c7db42f68",
+            "contentHash": "293c6d487acb3cec00410acfd4a39a9f9c809a6bd69c1a5658f8033f3d72344d"
+          },
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "Cambridge English Language Assessment at level 'Advanced' (CAE) or 'Proficiency' (CPE)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:27.146Z",
+            "validFor": [],
+            "locator": "HTML li block 107",
+            "retrievedAt": "2026-10-21T12:05:27.146Z",
+            "snapshotId": "0d60ee24a955bcdd56dea67669ce465a252ccbca6b45da0cd24b560c7db42f68",
+            "contentHash": "293c6d487acb3cec00410acfd4a39a9f9c809a6bd69c1a5658f8033f3d72344d"
+          },
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "A first degree or secondary education completed exclusively in English also counts as proof of English-language proficiency.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:27.146Z",
+            "validFor": [],
+            "locator": "HTML li block 108",
+            "retrievedAt": "2026-10-21T12:05:27.146Z",
+            "snapshotId": "0d60ee24a955bcdd56dea67669ce465a252ccbca6b45da0cd24b560c7db42f68",
+            "contentHash": "293c6d487acb3cec00410acfd4a39a9f9c809a6bd69c1a5658f8033f3d72344d"
+          }
+        ]
+      },
+      {
+        "id": "deadline",
+        "category": "deadline",
+        "value": "Application period for the winter semester:\n\n15 April - 31 May (direct applications)\n\n1 April - 31 May (applications via uni-assist e.V.)\n\nApplication period for the summer semester:\n\n1 November - 15 December",
+        "note": "Recurring dates only. No specific admission-year applicability verified.",
+        "evidence": [
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "Application period for the winter semester:",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:27.146Z",
+            "validFor": [],
+            "locator": "HTML h3 block 111",
+            "retrievedAt": "2026-10-21T12:05:27.146Z",
+            "snapshotId": "0d60ee24a955bcdd56dea67669ce465a252ccbca6b45da0cd24b560c7db42f68",
+            "contentHash": "293c6d487acb3cec00410acfd4a39a9f9c809a6bd69c1a5658f8033f3d72344d"
+          },
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "15 April - 31 May (direct applications)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:27.146Z",
+            "validFor": [],
+            "locator": "HTML li block 112",
+            "retrievedAt": "2026-10-21T12:05:27.146Z",
+            "snapshotId": "0d60ee24a955bcdd56dea67669ce465a252ccbca6b45da0cd24b560c7db42f68",
+            "contentHash": "293c6d487acb3cec00410acfd4a39a9f9c809a6bd69c1a5658f8033f3d72344d"
+          },
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "1 April - 31 May (applications via uni-assist e.V.)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:27.146Z",
+            "validFor": [],
+            "locator": "HTML li block 113",
+            "retrievedAt": "2026-10-21T12:05:27.146Z",
+            "snapshotId": "0d60ee24a955bcdd56dea67669ce465a252ccbca6b45da0cd24b560c7db42f68",
+            "contentHash": "293c6d487acb3cec00410acfd4a39a9f9c809a6bd69c1a5658f8033f3d72344d"
+          },
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "Application period for the summer semester:",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:27.146Z",
+            "validFor": [],
+            "locator": "HTML h3 block 115",
+            "retrievedAt": "2026-10-21T12:05:27.146Z",
+            "snapshotId": "0d60ee24a955bcdd56dea67669ce465a252ccbca6b45da0cd24b560c7db42f68",
+            "contentHash": "293c6d487acb3cec00410acfd4a39a9f9c809a6bd69c1a5658f8033f3d72344d"
+          },
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "1 November - 15 December",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:27.146Z",
+            "validFor": [],
+            "locator": "HTML li block 116",
+            "retrievedAt": "2026-10-21T12:05:27.146Z",
+            "snapshotId": "0d60ee24a955bcdd56dea67669ce465a252ccbca6b45da0cd24b560c7db42f68",
+            "contentHash": "293c6d487acb3cec00410acfd4a39a9f9c809a6bd69c1a5658f8033f3d72344d"
+          }
+        ]
+      },
+      {
+        "id": "application",
+        "category": "application",
+        "value": "To become a Master's student at the University of Passau, you will have to apply through uni-assist if all of the following statements apply to you:\n\nYou obtained your undergraduate degree outside the EU/EEA\n\nNone of the exceptions listed under \"Who can submit their application directly to the University of Passau?\" apply to you\n\nyou don't have confirmation of a DAAD scholarship for your studies",
+        "note": "uni-assist route is conditional on all listed criteria; direct-application exceptions require review of the complete guide.",
+        "evidence": [
+          {
+            "url": "https://www.uni-passau.de/en/apply/application-methods",
+            "quote": "To become a Master's student at the University of Passau, you will have to apply through uni-assist if all of the following statements apply to you:",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:09:27.155Z",
+            "validFor": [],
+            "locator": "HTML p block 96",
+            "retrievedAt": "2026-10-21T12:09:27.155Z",
+            "snapshotId": "78567d39a3a4a8fb0e2a18ecc082f8496c5894cb154c45a93ee4f75b61a19dcd",
+            "contentHash": "bfc18ccd413a4552ec8146c2826d8454cc21c0b127d4a06851d27e80c02af74d"
+          },
+          {
+            "url": "https://www.uni-passau.de/en/apply/application-methods",
+            "quote": "You obtained your undergraduate degree outside the EU/EEA",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:09:27.155Z",
+            "validFor": [],
+            "locator": "HTML li block 97",
+            "retrievedAt": "2026-10-21T12:09:27.155Z",
+            "snapshotId": "78567d39a3a4a8fb0e2a18ecc082f8496c5894cb154c45a93ee4f75b61a19dcd",
+            "contentHash": "bfc18ccd413a4552ec8146c2826d8454cc21c0b127d4a06851d27e80c02af74d"
+          },
+          {
+            "url": "https://www.uni-passau.de/en/apply/application-methods",
+            "quote": "None of the exceptions listed under \"Who can submit their application directly to the University of Passau?\" apply to you",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:09:27.155Z",
+            "validFor": [],
+            "locator": "HTML li block 98",
+            "retrievedAt": "2026-10-21T12:09:27.155Z",
+            "snapshotId": "78567d39a3a4a8fb0e2a18ecc082f8496c5894cb154c45a93ee4f75b61a19dcd",
+            "contentHash": "bfc18ccd413a4552ec8146c2826d8454cc21c0b127d4a06851d27e80c02af74d"
+          },
+          {
+            "url": "https://www.uni-passau.de/en/apply/application-methods",
+            "quote": "you don't have confirmation of a DAAD scholarship for your studies",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:09:27.155Z",
+            "validFor": [],
+            "locator": "HTML li block 80",
+            "retrievedAt": "2026-10-21T12:09:27.155Z",
+            "snapshotId": "78567d39a3a4a8fb0e2a18ecc082f8496c5894cb154c45a93ee4f75b61a19dcd",
+            "contentHash": "bfc18ccd413a4552ec8146c2826d8454cc21c0b127d4a06851d27e80c02af74d"
+          }
+        ]
+      },
+      {
+        "id": "tuition",
+        "category": "tuition",
+        "value": "At the University of Passau, there a no tuition fees. However, students do pay a semester fee.",
+        "note": "Semester fee still applies; no amount established here.",
+        "evidence": [
+          {
+            "url": "https://www.uni-passau.de/en/msc-computer-science/",
+            "quote": "At the University of Passau, there a no tuition fees. However, students do pay a semester fee.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:27.146Z",
+            "validFor": [],
+            "locator": "HTML p block 159",
+            "retrievedAt": "2026-10-21T12:05:27.146Z",
+            "snapshotId": "0d60ee24a955bcdd56dea67669ce465a252ccbca6b45da0cd24b560c7db42f68",
+            "contentHash": "293c6d487acb3cec00410acfd4a39a9f9c809a6bd69c1a5658f8033f3d72344d"
+          }
+        ]
+      },
+      {
+        "id": "semester",
+        "category": "semester",
+        "value": null,
+        "note": "Admission semester applicability has not been verified.",
+        "evidence": []
+      }
+    ],
+    "catalogIssues": [
+      "Automatically extracted draft. Human review and semester applicability are outstanding.",
+      "The PDF infosheet names winter semester 2025-26. Do not apply it to later intakes without review.",
+      "The 110 ECTS route has a non-ECTS degree alternative; the credit rule is not independently decisive.",
+      "The general regulation is amended 24 February 2026; the subject regulation is amended 1 September 2025. The general regulation adds research-work evidence of at least 10 ECTS. Reconcile the German-language route with the current enrolment statute before approval.",
+      "passau-program: Source HTTP 502: https://www.uni-passau.de/en/msc-computer-science/"
+    ],
+    "retrievedAt": "2026-10-21T12:56:56.914Z",
+    "catalogVersion": "35817a121f90ec5949c74203f48fbdbdd00292ba4e7857c6981a32617217cc89"
+  },
+  "changes": [
+    {
+      "collection": "sources",
+      "id": "https://www.uni-passau.de/fileadmin/dokumente/beschaeftigte/Rechtsvorschriften/Virtuelles_Amtsblatt/2016/2016_024_AStuPO_MSc_FIM_2016.pdf",
+      "change": "added",
+      "before": null,
+      "after": {
+        "url": "https://www.uni-passau.de/fileadmin/dokumente/beschaeftigte/Rechtsvorschriften/Virtuelles_Amtsblatt/2016/2016_024_AStuPO_MSc_FIM_2016.pdf",
+        "quote": "Microsoft Word - 2016_024_AStuPO M.Sc. FIM 2016",
+        "status": "unverified",
+        "sourceType": "official",
+        "lastChecked": "2026-10-21T12:56:51.065Z",
+        "validFor": [],
+        "locator": "Source document identity",
+        "retrievedAt": "2026-10-21T12:56:51.065Z",
+        "snapshotId": "ebc1ab3b7aa2439ba9507c5222b7d01c3ad54729685053db4d7f3a212bdb0cad",
+        "contentHash": "19aa670aa9c3c1a4ade1f5723a092938dae868b25d14f68f2a50e9f7e4bb5f6a"
+      }
+    },
+    {
+      "collection": "sources",
+      "id": "https://www.uni-passau.de/fileadmin/dokumente/beschaeftigte/Rechtsvorschriften/Virtuelles_Amtsblatt/2025/2025_072_AStuPO_MA_FIM_2.%C3%84S.pdf",
+      "change": "added",
+      "before": null,
+      "after": {
+        "url": "https://www.uni-passau.de/fileadmin/dokumente/beschaeftigte/Rechtsvorschriften/Virtuelles_Amtsblatt/2025/2025_072_AStuPO_MA_FIM_2.%C3%84S.pdf",
+        "quote": "2025_072_AStuPO_MA_FIM_2.%C3%84S.pdf",
+        "status": "unverified",
+        "sourceType": "official",
+        "lastChecked": "2026-10-21T12:56:52.255Z",
+        "validFor": [],
+        "locator": "Source document identity",
+        "retrievedAt": "2026-10-21T12:56:52.255Z",
+        "snapshotId": "445fa7a31699c77eda34db04fb6598abc48b668bbdde22422b6dd08f8034fe4e",
+        "contentHash": "7502d0d20d4e32d4a61b9ad25f928dd6f862d82cf58e0194ef8c9b5eb8bb26dd"
+      }
+    },
+    {
+      "collection": "sources",
+      "id": "https://www.uni-passau.de/fileadmin/dokumente/beschaeftigte/Rechtsvorschriften/Virtuelles_Amtsblatt/2026/2026_097_AStuPO_MSc._FIM_3.%C3%84S.pdf",
+      "change": "added",
+      "before": null,
+      "after": {
+        "url": "https://www.uni-passau.de/fileadmin/dokumente/beschaeftigte/Rechtsvorschriften/Virtuelles_Amtsblatt/2026/2026_097_AStuPO_MSc._FIM_3.%C3%84S.pdf",
+        "quote": "2026_097_AStuPO_MSc._FIM_3.%C3%84S.pdf",
+        "status": "unverified",
+        "sourceType": "official",
+        "lastChecked": "2026-10-21T12:56:53.357Z",
+        "validFor": [],
+        "locator": "Source document identity",
+        "retrievedAt": "2026-10-21T12:56:53.357Z",
+        "snapshotId": "4b5cbe95d365d716bc2b9d4a5fdd2ab5007192bcc52735abb270efcc54fd467a",
+        "contentHash": "cac3efbf042fda796e84459c93093c36b88030e1cfea08e5fdf5faf4db3c34ce"
+      }
+    },
+    {
+      "collection": "sources",
+      "id": "https://www.uni-passau.de/fileadmin/dokumente/beschaeftigte/Rechtsvorschriften/Virtuelles_Amtsblatt/2025/2025_086_FStuPO_Master_Informatik_1.%C3%84S.pdf",
+      "change": "added",
+      "before": null,
+      "after": {
+        "url": "https://www.uni-passau.de/fileadmin/dokumente/beschaeftigte/Rechtsvorschriften/Virtuelles_Amtsblatt/2025/2025_086_FStuPO_Master_Informatik_1.%C3%84S.pdf",
+        "quote": "2025_086_FStuPO_Master_Informatik_1.%C3%84S.pdf",
+        "status": "unverified",
+        "sourceType": "official",
+        "lastChecked": "2026-10-21T12:56:54.645Z",
+        "validFor": [],
+        "locator": "Source document identity",
+        "retrievedAt": "2026-10-21T12:56:54.645Z",
+        "snapshotId": "b6fca4902659e2f5df34f0d4d77b6d36f0ddee254c6e870b21a6f9a1d46d4537",
+        "contentHash": "026e8b810ff1f5b3067e4856148192174caecc0bd5ebb4a0196e2195ccbffdfb"
+      }
+    },
+    {
+      "collection": "sources",
+      "id": "https://www.uni-passau.de/en/msc-computer-science/faq-application-msc-computer-science",
+      "change": "added",
+      "before": null,
+      "after": {
+        "url": "https://www.uni-passau.de/en/msc-computer-science/faq-application-msc-computer-science",
+        "quote": "FAQ Application M.Sc. Computer Science",
+        "status": "unverified",
+        "sourceType": "official",
+        "lastChecked": "2026-10-21T12:56:55.713Z",
+        "validFor": [],
+        "locator": "Source document identity",
+        "retrievedAt": "2026-10-21T12:56:55.713Z",
+        "snapshotId": "664c9fd9765d43571df6f683354edc72d06f27a335a610f3fae4fdfc4ee091b4",
+        "contentHash": "bfd0e462d372bc219e69ce9655930f6effd897638607345487bb71ebe91eb6ca"
+      }
+    },
+    {
+      "collection": "sources",
+      "id": "https://www.uni-passau.de/en/german-language-requirements",
+      "change": "added",
+      "before": null,
+      "after": {
+        "url": "https://www.uni-passau.de/en/german-language-requirements",
+        "quote": "German language requirements",
+        "status": "unverified",
+        "sourceType": "official",
+        "lastChecked": "2026-10-21T12:56:56.914Z",
+        "validFor": [],
+        "locator": "Source document identity",
+        "retrievedAt": "2026-10-21T12:56:56.914Z",
+        "snapshotId": "7ed089ed32c84071c46b3ad801f26d9d25324a697e3d4f457e7c1ff698c31c13",
+        "contentHash": "567c996b8a4b6fb56ce05020ca0a60f2f1b17401989ce5062c227658f27ccd79"
+      }
+    }
+  ]
+}

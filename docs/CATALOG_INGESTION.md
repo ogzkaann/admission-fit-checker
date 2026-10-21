@@ -1,5 +1,13 @@
 # Official Catalog Pilot
 
+## Passau hardening update (21 October 2026)
+
+Read [Passau review packet](PASSAU_REVIEW.md) and [transcript demonstration](TRANSCRIPT_DEMO.md) before approving any data. Passau now has original regulations, the 2019/2025/2026 general amendments, 2025 subject/enrolment amendments, FAQ and current German-proof guidance. Its program-page refresh failed HTTP 502, so it is **stale**, not verified. Earlier collection counts below are historical. All five programs still lack complete human approval; the other four records were not expanded in this phase.
+
+Passau's anchored `candidateRule` and `candidateConditional` recipes prepare explicit alternatives, metrics and provisional entry, never verification. Missing conditional evidence fails the entire candidate rule closed. Manual/unsupported nested rules cannot be approved. Program-level verified status additionally requires an explicitly complete inventory. Full Passau evidence report includes unabridged captured excerpts and conditional citations.
+
+Fetch batches remain capped at 30 selected sources. The manifest now contains more than 30 sources because this one program needs amendment history; use explicit comma-separated source IDs, not an unbounded fetch-all. No crawling/access safeguards were relaxed.
+
 ## Scope and trust boundary
 
 This phase builds on `docs/ARCHITECTURE_V2.md`; the browser UI, local document extraction, IndexedDB, BYOK and pure V2 engine remain in place. The new ingestion tool runs locally in Node, not in the browser or on a server. It does not receive applicant documents, use an LLM, authenticate to university sites, or scrape third-party aggregators.

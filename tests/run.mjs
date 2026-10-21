@@ -6,5 +6,5 @@ const compile = spawnSync(process.execPath, ["node_modules/typescript/bin/tsc", 
 if (compile.status !== 0) process.exit(compile.status ?? 1);
 mkdirSync(".test-build", { recursive: true });
 writeFileSync(".test-build/package.json", JSON.stringify({ type: "commonjs" }));
-const tests = spawnSync(process.execPath, ["--test", "tests/eligibility.test.cjs", "tests/catalog.test.mjs"], { stdio: "inherit" });
+const tests = spawnSync(process.execPath, ["--test", "tests/eligibility.test.cjs", "tests/catalog.test.mjs", "tests/transcriptWorkflow.test.mjs"], { stdio: "inherit" });
 process.exit(tests.status ?? 1);

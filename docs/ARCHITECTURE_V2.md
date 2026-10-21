@@ -1,5 +1,13 @@
 # Eligibility V2: Architecture Audit and Next Phase
 
+## Passau follow-up (21 October 2026)
+
+The original audit below is historical. The current engine additionally supports recursive `all`/`any`, evidence-backed standard-degree years, explicitly German grades and cohort-top-percent metrics, entire-degree MOI, and externally reviewed applicant assessments. Decisions bind to program, revision, requirement, **assessment key** and semester: provisional admission cannot satisfy unconditional equivalence. Missing branches stay unknown; a disjunction fails only when every branch is confirmed unmet.
+
+Profile evidence review is still transcription, not authentication. New fields are additive/optional in IndexedDB. Re-extraction clears earlier metrics, course/decision reviews and evidence rather than attaching old approvals to new drafts. PDF line reconstruction preserves rows; generic credits/CP and largest-module guesses no longer populate total ECTS. Only explicit labeled module rows produce draft credit records, without equivalence metadata.
+
+Real Passau language routes, recognition, research artifacts, source freshness and intake validity remain unresolved. See [decision packet](PASSAU_REVIEW.md). No actual program is human-approved. Course allocation/sharing, certificate expiry, multiple-degree aggregation and authenticated editorial authority remain limitations. [Synthetic workflow tests](TRANSCRIPT_DEMO.md) are separate from published records.
+
 ## Scope and retained architecture
 
 The initial production target is German master's admission eligibility. Bachelor's and Ausbildung are future tracks with separate rule inventories. This phase retains the local-first React/TypeScript application and its visual identity. It adds no scraping, server, authentication or credentials.

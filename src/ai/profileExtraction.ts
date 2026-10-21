@@ -24,27 +24,23 @@ function findDateNear(text: string, index: number, radius = 90): string | undefi
 
 function extractTotalEcts(text: string): string | undefined {
   const explicit = firstMatch(text, [
-    /total\s*(?:credits|ects|cp|lp)\s*[:=]?\s*(\d{2,3})/i,
-    /total[:\s]+(\d{2,3})\s*(?:ects|cp|lp|credits)/i,
-    /(?:gesamt|summe)\D{0,20}(\d{2,3})\s*(?:ects|cp|lp)/i,
-    /(\d{2,3})\s*(?:ects|cp|lp)\s*(?:in total|total|gesamt)/i,
+    /^\s*total\s*ects\s*[:=]?\s*(\d{1,3}(?:[.,]\d+)?)\s*(?:ECTS)?\s*$/im,
+    /^\s*total[:\s]+(\d{1,3}(?:[.,]\d+)?)\s*ects\s*$/im,
+    /^\s*(?:gesamt|summe)\s*[:=]?\s*(\d{1,3}(?:[.,]\d+)?)\s*ects\s*$/im,
+    /^\s*(\d{1,3}(?:[.,]\d+)?)\s*ects\s*(?:in total|total|gesamt)\s*$/im,
   ]);
   if (explicit) return explicit;
 
-  // Fallback: the largest ECTS-adjacent number is usually the total.
-  const values = [...text.matchAll(/(\d{2,3})\s*(?:ects|cp|lp|credits)\b/gi)].map((m) => Number(m[1]));
-  if (values.length === 0) return undefined;
-  return String(Math.max(...values));
+  return undefined; // Never convert CP/credits or mistake a module value for the total.
 }
 
 export function extractLanguageCertificates(text: string): LanguageCertificate[] {
   const certs: LanguageCertificate[] = [];
   const push = (cert: LanguageCertificate) => {
     if (!cert.language) return;
-    // Merge by language+level so a bare mention and a provider mention of the
-    // same certificate become one entry.
+    // Keep distinct tests/scores separate even when their CEFR levels coincide.
     const existing = certs.find(
-      (c) => c.language.toLowerCase() === cert.language.toLowerCase() && (c.level ?? "") === (cert.level ?? ""),
+      (c) => c.language.toLowerCase() === cert.language.toLowerCase() && c.test === cert.test && c.provider === cert.provider && c.score === cert.score && (c.level ?? "") === (cert.level ?? ""),
     );
     if (existing) {
       existing.provider = existing.provider ?? cert.provider;
@@ -82,24 +78,26 @@ export function extractLanguageCertificates(text: string): LanguageCertificate[]
   for (const lang of languages) {
     const match = lang.re.exec(text);
     if (!match) continue;
-    const window = text.slice(match.index, match.index + 70);
+    const window = text.slice(match.index).split(/\r?\n/)[0].slice(0, 100);
     const level = cefrOf(window);
     const provider = providers.find((p) => p.language === lang.name && p.re.test(window));
-    if (level || provider) {
-      push({ language: lang.name, level, provider: provider?.name, date: findDateNear(text, match.index) });
+    if (level && !provider && languages.filter((other) => other.re.test(window)).length === 1) {
+      push({ language: lang.name, level, date: findDateNear(window, 0) });
     }
   }
 
   for (const provider of providers) {
-    const match = provider.re.exec(text);
-    if (!match) continue;
-    const window = text.slice(Math.max(0, match.index - 20), match.index + 70);
-    push({
-      language: provider.language,
-      provider: provider.name,
-      level: cefrOf(window),
-      date: findDateNear(text, match.index),
-    });
+    for (const line of text.split(/\r?\n/)) {
+      const match = provider.re.exec(line);
+      if (!match) continue;
+      const window = line.slice(Math.max(0, match.index - 20), match.index + 100);
+      const test = line.slice(match.index).match(/^(?:IELTS (?:Academic|General Training)|TOEFL (?:iBT|PBT|ITP)|Goethe-Zertifikat [ABC][12])/i)?.[0];
+      const ambiguous = languages.filter((language) => language.re.test(line)).length > 1 || providers.filter((item) => item.re.test(line)).length > 1;
+      const rawScore = test && window.slice(window.toLowerCase().indexOf(test.toLowerCase()) + test.length).match(/^\s*(?:(?:overall|score|band)\s*[:=]?\s*)?(\d+(?:[.,]\d+)?)/i)?.[1];
+      push({ language: provider.language, provider: provider.name, test,
+        score: rawScore ? Number(rawScore.replace(',', '.')) : undefined,
+        level: ambiguous ? undefined : cefrOf(window), date: findDateNear(line, match.index) });
+    }
   }
 
   return certs;
@@ -154,6 +152,10 @@ export function heuristicExtractProfile(text: string): ExtractedProfile {
     ects,
     graduationDate,
     courses: courses.length ? courses : undefined,
+    academicCourses: lines.flatMap((line) => {
+      const course = line.match(/^(?:course|module|modul)\s*[:|-]\s*(.+?)\s*\|\s*(\d+(?:[.,]\d+)?)\s*ECTS\s*$/i);
+      return course ? [{ title: course[1].trim(), ects: Number(course[2].replace(',', '.')) }] : [];
+    }),
     workExperience: workExperience.length ? workExperience : undefined,
     languageCertificates: extractLanguageCertificates(text),
   };
@@ -179,6 +181,7 @@ function mergeExtracted(base: ExtractedProfile, ai: ExtractedProfile): Extracted
     languageCertificates:
       ai.languageCertificates?.length ? ai.languageCertificates : base.languageCertificates,
     courses: ai.courses?.length ? ai.courses : base.courses,
+    academicCourses: ai.academicCourses?.length ? ai.academicCourses : base.academicCourses,
     workExperience: ai.workExperience?.length ? ai.workExperience : base.workExperience,
   };
 }

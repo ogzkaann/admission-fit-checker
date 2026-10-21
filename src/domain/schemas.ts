@@ -14,6 +14,7 @@ export const languageCertificateSchema = z.object({
 });
 
 export const extractedProfileSchema = z.object({
+  academicCourses: z.array(z.object({ title: z.string().trim().min(1), ects: z.number().finite().nonnegative() })).optional(),
   name: z.string().optional(),
   degree: z.string().optional(),
   field: z.string().optional(),
@@ -52,6 +53,13 @@ export const academicProfileSchema = z.object({
   })).optional(),
   transcriptComplete: z.boolean().optional(),
   reviewedAt: timestampSchema.optional(),
+  metrics: z.object({
+    degree_years: z.object({ value: z.number().finite().nonnegative().max(20), evidence: profileEvidenceSchema.optional() }).optional(),
+    german_grade: z.object({ value: z.number().finite().min(1).max(5), evidence: profileEvidenceSchema.optional() }).optional(),
+    cohort_top_percent: z.object({ value: z.number().finite().min(0).max(100), evidence: profileEvidenceSchema.optional() }).optional(),
+  }).optional(),
+  educationLanguage: z.object({ language: z.string().min(1), evidence: profileEvidenceSchema.optional() }).optional(),
+  admissionAssessments: z.array(z.object({ programId: z.string().min(1), catalogVersion: z.string().min(1), requirementId: z.string().min(1), assessmentKey: z.string().regex(/^[a-z][a-z0-9-]*$/), semester: semesterSchema, decision: z.enum(["accepted", "rejected", "pending"]), validUntil: timestampSchema.optional(), evidence: sourceEvidenceSchema, profileEvidence: profileEvidenceSchema })).optional(),
 });
 
 export const appSettingsSchema = z.object({

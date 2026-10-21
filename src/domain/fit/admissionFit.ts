@@ -76,7 +76,9 @@ function all(evaluations: Evaluation[]): Evaluation {
 }
 
 function any(evaluations: Evaluation[]): Evaluation {
-  return evaluations.find((item) => item.status === "met") ?? evaluations.find((item) => item.status === "unknown") ?? evaluations[0] ?? unknown("No supported alternatives are specified.", "unsupported_rule");
+  const selected = evaluations.find((item) => item.status === "met") ?? evaluations.find((item) => item.status === "unknown") ?? evaluations[0];
+  if (!selected) return unknown("No supported alternatives are specified.", "unsupported_rule");
+  return { ...selected, detail: evaluations.length === 1 ? selected.detail : evaluations.map((item, i) => `Alternative ${i + 1} (${item.status}): ${item.detail}`).join(" ") };
 }
 
 // Verification is editorial metadata, not an automatic claim that a URL is official.
@@ -98,15 +100,43 @@ function evaluate(rule: EligibilityRule, context: Context): Evaluation {
   if (!eligibilityRuleSchema.safeParse(rule).success) return unknown("This rule is malformed or unsupported and requires review.", "unsupported_rule");
   const { profile, requirement, program } = context;
   if (rule.type === "manual") return unknown(rule.explanation, "unsupported_rule");
+  if (rule.type === "all" || rule.type === "any") return (rule.type === "all" ? all : any)(rule.rules.map((child) => evaluate(child, context)));
   if (rule.type === "document") {
     const doc = context.documents.find((item) => item.kind === rule.documentKind && item.status !== "failed");
     return unknown(doc ? `A ${rule.documentKind} is uploaded; completeness and certification still require review.` : `Required ${rule.documentKind} is not on file.`);
   }
   if (!profile) return unknown("Save a reviewed academic profile with supporting evidence.");
+  if (rule.type === "metric") {
+    const metric = profile.metrics?.[rule.metric];
+    if (!metric) return unknown(`Reviewed ${rule.metric.replace(/_/g, " ")} evidence is missing. No foreign-grade conversion or cohort-rank inference is performed.`);
+    const units = { degree_years: /\b(years?|jahre?n?)\b/i, german_grade: /german grade|deutsche.*note/i, cohort_top_percent: /top.*%|besten.*prozent|cohort.*percent/i };
+    if (!units[rule.metric].test(metric.evidence?.quote ?? "")) return unknown(`The excerpt must explicitly identify ${rule.metric.replace(/_/g, " ")}, not merely a nearby number.`);
+    const met = (rule.minimum === undefined || metric.value >= rule.minimum) && (rule.maximum === undefined || metric.value <= rule.maximum);
+    return documented(met ? "met" : "not_met", `${rule.metric.replace(/_/g, " ")}: ${metric.value}; required ${rule.minimum !== undefined ? `at least ${rule.minimum}` : ""}${rule.minimum !== undefined && rule.maximum !== undefined ? " and " : ""}${rule.maximum !== undefined ? `at most ${rule.maximum}` : ""}.`, metric.evidence, context, [String(metric.value)]);
+  }
+  if (rule.type === "education_language") {
+    const proof = profile.educationLanguage;
+    if (!proof || !/entire|exclusively|vollständig|ausschließlich/i.test(proof.evidence?.quote ?? "") || !/\bdegree\b|bachelor|studiengang|hochschulabschluss/i.test(proof.evidence?.quote ?? "")) return unknown("Evidence that the entire qualifying degree was taught in an accepted language is missing; a language mention is not an exemption.");
+    return documented(rule.accepted.some((language) => normalize(language) === normalize(proof.language)) ? "met" : "not_met", `Qualifying degree instruction language: ${proof.language}; accepted: ${rule.accepted.join(", ")}.`, proof.evidence, context, [proof.language]);
+  }
+  if (rule.type === "assessment") {
+    const decisions = profile.admissionAssessments?.filter((item) => item.programId === program.id && item.catalogVersion === program.catalogVersion && item.requirementId === requirement.id && item.assessmentKey === rule.key && item.semester === context.semester) ?? [];
+    if (decisions.length !== 1 || decisions[0].decision === "pending") return unknown(`${rule.explanation} A program/version/semester-bound university decision is required.`, "unsupported_equivalence");
+    const decision = decisions[0];
+    if (decision.validUntil && Date.parse(decision.validUntil) < context.now) return unknown("The recorded university decision/deferral has expired. Obtain current evidence or an explicit extension; no continuing authorization is assumed.");
+    if (sourceIssues([decision.evidence], context.semester, context.now).length || normalize(decision.evidence.quote) !== normalize(decision.profileEvidence.quote)) return unknown("The university decision must have reviewed official provenance and the same linked applicant-document excerpt.", "unsupported_equivalence");
+    return documented(decision.decision === "accepted" ? "met" : "not_met", `${rule.explanation} Recorded university decision: ${decision.decision}.`, decision.profileEvidence, context);
+  }
   if (rule.type === "degree") {
     if (!profile.degreeType || !profile.degree?.trim()) return unknown("Record the degree title and select the prior degree level; free-text titles are not classified automatically.");
     if (!rule.accepted.includes(profile.degreeType)) return documented("not_met", `Prior degree level ${profile.degreeType} is outside the accepted levels: ${rule.accepted.join(", ")}.`, profile.evidence?.degree, context, [profile.degree]);
     if (rule.completionRequired && profile.degreeCompleted === undefined) return unknown("Degree completion has not been confirmed.");
+    if (rule.completionRequired) {
+      const quote = profile.evidence?.degree?.quote ?? "";
+      const incomplete = /not (?:yet )?completed|in progress|nicht abgeschlossen|noch nicht/i.test(quote);
+      const complete = !incomplete && /\bcompleted\b|\bawarded\b|\bconferred\b|abgeschlossen|verliehen/i.test(quote);
+      if (profile.degreeCompleted ? !complete : !incomplete) return unknown("The linked degree excerpt does not explicitly support the recorded completion status.");
+    }
     return documented(rule.completionRequired && !profile.degreeCompleted ? "not_met" : "met", rule.completionRequired && !profile.degreeCompleted ? "The required degree is not yet completed." : "The recorded degree level and completion meet this rule.", profile.evidence?.degree, context, [profile.degree]);
   }
   if (rule.type === "field") {
@@ -191,7 +221,7 @@ function evaluateRequirement(context: Context, programIssues: string[]): Require
   let reason: RequirementCheck["reason"] = issues.length ? "source_uncertainty" : result.reason;
   let detail = result.detail;
   let evidence = result.evidence;
-  if (status !== "met" && req.conditionalAdmission) {
+  if (result.status !== "met" && status !== "met" && req.conditionalAdmission) {
     const condition = req.conditionalAdmission;
     const conditionIssues = sourceIssues(condition.evidence, context.semester, context.now);
     const alternative = evaluate(condition.alternative, context);
@@ -199,8 +229,8 @@ function evaluateRequirement(context: Context, programIssues: string[]): Require
       status = "conditional"; reason = "conditional";
       detail += ` Explicit conditional route: ${condition.description} ${alternative.detail}`;
       evidence = [...evidence, ...alternative.evidence];
-    } else if (status === "not_met" && (conditionIssues.length || alternative.status === "unknown")) {
-      status = "unknown"; reason = "missing_evidence";
+    } else if (conditionIssues.length || alternative.status === "unknown") {
+      status = "unknown"; reason = issues.length || conditionIssues.length ? "source_uncertainty" : "missing_evidence";
       detail += ` A conditional route exists but cannot yet be established: ${condition.description} ${alternative.detail}`;
       issues.push(...conditionIssues);
     }

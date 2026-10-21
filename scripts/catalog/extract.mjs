@@ -95,7 +95,22 @@ export function extractProgram(seed, snapshots, failures, now) {
         if (new Set(matches.map((match) => match[1])).size === 1) rule = { type: "language", language: recipe.language, accepted: [{ minLevel: matches[0][1] }] };
       }
       if (!qualified && recipe.extractor === "degree" && /(?:completed|received|hold) (?:a |an )?Bachelor['’]s/i.test(text)) rule = { type: "degree", accepted: ["bachelor"], completionRequired: true };
-      requirements.push({ id: recipe.id, kind: recipe.kind ?? "other", label: recipe.label, mandatory: true, rule, sourceText: text, evidence: citations });
+      // Curated candidate semantics are not approvals. Anchor failure above fails closed.
+      if (recipe.candidateRule) rule = structuredClone(recipe.candidateRule);
+      let conditionalAdmission;
+      if (recipe.candidateConditional) {
+        const condition = recipe.candidateConditional;
+        const source = snapshots[condition.source];
+        const block = source?.blocks.find((item) => item.text.includes(condition.anchor));
+        const from = block?.text.indexOf(condition.quoteFrom);
+        const until = block?.text.indexOf(condition.quoteUntil, (from ?? -1) + 1);
+        if (block && from >= 0 && until > from) conditionalAdmission = { description: condition.description, alternative: structuredClone(condition.alternative), evidence: [evidence(source, { ...block, text: block.text.slice(from, until).trim() })] };
+        else {
+          rule = { type: "manual", explanation: "Conditional admission evidence is unavailable; do not evaluate the base rule as exhaustive." };
+          issues.push(`Extraction needs review: ${recipe.id} (conditional route missing).`);
+        }
+      }
+      requirements.push({ id: recipe.id, kind: recipe.kind ?? "other", label: recipe.label, mandatory: true, rule, sourceText: text, evidence: citations, ...(conditionalAdmission ? { conditionalAdmission } : {}) });
     }
   }
   for (const source of seed.sources) if (failures[source.id]) issues.push(`${source.id}: ${failures[source.id]}`);

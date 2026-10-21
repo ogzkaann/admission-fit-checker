@@ -1,16 +1,16 @@
 [
   {
     "programId": "de-passau-msc-computer-science",
-    "revision": "d34c7b8349598d736f83d65cfaa39049bb00c35818196f1a7daa65450a6df42b",
-    "verificationStatus": "unverified",
+    "revision": "3b70989de0237c80b7e4c9b9fd868829e70a075a98aba73a7d469c77fe228e93",
+    "verificationStatus": "stale",
     "lastChecked": "2026-10-21T12:05:27.146Z",
-    "latestAttempt": "2026-10-21T12:20:12.426Z",
+    "latestAttempt": "2026-10-21T13:22:40.262Z",
     "requirementsComplete": false,
     "pendingRequirements": [
       "academic",
+      "grade-route",
       "credit-route",
       "degree-duration",
-      "preliminary-degree",
       "recognition",
       "research-evidence",
       "research-credits",
@@ -23,29 +23,29 @@
     "issues": [
       "Automatically extracted draft. Human review and semester applicability are outstanding.",
       "The PDF infosheet names winter semester 2025-26. Do not apply it to later intakes without review.",
-      "The 110 ECTS route has a non-ECTS degree alternative; the credit rule is not independently decisive.",
-      "The general regulation is amended 24 February 2026; the subject regulation is amended 1 September 2025. The general regulation adds research-work evidence of at least 10 ECTS. Reconcile the German-language route with the current enrolment statute before approval."
+      "Candidate rules are editorial proposals, never human approvals. The 110 ECTS route has a non-ECTS alternative requiring a university decision.",
+      "The 2026 amendment narrows an existing 10-ECTS scientific-work requirement to Computer Science and AI Engineering; its explicit first-application sentence concerns Mathematics winter 2026/27. Do not infer Computer Science intake validity from that sentence.",
+      "The recovered 2019 official amendment introduces 10-ECTS scientific work and replaces the five-week final qualification evidence deadline with ten weeks. Its research-clause transition excludes already-enrolled students at 1 October 2019.",
+      "Language routes, accepted variants, two-year German certificate age limit, all-four-skills proof, A1 deferral and applicant-specific exceptions remain incomplete. No native-language-only exemption is assumed.",
+      "See docs/PASSAU_REVIEW.md for exact outstanding editorial decisions. Double-degree routes and returning/pre-2016 students are outside this candidate policy.",
+      "passau-program: Source HTTP 502: https://www.uni-passau.de/en/msc-computer-science/",
+      "One or more required sources could not be checked. Previous evidence is not current verification."
     ],
     "changes": [
       {
         "collection": "requirements",
-        "id": "research-credits",
-        "change": "added"
-      },
-      {
-        "collection": "facts",
-        "id": "application",
+        "id": "academic",
         "change": "changed"
       },
       {
         "collection": "facts",
-        "id": "research-credits",
-        "change": "added"
+        "id": "general-original-clause",
+        "change": "changed"
       },
       {
         "collection": "facts",
-        "id": "regulation-credit-clause",
-        "change": "added"
+        "id": "provisional-regulation",
+        "change": "changed"
       }
     ]
   },
@@ -54,7 +54,7 @@
     "revision": "bc668d90d8fede7fb53d07c76476ef5e4eceea7fdef62df21c0238bf416cfd31",
     "verificationStatus": "unverified",
     "lastChecked": "2026-10-21T12:05:37.352Z",
-    "latestAttempt": "2026-10-21T12:20:12.426Z",
+    "latestAttempt": "2026-10-21T13:22:40.262Z",
     "requirementsComplete": false,
     "pendingRequirements": [
       "academic",
@@ -120,7 +120,7 @@
     "revision": "82c5ffeb949b3f580fa4d914cae2bb3a8e9e0832fc31cd377ee3423ac47eae13",
     "verificationStatus": "unverified",
     "lastChecked": "2026-10-21T12:05:40.495Z",
-    "latestAttempt": "2026-10-21T12:20:12.426Z",
+    "latestAttempt": "2026-10-21T13:22:40.262Z",
     "requirementsComplete": false,
     "pendingRequirements": [
       "academic",
@@ -156,7 +156,7 @@
     "revision": "bbd663b7ef0d719a82376725c41eed4c3f84d436d529046f6113b161b32c0e1b",
     "verificationStatus": "unverified",
     "lastChecked": "2026-10-21T12:05:42.411Z",
-    "latestAttempt": "2026-10-21T12:20:12.426Z",
+    "latestAttempt": "2026-10-21T13:22:40.262Z",
     "requirementsComplete": false,
     "pendingRequirements": [
       "academic",
@@ -187,7 +187,7 @@
     "revision": "589799072bbdcc1ac26e2d132876ab209e7d3679197513b079fba6bc7aea569f",
     "verificationStatus": "stale",
     "lastChecked": "2026-10-21T12:05:50.354Z",
-    "latestAttempt": "2026-10-21T12:20:12.426Z",
+    "latestAttempt": "2026-10-21T13:22:40.262Z",
     "requirementsComplete": false,
     "pendingRequirements": [
       "academic",

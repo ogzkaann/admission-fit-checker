@@ -15,13 +15,13 @@ export function renderReviewReport(program, seed, observations) {
     "", `Draft: \`${program.catalogDraftVersion ?? program.catalogVersion}\``, "",
     `Catalog status: **${program.verificationStatus}**. Inventory complete: **${program.requirementsComplete ? "yes" : "no"}**.`,
     `Admission-semester validity: **${program.validFor?.join(", ") || "not established"}**.`,
-    "This evidence checklist records no human approval. Preview quotations are abbreviated; open the bound snapshot and official document to check complete clauses and exceptions.", "",
+    `This evidence checklist records no human approval. ${seed.fullEvidenceReport ? "Bound evidence quotations below are complete captured excerpts; fact-table previews are abbreviated." : "Preview quotations are abbreviated; open the bound snapshot and official document to check complete clauses and exceptions."}`, "",
     "## Source Checks", "", "| Source | Latest attempt (UTC) | Last successful check (UTC) | Result |", "| --- | --- | --- | --- |",
     ...seed.sources.map((source) => {
       const check = observations[source.id];
       return `| [${source.id}](<${source.url}>) | ${check?.lastAttempt ?? "Never"} | ${check?.lastSuccessfulCheck ?? "Never"} | ${escape(check?.error ?? (check?.snapshotId ? "Captured; unapproved" : "Not captured"))} |`;
     }), "", "## Requirement Checklist", "",
-    ...program.requirements.map((requirement) => `- [ ] **${escape(requirement.label)}** (${requirement.mandatory === false ? "advisory" : "mandatory"}; ${requirement.rule?.type ?? "unsupported"}): ${refs(requirement.evidence)}.`),
+    ...program.requirements.map((requirement) => `- [ ] **${escape(requirement.label)}** (${requirement.mandatory === false ? "advisory" : "mandatory"}; ${requirement.rule?.type ?? "unsupported"}): ${refs(requirement.evidence)}.${requirement.conditionalAdmission ? ` Conditional route: ${escape(requirement.conditionalAdmission.description)} Evidence: ${refs(requirement.conditionalAdmission.evidence)}.` : ""}${seed.fullEvidenceReport ? `\n\n  Candidate rule (unapproved): \`${JSON.stringify(requirement.rule)}\`\n` : ""}`),
     "", "## Captured Facts and Gaps", "", "| Fact | Captured preview | Evidence |", "| --- | --- | --- |",
     ...(program.facts ?? []).map((fact) => `| ${fact.category}: ${escape(fact.id)} | ${fact.value === null ? "**Unknown**" : preview(fact.value)}${fact.note ? ` Note: ${escape(fact.note)}` : ""} | ${refs(fact.evidence)} |`),
     "", "## Unresolved Review Items", "", ...(program.catalogIssues ?? []).map((issue) => `- [ ] ${escape(issue)}`),
@@ -32,7 +32,7 @@ export function renderReviewReport(program, seed, observations) {
     "", "## Bound Evidence", "",
   ];
   evidence.forEach((source, index) => {
-    lines.push(`### E${index + 1}`, "", `[Official source](<${source.url}>) | ${escape(source.locator)} | captured ${source.retrievedAt ?? "unknown"} | checked ${source.lastChecked ?? "unknown"} | ${source.status}`, "", `> ${preview(source.quote, 320)}`, "", `[Full captured snapshot](../snapshots/${source.snapshotId}.json); raw-content SHA-256: \`${source.contentHash}\`.`, "");
+    lines.push(`### E${index + 1}`, "", `[Official source](<${source.url}>) | ${escape(source.locator)} | captured ${source.retrievedAt ?? "unknown"} | checked ${source.lastChecked ?? "unknown"} | ${source.status}`, "", `> ${seed.fullEvidenceReport ? escape(source.quote) : preview(source.quote, 320)}`, "", `[Full captured snapshot](../snapshots/${source.snapshotId}.json); raw-content SHA-256: \`${source.contentHash}\`.`, "");
   });
   return `${lines.join("\n").trimEnd()}\n`;
 }

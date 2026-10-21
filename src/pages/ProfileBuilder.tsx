@@ -6,7 +6,6 @@ import type {
   DegreeType,
   AppSettings,
   DocumentKind,
-  ExtractedProfile,
   LanguageCertificate,
   StoredDocument,
 } from "../domain/types";
@@ -22,6 +21,7 @@ import { Input } from "../components/ui/input";
 import { Select } from "../components/ui/select";
 import { Textarea } from "../components/ui/textarea";
 import { ProfileEvidenceEditor } from "../components/ProfileEvidenceEditor";
+import { applyExtracted } from "../domain/profileDraft";
 
 const emptyProfile: AcademicProfile = {
   id: "local-profile",
@@ -36,30 +36,6 @@ const uploadKinds: DocumentKind[] = ["transcript", "diploma", "cv", "language-ce
 interface ProfileBuilderProps {
   settings: AppSettings;
   onSaved: () => void;
-}
-
-function applyExtracted(profile: AcademicProfile, extracted: ExtractedProfile): AcademicProfile {
-  return {
-    ...profile,
-    name: extracted.name ?? profile.name,
-    degree: extracted.degree ?? profile.degree,
-    field: extracted.field ?? profile.field,
-    university: extracted.university ?? profile.university,
-    gpa: extracted.gpa ?? profile.gpa,
-    ects: extracted.ects ?? profile.ects,
-    graduationDate: extracted.graduationDate ?? profile.graduationDate,
-    courses: extracted.courses?.length ? extracted.courses : profile.courses,
-    workExperience: extracted.workExperience?.length ? extracted.workExperience.join("\n") : profile.workExperience,
-    languageCertificates: extracted.languageCertificates?.length
-      ? extracted.languageCertificates
-      : profile.languageCertificates,
-    extracted,
-    // Re-extraction changes the values. Previously reviewed evidence must be relinked.
-    evidence: undefined,
-    degreeType: undefined,
-    degreeCompleted: undefined,
-    reviewedAt: undefined,
-  };
 }
 
 const completenessStyles: Record<Completeness, { variant: "green" | "yellow" | "outline"; label: string }> = {
@@ -360,6 +336,27 @@ export function ProfileBuilder({ settings, onSaved }: ProfileBuilderProps) {
           <p className="text-sm leading-6 text-muted-foreground">Link supporting excerpts for degree level and completion, field, and total ECTS. Saving confirms your review of the recorded information, not document authenticity or recognition by a university.</p>
           <div className="grid gap-4 md:grid-cols-3">
             {(["degree", "field", "ects"] as const).map((field) => <ProfileEvidenceEditor key={field} label={field === "ects" ? "Total ECTS" : field === "degree" ? "Degree and completion" : "Field of study"} documents={documents} value={profile.evidence?.[field]} onChange={(value) => update("evidence", { ...profile.evidence, [field]: value })} />)}
+          </div>
+
+          <details className="min-w-0 border-t border-black/5 pt-4">
+            <summary className="cursor-pointer text-sm font-semibold">Degree duration, German grade and cohort evidence</summary>
+            <div className="mt-4 grid gap-5 md:grid-cols-3">
+              {([['degree_years', 'Standard degree duration (years)'], ['german_grade', 'German grade (native or university-converted)'], ['cohort_top_percent', 'Graduating cohort: top percent']] as const).map(([metric, label]) => (
+                <div key={metric} className="grid min-w-0 content-start gap-3">
+                  <label className="grid gap-2 text-sm font-medium">{label}<Input aria-label={label} type="number" step="any" min={metric === 'german_grade' ? 1 : 0} max={metric === 'german_grade' ? 5 : metric === 'cohort_top_percent' ? 100 : 20} value={profile.metrics?.[metric]?.value ?? ''} onChange={(event) => {
+                    const metrics = { ...profile.metrics };
+                    if (!event.target.value) delete metrics[metric]; else metrics[metric] = { value: Number(event.target.value) };
+                    update('metrics', metrics);
+                  }} /></label>
+                  {profile.metrics?.[metric] ? <ProfileEvidenceEditor label={label} documents={documents} value={profile.metrics[metric]?.evidence} onChange={(evidence) => update('metrics', { ...profile.metrics, [metric]: { ...profile.metrics![metric]!, evidence } })} /> : null}
+                </div>
+              ))}
+            </div>
+          </details>
+
+          <div className="grid min-w-0 gap-3">
+            <label className="grid gap-2 text-sm font-medium">Entire qualifying degree: language of instruction<Input value={profile.educationLanguage?.language ?? ''} onChange={(event) => update('educationLanguage', event.target.value ? { language: event.target.value } : undefined)} /></label>
+            {profile.educationLanguage ? <ProfileEvidenceEditor label="Entire degree instruction language" documents={documents} value={profile.educationLanguage.evidence} onChange={(evidence) => update('educationLanguage', { ...profile.educationLanguage!, evidence })} /> : null}
           </div>
 
           <div className="grid gap-2">

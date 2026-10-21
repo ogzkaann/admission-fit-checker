@@ -6,7 +6,7 @@
       "snapshotId": "0d60ee24a955bcdd56dea67669ce465a252ccbca6b45da0cd24b560c7db42f68",
       "contentHash": "293c6d487acb3cec00410acfd4a39a9f9c809a6bd69c1a5658f8033f3d72344d",
       "textHash": "95289a614141706a50da22e54df811f2fd5b5f560c2fa5cee81ff02d8f3e7506",
-      "lastAttempt": "2026-10-21T12:05:25.647Z",
+      "lastAttempt": "2026-10-21T12:59:54.550Z",
       "lastSuccessfulCheck": "2026-10-21T12:05:27.146Z",
       "changed": true,
       "textChanged": false,
@@ -55,15 +55,16 @@
           "url": "https://www.uni-passau.de/fileadmin/dokumente/beschaeftigte/Rechtsvorschriften/StO_und_PO/FMI/Master_Informatik.pdf",
           "label": "Subject-specific study and examination regulations for the programme"
         }
-      ]
+      ],
+      "error": "Source HTTP 502: https://www.uni-passau.de/en/msc-computer-science/"
     },
     "passau-leaflet": {
       "url": "https://www.uni-passau.de/fileadmin/dokumente/studium/infoschriften/Informatik_MSc_EN.pdf",
       "snapshotId": "65a06f5870578af7fda0930f32159219b741f135648e0b57efb5900ff234a6d5",
       "contentHash": "dc6e8087039110286d75db6c2740ffac6d91f3566b565bd8250a50ea2f33d418",
       "textHash": "cae63e9d150c0556a8e8abda7a7dac65fe082cb78da29061be3e1c7df93a1870",
-      "lastAttempt": "2026-10-21T12:05:27.472Z",
-      "lastSuccessfulCheck": "2026-10-21T12:05:28.281Z",
+      "lastAttempt": "2026-10-21T12:54:35.401Z",
+      "lastSuccessfulCheck": "2026-10-21T12:54:36.766Z",
       "changed": false,
       "textChanged": false,
       "discovered": []
@@ -385,8 +386,8 @@
       "snapshotId": "48d0e5427a7af1da651c61af42413f46d5dc03f81b88493c9c16a5b9d3ff5f73",
       "contentHash": "a0336b78540f1c07ab2a7ea97ad346b217c1344eda2f93c262ec8fbf3c022574",
       "textHash": "576671ea04afb4b0c13ad422ae5241e01f42c9d33735f0fb72a46425fb08d4c6",
-      "lastAttempt": "2026-10-21T12:08:35.517Z",
-      "lastSuccessfulCheck": "2026-10-21T12:08:36.970Z",
+      "lastAttempt": "2026-10-21T12:54:37.298Z",
+      "lastSuccessfulCheck": "2026-10-21T12:54:37.913Z",
       "changed": false,
       "textChanged": false,
       "discovered": []
@@ -396,8 +397,8 @@
       "snapshotId": "78567d39a3a4a8fb0e2a18ecc082f8496c5894cb154c45a93ee4f75b61a19dcd",
       "contentHash": "bfc18ccd413a4552ec8146c2826d8454cc21c0b127d4a06851d27e80c02af74d",
       "textHash": "f3e1476f0209db1fdf759969391b396d1e4682a5846eadf24adcb07fdead16d4",
-      "lastAttempt": "2026-10-21T12:09:25.806Z",
-      "lastSuccessfulCheck": "2026-10-21T12:09:27.155Z",
+      "lastAttempt": "2026-10-21T12:54:39.551Z",
+      "lastSuccessfulCheck": "2026-10-21T12:54:40.226Z",
       "changed": false,
       "textChanged": false,
       "discovered": [
@@ -863,8 +864,8 @@
       "snapshotId": "e2f1b66ec83df20cf4e58a9f54852e1270caa77a378e6faa5d83287c3be55b55",
       "contentHash": "a0d2e8569da45193d5d9a9bb9239e44a368731ceb604d766f85166615de9bcc5",
       "textHash": "f9e4585652ae22c72cb0f9a4dec341e0e530ce42195a620dd140e0f6d92c18ef",
-      "lastAttempt": "2026-10-21T12:12:12.631Z",
-      "lastSuccessfulCheck": "2026-10-21T12:12:14.139Z",
+      "lastAttempt": "2026-10-21T12:54:38.038Z",
+      "lastSuccessfulCheck": "2026-10-21T12:54:39.256Z",
       "changed": false,
       "textChanged": false,
       "discovered": []
@@ -1180,28 +1181,164 @@
           "label": "Cookie Settings"
         }
       ]
+    },
+    "passau-general-original": {
+      "url": "https://www.uni-passau.de/fileadmin/dokumente/beschaeftigte/Rechtsvorschriften/Virtuelles_Amtsblatt/2016/2016_024_AStuPO_MSc_FIM_2016.pdf",
+      "snapshotId": "ebc1ab3b7aa2439ba9507c5222b7d01c3ad54729685053db4d7f3a212bdb0cad",
+      "contentHash": "19aa670aa9c3c1a4ade1f5723a092938dae868b25d14f68f2a50e9f7e4bb5f6a",
+      "textHash": "3c94af5bc37b81e4e42bf8ebc40af303d33049597348a31c5beebaec195372e2",
+      "lastAttempt": "2026-10-21T12:56:49.571Z",
+      "lastSuccessfulCheck": "2026-10-21T12:56:51.065Z",
+      "changed": false,
+      "textChanged": false,
+      "discovered": []
+    },
+    "passau-general-2025": {
+      "url": "https://www.uni-passau.de/fileadmin/dokumente/beschaeftigte/Rechtsvorschriften/Virtuelles_Amtsblatt/2025/2025_072_AStuPO_MA_FIM_2.%C3%84S.pdf",
+      "snapshotId": "445fa7a31699c77eda34db04fb6598abc48b668bbdde22422b6dd08f8034fe4e",
+      "contentHash": "7502d0d20d4e32d4a61b9ad25f928dd6f862d82cf58e0194ef8c9b5eb8bb26dd",
+      "textHash": "59dc94f42f42116a957cc426b50a85ea1b1f14a73e4cfeef6efda02e4c2da2e1",
+      "lastAttempt": "2026-10-21T12:56:51.839Z",
+      "lastSuccessfulCheck": "2026-10-21T12:56:52.255Z",
+      "changed": false,
+      "textChanged": false,
+      "discovered": []
+    },
+    "passau-general-2026": {
+      "url": "https://www.uni-passau.de/fileadmin/dokumente/beschaeftigte/Rechtsvorschriften/Virtuelles_Amtsblatt/2026/2026_097_AStuPO_MSc._FIM_3.%C3%84S.pdf",
+      "snapshotId": "4b5cbe95d365d716bc2b9d4a5fdd2ab5007192bcc52735abb270efcc54fd467a",
+      "contentHash": "cac3efbf042fda796e84459c93093c36b88030e1cfea08e5fdf5faf4db3c34ce",
+      "textHash": "f92b7726b111365f59228dcb2ab272de3ef60261564a39942f5b3226df9a8751",
+      "lastAttempt": "2026-10-21T12:56:52.511Z",
+      "lastSuccessfulCheck": "2026-10-21T12:56:53.357Z",
+      "changed": false,
+      "textChanged": false,
+      "discovered": []
+    },
+    "passau-subject-2025": {
+      "url": "https://www.uni-passau.de/fileadmin/dokumente/beschaeftigte/Rechtsvorschriften/Virtuelles_Amtsblatt/2025/2025_086_FStuPO_Master_Informatik_1.%C3%84S.pdf",
+      "snapshotId": "b6fca4902659e2f5df34f0d4d77b6d36f0ddee254c6e870b21a6f9a1d46d4537",
+      "contentHash": "026e8b810ff1f5b3067e4856148192174caecc0bd5ebb4a0196e2195ccbffdfb",
+      "textHash": "c58a2c6ca3b6d2808d4a46b72d800bb54e5a0e2929a2cbe6d6482466170d7596",
+      "lastAttempt": "2026-10-21T12:56:53.431Z",
+      "lastSuccessfulCheck": "2026-10-21T12:56:54.645Z",
+      "changed": false,
+      "textChanged": false,
+      "discovered": []
+    },
+    "passau-faq": {
+      "url": "https://www.uni-passau.de/en/msc-computer-science/faq-application-msc-computer-science",
+      "snapshotId": "664c9fd9765d43571df6f683354edc72d06f27a335a610f3fae4fdfc4ee091b4",
+      "contentHash": "bfd0e462d372bc219e69ce9655930f6effd897638607345487bb71ebe91eb6ca",
+      "textHash": "7b5ced4723aff2253d64129fa096463941baa7448d2c0bfc2901513f68fe34b3",
+      "lastAttempt": "2026-10-21T12:56:54.789Z",
+      "lastSuccessfulCheck": "2026-10-21T12:56:55.713Z",
+      "changed": false,
+      "textChanged": false,
+      "discovered": [
+        {
+          "url": "https://www.uni-passau.de/en/msc-computer-science/faq-application-msc-computer-science",
+          "label": "Heading"
+        },
+        {
+          "url": "https://www.uni-passau.de/master-informatik/faq-application-masters-programmes-fim",
+          "label": "de"
+        },
+        {
+          "url": "https://www.uni-passau.de/en/msc-ai-eng/faq-msc-aie",
+          "label": "Application process"
+        },
+        {
+          "url": "https://www.uni-passau.de/en/apply",
+          "label": "application guide"
+        }
+      ]
+    },
+    "passau-german": {
+      "url": "https://www.uni-passau.de/en/german-language-requirements",
+      "snapshotId": "7ed089ed32c84071c46b3ad801f26d9d25324a697e3d4f457e7c1ff698c31c13",
+      "contentHash": "567c996b8a4b6fb56ce05020ca0a60f2f1b17401989ce5062c227658f27ccd79",
+      "textHash": "4ca0f67ab418de5bb3c48d7d80503e95924fc221895d22ee6c3122055f319548",
+      "lastAttempt": "2026-10-21T12:56:55.911Z",
+      "lastSuccessfulCheck": "2026-10-21T12:56:56.914Z",
+      "changed": false,
+      "textChanged": false,
+      "discovered": [
+        {
+          "url": "https://www.uni-passau.de/en/german-language-requirements",
+          "label": "Heading"
+        },
+        {
+          "url": "https://www.uni-passau.de/en/apply/requirements-for-study/english",
+          "label": "English More"
+        }
+      ]
+    },
+    "passau-subject-original": {
+      "url": "https://www.uni-passau.de/fileadmin/dokumente/beschaeftigte/Rechtsvorschriften/Virtuelles_Amtsblatt/2016/2016_041_FStuPO_Master_Informatik_2016.pdf",
+      "snapshotId": "a1600599f39298157d80c5d8b0323d3487df67a227abaf3d18335003d39951f7",
+      "contentHash": "4672e3fe6a24a33894415e0eae3965866efd9176d2af00386f8642e70457a527",
+      "textHash": "b8962e29c29de24197be44db97f61eb3cb5bee2c335f6aee2feb6b86a6f6b31e",
+      "lastAttempt": "2026-10-21T12:59:55.831Z",
+      "lastSuccessfulCheck": "2026-10-21T12:59:57.087Z",
+      "changed": false,
+      "textChanged": false,
+      "discovered": []
+    },
+    "passau-enrolment": {
+      "url": "https://www.uni-passau.de/fileadmin/dokumente/beschaeftigte/Rechtsvorschriften/sonstige_Vorschriften/ImmSa.pdf",
+      "snapshotId": "f0ac9a7968ec7cf7a0439e3b4297619abc65936480f381899286dbc3f5d7c6f5",
+      "contentHash": "a3a8afc2d82db111a1715d7fc70a1fac0f0811f3f0006ded88a362fa3b743d11",
+      "textHash": "f052288ac63aecead5ccfc324529cc0fa9abc84d9d9dcf1273e3ac5f7ece34f2",
+      "lastAttempt": "2026-10-21T12:59:57.812Z",
+      "lastSuccessfulCheck": "2026-10-21T12:59:58.381Z",
+      "changed": false,
+      "textChanged": false,
+      "discovered": []
+    },
+    "passau-enrolment-2025": {
+      "url": "https://www.uni-passau.de/fileadmin/dokumente/beschaeftigte/Rechtsvorschriften/Virtuelles_Amtsblatt/2025/2025_060_ImmSa_3.%C3%84S.pdf",
+      "snapshotId": "1343482ed8c196eee535d5fa508ce80614683a2b0b5ed063f7365268113eec3e",
+      "contentHash": "090608a7d5c91d789efeeb61643c821d7b79b54852a24b87f350da2fd8817333",
+      "textHash": "0ab18e94f7d99bcea9f7e189fac0009e01e1804db128e691794b71fe16f809e6",
+      "lastAttempt": "2026-10-21T12:59:58.614Z",
+      "lastSuccessfulCheck": "2026-10-21T12:59:59.562Z",
+      "changed": false,
+      "textChanged": false,
+      "discovered": []
+    },
+    "passau-general-2019": {
+      "url": "https://www.uni-passau.de/fileadmin/dokumente/beschaeftigte/Rechtsvorschriften/Virtuelles_Amtsblatt/2019/2019_198_AStuPO_FIM_%C3%84S__1.pdf",
+      "snapshotId": "f070e3f03036e3e2e634d65c7dcde000a9e3bc75db13e01f3445833e0984b55e",
+      "contentHash": "f46a0d81ef9253069a82f49c78bddc4e9d11d01948b38812f95bfb7d3ad959ee",
+      "textHash": "824b38faec92b6cfd5d7a73bb9d0fe6944b79ab2031919a8305f3a1980d5d701",
+      "lastAttempt": "2026-10-21T13:04:08.516Z",
+      "lastSuccessfulCheck": "2026-10-21T13:04:09.935Z",
+      "changed": false,
+      "textChanged": false,
+      "discovered": []
     }
   },
   "programs": {
     "de-passau-msc-computer-science": {
-      "revision": "d34c7b8349598d736f83d65cfaa39049bb00c35818196f1a7daa65450a6df42b",
-      "lastAttempt": "2026-10-21T12:20:12.426Z"
+      "revision": "3b70989de0237c80b7e4c9b9fd868829e70a075a98aba73a7d469c77fe228e93",
+      "lastAttempt": "2026-10-21T13:22:40.262Z"
     },
     "de-saarland-msc-computer-science": {
       "revision": "bc668d90d8fede7fb53d07c76476ef5e4eceea7fdef62df21c0238bf416cfd31",
-      "lastAttempt": "2026-10-21T12:20:12.426Z"
+      "lastAttempt": "2026-10-21T13:22:40.262Z"
     },
     "de-fau-msc-data-science": {
       "revision": "82c5ffeb949b3f580fa4d914cae2bb3a8e9e0832fc31cd377ee3423ac47eae13",
-      "lastAttempt": "2026-10-21T12:20:12.426Z"
+      "lastAttempt": "2026-10-21T13:22:40.262Z"
     },
     "de-stuttgart-msc-infotech": {
       "revision": "bbd663b7ef0d719a82376725c41eed4c3f84d436d529046f6113b161b32c0e1b",
-      "lastAttempt": "2026-10-21T12:20:12.426Z"
+      "lastAttempt": "2026-10-21T13:22:40.262Z"
     },
     "de-tuhh-msc-mechatronics": {
       "revision": "589799072bbdcc1ac26e2d132876ab209e7d3679197513b079fba6bc7aea569f",
-      "lastAttempt": "2026-10-21T12:20:12.426Z"
+      "lastAttempt": "2026-10-21T13:22:40.262Z"
     }
   }
 }

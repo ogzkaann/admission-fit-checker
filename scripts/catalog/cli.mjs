@@ -3,7 +3,7 @@ import { createRequire } from "node:module";
 import { resolve } from "node:path";
 import { createFetcher, allowedUrl } from "./fetch.mjs";
 import { extractProgram, parseSource, hash } from "./extract.mjs";
-import { applyReview, assertEvidence, differences, markStale, reviewTemplate, revisionFor } from "./core.mjs";
+import { applyReview, assertEvidence, differences, hasUnsupportedRule, markStale, reviewTemplate, revisionFor } from "./core.mjs";
 import { renderReviewReport } from "./report.mjs";
 
 const require = createRequire(import.meta.url);
@@ -76,7 +76,7 @@ async function publish(validateOnly = false) {
       const observation = Object.values(state.sources).find((item) => item.snapshotId === source.snapshotId);
       return { ...source, lastChecked: observation?.lastSuccessfulCheck ?? source.lastChecked };
     });
-    program = { ...program, sources: refresh(program.sources), facts: program.facts?.map((fact) => ({ ...fact, evidence: refresh(fact.evidence) })), requirements: program.requirements.map((req) => ({ ...req, evidence: refresh(req.evidence) })) };
+    program = { ...program, sources: refresh(program.sources), facts: program.facts?.map((fact) => ({ ...fact, evidence: refresh(fact.evidence) })), requirements: program.requirements.map((req) => ({ ...req, evidence: refresh(req.evidence), ...(req.conditionalAdmission ? { conditionalAdmission: { ...req.conditionalAdmission, evidence: refresh(req.conditionalAdmission.evidence) } } : {}) })) };
     const review = await read(reviewPath(seed.id, pointer.revision), null);
     if (review) program = applyReview(program, review, allSnapshots, schemas);
     const failures = seed.sources.filter((source) => state.sources[source.id]?.error).map((source) => `${source.id}: ${state.sources[source.id].error}`);
@@ -85,7 +85,7 @@ async function publish(validateOnly = false) {
     program.lastChecked = seed.sources.map((source) => state.sources[source.id]?.lastSuccessfulCheck).filter(Boolean).sort()[0];
     for (const citation of [...(program.sources ?? []), ...program.requirements.flatMap((req) => [...(req.evidence ?? []), ...(req.conditionalAdmission?.evidence ?? [])]), ...(program.facts ?? []).flatMap((fact) => fact.evidence)]) assertEvidence(citation, allSnapshots);
     programs.push(programSchema.parse(program));
-    queue.push({ programId: seed.id, revision: pointer.revision, verificationStatus: program.verificationStatus, lastChecked: program.lastChecked, latestAttempt: pointer.lastAttempt, requirementsComplete: program.requirementsComplete, pendingRequirements: program.requirements.filter((req) => !req.evidence?.length || req.evidence.some((source) => source.status !== "verified") || req.rule?.type === "manual").map((req) => req.id), unknownFacts: program.facts?.filter((fact) => fact.value === null).map((fact) => fact.id), issues: program.catalogIssues, changes: version.changes.map(({ collection, id, change }) => ({ collection, id, change })) });
+    queue.push({ programId: seed.id, revision: pointer.revision, verificationStatus: program.verificationStatus, lastChecked: program.lastChecked, latestAttempt: pointer.lastAttempt, requirementsComplete: program.requirementsComplete, pendingRequirements: program.requirements.filter((req) => !req.evidence?.length || req.evidence.some((source) => source.status !== "verified") || hasUnsupportedRule(req.rule) || (req.conditionalAdmission && hasUnsupportedRule(req.conditionalAdmission.alternative))).map((req) => req.id), unknownFacts: program.facts?.filter((fact) => fact.value === null).map((fact) => fact.id), issues: program.catalogIssues, changes: version.changes.map(({ collection, id, change }) => ({ collection, id, change })) });
   }
   if (!validateOnly) {
     await write(resolve("src/data/catalogPrograms.json"), programs);
@@ -122,8 +122,8 @@ const [command = "status", id, file] = process.argv.slice(2);
   if (command === "fetch") {
     const fetchSource = createFetcher({ hosts: seeds.officialHosts });
     const sources = new Map(seeds.programs.flatMap((seed) => seed.sources).map((source) => [source.id, source]));
-    if (sources.size > 30) throw new Error("Pilot run is capped at 30 explicitly configured sources");
     const selected = id?.split(",");
+    if (new Set(selected ?? sources.keys()).size > 30) throw new Error("Pilot run is capped at 30 explicitly configured sources per fetch batch; select source IDs");
     if (selected?.some((sourceId) => !sources.has(sourceId))) throw new Error("Unknown source ID");
     for (const source of sources.values()) {
       if (selected && !selected.includes(source.id)) continue;

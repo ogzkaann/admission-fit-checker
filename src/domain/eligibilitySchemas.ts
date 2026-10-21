@@ -1,4 +1,5 @@
 import { z } from "zod";
+import type { EligibilityRule } from "./types";
 
 export const degreeTypeSchema = z.enum(["bachelor", "master", "phd", "other"]);
 export const documentKindSchema = z.enum(["cv", "diploma", "transcript", "language-certificate", "other"]);
@@ -25,7 +26,12 @@ export const profileEvidenceSchema = z.object({
 });
 const credits = z.number().finite().nonnegative();
 const level = z.enum(["A1", "A2", "B1", "B2", "C1", "C2"]);
-export const eligibilityRuleSchema = z.discriminatedUnion("type", [
+export const eligibilityRuleSchema: z.ZodType<EligibilityRule> = z.lazy(() => z.discriminatedUnion("type", [
+  z.object({ type: z.literal("all"), rules: z.array(eligibilityRuleSchema).min(1).max(20) }).strict(),
+  z.object({ type: z.literal("any"), rules: z.array(eligibilityRuleSchema).min(1).max(20) }).strict(),
+  z.object({ type: z.literal("metric"), metric: z.enum(["degree_years", "german_grade", "cohort_top_percent"]), minimum: credits.optional(), maximum: credits.optional() }).strict(),
+  z.object({ type: z.literal("education_language"), accepted: z.array(z.string().trim().min(1)).min(1) }).strict(),
+  z.object({ type: z.literal("assessment"), key: z.string().regex(/^[a-z][a-z0-9-]*$/), explanation: z.string().min(1) }).strict(),
   z.object({ type: z.literal("degree"), accepted: z.array(degreeTypeSchema).min(1), completionRequired: z.boolean() }).strict(),
   z.object({ type: z.literal("field"), accepted: z.array(z.string().trim().min(1)).min(1), exhaustive: z.boolean() }).strict(),
   z.object({ type: z.literal("total_ects"), minimum: credits }).strict(),
@@ -37,7 +43,9 @@ export const eligibilityRuleSchema = z.discriminatedUnion("type", [
     .refine((option) => (option.minScore === undefined && !option.componentMinimums) || Boolean(option.test), "Scores require a specific test")).min(1) }).strict(),
   z.object({ type: z.literal("document"), documentKind: documentKindSchema }).strict(),
   z.object({ type: z.literal("manual"), explanation: z.string().min(1) }).strict(),
-]);
+]).superRefine((rule, context) => {
+  if (rule.type === "metric" && ((rule.minimum === undefined && rule.maximum === undefined) || (rule.minimum !== undefined && rule.maximum !== undefined && rule.minimum > rule.maximum))) context.addIssue({ code: z.ZodIssueCode.custom, message: "Metric requires consistent bounds" });
+}));
 
 export const programRequirementSchema = z.object({
   id: z.string().min(1), kind: z.enum(["academic", "language", "ects", "gpa", "document", "other"]), label: z.string().min(1),

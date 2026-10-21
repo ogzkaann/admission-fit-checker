@@ -1,4 +1,5 @@
 import * as pdfjsLib from "pdfjs-dist";
+import { textFromPdfItems } from "./pdfText";
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = new URL("pdfjs-dist/build/pdf.worker.mjs", import.meta.url).toString();
 
@@ -26,11 +27,7 @@ export async function extractPdfText(input: File | Blob | ArrayBuffer): Promise<
   for (let pageNumber = 1; pageNumber <= pdf.numPages; pageNumber += 1) {
     const page = await pdf.getPage(pageNumber);
     const textContent = await page.getTextContent();
-    const text = textContent.items
-      .map((item) => ("str" in item ? item.str : ""))
-      .join(" ")
-      .replace(/\s+/g, " ")
-      .trim();
+    const text = textFromPdfItems(textContent.items);
 
     pages.push({ pageNumber, text });
   }

@@ -34,6 +34,7 @@ function CheckRow({ check }: { check: RequirementCheck }) {
       <div className="min-w-0 flex-1">
         <p className="text-sm font-semibold text-foreground">{check.label}</p>
         <p className="mt-1 text-sm leading-6 text-muted-foreground">{check.detail}</p>
+        {check.status === "unknown" && check.comparison !== "unknown" ? <p className="mt-2 text-xs font-medium text-amber-800">Provisional comparison: {check.comparison === "met" ? "appears to meet" : "appears not to meet"}. This is not a verified eligibility finding.</p> : null}
         <div className="mt-2 flex flex-wrap gap-2">
           <Badge variant={check.hardBlocker ? "red" : "outline"}>{check.hardBlocker ? "Hard blocker" : check.mandatory ? "Mandatory" : "Advisory"}</Badge>
           <Badge variant="outline">{check.status === "unknown" ? "Unresolved" : check.status === "conditional" ? "Conditional route" : check.status === "met" ? "Evidence supports rule" : "Confirmed unmet"}</Badge>

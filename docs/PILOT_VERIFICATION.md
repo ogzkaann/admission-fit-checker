@@ -1,5 +1,9 @@
 # Pilot Verification: 21 October 2026
 
+## Passau follow-up
+
+For the latest Passau-specific audit, use [the human decision packet](PASSAU_REVIEW.md), [full captured evidence](../catalog/reports/de-passau-msc-computer-science.md) and [synthetic transcript demonstration](TRANSCRIPT_DEMO.md). Original gazette/amendment history is now captured, candidate alternatives/conditional entry are modeled, and source-check failure leaves Passau stale. Earlier all-manual/count descriptions below are historical. No real program has been human-approved.
+
 All five records were compared with accessible official or university-linked sources. Twenty of 21 configured sources were captured; TUHH's subject-requirements PDF remains robots-denied. Stored snapshots preserve exact URLs, quotations, locators, raw-content hashes and UTC capture/check times. Retrieval is an observation, not human verification. No review event or human approval was created.
 
 Four records remain `unverified`; TUHH remains `stale` because a required source is inaccessible. All five inventories remain incomplete, all program-wide `validFor` lists remain empty, and all current admission rules remain manual. A source-stated date for one fee or deadline does not establish the whole program's applicability.
