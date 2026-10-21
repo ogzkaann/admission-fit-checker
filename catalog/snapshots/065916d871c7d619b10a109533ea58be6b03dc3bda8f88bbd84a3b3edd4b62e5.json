@@ -1,0 +1,352 @@
+{
+  "id": "065916d871c7d619b10a109533ea58be6b03dc3bda8f88bbd84a3b3edd4b62e5",
+  "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+  "requestedUrl": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+  "title": "Requirements",
+  "retrievedAt": "2026-10-21T12:05:42.411Z",
+  "mediaType": "text/html",
+  "contentHash": "a2fc623f3af31ed199655488d9be5fb49f900bce9b0be17ab7b1a68c763eea1f",
+  "textHash": "4d0a71258764e6c6fed3f502a25f5478dbdc7c1564ea47eb6e9c389dae85822a",
+  "text": "Requirements\nPrerequisites might be vary, based on the type and place of the first level (undergraduate) degree.\nRoadmap for applying\nSelection Process\nPost-Acceptance Information\nFAQ\nApplicants are required to meet a number of other basic requirements in order to be eligible for admission.Based on the type and place of the first level (undergraduate) degree, different requirements might be in place.\nThe adjunct form/supplementary form is required with your application in C@mpus. Failure to include it can result in your application being rejected. The form can be found here.\nFor applicants with non-European first level degree (UC=NE)\n(1) Bachelor of Science (B.Sc.) degree or similar, e.g. BTech, BE, BCS, BCA but not B.A. Master degrees do not qualify and are not considered.\n(2) min. 3 to 4 years regular study time\nFor applicants with a European (including German) first level degree (UC=E)\n(1a) Bachelor of Science (B.Sc.) degree or similar, e.g. BTech, BE, BCS, BCA but not B.A. or\n(1b) Diploma Degree from an university of one of the European Union member states. Master degrees do not qualify and are not considered.\nFor applicants with German (Fach)-Hochschule/Berufsakademie (Duale Hochschule) Degrees (UC=E)\n(1) Bachelor/Diplom Abschluss einer deutschen (Fach)hochschule oder Berufsakademie (Duale Hochschule), deren Abschlüsse denen einer Staatlichen Hochschule gleichgestellt sind\n(2) entfällt\nNote: [European] refers to the official member states of the European Union (EU)\nThe degrees of the awarding institutions have to be recognized as equivalents to those awarded by a german institution without restrictions. The institution should have a 'Status' of 'H+' in the anabin database of The Standing Conference of the German Ministers of Education (KMK).\nAn applicants bachelor degree should be in a similar field to ensure they have the foundation needed to suceed in the INFOTECH program. Eg. computer science, computer engineering, electrical engineering (communications), electronics engineering or automation.\nThe Cumulative Grade Point Average/Overall Average (CGPA) should be better than (value/best on scale)\n70%/100%\n2.8/4\n3.5/5\n14/20\n7/10\n2.5/1.0 (for German Marks)\nOriginal marks/grades are required, not a conversion to German grades. It should be noted that values close to these minimum values have a difficult position in the international competition for seats. In all cases the academic admission commission INFOTECH evaluates the finishing (overall) grades/marks of the degree examination and decides.\n--READ THIS INFORMATION THROUGHLY--All applicants are required to provide proof of their English language skills before the application deadline. Applications without one of the accepted forms of proof cannot be considered for admission (ie. are immediately rejected).\nAccepted proofs are (scores listed are minimums required - exceptions cannot be made):\nTOEFL IBT 95 or better / from 2026: 5 or better TOEFL\nIELTS band 7,0 or better (academic)\nCambridge C1/C2\nOxford Test of English Advanced (C1)\nPTE Academic Score 76 or better\ntelc: telc University B2/C1 (result „very good“); telc C1 / C2 (general examination)\nMedium of Instruction (MoI), e.g. certificate confirming your bachelor's program was taught in english is not accepted. Exceptions cannot be made.\nPlease note some certificates are only valid for 2 years (eg. IELTS). The uploaded certificate has to be valid at least until the application deadline (15th of January/July)\nIf you are a national with citizenship and education from one of the countries listed below - you can submit proof of citizenship instead of one of the language proficiency proofs (eg. passport). Applicants from countries not included in this list must submit one of the proofs listed above.\nAntigua and Barbuda\nAustralia\nThe Bahamas\nBarbados\nBelize\nCanada\nDominica\nGrenada\nGuyana\nIreland\nJamaica\nMalta\nNew Zealand\nSt Kitts and Nevis\nSt Lucia\nSt Vincent and the Grenadines\nTrinidad and Tobago\nUnited Kingdom\nUnited States of America\nThe APS certificates have to be submitted before the application deadline.\nChina, Mongolia and VietnamCertificate from the APS (\"Akademische Prüfstelle\"). Further information in APS.\nIndiaCertificate from the APS (\"Akademische Prüfstelle\"). Further information : APS India.- As of September 2025, an APS certificate does not need to be submitted if:\nThe highest university degree relevant for assessment originates from a country other than India (For INFOTECH we assess your bachelor degree)\nProof that a previous assessment test has been passed is available\nThe applicant can provide proof they will be receiving a scholarship from Germany or the EU.\nUse this link for for application C@MPUS.\nEnsure the name you provide in C@mpus and in the Adjunct matches the name on your documents!!\nLetters of motivation or recommendation are not required for the application.\nA manual for application is available here.\nIf you have technical questions concerning C@MPUS please contact support@campus.uni-stuttgart.de.\nAntigua and Barbuda | Australia | The Bahamas\nBarbados | Belize | Canada\nDominica | Grenada | Guyana\nIreland | Jamaica | Malta\nNew Zealand | St Kitts and Nevis | St Lucia\nSt Vincent and the Grenadines | Trinidad and Tobago | United Kingdom\nUnited States of America |  | ",
+  "blocks": [
+    {
+      "text": "Requirements",
+      "locator": "HTML h1 block 1"
+    },
+    {
+      "text": "Prerequisites might be vary, based on the type and place of the first level (undergraduate) degree.",
+      "locator": "HTML p block 2"
+    },
+    {
+      "text": "Roadmap for applying",
+      "locator": "HTML li block 4"
+    },
+    {
+      "text": "Selection Process",
+      "locator": "HTML li block 5"
+    },
+    {
+      "text": "Post-Acceptance Information",
+      "locator": "HTML li block 6"
+    },
+    {
+      "text": "FAQ",
+      "locator": "HTML li block 7"
+    },
+    {
+      "text": "Applicants are required to meet a number of other basic requirements in order to be eligible for admission.Based on the type and place of the first level (undergraduate) degree, different requirements might be in place.",
+      "locator": "HTML p block 8"
+    },
+    {
+      "text": "The adjunct form/supplementary form is required with your application in C@mpus. Failure to include it can result in your application being rejected. The form can be found here.",
+      "locator": "HTML p block 9"
+    },
+    {
+      "text": "For applicants with non-European first level degree (UC=NE)",
+      "locator": "HTML td block 10"
+    },
+    {
+      "text": "(1) Bachelor of Science (B.Sc.) degree or similar, e.g. BTech, BE, BCS, BCA but not B.A. Master degrees do not qualify and are not considered.",
+      "locator": "HTML li block 11"
+    },
+    {
+      "text": "(2) min. 3 to 4 years regular study time",
+      "locator": "HTML li block 12"
+    },
+    {
+      "text": "For applicants with a European (including German) first level degree (UC=E)",
+      "locator": "HTML td block 13"
+    },
+    {
+      "text": "(1a) Bachelor of Science (B.Sc.) degree or similar, e.g. BTech, BE, BCS, BCA but not B.A. or",
+      "locator": "HTML li block 14"
+    },
+    {
+      "text": "(1b) Diploma Degree from an university of one of the European Union member states. Master degrees do not qualify and are not considered.",
+      "locator": "HTML li block 15"
+    },
+    {
+      "text": "For applicants with German (Fach)-Hochschule/Berufsakademie (Duale Hochschule) Degrees (UC=E)",
+      "locator": "HTML td block 17"
+    },
+    {
+      "text": "(1) Bachelor/Diplom Abschluss einer deutschen (Fach)hochschule oder Berufsakademie (Duale Hochschule), deren Abschlüsse denen einer Staatlichen Hochschule gleichgestellt sind",
+      "locator": "HTML li block 18"
+    },
+    {
+      "text": "(2) entfällt",
+      "locator": "HTML li block 19"
+    },
+    {
+      "text": "Note: [European] refers to the official member states of the European Union (EU)",
+      "locator": "HTML p block 20"
+    },
+    {
+      "text": "The degrees of the awarding institutions have to be recognized as equivalents to those awarded by a german institution without restrictions. The institution should have a 'Status' of 'H+' in the anabin database of The Standing Conference of the German Ministers of Education (KMK).",
+      "locator": "HTML p block 22"
+    },
+    {
+      "text": "An applicants bachelor degree should be in a similar field to ensure they have the foundation needed to suceed in the INFOTECH program. Eg. computer science, computer engineering, electrical engineering (communications), electronics engineering or automation.",
+      "locator": "HTML td block 23"
+    },
+    {
+      "text": "The Cumulative Grade Point Average/Overall Average (CGPA) should be better than (value/best on scale)",
+      "locator": "HTML td block 24"
+    },
+    {
+      "text": "70%/100%",
+      "locator": "HTML li block 25"
+    },
+    {
+      "text": "2.8/4",
+      "locator": "HTML li block 26"
+    },
+    {
+      "text": "3.5/5",
+      "locator": "HTML li block 27"
+    },
+    {
+      "text": "14/20",
+      "locator": "HTML li block 28"
+    },
+    {
+      "text": "7/10",
+      "locator": "HTML li block 29"
+    },
+    {
+      "text": "2.5/1.0 (for German Marks)",
+      "locator": "HTML li block 30"
+    },
+    {
+      "text": "Original marks/grades are required, not a conversion to German grades. It should be noted that values close to these minimum values have a difficult position in the international competition for seats. In all cases the academic admission commission INFOTECH evaluates the finishing (overall) grades/marks of the degree examination and decides.",
+      "locator": "HTML td block 31"
+    },
+    {
+      "text": "--READ THIS INFORMATION THROUGHLY--All applicants are required to provide proof of their English language skills before the application deadline. Applications without one of the accepted forms of proof cannot be considered for admission (ie. are immediately rejected).",
+      "locator": "HTML p block 33"
+    },
+    {
+      "text": "Accepted proofs are (scores listed are minimums required - exceptions cannot be made):",
+      "locator": "HTML p block 34"
+    },
+    {
+      "text": "TOEFL IBT 95 or better / from 2026: 5 or better TOEFL",
+      "locator": "HTML li block 35"
+    },
+    {
+      "text": "IELTS band 7,0 or better (academic)",
+      "locator": "HTML li block 36"
+    },
+    {
+      "text": "Cambridge C1/C2",
+      "locator": "HTML li block 37"
+    },
+    {
+      "text": "Oxford Test of English Advanced (C1)",
+      "locator": "HTML li block 38"
+    },
+    {
+      "text": "PTE Academic Score 76 or better",
+      "locator": "HTML li block 39"
+    },
+    {
+      "text": "telc: telc University B2/C1 (result „very good“); telc C1 / C2 (general examination)",
+      "locator": "HTML li block 40"
+    },
+    {
+      "text": "Medium of Instruction (MoI), e.g. certificate confirming your bachelor's program was taught in english is not accepted. Exceptions cannot be made.",
+      "locator": "HTML p block 41"
+    },
+    {
+      "text": "Please note some certificates are only valid for 2 years (eg. IELTS). The uploaded certificate has to be valid at least until the application deadline (15th of January/July)",
+      "locator": "HTML p block 42"
+    },
+    {
+      "text": "If you are a national with citizenship and education from one of the countries listed below - you can submit proof of citizenship instead of one of the language proficiency proofs (eg. passport). Applicants from countries not included in this list must submit one of the proofs listed above.",
+      "locator": "HTML p block 43"
+    },
+    {
+      "text": "Antigua and Barbuda",
+      "locator": "HTML td block 44"
+    },
+    {
+      "text": "Australia",
+      "locator": "HTML td block 45"
+    },
+    {
+      "text": "The Bahamas",
+      "locator": "HTML td block 46"
+    },
+    {
+      "text": "Barbados",
+      "locator": "HTML td block 47"
+    },
+    {
+      "text": "Belize",
+      "locator": "HTML td block 48"
+    },
+    {
+      "text": "Canada",
+      "locator": "HTML td block 49"
+    },
+    {
+      "text": "Dominica",
+      "locator": "HTML td block 50"
+    },
+    {
+      "text": "Grenada",
+      "locator": "HTML td block 51"
+    },
+    {
+      "text": "Guyana",
+      "locator": "HTML td block 52"
+    },
+    {
+      "text": "Ireland",
+      "locator": "HTML td block 53"
+    },
+    {
+      "text": "Jamaica",
+      "locator": "HTML td block 54"
+    },
+    {
+      "text": "Malta",
+      "locator": "HTML td block 55"
+    },
+    {
+      "text": "New Zealand",
+      "locator": "HTML td block 56"
+    },
+    {
+      "text": "St Kitts and Nevis",
+      "locator": "HTML td block 57"
+    },
+    {
+      "text": "St Lucia",
+      "locator": "HTML td block 58"
+    },
+    {
+      "text": "St Vincent and the Grenadines",
+      "locator": "HTML td block 59"
+    },
+    {
+      "text": "Trinidad and Tobago",
+      "locator": "HTML td block 60"
+    },
+    {
+      "text": "United Kingdom",
+      "locator": "HTML td block 61"
+    },
+    {
+      "text": "United States of America",
+      "locator": "HTML td block 62"
+    },
+    {
+      "text": "The APS certificates have to be submitted before the application deadline.",
+      "locator": "HTML p block 66"
+    },
+    {
+      "text": "China, Mongolia and VietnamCertificate from the APS (\"Akademische Prüfstelle\"). Further information in APS.",
+      "locator": "HTML li block 67"
+    },
+    {
+      "text": "IndiaCertificate from the APS (\"Akademische Prüfstelle\"). Further information : APS India.- As of September 2025, an APS certificate does not need to be submitted if:",
+      "locator": "HTML li block 68"
+    },
+    {
+      "text": "The highest university degree relevant for assessment originates from a country other than India (For INFOTECH we assess your bachelor degree)",
+      "locator": "HTML li block 69"
+    },
+    {
+      "text": "Proof that a previous assessment test has been passed is available",
+      "locator": "HTML li block 70"
+    },
+    {
+      "text": "The applicant can provide proof they will be receiving a scholarship from Germany or the EU.",
+      "locator": "HTML li block 71"
+    },
+    {
+      "text": "Use this link for for application C@MPUS.",
+      "locator": "HTML li block 73"
+    },
+    {
+      "text": "Ensure the name you provide in C@mpus and in the Adjunct matches the name on your documents!!",
+      "locator": "HTML li block 74"
+    },
+    {
+      "text": "Letters of motivation or recommendation are not required for the application.",
+      "locator": "HTML li block 75"
+    },
+    {
+      "text": "A manual for application is available here.",
+      "locator": "HTML li block 76"
+    },
+    {
+      "text": "If you have technical questions concerning C@MPUS please contact support@campus.uni-stuttgart.de.",
+      "locator": "HTML li block 77"
+    },
+    {
+      "text": "Antigua and Barbuda | Australia | The Bahamas",
+      "locator": "HTML table row 14"
+    },
+    {
+      "text": "Barbados | Belize | Canada",
+      "locator": "HTML table row 15"
+    },
+    {
+      "text": "Dominica | Grenada | Guyana",
+      "locator": "HTML table row 16"
+    },
+    {
+      "text": "Ireland | Jamaica | Malta",
+      "locator": "HTML table row 17"
+    },
+    {
+      "text": "New Zealand | St Kitts and Nevis | St Lucia",
+      "locator": "HTML table row 18"
+    },
+    {
+      "text": "St Vincent and the Grenadines | Trinidad and Tobago | United Kingdom",
+      "locator": "HTML table row 19"
+    },
+    {
+      "text": "United States of America |  | ",
+      "locator": "HTML table row 20"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
+      "label": "jump to content"
+    },
+    {
+      "url": "https://www.infotech.uni-stuttgart.de/application/",
+      "label": "Application"
+    },
+    {
+      "url": "https://www.infotech.uni-stuttgart.de/application/roadmap/",
+      "label": "Roadmap"
+    },
+    {
+      "url": "https://www.infotech.uni-stuttgart.de/application/selection-process/",
+      "label": "Selection Process"
+    },
+    {
+      "url": "https://www.infotech.uni-stuttgart.de/application/postapplication/",
+      "label": "Post-Acceptance Information"
+    },
+    {
+      "url": "https://www.infotech.uni-stuttgart.de/program/reg19/",
+      "label": "Study Regulation"
+    },
+    {
+      "url": "https://www.infotech.uni-stuttgart.de/pdf/Manuals/ApplicationManual_INFOTECH_WS2021.pdf",
+      "label": "here"
+    }
+  ],
+  "robotsStatus": 404,
+  "redirects": [],
+  "etag": null,
+  "lastModified": "Sat, 17 Oct 2026 20:30:29 GMT",
+  "extractorVersion": 3
+}

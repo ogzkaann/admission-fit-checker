@@ -1,6 +1,5 @@
 import type { AcademicProfile, Program, StoredDocument } from "../domain/types";
 import { demoPrograms } from "../data/demoPrograms";
-import catalogData from "../data/catalogPrograms.json";
 import { readCatalog } from "../domain/catalog";
 import { db } from "./db";
 import { normalizeProgram } from "../domain/programCompatibility";
@@ -33,11 +32,12 @@ export async function deleteDocument(id: string) {
 
 // Read-only catalog DTOs stay separate from the user's IndexedDB records.
 export async function listPrograms(): Promise<Program[]> {
-  const userPrograms = await db.programs.toArray();
+  const [userPrograms, { default: catalogData }] = await Promise.all([db.programs.toArray(), import("../data/catalogPrograms.json")]);
   return [...readCatalog(catalogData), ...userPrograms.sort((a, b) => b.createdAt.localeCompare(a.createdAt)), ...demoPrograms].map(normalizeProgram);
 }
 
 export async function getProgram(id: string): Promise<Program | undefined> {
+  const { default: catalogData } = await import("../data/catalogPrograms.json");
   const catalog = readCatalog(catalogData).find((program) => program.id === id);
   if (catalog) return catalog;
   const demo = demoPrograms.find((program) => program.id === id);

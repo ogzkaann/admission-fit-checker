@@ -1,0 +1,1170 @@
+{
+  "schemaVersion": 1,
+  "programId": "de-saarland-msc-computer-science",
+  "revision": "bc668d90d8fede7fb53d07c76476ef5e4eceea7fdef62df21c0238bf416cfd31",
+  "parentRevision": "ef59d8be03acd0c546e169c5ea6c1461a456603a21904d825d728ec10ac2d685",
+  "extractedAt": "2026-10-21T12:15:28.078Z",
+  "recipeHash": "0950b9f37e9563bb0c996c73a4b2291b6216be67dc360e29e37d72ebb51a4dcd",
+  "program": {
+    "id": "de-saarland-msc-computer-science",
+    "university": "Saarland University",
+    "programName": "Computer Science",
+    "degreeType": "master",
+    "language": "English",
+    "country": "Germany",
+    "city": "Saarbruecken",
+    "description": "Master of Science in Computer Science. Official-source pilot; admission clauses await editorial review.",
+    "sourceUrl": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+    "requiredDocuments": [],
+    "requirements": [
+      {
+        "id": "academic",
+        "kind": "academic",
+        "label": "Relevant first degree and aptitude assessment",
+        "sourceText": "In order to be admitted to the programme, students must have received a Bachelor's degree or equivalent qualification from a German or foreign university in informatics, computer science or a related field, or must provide proof of equivalent academic achievement, and must demonstrate advanced proficiency in English to complete the programme (C1, a MOI (Medium of Instruction) cannnot be accepted, see the FAQ for a list of accepted certificates). Specifically, they must also provide the following information and/or documents:",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Relevant first degree and aptitude assessment. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "In order to be admitted to the programme, students must have received a Bachelor's degree or equivalent qualification from a German or foreign university in informatics, computer science or a related field, or must provide proof of equivalent academic achievement, and must demonstrate advanced proficiency in English to complete the programme (C1, a MOI (Medium of Instruction) cannnot be accepted, see the FAQ for a list of accepted certificates). Specifically, they must also provide the following information and/or documents:",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML p block 14",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "3fcb91c811ac43260148981943be8236f87e9d67c6d7e5be4aa43d4700662866",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          }
+        ]
+      },
+      {
+        "id": "language",
+        "kind": "language",
+        "label": "English C1, MOI exclusion and certificate acceptance",
+        "sourceText": "Level C1 (a MOI (Medium of Instruction) is not accepted, see FAQ)\n\nIn order to be admitted to the programme, students must have received a Bachelor's degree or equivalent qualification from a German or foreign university in informatics, computer science or a related field, or must provide proof of equivalent academic achievement, and must demonstrate advanced proficiency in English to complete the programme (C1, a MOI (Medium of Instruction) cannnot be accepted, see the FAQ for a list of accepted certificates). Specifically, they must also provide the following information and/or documents:",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "English C1, MOI exclusion and certificate acceptance. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Level C1 (a MOI (Medium of Instruction) is not accepted, see FAQ)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML td block 34",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "3fcb91c811ac43260148981943be8236f87e9d67c6d7e5be4aa43d4700662866",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          },
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "In order to be admitted to the programme, students must have received a Bachelor's degree or equivalent qualification from a German or foreign university in informatics, computer science or a related field, or must provide proof of equivalent academic achievement, and must demonstrate advanced proficiency in English to complete the programme (C1, a MOI (Medium of Instruction) cannnot be accepted, see the FAQ for a list of accepted certificates). Specifically, they must also provide the following information and/or documents:",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML p block 14",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "3fcb91c811ac43260148981943be8236f87e9d67c6d7e5be4aa43d4700662866",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          }
+        ]
+      },
+      {
+        "id": "credits",
+        "kind": "academic",
+        "label": "Prior-degree credit scope and foreign-degree equivalence",
+        "sourceText": "Students seeking admission to the Master’s programme shall have a Bachelor’s degree from a German university (at least 180 CP) or an equivalent qualification from a foreign university in computer science, informatics or a related field:",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Prior-degree credit scope and foreign-degree equivalence. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://saarland-informatics-campus.de/en/studium-studies/master-english/application-guide/",
+            "quote": "Students seeking admission to the Master’s programme shall have a Bachelor’s degree from a German university (at least 180 CP) or an equivalent qualification from a foreign university in computer science, informatics or a related field:",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:09:28.684Z",
+            "validFor": [],
+            "locator": "HTML p block 15",
+            "retrievedAt": "2026-10-21T12:09:28.684Z",
+            "snapshotId": "a8e3853b0ad26ace2d0e0637aa2e34961d9bbac8a41a377f8718af80d3ee45ba",
+            "contentHash": "976b9555dbec012e2295c08a5d4678bf39e6fd7ce383cea373dc93ee20b7fc4d"
+          }
+        ]
+      },
+      {
+        "id": "subject-background",
+        "kind": "academic",
+        "label": "Mathematics, theoretical and practical computer science preparation",
+        "sourceText": "Sufficient merit in the applicant’s previous academic track record and the appropriate curricular content of the Bachelor’s degree is required. Applicants should demonstrate a level of knowledge and competence that corresponds to that acquired in the Bachelor’s degree programme in computer science taught at Saarland University. Specifically, this requires applicants to show that they have the necessary level of expertise in the following areas:\n\nI. Mathematics (discrete mathematics, real analysis and multivariable calculus, linear algebra, numerical methods, stochastics)\n\nII. Theoretical informatics (formal methods, formal logic, computability, understanding of complexity – particularly the complexity classes P and NP)\n\nIII. Practical informatics (functional and object-oriented programming, data structures and algorithms, databases, software development methods, system architecture)",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Mathematics, theoretical and practical computer science preparation. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://saarland-informatics-campus.de/en/studium-studies/master-english/application-guide/",
+            "quote": "Sufficient merit in the applicant’s previous academic track record and the appropriate curricular content of the Bachelor’s degree is required. Applicants should demonstrate a level of knowledge and competence that corresponds to that acquired in the Bachelor’s degree programme in computer science taught at Saarland University. Specifically, this requires applicants to show that they have the necessary level of expertise in the following areas:",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:09:28.684Z",
+            "validFor": [],
+            "locator": "HTML p block 16",
+            "retrievedAt": "2026-10-21T12:09:28.684Z",
+            "snapshotId": "a8e3853b0ad26ace2d0e0637aa2e34961d9bbac8a41a377f8718af80d3ee45ba",
+            "contentHash": "976b9555dbec012e2295c08a5d4678bf39e6fd7ce383cea373dc93ee20b7fc4d"
+          },
+          {
+            "url": "https://saarland-informatics-campus.de/en/studium-studies/master-english/application-guide/",
+            "quote": "I. Mathematics (discrete mathematics, real analysis and multivariable calculus, linear algebra, numerical methods, stochastics)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:09:28.684Z",
+            "validFor": [],
+            "locator": "HTML p block 17",
+            "retrievedAt": "2026-10-21T12:09:28.684Z",
+            "snapshotId": "a8e3853b0ad26ace2d0e0637aa2e34961d9bbac8a41a377f8718af80d3ee45ba",
+            "contentHash": "976b9555dbec012e2295c08a5d4678bf39e6fd7ce383cea373dc93ee20b7fc4d"
+          },
+          {
+            "url": "https://saarland-informatics-campus.de/en/studium-studies/master-english/application-guide/",
+            "quote": "II. Theoretical informatics (formal methods, formal logic, computability, understanding of complexity – particularly the complexity classes P and NP)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:09:28.684Z",
+            "validFor": [],
+            "locator": "HTML p block 18",
+            "retrievedAt": "2026-10-21T12:09:28.684Z",
+            "snapshotId": "a8e3853b0ad26ace2d0e0637aa2e34961d9bbac8a41a377f8718af80d3ee45ba",
+            "contentHash": "976b9555dbec012e2295c08a5d4678bf39e6fd7ce383cea373dc93ee20b7fc4d"
+          },
+          {
+            "url": "https://saarland-informatics-campus.de/en/studium-studies/master-english/application-guide/",
+            "quote": "III. Practical informatics (functional and object-oriented programming, data structures and algorithms, databases, software development methods, system architecture)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:09:28.684Z",
+            "validFor": [],
+            "locator": "HTML p block 19",
+            "retrievedAt": "2026-10-21T12:09:28.684Z",
+            "snapshotId": "a8e3853b0ad26ace2d0e0637aa2e34961d9bbac8a41a377f8718af80d3ee45ba",
+            "contentHash": "976b9555dbec012e2295c08a5d4678bf39e6fd7ce383cea373dc93ee20b7fc4d"
+          }
+        ]
+      },
+      {
+        "id": "guide-grades",
+        "kind": "gpa",
+        "label": "Application guide GPA and class-rank clause",
+        "sourceText": "Minimal prerequisite is a cumulative undergraduate grade point average (CGPA) of 75% or 3.00 GPA on a 4 point scale and ranking in the top 10% of the graduating class.",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Application guide GPA and class-rank clause. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://saarland-informatics-campus.de/en/studium-studies/master-english/application-guide/",
+            "quote": "Minimal prerequisite is a cumulative undergraduate grade point average (CGPA) of 75% or 3.00 GPA on a 4 point scale and ranking in the top 10% of the graduating class.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:09:28.684Z",
+            "validFor": [],
+            "locator": "HTML p block 20",
+            "retrievedAt": "2026-10-21T12:09:28.684Z",
+            "snapshotId": "a8e3853b0ad26ace2d0e0637aa2e34961d9bbac8a41a377f8718af80d3ee45ba",
+            "contentHash": "976b9555dbec012e2295c08a5d4678bf39e6fd7ce383cea373dc93ee20b7fc4d"
+          }
+        ]
+      },
+      {
+        "id": "accepted-certificates",
+        "kind": "language",
+        "label": "Accepted English tests, scores, variants and exceptions",
+        "sourceText": "The following certificates will be accepted:_ IELTS (academic test): min. 7.0 out of 9_ TOEFL (internet based): min. 95 out of 120 (2026: 5 out of 6)_ TOEFL (paper based): min. 600 out of 677 (2026: 5 out of 6)_ Cambridge English Certificate: C1 Advanced (CAE) or C2 Proficiency (CPE)_ PTE Academic: min. 76\n\nThe English certificate is a mandatory part of the application. A confirmation of your university or a MOI (Medium of Instruction) is not a sufficient equivalent.\n\nOnly native speakers from Australia, Ireland, Canada, New Zealand, the UK, and the USA, or applicants who have completed in-person studies while physically residing in one of these countries at a university located there, are excluded from this rule. In these cases, please enter native speaker from [country] or studied in [country] into the form and upload a high school and/or bachelor’s degree certificate from that country as proof.\n\nFor German applicants, school certificates demonstrating that English has been studied for at least 5 years up to the general qualification for university entrance (Abitur) with good or very good grades is sufficient. As level C1 is not usually achieved by the end of school, certificates with good or very good grades are examined individually.",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Accepted English tests, scores, variants and exceptions. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://saarland-informatics-campus.de/en/studium-studies/master-english/application-guide/",
+            "quote": "The following certificates will be accepted:_ IELTS (academic test): min. 7.0 out of 9_ TOEFL (internet based): min. 95 out of 120 (2026: 5 out of 6)_ TOEFL (paper based): min. 600 out of 677 (2026: 5 out of 6)_ Cambridge English Certificate: C1 Advanced (CAE) or C2 Proficiency (CPE)_ PTE Academic: min. 76",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:09:28.684Z",
+            "validFor": [],
+            "locator": "HTML p block 45",
+            "retrievedAt": "2026-10-21T12:09:28.684Z",
+            "snapshotId": "a8e3853b0ad26ace2d0e0637aa2e34961d9bbac8a41a377f8718af80d3ee45ba",
+            "contentHash": "976b9555dbec012e2295c08a5d4678bf39e6fd7ce383cea373dc93ee20b7fc4d"
+          },
+          {
+            "url": "https://saarland-informatics-campus.de/en/studium-studies/master-english/application-guide/",
+            "quote": "The English certificate is a mandatory part of the application. A confirmation of your university or a MOI (Medium of Instruction) is not a sufficient equivalent.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:09:28.684Z",
+            "validFor": [],
+            "locator": "HTML p block 47",
+            "retrievedAt": "2026-10-21T12:09:28.684Z",
+            "snapshotId": "a8e3853b0ad26ace2d0e0637aa2e34961d9bbac8a41a377f8718af80d3ee45ba",
+            "contentHash": "976b9555dbec012e2295c08a5d4678bf39e6fd7ce383cea373dc93ee20b7fc4d"
+          },
+          {
+            "url": "https://saarland-informatics-campus.de/en/studium-studies/master-english/application-guide/",
+            "quote": "Only native speakers from Australia, Ireland, Canada, New Zealand, the UK, and the USA, or applicants who have completed in-person studies while physically residing in one of these countries at a university located there, are excluded from this rule. In these cases, please enter native speaker from [country] or studied in [country] into the form and upload a high school and/or bachelor’s degree certificate from that country as proof.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:09:28.684Z",
+            "validFor": [],
+            "locator": "HTML p block 48",
+            "retrievedAt": "2026-10-21T12:09:28.684Z",
+            "snapshotId": "a8e3853b0ad26ace2d0e0637aa2e34961d9bbac8a41a377f8718af80d3ee45ba",
+            "contentHash": "976b9555dbec012e2295c08a5d4678bf39e6fd7ce383cea373dc93ee20b7fc4d"
+          },
+          {
+            "url": "https://saarland-informatics-campus.de/en/studium-studies/master-english/application-guide/",
+            "quote": "For German applicants, school certificates demonstrating that English has been studied for at least 5 years up to the general qualification for university entrance (Abitur) with good or very good grades is sufficient. As level C1 is not usually achieved by the end of school, certificates with good or very good grades are examined individually.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:09:28.684Z",
+            "validFor": [],
+            "locator": "HTML p block 49",
+            "retrievedAt": "2026-10-21T12:09:28.684Z",
+            "snapshotId": "a8e3853b0ad26ace2d0e0637aa2e34961d9bbac8a41a377f8718af80d3ee45ba",
+            "contentHash": "976b9555dbec012e2295c08a5d4678bf39e6fd7ce383cea373dc93ee20b7fc4d"
+          }
+        ]
+      },
+      {
+        "id": "additional-evidence",
+        "kind": "other",
+        "label": "Academic merit, references and supporting evidence",
+        "sourceText": "Proof of sufficient merit in their academic achievements in school and higher education\n\nA letter of motivation or personal statement documenting the student's particular interest in the M.Sc. programme\n\nTwo relevant academic references\n\nDetails about relevant work/study periods abroad and relevant work experience or internships",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Academic merit, references and supporting evidence. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Proof of sufficient merit in their academic achievements in school and higher education",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML li block 15",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "3fcb91c811ac43260148981943be8236f87e9d67c6d7e5be4aa43d4700662866",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          },
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "A letter of motivation or personal statement documenting the student's particular interest in the M.Sc. programme",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML li block 16",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "3fcb91c811ac43260148981943be8236f87e9d67c6d7e5be4aa43d4700662866",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          },
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Two relevant academic references",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML li block 17",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "3fcb91c811ac43260148981943be8236f87e9d67c6d7e5be4aa43d4700662866",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          },
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Details about relevant work/study periods abroad and relevant work experience or internships",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML li block 18",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "3fcb91c811ac43260148981943be8236f87e9d67c6d7e5be4aa43d4700662866",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          }
+        ]
+      },
+      {
+        "id": "inventory-review",
+        "kind": "other",
+        "label": "Full admission regulations and applicability review",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "The extracted inventory is not complete. Verify regulations, applicant categories, exemptions, selection and semester validity."
+        },
+        "evidence": []
+      }
+    ],
+    "admissionText": "academic: In order to be admitted to the programme, students must have received a Bachelor's degree or equivalent qualification from a German or foreign university in informatics, computer science or a related field, or must provide proof of equivalent academic achievement, and must demonstrate advanced proficiency in English to complete the programme (C1, a MOI (Medium of Instruction) cannnot be accepted, see the FAQ for a list of accepted certificates). Specifically, they must also provide the following information and/or documents:\n\nlanguage: Level C1 (a MOI (Medium of Instruction) is not accepted, see FAQ)\n\nIn order to be admitted to the programme, students must have received a Bachelor's degree or equivalent qualification from a German or foreign university in informatics, computer science or a related field, or must provide proof of equivalent academic achievement, and must demonstrate advanced proficiency in English to complete the programme (C1, a MOI (Medium of Instruction) cannnot be accepted, see the FAQ for a list of accepted certificates). Specifically, they must also provide the following information and/or documents:\n\ncredits: Students seeking admission to the Master’s programme shall have a Bachelor’s degree from a German university (at least 180 CP) or an equivalent qualification from a foreign university in computer science, informatics or a related field:\n\nacademic: Sufficient merit in the applicant’s previous academic track record and the appropriate curricular content of the Bachelor’s degree is required. Applicants should demonstrate a level of knowledge and competence that corresponds to that acquired in the Bachelor’s degree programme in computer science taught at Saarland University. Specifically, this requires applicants to show that they have the necessary level of expertise in the following areas:\n\nI. Mathematics (discrete mathematics, real analysis and multivariable calculus, linear algebra, numerical methods, stochastics)\n\nII. Theoretical informatics (formal methods, formal logic, computability, understanding of complexity – particularly the complexity classes P and NP)\n\nIII. Practical informatics (functional and object-oriented programming, data structures and algorithms, databases, software development methods, system architecture)\n\nacademic: Minimal prerequisite is a cumulative undergraduate grade point average (CGPA) of 75% or 3.00 GPA on a 4 point scale and ranking in the top 10% of the graduating class.\n\nlanguage: The following certificates will be accepted:_ IELTS (academic test): min. 7.0 out of 9_ TOEFL (internet based): min. 95 out of 120 (2026: 5 out of 6)_ TOEFL (paper based): min. 600 out of 677 (2026: 5 out of 6)_ Cambridge English Certificate: C1 Advanced (CAE) or C2 Proficiency (CPE)_ PTE Academic: min. 76\n\nThe English certificate is a mandatory part of the application. A confirmation of your university or a MOI (Medium of Instruction) is not a sufficient equivalent.\n\nOnly native speakers from Australia, Ireland, Canada, New Zealand, the UK, and the USA, or applicants who have completed in-person studies while physically residing in one of these countries at a university located there, are excluded from this rule. In these cases, please enter native speaker from [country] or studied in [country] into the form and upload a high school and/or bachelor’s degree certificate from that country as proof.\n\nFor German applicants, school certificates demonstrating that English has been studied for at least 5 years up to the general qualification for university entrance (Abitur) with good or very good grades is sufficient. As level C1 is not usually achieved by the end of school, certificates with good or very good grades are examined individually.\n\ndeadline: Application deadline for the winter semester\n\nEarly deadline: Nov 15(positive decision: notification at the lastest in February of the following year)Late deadline: May 15\n\nApplication deadline for the summer semester\n\nEarly deadline: May 15(positive decision: notification at the lastest in July)Late deadline: Nov 15\n\napplication: Applications should be submitted via the online application portal managed by the Department of Computer Science where you'll find further information about application and admission procedures.\n\ntuition: Tuition fees\n\nNot applicable\n\nSemester fee\n\nSee current fee structure\n\nsemester: Students can begin the M.Sc. programme at the beginning of the summer or winter semester. Applications should normally be received by 15 May for students seeking to begin studying in the winter semester and by 15 November for students looking to start their studies in summer. Applicants who apply by May 15th for the following summer semester are expected to receive a letter of admission by mid-July if the respective Master's commission makes a positive decision. Applicants who apply by November 15th for the following winter semester are expected to receive a letter of admission by mid-February if the respective Master's commission makes a positive decision.\n\nacademic: Proof of sufficient merit in their academic achievements in school and higher education\n\nA letter of motivation or personal statement documenting the student's particular interest in the M.Sc. programme\n\nTwo relevant academic references\n\nDetails about relevant work/study periods abroad and relevant work experience or internships",
+    "origin": "catalog",
+    "isDemo": false,
+    "createdAt": "2026-10-18T17:03:21.293Z",
+    "schemaVersion": 2,
+    "verificationStatus": "unverified",
+    "sources": [
+      {
+        "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+        "quote": "Computer Science (M.Sc.)",
+        "status": "unverified",
+        "sourceType": "official",
+        "lastChecked": "2026-10-21T12:05:37.352Z",
+        "validFor": [],
+        "locator": "Source document identity",
+        "retrievedAt": "2026-10-21T12:05:37.352Z",
+        "snapshotId": "3fcb91c811ac43260148981943be8236f87e9d67c6d7e5be4aa43d4700662866",
+        "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+      },
+      {
+        "url": "https://saarland-informatics-campus.de/en/studium-studies/master-english/application-guide/",
+        "quote": "Application Guide",
+        "status": "unverified",
+        "sourceType": "official",
+        "lastChecked": "2026-10-21T12:09:28.684Z",
+        "validFor": [],
+        "locator": "Source document identity",
+        "retrievedAt": "2026-10-21T12:09:28.684Z",
+        "snapshotId": "a8e3853b0ad26ace2d0e0637aa2e34961d9bbac8a41a377f8718af80d3ee45ba",
+        "contentHash": "976b9555dbec012e2295c08a5d4678bf39e6fd7ce383cea373dc93ee20b7fc4d"
+      },
+      {
+        "url": "https://www.uni-saarland.de/fileadmin/upload/verwaltung/uebersetzungen/english/master/informatik-fb.pdf",
+        "quote": "Sehr geehrter Herr Prof",
+        "status": "unverified",
+        "sourceType": "official",
+        "lastChecked": "2026-10-21T12:09:30.532Z",
+        "validFor": [],
+        "locator": "Source document identity",
+        "retrievedAt": "2026-10-21T12:09:30.532Z",
+        "snapshotId": "e36e376adc6d0f34307be7a3ab41a0ec1084e00efa60f2a048be885381697206",
+        "contentHash": "8690cdaa8b0a7758291b6c9a461f3ff20c1c325dcd3c3e667ebf7ef024648e90"
+      }
+    ],
+    "validFor": [],
+    "requirementsComplete": false,
+    "facts": [
+      {
+        "id": "academic",
+        "category": "academic",
+        "value": "In order to be admitted to the programme, students must have received a Bachelor's degree or equivalent qualification from a German or foreign university in informatics, computer science or a related field, or must provide proof of equivalent academic achievement, and must demonstrate advanced proficiency in English to complete the programme (C1, a MOI (Medium of Instruction) cannnot be accepted, see the FAQ for a list of accepted certificates). Specifically, they must also provide the following information and/or documents:",
+        "evidence": [
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "In order to be admitted to the programme, students must have received a Bachelor's degree or equivalent qualification from a German or foreign university in informatics, computer science or a related field, or must provide proof of equivalent academic achievement, and must demonstrate advanced proficiency in English to complete the programme (C1, a MOI (Medium of Instruction) cannnot be accepted, see the FAQ for a list of accepted certificates). Specifically, they must also provide the following information and/or documents:",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML p block 14",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "3fcb91c811ac43260148981943be8236f87e9d67c6d7e5be4aa43d4700662866",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          }
+        ]
+      },
+      {
+        "id": "language",
+        "category": "language",
+        "value": "Level C1 (a MOI (Medium of Instruction) is not accepted, see FAQ)\n\nIn order to be admitted to the programme, students must have received a Bachelor's degree or equivalent qualification from a German or foreign university in informatics, computer science or a related field, or must provide proof of equivalent academic achievement, and must demonstrate advanced proficiency in English to complete the programme (C1, a MOI (Medium of Instruction) cannnot be accepted, see the FAQ for a list of accepted certificates). Specifically, they must also provide the following information and/or documents:",
+        "note": "A self-reported CEFR level alone does not prove an accepted certificate.",
+        "evidence": [
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Level C1 (a MOI (Medium of Instruction) is not accepted, see FAQ)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML td block 34",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "3fcb91c811ac43260148981943be8236f87e9d67c6d7e5be4aa43d4700662866",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          },
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "In order to be admitted to the programme, students must have received a Bachelor's degree or equivalent qualification from a German or foreign university in informatics, computer science or a related field, or must provide proof of equivalent academic achievement, and must demonstrate advanced proficiency in English to complete the programme (C1, a MOI (Medium of Instruction) cannnot be accepted, see the FAQ for a list of accepted certificates). Specifically, they must also provide the following information and/or documents:",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML p block 14",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "3fcb91c811ac43260148981943be8236f87e9d67c6d7e5be4aa43d4700662866",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          }
+        ]
+      },
+      {
+        "id": "credits",
+        "category": "credits",
+        "value": "Students seeking admission to the Master’s programme shall have a Bachelor’s degree from a German university (at least 180 CP) or an equivalent qualification from a foreign university in computer science, informatics or a related field:",
+        "note": "The guide states at least 180 CP for a German university Bachelor, or an equivalent foreign qualification. No automatic CP-to-ECTS conversion or universal subject-credit minimum is inferred.",
+        "evidence": [
+          {
+            "url": "https://saarland-informatics-campus.de/en/studium-studies/master-english/application-guide/",
+            "quote": "Students seeking admission to the Master’s programme shall have a Bachelor’s degree from a German university (at least 180 CP) or an equivalent qualification from a foreign university in computer science, informatics or a related field:",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:09:28.684Z",
+            "validFor": [],
+            "locator": "HTML p block 15",
+            "retrievedAt": "2026-10-21T12:09:28.684Z",
+            "snapshotId": "a8e3853b0ad26ace2d0e0637aa2e34961d9bbac8a41a377f8718af80d3ee45ba",
+            "contentHash": "976b9555dbec012e2295c08a5d4678bf39e6fd7ce383cea373dc93ee20b7fc4d"
+          }
+        ]
+      },
+      {
+        "id": "subject-background",
+        "category": "academic",
+        "value": "Sufficient merit in the applicant’s previous academic track record and the appropriate curricular content of the Bachelor’s degree is required. Applicants should demonstrate a level of knowledge and competence that corresponds to that acquired in the Bachelor’s degree programme in computer science taught at Saarland University. Specifically, this requires applicants to show that they have the necessary level of expertise in the following areas:\n\nI. Mathematics (discrete mathematics, real analysis and multivariable calculus, linear algebra, numerical methods, stochastics)\n\nII. Theoretical informatics (formal methods, formal logic, computability, understanding of complexity – particularly the complexity classes P and NP)\n\nIII. Practical informatics (functional and object-oriented programming, data structures and algorithms, databases, software development methods, system architecture)",
+        "evidence": [
+          {
+            "url": "https://saarland-informatics-campus.de/en/studium-studies/master-english/application-guide/",
+            "quote": "Sufficient merit in the applicant’s previous academic track record and the appropriate curricular content of the Bachelor’s degree is required. Applicants should demonstrate a level of knowledge and competence that corresponds to that acquired in the Bachelor’s degree programme in computer science taught at Saarland University. Specifically, this requires applicants to show that they have the necessary level of expertise in the following areas:",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:09:28.684Z",
+            "validFor": [],
+            "locator": "HTML p block 16",
+            "retrievedAt": "2026-10-21T12:09:28.684Z",
+            "snapshotId": "a8e3853b0ad26ace2d0e0637aa2e34961d9bbac8a41a377f8718af80d3ee45ba",
+            "contentHash": "976b9555dbec012e2295c08a5d4678bf39e6fd7ce383cea373dc93ee20b7fc4d"
+          },
+          {
+            "url": "https://saarland-informatics-campus.de/en/studium-studies/master-english/application-guide/",
+            "quote": "I. Mathematics (discrete mathematics, real analysis and multivariable calculus, linear algebra, numerical methods, stochastics)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:09:28.684Z",
+            "validFor": [],
+            "locator": "HTML p block 17",
+            "retrievedAt": "2026-10-21T12:09:28.684Z",
+            "snapshotId": "a8e3853b0ad26ace2d0e0637aa2e34961d9bbac8a41a377f8718af80d3ee45ba",
+            "contentHash": "976b9555dbec012e2295c08a5d4678bf39e6fd7ce383cea373dc93ee20b7fc4d"
+          },
+          {
+            "url": "https://saarland-informatics-campus.de/en/studium-studies/master-english/application-guide/",
+            "quote": "II. Theoretical informatics (formal methods, formal logic, computability, understanding of complexity – particularly the complexity classes P and NP)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:09:28.684Z",
+            "validFor": [],
+            "locator": "HTML p block 18",
+            "retrievedAt": "2026-10-21T12:09:28.684Z",
+            "snapshotId": "a8e3853b0ad26ace2d0e0637aa2e34961d9bbac8a41a377f8718af80d3ee45ba",
+            "contentHash": "976b9555dbec012e2295c08a5d4678bf39e6fd7ce383cea373dc93ee20b7fc4d"
+          },
+          {
+            "url": "https://saarland-informatics-campus.de/en/studium-studies/master-english/application-guide/",
+            "quote": "III. Practical informatics (functional and object-oriented programming, data structures and algorithms, databases, software development methods, system architecture)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:09:28.684Z",
+            "validFor": [],
+            "locator": "HTML p block 19",
+            "retrievedAt": "2026-10-21T12:09:28.684Z",
+            "snapshotId": "a8e3853b0ad26ace2d0e0637aa2e34961d9bbac8a41a377f8718af80d3ee45ba",
+            "contentHash": "976b9555dbec012e2295c08a5d4678bf39e6fd7ce383cea373dc93ee20b7fc4d"
+          }
+        ]
+      },
+      {
+        "id": "guide-grades",
+        "category": "academic",
+        "value": "Minimal prerequisite is a cumulative undergraduate grade point average (CGPA) of 75% or 3.00 GPA on a 4 point scale and ranking in the top 10% of the graduating class.",
+        "note": "Guide states 75% or 3.00/4 and top 10% ranking. Not automatically converted or treated as a complete controlling policy.",
+        "evidence": [
+          {
+            "url": "https://saarland-informatics-campus.de/en/studium-studies/master-english/application-guide/",
+            "quote": "Minimal prerequisite is a cumulative undergraduate grade point average (CGPA) of 75% or 3.00 GPA on a 4 point scale and ranking in the top 10% of the graduating class.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:09:28.684Z",
+            "validFor": [],
+            "locator": "HTML p block 20",
+            "retrievedAt": "2026-10-21T12:09:28.684Z",
+            "snapshotId": "a8e3853b0ad26ace2d0e0637aa2e34961d9bbac8a41a377f8718af80d3ee45ba",
+            "contentHash": "976b9555dbec012e2295c08a5d4678bf39e6fd7ce383cea373dc93ee20b7fc4d"
+          }
+        ]
+      },
+      {
+        "id": "accepted-certificates",
+        "category": "language",
+        "value": "The following certificates will be accepted:_ IELTS (academic test): min. 7.0 out of 9_ TOEFL (internet based): min. 95 out of 120 (2026: 5 out of 6)_ TOEFL (paper based): min. 600 out of 677 (2026: 5 out of 6)_ Cambridge English Certificate: C1 Advanced (CAE) or C2 Proficiency (CPE)_ PTE Academic: min. 76\n\nThe English certificate is a mandatory part of the application. A confirmation of your university or a MOI (Medium of Instruction) is not a sufficient equivalent.\n\nOnly native speakers from Australia, Ireland, Canada, New Zealand, the UK, and the USA, or applicants who have completed in-person studies while physically residing in one of these countries at a university located there, are excluded from this rule. In these cases, please enter native speaker from [country] or studied in [country] into the form and upload a high school and/or bachelor’s degree certificate from that country as proof.\n\nFor German applicants, school certificates demonstrating that English has been studied for at least 5 years up to the general qualification for university entrance (Abitur) with good or very good grades is sufficient. As level C1 is not usually achieved by the end of school, certificates with good or very good grades are examined individually.",
+        "note": "Retain old/new TOEFL scales separately. Certificate and country/education exemptions require human assessment.",
+        "evidence": [
+          {
+            "url": "https://saarland-informatics-campus.de/en/studium-studies/master-english/application-guide/",
+            "quote": "The following certificates will be accepted:_ IELTS (academic test): min. 7.0 out of 9_ TOEFL (internet based): min. 95 out of 120 (2026: 5 out of 6)_ TOEFL (paper based): min. 600 out of 677 (2026: 5 out of 6)_ Cambridge English Certificate: C1 Advanced (CAE) or C2 Proficiency (CPE)_ PTE Academic: min. 76",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:09:28.684Z",
+            "validFor": [],
+            "locator": "HTML p block 45",
+            "retrievedAt": "2026-10-21T12:09:28.684Z",
+            "snapshotId": "a8e3853b0ad26ace2d0e0637aa2e34961d9bbac8a41a377f8718af80d3ee45ba",
+            "contentHash": "976b9555dbec012e2295c08a5d4678bf39e6fd7ce383cea373dc93ee20b7fc4d"
+          },
+          {
+            "url": "https://saarland-informatics-campus.de/en/studium-studies/master-english/application-guide/",
+            "quote": "The English certificate is a mandatory part of the application. A confirmation of your university or a MOI (Medium of Instruction) is not a sufficient equivalent.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:09:28.684Z",
+            "validFor": [],
+            "locator": "HTML p block 47",
+            "retrievedAt": "2026-10-21T12:09:28.684Z",
+            "snapshotId": "a8e3853b0ad26ace2d0e0637aa2e34961d9bbac8a41a377f8718af80d3ee45ba",
+            "contentHash": "976b9555dbec012e2295c08a5d4678bf39e6fd7ce383cea373dc93ee20b7fc4d"
+          },
+          {
+            "url": "https://saarland-informatics-campus.de/en/studium-studies/master-english/application-guide/",
+            "quote": "Only native speakers from Australia, Ireland, Canada, New Zealand, the UK, and the USA, or applicants who have completed in-person studies while physically residing in one of these countries at a university located there, are excluded from this rule. In these cases, please enter native speaker from [country] or studied in [country] into the form and upload a high school and/or bachelor’s degree certificate from that country as proof.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:09:28.684Z",
+            "validFor": [],
+            "locator": "HTML p block 48",
+            "retrievedAt": "2026-10-21T12:09:28.684Z",
+            "snapshotId": "a8e3853b0ad26ace2d0e0637aa2e34961d9bbac8a41a377f8718af80d3ee45ba",
+            "contentHash": "976b9555dbec012e2295c08a5d4678bf39e6fd7ce383cea373dc93ee20b7fc4d"
+          },
+          {
+            "url": "https://saarland-informatics-campus.de/en/studium-studies/master-english/application-guide/",
+            "quote": "For German applicants, school certificates demonstrating that English has been studied for at least 5 years up to the general qualification for university entrance (Abitur) with good or very good grades is sufficient. As level C1 is not usually achieved by the end of school, certificates with good or very good grades are examined individually.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:09:28.684Z",
+            "validFor": [],
+            "locator": "HTML p block 49",
+            "retrievedAt": "2026-10-21T12:09:28.684Z",
+            "snapshotId": "a8e3853b0ad26ace2d0e0637aa2e34961d9bbac8a41a377f8718af80d3ee45ba",
+            "contentHash": "976b9555dbec012e2295c08a5d4678bf39e6fd7ce383cea373dc93ee20b7fc4d"
+          }
+        ]
+      },
+      {
+        "id": "deadline",
+        "category": "deadline",
+        "value": "Application deadline for the winter semester\n\nEarly deadline: Nov 15(positive decision: notification at the lastest in February of the following year)Late deadline: May 15\n\nApplication deadline for the summer semester\n\nEarly deadline: May 15(positive decision: notification at the lastest in July)Late deadline: Nov 15",
+        "note": "Early and late routes are distinct. Recurring dates do not establish a specific admission year.",
+        "evidence": [
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Application deadline for the winter semester",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML td block 37",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "3fcb91c811ac43260148981943be8236f87e9d67c6d7e5be4aa43d4700662866",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          },
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Early deadline: Nov 15(positive decision: notification at the lastest in February of the following year)Late deadline: May 15",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML td block 38",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "3fcb91c811ac43260148981943be8236f87e9d67c6d7e5be4aa43d4700662866",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          },
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Application deadline for the summer semester",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML td block 39",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "3fcb91c811ac43260148981943be8236f87e9d67c6d7e5be4aa43d4700662866",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          },
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Early deadline: May 15(positive decision: notification at the lastest in July)Late deadline: Nov 15",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML td block 40",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "3fcb91c811ac43260148981943be8236f87e9d67c6d7e5be4aa43d4700662866",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          }
+        ]
+      },
+      {
+        "id": "application",
+        "category": "application",
+        "value": "Applications should be submitted via the online application portal managed by the Department of Computer Science where you'll find further information about application and admission procedures.",
+        "evidence": [
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Applications should be submitted via the online application portal managed by the Department of Computer Science where you'll find further information about application and admission procedures.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML p block 21",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "3fcb91c811ac43260148981943be8236f87e9d67c6d7e5be4aa43d4700662866",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          }
+        ]
+      },
+      {
+        "id": "tuition",
+        "category": "tuition",
+        "value": "Tuition fees\n\nNot applicable\n\nSemester fee\n\nSee current fee structure",
+        "note": "No tuition in this program overview; semester contributions are separate and no amount is established here.",
+        "evidence": [
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Tuition fees",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML td block 41",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "3fcb91c811ac43260148981943be8236f87e9d67c6d7e5be4aa43d4700662866",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          },
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Not applicable",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML td block 42",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "3fcb91c811ac43260148981943be8236f87e9d67c6d7e5be4aa43d4700662866",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          },
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Semester fee",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML td block 43",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "3fcb91c811ac43260148981943be8236f87e9d67c6d7e5be4aa43d4700662866",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          },
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "See current fee structure",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML td block 44",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "3fcb91c811ac43260148981943be8236f87e9d67c6d7e5be4aa43d4700662866",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          }
+        ]
+      },
+      {
+        "id": "semester",
+        "category": "semester",
+        "value": "Students can begin the M.Sc. programme at the beginning of the summer or winter semester. Applications should normally be received by 15 May for students seeking to begin studying in the winter semester and by 15 November for students looking to start their studies in summer. Applicants who apply by May 15th for the following summer semester are expected to receive a letter of admission by mid-July if the respective Master's commission makes a positive decision. Applicants who apply by November 15th for the following winter semester are expected to receive a letter of admission by mid-February if the respective Master's commission makes a positive decision.",
+        "note": "Intake seasons are listed; calendar-year applicability remains unverified.",
+        "evidence": [
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Students can begin the M.Sc. programme at the beginning of the summer or winter semester. Applications should normally be received by 15 May for students seeking to begin studying in the winter semester and by 15 November for students looking to start their studies in summer. Applicants who apply by May 15th for the following summer semester are expected to receive a letter of admission by mid-July if the respective Master's commission makes a positive decision. Applicants who apply by November 15th for the following winter semester are expected to receive a letter of admission by mid-February if the respective Master's commission makes a positive decision.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML p block 20",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "3fcb91c811ac43260148981943be8236f87e9d67c6d7e5be4aa43d4700662866",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          }
+        ]
+      },
+      {
+        "id": "additional-evidence",
+        "category": "academic",
+        "value": "Proof of sufficient merit in their academic achievements in school and higher education\n\nA letter of motivation or personal statement documenting the student's particular interest in the M.Sc. programme\n\nTwo relevant academic references\n\nDetails about relevant work/study periods abroad and relevant work experience or internships",
+        "evidence": [
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Proof of sufficient merit in their academic achievements in school and higher education",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML li block 15",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "3fcb91c811ac43260148981943be8236f87e9d67c6d7e5be4aa43d4700662866",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          },
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "A letter of motivation or personal statement documenting the student's particular interest in the M.Sc. programme",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML li block 16",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "3fcb91c811ac43260148981943be8236f87e9d67c6d7e5be4aa43d4700662866",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          },
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Two relevant academic references",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML li block 17",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "3fcb91c811ac43260148981943be8236f87e9d67c6d7e5be4aa43d4700662866",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          },
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Details about relevant work/study periods abroad and relevant work experience or internships",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML li block 18",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "3fcb91c811ac43260148981943be8236f87e9d67c6d7e5be4aa43d4700662866",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          }
+        ]
+      }
+    ],
+    "catalogIssues": [
+      "Automatically extracted draft. Human review and semester applicability are outstanding.",
+      "The application guide covers multiple programs; only the Computer Science preparation clauses are captured here.",
+      "The linked regulation is an informational English translation dated 2 July 2015. The guide adds GPA/rank wording; its authority and current applicability need review against the German controlling text."
+    ],
+    "retrievedAt": "2026-10-21T12:09:30.532Z",
+    "catalogVersion": "bc668d90d8fede7fb53d07c76476ef5e4eceea7fdef62df21c0238bf416cfd31"
+  },
+  "changes": [
+    {
+      "collection": "requirements",
+      "id": "credits",
+      "change": "added",
+      "before": null,
+      "after": {
+        "id": "credits",
+        "kind": "academic",
+        "label": "Prior-degree credit scope and foreign-degree equivalence",
+        "sourceText": "Students seeking admission to the Master’s programme shall have a Bachelor’s degree from a German university (at least 180 CP) or an equivalent qualification from a foreign university in computer science, informatics or a related field:",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Prior-degree credit scope and foreign-degree equivalence. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://saarland-informatics-campus.de/en/studium-studies/master-english/application-guide/",
+            "quote": "Students seeking admission to the Master’s programme shall have a Bachelor’s degree from a German university (at least 180 CP) or an equivalent qualification from a foreign university in computer science, informatics or a related field:",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:09:28.684Z",
+            "validFor": [],
+            "locator": "HTML p block 15",
+            "retrievedAt": "2026-10-21T12:09:28.684Z",
+            "snapshotId": "a8e3853b0ad26ace2d0e0637aa2e34961d9bbac8a41a377f8718af80d3ee45ba",
+            "contentHash": "976b9555dbec012e2295c08a5d4678bf39e6fd7ce383cea373dc93ee20b7fc4d"
+          }
+        ]
+      }
+    },
+    {
+      "collection": "requirements",
+      "id": "subject-background",
+      "change": "added",
+      "before": null,
+      "after": {
+        "id": "subject-background",
+        "kind": "academic",
+        "label": "Mathematics, theoretical and practical computer science preparation",
+        "sourceText": "Sufficient merit in the applicant’s previous academic track record and the appropriate curricular content of the Bachelor’s degree is required. Applicants should demonstrate a level of knowledge and competence that corresponds to that acquired in the Bachelor’s degree programme in computer science taught at Saarland University. Specifically, this requires applicants to show that they have the necessary level of expertise in the following areas:\n\nI. Mathematics (discrete mathematics, real analysis and multivariable calculus, linear algebra, numerical methods, stochastics)\n\nII. Theoretical informatics (formal methods, formal logic, computability, understanding of complexity – particularly the complexity classes P and NP)\n\nIII. Practical informatics (functional and object-oriented programming, data structures and algorithms, databases, software development methods, system architecture)",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Mathematics, theoretical and practical computer science preparation. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://saarland-informatics-campus.de/en/studium-studies/master-english/application-guide/",
+            "quote": "Sufficient merit in the applicant’s previous academic track record and the appropriate curricular content of the Bachelor’s degree is required. Applicants should demonstrate a level of knowledge and competence that corresponds to that acquired in the Bachelor’s degree programme in computer science taught at Saarland University. Specifically, this requires applicants to show that they have the necessary level of expertise in the following areas:",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:09:28.684Z",
+            "validFor": [],
+            "locator": "HTML p block 16",
+            "retrievedAt": "2026-10-21T12:09:28.684Z",
+            "snapshotId": "a8e3853b0ad26ace2d0e0637aa2e34961d9bbac8a41a377f8718af80d3ee45ba",
+            "contentHash": "976b9555dbec012e2295c08a5d4678bf39e6fd7ce383cea373dc93ee20b7fc4d"
+          },
+          {
+            "url": "https://saarland-informatics-campus.de/en/studium-studies/master-english/application-guide/",
+            "quote": "I. Mathematics (discrete mathematics, real analysis and multivariable calculus, linear algebra, numerical methods, stochastics)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:09:28.684Z",
+            "validFor": [],
+            "locator": "HTML p block 17",
+            "retrievedAt": "2026-10-21T12:09:28.684Z",
+            "snapshotId": "a8e3853b0ad26ace2d0e0637aa2e34961d9bbac8a41a377f8718af80d3ee45ba",
+            "contentHash": "976b9555dbec012e2295c08a5d4678bf39e6fd7ce383cea373dc93ee20b7fc4d"
+          },
+          {
+            "url": "https://saarland-informatics-campus.de/en/studium-studies/master-english/application-guide/",
+            "quote": "II. Theoretical informatics (formal methods, formal logic, computability, understanding of complexity – particularly the complexity classes P and NP)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:09:28.684Z",
+            "validFor": [],
+            "locator": "HTML p block 18",
+            "retrievedAt": "2026-10-21T12:09:28.684Z",
+            "snapshotId": "a8e3853b0ad26ace2d0e0637aa2e34961d9bbac8a41a377f8718af80d3ee45ba",
+            "contentHash": "976b9555dbec012e2295c08a5d4678bf39e6fd7ce383cea373dc93ee20b7fc4d"
+          },
+          {
+            "url": "https://saarland-informatics-campus.de/en/studium-studies/master-english/application-guide/",
+            "quote": "III. Practical informatics (functional and object-oriented programming, data structures and algorithms, databases, software development methods, system architecture)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:09:28.684Z",
+            "validFor": [],
+            "locator": "HTML p block 19",
+            "retrievedAt": "2026-10-21T12:09:28.684Z",
+            "snapshotId": "a8e3853b0ad26ace2d0e0637aa2e34961d9bbac8a41a377f8718af80d3ee45ba",
+            "contentHash": "976b9555dbec012e2295c08a5d4678bf39e6fd7ce383cea373dc93ee20b7fc4d"
+          }
+        ]
+      }
+    },
+    {
+      "collection": "requirements",
+      "id": "guide-grades",
+      "change": "added",
+      "before": null,
+      "after": {
+        "id": "guide-grades",
+        "kind": "gpa",
+        "label": "Application guide GPA and class-rank clause",
+        "sourceText": "Minimal prerequisite is a cumulative undergraduate grade point average (CGPA) of 75% or 3.00 GPA on a 4 point scale and ranking in the top 10% of the graduating class.",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Application guide GPA and class-rank clause. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://saarland-informatics-campus.de/en/studium-studies/master-english/application-guide/",
+            "quote": "Minimal prerequisite is a cumulative undergraduate grade point average (CGPA) of 75% or 3.00 GPA on a 4 point scale and ranking in the top 10% of the graduating class.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:09:28.684Z",
+            "validFor": [],
+            "locator": "HTML p block 20",
+            "retrievedAt": "2026-10-21T12:09:28.684Z",
+            "snapshotId": "a8e3853b0ad26ace2d0e0637aa2e34961d9bbac8a41a377f8718af80d3ee45ba",
+            "contentHash": "976b9555dbec012e2295c08a5d4678bf39e6fd7ce383cea373dc93ee20b7fc4d"
+          }
+        ]
+      }
+    },
+    {
+      "collection": "requirements",
+      "id": "accepted-certificates",
+      "change": "added",
+      "before": null,
+      "after": {
+        "id": "accepted-certificates",
+        "kind": "language",
+        "label": "Accepted English tests, scores, variants and exceptions",
+        "sourceText": "The following certificates will be accepted:_ IELTS (academic test): min. 7.0 out of 9_ TOEFL (internet based): min. 95 out of 120 (2026: 5 out of 6)_ TOEFL (paper based): min. 600 out of 677 (2026: 5 out of 6)_ Cambridge English Certificate: C1 Advanced (CAE) or C2 Proficiency (CPE)_ PTE Academic: min. 76\n\nThe English certificate is a mandatory part of the application. A confirmation of your university or a MOI (Medium of Instruction) is not a sufficient equivalent.\n\nOnly native speakers from Australia, Ireland, Canada, New Zealand, the UK, and the USA, or applicants who have completed in-person studies while physically residing in one of these countries at a university located there, are excluded from this rule. In these cases, please enter native speaker from [country] or studied in [country] into the form and upload a high school and/or bachelor’s degree certificate from that country as proof.\n\nFor German applicants, school certificates demonstrating that English has been studied for at least 5 years up to the general qualification for university entrance (Abitur) with good or very good grades is sufficient. As level C1 is not usually achieved by the end of school, certificates with good or very good grades are examined individually.",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Accepted English tests, scores, variants and exceptions. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://saarland-informatics-campus.de/en/studium-studies/master-english/application-guide/",
+            "quote": "The following certificates will be accepted:_ IELTS (academic test): min. 7.0 out of 9_ TOEFL (internet based): min. 95 out of 120 (2026: 5 out of 6)_ TOEFL (paper based): min. 600 out of 677 (2026: 5 out of 6)_ Cambridge English Certificate: C1 Advanced (CAE) or C2 Proficiency (CPE)_ PTE Academic: min. 76",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:09:28.684Z",
+            "validFor": [],
+            "locator": "HTML p block 45",
+            "retrievedAt": "2026-10-21T12:09:28.684Z",
+            "snapshotId": "a8e3853b0ad26ace2d0e0637aa2e34961d9bbac8a41a377f8718af80d3ee45ba",
+            "contentHash": "976b9555dbec012e2295c08a5d4678bf39e6fd7ce383cea373dc93ee20b7fc4d"
+          },
+          {
+            "url": "https://saarland-informatics-campus.de/en/studium-studies/master-english/application-guide/",
+            "quote": "The English certificate is a mandatory part of the application. A confirmation of your university or a MOI (Medium of Instruction) is not a sufficient equivalent.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:09:28.684Z",
+            "validFor": [],
+            "locator": "HTML p block 47",
+            "retrievedAt": "2026-10-21T12:09:28.684Z",
+            "snapshotId": "a8e3853b0ad26ace2d0e0637aa2e34961d9bbac8a41a377f8718af80d3ee45ba",
+            "contentHash": "976b9555dbec012e2295c08a5d4678bf39e6fd7ce383cea373dc93ee20b7fc4d"
+          },
+          {
+            "url": "https://saarland-informatics-campus.de/en/studium-studies/master-english/application-guide/",
+            "quote": "Only native speakers from Australia, Ireland, Canada, New Zealand, the UK, and the USA, or applicants who have completed in-person studies while physically residing in one of these countries at a university located there, are excluded from this rule. In these cases, please enter native speaker from [country] or studied in [country] into the form and upload a high school and/or bachelor’s degree certificate from that country as proof.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:09:28.684Z",
+            "validFor": [],
+            "locator": "HTML p block 48",
+            "retrievedAt": "2026-10-21T12:09:28.684Z",
+            "snapshotId": "a8e3853b0ad26ace2d0e0637aa2e34961d9bbac8a41a377f8718af80d3ee45ba",
+            "contentHash": "976b9555dbec012e2295c08a5d4678bf39e6fd7ce383cea373dc93ee20b7fc4d"
+          },
+          {
+            "url": "https://saarland-informatics-campus.de/en/studium-studies/master-english/application-guide/",
+            "quote": "For German applicants, school certificates demonstrating that English has been studied for at least 5 years up to the general qualification for university entrance (Abitur) with good or very good grades is sufficient. As level C1 is not usually achieved by the end of school, certificates with good or very good grades are examined individually.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:09:28.684Z",
+            "validFor": [],
+            "locator": "HTML p block 49",
+            "retrievedAt": "2026-10-21T12:09:28.684Z",
+            "snapshotId": "a8e3853b0ad26ace2d0e0637aa2e34961d9bbac8a41a377f8718af80d3ee45ba",
+            "contentHash": "976b9555dbec012e2295c08a5d4678bf39e6fd7ce383cea373dc93ee20b7fc4d"
+          }
+        ]
+      }
+    },
+    {
+      "collection": "facts",
+      "id": "credits",
+      "change": "changed",
+      "before": {
+        "id": "credits",
+        "category": "credits",
+        "value": null,
+        "note": "No numeric subject-credit threshold established from this page.",
+        "evidence": []
+      },
+      "after": {
+        "id": "credits",
+        "category": "credits",
+        "value": "Students seeking admission to the Master’s programme shall have a Bachelor’s degree from a German university (at least 180 CP) or an equivalent qualification from a foreign university in computer science, informatics or a related field:",
+        "note": "The guide states at least 180 CP for a German university Bachelor, or an equivalent foreign qualification. No automatic CP-to-ECTS conversion or universal subject-credit minimum is inferred.",
+        "evidence": [
+          {
+            "url": "https://saarland-informatics-campus.de/en/studium-studies/master-english/application-guide/",
+            "quote": "Students seeking admission to the Master’s programme shall have a Bachelor’s degree from a German university (at least 180 CP) or an equivalent qualification from a foreign university in computer science, informatics or a related field:",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:09:28.684Z",
+            "validFor": [],
+            "locator": "HTML p block 15",
+            "retrievedAt": "2026-10-21T12:09:28.684Z",
+            "snapshotId": "a8e3853b0ad26ace2d0e0637aa2e34961d9bbac8a41a377f8718af80d3ee45ba",
+            "contentHash": "976b9555dbec012e2295c08a5d4678bf39e6fd7ce383cea373dc93ee20b7fc4d"
+          }
+        ]
+      }
+    },
+    {
+      "collection": "facts",
+      "id": "subject-background",
+      "change": "added",
+      "before": null,
+      "after": {
+        "id": "subject-background",
+        "category": "academic",
+        "value": "Sufficient merit in the applicant’s previous academic track record and the appropriate curricular content of the Bachelor’s degree is required. Applicants should demonstrate a level of knowledge and competence that corresponds to that acquired in the Bachelor’s degree programme in computer science taught at Saarland University. Specifically, this requires applicants to show that they have the necessary level of expertise in the following areas:\n\nI. Mathematics (discrete mathematics, real analysis and multivariable calculus, linear algebra, numerical methods, stochastics)\n\nII. Theoretical informatics (formal methods, formal logic, computability, understanding of complexity – particularly the complexity classes P and NP)\n\nIII. Practical informatics (functional and object-oriented programming, data structures and algorithms, databases, software development methods, system architecture)",
+        "evidence": [
+          {
+            "url": "https://saarland-informatics-campus.de/en/studium-studies/master-english/application-guide/",
+            "quote": "Sufficient merit in the applicant’s previous academic track record and the appropriate curricular content of the Bachelor’s degree is required. Applicants should demonstrate a level of knowledge and competence that corresponds to that acquired in the Bachelor’s degree programme in computer science taught at Saarland University. Specifically, this requires applicants to show that they have the necessary level of expertise in the following areas:",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:09:28.684Z",
+            "validFor": [],
+            "locator": "HTML p block 16",
+            "retrievedAt": "2026-10-21T12:09:28.684Z",
+            "snapshotId": "a8e3853b0ad26ace2d0e0637aa2e34961d9bbac8a41a377f8718af80d3ee45ba",
+            "contentHash": "976b9555dbec012e2295c08a5d4678bf39e6fd7ce383cea373dc93ee20b7fc4d"
+          },
+          {
+            "url": "https://saarland-informatics-campus.de/en/studium-studies/master-english/application-guide/",
+            "quote": "I. Mathematics (discrete mathematics, real analysis and multivariable calculus, linear algebra, numerical methods, stochastics)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:09:28.684Z",
+            "validFor": [],
+            "locator": "HTML p block 17",
+            "retrievedAt": "2026-10-21T12:09:28.684Z",
+            "snapshotId": "a8e3853b0ad26ace2d0e0637aa2e34961d9bbac8a41a377f8718af80d3ee45ba",
+            "contentHash": "976b9555dbec012e2295c08a5d4678bf39e6fd7ce383cea373dc93ee20b7fc4d"
+          },
+          {
+            "url": "https://saarland-informatics-campus.de/en/studium-studies/master-english/application-guide/",
+            "quote": "II. Theoretical informatics (formal methods, formal logic, computability, understanding of complexity – particularly the complexity classes P and NP)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:09:28.684Z",
+            "validFor": [],
+            "locator": "HTML p block 18",
+            "retrievedAt": "2026-10-21T12:09:28.684Z",
+            "snapshotId": "a8e3853b0ad26ace2d0e0637aa2e34961d9bbac8a41a377f8718af80d3ee45ba",
+            "contentHash": "976b9555dbec012e2295c08a5d4678bf39e6fd7ce383cea373dc93ee20b7fc4d"
+          },
+          {
+            "url": "https://saarland-informatics-campus.de/en/studium-studies/master-english/application-guide/",
+            "quote": "III. Practical informatics (functional and object-oriented programming, data structures and algorithms, databases, software development methods, system architecture)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:09:28.684Z",
+            "validFor": [],
+            "locator": "HTML p block 19",
+            "retrievedAt": "2026-10-21T12:09:28.684Z",
+            "snapshotId": "a8e3853b0ad26ace2d0e0637aa2e34961d9bbac8a41a377f8718af80d3ee45ba",
+            "contentHash": "976b9555dbec012e2295c08a5d4678bf39e6fd7ce383cea373dc93ee20b7fc4d"
+          }
+        ]
+      }
+    },
+    {
+      "collection": "facts",
+      "id": "guide-grades",
+      "change": "added",
+      "before": null,
+      "after": {
+        "id": "guide-grades",
+        "category": "academic",
+        "value": "Minimal prerequisite is a cumulative undergraduate grade point average (CGPA) of 75% or 3.00 GPA on a 4 point scale and ranking in the top 10% of the graduating class.",
+        "note": "Guide states 75% or 3.00/4 and top 10% ranking. Not automatically converted or treated as a complete controlling policy.",
+        "evidence": [
+          {
+            "url": "https://saarland-informatics-campus.de/en/studium-studies/master-english/application-guide/",
+            "quote": "Minimal prerequisite is a cumulative undergraduate grade point average (CGPA) of 75% or 3.00 GPA on a 4 point scale and ranking in the top 10% of the graduating class.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:09:28.684Z",
+            "validFor": [],
+            "locator": "HTML p block 20",
+            "retrievedAt": "2026-10-21T12:09:28.684Z",
+            "snapshotId": "a8e3853b0ad26ace2d0e0637aa2e34961d9bbac8a41a377f8718af80d3ee45ba",
+            "contentHash": "976b9555dbec012e2295c08a5d4678bf39e6fd7ce383cea373dc93ee20b7fc4d"
+          }
+        ]
+      }
+    },
+    {
+      "collection": "facts",
+      "id": "accepted-certificates",
+      "change": "added",
+      "before": null,
+      "after": {
+        "id": "accepted-certificates",
+        "category": "language",
+        "value": "The following certificates will be accepted:_ IELTS (academic test): min. 7.0 out of 9_ TOEFL (internet based): min. 95 out of 120 (2026: 5 out of 6)_ TOEFL (paper based): min. 600 out of 677 (2026: 5 out of 6)_ Cambridge English Certificate: C1 Advanced (CAE) or C2 Proficiency (CPE)_ PTE Academic: min. 76\n\nThe English certificate is a mandatory part of the application. A confirmation of your university or a MOI (Medium of Instruction) is not a sufficient equivalent.\n\nOnly native speakers from Australia, Ireland, Canada, New Zealand, the UK, and the USA, or applicants who have completed in-person studies while physically residing in one of these countries at a university located there, are excluded from this rule. In these cases, please enter native speaker from [country] or studied in [country] into the form and upload a high school and/or bachelor’s degree certificate from that country as proof.\n\nFor German applicants, school certificates demonstrating that English has been studied for at least 5 years up to the general qualification for university entrance (Abitur) with good or very good grades is sufficient. As level C1 is not usually achieved by the end of school, certificates with good or very good grades are examined individually.",
+        "note": "Retain old/new TOEFL scales separately. Certificate and country/education exemptions require human assessment.",
+        "evidence": [
+          {
+            "url": "https://saarland-informatics-campus.de/en/studium-studies/master-english/application-guide/",
+            "quote": "The following certificates will be accepted:_ IELTS (academic test): min. 7.0 out of 9_ TOEFL (internet based): min. 95 out of 120 (2026: 5 out of 6)_ TOEFL (paper based): min. 600 out of 677 (2026: 5 out of 6)_ Cambridge English Certificate: C1 Advanced (CAE) or C2 Proficiency (CPE)_ PTE Academic: min. 76",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:09:28.684Z",
+            "validFor": [],
+            "locator": "HTML p block 45",
+            "retrievedAt": "2026-10-21T12:09:28.684Z",
+            "snapshotId": "a8e3853b0ad26ace2d0e0637aa2e34961d9bbac8a41a377f8718af80d3ee45ba",
+            "contentHash": "976b9555dbec012e2295c08a5d4678bf39e6fd7ce383cea373dc93ee20b7fc4d"
+          },
+          {
+            "url": "https://saarland-informatics-campus.de/en/studium-studies/master-english/application-guide/",
+            "quote": "The English certificate is a mandatory part of the application. A confirmation of your university or a MOI (Medium of Instruction) is not a sufficient equivalent.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:09:28.684Z",
+            "validFor": [],
+            "locator": "HTML p block 47",
+            "retrievedAt": "2026-10-21T12:09:28.684Z",
+            "snapshotId": "a8e3853b0ad26ace2d0e0637aa2e34961d9bbac8a41a377f8718af80d3ee45ba",
+            "contentHash": "976b9555dbec012e2295c08a5d4678bf39e6fd7ce383cea373dc93ee20b7fc4d"
+          },
+          {
+            "url": "https://saarland-informatics-campus.de/en/studium-studies/master-english/application-guide/",
+            "quote": "Only native speakers from Australia, Ireland, Canada, New Zealand, the UK, and the USA, or applicants who have completed in-person studies while physically residing in one of these countries at a university located there, are excluded from this rule. In these cases, please enter native speaker from [country] or studied in [country] into the form and upload a high school and/or bachelor’s degree certificate from that country as proof.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:09:28.684Z",
+            "validFor": [],
+            "locator": "HTML p block 48",
+            "retrievedAt": "2026-10-21T12:09:28.684Z",
+            "snapshotId": "a8e3853b0ad26ace2d0e0637aa2e34961d9bbac8a41a377f8718af80d3ee45ba",
+            "contentHash": "976b9555dbec012e2295c08a5d4678bf39e6fd7ce383cea373dc93ee20b7fc4d"
+          },
+          {
+            "url": "https://saarland-informatics-campus.de/en/studium-studies/master-english/application-guide/",
+            "quote": "For German applicants, school certificates demonstrating that English has been studied for at least 5 years up to the general qualification for university entrance (Abitur) with good or very good grades is sufficient. As level C1 is not usually achieved by the end of school, certificates with good or very good grades are examined individually.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:09:28.684Z",
+            "validFor": [],
+            "locator": "HTML p block 49",
+            "retrievedAt": "2026-10-21T12:09:28.684Z",
+            "snapshotId": "a8e3853b0ad26ace2d0e0637aa2e34961d9bbac8a41a377f8718af80d3ee45ba",
+            "contentHash": "976b9555dbec012e2295c08a5d4678bf39e6fd7ce383cea373dc93ee20b7fc4d"
+          }
+        ]
+      }
+    }
+  ]
+}

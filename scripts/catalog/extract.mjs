@@ -2,7 +2,7 @@ import { createHash } from "node:crypto";
 import { loadBuffer } from "cheerio";
 import { allowedUrl } from "./fetch.mjs";
 
-export const EXTRACTOR_VERSION = 2;
+export const EXTRACTOR_VERSION = 3;
 export const hash = (value) => createHash("sha256").update(typeof value === "string" || Buffer.isBuffer(value) ? value : JSON.stringify(value)).digest("hex");
 export const normalizeText = (value) => value.normalize("NFKC").replace(/\s+/g, " ").trim();
 
@@ -42,6 +42,11 @@ export async function parseSource(fetched, hosts) {
       const text = normalizeText(fragment.text());
       if (text && !blocks.some((block) => block.text === text)) blocks.push({ text, locator: `HTML ${element.tagName} block ${index + 1}` });
     });
+    // A fee/requirements table cell is not meaningful without its sibling cells.
+    root.find("tr").each((index, element) => {
+      const cells = $(element).children("td,th").toArray().map((cell) => normalizeText($(cell).text()));
+      if (cells.length > 1) blocks.push({ text: cells.join(" | "), locator: `HTML table row ${index + 1}` });
+    });
   }
   if (!blocks.length) throw new Error("No readable source text; OCR/manual extraction required");
   const contentHash = hash(fetched.bytes);
@@ -63,8 +68,13 @@ export function extractProgram(seed, snapshots, failures, now) {
     const snapshot = snapshots[recipe.source];
     const anchors = (recipe.anchors ?? [recipe.anchor ?? ""]).map(normalizeText);
     const matches = anchors.map((anchor) => anchor && snapshot?.blocks.find((item) => item.text.toLowerCase().includes(anchor.toLowerCase())));
-    const blocks = [...new Set(matches.filter(Boolean))];
-    if (!blocks.length || matches.some((block) => !block)) {
+    const blocks = [...new Set(matches.filter(Boolean))].map((block) => {
+      if (!recipe.quoteFrom && !recipe.quoteUntil) return block;
+      const from = recipe.quoteFrom ? block.text.indexOf(recipe.quoteFrom) : 0;
+      const until = recipe.quoteUntil ? block.text.indexOf(recipe.quoteUntil, from + 1) : block.text.length;
+      return from < 0 || until <= from ? null : { ...block, text: block.text.slice(from, until).trim() };
+    });
+    if (!blocks.length || blocks.some((block) => !block) || matches.some((block) => !block)) {
       facts.push({ id: recipe.id, category: recipe.category, value: null, note: recipe.note ?? "Not established from the fetched sources.", evidence: [] });
       if (anchors.some(Boolean)) issues.push(`Extraction needs review: ${recipe.id} (anchor missing or source unavailable).`);
       if (recipe.requirement) requirements.push({ id: recipe.id, kind: recipe.kind ?? "other", label: recipe.label, mandatory: true, rule: { type: "manual", explanation: "Source evidence is missing. Re-extract or review the official source." }, evidence: [] });

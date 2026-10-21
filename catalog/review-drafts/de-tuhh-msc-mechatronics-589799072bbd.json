@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "programId": "de-tuhh-msc-mechatronics",
+  "revision": "589799072bbdcc1ac26e2d132876ab209e7d3679197513b079fba6bc7aea569f",
+  "reviewer": "",
+  "reviewedAt": "",
+  "note": "",
+  "requirementsComplete": false,
+  "applicability": {
+    "semesters": [],
+    "evidence": [],
+    "explanation": ""
+  },
+  "sources": [
+    {
+      "snapshotId": "622e3cb6bc1b62ed48dc36e344f6c4016610390bdcf1a0323a995875da3a2c25",
+      "decision": "pending"
+    },
+    {
+      "snapshotId": "9cfaf82c1fd05f9cb8e371c0f1dd0a5d933f7ca374abd549dcce67ba97043035",
+      "decision": "pending"
+    }
+  ],
+  "requirements": [
+    {
+      "decision": "pending",
+      "requirement": {
+        "id": "academic",
+        "kind": "academic",
+        "label": "Prior mechatronics or mechanical engineering degree",
+        "sourceText": "Bachelor's degree in Mechatronics or Mechanical Engineering, see subject-specific requirements",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Prior mechatronics or mechanical engineering degree. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.tuhh.de/tuhh/studium/vor-dem-studium/studienangebot/international-study-programs/mechatronics",
+            "quote": "Bachelor's degree in Mechatronics or Mechanical Engineering, see subject-specific requirements",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:50.354Z",
+            "validFor": [],
+            "locator": "HTML td block 13",
+            "retrievedAt": "2026-10-21T12:05:50.354Z",
+            "snapshotId": "622e3cb6bc1b62ed48dc36e344f6c4016610390bdcf1a0323a995875da3a2c25",
+            "contentHash": "8f289c6ca0d70007785e9f12176b6285aa23d736fce620dcd07d2e4832c58e51"
+          }
+        ]
+      }
+    },
+    {
+      "decision": "pending",
+      "requirement": {
+        "id": "language",
+        "kind": "language",
+        "label": "English certificate types and scores",
+        "sourceText": "Applicants should hold a Bachelor's or equivalent degree in mechatronics engineering or mechanical engineering and must show a very good previous academic performance as well as sufficient proficiency in English by passing TOEFL with a minimum score of 577 (paper-based) / 90 (internet-based) or IELTS with a minimum score of 6.5.\n\nPlease note: The TOEFL ITP is not accepted by TUHH.",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "English certificate types and scores. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.tuhh.de/tuhh/studium/vor-dem-studium/studienangebot/international-study-programs/mechatronics",
+            "quote": "Applicants should hold a Bachelor's or equivalent degree in mechatronics engineering or mechanical engineering and must show a very good previous academic performance as well as sufficient proficiency in English by passing TOEFL with a minimum score of 577 (paper-based) / 90 (internet-based) or IELTS with a minimum score of 6.5.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:50.354Z",
+            "validFor": [],
+            "locator": "HTML p block 38",
+            "retrievedAt": "2026-10-21T12:05:50.354Z",
+            "snapshotId": "622e3cb6bc1b62ed48dc36e344f6c4016610390bdcf1a0323a995875da3a2c25",
+            "contentHash": "8f289c6ca0d70007785e9f12176b6285aa23d736fce620dcd07d2e4832c58e51"
+          },
+          {
+            "url": "https://www.tuhh.de/tuhh/studium/vor-dem-studium/studienangebot/international-study-programs/mechatronics",
+            "quote": "Please note: The TOEFL ITP is not accepted by TUHH.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:50.354Z",
+            "validFor": [],
+            "locator": "HTML p block 39",
+            "retrievedAt": "2026-10-21T12:05:50.354Z",
+            "snapshotId": "622e3cb6bc1b62ed48dc36e344f6c4016610390bdcf1a0323a995875da3a2c25",
+            "contentHash": "8f289c6ca0d70007785e9f12176b6285aa23d736fce620dcd07d2e4832c58e51"
+          }
+        ]
+      }
+    },
+    {
+      "decision": "pending",
+      "requirement": {
+        "id": "credits",
+        "kind": "ects",
+        "label": "Subject-specific mathematics and engineering preparation",
+        "sourceText": "As can be seen from those requirements, we expect applicants to have e.g. 30 CP worth of courses covering fundamental mathematics - the equivalent of one semester. Additionally, we request profound knowledge in engineering mechanics as well as control theory and fundamentals of mechatronics.",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Subject-specific mathematics and engineering preparation. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.tuhh.de/tuhh/studium/vor-dem-studium/studienangebot/international-study-programs/mechatronics",
+            "quote": "As can be seen from those requirements, we expect applicants to have e.g. 30 CP worth of courses covering fundamental mathematics - the equivalent of one semester. Additionally, we request profound knowledge in engineering mechanics as well as control theory and fundamentals of mechatronics.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:50.354Z",
+            "validFor": [],
+            "locator": "HTML p block 41",
+            "retrievedAt": "2026-10-21T12:05:50.354Z",
+            "snapshotId": "622e3cb6bc1b62ed48dc36e344f6c4016610390bdcf1a0323a995875da3a2c25",
+            "contentHash": "8f289c6ca0d70007785e9f12176b6285aa23d736fce620dcd07d2e4832c58e51"
+          }
+        ]
+      }
+    },
+    {
+      "decision": "pending",
+      "requirement": {
+        "id": "inventory-review",
+        "kind": "other",
+        "label": "Full admission regulations and applicability review",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "The extracted inventory is not complete. Verify regulations, applicant categories, exemptions, selection and semester validity."
+        },
+        "evidence": []
+      }
+    }
+  ],
+  "removedRequirements": [],
+  "facts": [
+    {
+      "id": "academic",
+      "decision": "pending"
+    },
+    {
+      "id": "language",
+      "decision": "pending"
+    },
+    {
+      "id": "credits",
+      "decision": "pending"
+    },
+    {
+      "id": "deadline",
+      "decision": "pending"
+    },
+    {
+      "id": "application",
+      "decision": "pending"
+    },
+    {
+      "id": "tuition",
+      "decision": "pending"
+    },
+    {
+      "id": "semester",
+      "decision": "pending"
+    }
+  ]
+}

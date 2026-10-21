@@ -3,12 +3,12 @@
   "sources": {
     "passau-program": {
       "url": "https://www.uni-passau.de/en/msc-computer-science/",
-      "snapshotId": "fb7ca3be80581d2bf74c8b150ddf3d80a88c7912386d755f1ba6e384d87fb5d2",
-      "contentHash": "b292474db6b95295f09b0f4b13ba2334cf58f776fcf30dc6ede11c2ffdad4c6b",
-      "textHash": "8c5033b607aa1d1c59198cd0f651ffbe7b2e752046370927eb44ebba1721ce39",
-      "lastAttempt": "2026-10-18T17:03:07.191Z",
-      "lastSuccessfulCheck": "2026-10-18T17:03:08.680Z",
-      "changed": false,
+      "snapshotId": "0d60ee24a955bcdd56dea67669ce465a252ccbca6b45da0cd24b560c7db42f68",
+      "contentHash": "293c6d487acb3cec00410acfd4a39a9f9c809a6bd69c1a5658f8033f3d72344d",
+      "textHash": "95289a614141706a50da22e54df811f2fd5b5f560c2fa5cee81ff02d8f3e7506",
+      "lastAttempt": "2026-10-21T12:05:25.647Z",
+      "lastSuccessfulCheck": "2026-10-21T12:05:27.146Z",
+      "changed": true,
       "textChanged": false,
       "discovered": [
         {
@@ -59,23 +59,23 @@
     },
     "passau-leaflet": {
       "url": "https://www.uni-passau.de/fileadmin/dokumente/studium/infoschriften/Informatik_MSc_EN.pdf",
-      "snapshotId": "54a5150e9a34c4a0ae6b74a901dd82164312a909d66abd371d3d65482e6b903d",
+      "snapshotId": "65a06f5870578af7fda0930f32159219b741f135648e0b57efb5900ff234a6d5",
       "contentHash": "dc6e8087039110286d75db6c2740ffac6d91f3566b565bd8250a50ea2f33d418",
       "textHash": "cae63e9d150c0556a8e8abda7a7dac65fe082cb78da29061be3e1c7df93a1870",
-      "lastAttempt": "2026-10-18T17:03:08.867Z",
-      "lastSuccessfulCheck": "2026-10-18T17:03:09.793Z",
+      "lastAttempt": "2026-10-21T12:05:27.472Z",
+      "lastSuccessfulCheck": "2026-10-21T12:05:28.281Z",
       "changed": false,
       "textChanged": false,
       "discovered": []
     },
     "saarland-program": {
       "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
-      "snapshotId": "11ff914dc2defc104d3b3020d39785bd9969490865d2ccbf37040f9bdd05fc79",
-      "contentHash": "bd27fad2a7cd32c0608121f14efc5c059917c1b22ec7eca492b355244f1a3d40",
-      "textHash": "10ea99da76adb18363ce2dcadba8858c565d9d547303bae5b0f640c344274245",
-      "lastAttempt": "2026-10-18T17:03:10.750Z",
-      "lastSuccessfulCheck": "2026-10-18T17:03:13.445Z",
-      "changed": false,
+      "snapshotId": "3fcb91c811ac43260148981943be8236f87e9d67c6d7e5be4aa43d4700662866",
+      "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd",
+      "textHash": "67b70e82622943588bf9bfec81d2ac0bd821ecf3401915710f52df93b0bbae76",
+      "lastAttempt": "2026-10-21T12:05:35.528Z",
+      "lastSuccessfulCheck": "2026-10-21T12:05:37.352Z",
+      "changed": true,
       "textChanged": false,
       "discovered": [
         {
@@ -119,6 +119,10 @@
           "label": "Requirements & application"
         },
         {
+          "url": "https://saarland-informatics-campus.de/en/studium-studies/master-english/application-guide/",
+          "label": "FAQ for a list of accepted certificates"
+        },
+        {
           "url": "https://www.uni-saarland.de/fileadmin/upload/verwaltung/uebersetzungen/english/master/informatik-so.pdf",
           "label": "Study regulations"
         },
@@ -146,13 +150,13 @@
     },
     "fau-program": {
       "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
-      "snapshotId": "ae23e848e552f12185b2b19675c937f1121985bba83f4442299e54cfe2dc1a52",
-      "contentHash": "9c23296483a8b444b5be8c06e9820816e8c6c243ce12e82a87a81fd69d597246",
-      "textHash": "64b56e804eda051fdb01237c1857ba8ba9005deb40cc7b545efe6630115da0b6",
-      "lastAttempt": "2026-10-18T17:03:13.607Z",
-      "lastSuccessfulCheck": "2026-10-18T17:03:15.034Z",
-      "changed": false,
-      "textChanged": false,
+      "snapshotId": "156ab430baa808ed3a74c6ea979a16e899780d19a8f37a1faa80d87d1e314366",
+      "contentHash": "de6b33a557f32b028adce3900f9c729a35457b03b8b2516ee0b673bc0b2e2c19",
+      "textHash": "9acc3efb4c475139e923d22a4c938692d73f811f61de033d353967f2ac4b8e18",
+      "lastAttempt": "2026-10-21T12:05:37.515Z",
+      "lastSuccessfulCheck": "2026-10-21T12:05:40.495Z",
+      "changed": true,
+      "textChanged": true,
       "discovered": [
         {
           "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
@@ -165,6 +169,10 @@
         {
           "url": "https://www.fau.eu/studying/international-students/application-and-enrollment-for-international-applicants/",
           "label": "Application process for internationals"
+        },
+        {
+          "url": "https://www.fau.de/universitaet/universitaetsorganisation/rechtliche-grundlagen/pruefungsordnungen/mathematik/",
+          "label": "Examination regulations"
         },
         {
           "url": "https://www.fau.eu/studying/applications-and-admissions/everything-you-need-to-know-about-dates-and-deadlines/",
@@ -250,12 +258,12 @@
     },
     "stuttgart-requirements": {
       "url": "https://www.infotech.uni-stuttgart.de/application/requirements/",
-      "snapshotId": "898d30270aa385ad682ece34f13a0d7fb15b58b89087a349ac5902cd27630363",
-      "contentHash": "12467f341c8101978da5d84423ced1771f22f339c035b56ea59a59a4c4738215",
-      "textHash": "98a0ee20ab01d312bcec2700f7f6ecbe4afdcb57dfd45e6582821b0ef4c556fb",
-      "lastAttempt": "2026-10-18T17:03:15.214Z",
-      "lastSuccessfulCheck": "2026-10-18T17:03:16.488Z",
-      "changed": false,
+      "snapshotId": "065916d871c7d619b10a109533ea58be6b03dc3bda8f88bbd84a3b3edd4b62e5",
+      "contentHash": "a2fc623f3af31ed199655488d9be5fb49f900bce9b0be17ab7b1a68c763eea1f",
+      "textHash": "4d0a71258764e6c6fed3f502a25f5478dbdc7c1564ea47eb6e9c389dae85822a",
+      "lastAttempt": "2026-10-21T12:05:40.719Z",
+      "lastSuccessfulCheck": "2026-10-21T12:05:42.411Z",
+      "changed": true,
       "textChanged": false,
       "discovered": [
         {
@@ -290,12 +298,12 @@
     },
     "stuttgart-application": {
       "url": "https://www.infotech.uni-stuttgart.de/application/",
-      "snapshotId": "57c2367ba77213a1626d101e4e96dec418842976e212002210697800f742ceb7",
-      "contentHash": "49ae60eb519bc4ab5eba7ed534e294db6e4f890c54a8ae491a748570a15f5134",
+      "snapshotId": "16a1abf51ef13dd2fa4e803d9c6bd9877c80d1075dd5a8fc719e908038a97827",
+      "contentHash": "b022c5d5e63fb6fb6516a76fa33aaa891e72dfbc6c020d10b2f8fe45daffca99",
       "textHash": "b400c540efc94e776149b2ac162b4a3100057e1dac0c86d647a729e1b5637efc",
-      "lastAttempt": "2026-10-18T17:03:16.558Z",
-      "lastSuccessfulCheck": "2026-10-18T17:03:17.699Z",
-      "changed": false,
+      "lastAttempt": "2026-10-21T12:05:42.489Z",
+      "lastSuccessfulCheck": "2026-10-21T12:05:43.730Z",
+      "changed": true,
       "textChanged": false,
       "discovered": [
         {
@@ -330,23 +338,23 @@
     },
     "stuttgart-regulations": {
       "url": "https://www.infotech.uni-stuttgart.de/pdf/INFOTECH_ZulO_2024_BiLingual.pdf",
-      "snapshotId": "2dd300386d0116e2b06ea127807585ccdbedc7fc95c79470d673d1ba32a2e0c1",
+      "snapshotId": "ad0285cef3ca06eaadba081615b8e9854a0701d0631ce2eaa71832de0f7754d3",
       "contentHash": "1a492d13a440f1896060bc2e25433f10320ebbdb37cb08cd75278cb6617c3678",
       "textHash": "756e627d19a55febdd9e23602d537b7e2abeae56a39a9c930694707a7e497f5e",
-      "lastAttempt": "2026-10-18T17:03:17.750Z",
-      "lastSuccessfulCheck": "2026-10-18T17:03:19.004Z",
+      "lastAttempt": "2026-10-21T12:05:43.833Z",
+      "lastSuccessfulCheck": "2026-10-21T12:05:44.715Z",
       "changed": false,
       "textChanged": false,
       "discovered": []
     },
     "tuhh-program": {
       "url": "https://www.tuhh.de/tuhh/studium/vor-dem-studium/studienangebot/international-study-programs/mechatronics",
-      "snapshotId": "27f4c274cda3b232f5e61a394ed5ce814c29dc349e75c026374cae3b653217a7",
-      "contentHash": "5b3c28be16c28ebefebc559814aaef85ae91ccdbb07d87d594f7f5cb24248cb8",
-      "textHash": "5a4222ddd4173ac9dc2bc41fb4d5c95aebb41f125d52aea632433154263f5d33",
-      "lastAttempt": "2026-10-18T17:03:19.306Z",
-      "lastSuccessfulCheck": "2026-10-18T17:03:21.215Z",
-      "changed": false,
+      "snapshotId": "622e3cb6bc1b62ed48dc36e344f6c4016610390bdcf1a0323a995875da3a2c25",
+      "contentHash": "8f289c6ca0d70007785e9f12176b6285aa23d736fce620dcd07d2e4832c58e51",
+      "textHash": "dcfdc9baf6b191df7a3b7ac23f67a2622df7d641752cca51b53bba18d0a13c68",
+      "lastAttempt": "2026-10-21T12:05:45.095Z",
+      "lastSuccessfulCheck": "2026-10-21T12:05:50.354Z",
+      "changed": true,
       "textChanged": false,
       "discovered": [
         {
@@ -369,30 +377,831 @@
     },
     "tuhh-subjects": {
       "url": "https://www.tuhh.de/t3resources/tuhh/img/studium/dekanate/mb/fachspez._anforderungen_IMPMEC.pdf",
-      "lastAttempt": "2026-10-18T17:05:44.448Z",
+      "lastAttempt": "2026-10-21T12:05:50.493Z",
       "error": "robots.txt disallows https://www.tuhh.de/t3resources/tuhh/img/studium/dekanate/mb/fachspez._anforderungen_IMPMEC.pdf"
+    },
+    "passau-regulations": {
+      "url": "https://www.uni-passau.de/fileadmin/dokumente/beschaeftigte/Rechtsvorschriften/StO_und_PO/FMI/Master_Informatik.pdf",
+      "snapshotId": "48d0e5427a7af1da651c61af42413f46d5dc03f81b88493c9c16a5b9d3ff5f73",
+      "contentHash": "a0336b78540f1c07ab2a7ea97ad346b217c1344eda2f93c262ec8fbf3c022574",
+      "textHash": "576671ea04afb4b0c13ad422ae5241e01f42c9d33735f0fb72a46425fb08d4c6",
+      "lastAttempt": "2026-10-21T12:08:35.517Z",
+      "lastSuccessfulCheck": "2026-10-21T12:08:36.970Z",
+      "changed": false,
+      "textChanged": false,
+      "discovered": []
+    },
+    "passau-application": {
+      "url": "https://www.uni-passau.de/en/apply/application-methods",
+      "snapshotId": "78567d39a3a4a8fb0e2a18ecc082f8496c5894cb154c45a93ee4f75b61a19dcd",
+      "contentHash": "bfc18ccd413a4552ec8146c2826d8454cc21c0b127d4a06851d27e80c02af74d",
+      "textHash": "f3e1476f0209db1fdf759969391b396d1e4682a5846eadf24adcb07fdead16d4",
+      "lastAttempt": "2026-10-21T12:09:25.806Z",
+      "lastSuccessfulCheck": "2026-10-21T12:09:27.155Z",
+      "changed": false,
+      "textChanged": false,
+      "discovered": [
+        {
+          "url": "https://www.uni-passau.de/en/apply/application-methods",
+          "label": "Heading"
+        },
+        {
+          "url": "https://www.uni-passau.de/bewerbung-einschreibung/bewerbungsmodalitaeten",
+          "label": "de"
+        }
+      ]
+    },
+    "saarland-guide": {
+      "url": "https://saarland-informatics-campus.de/en/studium-studies/master-english/application-guide/",
+      "snapshotId": "a8e3853b0ad26ace2d0e0637aa2e34961d9bbac8a41a377f8718af80d3ee45ba",
+      "contentHash": "976b9555dbec012e2295c08a5d4678bf39e6fd7ce383cea373dc93ee20b7fc4d",
+      "textHash": "5792f94987a24fb9cb69077df3fe02e6d288d48a87a469a83855cfa2b85b23f2",
+      "lastAttempt": "2026-10-21T12:09:27.338Z",
+      "lastSuccessfulCheck": "2026-10-21T12:09:28.684Z",
+      "changed": false,
+      "textChanged": false,
+      "discovered": [
+        {
+          "url": "https://saarland-informatics-campus.de/en/studium-studies/master-english/application-guide/",
+          "label": "En"
+        },
+        {
+          "url": "https://saarland-informatics-campus.de/en/studium-studies/master-english/faq-master-application/",
+          "label": "Check our FAQ"
+        },
+        {
+          "url": "https://saarland-informatics-campus.de/wp-content/uploads/Datenschutzerklaerung-10.pdf",
+          "label": "Data Protection"
+        }
+      ]
+    },
+    "saarland-regulations": {
+      "url": "https://www.uni-saarland.de/fileadmin/upload/verwaltung/uebersetzungen/english/master/informatik-fb.pdf",
+      "snapshotId": "e36e376adc6d0f34307be7a3ab41a0ec1084e00efa60f2a048be885381697206",
+      "contentHash": "8690cdaa8b0a7758291b6c9a461f3ff20c1c325dcd3c3e667ebf7ef024648e90",
+      "textHash": "ceb773cecfd3938804ec1cad977de86733423bf8c47038cbc69b83f0ed7aa38d",
+      "lastAttempt": "2026-10-21T12:09:28.873Z",
+      "lastSuccessfulCheck": "2026-10-21T12:09:30.532Z",
+      "changed": false,
+      "textChanged": false,
+      "discovered": []
+    },
+    "fau-faculty": {
+      "url": "https://www.math-datascience.nat.fau.de/im-studium/masterstudiengaenge/master-data-science/",
+      "snapshotId": "ec78e60b06a0c90fe9400d0743ed9854c0103aa0887584cd44cfcffceb3a855a",
+      "contentHash": "acd19a96117c02ea1890b33387d1365e81130c10fc642970fa9eabfed5ab9a91",
+      "textHash": "d01a4d499d0ab0148b7df10c59b7a2e79dee275cd07a0385f417858b652b83ee",
+      "lastAttempt": "2026-10-21T12:09:31.297Z",
+      "lastSuccessfulCheck": "2026-10-21T12:09:34.198Z",
+      "changed": false,
+      "textChanged": false,
+      "discovered": [
+        {
+          "url": "https://www.math-datascience.nat.fau.de/files/2025/11/msc-datascience_faq_2025-11-08.pdf",
+          "label": "downloaded here"
+        },
+        {
+          "url": "https://www.math-datascience.nat.fau.de/files/2022/04/short-info-part-time-study-ds.pdf",
+          "label": "here"
+        },
+        {
+          "url": "https://www.fau.eu/education/application-and-enrolment/applying-for-masters-degree-programmes/",
+          "label": "https://www.fau.eu/education/application-and-enrolment/applying-for-masters-degree-programmes/#bewerbungszeitraum"
+        },
+        {
+          "url": "https://www.fau.eu/education/application-and-enrolment/deadlines-and-documents-for-enrolment/",
+          "label": "here"
+        },
+        {
+          "url": "https://www.fau.de/universitaet/universitaetsorganisation/rechtliche-grundlagen/pruefungsordnungen/",
+          "label": "can be downloaded here"
+        },
+        {
+          "url": "https://www.math-datascience.nat.fau.de/im-studium/infocenter/pruefungen/pruefungsordnungen/",
+          "label": "Prüfungsordnungen"
+        }
+      ]
+    },
+    "fau-tuition": {
+      "url": "https://www.fau.eu/studying/international-students/application-and-enrollment-for-international-applicants/tuition-fees-for-students-from-non-eu-states/",
+      "snapshotId": "45aaa50092eeaa126cd115e7a1139ec9e5f4ac5ee66d02d8cf8f63bb73f75b3b",
+      "contentHash": "a0801845642fc43eddf89f837eaceda7fe46160296ff945f63dea483068fab48",
+      "textHash": "5d6623382a6724522af87f8de86859dd70179599d250076c90f953d661969bb2",
+      "lastAttempt": "2026-10-21T12:09:34.362Z",
+      "lastSuccessfulCheck": "2026-10-21T12:09:40.701Z",
+      "changed": false,
+      "textChanged": false,
+      "discovered": [
+        {
+          "url": "https://www.fau.eu/studying/international-students/application-and-enrollment-for-international-applicants/tuition-fees-for-students-from-non-eu-states/",
+          "label": "Skip to main content"
+        },
+        {
+          "url": "https://www.fau.de/studium/international-studierende/bewerbung-und-einschreibung-fuer-internationale/studiengebuehren-fuer-studierende-aus-nicht-eu-staaten/",
+          "label": "Deutsch"
+        },
+        {
+          "url": "https://www.fau.eu/studying/international-students/application-and-enrollment-for-international-applicants/",
+          "label": "Application and enrollment for international appl..."
+        },
+        {
+          "url": "https://www.fau.de/studium/bewerbung-und-zulassung/zugangsvoraussetzungen/",
+          "label": "university entrance qualification"
+        },
+        {
+          "url": "https://www.fau.eu/studying/international-students/application-and-enrollment-for-international-applicants/fees-for-applications-from-non-eu-states/",
+          "label": "Fees for applications from non-EU statesProcessing fee of 100 euros per application for applicants from non-EU statesProcessing fee of 100 euros per application for applicants from non-EU statesRead more about Fees for applications from non-EU states"
+        },
+        {
+          "url": "https://www.fau.eu/studying/international-students/application-and-enrollment-for-international-applicants/prospective-international-students-applying-for-undergraduate-programs/",
+          "label": "Applications from prospective international students: Bachelor’s / State Examination degree programsProcedure, deadlines and documents for international applicants for undergraduate degree programs.Procedure, deadlines and documents for international applicants for undergraduate degree programs.Read more about Applications from prospective international students: Bachelor’s / State Examination degree programs"
+        },
+        {
+          "url": "https://www.fau.eu/studying/international-students/application-and-enrollment-for-international-applicants/applying-for-a-masters-degree-program-as-an-international-student/",
+          "label": "Applying for a Master’s degree program as an international studentProcedure, deadlines and documents for international applicants to Master’s degree programsProcedure, deadlines and documents for international applicants to Master’s degree programsRead more about Applying for a Master’s degree program as an international student"
+        },
+        {
+          "url": "https://www.fau.eu/studying/applications-and-admissions/everything-you-need-to-know-about-dates-and-deadlines/",
+          "label": "Everything you need to know about: dates and deadlines"
+        },
+        {
+          "url": "https://www.fau.eu/studying/applications-and-admissions/enrollment/",
+          "label": "Enrollment"
+        },
+        {
+          "url": "https://www.fau.eu/studying/applications-and-admissions/changing-degree-program-and-study-location/changing-degree-program-at-fau/",
+          "label": "Changing degree program at FAU"
+        },
+        {
+          "url": "https://www.fau.eu/studying/applications-and-admissions/changing-degree-program-and-study-location/changing-to-fau/lateral-entry/",
+          "label": "Lateral entry"
+        },
+        {
+          "url": "https://www.fau.eu/studying/applications-and-admissions/changing-degree-program-and-study-location/changing-to-fau/swapping-university-places/",
+          "label": "Swapping university places"
+        },
+        {
+          "url": "https://www.fau.eu/studying/applications-and-admissions/changing-degree-program-and-study-location/studying-two-degree-programs/",
+          "label": "Studying two degree programs"
+        },
+        {
+          "url": "https://www.fau.eu/studying/international-students/students-on-exchange-programs/application-process/",
+          "label": "Application process"
+        },
+        {
+          "url": "https://www.fau.eu/studying/international-students/application-and-enrollment-for-international-applicants/applying-for-a-masters-degree-program-as-an-international-student/application-dates-for-masters/",
+          "label": "Application dates and deadlines for Master’s and PhD degree programs"
+        },
+        {
+          "url": "https://www.fau.eu/studying/international-students/application-and-enrollment-for-international-applicants/evaluation-of-international-qualifications/",
+          "label": "Evaluation of international qualifications"
+        },
+        {
+          "url": "https://www.fau.eu/studying/international-students/application-and-enrollment-for-international-applicants/german-language-courses-german-language-proficiency-and-language-certificates/",
+          "label": "German language courses, German language proficiency and language certificates"
+        },
+        {
+          "url": "https://www.fau.eu/studying/international-students/application-and-enrollment-for-international-applicants/information-on-document-certification-and-translation/",
+          "label": "Information on document certification and translation"
+        },
+        {
+          "url": "https://www.fau.eu/studying/organizing-your-studies-and-where-to-go-for-advice/student-affairs/admissions-office-and-masters-office/",
+          "label": "Admission’s Office and Master’s Office"
+        },
+        {
+          "url": "https://www.fau.eu/studying/organizing-your-studies-and-where-to-go-for-advice/going-abroad/studying-abroad/direct-exchange-fauexchange/fauexchange-application/",
+          "label": "FAUexchange – Application"
+        },
+        {
+          "url": "https://www.fau.eu/studying/organizing-your-studies-and-where-to-go-for-advice/studying-with-special-requirements/first-generation-students/",
+          "label": "First-generation students"
+        },
+        {
+          "url": "https://www.fau.eu/studying/organizing-your-studies-and-where-to-go-for-advice/studying-with-special-requirements/pregnancy-and-maternity-protection-while-at-university/",
+          "label": "Pregnancy and maternity protection while at university"
+        },
+        {
+          "url": "https://www.fau.eu/studying/organizing-your-studies-and-where-to-go-for-advice/studying-with-special-requirements/studying-with-a-disability-or-chronic-illness/",
+          "label": "Studying with a disability or chronic illness"
+        },
+        {
+          "url": "https://www.fau.eu/university/university-organization/legal-regulations/university-elections/",
+          "label": "University elections"
+        }
+      ]
+    },
+    "fau-application-fees": {
+      "url": "https://www.fau.eu/studying/international-students/application-and-enrollment-for-international-applicants/fees-for-applications-from-non-eu-states/",
+      "snapshotId": "65308a8aa6c7a97fda9ccdb2d0fdd7f15ac9192705afc720d3b2786fbd3dcab4",
+      "contentHash": "29ff3eb3f577d6bc86f9fc9337f3764ab9d9657e308a693b9a1ce0926b8d86c4",
+      "textHash": "2bc7551ead9db1f4d0bcae6e31b8a57587156ce87aa179db7d4d4cd831909cbb",
+      "lastAttempt": "2026-10-21T12:09:41.392Z",
+      "lastSuccessfulCheck": "2026-10-21T12:09:41.539Z",
+      "changed": false,
+      "textChanged": false,
+      "discovered": [
+        {
+          "url": "https://www.fau.eu/studying/international-students/application-and-enrollment-for-international-applicants/fees-for-applications-from-non-eu-states/",
+          "label": "Skip to main content"
+        },
+        {
+          "url": "https://www.fau.de/studium/international-studierende/bewerbung-und-einschreibung-fuer-internationale/gebuehren-fuer-bewerbungen-aus-nicht-eu-staaten/",
+          "label": "Deutsch"
+        },
+        {
+          "url": "https://www.fau.eu/studying/international-students/application-and-enrollment-for-international-applicants/",
+          "label": "Application and enrollment for international appl..."
+        },
+        {
+          "url": "https://www.fau.eu/studying/applications-and-admissions/everything-you-need-to-know-about-dates-and-deadlines/",
+          "label": "Everything you need to know about: dates and deadlines"
+        },
+        {
+          "url": "https://www.fau.eu/studying/applications-and-admissions/enrollment/",
+          "label": "Enrollment"
+        },
+        {
+          "url": "https://www.fau.eu/studying/applications-and-admissions/changing-degree-program-and-study-location/changing-degree-program-at-fau/",
+          "label": "Changing degree program at FAU"
+        },
+        {
+          "url": "https://www.fau.eu/studying/applications-and-admissions/changing-degree-program-and-study-location/changing-to-fau/lateral-entry/",
+          "label": "Lateral entry"
+        },
+        {
+          "url": "https://www.fau.eu/studying/applications-and-admissions/changing-degree-program-and-study-location/changing-to-fau/swapping-university-places/",
+          "label": "Swapping university places"
+        },
+        {
+          "url": "https://www.fau.eu/studying/applications-and-admissions/changing-degree-program-and-study-location/studying-two-degree-programs/",
+          "label": "Studying two degree programs"
+        },
+        {
+          "url": "https://www.fau.eu/studying/international-students/students-on-exchange-programs/application-process/",
+          "label": "Application process"
+        },
+        {
+          "url": "https://www.fau.eu/studying/international-students/application-and-enrollment-for-international-applicants/tuition-fees-for-students-from-non-eu-states/",
+          "label": "Tuition fees for Students from non-EU states"
+        },
+        {
+          "url": "https://www.fau.eu/studying/international-students/application-and-enrollment-for-international-applicants/prospective-international-students-applying-for-undergraduate-programs/",
+          "label": "Applications from prospective international students: Bachelor’s / State Examination degree programs"
+        },
+        {
+          "url": "https://www.fau.eu/studying/international-students/application-and-enrollment-for-international-applicants/applying-for-a-masters-degree-program-as-an-international-student/application-dates-for-masters/",
+          "label": "Application dates and deadlines for Master’s and PhD degree programs"
+        },
+        {
+          "url": "https://www.fau.eu/studying/international-students/application-and-enrollment-for-international-applicants/evaluation-of-international-qualifications/",
+          "label": "Evaluation of international qualifications"
+        },
+        {
+          "url": "https://www.fau.eu/studying/international-students/application-and-enrollment-for-international-applicants/german-language-courses-german-language-proficiency-and-language-certificates/",
+          "label": "German language courses, German language proficiency and language certificates"
+        },
+        {
+          "url": "https://www.fau.eu/studying/international-students/application-and-enrollment-for-international-applicants/information-on-document-certification-and-translation/",
+          "label": "Information on document certification and translation"
+        },
+        {
+          "url": "https://www.fau.eu/studying/organizing-your-studies-and-where-to-go-for-advice/student-affairs/admissions-office-and-masters-office/",
+          "label": "Admission’s Office and Master’s Office"
+        },
+        {
+          "url": "https://www.fau.eu/studying/organizing-your-studies-and-where-to-go-for-advice/going-abroad/studying-abroad/direct-exchange-fauexchange/fauexchange-application/",
+          "label": "FAUexchange – Application"
+        },
+        {
+          "url": "https://www.fau.eu/studying/organizing-your-studies-and-where-to-go-for-advice/studying-with-special-requirements/first-generation-students/",
+          "label": "First-generation students"
+        },
+        {
+          "url": "https://www.fau.eu/studying/organizing-your-studies-and-where-to-go-for-advice/studying-with-special-requirements/pregnancy-and-maternity-protection-while-at-university/",
+          "label": "Pregnancy and maternity protection while at university"
+        },
+        {
+          "url": "https://www.fau.eu/studying/organizing-your-studies-and-where-to-go-for-advice/studying-with-special-requirements/studying-with-a-disability-or-chronic-illness/",
+          "label": "Studying with a disability or chronic illness"
+        },
+        {
+          "url": "https://www.fau.eu/university/university-organization/legal-regulations/university-elections/",
+          "label": "University elections"
+        }
+      ]
+    },
+    "fau-international-dates": {
+      "url": "https://www.fau.eu/studying/international-students/application-and-enrollment-for-international-applicants/applying-for-a-masters-degree-program-as-an-international-student/application-dates-for-masters/",
+      "snapshotId": "a9a11c55641d31e27db6e13d329e8264615acc78af48376f29cebac3be72526a",
+      "contentHash": "842e87389543d126b94f9cc9743624a69c747b8d4c3cc31c611c44bb12ab31f1",
+      "textHash": "17bc9abc324fa186d1364c057f30e73e89677316fa3566031aad811380b3f320",
+      "lastAttempt": "2026-10-21T12:09:41.736Z",
+      "lastSuccessfulCheck": "2026-10-21T12:09:42.799Z",
+      "changed": false,
+      "textChanged": false,
+      "discovered": [
+        {
+          "url": "https://www.fau.eu/studying/international-students/application-and-enrollment-for-international-applicants/applying-for-a-masters-degree-program-as-an-international-student/application-dates-for-masters/",
+          "label": "Skip to main content"
+        },
+        {
+          "url": "https://www.fau.de/studium/bewerbung-und-zulassung/bewerbung-masterstudium/bewerbungszeitraeume-fuer-master-und-phd-studiengaenge/",
+          "label": "Deutsch"
+        },
+        {
+          "url": "https://www.fau.eu/studying/international-students/application-and-enrollment-for-international-applicants/applying-for-a-masters-degree-program-as-an-international-student/",
+          "label": "Applying for a Master’s degree program as an inte..."
+        },
+        {
+          "url": "https://www.fau.eu/studying/international-students/application-and-enrollment-for-international-applicants/",
+          "label": "Application and enrollment for international appl..."
+        },
+        {
+          "url": "https://www.fau.eu/studying/applications-and-admissions/everything-you-need-to-know-about-dates-and-deadlines/",
+          "label": "Everything you need to know about: dates and deadlines"
+        },
+        {
+          "url": "https://www.fau.eu/studying/applications-and-admissions/enrollment/",
+          "label": "Enrollment"
+        },
+        {
+          "url": "https://www.fau.eu/studying/applications-and-admissions/changing-degree-program-and-study-location/changing-degree-program-at-fau/",
+          "label": "Changing degree program at FAU"
+        },
+        {
+          "url": "https://www.fau.eu/studying/applications-and-admissions/changing-degree-program-and-study-location/changing-to-fau/lateral-entry/",
+          "label": "Lateral entry"
+        },
+        {
+          "url": "https://www.fau.eu/studying/applications-and-admissions/changing-degree-program-and-study-location/changing-to-fau/swapping-university-places/",
+          "label": "Swapping university places"
+        },
+        {
+          "url": "https://www.fau.eu/studying/applications-and-admissions/changing-degree-program-and-study-location/studying-two-degree-programs/",
+          "label": "Studying two degree programs"
+        },
+        {
+          "url": "https://www.fau.eu/studying/international-students/students-on-exchange-programs/application-process/",
+          "label": "Application process"
+        },
+        {
+          "url": "https://www.fau.eu/studying/international-students/application-and-enrollment-for-international-applicants/tuition-fees-for-students-from-non-eu-states/",
+          "label": "Tuition fees for Students from non-EU states"
+        },
+        {
+          "url": "https://www.fau.eu/studying/international-students/application-and-enrollment-for-international-applicants/prospective-international-students-applying-for-undergraduate-programs/",
+          "label": "Applications from prospective international students: Bachelor’s / State Examination degree programs"
+        },
+        {
+          "url": "https://www.fau.eu/studying/international-students/application-and-enrollment-for-international-applicants/fees-for-applications-from-non-eu-states/",
+          "label": "Fees for applications from non-EU states"
+        },
+        {
+          "url": "https://www.fau.eu/studying/international-students/application-and-enrollment-for-international-applicants/evaluation-of-international-qualifications/",
+          "label": "Evaluation of international qualifications"
+        },
+        {
+          "url": "https://www.fau.eu/studying/international-students/application-and-enrollment-for-international-applicants/german-language-courses-german-language-proficiency-and-language-certificates/",
+          "label": "German language courses, German language proficiency and language certificates"
+        },
+        {
+          "url": "https://www.fau.eu/studying/international-students/application-and-enrollment-for-international-applicants/information-on-document-certification-and-translation/",
+          "label": "Information on document certification and translation"
+        },
+        {
+          "url": "https://www.fau.eu/studying/organizing-your-studies-and-where-to-go-for-advice/student-affairs/admissions-office-and-masters-office/",
+          "label": "Admission’s Office and Master’s Office"
+        },
+        {
+          "url": "https://www.fau.eu/studying/organizing-your-studies-and-where-to-go-for-advice/going-abroad/studying-abroad/direct-exchange-fauexchange/fauexchange-application/",
+          "label": "FAUexchange – Application"
+        },
+        {
+          "url": "https://www.fau.eu/studying/organizing-your-studies-and-where-to-go-for-advice/studying-with-special-requirements/first-generation-students/",
+          "label": "First-generation students"
+        },
+        {
+          "url": "https://www.fau.eu/studying/organizing-your-studies-and-where-to-go-for-advice/studying-with-special-requirements/pregnancy-and-maternity-protection-while-at-university/",
+          "label": "Pregnancy and maternity protection while at university"
+        },
+        {
+          "url": "https://www.fau.eu/studying/organizing-your-studies-and-where-to-go-for-advice/studying-with-special-requirements/studying-with-a-disability-or-chronic-illness/",
+          "label": "Studying with a disability or chronic illness"
+        },
+        {
+          "url": "https://www.fau.eu/university/university-organization/legal-regulations/university-elections/",
+          "label": "University elections"
+        }
+      ]
+    },
+    "stuttgart-tuition": {
+      "url": "https://www.student.uni-stuttgart.de/en/organizing-studies/formalities/tuition-and-fees/tuition-fee/",
+      "snapshotId": "c955890f49215c394aadea443da0e6e17068732ea6ed4cbe0df20e6f4af342ab",
+      "contentHash": "1b4cf3c4c7380bd8e565182ccf95035d76fa7122458e34852f96db3545c6dd95",
+      "textHash": "7fcfbe2624874e81743206d2ffd74dc93a788ff497de8f9e7b03642a14a46c20",
+      "lastAttempt": "2026-10-21T12:09:43.015Z",
+      "lastSuccessfulCheck": "2026-10-21T12:09:44.640Z",
+      "changed": false,
+      "textChanged": false,
+      "discovered": [
+        {
+          "url": "https://www.student.uni-stuttgart.de/en/digital-services/campus/my-applications/",
+          "label": "My Applications"
+        },
+        {
+          "url": "https://www.student.uni-stuttgart.de/en/exams/exam-regulation/",
+          "label": "Exam regulations"
+        },
+        {
+          "url": "https://www.student.uni-stuttgart.de/en/financing/deutschlandstipendium/application/",
+          "label": "Application"
+        },
+        {
+          "url": "https://www.student.uni-stuttgart.de/en/study-abroad/exchange-programs/overseas/application/",
+          "label": "Application"
+        },
+        {
+          "url": "https://www.student.uni-stuttgart.de/en/organizing-studies/formalities/tuition-and-fees/tuition-fee/",
+          "label": "Transitional regulation"
+        },
+        {
+          "url": "https://www.student.uni-stuttgart.de/studienorganisation/document/Gesetzblatt_Studiengebuehren.pdf",
+          "label": "Amendment of the Act on Fees in Higher Education of the Land of Baden-Württemberg [de]"
+        },
+        {
+          "url": "https://www.student.uni-stuttgart.de/studienorganisation/document/application_for_exception_exemption.pdf",
+          "label": "Application for Exemption"
+        },
+        {
+          "url": "https://www.student.uni-stuttgart.de/studienorganisation/document/information_form_for_international_students.pdf",
+          "label": "Information Form for International Students"
+        },
+        {
+          "url": "https://www.student.uni-stuttgart.de/studienorganisation/document/information_form_for_a_second_degree.pdf",
+          "label": "Information Form for a Second Degree"
+        },
+        {
+          "url": "https://www.student.uni-stuttgart.de/studienorganisation/document/Formular_Berufstaetigkeit_de_en.pdf",
+          "label": "Employment verification form"
+        },
+        {
+          "url": "https://www.student.uni-stuttgart.de/studienorganisation/document/Formular_Berufstaetigkeit_der_Eltern_de_en.pdf",
+          "label": "Employment verification form for parents"
+        },
+        {
+          "url": "https://www.student.uni-stuttgart.de/studienorganisation/document/Finanzierungsplan_en.pdf",
+          "label": "Financial plan"
+        },
+        {
+          "url": "https://www.student.uni-stuttgart.de/studienorganisation/document/bank_account_table.pdf",
+          "label": "Bank account table"
+        }
+      ]
+    },
+    "passau-general": {
+      "url": "https://www.uni-passau.de/fileadmin/dokumente/beschaeftigte/Rechtsvorschriften/StO_und_PO/FMI/AStuPO_MSc_FIM.pdf",
+      "snapshotId": "e2f1b66ec83df20cf4e58a9f54852e1270caa77a378e6faa5d83287c3be55b55",
+      "contentHash": "a0d2e8569da45193d5d9a9bb9239e44a368731ceb604d766f85166615de9bcc5",
+      "textHash": "f9e4585652ae22c72cb0f9a4dec341e0e530ce42195a620dd140e0f6d92c18ef",
+      "lastAttempt": "2026-10-21T12:12:12.631Z",
+      "lastSuccessfulCheck": "2026-10-21T12:12:14.139Z",
+      "changed": false,
+      "textChanged": false,
+      "discovered": []
+    },
+    "fau-dates-german": {
+      "url": "https://www.fau.de/studium/bewerbung-und-zulassung/bewerbung-masterstudium/bewerbungszeitraeume-fuer-master-und-phd-studiengaenge/",
+      "snapshotId": "8b9cd513131ae954e1f49d1647596483fce58913110da72ed3fa828d20e0a63a",
+      "contentHash": "8497b1a812ff324e3cdf5833cfd396c1a7c6f70c37a21bd9476624f038d03b48",
+      "textHash": "b0d70601cde06da478d091e13a77d427219b43dbf82ca6c073cc60f808c18842",
+      "lastAttempt": "2026-10-21T12:12:15.076Z",
+      "lastSuccessfulCheck": "2026-10-21T12:12:18.194Z",
+      "changed": false,
+      "textChanged": false,
+      "discovered": [
+        {
+          "url": "https://www.fau.de/studium/bewerbung-und-zulassung/bewerbung-masterstudium/bewerbungszeitraeume-fuer-master-und-phd-studiengaenge/",
+          "label": "Zum Hauptinhalt springen"
+        },
+        {
+          "url": "https://www.fau.eu/studying/international-students/application-and-enrollment-for-international-applicants/applying-for-a-masters-degree-program-as-an-international-student/application-dates-for-masters/",
+          "label": "English"
+        },
+        {
+          "url": "https://www.fau.de/studium/bewerbung-und-zulassung/bewerbung-masterstudium/",
+          "label": "Bewerbung Masterstudium"
+        },
+        {
+          "url": "https://www.fau.de/studium/bewerbung-und-zulassung/",
+          "label": "Bewerbung und Zulassung"
+        },
+        {
+          "url": "https://www.fau.de/?page_id=18465544&preview=true",
+          "label": "Bewerbungsfristen für grundständige Studiengänge."
+        },
+        {
+          "url": "https://www.fau.de/wp-content/uploads/sites/4/2025/09/Studium-BewerbungFAU_PHIL_2025_FATHER-SUN_00399.jpg",
+          "label": "FAU/Father and Sun"
+        },
+        {
+          "url": "https://www.fau.de/wp-content/uploads/sites/4/2025/09/Studium-Bewerbung-FAU_PHIL_2025_FATHER-SUN_00056.jpg",
+          "label": "FAU/Father and Sun"
+        },
+        {
+          "url": "https://www.fau.de/studium/studienorientierung/angebote-fuer-schulen/fruehstudium/bewerbung-zum-fruehstudium/",
+          "label": "Bewerbung zum Frühstudium"
+        },
+        {
+          "url": "https://www.fau.de/studium/studienorientierung/angebote-fuer-schulen/jugend-forscht/",
+          "label": "Jugend forscht – Regionalwettbewerb"
+        },
+        {
+          "url": "https://www.fau.de/studium/bewerbung-und-zulassung/zugangsvoraussetzungen/allgemeine-hochschulreife/",
+          "label": "Allgemeine Hochschulreife / Abitur"
+        },
+        {
+          "url": "https://www.fau.de/studium/bewerbung-und-zulassung/zugangsvoraussetzungen/fachgebundene-hochschulreife/",
+          "label": "Fachgebundene Hochschulreife (FOS/BOS, FH-Studium)"
+        },
+        {
+          "url": "https://www.fau.de/studium/bewerbung-und-zulassung/zugangsvoraussetzungen/beruflich-qualifizierte/",
+          "label": "Beruflich Qualifizierte / Meistertitel"
+        },
+        {
+          "url": "https://www.fau.de/studium/bewerbung-und-zulassung/alle-fristen-und-termine/",
+          "label": "Alle Fristen und Termine rund ums Studium"
+        },
+        {
+          "url": "https://www.fau.de/studium/bewerbung-und-zulassung/bewerbung-bachelor-lehramt-staatsexamen/bewerbungszeitraeume-fuer-grundstaendige-studiengaenge/",
+          "label": "Bewerbungszeiträume für grundständige Studiengänge"
+        },
+        {
+          "url": "https://www.fau.de/studium/bewerbung-und-zulassung/bewerbung-bachelor-lehramt-staatsexamen/zulassungsfreie-studiengaenge/",
+          "label": "Zulassungsfreie Studiengänge"
+        },
+        {
+          "url": "https://www.fau.de/studium/bewerbung-und-zulassung/bewerbung-bachelor-lehramt-staatsexamen/zulassungsbeschrankte-studiengaenge-dosv-uni-nc/nc-werte-im-wintersemester-2024-25/",
+          "label": "NC-Werte im Wintersemester 2026/27"
+        },
+        {
+          "url": "https://www.fau.de/studium/bewerbung-und-zulassung/bewerbung-bachelor-lehramt-staatsexamen/zulassungsbeschrankte-studiengaenge-dosv-uni-nc/losverfahren-um-restplaetze-bei-dezentralen-nc-faechern/",
+          "label": "Losverfahren um Restplätze bei dezentralen NC-Fächern"
+        },
+        {
+          "url": "https://www.fau.de/studium/bewerbung-und-zulassung/bewerbung-bachelor-lehramt-staatsexamen/studiengaenge-mit-nc/",
+          "label": "Zulassungsbeschränkte Studiengänge (bundesweiter NC)"
+        },
+        {
+          "url": "https://www.fau.de/studium/bewerbung-und-zulassung/einschreibung-immatrikulation/",
+          "label": "Einschreibung/Immatrikulation"
+        },
+        {
+          "url": "https://www.fau.de/studium/bewerbung-und-zulassung/fach-und-hochschulwechsel/wechsel-an-die-fau/bewerbung-hoeheres-fachsemester-dosv-uni-nc/",
+          "label": "Bewerbung in ein höheres Fachsemester bei Ortswechsel"
+        },
+        {
+          "url": "https://www.fau.de/studium/bewerbung-und-zulassung/fach-und-hochschulwechsel/wechsel-an-die-fau/quereinstieg/",
+          "label": "Quereinstieg"
+        },
+        {
+          "url": "https://www.fau.de/studium/bewerbung-und-zulassung/fach-und-hochschulwechsel/wechsel-an-die-fau/studienplatztausch/",
+          "label": "Studienplatztausch"
+        },
+        {
+          "url": "https://www.fau.de/studium/bewerbung-und-zulassung/fach-und-hochschulwechsel/wechsel-des-studiengangs-innerhalb-der-fau/",
+          "label": "Wechsel des Studiengangs innerhalb der FAU"
+        },
+        {
+          "url": "https://www.fau.de/studium/bewerbung-und-zulassung/fach-und-hochschulwechsel/doppelstudium/",
+          "label": "Doppelstudium"
+        },
+        {
+          "url": "https://www.fau.de/studium/international-studierende/bewerbung-und-einschreibung-fuer-internationale/studiengebuehren-fuer-studierende-aus-nicht-eu-staaten/",
+          "label": "Studiengebühren für Studierende aus Nicht-EU-Staaten"
+        },
+        {
+          "url": "https://www.fau.de/studium/international-studierende/bewerbung-und-einschreibung-fuer-internationale/bewerbung-fuer-internationale-fuer-ein-masterstudium/",
+          "label": "Bewerbung für Internationale für ein Masterstudium"
+        },
+        {
+          "url": "https://www.fau.de/studium/international-studierende/bewerbung-und-einschreibung-fuer-internationale/bewerbung-fuer-internationale-fuer-grundstaendige-studiengaenge/",
+          "label": "Bewerbung für Internationale: Bachelor / Staatsexamen"
+        },
+        {
+          "url": "https://www.fau.de/studium/international-studierende/bewerbung-und-einschreibung-fuer-internationale/gebuehren-fuer-bewerbungen-aus-nicht-eu-staaten/",
+          "label": "Gebühren für Bewerbungen aus Nicht-EU-Staaten"
+        },
+        {
+          "url": "https://www.fau.de/studium/international-studierende/bewerbung-und-einschreibung-fuer-internationale/bewertung-auslaendischer-zeugnisse-studienkolleg/",
+          "label": "Bewertung ausländischer Zeugnisse, Studienkolleg"
+        },
+        {
+          "url": "https://www.fau.de/studium/international-studierende/bewerbung-und-einschreibung-fuer-internationale/deutschkurse-deutschkenntnisse-sprachzertifikate/",
+          "label": "Deutschkurse, Deutschkenntnisse, Sprachzertifikate"
+        },
+        {
+          "url": "https://www.fau.de/studium/international-studierende/bewerbung-und-einschreibung-fuer-internationale/hinweise-zur-beglaubigung-und-uebersetzung-von-dokumenten/",
+          "label": "Hinweise zur Beglaubigung und Übersetzung von Dokumenten"
+        },
+        {
+          "url": "https://www.fau.de/studium/international-studierende/bewerbung-und-einschreibung-fuer-internationale/notenumrechnung/",
+          "label": "Notenumrechnung mit der Bayerischen Formel"
+        },
+        {
+          "url": "https://www.fau.de/studium/international-studierende/austausch-programm-studierende/bewerbungsprozess/",
+          "label": "Bewerbungsprozess"
+        },
+        {
+          "url": "https://www.fau.de/studium/studienorganisation/studierendenangelegenheiten/zulassungsstelle-und-masterbuero/",
+          "label": "Zulassungsstelle und Masterbüro"
+        },
+        {
+          "url": "https://www.fau.de/studium/studienorganisation/wege-ins-ausland/studieren-im-ausland/direktaustausch-fauexchange/fauexchange-bewerbung/",
+          "label": "FAUexchange - Bewerbung"
+        },
+        {
+          "url": "https://www.fau.de/universitaet/universitaetsorganisation/rechtliche-grundlagen/grundordnung-und-organisation/",
+          "label": "Grundordnung und Organisation"
+        },
+        {
+          "url": "https://www.fau.de/universitaet/universitaetsorganisation/rechtliche-grundlagen/pruefungsordnungen/philosophische-fakultaet/ein-fach-bachelor/",
+          "label": "Ein-Fach-Bachelor"
+        },
+        {
+          "url": "https://www.fau.de/universitaet/universitaetsorganisation/rechtliche-grundlagen/pruefungsordnungen/philosophische-fakultaet/zwei-fach-bachelor/",
+          "label": "Zwei-Fach-Bachelor"
+        },
+        {
+          "url": "https://www.fau.de/universitaet/universitaetsorganisation/rechtliche-grundlagen/pruefungsordnungen/philosophische-fakultaet/masterstudiengaenge/",
+          "label": "Masterstudiengänge"
+        },
+        {
+          "url": "https://www.fau.de/universitaet/universitaetsorganisation/rechtliche-grundlagen/pruefungsordnungen/philosophische-fakultaet/masterstudiengaenge-eigenstaendige-po-und-konsekutiv/",
+          "label": "Masterstudiengänge (eigenständige PO und konsekutiv)"
+        },
+        {
+          "url": "https://www.fau.de/universitaet/universitaetsorganisation/rechtliche-grundlagen/pruefungsordnungen/philosophische-fakultaet/modulstudien-und-zusatzstudien/",
+          "label": "Modulstudien und Zusatzstudien"
+        },
+        {
+          "url": "https://www.fau.de/universitaet/universitaetsorganisation/rechtliche-grundlagen/pruefungsordnungen/philosophische-fakultaet/weiterbildungs-und-elitestudiengaenge-sowie-weitere/",
+          "label": "Weiterbildungs- und Elitestudiengänge sowie weitere"
+        },
+        {
+          "url": "https://www.fau.de/universitaet/universitaetsorganisation/rechtliche-grundlagen/pruefungsordnungen/philosophische-fakultaet/theologie/",
+          "label": "Fachbereich Theologie"
+        },
+        {
+          "url": "https://www.fau.de/universitaet/universitaetsorganisation/rechtliche-grundlagen/pruefungsordnungen/rw/rewi/",
+          "label": "Fachbereich Rechtswissenschaft"
+        },
+        {
+          "url": "https://www.fau.de/universitaet/universitaetsorganisation/rechtliche-grundlagen/pruefungsordnungen/rw/wiso/bachelorstudiengaenge/",
+          "label": "Bachelorstudiengänge"
+        },
+        {
+          "url": "https://www.fau.de/universitaet/universitaetsorganisation/rechtliche-grundlagen/pruefungsordnungen/rw/wiso/diplomstudiengaenge-und-weiteres/",
+          "label": "Diplomstudiengänge und weiteres"
+        },
+        {
+          "url": "https://www.fau.de/universitaet/universitaetsorganisation/rechtliche-grundlagen/pruefungsordnungen/rw/wiso/masterstudiengaenge/",
+          "label": "Masterstudiengänge"
+        },
+        {
+          "url": "https://www.fau.de/universitaet/universitaetsorganisation/rechtliche-grundlagen/pruefungsordnungen/rw/wiso/modul-und-zusatzstudien/",
+          "label": "Modul- und Zusatzstudien"
+        },
+        {
+          "url": "https://www.fau.de/universitaet/universitaetsorganisation/rechtliche-grundlagen/pruefungsordnungen/rw/wiso/weiterbildungs-masterstudiengaenge/",
+          "label": "Weiterbildungs-Masterstudiengänge"
+        },
+        {
+          "url": "https://www.fau.de/universitaet/universitaetsorganisation/rechtliche-grundlagen/pruefungsordnungen/medizinische-fakultaet/",
+          "label": "Medizinische Fakultät"
+        },
+        {
+          "url": "https://www.fau.de/universitaet/universitaetsorganisation/rechtliche-grundlagen/pruefungsordnungen/naturwissenschaftliche-fakultaet/biologie/",
+          "label": "Biologie"
+        },
+        {
+          "url": "https://www.fau.de/universitaet/universitaetsorganisation/rechtliche-grundlagen/pruefungsordnungen/naturwissenschaftliche-fakultaet/chemie-und-pharmazie/",
+          "label": "Chemie und Pharmazie"
+        },
+        {
+          "url": "https://www.fau.de/universitaet/universitaetsorganisation/rechtliche-grundlagen/pruefungsordnungen/naturwissenschaftliche-fakultaet/geographie-und-geowissenschaften/",
+          "label": "Geographie und Geowissenschaften"
+        },
+        {
+          "url": "https://www.fau.de/universitaet/universitaetsorganisation/rechtliche-grundlagen/pruefungsordnungen/naturwissenschaftliche-fakultaet/mathematik/",
+          "label": "Mathematik und Data Science"
+        },
+        {
+          "url": "https://www.fau.de/universitaet/universitaetsorganisation/rechtliche-grundlagen/pruefungsordnungen/naturwissenschaftliche-fakultaet/physik/",
+          "label": "Physik"
+        },
+        {
+          "url": "https://www.fau.de/universitaet/universitaetsorganisation/rechtliche-grundlagen/pruefungsordnungen/naturwissenschaftliche-fakultaet/modul-und-zusatzstudien/",
+          "label": "Modul- und Zusatzstudien"
+        },
+        {
+          "url": "https://www.fau.de/universitaet/universitaetsorganisation/rechtliche-grundlagen/pruefungsordnungen/technische-fakultaet/artificial-intelligence-in-biomedical-engineering/",
+          "label": "Artificial Intelligence in Biomedical Engineering"
+        },
+        {
+          "url": "https://www.fau.de/universitaet/universitaetsorganisation/rechtliche-grundlagen/pruefungsordnungen/technische-fakultaet/chemie-und-bioingenieurwesen/",
+          "label": "Chemie- und Bioingenieurwesen"
+        },
+        {
+          "url": "https://www.fau.de/universitaet/universitaetsorganisation/rechtliche-grundlagen/pruefungsordnungen/technische-fakultaet/elektrotechnik-elektronik-informationstechnik/",
+          "label": "Elektrotechnik, Elektronik, Informationstechnik"
+        },
+        {
+          "url": "https://www.fau.de/universitaet/universitaetsorganisation/rechtliche-grundlagen/pruefungsordnungen/technische-fakultaet/informatik/",
+          "label": "Informatik"
+        },
+        {
+          "url": "https://www.fau.de/universitaet/universitaetsorganisation/rechtliche-grundlagen/pruefungsordnungen/technische-fakultaet/maschinenbau/",
+          "label": "Maschinenbau"
+        },
+        {
+          "url": "https://www.fau.de/universitaet/universitaetsorganisation/rechtliche-grundlagen/pruefungsordnungen/technische-fakultaet/werkstoffwissenschaften/",
+          "label": "Werkstoffwissenschaften"
+        },
+        {
+          "url": "https://www.fau.de/universitaet/universitaetsorganisation/rechtliche-grundlagen/pruefungsordnungen/lehramt/lehramtsfaecher/",
+          "label": "Lehramtsfächer"
+        },
+        {
+          "url": "https://www.fau.de/universitaet/universitaetsorganisation/rechtliche-grundlagen/pruefungsordnungen/lehramt/berufspaedagogik-und-zusatzstudien/",
+          "label": "Berufspädagogik und Zusatzstudien"
+        },
+        {
+          "url": "https://www.fau.de/universitaet/universitaetsorganisation/rechtliche-grundlagen/pruefungsordnungen/sprachpruefungen/",
+          "label": "Sprachprüfungen"
+        },
+        {
+          "url": "https://www.fau.de/universitaet/universitaetsorganisation/rechtliche-grundlagen/promotions-und-habilitationsordnungen/",
+          "label": "Promotions- und Habilitationsordnungen"
+        }
+      ]
+    },
+    "tuhh-application": {
+      "url": "https://www.tuhh.de/tuhh/en/studying/before-studying/application.html",
+      "snapshotId": "9cfaf82c1fd05f9cb8e371c0f1dd0a5d933f7ca374abd549dcce67ba97043035",
+      "contentHash": "1095051fbe043ffb734c423475b11b5218e24b7a4ec0fc628fc1506ef3f68565",
+      "textHash": "33011c120ab2d6b999ada127266885cc373d47c1ac9e048dba58d66ef53b3f4e",
+      "lastAttempt": "2026-10-21T12:12:18.532Z",
+      "lastSuccessfulCheck": "2026-10-21T12:12:21.246Z",
+      "changed": false,
+      "textChanged": false,
+      "discovered": [
+        {
+          "url": "https://www.tuhh.de/tuhh/studium/vor-dem-studium/bewerbung",
+          "label": "DE"
+        },
+        {
+          "url": "https://www.tuhh.de/tuhh/en/studying/before-studying/application",
+          "label": "Application"
+        },
+        {
+          "url": "https://www.tuhh.de/tuhh/en/studying/before-studying/application/bachelor",
+          "label": "Step by step: Bachelor"
+        },
+        {
+          "url": "https://www.tuhh.de/tuhh/en/studying/before-studying/application/master-in-german",
+          "label": "Step by step: Master"
+        },
+        {
+          "url": "https://www.tuhh.de/tuhh/en/studying/before-studying/application/guests",
+          "label": "Guest stays"
+        },
+        {
+          "url": "https://www.tuhh.de/tuhh/en/studying/before-studying/application?type=1625489126",
+          "label": "Cookie Settings"
+        }
+      ]
     }
   },
   "programs": {
     "de-passau-msc-computer-science": {
-      "revision": "92098abca56b6a993cfb4ac09804dfe6deb4a8e17f4509eb41b7f6d4e13e2a25",
-      "lastAttempt": "2026-10-18T22:03:24.661Z"
+      "revision": "d34c7b8349598d736f83d65cfaa39049bb00c35818196f1a7daa65450a6df42b",
+      "lastAttempt": "2026-10-21T12:20:12.426Z"
     },
     "de-saarland-msc-computer-science": {
-      "revision": "db69c3a69150555aaea24a4cbdae47379c3d69b6876ec2406ff5d2922fa8be77",
-      "lastAttempt": "2026-10-18T22:03:24.661Z"
+      "revision": "bc668d90d8fede7fb53d07c76476ef5e4eceea7fdef62df21c0238bf416cfd31",
+      "lastAttempt": "2026-10-21T12:20:12.426Z"
     },
     "de-fau-msc-data-science": {
-      "revision": "3329aea151d0f31eccb2f45bb2d8fa57c91530b106f55d3dc37a7bf081680d60",
-      "lastAttempt": "2026-10-18T22:03:24.661Z"
+      "revision": "82c5ffeb949b3f580fa4d914cae2bb3a8e9e0832fc31cd377ee3423ac47eae13",
+      "lastAttempt": "2026-10-21T12:20:12.426Z"
     },
     "de-stuttgart-msc-infotech": {
-      "revision": "23144c38feb40ac75ce267210c89ee3edd5f686a1d2ecfc19a629ec6f9f18d2b",
-      "lastAttempt": "2026-10-18T22:03:24.661Z"
+      "revision": "bbd663b7ef0d719a82376725c41eed4c3f84d436d529046f6113b161b32c0e1b",
+      "lastAttempt": "2026-10-21T12:20:12.426Z"
     },
     "de-tuhh-msc-mechatronics": {
-      "revision": "d540cb8cae0c8dcec407296ede32d2f43905b2d87041636350cad50aac24cbc8",
-      "lastAttempt": "2026-10-18T22:03:24.661Z"
+      "revision": "589799072bbdcc1ac26e2d132876ab209e7d3679197513b079fba6bc7aea569f",
+      "lastAttempt": "2026-10-21T12:20:12.426Z"
     }
   }
 }

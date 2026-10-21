@@ -1,0 +1,102 @@
+{
+  "id": "9cfaf82c1fd05f9cb8e371c0f1dd0a5d933f7ca374abd549dcce67ba97043035",
+  "url": "https://www.tuhh.de/tuhh/en/studying/before-studying/application",
+  "requestedUrl": "https://www.tuhh.de/tuhh/en/studying/before-studying/application.html",
+  "title": "Your path to studying at TUHH",
+  "retrievedAt": "2026-10-21T12:12:21.246Z",
+  "mediaType": "text/html",
+  "contentHash": "1095051fbe043ffb734c423475b11b5218e24b7a4ec0fc628fc1506ef3f68565",
+  "textHash": "33011c120ab2d6b999ada127266885cc373d47c1ac9e048dba58d66ef53b3f4e",
+  "text": "Click here to go to the TUHH application portal.\nYour path to studying at TUHH\nApplication Procedure\nBelow you will find information on the application procedure at the TUHH for\nBachelor\nMaster (in German)\nMaster (international programs)\nDual@TUHH\nTechnology Management (Double Degree Master/MBA)\nGuest stays\nInformation events and counseling for prospective students\nPlease click here to find the next orientation meetings for applicants.\nApplication-Reminder\nSubscribe to the Reminder for prospective students. This will inform you about the start of the application phase for studies at the Hamburg University of Technology. Do not miss any application phase. We are excited to welcome you!",
+  "blocks": [
+    {
+      "text": "Click here to go to the TUHH application portal.",
+      "locator": "HTML h2 block 1"
+    },
+    {
+      "text": "Your path to studying at TUHH",
+      "locator": "HTML h1 block 2"
+    },
+    {
+      "text": "Application Procedure",
+      "locator": "HTML h2 block 3"
+    },
+    {
+      "text": "Below you will find information on the application procedure at the TUHH for",
+      "locator": "HTML p block 4"
+    },
+    {
+      "text": "Bachelor",
+      "locator": "HTML li block 5"
+    },
+    {
+      "text": "Master (in German)",
+      "locator": "HTML li block 6"
+    },
+    {
+      "text": "Master (international programs)",
+      "locator": "HTML li block 7"
+    },
+    {
+      "text": "Dual@TUHH",
+      "locator": "HTML li block 8"
+    },
+    {
+      "text": "Technology Management (Double Degree Master/MBA)",
+      "locator": "HTML li block 9"
+    },
+    {
+      "text": "Guest stays",
+      "locator": "HTML li block 10"
+    },
+    {
+      "text": "Information events and counseling for prospective students",
+      "locator": "HTML h3 block 11"
+    },
+    {
+      "text": "Please click here to find the next orientation meetings for applicants.",
+      "locator": "HTML p block 12"
+    },
+    {
+      "text": "Application-Reminder",
+      "locator": "HTML h2 block 13"
+    },
+    {
+      "text": "Subscribe to the Reminder for prospective students. This will inform you about the start of the application phase for studies at the Hamburg University of Technology. Do not miss any application phase. We are excited to welcome you!",
+      "locator": "HTML p block 14"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://www.tuhh.de/tuhh/studium/vor-dem-studium/bewerbung",
+      "label": "DE"
+    },
+    {
+      "url": "https://www.tuhh.de/tuhh/en/studying/before-studying/application",
+      "label": "Application"
+    },
+    {
+      "url": "https://www.tuhh.de/tuhh/en/studying/before-studying/application/bachelor",
+      "label": "Step by step: Bachelor"
+    },
+    {
+      "url": "https://www.tuhh.de/tuhh/en/studying/before-studying/application/master-in-german",
+      "label": "Step by step: Master"
+    },
+    {
+      "url": "https://www.tuhh.de/tuhh/en/studying/before-studying/application/guests",
+      "label": "Guest stays"
+    },
+    {
+      "url": "https://www.tuhh.de/tuhh/en/studying/before-studying/application?type=1625489126",
+      "label": "Cookie Settings"
+    }
+  ],
+  "robotsStatus": 200,
+  "redirects": [
+    "https://www.tuhh.de/tuhh/en/studying/before-studying/application.html"
+  ],
+  "etag": null,
+  "lastModified": null,
+  "extractorVersion": 3
+}

@@ -24,10 +24,12 @@ npm run build
 ```
 
 - `fetch [source-id]`: sequentially capture all configured sources or one named source, parse, version and publish. A source failure preserves the last successful snapshot, marks the affected program stale, and exits with code 2 after publishing the failure state. A programming/validation error exits with code 1.
+- A comma-separated list of configured source IDs can refresh a selected batch without refetching other sources.
 - `extract`: re-run recipes over stored snapshots and regenerate DTOs/review queue **without network access**. Useful after changing anchors or notes. Observation timestamps are not advanced.
 - `reparse`: re-parse the ignored raw cache after parser improvements, then extract. Requires `catalog/cache/`; a fresh clone only has parsed snapshots. This does not pretend to be a new source retrieval.
 - `validate`: validate schemas, immutable draft hashes, evidence quotes/locators/snapshot bindings, current pointers and reproducible published output. It does not contact universities or approve requirements.
 - `status`: summarize the last published review queue. Run `extract` to refresh age-based queue status offline; the frontend also checks source age when reading catalog records.
+- `report`: generate source-bound human-readable evidence checklists in `catalog/reports/`, without changing decisions. `review-template all` creates pending revision-specific files for every program.
 
 The manifest `catalog/seeds.json` is human-curated. Each university/program has a stable ID, exact allowed official hostnames, explicit source URLs, and source-specific extraction anchors. Link discovery records bounded candidate admission/regulation/application links in `catalog/current.json`. A maintainer selects relevant links, adds them to the manifest and fetches them by source ID. There is no unbounded crawler or automatic following of portals/login links.
 
@@ -68,16 +70,17 @@ Generate a pending file:
 npm run catalog -- review-template de-passau-msc-computer-science
 ```
 
-The file is created at `catalog/review-drafts/de-passau-msc-computer-science.json`; existing files are not overwritten. Review the captured evidence and official regulations, not just extracted values. A reviewer must:
+The file is created at `catalog/review-drafts/<program-id>-<revision-prefix>.json`; existing matching files are not overwritten, and an explicitly selected file for a different revision is rejected. Review the captured evidence and official regulations, not just extracted values. A reviewer must:
 
 1. Supply their name, ISO review timestamp and a meaningful review rationale.
 2. Establish explicit admission semesters under `applicability.semesters`, with an explanation and exact source evidence under `applicability.evidence`. The evidence must reference a source captured in this draft, using its URL, hash, snapshot ID, quote and locator. A capture date or unscoped recurring deadline is not sufficient substantive evidence of applicability.
 3. Set source, fact and requirement decisions to `approve`, `reject` or `pending`. Unknown facts cannot be approved. Source approval is a prerequisite for fact/requirement approval. Pending or rejected content cannot become verified by simply setting a status string.
 4. Correct or split requirement objects using existing V2 rules and quoted evidence. Preserve all alternatives, conjunctions, exemptions and applicant scopes. A reviewer may replace the completeness placeholder only after auditing the whole regulation. Keep unsupported mandatory clauses as manual. `requirementsComplete: true` is rejected while rules are pending, unsourced or unsupported.
+   Every removed draft requirement, including a replaced completeness placeholder, needs an entry in `removedRequirements` with its original ID, rationale and source evidence. Silent omissions are rejected.
 5. Run the command below; inspect the changed DTO and queue, then commit the review event and published data together.
 
 ```sh
-npm run catalog -- review de-passau-msc-computer-science catalog/review-drafts/de-passau-msc-computer-science.json
+npm run catalog -- review <program-id> <revision-specific-review-file>
 npm run catalog -- validate
 npm test
 ```
@@ -115,3 +118,7 @@ Validation result: 58 automated tests pass, including all 31 existing V2 tests. 
 Next priority: obtain reviewable current regulations and semester applicability for these five programs, resolve the recorded conflicts and model supported exceptions. Do not scale collection before this editorial process is proven. Add parse coverage monitoring, explicit source document roles/languages/publication dates, schedule/backoff and conditional HTTP requests, robots-policy audit snapshots, source conflict resolution and validated applicant-specific deadline/fee models next. Scanned regulations need an explicit OCR/manual workflow with page coverage tracking.
 
 For PostgreSQL, map the existing IDs to `universities`, `programs`, `program_versions`, `source_snapshots`, `source_observations`, `requirements`, `requirement_sources`, `catalog_facts`, `review_events` and `publications`. Keep rules as versioned schema-validated JSON, source/evidence links as foreign keys, and published DTOs identical to the current repository boundary. Introduce authenticated reviewer roles and a transactional publication gate before trusting centralized approvals. A later read-only catalog API can replace the static JSON provider without moving private applicant documents to the server or changing the pure fit engine.
+
+## Hardening Audit: 21 October 2026
+
+See [the five-program verification report](PILOT_VERIFICATION.md) and [dependency/security findings](SECURITY_AUDIT.md) for the current state; the eight-source/58-test figures above describe the initial pilot. The refresh captures 20 of 21 sources, preserves complete fee-table rows and exact bounded PDF clauses, and keeps all five programs unapproved. It adds Passau's research-credit clause, Saarland certificate/exemption detail, FAU named-intake dates and fee scope, and Stuttgart grade/APS/tuition detail. No missing source was bypassed and no full inventory was declared verified. The suite now has 71 tests, including 40 realistic applicant/program comparisons, plus the existing controlled-policy blocker regressions.

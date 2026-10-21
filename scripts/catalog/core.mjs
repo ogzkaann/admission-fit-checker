@@ -37,6 +37,7 @@ export function reviewTemplate(program) {
     applicability: { semesters: [], evidence: [], explanation: "" },
     sources: (program.sources ?? []).map((source) => ({ snapshotId: source.snapshotId, decision: "pending" })),
     requirements: program.requirements.map((requirement) => ({ decision: "pending", requirement: structuredClone(requirement) })),
+    removedRequirements: [],
     facts: (program.facts ?? []).map((fact) => ({ id: fact.id, decision: "pending" })),
   };
 }
@@ -64,6 +65,14 @@ export function applyReview(program, review, snapshots, schema, now = new Date()
   const exactIds = (expected, actual) => expected.length === actual.length && new Set(actual).size === actual.length && expected.every((id) => actual.includes(id));
   if (!exactIds([...sourceIds], review.sources.map((entry) => entry.snapshotId))) throw new Error("Review must cover every source exactly once");
   if (!exactIds((program.facts ?? []).map((fact) => fact.id), review.facts.map((entry) => entry.id))) throw new Error("Review must cover every fact exactly once");
+  const retained = new Set(review.requirements.map((entry) => entry.requirement?.id));
+  const removed = program.requirements.filter((requirement) => !retained.has(requirement.id)).map((requirement) => requirement.id);
+  const dispositions = review.removedRequirements ?? [];
+  if (!Array.isArray(dispositions) || !exactIds(removed, dispositions.map((entry) => entry.id))) throw new Error("Every omitted draft requirement needs an explicit removal disposition");
+  for (const entry of dispositions) {
+    if (!entry.reason?.trim() || !entry.evidence?.length) throw new Error("Removing a requirement needs a rationale and source evidence");
+    entry.evidence.forEach(validateCitation);
+  }
   // Requirements may be split/corrected by a reviewer, but missing/unsupported clauses
   // cannot be declared a complete inventory. The immutable draft remains auditable.
   const approve = (source) => {

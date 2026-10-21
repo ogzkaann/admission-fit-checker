@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react";
+import { lazy, Suspense, useCallback, useEffect, useState } from "react";
 import { BookOpen, KeyRound, LayoutDashboard, Library, PlusCircle, Sparkles, UserRound } from "lucide-react";
 import type { AcademicProfile, AppSettings, Program, StoredDocument } from "./domain/types";
 import { loadSettings } from "./ai/settings";
@@ -7,9 +7,9 @@ import { SettingsDialog } from "./components/SettingsDialog";
 import { Button } from "./components/ui/button";
 import { Badge } from "./components/ui/badge";
 import { Dashboard } from "./pages/Dashboard";
-import { ProfileBuilder } from "./pages/ProfileBuilder";
 import { ProgramLibrary } from "./pages/ProgramLibrary";
-import { NewProgramCheck } from "./pages/NewProgramCheck";
+const ProfileBuilder = lazy(() => import("./pages/ProfileBuilder").then((module) => ({ default: module.ProfileBuilder })));
+const NewProgramCheck = lazy(() => import("./pages/NewProgramCheck").then((module) => ({ default: module.NewProgramCheck })));
 
 type View = "dashboard" | "profile" | "library" | "new-check";
 
@@ -142,7 +142,7 @@ export default function App() {
         </header>
       ) : null}
 
-      <main>{renderView()}</main>
+      <main><Suspense fallback={<p role="status" className="px-4 py-8 text-sm text-muted-foreground">Loading...</p>}>{renderView()}</Suspense></main>
 
       <SettingsDialog
         open={settingsOpen}

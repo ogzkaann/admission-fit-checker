@@ -1,0 +1,412 @@
+{
+  "id": "3bd9f78d5ed6b2e783514b6fe72b3a374b30450aa6a68dd4674b77f4f65b5220",
+  "url": "https://www.math-datascience.nat.fau.de/im-studium/masterstudiengaenge/master-data-science/",
+  "requestedUrl": "https://www.math-datascience.nat.fau.de/im-studium/masterstudiengaenge/master-data-science/",
+  "title": "Master Data Science",
+  "retrievedAt": "2026-10-21T12:09:34.198Z",
+  "mediaType": "text/html",
+  "contentHash": "acd19a96117c02ea1890b33387d1365e81130c10fc642970fa9eabfed5ab9a91",
+  "textHash": "f235dcd4ff84ab2ca117642acd5e9fbadaea91c21b94aa0721d9dd1f4658133d",
+  "text": "Master Data Science\nStudent Advisory\nstudienberatung-datascience@math.fau.de\nPlease send only questions related to the field of Data Science or the structure of this study course to the student advisory. Questions on the application and admission process have to be directed to the Master’s Office at zuv-masterbuero@fau.de\nNews\nYou can now generate your study plan online at the new website of the Study Plan Generator (SPLAG).\nWe have updated our frequently asked questions (FAQ) document, which can be downloaded here and at the bottom of this page.\nWhy apply for this program?\nData Science has become a revolutionary technology that everyone seems to talk about. It is becoming a key concept for large private businesses, public institutions and research. While it is not easy to define it in a few words, data science deals with the methods and tools needed to analyze data and draw actionable conclusions from the results gained in the process. These methods and tools, which cover big data and their analysis, data modeling, machine learning, and simulation methods, are located mainly at the intersection of three subjects: computer sciences, mathematics, and statistics. Consequently, this new Master’s program at Friedrich-Alexander University is jointly taught by lecturers from these three fields.\nThis program uses dynamic learning methodologies to ensure our students stand out in today’s competitive job market. Students will enjoy a wide variety of long-lasting benefits:\nHands-on teaching methodology.\nA world-class institution.\nIndividual, interest-based curriculum.\nCareer prospects\nAs a data scientist you can work in national and international companies or in the public sector. Some exemplary sectors to find exciting job positions would be:\nTechnology IndustryThanks to the various developments in data science, this industry is gradually evolving from an art into a science. Modern cyber security mechanisms heavily rely on data science. Data scientists are bringing probabilistic and statistical methods into the IT industry. Data collected from different disciplines can be instrumental in helping with solutions to cyber security threats.\nTravel IndustryTravel personalization has become an increasingly deeper process than it used to be. The possibility to create customer profiles based on segmentation, offering personalized experiences according to their needs and preferences, has its foundations in data science. Forecasting the behavior of travelers by knowing where they want to go next, what kind of prices are they ready to pay, and when to launch special promotions, hugely depends on the level of applying data scientists‘ skills and abilities.\nEnergy IndustryThe energy industry experiences major fluctuations in prices and higher costs of projects. Obtaining high-quality information has not been so important! Data scientists help in cutting costs, reducing risks, optimizing investments and improving equipment maintenance.\nPharmaceuticalsConnected to human health, the pharma industry has also emerged as an industry where data science is increasing its application. For example, a pharmaceutical company can utilize data science to ensure a more stable approach for planning clinical trials. Companies need to resort to data science in order to build precision into their calculations of the potential success or failure of the clinical trials.\nUndoubtedly, there are many more sectors that a data scientist can work. Data science careers are in high demand, particularly in Germany, and this trend will not be slowing down any time soon.After the master’s degree, a scientific career is of course also possible. Definitely, you can then deepen your knowledge and develop various programming tools for scientific codes and data analysis.\nAreas of specialization\nAt the beginning of the master’s degree, one major field of study is selected from the following subject areas as part of an individual study agreement:\nData-based optimization\nMathematical Theory / Fundamentals of Data Science (taught in German)\nDatabases and Knowledge Representation (taught partly in German)\nMachine learning / Artificial intelligence\nSimulation and Numerics\nMathematical Statistical Data Analysis (taught mainly in German)\nThe other subject areas together form the minor field of study. The courses are mainly taught in English. Every student chooses a mentor at the beginning of the study course. The mentor gives the student advice how to design the study plan in accordance with the student’s individual interests.\nStructure of the degree programs\nThe standard time to degree is four semesters (two years). Students must acquire 120 ECTS. The program is structured as follows:\nDetailed information regarding modules and study plan can be found under „Important document and further info“ paragraph in the „Module Handbook“ section.Please note that some of the core modules in the Master Data Science are only taught once per year, i.e., not every semester. This applies to both modules „Mathematics of Learning“ as well as „Selected Topics in Mathematics of Learning“, which are only taught annually in the winter semester.\nApplication subjects\nOut of the following application subjects, you should take modules with a total of 15 ECTS. You are free to choose modules mixed from all applications subjects in either English or German, depending on your language skills.\nArtificial Intelligence in Biomedical Imaging\nChemistry (taught in German)\nDigital Humanities (taught mainly in German)\nGeography\nGeosciences\nInternational Information Systems\nMaterial Science\nMedical Data Science\nMultimedia Engineering\nPhysics (taught mainly in German)\nStudy course plans\nIn the following we present three exemplary study course plans as an orientation help assuming you are studying Data Science as a full-time study (~30 ECTS per semester) and the first semester starts in the winter semester.\nExample I (Major field: ML/AI)\nExample II (Major field: SN)\n1st semester(winter semester)\nApplication subject: Wearable and Implantable Computing (5 ECTS) Application subject: Process Analytics (5 ECTS) Major field: Artificial Intelligence I (7,5 ECTS) Major field: Pattern Recognition (5 ECTS) Minor field: Convex Geometry and Applications (5 ECTS) Core module: Mathematics of Learning (5 ECTS)(total: 32,5 ECTS)\nApplication subject: Business Intelligence (5 ECTS) Major field: Simulation and Modeling 1 (5 ECTS) Minor field: Middleware – Cloud Computing (7,5 ECTS) Minor field: Artificial Intelligence I (7,5 ECTS) Core module: Mathematics of Learning (5 ECTS)(total: 30 ECTS)\n2nd semester(summer semester)\nApplication subject: DH-Module 1: Language and text (5 ECTS) Major field: Artificial Intelligence II (7,5 ECTS) Minor field: Partial Differential Equations Based Image Processing (5 ECTS) Minor field: Distributed Databases and Transaction Systems (5 ECTS) Core module: Deep Learning (5 ECTS)(total: 27,5 ECTS)\nApplication subject: Computational modelling of cancer network (5 ECTS) Major field: Simulation and Modeling 2 (5 ECTS) Major field: Partial Differential Equations Based Image Processing (5 ECTS) Major field: PDEs in Data Science (5 ECTS) Core module: Deep Learning (5 ECTS) Technical qualification: Approximate Computing (5 ECTS)(total: 30 ECTS)\n3rd semester(winter semester)\nMajor field: Research Project AI (10 ECTS) Minor field: Inverse Problems and their Regularization (5 ECTS) Technical qualification: Nailing your Thesis (5 ECTS) Core module: Selected Topics in Mathematics of Learning (5 ECTS) Master’s seminar (5 ECTS)(total: 30 ECTS)\nApplication subject: Quantum Computing (5 ECTS) Major field: Numerics of Partial Differential Equations (10 ECTS) Minor field: Discrete Optimization I (5 ECTS) Core module: Selected Topics in Mathematics of Learning (5 ECTS) Master’s seminar (5 ECTS)(total: 30 ECTS)\n4th semester(summer semester)\nMaster’s thesis (30 ECTS)(total: 30 ECTS)\nExample III (Major field: DO)\nApplication subject: Process Analytics (5 ECTS) Application subject: Digital Health (5 ECTS) Major field: Discrete Optimization I (5 ECTS) Major field: Convex Geometry and Applications or Algorithmic Game Theory or Optimization in Industry and Economy (5 ECTS) Minor field: Pattern Recognition (5 ECTS) or Numerics of Partial Differential Equations (10 ECTS) Core module: Mathematics of Learning (5 ECTS)(total: 30 or 35 ECTS)\nApplication subject: DH-Module 2: Society and space (5 ECTS) Major field: Discrete Optimization II (10 ECTS) or Robust Optimization II (5 ECTS) Minor field: Practical Course: Modelling, Simulation and Optimization (5 ECTS) or Software Applications with KI (10 ECTS) Core module: Deep Learning (5 ECTS)(total: 25 or 30 ECTS)\nMajor field: Advanced Nonlinear Optimization (10 ECTS) or Mathematical Foundations of Data Analytics, Neural Networks, and Artificial Intelligence (5 ECTS) Minor field: Machine Learning for Time Series (5 ECTS) Technical qualification: Approximate Computing (5 ECTS) Core module: Selected Topics in Mathematics of Learning (5 ECTS) Master’s seminar (5 ECTS)(total: 25 or 30 ECTS)\nPart-time study\nSince the winter semester 2022/23 it is possible to study the M.Sc. Data Science in part-time. The standard period of study is extended from 4 to 8 semesters compared to a regular full-time study. The study programme structure and in particular all modules are the same in both study types.If you are planning to study Data Science in part-time and you are an international student, please inform yourself if your visa does extend accordingly. Also note that by changing your study course to part-time your amount of already studied semesters will double, e.g., 2 semesters in full-time equal 4 semesters in part time.If you are planning to study Data Science in part-time and work simultaneously, please note that you are not allowed to work more than 20 hours/week to keep your state as student.\nIf you are already enroled for the full-time M.Sc. Data Science programme you can download an application form for changing your degree programme from the website of the Students Records Office. Please indicate clearly that you would like to change from a full-time study in M.Sc. Data Science to a part-time study.Please note that deadlines concerning a late submission of documents, e.g., your Bachelor’s degree certificate, are not extended by changing into a part-time study.\nSome additional information on the M.Sc. Data Science study programme in part-time can be found here.\nRequirements\nAdmission requirements:\nA completed B.Sc. degree in Mathematics, Industrial Mathematics, Mathematical Economy, Computer Science, Data Science, or Physics from FAU or another equivalent domestic or international degree that is not significantly different with regard to the competence profile taught in the respective degree. Please note that your competence profile cannot be evaluated in advance, but only by the admission committee after completing the application process (described below).\nA Grade Point Average (GPA) of 2.5 or better with respect to the German grading system. Candidates with an admissible degree (described above) and a GPA between 2.6 and 2.8 are invited for a short online interview in which their knowledge in calculus, linear algebra, algorithms and data structures is evaluated. An online tool for converting grades to the German grading system using the Bavarian formula can be found here.\nEnglish proficiency at level B2 CEFR (vantage or upper intermediate, not be older than 2 years) or six years of English classes at a German secondary school (Gymnasium). Applicants who have completed their university entrance qualifications or their first degree in English are not required to provide proof of proficiency in English. A list of accepted language proficiency certificates can be found here.\nApplication:\nThe application for M.Sc. Data Science is performed online:\nRegistration for the winter intake is possible between 15th April and 31st May and for the summer intake between 15th October and 30th November. You can find the exact dates for the current intake periods on https://www.fau.eu/education/application-and-enrolment/applying-for-masters-degree-programmes/#bewerbungszeitraum\nRegister online using the page www.campo.fau.euNote: Applicants who have not yet an „ IdM Account “ have to register at IdM first (on www.campo.fau.eu ). IdM stands for Identity Management of FAU. Then, using your IdM account, you can set up your online application. Please note that you can only apply for a maximum of three study courses simultaneously at FAU.For further questions concerning the process of application please contact our Master’s Office: zuv-masterbuero@fau.deFor further questions on the online application portal please send an email to: campo@fau.de\nFurthermore read: Guide to the application process.\nServices\nAccommodation:\nFAU Erlangen-Nürnberg is not able to offer accommodation. The University does not operate any student accommodation and is not allowed to act as an estate agent. However, information on finding accommodation is provided here.\nFinancing your studies and costs:\nThere is only one semester fee / student services fee for each student, no matter which country of origin, that has to be paid every semester. Further information regarding costs of studying such as living or food is provided here.FAU Erlangen-Nürnberg does not have any funding available to support international students with their living costs. For this reason, international students usually receive scholarships from their home country or use their own funds to finance their studies. You might search for scholarships at the DAAD website here.\nEnrolment\nAfter you receive your admission letter you have to enrol for the next semester by sending your certified documents via postal service to the Student Records Office. The enrolment fee should be transferred several days before, especially if transferred from abroad. In this case we recommend to calculate with at least two weeks.\nYou can find further information on enrolment and first steps afterwards here.\nAfter enrolment you are given access to online teaching resources and several other important platforms. Start by creating a user account at FAU (IdM account) and get familiar with the two online platforms „StudOn“ and „Campo„, which will help you to plan and manage your courses.\nImportant documents and further info\nFrequently Asked Questions (FAQ) v0.4A PDF document with answers to frequently asked questions about the M.Sc. Data Science study course programme can be downloaded here.\nExamination Regulations.The study and examination regulations for the bachelor and master degree in Data Science can be downloaded here .\nStudy plan agreement.You can generate your study plan on the website of the Study Plan Generator (SPLAG). Make sure JavaScript is enabled in your browser.\nInformation for international students.You will find further information for international applicants under this link .Studying at FAU also means getting to know everyday life in Germany as well as German and Franconian culture. An interesting video of international students talking about their experiences in Germany can be found here .Information about the orientation courses for international students offered by various faculties and offices at FAU is provided here .\nStudy at FAU.Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU) is one of the largest research universities in Germany. Under this page you can find information regarding studies at FAU and joining our family.\nLabor market for FAU graduates.See the QS Graduate Employability Ranking 2019.If you want to find a job and internship in Data Science in the area around Nürnberg and Erlangen have a look at the Stellenwerk homepage. For additional offers please send an email to daniel.tenbrinck@fau.de and you will be added to a dedicated mailing list in which occasional job offers are posted.",
+  "blocks": [
+    {
+      "text": "Master Data Science",
+      "locator": "HTML h1 block 1"
+    },
+    {
+      "text": "Student Advisory",
+      "locator": "HTML h3 block 2"
+    },
+    {
+      "text": "studienberatung-datascience@math.fau.de",
+      "locator": "HTML h3 block 3"
+    },
+    {
+      "text": "Please send only questions related to the field of Data Science or the structure of this study course to the student advisory. Questions on the application and admission process have to be directed to the Master’s Office at zuv-masterbuero@fau.de",
+      "locator": "HTML p block 4"
+    },
+    {
+      "text": "News",
+      "locator": "HTML h3 block 5"
+    },
+    {
+      "text": "You can now generate your study plan online at the new website of the Study Plan Generator (SPLAG).",
+      "locator": "HTML li block 6"
+    },
+    {
+      "text": "We have updated our frequently asked questions (FAQ) document, which can be downloaded here and at the bottom of this page.",
+      "locator": "HTML li block 7"
+    },
+    {
+      "text": "Why apply for this program?",
+      "locator": "HTML h4 block 8"
+    },
+    {
+      "text": "Data Science has become a revolutionary technology that everyone seems to talk about. It is becoming a key concept for large private businesses, public institutions and research. While it is not easy to define it in a few words, data science deals with the methods and tools needed to analyze data and draw actionable conclusions from the results gained in the process. These methods and tools, which cover big data and their analysis, data modeling, machine learning, and simulation methods, are located mainly at the intersection of three subjects: computer sciences, mathematics, and statistics. Consequently, this new Master’s program at Friedrich-Alexander University is jointly taught by lecturers from these three fields.",
+      "locator": "HTML p block 9"
+    },
+    {
+      "text": "This program uses dynamic learning methodologies to ensure our students stand out in today’s competitive job market. Students will enjoy a wide variety of long-lasting benefits:",
+      "locator": "HTML p block 10"
+    },
+    {
+      "text": "Hands-on teaching methodology.",
+      "locator": "HTML li block 11"
+    },
+    {
+      "text": "A world-class institution.",
+      "locator": "HTML li block 12"
+    },
+    {
+      "text": "Individual, interest-based curriculum.",
+      "locator": "HTML li block 13"
+    },
+    {
+      "text": "Career prospects",
+      "locator": "HTML h4 block 14"
+    },
+    {
+      "text": "As a data scientist you can work in national and international companies or in the public sector. Some exemplary sectors to find exciting job positions would be:",
+      "locator": "HTML p block 15"
+    },
+    {
+      "text": "Technology IndustryThanks to the various developments in data science, this industry is gradually evolving from an art into a science. Modern cyber security mechanisms heavily rely on data science. Data scientists are bringing probabilistic and statistical methods into the IT industry. Data collected from different disciplines can be instrumental in helping with solutions to cyber security threats.",
+      "locator": "HTML li block 16"
+    },
+    {
+      "text": "Travel IndustryTravel personalization has become an increasingly deeper process than it used to be. The possibility to create customer profiles based on segmentation, offering personalized experiences according to their needs and preferences, has its foundations in data science. Forecasting the behavior of travelers by knowing where they want to go next, what kind of prices are they ready to pay, and when to launch special promotions, hugely depends on the level of applying data scientists‘ skills and abilities.",
+      "locator": "HTML li block 17"
+    },
+    {
+      "text": "Energy IndustryThe energy industry experiences major fluctuations in prices and higher costs of projects. Obtaining high-quality information has not been so important! Data scientists help in cutting costs, reducing risks, optimizing investments and improving equipment maintenance.",
+      "locator": "HTML li block 18"
+    },
+    {
+      "text": "PharmaceuticalsConnected to human health, the pharma industry has also emerged as an industry where data science is increasing its application. For example, a pharmaceutical company can utilize data science to ensure a more stable approach for planning clinical trials. Companies need to resort to data science in order to build precision into their calculations of the potential success or failure of the clinical trials.",
+      "locator": "HTML li block 19"
+    },
+    {
+      "text": "Undoubtedly, there are many more sectors that a data scientist can work. Data science careers are in high demand, particularly in Germany, and this trend will not be slowing down any time soon.After the master’s degree, a scientific career is of course also possible. Definitely, you can then deepen your knowledge and develop various programming tools for scientific codes and data analysis.",
+      "locator": "HTML p block 20"
+    },
+    {
+      "text": "Areas of specialization",
+      "locator": "HTML h4 block 21"
+    },
+    {
+      "text": "At the beginning of the master’s degree, one major field of study is selected from the following subject areas as part of an individual study agreement:",
+      "locator": "HTML p block 22"
+    },
+    {
+      "text": "Data-based optimization",
+      "locator": "HTML li block 23"
+    },
+    {
+      "text": "Mathematical Theory / Fundamentals of Data Science (taught in German)",
+      "locator": "HTML li block 24"
+    },
+    {
+      "text": "Databases and Knowledge Representation (taught partly in German)",
+      "locator": "HTML li block 25"
+    },
+    {
+      "text": "Machine learning / Artificial intelligence",
+      "locator": "HTML li block 26"
+    },
+    {
+      "text": "Simulation and Numerics",
+      "locator": "HTML li block 27"
+    },
+    {
+      "text": "Mathematical Statistical Data Analysis (taught mainly in German)",
+      "locator": "HTML li block 28"
+    },
+    {
+      "text": "The other subject areas together form the minor field of study. The courses are mainly taught in English. Every student chooses a mentor at the beginning of the study course. The mentor gives the student advice how to design the study plan in accordance with the student’s individual interests.",
+      "locator": "HTML p block 29"
+    },
+    {
+      "text": "Structure of the degree programs",
+      "locator": "HTML h4 block 30"
+    },
+    {
+      "text": "The standard time to degree is four semesters (two years). Students must acquire 120 ECTS. The program is structured as follows:",
+      "locator": "HTML p block 31"
+    },
+    {
+      "text": "Detailed information regarding modules and study plan can be found under „Important document and further info“ paragraph in the „Module Handbook“ section.Please note that some of the core modules in the Master Data Science are only taught once per year, i.e., not every semester. This applies to both modules „Mathematics of Learning“ as well as „Selected Topics in Mathematics of Learning“, which are only taught annually in the winter semester.",
+      "locator": "HTML p block 32"
+    },
+    {
+      "text": "Application subjects",
+      "locator": "HTML h4 block 33"
+    },
+    {
+      "text": "Out of the following application subjects, you should take modules with a total of 15 ECTS. You are free to choose modules mixed from all applications subjects in either English or German, depending on your language skills.",
+      "locator": "HTML p block 34"
+    },
+    {
+      "text": "Artificial Intelligence in Biomedical Imaging",
+      "locator": "HTML li block 35"
+    },
+    {
+      "text": "Chemistry (taught in German)",
+      "locator": "HTML li block 36"
+    },
+    {
+      "text": "Digital Humanities (taught mainly in German)",
+      "locator": "HTML li block 37"
+    },
+    {
+      "text": "Geography",
+      "locator": "HTML li block 38"
+    },
+    {
+      "text": "Geosciences",
+      "locator": "HTML li block 39"
+    },
+    {
+      "text": "International Information Systems",
+      "locator": "HTML li block 40"
+    },
+    {
+      "text": "Material Science",
+      "locator": "HTML li block 41"
+    },
+    {
+      "text": "Medical Data Science",
+      "locator": "HTML li block 42"
+    },
+    {
+      "text": "Multimedia Engineering",
+      "locator": "HTML li block 43"
+    },
+    {
+      "text": "Physics (taught mainly in German)",
+      "locator": "HTML li block 44"
+    },
+    {
+      "text": "Study course plans",
+      "locator": "HTML h4 block 45"
+    },
+    {
+      "text": "In the following we present three exemplary study course plans as an orientation help assuming you are studying Data Science as a full-time study (~30 ECTS per semester) and the first semester starts in the winter semester.",
+      "locator": "HTML p block 46"
+    },
+    {
+      "text": "Example I (Major field: ML/AI)",
+      "locator": "HTML td block 48"
+    },
+    {
+      "text": "Example II (Major field: SN)",
+      "locator": "HTML td block 49"
+    },
+    {
+      "text": "1st semester(winter semester)",
+      "locator": "HTML td block 50"
+    },
+    {
+      "text": "Application subject: Wearable and Implantable Computing (5 ECTS) Application subject: Process Analytics (5 ECTS) Major field: Artificial Intelligence I (7,5 ECTS) Major field: Pattern Recognition (5 ECTS) Minor field: Convex Geometry and Applications (5 ECTS) Core module: Mathematics of Learning (5 ECTS)(total: 32,5 ECTS)",
+      "locator": "HTML td block 51"
+    },
+    {
+      "text": "Application subject: Business Intelligence (5 ECTS) Major field: Simulation and Modeling 1 (5 ECTS) Minor field: Middleware – Cloud Computing (7,5 ECTS) Minor field: Artificial Intelligence I (7,5 ECTS) Core module: Mathematics of Learning (5 ECTS)(total: 30 ECTS)",
+      "locator": "HTML td block 52"
+    },
+    {
+      "text": "2nd semester(summer semester)",
+      "locator": "HTML td block 53"
+    },
+    {
+      "text": "Application subject: DH-Module 1: Language and text (5 ECTS) Major field: Artificial Intelligence II (7,5 ECTS) Minor field: Partial Differential Equations Based Image Processing (5 ECTS) Minor field: Distributed Databases and Transaction Systems (5 ECTS) Core module: Deep Learning (5 ECTS)(total: 27,5 ECTS)",
+      "locator": "HTML td block 54"
+    },
+    {
+      "text": "Application subject: Computational modelling of cancer network (5 ECTS) Major field: Simulation and Modeling 2 (5 ECTS) Major field: Partial Differential Equations Based Image Processing (5 ECTS) Major field: PDEs in Data Science (5 ECTS) Core module: Deep Learning (5 ECTS) Technical qualification: Approximate Computing (5 ECTS)(total: 30 ECTS)",
+      "locator": "HTML td block 55"
+    },
+    {
+      "text": "3rd semester(winter semester)",
+      "locator": "HTML td block 56"
+    },
+    {
+      "text": "Major field: Research Project AI (10 ECTS) Minor field: Inverse Problems and their Regularization (5 ECTS) Technical qualification: Nailing your Thesis (5 ECTS) Core module: Selected Topics in Mathematics of Learning (5 ECTS) Master’s seminar (5 ECTS)(total: 30 ECTS)",
+      "locator": "HTML td block 57"
+    },
+    {
+      "text": "Application subject: Quantum Computing (5 ECTS) Major field: Numerics of Partial Differential Equations (10 ECTS) Minor field: Discrete Optimization I (5 ECTS) Core module: Selected Topics in Mathematics of Learning (5 ECTS) Master’s seminar (5 ECTS)(total: 30 ECTS)",
+      "locator": "HTML td block 58"
+    },
+    {
+      "text": "4th semester(summer semester)",
+      "locator": "HTML td block 59"
+    },
+    {
+      "text": "Master’s thesis (30 ECTS)(total: 30 ECTS)",
+      "locator": "HTML td block 60"
+    },
+    {
+      "text": "Example III (Major field: DO)",
+      "locator": "HTML td block 63"
+    },
+    {
+      "text": "Application subject: Process Analytics (5 ECTS) Application subject: Digital Health (5 ECTS) Major field: Discrete Optimization I (5 ECTS) Major field: Convex Geometry and Applications or Algorithmic Game Theory or Optimization in Industry and Economy (5 ECTS) Minor field: Pattern Recognition (5 ECTS) or Numerics of Partial Differential Equations (10 ECTS) Core module: Mathematics of Learning (5 ECTS)(total: 30 or 35 ECTS)",
+      "locator": "HTML td block 65"
+    },
+    {
+      "text": "Application subject: DH-Module 2: Society and space (5 ECTS) Major field: Discrete Optimization II (10 ECTS) or Robust Optimization II (5 ECTS) Minor field: Practical Course: Modelling, Simulation and Optimization (5 ECTS) or Software Applications with KI (10 ECTS) Core module: Deep Learning (5 ECTS)(total: 25 or 30 ECTS)",
+      "locator": "HTML td block 67"
+    },
+    {
+      "text": "Major field: Advanced Nonlinear Optimization (10 ECTS) or Mathematical Foundations of Data Analytics, Neural Networks, and Artificial Intelligence (5 ECTS) Minor field: Machine Learning for Time Series (5 ECTS) Technical qualification: Approximate Computing (5 ECTS) Core module: Selected Topics in Mathematics of Learning (5 ECTS) Master’s seminar (5 ECTS)(total: 25 or 30 ECTS)",
+      "locator": "HTML td block 69"
+    },
+    {
+      "text": "Part-time study",
+      "locator": "HTML h4 block 72"
+    },
+    {
+      "text": "Since the winter semester 2022/23 it is possible to study the M.Sc. Data Science in part-time. The standard period of study is extended from 4 to 8 semesters compared to a regular full-time study. The study programme structure and in particular all modules are the same in both study types.If you are planning to study Data Science in part-time and you are an international student, please inform yourself if your visa does extend accordingly. Also note that by changing your study course to part-time your amount of already studied semesters will double, e.g., 2 semesters in full-time equal 4 semesters in part time.If you are planning to study Data Science in part-time and work simultaneously, please note that you are not allowed to work more than 20 hours/week to keep your state as student.",
+      "locator": "HTML p block 73"
+    },
+    {
+      "text": "If you are already enroled for the full-time M.Sc. Data Science programme you can download an application form for changing your degree programme from the website of the Students Records Office. Please indicate clearly that you would like to change from a full-time study in M.Sc. Data Science to a part-time study.Please note that deadlines concerning a late submission of documents, e.g., your Bachelor’s degree certificate, are not extended by changing into a part-time study.",
+      "locator": "HTML p block 74"
+    },
+    {
+      "text": "Some additional information on the M.Sc. Data Science study programme in part-time can be found here.",
+      "locator": "HTML p block 75"
+    },
+    {
+      "text": "Requirements",
+      "locator": "HTML h4 block 76"
+    },
+    {
+      "text": "Admission requirements:",
+      "locator": "HTML p block 77"
+    },
+    {
+      "text": "A completed B.Sc. degree in Mathematics, Industrial Mathematics, Mathematical Economy, Computer Science, Data Science, or Physics from FAU or another equivalent domestic or international degree that is not significantly different with regard to the competence profile taught in the respective degree. Please note that your competence profile cannot be evaluated in advance, but only by the admission committee after completing the application process (described below).",
+      "locator": "HTML li block 78"
+    },
+    {
+      "text": "A Grade Point Average (GPA) of 2.5 or better with respect to the German grading system. Candidates with an admissible degree (described above) and a GPA between 2.6 and 2.8 are invited for a short online interview in which their knowledge in calculus, linear algebra, algorithms and data structures is evaluated. An online tool for converting grades to the German grading system using the Bavarian formula can be found here.",
+      "locator": "HTML li block 79"
+    },
+    {
+      "text": "English proficiency at level B2 CEFR (vantage or upper intermediate, not be older than 2 years) or six years of English classes at a German secondary school (Gymnasium). Applicants who have completed their university entrance qualifications or their first degree in English are not required to provide proof of proficiency in English. A list of accepted language proficiency certificates can be found here.",
+      "locator": "HTML li block 80"
+    },
+    {
+      "text": "Application:",
+      "locator": "HTML p block 81"
+    },
+    {
+      "text": "The application for M.Sc. Data Science is performed online:",
+      "locator": "HTML p block 82"
+    },
+    {
+      "text": "Registration for the winter intake is possible between 15th April and 31st May and for the summer intake between 15th October and 30th November. You can find the exact dates for the current intake periods on https://www.fau.eu/education/application-and-enrolment/applying-for-masters-degree-programmes/#bewerbungszeitraum",
+      "locator": "HTML li block 83"
+    },
+    {
+      "text": "Register online using the page www.campo.fau.euNote: Applicants who have not yet an „ IdM Account “ have to register at IdM first (on www.campo.fau.eu ). IdM stands for Identity Management of FAU. Then, using your IdM account, you can set up your online application. Please note that you can only apply for a maximum of three study courses simultaneously at FAU.For further questions concerning the process of application please contact our Master’s Office: zuv-masterbuero@fau.deFor further questions on the online application portal please send an email to: campo@fau.de",
+      "locator": "HTML li block 84"
+    },
+    {
+      "text": "Furthermore read: Guide to the application process.",
+      "locator": "HTML p block 85"
+    },
+    {
+      "text": "Services",
+      "locator": "HTML h4 block 86"
+    },
+    {
+      "text": "Accommodation:",
+      "locator": "HTML p block 87"
+    },
+    {
+      "text": "FAU Erlangen-Nürnberg is not able to offer accommodation. The University does not operate any student accommodation and is not allowed to act as an estate agent. However, information on finding accommodation is provided here.",
+      "locator": "HTML p block 88"
+    },
+    {
+      "text": "Financing your studies and costs:",
+      "locator": "HTML p block 89"
+    },
+    {
+      "text": "There is only one semester fee / student services fee for each student, no matter which country of origin, that has to be paid every semester. Further information regarding costs of studying such as living or food is provided here.FAU Erlangen-Nürnberg does not have any funding available to support international students with their living costs. For this reason, international students usually receive scholarships from their home country or use their own funds to finance their studies. You might search for scholarships at the DAAD website here.",
+      "locator": "HTML p block 90"
+    },
+    {
+      "text": "Enrolment",
+      "locator": "HTML h4 block 91"
+    },
+    {
+      "text": "After you receive your admission letter you have to enrol for the next semester by sending your certified documents via postal service to the Student Records Office. The enrolment fee should be transferred several days before, especially if transferred from abroad. In this case we recommend to calculate with at least two weeks.",
+      "locator": "HTML p block 92"
+    },
+    {
+      "text": "You can find further information on enrolment and first steps afterwards here.",
+      "locator": "HTML p block 93"
+    },
+    {
+      "text": "After enrolment you are given access to online teaching resources and several other important platforms. Start by creating a user account at FAU (IdM account) and get familiar with the two online platforms „StudOn“ and „Campo„, which will help you to plan and manage your courses.",
+      "locator": "HTML p block 94"
+    },
+    {
+      "text": "Important documents and further info",
+      "locator": "HTML h4 block 95"
+    },
+    {
+      "text": "Frequently Asked Questions (FAQ) v0.4A PDF document with answers to frequently asked questions about the M.Sc. Data Science study course programme can be downloaded here.",
+      "locator": "HTML li block 96"
+    },
+    {
+      "text": "Examination Regulations.The study and examination regulations for the bachelor and master degree in Data Science can be downloaded here .",
+      "locator": "HTML li block 97"
+    },
+    {
+      "text": "Study plan agreement.You can generate your study plan on the website of the Study Plan Generator (SPLAG). Make sure JavaScript is enabled in your browser.",
+      "locator": "HTML li block 98"
+    },
+    {
+      "text": "Information for international students.You will find further information for international applicants under this link .Studying at FAU also means getting to know everyday life in Germany as well as German and Franconian culture. An interesting video of international students talking about their experiences in Germany can be found here .Information about the orientation courses for international students offered by various faculties and offices at FAU is provided here .",
+      "locator": "HTML li block 99"
+    },
+    {
+      "text": "Study at FAU.Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU) is one of the largest research universities in Germany. Under this page you can find information regarding studies at FAU and joining our family.",
+      "locator": "HTML li block 100"
+    },
+    {
+      "text": "Labor market for FAU graduates.See the QS Graduate Employability Ranking 2019.If you want to find a job and internship in Data Science in the area around Nürnberg and Erlangen have a look at the Stellenwerk homepage. For additional offers please send an email to daniel.tenbrinck@fau.de and you will be added to a dedicated mailing list in which occasional job offers are posted.",
+      "locator": "HTML li block 101"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://www.math-datascience.nat.fau.de/files/2025/11/msc-datascience_faq_2025-11-08.pdf",
+      "label": "downloaded here"
+    },
+    {
+      "url": "https://www.math-datascience.nat.fau.de/files/2022/04/short-info-part-time-study-ds.pdf",
+      "label": "here"
+    },
+    {
+      "url": "https://www.fau.eu/education/application-and-enrolment/applying-for-masters-degree-programmes/",
+      "label": "https://www.fau.eu/education/application-and-enrolment/applying-for-masters-degree-programmes/#bewerbungszeitraum"
+    },
+    {
+      "url": "https://www.fau.eu/education/application-and-enrolment/deadlines-and-documents-for-enrolment/",
+      "label": "here"
+    },
+    {
+      "url": "https://www.math-datascience.nat.fau.de/im-studium/infocenter/pruefungen/pruefungsordnungen/",
+      "label": "Prüfungsordnungen"
+    }
+  ],
+  "robotsStatus": 200,
+  "redirects": [],
+  "etag": null,
+  "lastModified": null,
+  "extractorVersion": 2
+}

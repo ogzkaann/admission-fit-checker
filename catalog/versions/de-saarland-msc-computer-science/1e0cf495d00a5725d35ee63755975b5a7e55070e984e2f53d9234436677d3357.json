@@ -1,0 +1,742 @@
+{
+  "schemaVersion": 1,
+  "programId": "de-saarland-msc-computer-science",
+  "revision": "1e0cf495d00a5725d35ee63755975b5a7e55070e984e2f53d9234436677d3357",
+  "parentRevision": "9ba0ecf0410ee3fa032ff06034786e217714f06af00748fc8b65c0ce874bc938",
+  "extractedAt": "2026-10-21T12:08:37.890Z",
+  "recipeHash": "d6d50e5cdcc40471acc5cdfd4be9a8831314ce4f25c709c8418c4f42ec8c80c5",
+  "program": {
+    "id": "de-saarland-msc-computer-science",
+    "university": "Saarland University",
+    "programName": "Computer Science",
+    "degreeType": "master",
+    "language": "English",
+    "country": "Germany",
+    "city": "Saarbruecken",
+    "description": "Master of Science in Computer Science. Official-source pilot; admission clauses await editorial review.",
+    "sourceUrl": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+    "requiredDocuments": [],
+    "requirements": [
+      {
+        "id": "academic",
+        "kind": "academic",
+        "label": "Relevant first degree and aptitude assessment",
+        "sourceText": "In order to be admitted to the programme, students must have received a Bachelor's degree or equivalent qualification from a German or foreign university in informatics, computer science or a related field, or must provide proof of equivalent academic achievement, and must demonstrate advanced proficiency in English to complete the programme (C1, a MOI (Medium of Instruction) cannnot be accepted, see the FAQ for a list of accepted certificates). Specifically, they must also provide the following information and/or documents:",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Relevant first degree and aptitude assessment. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "In order to be admitted to the programme, students must have received a Bachelor's degree or equivalent qualification from a German or foreign university in informatics, computer science or a related field, or must provide proof of equivalent academic achievement, and must demonstrate advanced proficiency in English to complete the programme (C1, a MOI (Medium of Instruction) cannnot be accepted, see the FAQ for a list of accepted certificates). Specifically, they must also provide the following information and/or documents:",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML p block 14",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "981d31a07c9ee6011e431c15e550e7113ad28466043c84e409a07d9a98e63f02",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          }
+        ]
+      },
+      {
+        "id": "language",
+        "kind": "language",
+        "label": "English C1, MOI exclusion and certificate acceptance",
+        "sourceText": "Level C1 (a MOI (Medium of Instruction) is not accepted, see FAQ)\n\nIn order to be admitted to the programme, students must have received a Bachelor's degree or equivalent qualification from a German or foreign university in informatics, computer science or a related field, or must provide proof of equivalent academic achievement, and must demonstrate advanced proficiency in English to complete the programme (C1, a MOI (Medium of Instruction) cannnot be accepted, see the FAQ for a list of accepted certificates). Specifically, they must also provide the following information and/or documents:",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "English C1, MOI exclusion and certificate acceptance. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Level C1 (a MOI (Medium of Instruction) is not accepted, see FAQ)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML td block 34",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "981d31a07c9ee6011e431c15e550e7113ad28466043c84e409a07d9a98e63f02",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          },
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "In order to be admitted to the programme, students must have received a Bachelor's degree or equivalent qualification from a German or foreign university in informatics, computer science or a related field, or must provide proof of equivalent academic achievement, and must demonstrate advanced proficiency in English to complete the programme (C1, a MOI (Medium of Instruction) cannnot be accepted, see the FAQ for a list of accepted certificates). Specifically, they must also provide the following information and/or documents:",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML p block 14",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "981d31a07c9ee6011e431c15e550e7113ad28466043c84e409a07d9a98e63f02",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          }
+        ]
+      },
+      {
+        "id": "additional-evidence",
+        "kind": "other",
+        "label": "Academic merit, references and supporting evidence",
+        "sourceText": "Proof of sufficient merit in their academic achievements in school and higher education\n\nA letter of motivation or personal statement documenting the student's particular interest in the M.Sc. programme\n\nTwo relevant academic references\n\nDetails about relevant work/study periods abroad and relevant work experience or internships",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Academic merit, references and supporting evidence. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Proof of sufficient merit in their academic achievements in school and higher education",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML li block 15",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "981d31a07c9ee6011e431c15e550e7113ad28466043c84e409a07d9a98e63f02",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          },
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "A letter of motivation or personal statement documenting the student's particular interest in the M.Sc. programme",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML li block 16",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "981d31a07c9ee6011e431c15e550e7113ad28466043c84e409a07d9a98e63f02",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          },
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Two relevant academic references",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML li block 17",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "981d31a07c9ee6011e431c15e550e7113ad28466043c84e409a07d9a98e63f02",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          },
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Details about relevant work/study periods abroad and relevant work experience or internships",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML li block 18",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "981d31a07c9ee6011e431c15e550e7113ad28466043c84e409a07d9a98e63f02",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          }
+        ]
+      },
+      {
+        "id": "inventory-review",
+        "kind": "other",
+        "label": "Full admission regulations and applicability review",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "The extracted inventory is not complete. Verify regulations, applicant categories, exemptions, selection and semester validity."
+        },
+        "evidence": []
+      }
+    ],
+    "admissionText": "academic: In order to be admitted to the programme, students must have received a Bachelor's degree or equivalent qualification from a German or foreign university in informatics, computer science or a related field, or must provide proof of equivalent academic achievement, and must demonstrate advanced proficiency in English to complete the programme (C1, a MOI (Medium of Instruction) cannnot be accepted, see the FAQ for a list of accepted certificates). Specifically, they must also provide the following information and/or documents:\n\nlanguage: Level C1 (a MOI (Medium of Instruction) is not accepted, see FAQ)\n\nIn order to be admitted to the programme, students must have received a Bachelor's degree or equivalent qualification from a German or foreign university in informatics, computer science or a related field, or must provide proof of equivalent academic achievement, and must demonstrate advanced proficiency in English to complete the programme (C1, a MOI (Medium of Instruction) cannnot be accepted, see the FAQ for a list of accepted certificates). Specifically, they must also provide the following information and/or documents:\n\ndeadline: Application deadline for the winter semester\n\nEarly deadline: Nov 15(positive decision: notification at the lastest in February of the following year)Late deadline: May 15\n\nApplication deadline for the summer semester\n\nEarly deadline: May 15(positive decision: notification at the lastest in July)Late deadline: Nov 15\n\napplication: Applications should be submitted via the online application portal managed by the Department of Computer Science where you'll find further information about application and admission procedures.\n\ntuition: Tuition fees\n\nNot applicable\n\nSemester fee\n\nSee current fee structure\n\nsemester: Students can begin the M.Sc. programme at the beginning of the summer or winter semester. Applications should normally be received by 15 May for students seeking to begin studying in the winter semester and by 15 November for students looking to start their studies in summer. Applicants who apply by May 15th for the following summer semester are expected to receive a letter of admission by mid-July if the respective Master's commission makes a positive decision. Applicants who apply by November 15th for the following winter semester are expected to receive a letter of admission by mid-February if the respective Master's commission makes a positive decision.\n\nacademic: Proof of sufficient merit in their academic achievements in school and higher education\n\nA letter of motivation or personal statement documenting the student's particular interest in the M.Sc. programme\n\nTwo relevant academic references\n\nDetails about relevant work/study periods abroad and relevant work experience or internships",
+    "origin": "catalog",
+    "isDemo": false,
+    "createdAt": "2026-10-18T17:03:21.293Z",
+    "schemaVersion": 2,
+    "verificationStatus": "stale",
+    "sources": [
+      {
+        "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+        "quote": "Computer Science (M.Sc.)",
+        "status": "unverified",
+        "sourceType": "official",
+        "lastChecked": "2026-10-21T12:05:37.352Z",
+        "validFor": [],
+        "locator": "Source document identity",
+        "retrievedAt": "2026-10-21T12:05:37.352Z",
+        "snapshotId": "981d31a07c9ee6011e431c15e550e7113ad28466043c84e409a07d9a98e63f02",
+        "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+      }
+    ],
+    "validFor": [],
+    "requirementsComplete": false,
+    "facts": [
+      {
+        "id": "academic",
+        "category": "academic",
+        "value": "In order to be admitted to the programme, students must have received a Bachelor's degree or equivalent qualification from a German or foreign university in informatics, computer science or a related field, or must provide proof of equivalent academic achievement, and must demonstrate advanced proficiency in English to complete the programme (C1, a MOI (Medium of Instruction) cannnot be accepted, see the FAQ for a list of accepted certificates). Specifically, they must also provide the following information and/or documents:",
+        "evidence": [
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "In order to be admitted to the programme, students must have received a Bachelor's degree or equivalent qualification from a German or foreign university in informatics, computer science or a related field, or must provide proof of equivalent academic achievement, and must demonstrate advanced proficiency in English to complete the programme (C1, a MOI (Medium of Instruction) cannnot be accepted, see the FAQ for a list of accepted certificates). Specifically, they must also provide the following information and/or documents:",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML p block 14",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "981d31a07c9ee6011e431c15e550e7113ad28466043c84e409a07d9a98e63f02",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          }
+        ]
+      },
+      {
+        "id": "language",
+        "category": "language",
+        "value": "Level C1 (a MOI (Medium of Instruction) is not accepted, see FAQ)\n\nIn order to be admitted to the programme, students must have received a Bachelor's degree or equivalent qualification from a German or foreign university in informatics, computer science or a related field, or must provide proof of equivalent academic achievement, and must demonstrate advanced proficiency in English to complete the programme (C1, a MOI (Medium of Instruction) cannnot be accepted, see the FAQ for a list of accepted certificates). Specifically, they must also provide the following information and/or documents:",
+        "note": "A self-reported CEFR level alone does not prove an accepted certificate.",
+        "evidence": [
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Level C1 (a MOI (Medium of Instruction) is not accepted, see FAQ)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML td block 34",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "981d31a07c9ee6011e431c15e550e7113ad28466043c84e409a07d9a98e63f02",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          },
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "In order to be admitted to the programme, students must have received a Bachelor's degree or equivalent qualification from a German or foreign university in informatics, computer science or a related field, or must provide proof of equivalent academic achievement, and must demonstrate advanced proficiency in English to complete the programme (C1, a MOI (Medium of Instruction) cannnot be accepted, see the FAQ for a list of accepted certificates). Specifically, they must also provide the following information and/or documents:",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML p block 14",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "981d31a07c9ee6011e431c15e550e7113ad28466043c84e409a07d9a98e63f02",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          }
+        ]
+      },
+      {
+        "id": "credits",
+        "category": "credits",
+        "value": null,
+        "note": "No numeric subject-credit threshold established from this page.",
+        "evidence": []
+      },
+      {
+        "id": "deadline",
+        "category": "deadline",
+        "value": "Application deadline for the winter semester\n\nEarly deadline: Nov 15(positive decision: notification at the lastest in February of the following year)Late deadline: May 15\n\nApplication deadline for the summer semester\n\nEarly deadline: May 15(positive decision: notification at the lastest in July)Late deadline: Nov 15",
+        "note": "Early and late routes are distinct. Recurring dates do not establish a specific admission year.",
+        "evidence": [
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Application deadline for the winter semester",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML td block 37",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "981d31a07c9ee6011e431c15e550e7113ad28466043c84e409a07d9a98e63f02",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          },
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Early deadline: Nov 15(positive decision: notification at the lastest in February of the following year)Late deadline: May 15",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML td block 38",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "981d31a07c9ee6011e431c15e550e7113ad28466043c84e409a07d9a98e63f02",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          },
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Application deadline for the summer semester",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML td block 39",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "981d31a07c9ee6011e431c15e550e7113ad28466043c84e409a07d9a98e63f02",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          },
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Early deadline: May 15(positive decision: notification at the lastest in July)Late deadline: Nov 15",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML td block 40",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "981d31a07c9ee6011e431c15e550e7113ad28466043c84e409a07d9a98e63f02",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          }
+        ]
+      },
+      {
+        "id": "application",
+        "category": "application",
+        "value": "Applications should be submitted via the online application portal managed by the Department of Computer Science where you'll find further information about application and admission procedures.",
+        "evidence": [
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Applications should be submitted via the online application portal managed by the Department of Computer Science where you'll find further information about application and admission procedures.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML p block 21",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "981d31a07c9ee6011e431c15e550e7113ad28466043c84e409a07d9a98e63f02",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          }
+        ]
+      },
+      {
+        "id": "tuition",
+        "category": "tuition",
+        "value": "Tuition fees\n\nNot applicable\n\nSemester fee\n\nSee current fee structure",
+        "note": "No tuition in this program overview; semester contributions are separate and no amount is established here.",
+        "evidence": [
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Tuition fees",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML td block 41",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "981d31a07c9ee6011e431c15e550e7113ad28466043c84e409a07d9a98e63f02",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          },
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Not applicable",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML td block 42",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "981d31a07c9ee6011e431c15e550e7113ad28466043c84e409a07d9a98e63f02",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          },
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Semester fee",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML td block 43",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "981d31a07c9ee6011e431c15e550e7113ad28466043c84e409a07d9a98e63f02",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          },
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "See current fee structure",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML td block 44",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "981d31a07c9ee6011e431c15e550e7113ad28466043c84e409a07d9a98e63f02",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          }
+        ]
+      },
+      {
+        "id": "semester",
+        "category": "semester",
+        "value": "Students can begin the M.Sc. programme at the beginning of the summer or winter semester. Applications should normally be received by 15 May for students seeking to begin studying in the winter semester and by 15 November for students looking to start their studies in summer. Applicants who apply by May 15th for the following summer semester are expected to receive a letter of admission by mid-July if the respective Master's commission makes a positive decision. Applicants who apply by November 15th for the following winter semester are expected to receive a letter of admission by mid-February if the respective Master's commission makes a positive decision.",
+        "note": "Intake seasons are listed; calendar-year applicability remains unverified.",
+        "evidence": [
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Students can begin the M.Sc. programme at the beginning of the summer or winter semester. Applications should normally be received by 15 May for students seeking to begin studying in the winter semester and by 15 November for students looking to start their studies in summer. Applicants who apply by May 15th for the following summer semester are expected to receive a letter of admission by mid-July if the respective Master's commission makes a positive decision. Applicants who apply by November 15th for the following winter semester are expected to receive a letter of admission by mid-February if the respective Master's commission makes a positive decision.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML p block 20",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "981d31a07c9ee6011e431c15e550e7113ad28466043c84e409a07d9a98e63f02",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          }
+        ]
+      },
+      {
+        "id": "additional-evidence",
+        "category": "academic",
+        "value": "Proof of sufficient merit in their academic achievements in school and higher education\n\nA letter of motivation or personal statement documenting the student's particular interest in the M.Sc. programme\n\nTwo relevant academic references\n\nDetails about relevant work/study periods abroad and relevant work experience or internships",
+        "evidence": [
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Proof of sufficient merit in their academic achievements in school and higher education",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML li block 15",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "981d31a07c9ee6011e431c15e550e7113ad28466043c84e409a07d9a98e63f02",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          },
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "A letter of motivation or personal statement documenting the student's particular interest in the M.Sc. programme",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML li block 16",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "981d31a07c9ee6011e431c15e550e7113ad28466043c84e409a07d9a98e63f02",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          },
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Two relevant academic references",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML li block 17",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "981d31a07c9ee6011e431c15e550e7113ad28466043c84e409a07d9a98e63f02",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          },
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Details about relevant work/study periods abroad and relevant work experience or internships",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML li block 18",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "981d31a07c9ee6011e431c15e550e7113ad28466043c84e409a07d9a98e63f02",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          }
+        ]
+      }
+    ],
+    "catalogIssues": [
+      "Automatically extracted draft. Human review and semester applicability are outstanding.",
+      "saarland-guide: Source has not been fetched",
+      "saarland-regulations: Source has not been fetched"
+    ],
+    "retrievedAt": "2026-10-21T12:05:37.352Z",
+    "catalogVersion": "1e0cf495d00a5725d35ee63755975b5a7e55070e984e2f53d9234436677d3357"
+  },
+  "changes": [
+    {
+      "collection": "requirements",
+      "id": "language",
+      "change": "changed",
+      "before": {
+        "id": "language",
+        "kind": "language",
+        "label": "English C1; certificate acceptance requires separate review",
+        "sourceText": "Level C1 (a MOI (Medium of Instruction) is not accepted, see FAQ)",
+        "mandatory": true,
+        "rule": {
+          "type": "language",
+          "language": "English",
+          "accepted": [
+            {
+              "minLevel": "C1"
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Level C1 (a MOI (Medium of Instruction) is not accepted, see FAQ)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML td block 34",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "981d31a07c9ee6011e431c15e550e7113ad28466043c84e409a07d9a98e63f02",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          }
+        ]
+      },
+      "after": {
+        "id": "language",
+        "kind": "language",
+        "label": "English C1, MOI exclusion and certificate acceptance",
+        "sourceText": "Level C1 (a MOI (Medium of Instruction) is not accepted, see FAQ)\n\nIn order to be admitted to the programme, students must have received a Bachelor's degree or equivalent qualification from a German or foreign university in informatics, computer science or a related field, or must provide proof of equivalent academic achievement, and must demonstrate advanced proficiency in English to complete the programme (C1, a MOI (Medium of Instruction) cannnot be accepted, see the FAQ for a list of accepted certificates). Specifically, they must also provide the following information and/or documents:",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "English C1, MOI exclusion and certificate acceptance. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Level C1 (a MOI (Medium of Instruction) is not accepted, see FAQ)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML td block 34",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "981d31a07c9ee6011e431c15e550e7113ad28466043c84e409a07d9a98e63f02",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          },
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "In order to be admitted to the programme, students must have received a Bachelor's degree or equivalent qualification from a German or foreign university in informatics, computer science or a related field, or must provide proof of equivalent academic achievement, and must demonstrate advanced proficiency in English to complete the programme (C1, a MOI (Medium of Instruction) cannnot be accepted, see the FAQ for a list of accepted certificates). Specifically, they must also provide the following information and/or documents:",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML p block 14",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "981d31a07c9ee6011e431c15e550e7113ad28466043c84e409a07d9a98e63f02",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          }
+        ]
+      }
+    },
+    {
+      "collection": "facts",
+      "id": "language",
+      "change": "changed",
+      "before": {
+        "id": "language",
+        "category": "language",
+        "value": "Level C1 (a MOI (Medium of Instruction) is not accepted, see FAQ)",
+        "evidence": [
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Level C1 (a MOI (Medium of Instruction) is not accepted, see FAQ)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML td block 34",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "981d31a07c9ee6011e431c15e550e7113ad28466043c84e409a07d9a98e63f02",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          }
+        ]
+      },
+      "after": {
+        "id": "language",
+        "category": "language",
+        "value": "Level C1 (a MOI (Medium of Instruction) is not accepted, see FAQ)\n\nIn order to be admitted to the programme, students must have received a Bachelor's degree or equivalent qualification from a German or foreign university in informatics, computer science or a related field, or must provide proof of equivalent academic achievement, and must demonstrate advanced proficiency in English to complete the programme (C1, a MOI (Medium of Instruction) cannnot be accepted, see the FAQ for a list of accepted certificates). Specifically, they must also provide the following information and/or documents:",
+        "note": "A self-reported CEFR level alone does not prove an accepted certificate.",
+        "evidence": [
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Level C1 (a MOI (Medium of Instruction) is not accepted, see FAQ)",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML td block 34",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "981d31a07c9ee6011e431c15e550e7113ad28466043c84e409a07d9a98e63f02",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          },
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "In order to be admitted to the programme, students must have received a Bachelor's degree or equivalent qualification from a German or foreign university in informatics, computer science or a related field, or must provide proof of equivalent academic achievement, and must demonstrate advanced proficiency in English to complete the programme (C1, a MOI (Medium of Instruction) cannnot be accepted, see the FAQ for a list of accepted certificates). Specifically, they must also provide the following information and/or documents:",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML p block 14",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "981d31a07c9ee6011e431c15e550e7113ad28466043c84e409a07d9a98e63f02",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          }
+        ]
+      }
+    },
+    {
+      "collection": "facts",
+      "id": "deadline",
+      "change": "changed",
+      "before": {
+        "id": "deadline",
+        "category": "deadline",
+        "value": "Students can begin the M.Sc. programme at the beginning of the summer or winter semester. Applications should normally be received by 15 May for students seeking to begin studying in the winter semester and by 15 November for students looking to start their studies in summer. Applicants who apply by May 15th for the following summer semester are expected to receive a letter of admission by mid-July if the respective Master's commission makes a positive decision. Applicants who apply by November 15th for the following winter semester are expected to receive a letter of admission by mid-February if the respective Master's commission makes a positive decision.",
+        "note": "Recurring dates; specific admission year and applicant scope require review.",
+        "evidence": [
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Students can begin the M.Sc. programme at the beginning of the summer or winter semester. Applications should normally be received by 15 May for students seeking to begin studying in the winter semester and by 15 November for students looking to start their studies in summer. Applicants who apply by May 15th for the following summer semester are expected to receive a letter of admission by mid-July if the respective Master's commission makes a positive decision. Applicants who apply by November 15th for the following winter semester are expected to receive a letter of admission by mid-February if the respective Master's commission makes a positive decision.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML p block 20",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "981d31a07c9ee6011e431c15e550e7113ad28466043c84e409a07d9a98e63f02",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          }
+        ]
+      },
+      "after": {
+        "id": "deadline",
+        "category": "deadline",
+        "value": "Application deadline for the winter semester\n\nEarly deadline: Nov 15(positive decision: notification at the lastest in February of the following year)Late deadline: May 15\n\nApplication deadline for the summer semester\n\nEarly deadline: May 15(positive decision: notification at the lastest in July)Late deadline: Nov 15",
+        "note": "Early and late routes are distinct. Recurring dates do not establish a specific admission year.",
+        "evidence": [
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Application deadline for the winter semester",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML td block 37",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "981d31a07c9ee6011e431c15e550e7113ad28466043c84e409a07d9a98e63f02",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          },
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Early deadline: Nov 15(positive decision: notification at the lastest in February of the following year)Late deadline: May 15",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML td block 38",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "981d31a07c9ee6011e431c15e550e7113ad28466043c84e409a07d9a98e63f02",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          },
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Application deadline for the summer semester",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML td block 39",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "981d31a07c9ee6011e431c15e550e7113ad28466043c84e409a07d9a98e63f02",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          },
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Early deadline: May 15(positive decision: notification at the lastest in July)Late deadline: Nov 15",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML td block 40",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "981d31a07c9ee6011e431c15e550e7113ad28466043c84e409a07d9a98e63f02",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          }
+        ]
+      }
+    },
+    {
+      "collection": "facts",
+      "id": "tuition",
+      "change": "changed",
+      "before": {
+        "id": "tuition",
+        "category": "tuition",
+        "value": "Not applicable",
+        "evidence": [
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Not applicable",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML td block 42",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "981d31a07c9ee6011e431c15e550e7113ad28466043c84e409a07d9a98e63f02",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          }
+        ]
+      },
+      "after": {
+        "id": "tuition",
+        "category": "tuition",
+        "value": "Tuition fees\n\nNot applicable\n\nSemester fee\n\nSee current fee structure",
+        "note": "No tuition in this program overview; semester contributions are separate and no amount is established here.",
+        "evidence": [
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Tuition fees",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML td block 41",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "981d31a07c9ee6011e431c15e550e7113ad28466043c84e409a07d9a98e63f02",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          },
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Not applicable",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML td block 42",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "981d31a07c9ee6011e431c15e550e7113ad28466043c84e409a07d9a98e63f02",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          },
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "Semester fee",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML td block 43",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "981d31a07c9ee6011e431c15e550e7113ad28466043c84e409a07d9a98e63f02",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          },
+          {
+            "url": "https://www.uni-saarland.de/en/study/programmes/master/informatics.html",
+            "quote": "See current fee structure",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:37.352Z",
+            "validFor": [],
+            "locator": "HTML td block 44",
+            "retrievedAt": "2026-10-21T12:05:37.352Z",
+            "snapshotId": "981d31a07c9ee6011e431c15e550e7113ad28466043c84e409a07d9a98e63f02",
+            "contentHash": "a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd"
+          }
+        ]
+      }
+    }
+  ]
+}

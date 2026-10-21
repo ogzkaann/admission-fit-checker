@@ -1,0 +1,364 @@
+{
+  "id": "38385f235e75b0096ac215dd7a6cda0105a37717e7504dd3989242be85abbeb8",
+  "url": "https://www.uni-passau.de/en/apply/application-methods",
+  "requestedUrl": "https://www.uni-passau.de/en/apply/application-methods",
+  "title": "Application methods overview",
+  "retrievedAt": "2026-10-21T12:09:27.155Z",
+  "mediaType": "text/html",
+  "contentHash": "bfc18ccd413a4552ec8146c2826d8454cc21c0b127d4a06851d27e80c02af74d",
+  "textHash": "f3e1476f0209db1fdf759969391b396d1e4682a5846eadf24adcb07fdead16d4",
+  "text": "Information for...\nCurrent students\nProspective students\nAcademics\nEarly career researchers\nBusinesses\nAlumni and friends\nStaff\nMedia representatives\nFaculties & facilities\nAdministration\nCentral facilities\nFaculties\nFaculty of Law\nFaculty of Social and Educational Sciences\nFaculty of Humanities and Cultural Studies\nSchool of Business, Economics and Information Systems\nFaculty of Computer Science and Mathematics\nGraduate Centre\nPICAIS\nSports Centre\nLanguage Centre\nUniversity Library\nCentre for Information Technology and Media Services\nTeacher Education Centre\nResearch Strategy & Science Communication\nExecutive Support Unit for Health and Safety\nExecutive Support Unit for Climate Action Management\nExecutive Support Unit for Competency Development in Study and Teaching\nExecutive Support Unit for Process Management\nManaging Office of the Bavarian Higher Education Digitalisation Association (BHEDA)\nResearch Services\nHeading\nApply\nStudy options\nAcademic Advice Service\nCourse catalogue\nInternational Office\nCareers and Competencies\nExaminations Office\nStudent Services Association\nde\nApplication methods overview\nThere are two main application procedures for getting a place of study at the University of Passau: direct applications and applications via uni-assist. Which one you should use depends on your university entrance qualification and on whether you are a DAAD scholarship recipient.\nIf you have obtained a German higher education entrance qualification ('Hochschulzugangsberechtigung') for example the Abitur, then you can apply or enrol directly through the applications portal of the University of Passau.\nThe same process also applies if any of the following applies to you:\nYou have obtained a higher education entrance qualification from an EU or an EEA country\nYou have obtained a German higher education entrance qualification abroad (for example at a German school that is based abroad)\nYou have been issued with a higher education entrance certificate by a German Zeugnisanerkennungsstelle (Office for the evaluation and recognition of educational certificates)\nYou have passed the assessment examination ('Feststellungsprüfung') of a preparatory course at a German Studienkolleg.\nFor more information...\n...see our page abour enrolment.\nIf you have successfully secured financing for your studies through a DAAD scholarship, then you can apply directly to the University of Passau for your place of study:\nApplying as a DAAD-funded scholar\nAs a degree-seeking student (i.e. not a visiting student through an exchange programme), you will have to apply through uni-assist if the following statements apply to you:\nYou have obtained your higher education entrance qualification in an education system outside the EEA, and...\nnone of the other scenarios listed under \"Who can submit their application directly to the University of Passau?\" apply to you, and...\nyou don't have confirmation of a DAAD scholarship for your studies\nPlease note that this applies to you even if you are a German national.\n...see our page about applying via uni-assist.\nIf you are applying for a Master's programme, the main factor determining which application procedure you should use is the country where you obtained your first university degree.\nIf one of the following conditions applies to you, then you can apply directly through the applications portal of the University of Passau:\nYou graduated with a degree (e. g. a Bachelor's degree) from a higher education provider in Germany or any other EU/EEA member state.\nYou are applying for a place on the LL.M. German Law for foreign graduates or the LL.M. Legal Informatics\nYou are applying for a place on the M.Sc. Computer Science, M.Sc. Artificial Intelligence Engineering or the M.Sc. Mathematics and you have graduated from a higher education provider in one of the following countries: Albania, Algeria, Andorra, Armenia, Azerbaijan, Belarus, Bosnia and Herzegovina, Brazil, Canada, Georgia, Iran, Israel, Kazakhstan, Lebanon, Moldova, Montenegro, Morocco, North Macedonia, Russia, Serbia, Switzerland, Tunisia, Turkey, Ukraine, United Kingdom or Vatican City.\nIf you have successfully secured financing for your studies through a DAAD scholarship, then you can apply directly to the University of Passau for your place of study.\nSpecial case: the 'Helmut-Schmidt-Programme (Public Policy and Good Governance, PPGG)'\nAt the Universit of Passau, two Master's programmes are closely linked with the DAAD-PPGG scholarship programme:\nM.A. Governance and Public Policy - Helmut-Schmidt-Programme\nM.A. Development Studies - Helmut-Schmidt-Programme\nFor those two schemes, applications go through a special applications portal.\nFor all other schemes, please see the page about applying as a DAAD-funded scholar.\nTo become a Master's student at the University of Passau, you will have to apply through uni-assist if all of the following statements apply to you:\nYou obtained your undergraduate degree outside the EU/EEA\nNone of the exceptions listed under \"Who can submit their application directly to the University of Passau?\" apply to you\nYou don't have confirmation of a DAAD scholarship for your studies\nIf you are interested in attaining a doctorate and you want to apply to undertake doctoral study in Passau, please visit the web pages of the Graduate Centre and the Faculties to find out about the application process.\nEnrolment for doctoral students\nIf you have already been accepted as a doctoral student a the University of Passau, you have the option to enrol and obtain a student card. Please see the doctoral students' enrolment page for more information.\nModal\nShare content via\nFacebook\nLinkedIn\nE-mail",
+  "blocks": [
+    {
+      "text": "Information for...",
+      "locator": "HTML h2 block 1"
+    },
+    {
+      "text": "Current students",
+      "locator": "HTML h3 block 3"
+    },
+    {
+      "text": "Prospective students",
+      "locator": "HTML h3 block 4"
+    },
+    {
+      "text": "Academics",
+      "locator": "HTML h3 block 5"
+    },
+    {
+      "text": "Early career researchers",
+      "locator": "HTML h3 block 6"
+    },
+    {
+      "text": "Businesses",
+      "locator": "HTML h3 block 7"
+    },
+    {
+      "text": "Alumni and friends",
+      "locator": "HTML h3 block 8"
+    },
+    {
+      "text": "Staff",
+      "locator": "HTML h3 block 9"
+    },
+    {
+      "text": "Media representatives",
+      "locator": "HTML h3 block 10"
+    },
+    {
+      "text": "Faculties & facilities",
+      "locator": "HTML h2 block 11"
+    },
+    {
+      "text": "Administration",
+      "locator": "HTML h2 block 12"
+    },
+    {
+      "text": "Central facilities",
+      "locator": "HTML h2 block 13"
+    },
+    {
+      "text": "Faculties",
+      "locator": "HTML h2 block 14"
+    },
+    {
+      "text": "Faculty of Law",
+      "locator": "HTML h3 block 15"
+    },
+    {
+      "text": "Faculty of Social and Educational Sciences",
+      "locator": "HTML h3 block 16"
+    },
+    {
+      "text": "Faculty of Humanities and Cultural Studies",
+      "locator": "HTML h3 block 17"
+    },
+    {
+      "text": "School of Business, Economics and Information Systems",
+      "locator": "HTML h3 block 18"
+    },
+    {
+      "text": "Faculty of Computer Science and Mathematics",
+      "locator": "HTML h3 block 19"
+    },
+    {
+      "text": "Graduate Centre",
+      "locator": "HTML li block 21"
+    },
+    {
+      "text": "PICAIS",
+      "locator": "HTML li block 22"
+    },
+    {
+      "text": "Sports Centre",
+      "locator": "HTML li block 23"
+    },
+    {
+      "text": "Language Centre",
+      "locator": "HTML li block 24"
+    },
+    {
+      "text": "University Library",
+      "locator": "HTML li block 25"
+    },
+    {
+      "text": "Centre for Information Technology and Media Services",
+      "locator": "HTML li block 26"
+    },
+    {
+      "text": "Teacher Education Centre",
+      "locator": "HTML li block 27"
+    },
+    {
+      "text": "Research Strategy & Science Communication",
+      "locator": "HTML li block 28"
+    },
+    {
+      "text": "Executive Support Unit for Health and Safety",
+      "locator": "HTML li block 29"
+    },
+    {
+      "text": "Executive Support Unit for Climate Action Management",
+      "locator": "HTML li block 30"
+    },
+    {
+      "text": "Executive Support Unit for Competency Development in Study and Teaching",
+      "locator": "HTML li block 31"
+    },
+    {
+      "text": "Executive Support Unit for Process Management",
+      "locator": "HTML li block 32"
+    },
+    {
+      "text": "Managing Office of the Bavarian Higher Education Digitalisation Association (BHEDA)",
+      "locator": "HTML li block 33"
+    },
+    {
+      "text": "Research Services",
+      "locator": "HTML li block 34"
+    },
+    {
+      "text": "Heading",
+      "locator": "HTML h2 block 42"
+    },
+    {
+      "text": "Apply",
+      "locator": "HTML li block 43"
+    },
+    {
+      "text": "Study options",
+      "locator": "HTML li block 44"
+    },
+    {
+      "text": "Academic Advice Service",
+      "locator": "HTML li block 45"
+    },
+    {
+      "text": "Course catalogue",
+      "locator": "HTML li block 46"
+    },
+    {
+      "text": "International Office",
+      "locator": "HTML li block 47"
+    },
+    {
+      "text": "Careers and Competencies",
+      "locator": "HTML li block 48"
+    },
+    {
+      "text": "Examinations Office",
+      "locator": "HTML li block 49"
+    },
+    {
+      "text": "Student Services Association",
+      "locator": "HTML li block 51"
+    },
+    {
+      "text": "de",
+      "locator": "HTML li block 53"
+    },
+    {
+      "text": "Application methods overview",
+      "locator": "HTML h1 block 65"
+    },
+    {
+      "text": "There are two main application procedures for getting a place of study at the University of Passau: direct applications and applications via uni-assist. Which one you should use depends on your university entrance qualification and on whether you are a DAAD scholarship recipient.",
+      "locator": "HTML p block 66"
+    },
+    {
+      "text": "If you have obtained a German higher education entrance qualification ('Hochschulzugangsberechtigung') for example the Abitur, then you can apply or enrol directly through the applications portal of the University of Passau.",
+      "locator": "HTML p block 67"
+    },
+    {
+      "text": "The same process also applies if any of the following applies to you:",
+      "locator": "HTML p block 68"
+    },
+    {
+      "text": "You have obtained a higher education entrance qualification from an EU or an EEA country",
+      "locator": "HTML li block 69"
+    },
+    {
+      "text": "You have obtained a German higher education entrance qualification abroad (for example at a German school that is based abroad)",
+      "locator": "HTML li block 70"
+    },
+    {
+      "text": "You have been issued with a higher education entrance certificate by a German Zeugnisanerkennungsstelle (Office for the evaluation and recognition of educational certificates)",
+      "locator": "HTML li block 71"
+    },
+    {
+      "text": "You have passed the assessment examination ('Feststellungsprüfung') of a preparatory course at a German Studienkolleg.",
+      "locator": "HTML li block 72"
+    },
+    {
+      "text": "For more information...",
+      "locator": "HTML h4 block 73"
+    },
+    {
+      "text": "...see our page abour enrolment.",
+      "locator": "HTML p block 74"
+    },
+    {
+      "text": "If you have successfully secured financing for your studies through a DAAD scholarship, then you can apply directly to the University of Passau for your place of study:",
+      "locator": "HTML p block 75"
+    },
+    {
+      "text": "Applying as a DAAD-funded scholar",
+      "locator": "HTML p block 76"
+    },
+    {
+      "text": "As a degree-seeking student (i.e. not a visiting student through an exchange programme), you will have to apply through uni-assist if the following statements apply to you:",
+      "locator": "HTML p block 77"
+    },
+    {
+      "text": "You have obtained your higher education entrance qualification in an education system outside the EEA, and...",
+      "locator": "HTML li block 78"
+    },
+    {
+      "text": "none of the other scenarios listed under \"Who can submit their application directly to the University of Passau?\" apply to you, and...",
+      "locator": "HTML li block 79"
+    },
+    {
+      "text": "you don't have confirmation of a DAAD scholarship for your studies",
+      "locator": "HTML li block 80"
+    },
+    {
+      "text": "Please note that this applies to you even if you are a German national.",
+      "locator": "HTML p block 81"
+    },
+    {
+      "text": "...see our page about applying via uni-assist.",
+      "locator": "HTML p block 83"
+    },
+    {
+      "text": "If you are applying for a Master's programme, the main factor determining which application procedure you should use is the country where you obtained your first university degree.",
+      "locator": "HTML p block 84"
+    },
+    {
+      "text": "If one of the following conditions applies to you, then you can apply directly through the applications portal of the University of Passau:",
+      "locator": "HTML p block 85"
+    },
+    {
+      "text": "You graduated with a degree (e. g. a Bachelor's degree) from a higher education provider in Germany or any other EU/EEA member state.",
+      "locator": "HTML li block 86"
+    },
+    {
+      "text": "You are applying for a place on the LL.M. German Law for foreign graduates or the LL.M. Legal Informatics",
+      "locator": "HTML li block 87"
+    },
+    {
+      "text": "You are applying for a place on the M.Sc. Computer Science, M.Sc. Artificial Intelligence Engineering or the M.Sc. Mathematics and you have graduated from a higher education provider in one of the following countries: Albania, Algeria, Andorra, Armenia, Azerbaijan, Belarus, Bosnia and Herzegovina, Brazil, Canada, Georgia, Iran, Israel, Kazakhstan, Lebanon, Moldova, Montenegro, Morocco, North Macedonia, Russia, Serbia, Switzerland, Tunisia, Turkey, Ukraine, United Kingdom or Vatican City.",
+      "locator": "HTML li block 88"
+    },
+    {
+      "text": "If you have successfully secured financing for your studies through a DAAD scholarship, then you can apply directly to the University of Passau for your place of study.",
+      "locator": "HTML p block 89"
+    },
+    {
+      "text": "Special case: the 'Helmut-Schmidt-Programme (Public Policy and Good Governance, PPGG)'",
+      "locator": "HTML h4 block 90"
+    },
+    {
+      "text": "At the Universit of Passau, two Master's programmes are closely linked with the DAAD-PPGG scholarship programme:",
+      "locator": "HTML p block 91"
+    },
+    {
+      "text": "M.A. Governance and Public Policy - Helmut-Schmidt-Programme",
+      "locator": "HTML li block 92"
+    },
+    {
+      "text": "M.A. Development Studies - Helmut-Schmidt-Programme",
+      "locator": "HTML li block 93"
+    },
+    {
+      "text": "For those two schemes, applications go through a special applications portal.",
+      "locator": "HTML p block 94"
+    },
+    {
+      "text": "For all other schemes, please see the page about applying as a DAAD-funded scholar.",
+      "locator": "HTML p block 95"
+    },
+    {
+      "text": "To become a Master's student at the University of Passau, you will have to apply through uni-assist if all of the following statements apply to you:",
+      "locator": "HTML p block 96"
+    },
+    {
+      "text": "You obtained your undergraduate degree outside the EU/EEA",
+      "locator": "HTML li block 97"
+    },
+    {
+      "text": "None of the exceptions listed under \"Who can submit their application directly to the University of Passau?\" apply to you",
+      "locator": "HTML li block 98"
+    },
+    {
+      "text": "You don't have confirmation of a DAAD scholarship for your studies",
+      "locator": "HTML li block 99"
+    },
+    {
+      "text": "If you are interested in attaining a doctorate and you want to apply to undertake doctoral study in Passau, please visit the web pages of the Graduate Centre and the Faculties to find out about the application process.",
+      "locator": "HTML p block 103"
+    },
+    {
+      "text": "Enrolment for doctoral students",
+      "locator": "HTML h3 block 104"
+    },
+    {
+      "text": "If you have already been accepted as a doctoral student a the University of Passau, you have the option to enrol and obtain a student card. Please see the doctoral students' enrolment page for more information.",
+      "locator": "HTML p block 105"
+    },
+    {
+      "text": "Modal",
+      "locator": "HTML h2 block 106"
+    },
+    {
+      "text": "Share content via",
+      "locator": "HTML h2 block 107"
+    },
+    {
+      "text": "Facebook",
+      "locator": "HTML li block 108"
+    },
+    {
+      "text": "LinkedIn",
+      "locator": "HTML li block 109"
+    },
+    {
+      "text": "E-mail",
+      "locator": "HTML li block 110"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://www.uni-passau.de/en/apply/application-methods",
+      "label": "Heading"
+    },
+    {
+      "url": "https://www.uni-passau.de/bewerbung-einschreibung/bewerbungsmodalitaeten",
+      "label": "de"
+    }
+  ],
+  "robotsStatus": 200,
+  "redirects": [],
+  "etag": null,
+  "lastModified": "Wed, 21 Oct 2026 01:59:09 GMT",
+  "extractorVersion": 2
+}

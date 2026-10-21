@@ -1,0 +1,227 @@
+{
+  "schemaVersion": 1,
+  "programId": "de-fau-msc-data-science",
+  "revision": "82c5ffeb949b3f580fa4d914cae2bb3a8e9e0832fc31cd377ee3423ac47eae13",
+  "reviewer": "",
+  "reviewedAt": "",
+  "note": "",
+  "requirementsComplete": false,
+  "applicability": {
+    "semesters": [],
+    "evidence": [],
+    "explanation": ""
+  },
+  "sources": [
+    {
+      "snapshotId": "156ab430baa808ed3a74c6ea979a16e899780d19a8f37a1faa80d87d1e314366",
+      "decision": "pending"
+    },
+    {
+      "snapshotId": "ec78e60b06a0c90fe9400d0743ed9854c0103aa0887584cd44cfcffceb3a855a",
+      "decision": "pending"
+    },
+    {
+      "snapshotId": "45aaa50092eeaa126cd115e7a1139ec9e5f4ac5ee66d02d8cf8f63bb73f75b3b",
+      "decision": "pending"
+    },
+    {
+      "snapshotId": "65308a8aa6c7a97fda9ccdb2d0fdd7f15ac9192705afc720d3b2786fbd3dcab4",
+      "decision": "pending"
+    },
+    {
+      "snapshotId": "a9a11c55641d31e27db6e13d329e8264615acc78af48376f29cebac3be72526a",
+      "decision": "pending"
+    },
+    {
+      "snapshotId": "8b9cd513131ae954e1f49d1647596483fce58913110da72ed3fa828d20e0a63a",
+      "decision": "pending"
+    }
+  ],
+  "requirements": [
+    {
+      "decision": "pending",
+      "requirement": {
+        "id": "academic",
+        "kind": "academic",
+        "label": "Accepted first degrees and equivalent competence profiles",
+        "sourceText": "A completed Bachelor’s degree in Mathematics, Industrial Mathematics, Mathematical Economy, Computer Science, Data Science, or Physics from FAU or another equivalent German or international degree that is not significantly different with regard to the competence profile taught in the respective degree program. Please note that your competence profile cannot be evaluated in advance, but only by the admission committee after completing the application process (described below).",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Accepted first degrees and equivalent competence profiles. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
+            "quote": "A completed Bachelor’s degree in Mathematics, Industrial Mathematics, Mathematical Economy, Computer Science, Data Science, or Physics from FAU or another equivalent German or international degree that is not significantly different with regard to the competence profile taught in the respective degree program. Please note that your competence profile cannot be evaluated in advance, but only by the admission committee after completing the application process (described below).",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:40.495Z",
+            "validFor": [],
+            "locator": "HTML li block 98",
+            "retrievedAt": "2026-10-21T12:05:40.495Z",
+            "snapshotId": "156ab430baa808ed3a74c6ea979a16e899780d19a8f37a1faa80d87d1e314366",
+            "contentHash": "de6b33a557f32b028adce3900f9c729a35457b03b8b2516ee0b673bc0b2e2c19"
+          }
+        ]
+      }
+    },
+    {
+      "decision": "pending",
+      "requirement": {
+        "id": "grades",
+        "kind": "gpa",
+        "label": "Grade thresholds and interview route",
+        "sourceText": "A Grade Point Average (GPA) of 2.5 or better with respect to the German grading system. Candidates with an admissible degree (described above) and a GPA between 2.6 and 2.8 are invited for a short online interview in which their knowledge in calculus, linear algebra, algorithms and data structures is evaluated.",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Grade thresholds and interview route. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
+            "quote": "A Grade Point Average (GPA) of 2.5 or better with respect to the German grading system. Candidates with an admissible degree (described above) and a GPA between 2.6 and 2.8 are invited for a short online interview in which their knowledge in calculus, linear algebra, algorithms and data structures is evaluated.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:40.495Z",
+            "validFor": [],
+            "locator": "HTML li block 99",
+            "retrievedAt": "2026-10-21T12:05:40.495Z",
+            "snapshotId": "156ab430baa808ed3a74c6ea979a16e899780d19a8f37a1faa80d87d1e314366",
+            "contentHash": "de6b33a557f32b028adce3900f9c729a35457b03b8b2516ee0b673bc0b2e2c19"
+          }
+        ]
+      }
+    },
+    {
+      "decision": "pending",
+      "requirement": {
+        "id": "language",
+        "kind": "language",
+        "label": "English proficiency and exemptions (wording requires reconciliation)",
+        "sourceText": "As the Master programme is in English we are asking for a certificate of upper intermediate English (level B2) are mandatory. Even if your undergraduate degree was taught in English we recommend to submit a language certificate. For everyday life and for internships and working student jobs, we recommend solid knowledge (B1) of German, but a certificate is not necessary for the application.\n\nEnglish proficiency at level B2 CEFR (vantage or upper intermediate) or six years of English classes at a German secondary school (Gymnasium). Applicants who have completed their university entrance qualifications or their first degree in English are not required to provide proof of proficiency in English.",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "English proficiency and exemptions (wording requires reconciliation). Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
+            "quote": "As the Master programme is in English we are asking for a certificate of upper intermediate English (level B2) are mandatory. Even if your undergraduate degree was taught in English we recommend to submit a language certificate. For everyday life and for internships and working student jobs, we recommend solid knowledge (B1) of German, but a certificate is not necessary for the application.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:40.495Z",
+            "validFor": [],
+            "locator": "HTML li block 96",
+            "retrievedAt": "2026-10-21T12:05:40.495Z",
+            "snapshotId": "156ab430baa808ed3a74c6ea979a16e899780d19a8f37a1faa80d87d1e314366",
+            "contentHash": "de6b33a557f32b028adce3900f9c729a35457b03b8b2516ee0b673bc0b2e2c19"
+          },
+          {
+            "url": "https://www.fau.eu/degree-program/data-science-m-sc/",
+            "quote": "English proficiency at level B2 CEFR (vantage or upper intermediate) or six years of English classes at a German secondary school (Gymnasium). Applicants who have completed their university entrance qualifications or their first degree in English are not required to provide proof of proficiency in English.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:40.495Z",
+            "validFor": [],
+            "locator": "HTML li block 100",
+            "retrievedAt": "2026-10-21T12:05:40.495Z",
+            "snapshotId": "156ab430baa808ed3a74c6ea979a16e899780d19a8f37a1faa80d87d1e314366",
+            "contentHash": "de6b33a557f32b028adce3900f9c729a35457b03b8b2516ee0b673bc0b2e2c19"
+          }
+        ]
+      }
+    },
+    {
+      "decision": "pending",
+      "requirement": {
+        "id": "faculty-language",
+        "kind": "language",
+        "label": "Faculty language proof age limit and exemptions",
+        "sourceText": "English proficiency at level B2 CEFR (vantage or upper intermediate, not be older than 2 years) or six years of English classes at a German secondary school (Gymnasium). Applicants who have completed their university entrance qualifications or their first degree in English are not required to provide proof of proficiency in English. A list of accepted language proficiency certificates can be found here.",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Faculty language proof age limit and exemptions. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.math-datascience.nat.fau.de/im-studium/masterstudiengaenge/master-data-science/",
+            "quote": "English proficiency at level B2 CEFR (vantage or upper intermediate, not be older than 2 years) or six years of English classes at a German secondary school (Gymnasium). Applicants who have completed their university entrance qualifications or their first degree in English are not required to provide proof of proficiency in English. A list of accepted language proficiency certificates can be found here.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:09:34.198Z",
+            "validFor": [],
+            "locator": "HTML li block 80",
+            "retrievedAt": "2026-10-21T12:09:34.198Z",
+            "snapshotId": "ec78e60b06a0c90fe9400d0743ed9854c0103aa0887584cd44cfcffceb3a855a",
+            "contentHash": "acd19a96117c02ea1890b33387d1365e81130c10fc642970fa9eabfed5ab9a91"
+          }
+        ]
+      }
+    },
+    {
+      "decision": "pending",
+      "requirement": {
+        "id": "inventory-review",
+        "kind": "other",
+        "label": "Full admission regulations and applicability review",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "The extracted inventory is not complete. Verify regulations, applicant categories, exemptions, selection and semester validity."
+        },
+        "evidence": []
+      }
+    }
+  ],
+  "removedRequirements": [],
+  "facts": [
+    {
+      "id": "academic",
+      "decision": "pending"
+    },
+    {
+      "id": "grades",
+      "decision": "pending"
+    },
+    {
+      "id": "language",
+      "decision": "pending"
+    },
+    {
+      "id": "faculty-language",
+      "decision": "pending"
+    },
+    {
+      "id": "credits",
+      "decision": "pending"
+    },
+    {
+      "id": "deadline",
+      "decision": "pending"
+    },
+    {
+      "id": "application",
+      "decision": "pending"
+    },
+    {
+      "id": "tuition",
+      "decision": "pending"
+    },
+    {
+      "id": "application-fee",
+      "decision": "pending"
+    },
+    {
+      "id": "intake-dates",
+      "decision": "pending"
+    },
+    {
+      "id": "semester",
+      "decision": "pending"
+    }
+  ]
+}

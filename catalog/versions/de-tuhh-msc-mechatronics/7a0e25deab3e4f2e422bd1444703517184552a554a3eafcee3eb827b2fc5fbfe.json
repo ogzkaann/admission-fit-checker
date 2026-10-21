@@ -1,0 +1,318 @@
+{
+  "schemaVersion": 1,
+  "programId": "de-tuhh-msc-mechatronics",
+  "revision": "7a0e25deab3e4f2e422bd1444703517184552a554a3eafcee3eb827b2fc5fbfe",
+  "parentRevision": "96911cb881058dc1d0aed9e82273b58c920360c911d31b69c16bc09376999a5d",
+  "extractedAt": "2026-10-21T12:12:21.327Z",
+  "recipeHash": "84546809b066aa2946e33bbd3aad759fb66c9f1bb4c4da640e67c5a8945eea81",
+  "program": {
+    "id": "de-tuhh-msc-mechatronics",
+    "university": "Hamburg University of Technology",
+    "programName": "Mechatronics",
+    "degreeType": "master",
+    "language": "English",
+    "country": "Germany",
+    "city": "Hamburg",
+    "description": "Master of Science in Mechatronics. Official-source pilot; full subject-specific admission rules await review.",
+    "sourceUrl": "https://www.tuhh.de/tuhh/studium/vor-dem-studium/studienangebot/international-study-programs/mechatronics",
+    "requiredDocuments": [],
+    "requirements": [
+      {
+        "id": "academic",
+        "kind": "academic",
+        "label": "Prior mechatronics or mechanical engineering degree",
+        "sourceText": "Bachelor's degree in Mechatronics or Mechanical Engineering, see subject-specific requirements",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Prior mechatronics or mechanical engineering degree. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.tuhh.de/tuhh/studium/vor-dem-studium/studienangebot/international-study-programs/mechatronics",
+            "quote": "Bachelor's degree in Mechatronics or Mechanical Engineering, see subject-specific requirements",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:50.354Z",
+            "validFor": [],
+            "locator": "HTML td block 13",
+            "retrievedAt": "2026-10-21T12:05:50.354Z",
+            "snapshotId": "7c4a731bc9a46b498111583b68e327bf0d420ca4036daa3998a6d5de8ad04940",
+            "contentHash": "8f289c6ca0d70007785e9f12176b6285aa23d736fce620dcd07d2e4832c58e51"
+          }
+        ]
+      },
+      {
+        "id": "language",
+        "kind": "language",
+        "label": "English certificate types and scores",
+        "sourceText": "Applicants should hold a Bachelor's or equivalent degree in mechatronics engineering or mechanical engineering and must show a very good previous academic performance as well as sufficient proficiency in English by passing TOEFL with a minimum score of 577 (paper-based) / 90 (internet-based) or IELTS with a minimum score of 6.5.\n\nPlease note: The TOEFL ITP is not accepted by TUHH.",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "English certificate types and scores. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.tuhh.de/tuhh/studium/vor-dem-studium/studienangebot/international-study-programs/mechatronics",
+            "quote": "Applicants should hold a Bachelor's or equivalent degree in mechatronics engineering or mechanical engineering and must show a very good previous academic performance as well as sufficient proficiency in English by passing TOEFL with a minimum score of 577 (paper-based) / 90 (internet-based) or IELTS with a minimum score of 6.5.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:50.354Z",
+            "validFor": [],
+            "locator": "HTML p block 38",
+            "retrievedAt": "2026-10-21T12:05:50.354Z",
+            "snapshotId": "7c4a731bc9a46b498111583b68e327bf0d420ca4036daa3998a6d5de8ad04940",
+            "contentHash": "8f289c6ca0d70007785e9f12176b6285aa23d736fce620dcd07d2e4832c58e51"
+          },
+          {
+            "url": "https://www.tuhh.de/tuhh/studium/vor-dem-studium/studienangebot/international-study-programs/mechatronics",
+            "quote": "Please note: The TOEFL ITP is not accepted by TUHH.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:50.354Z",
+            "validFor": [],
+            "locator": "HTML p block 39",
+            "retrievedAt": "2026-10-21T12:05:50.354Z",
+            "snapshotId": "7c4a731bc9a46b498111583b68e327bf0d420ca4036daa3998a6d5de8ad04940",
+            "contentHash": "8f289c6ca0d70007785e9f12176b6285aa23d736fce620dcd07d2e4832c58e51"
+          }
+        ]
+      },
+      {
+        "id": "credits",
+        "kind": "ects",
+        "label": "Subject-specific mathematics and engineering preparation",
+        "sourceText": "As can be seen from those requirements, we expect applicants to have e.g. 30 CP worth of courses covering fundamental mathematics - the equivalent of one semester. Additionally, we request profound knowledge in engineering mechanics as well as control theory and fundamentals of mechatronics.",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "Subject-specific mathematics and engineering preparation. Review the full quoted clause, alternatives and applicability."
+        },
+        "evidence": [
+          {
+            "url": "https://www.tuhh.de/tuhh/studium/vor-dem-studium/studienangebot/international-study-programs/mechatronics",
+            "quote": "As can be seen from those requirements, we expect applicants to have e.g. 30 CP worth of courses covering fundamental mathematics - the equivalent of one semester. Additionally, we request profound knowledge in engineering mechanics as well as control theory and fundamentals of mechatronics.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:50.354Z",
+            "validFor": [],
+            "locator": "HTML p block 41",
+            "retrievedAt": "2026-10-21T12:05:50.354Z",
+            "snapshotId": "7c4a731bc9a46b498111583b68e327bf0d420ca4036daa3998a6d5de8ad04940",
+            "contentHash": "8f289c6ca0d70007785e9f12176b6285aa23d736fce620dcd07d2e4832c58e51"
+          }
+        ]
+      },
+      {
+        "id": "inventory-review",
+        "kind": "other",
+        "label": "Full admission regulations and applicability review",
+        "mandatory": true,
+        "rule": {
+          "type": "manual",
+          "explanation": "The extracted inventory is not complete. Verify regulations, applicant categories, exemptions, selection and semester validity."
+        },
+        "evidence": []
+      }
+    ],
+    "admissionText": "academic: Bachelor's degree in Mechatronics or Mechanical Engineering, see subject-specific requirements\n\nlanguage: Applicants should hold a Bachelor's or equivalent degree in mechatronics engineering or mechanical engineering and must show a very good previous academic performance as well as sufficient proficiency in English by passing TOEFL with a minimum score of 577 (paper-based) / 90 (internet-based) or IELTS with a minimum score of 6.5.\n\nPlease note: The TOEFL ITP is not accepted by TUHH.\n\ncredits: As can be seen from those requirements, we expect applicants to have e.g. 30 CP worth of courses covering fundamental mathematics - the equivalent of one semester. Additionally, we request profound knowledge in engineering mechanics as well as control theory and fundamentals of mechatronics.\n\ndeadline: You can apply annually for the winter semester in the period from the December 1st to February 1st. For this you need a Bachelor’s or equivalent degree in Mechatronics, Mechanical Engineering or related fields (see the subject-specific requirements here). In addition, you need sufficiently good English language skills. You can find more infomation about the English language requirements and other documents needed for the application here. We conduct an online application procedure.\n\napplication: You can apply annually for the winter semester in the period from the December 1st to February 1st. For this you need a Bachelor’s or equivalent degree in Mechatronics, Mechanical Engineering or related fields (see the subject-specific requirements here). In addition, you need sufficiently good English language skills. You can find more infomation about the English language requirements and other documents needed for the application here. We conduct an online application procedure.\n\ntuition: Apart from a semester contribution of approx. 300€ there no fees for the master in mechatronics at TUHH. Further information regarding the semester contribution as well as expenses, please check the following link: Fees and expenses",
+    "origin": "catalog",
+    "isDemo": false,
+    "createdAt": "2026-10-18T17:03:21.293Z",
+    "schemaVersion": 2,
+    "verificationStatus": "stale",
+    "sources": [
+      {
+        "url": "https://www.tuhh.de/tuhh/studium/vor-dem-studium/studienangebot/international-study-programs/mechatronics",
+        "quote": "Mechatronics, Master of Science",
+        "status": "unverified",
+        "sourceType": "official",
+        "lastChecked": "2026-10-21T12:05:50.354Z",
+        "validFor": [],
+        "locator": "Source document identity",
+        "retrievedAt": "2026-10-21T12:05:50.354Z",
+        "snapshotId": "7c4a731bc9a46b498111583b68e327bf0d420ca4036daa3998a6d5de8ad04940",
+        "contentHash": "8f289c6ca0d70007785e9f12176b6285aa23d736fce620dcd07d2e4832c58e51"
+      },
+      {
+        "url": "https://www.tuhh.de/tuhh/en/studying/before-studying/application",
+        "quote": "Your path to studying at TUHH",
+        "status": "unverified",
+        "sourceType": "official",
+        "lastChecked": "2026-10-21T12:12:21.246Z",
+        "validFor": [],
+        "locator": "Source document identity",
+        "retrievedAt": "2026-10-21T12:12:21.246Z",
+        "snapshotId": "9cfaf82c1fd05f9cb8e371c0f1dd0a5d933f7ca374abd549dcce67ba97043035",
+        "contentHash": "1095051fbe043ffb734c423475b11b5218e24b7a4ec0fc628fc1506ef3f68565"
+      }
+    ],
+    "validFor": [],
+    "requirementsComplete": false,
+    "facts": [
+      {
+        "id": "academic",
+        "category": "academic",
+        "value": "Bachelor's degree in Mechatronics or Mechanical Engineering, see subject-specific requirements",
+        "evidence": [
+          {
+            "url": "https://www.tuhh.de/tuhh/studium/vor-dem-studium/studienangebot/international-study-programs/mechatronics",
+            "quote": "Bachelor's degree in Mechatronics or Mechanical Engineering, see subject-specific requirements",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:50.354Z",
+            "validFor": [],
+            "locator": "HTML td block 13",
+            "retrievedAt": "2026-10-21T12:05:50.354Z",
+            "snapshotId": "7c4a731bc9a46b498111583b68e327bf0d420ca4036daa3998a6d5de8ad04940",
+            "contentHash": "8f289c6ca0d70007785e9f12176b6285aa23d736fce620dcd07d2e4832c58e51"
+          }
+        ]
+      },
+      {
+        "id": "language",
+        "category": "language",
+        "value": "Applicants should hold a Bachelor's or equivalent degree in mechatronics engineering or mechanical engineering and must show a very good previous academic performance as well as sufficient proficiency in English by passing TOEFL with a minimum score of 577 (paper-based) / 90 (internet-based) or IELTS with a minimum score of 6.5.\n\nPlease note: The TOEFL ITP is not accepted by TUHH.",
+        "evidence": [
+          {
+            "url": "https://www.tuhh.de/tuhh/studium/vor-dem-studium/studienangebot/international-study-programs/mechatronics",
+            "quote": "Applicants should hold a Bachelor's or equivalent degree in mechatronics engineering or mechanical engineering and must show a very good previous academic performance as well as sufficient proficiency in English by passing TOEFL with a minimum score of 577 (paper-based) / 90 (internet-based) or IELTS with a minimum score of 6.5.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:50.354Z",
+            "validFor": [],
+            "locator": "HTML p block 38",
+            "retrievedAt": "2026-10-21T12:05:50.354Z",
+            "snapshotId": "7c4a731bc9a46b498111583b68e327bf0d420ca4036daa3998a6d5de8ad04940",
+            "contentHash": "8f289c6ca0d70007785e9f12176b6285aa23d736fce620dcd07d2e4832c58e51"
+          },
+          {
+            "url": "https://www.tuhh.de/tuhh/studium/vor-dem-studium/studienangebot/international-study-programs/mechatronics",
+            "quote": "Please note: The TOEFL ITP is not accepted by TUHH.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:50.354Z",
+            "validFor": [],
+            "locator": "HTML p block 39",
+            "retrievedAt": "2026-10-21T12:05:50.354Z",
+            "snapshotId": "7c4a731bc9a46b498111583b68e327bf0d420ca4036daa3998a6d5de8ad04940",
+            "contentHash": "8f289c6ca0d70007785e9f12176b6285aa23d736fce620dcd07d2e4832c58e51"
+          }
+        ]
+      },
+      {
+        "id": "credits",
+        "category": "credits",
+        "value": "As can be seen from those requirements, we expect applicants to have e.g. 30 CP worth of courses covering fundamental mathematics - the equivalent of one semester. Additionally, we request profound knowledge in engineering mechanics as well as control theory and fundamentals of mechatronics.",
+        "note": "The page uses CP, not an explicit ECTS conversion. Review the linked subject requirements.",
+        "evidence": [
+          {
+            "url": "https://www.tuhh.de/tuhh/studium/vor-dem-studium/studienangebot/international-study-programs/mechatronics",
+            "quote": "As can be seen from those requirements, we expect applicants to have e.g. 30 CP worth of courses covering fundamental mathematics - the equivalent of one semester. Additionally, we request profound knowledge in engineering mechanics as well as control theory and fundamentals of mechatronics.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:50.354Z",
+            "validFor": [],
+            "locator": "HTML p block 41",
+            "retrievedAt": "2026-10-21T12:05:50.354Z",
+            "snapshotId": "7c4a731bc9a46b498111583b68e327bf0d420ca4036daa3998a6d5de8ad04940",
+            "contentHash": "8f289c6ca0d70007785e9f12176b6285aa23d736fce620dcd07d2e4832c58e51"
+          }
+        ]
+      },
+      {
+        "id": "deadline",
+        "category": "deadline",
+        "value": "You can apply annually for the winter semester in the period from the December 1st to February 1st. For this you need a Bachelor’s or equivalent degree in Mechatronics, Mechanical Engineering or related fields (see the subject-specific requirements here). In addition, you need sufficiently good English language skills. You can find more infomation about the English language requirements and other documents needed for the application here. We conduct an online application procedure.",
+        "note": "Annual winter intake; specific calendar-year validity unverified.",
+        "evidence": [
+          {
+            "url": "https://www.tuhh.de/tuhh/studium/vor-dem-studium/studienangebot/international-study-programs/mechatronics",
+            "quote": "You can apply annually for the winter semester in the period from the December 1st to February 1st. For this you need a Bachelor’s or equivalent degree in Mechatronics, Mechanical Engineering or related fields (see the subject-specific requirements here). In addition, you need sufficiently good English language skills. You can find more infomation about the English language requirements and other documents needed for the application here. We conduct an online application procedure.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:50.354Z",
+            "validFor": [],
+            "locator": "HTML p block 43",
+            "retrievedAt": "2026-10-21T12:05:50.354Z",
+            "snapshotId": "7c4a731bc9a46b498111583b68e327bf0d420ca4036daa3998a6d5de8ad04940",
+            "contentHash": "8f289c6ca0d70007785e9f12176b6285aa23d736fce620dcd07d2e4832c58e51"
+          }
+        ]
+      },
+      {
+        "id": "application",
+        "category": "application",
+        "value": "You can apply annually for the winter semester in the period from the December 1st to February 1st. For this you need a Bachelor’s or equivalent degree in Mechatronics, Mechanical Engineering or related fields (see the subject-specific requirements here). In addition, you need sufficiently good English language skills. You can find more infomation about the English language requirements and other documents needed for the application here. We conduct an online application procedure.",
+        "evidence": [
+          {
+            "url": "https://www.tuhh.de/tuhh/studium/vor-dem-studium/studienangebot/international-study-programs/mechatronics",
+            "quote": "You can apply annually for the winter semester in the period from the December 1st to February 1st. For this you need a Bachelor’s or equivalent degree in Mechatronics, Mechanical Engineering or related fields (see the subject-specific requirements here). In addition, you need sufficiently good English language skills. You can find more infomation about the English language requirements and other documents needed for the application here. We conduct an online application procedure.",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:50.354Z",
+            "validFor": [],
+            "locator": "HTML p block 43",
+            "retrievedAt": "2026-10-21T12:05:50.354Z",
+            "snapshotId": "7c4a731bc9a46b498111583b68e327bf0d420ca4036daa3998a6d5de8ad04940",
+            "contentHash": "8f289c6ca0d70007785e9f12176b6285aa23d736fce620dcd07d2e4832c58e51"
+          }
+        ]
+      },
+      {
+        "id": "tuition",
+        "category": "tuition",
+        "value": "Apart from a semester contribution of approx. 300€ there no fees for the master in mechatronics at TUHH. Further information regarding the semester contribution as well as expenses, please check the following link: Fees and expenses",
+        "note": "Program overview amounts are not verified for an admission year.",
+        "evidence": [
+          {
+            "url": "https://www.tuhh.de/tuhh/studium/vor-dem-studium/studienangebot/international-study-programs/mechatronics",
+            "quote": "Apart from a semester contribution of approx. 300€ there no fees for the master in mechatronics at TUHH. Further information regarding the semester contribution as well as expenses, please check the following link: Fees and expenses",
+            "status": "unverified",
+            "sourceType": "official",
+            "lastChecked": "2026-10-21T12:05:50.354Z",
+            "validFor": [],
+            "locator": "HTML p block 61",
+            "retrievedAt": "2026-10-21T12:05:50.354Z",
+            "snapshotId": "7c4a731bc9a46b498111583b68e327bf0d420ca4036daa3998a6d5de8ad04940",
+            "contentHash": "8f289c6ca0d70007785e9f12176b6285aa23d736fce620dcd07d2e4832c58e51"
+          }
+        ]
+      },
+      {
+        "id": "semester",
+        "category": "semester",
+        "value": null,
+        "note": "Not established from the fetched sources.",
+        "evidence": []
+      }
+    ],
+    "catalogIssues": [
+      "Automatically extracted draft. Human review and semester applicability are outstanding.",
+      "tuhh-subjects: robots.txt disallows https://www.tuhh.de/t3resources/tuhh/img/studium/dekanate/mb/fachspez._anforderungen_IMPMEC.pdf"
+    ],
+    "retrievedAt": "2026-10-21T12:12:21.246Z",
+    "catalogVersion": "7a0e25deab3e4f2e422bd1444703517184552a554a3eafcee3eb827b2fc5fbfe"
+  },
+  "changes": [
+    {
+      "collection": "sources",
+      "id": "https://www.tuhh.de/tuhh/en/studying/before-studying/application",
+      "change": "added",
+      "before": null,
+      "after": {
+        "url": "https://www.tuhh.de/tuhh/en/studying/before-studying/application",
+        "quote": "Your path to studying at TUHH",
+        "status": "unverified",
+        "sourceType": "official",
+        "lastChecked": "2026-10-21T12:12:21.246Z",
+        "validFor": [],
+        "locator": "Source document identity",
+        "retrievedAt": "2026-10-21T12:12:21.246Z",
+        "snapshotId": "9cfaf82c1fd05f9cb8e371c0f1dd0a5d933f7ca374abd549dcce67ba97043035",
+        "contentHash": "1095051fbe043ffb734c423475b11b5218e24b7a4ec0fc628fc1506ef3f68565"
+      }
+    }
+  ]
+}

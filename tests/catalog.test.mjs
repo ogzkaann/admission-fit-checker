@@ -7,6 +7,7 @@ import { renderToStaticMarkup } from "react-dom/server";
 import { createFetcher, allowedUrl, MAX_BYTES } from "../scripts/catalog/fetch.mjs";
 import { extractProgram, parseSource, hash } from "../scripts/catalog/extract.mjs";
 import { applyReview, assertEvidence, differences, markStale, reviewTemplate, revisionFor } from "../scripts/catalog/core.mjs";
+import { renderReviewReport } from "../scripts/catalog/report.mjs";
 
 const require = createRequire(import.meta.url);
 const { programSchema, programRequirementSchema } = require("../.test-build/domain/eligibilitySchemas.js");
@@ -16,7 +17,7 @@ const { CatalogEvidence } = require("../.test-build/components/CatalogEvidence.j
 const { ProgramCard } = require("../.test-build/components/ProgramCard.js");
 const { askAboutProgram } = require("../.test-build/ai/askProgram.js");
 const schema = { program: programSchema, requirement: programRequirementSchema };
-const now = new Date("2026-10-18T20:00:00Z");
+const now = new Date("2026-10-21T20:00:00Z");
 const url = "https://university.example.invalid/program";
 const hosts = ["university.example.invalid"];
 const json = (path) => JSON.parse(readFileSync(new URL(path, import.meta.url), "utf8"));
@@ -50,6 +51,7 @@ function approvedReview(program) {
   review.sources.forEach((entry) => { entry.decision = "approve"; });
   review.facts.forEach((entry) => { if (program.facts.find((fact) => fact.id === entry.id).value) entry.decision = "approve"; });
   review.requirements = review.requirements.filter((entry) => entry.requirement.id !== "inventory-review").map((entry) => ({ ...entry, decision: "approve" }));
+  review.removedRequirements = [{ id: "inventory-review", reason: "Synthetic fixture contains only the two stated rules; completeness checked for this test.", evidence: program.requirements[0].evidence }];
   review.requirementsComplete = true;
   return review;
 }
@@ -247,6 +249,7 @@ test("reviewed synthetic catalog integrates with Engine V2 and mandatory failure
   const review = approvedReview(program);
   // A deliberately synthetic, evidence-backed language-only catalog fixture.
   review.requirements = review.requirements.filter((entry) => entry.requirement.id === "language");
+  review.removedRequirements.push({ id: "math", reason: "This synthetic regression tests a language-only policy.", evidence: program.requirements[0].evidence });
   const published = applyReview(program, review, snapshots, schema, now);
   const evidence = { documentId: "doc", quote: "English C1", reviewedAt: "2026-10-18" };
   const profile = { id: "local-profile", courses: [], workExperience: "", updatedAt: "2026-10-18", languageCertificates: [{ language: "English", level: "C1", evidence }] };
@@ -304,3 +307,107 @@ test("program Q&A preserves per-document citations and catalog uncertainty witho
   assert.match(unknown.answer, /Information unknown/);
   assert.equal(unknown.citations[0].sourceUrl, undefined);
 });
+
+test("fee table extraction binds program, degree and amount in one source row", async () => {
+  const snapshot = await parseSource(fetched('<main><table><tr><th>Program</th><th>Degree</th><th>Fee</th></tr><tr><td>Synthetic Analytics</td><td>Bachelor</td><td>1000</td></tr><tr><td>Synthetic Analytics</td><td>Master</td><td>4000</td></tr></table></main>'), hosts);
+  const config = seed(); config.extract = [{ id: "tuition", category: "tuition", source: "source", anchor: "Synthetic Analytics | Master | 4000" }];
+  const program = extractProgram(config, { source: snapshot }, {}, now.toISOString());
+  assert.equal(program.facts[0].value, "Synthetic Analytics | Master | 4000");
+  assert.match(program.facts[0].evidence[0].locator, /table row/);
+  assert.doesNotMatch(program.facts[0].value, /1000/);
+  assertEvidence(program.facts[0].evidence[0], { [snapshot.id]: snapshot });
+});
+
+test("bounded PDF-style clause extraction retains an exact quote and fails on missing boundaries", async () => {
+  const snapshot = await parseSource(fetched('<p>Other section. START At least 10 ECTS of research or equivalent work. END Curriculum 120 ECTS.</p>'), hosts);
+  const config = seed(); config.extract[0] = { ...config.extract[0], anchor: "10 ECTS", quoteFrom: "START", quoteUntil: "END" };
+  const program = extractProgram(config, { source: snapshot }, {}, now.toISOString());
+  assert.equal(program.facts[0].value, "START At least 10 ECTS of research or equivalent work.");
+  assert.equal(program.requirements[0].rule.type, "manual", "the equivalent-work alternative cannot be dropped");
+  assertEvidence(program.facts[0].evidence[0], { [snapshot.id]: snapshot });
+  config.extract[0].quoteUntil = "missing boundary";
+  assert.equal(extractProgram(config, { source: snapshot }, {}, now.toISOString()).facts[0].value, null);
+});
+
+test("human review cannot silently remove a draft requirement or use an unsupported removal", async () => {
+  const { program, snapshots } = await fixture();
+  const review = approvedReview(program);
+  delete review.removedRequirements;
+  assert.throws(() => applyReview(program, review, snapshots, schema, now), /omitted draft requirement/);
+  review.removedRequirements = [{ id: "inventory-review", reason: "", evidence: [] }];
+  assert.throws(() => applyReview(program, review, snapshots, schema, now), /rationale and source evidence/);
+  review.removedRequirements = [{ id: "inventory-review", reason: "Synthetic rationale", evidence: [{ ...program.sources[0], quote: "Invented removal basis" }] }];
+  assert.throws(() => applyReview(program, review, snapshots, schema, now), /quote or locator/);
+});
+
+test("generated evidence checklists preserve source failures, retrieval dates and pending approval", async () => {
+  const { program } = await fixture();
+  const before = JSON.stringify(program);
+  const config = seed(); config.sources.push({ id: "blocked", url: `${url}/blocked.pdf` });
+  const report = renderReviewReport(program, config, { source: { lastAttempt: "2026-10-21", lastSuccessfulCheck: "2026-10-21", snapshotId: "test" }, blocked: { lastAttempt: "2026-10-21", error: "robots.txt disallows this source" } });
+  assert.match(report, /no human approval/);
+  assert.match(report, /robots.txt disallows/);
+  assert.match(report, /2026-10-21/);
+  assert.match(report, /Missing evidence/);
+  assert.match(report, /snapshots\//);
+  assert.equal(JSON.stringify(program), before);
+});
+
+test("audited pilot retains material exceptions, exact fee rows and source-stated intake scope", () => {
+  const programs = json("../src/data/catalogPrograms.json");
+  const fact = (id, factId) => programs.find((p) => p.id.includes(id)).facts.find((f) => f.id === factId);
+  assert.match(fact("passau", "research-credits").value, /mindestens 10 ECTS/);
+  assert.match(fact("passau", "research-credits").value, /andere.*wissenschaftliche Arbeit/);
+  assert.match(fact("saarland", "accepted-certificates").value, /IELTS.*7.0/);
+  assert.match(fact("saarland", "accepted-certificates").value, /95 out of 120.*2026: 5/);
+  assert.match(fact("saarland", "accepted-certificates").value, /Only native speakers/);
+  assert.equal(programs.find((p) => p.id.includes("saarland")).requirements.find((r) => r.id === "language").rule.type, "manual");
+  assert.match(fact("fau", "tuition").value, /Data Science\* \| Master of Science \| Yes \| 4,000 euros/);
+  assert.doesNotMatch(fact("fau", "tuition").value, /Bachelor of Science \| Yes \| 1,000/);
+  assert.match(fact("fau", "tuition").value, /summer semester 2027/);
+  assert.match(fact("fau", "application-fee").value, /winter semester 2026\/27.*100 euros/);
+  assert.match(fact("fau", "intake-dates").value, /Sommersemester 2027/);
+  assert.match(fact("fau", "intake-dates").value, /Data Science \(M.Sc.\)/);
+  assert.equal(fact("fau", "credits").value, null, "curriculum ECTS do not become admission credits");
+  assert.match(fact("stuttgart", "grades").value, /should be better than/);
+  assert.match(fact("stuttgart", "aps").value, /scholarship from Germany or the EU/);
+  assert.match(fact("tuhh", "credits").value, /30 CP/);
+  for (const program of programs) {
+    assert.notEqual(program.verificationStatus, "verified");
+    assert.deepEqual(program.validFor, []);
+    assert.equal(program.requirementsComplete, false);
+    assert.ok(program.requirements.every((req) => req.rule.type === "manual"));
+  }
+});
+
+const pilotProfile = () => {
+  const reviewedAt = "2026-10-20";
+  const text = "Bachelor of Science completed. Computer Science. Total 180 ECTS. Mathematics 5 ECTS. Algorithms 6 ECTS. English IELTS Academic C1 overall 7.0.";
+  const evidence = (quote) => ({ documentId: "synthetic-applicant", quote, reviewedAt });
+  return {
+    profile: { id: "local-profile", degree: "Bachelor of Science", degreeType: "bachelor", degreeCompleted: true, field: "Computer Science", ects: "180", evidence: { degree: evidence("Bachelor of Science completed."), field: evidence("Computer Science."), ects: evidence("Total 180 ECTS.") }, courses: ["Mathematics", "Algorithms"], academicCourses: [{ id: "math", title: "Mathematics", ects: 5, evidence: evidence("Mathematics 5 ECTS.") }, { id: "algorithms", title: "Algorithms", ects: 6, evidence: evidence("Algorithms 6 ECTS.") }], transcriptComplete: true, courseEquivalences: [], languageCertificates: [{ language: "English", test: "IELTS Academic", level: "C1", score: 7, evidence: evidence("English IELTS Academic C1 overall 7.0.") }], workExperience: "", updatedAt: reviewedAt, reviewedAt },
+    documents: [{ id: "synthetic-applicant", kind: "transcript", fileName: "synthetic-applicant.txt", text, status: "parsed", createdAt: reviewedAt }],
+    semester: "2027-summer",
+  };
+};
+for (const [name, mutate] of [
+  ["complete CS graduate with language evidence", () => {}],
+  ["incomplete first degree and partial transcript", (fixture) => { fixture.profile.degreeCompleted = false; fixture.profile.transcriptComplete = false; delete fixture.profile.evidence.degree; }],
+  ["few subject credits and unsupported course equivalence", (fixture) => { fixture.profile.academicCourses[0].ects = 2; fixture.profile.academicCourses[0].evidence.quote = "Mathematics 2 ECTS."; fixture.documents[0].text = fixture.documents[0].text.replace("Mathematics 5", "Mathematics 2"); }],
+  ["missing language certificates", (fixture) => { fixture.profile.languageCertificates = []; }],
+  ["wrong test variant and weak language evidence", (fixture) => { fixture.profile.languageCertificates = [{ language: "English", test: "IELTS General", level: "B1", score: 4 }]; }],
+  ["old certificate with unsupported expiry assessment", (fixture) => { fixture.profile.languageCertificates[0].date = "2022-01-01"; }],
+  ["unestablished admission semester", (fixture) => { fixture.semester = "2025-winter"; }],
+  ["invented document excerpt", (fixture) => { fixture.profile.evidence.ects.quote = "Total 999 ECTS."; }],
+]) {
+  test(`real pilot safety regression: ${name}`, () => {
+    for (const program of json("../src/data/catalogPrograms.json")) {
+      const fixture = pilotProfile(); mutate(fixture);
+      const result = analyzeFit(fixture.profile, fixture.documents, program, { semester: fixture.semester, asOf: now.toISOString() });
+      assert.equal(result.verdict, "not_enough_data", `${program.university}: no unreviewed record can establish eligibility or rejection`);
+      assert.ok(result.checks.every((check) => !check.hardBlocker));
+      assert.ok(result.sourceIssues.some((issue) => /not been verified|source status/.test(issue)));
+      assert.ok(result.sourceIssues.some((issue) => /semester/.test(issue)));
+    }
+  });
+}

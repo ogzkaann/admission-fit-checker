@@ -32,6 +32,8 @@ Five real German master's programs (Passau, Saarland, FAU, Stuttgart and TUHH) n
 
 See the [ingestion and review guide, pilot source report and PostgreSQL next steps](docs/CATALOG_INGESTION.md).
 
+The [21 October verification checklists](docs/PILOT_VERIFICATION.md) audit all five pilot programs against 20 accessible sources; one TUHH PDF remains robots-denied. All human approvals remain pending. [Security cleanup](docs/SECURITY_AUDIT.md) applies compatible patches and documents the remaining build-time dependency findings.
+
 ```sh
 npm run catalog -- status
 npm run catalog -- validate

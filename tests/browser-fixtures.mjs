@@ -1,0 +1,21 @@
+import { mkdirSync, writeFileSync } from "node:fs";
+import { createCanvas } from "@napi-rs/canvas";
+
+// Optional browser smoke fixtures; canvas is already supplied by pdfjs-dist.
+const lines = ["ACADEMIC TRANSCRIPT", "Synthetic Applicant", "Bachelor of Science in Computer Science", "Total ECTS: 180", "English: IELTS Academic 7.0", "Synthetic test document - no real student."];
+const stream = `BT /F1 12 Tf 40 740 Td ${lines.map((line, index) => `${index ? "0 -24 Td " : ""}(${line}) Tj`).join(" ")} ET`;
+const objects = ["<< /Type /Catalog /Pages 2 0 R >>", "<< /Type /Pages /Kids [3 0 R] /Count 1 >>", "<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>", "<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>", `<< /Length ${Buffer.byteLength(stream)} >>\nstream\n${stream}\nendstream`];
+let pdf = "%PDF-1.4\n";
+const offsets = [];
+objects.forEach((object, index) => { offsets.push(Buffer.byteLength(pdf)); pdf += `${index + 1} 0 obj\n${object}\nendobj\n`; });
+const start = Buffer.byteLength(pdf);
+pdf += `xref\n0 6\n0000000000 65535 f \n${offsets.map((offset) => `${String(offset).padStart(10, "0")} 00000 n \n`).join("")}trailer\n<< /Size 6 /Root 1 0 R >>\nstartxref\n${start}\n%%EOF`;
+const canvas = createCanvas(1100, 500);
+const context = canvas.getContext("2d");
+context.fillStyle = "white"; context.fillRect(0, 0, 1100, 500);
+context.fillStyle = "black"; context.font = "36px sans-serif";
+lines.forEach((line, index) => context.fillText(line, 40, 65 + index * 65));
+mkdirSync("artifacts/smoke", { recursive: true });
+writeFileSync("artifacts/smoke/synthetic-transcript.pdf", pdf);
+writeFileSync("artifacts/smoke/synthetic-transcript.png", canvas.toBuffer("image/png"));
+console.log("Created synthetic PDF and image in artifacts/smoke; neither contains real applicant data.");

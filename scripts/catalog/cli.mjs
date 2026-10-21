@@ -4,6 +4,7 @@ import { resolve } from "node:path";
 import { createFetcher, allowedUrl } from "./fetch.mjs";
 import { extractProgram, parseSource, hash } from "./extract.mjs";
 import { applyReview, assertEvidence, differences, markStale, reviewTemplate, revisionFor } from "./core.mjs";
+import { renderReviewReport } from "./report.mjs";
 
 const require = createRequire(import.meta.url);
 const { programSchema, programRequirementSchema } = require("../../.catalog-build/domain/eligibilitySchemas.js");
@@ -15,7 +16,7 @@ const read = async (path, fallback) => {
 };
 async function write(path, data, immutable = false) {
   await mkdir(resolve(path, ".."), { recursive: true });
-  const text = `${JSON.stringify(data, null, 2)}\n`;
+  const text = typeof data === "string" ? data : `${JSON.stringify(data, null, 2)}\n`;
   if (immutable) {
     try { await writeFile(path, text, { flag: "wx" }); }
     catch (error) { if (error.code !== "EEXIST") throw error; }
@@ -122,9 +123,10 @@ const [command = "status", id, file] = process.argv.slice(2);
     const fetchSource = createFetcher({ hosts: seeds.officialHosts });
     const sources = new Map(seeds.programs.flatMap((seed) => seed.sources).map((source) => [source.id, source]));
     if (sources.size > 30) throw new Error("Pilot run is capped at 30 explicitly configured sources");
-    if (id && !sources.has(id)) throw new Error("Unknown source ID");
+    const selected = id?.split(",");
+    if (selected?.some((sourceId) => !sources.has(sourceId))) throw new Error("Unknown source ID");
     for (const source of sources.values()) {
-      if (id && source.id !== id) continue;
+      if (selected && !selected.includes(source.id)) continue;
       const previous = state.sources[source.id] ?? {};
       const lastAttempt = new Date().toISOString();
       try {
@@ -161,12 +163,24 @@ const [command = "status", id, file] = process.argv.slice(2);
     await extract();
   } else if (command === "extract") await extract();
   else if (command === "review-template") {
-    const pointer = state.programs[safeId(id ?? "")];
-    if (!pointer) throw new Error("Unknown program ID");
-    const version = await read(versionPath(id, pointer.revision));
-    const destination = file ? resolve(file) : `${root}/review-drafts/${id}.json`;
-    await write(destination, reviewTemplate(version.program), true);
-    console.log(`Review template: ${destination}. Pending is not approval.`);
+    if (id === "all" && file) throw new Error("A single output file cannot hold all review templates");
+    for (const programId of id === "all" ? seeds.programs.map((seed) => seed.id) : [safeId(id ?? "")]) {
+      const pointer = state.programs[programId];
+      if (!pointer) throw new Error("Unknown program ID");
+      const version = await read(versionPath(programId, pointer.revision));
+      const destination = file ? resolve(file) : `${root}/review-drafts/${programId}-${pointer.revision.slice(0, 12)}.json`;
+      const existing = await read(destination, null);
+      if (existing && (existing.programId !== programId || existing.revision !== pointer.revision)) throw new Error("Existing review template targets another revision; choose a new output file");
+      await write(destination, reviewTemplate(version.program), true);
+      console.log(`Pending review template: ${destination}`);
+    }
+  } else if (command === "report") {
+    const programs = await publish(true);
+    for (const program of programs) {
+      const seed = seeds.programs.find((item) => item.id === program.id);
+      await write(`${root}/reports/${program.id}.md`, renderReviewReport(program, seed, state.sources));
+    }
+    console.log(`Generated ${programs.length} evidence checklists in catalog/reports. No review decisions were changed.`);
   } else if (command === "review") {
     if (!file) throw new Error("Usage: npm run catalog -- review <program-id> <review-file>");
     const pointer = state.programs[safeId(id ?? "")];
@@ -196,5 +210,5 @@ const [command = "status", id, file] = process.argv.slice(2);
     const queue = await read(`${root}/review-queue.json`, []);
     for (const item of queue) console.log(`${item.programId}: ${item.verificationStatus}; ${item.pendingRequirements.length} requirements need review; ${item.unknownFacts.length} unknown facts; revision ${item.revision.slice(0, 12)}`);
     console.log("Detailed issues, changes and pending requirements: catalog/review-queue.json. Discovered official links: catalog/current.json. Add selected links to seeds.json before fetching; no automatic spidering.");
-  } else throw new Error("Commands: fetch [source-id], reparse, extract, status, validate, review-template <id> [file], review <id> <file>");
+  } else throw new Error("Commands: fetch [source-id,...], reparse, extract, status, validate, report, review-template <id|all> [file], review <id> <file>");
 } finally { await lock.close(); await unlink(`${root}/.lock`); }

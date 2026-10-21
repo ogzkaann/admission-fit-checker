@@ -1,6 +1,3 @@
-import { extractPdfText, renderPdfToImages } from "./pdf";
-import { ocrImage } from "./ocr";
-
 // Below this many non-whitespace characters a PDF is treated as "scanned"
 // and we fall back to OCR.
 const OCR_MIN_CHARS = 120;
@@ -42,6 +39,7 @@ export async function extractDocument(
   onEvent?: (event: ExtractionEvent) => void,
 ): Promise<DocumentExtractionResult> {
   if (isImageFile(file)) {
+    const { ocrImage } = await import("./ocr");
     onEvent?.({ status: "ocr-start", message: "Image detected. Running OCR…" });
     const text = await ocrImage(file, (fraction) =>
       onEvent?.({ status: "ocr-progress", message: `Running OCR… ${Math.round(fraction * 100)}%` }),
@@ -55,6 +53,7 @@ export async function extractDocument(
   }
 
   onEvent?.({ status: "reading-text", message: "Reading selectable text…" });
+  const { extractPdfText, renderPdfToImages } = await import("./pdf");
   const extracted = await extractPdfText(file);
   if (meaningfulLength(extracted.text) >= OCR_MIN_CHARS) {
     onEvent?.({ status: "done", message: "Text extracted. Review fields below." });
@@ -62,6 +61,7 @@ export async function extractDocument(
   }
 
   onEvent?.({ status: "ocr-start", message: "No selectable text found. Running OCR…" });
+  const { ocrImage } = await import("./ocr");
   const canvases = await renderPdfToImages(file, OCR_MAX_PAGES);
   const parts: string[] = [];
   for (let index = 0; index < canvases.length; index += 1) {
