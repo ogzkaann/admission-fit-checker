@@ -92,4 +92,3 @@ This evidence checklist records no human approval. Preview quotations are abbrev
 > Apart from a semester contribution of approx. 300€ there no fees for the master in mechatronics at TUHH. Further information regarding the semester contribution as well as expenses, please check the following link: Fees and expenses
 
 [Full captured snapshot](../snapshots/622e3cb6bc1b62ed48dc36e344f6c4016610390bdcf1a0323a995875da3a2c25.json); raw-content SHA-256: `8f289c6ca0d70007785e9f12176b6285aa23d736fce620dcd07d2e4832c58e51`.
-

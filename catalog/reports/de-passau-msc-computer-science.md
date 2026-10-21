@@ -259,4 +259,3 @@ This evidence checklist records no human approval. Preview quotations are abbrev
 > At the University of Passau, there a no tuition fees. However, students do pay a semester fee.
 
 [Full captured snapshot](../snapshots/0d60ee24a955bcdd56dea67669ce465a252ccbca6b45da0cd24b560c7db42f68.json); raw-content SHA-256: `293c6d487acb3cec00410acfd4a39a9f9c809a6bd69c1a5658f8033f3d72344d`.
-

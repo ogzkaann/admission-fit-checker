@@ -245,4 +245,3 @@ This evidence checklist records no human approval. Preview quotations are abbrev
 > Data Science (M.Sc.) \| 15.04. – 31.05. \| 15.10. – 30.11.
 
 [Full captured snapshot](../snapshots/8b9cd513131ae954e1f49d1647596483fce58913110da72ed3fa828d20e0a63a.json); raw-content SHA-256: `8497b1a812ff324e3cdf5833cfd396c1a7c6f70c37a21bd9476624f038d03b48`.
-

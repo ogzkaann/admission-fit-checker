@@ -260,4 +260,3 @@ This evidence checklist records no human approval. Preview quotations are abbrev
 > Students can begin the M.Sc. programme at the beginning of the summer or winter semester. Applications should normally be received by 15 May for students seeking to begin studying in the winter semester and by 15 November for students looking to start their studies in summer. Applicants who apply by May 15th for the fo...
 
 [Full captured snapshot](../snapshots/3fcb91c811ac43260148981943be8236f87e9d67c6d7e5be4aa43d4700662866.json); raw-content SHA-256: `a484d5501206a19580f3d134b874b4c4c86784bc7c68c5885497ea80165ce0dd`.
-

@@ -34,5 +34,5 @@ export function renderReviewReport(program, seed, observations) {
   evidence.forEach((source, index) => {
     lines.push(`### E${index + 1}`, "", `[Official source](<${source.url}>) | ${escape(source.locator)} | captured ${source.retrievedAt ?? "unknown"} | checked ${source.lastChecked ?? "unknown"} | ${source.status}`, "", `> ${preview(source.quote, 320)}`, "", `[Full captured snapshot](../snapshots/${source.snapshotId}.json); raw-content SHA-256: \`${source.contentHash}\`.`, "");
   });
-  return `${lines.join("\n")}\n`;
+  return `${lines.join("\n").trimEnd()}\n`;
 }

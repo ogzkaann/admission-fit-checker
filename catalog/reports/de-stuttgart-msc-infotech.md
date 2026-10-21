@@ -443,4 +443,3 @@ This evidence checklist records no human approval. Preview quotations are abbrev
 > Information for international students:If you wish to begin a second study program, you must pay the tuition fee for international students (EUR 1,500.00). The tuition fee for a second degree (EUR 650) only applies if you are exempt from paying the tuition fee for international students.
 
 [Full captured snapshot](../snapshots/c955890f49215c394aadea443da0e6e17068732ea6ed4cbe0df20e6f4af342ab.json); raw-content SHA-256: `1b4cf3c4c7380bd8e565182ccf95035d76fa7122458e34852f96db3545c6dd95`.
-
